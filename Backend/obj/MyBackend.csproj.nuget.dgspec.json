@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kasper/Documents/GitHub/bachelor/MyBackend/MyBackend.csproj": {}
+    "/Users/kasper/Documents/GitHub/bachelor/Backend/MyBackend.csproj": {}
   },
   "projects": {
-    "/Users/kasper/Documents/GitHub/bachelor/MyBackend/MyBackend.csproj": {
+    "/Users/kasper/Documents/GitHub/bachelor/Backend/MyBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kasper/Documents/GitHub/bachelor/MyBackend/MyBackend.csproj",
+        "projectUniqueName": "/Users/kasper/Documents/GitHub/bachelor/Backend/MyBackend.csproj",
         "projectName": "MyBackend",
-        "projectPath": "/Users/kasper/Documents/GitHub/bachelor/MyBackend/MyBackend.csproj",
+        "projectPath": "/Users/kasper/Documents/GitHub/bachelor/Backend/MyBackend.csproj",
         "packagesPath": "/Users/kasper/.nuget/packages/",
-        "outputPath": "/Users/kasper/Documents/GitHub/bachelor/MyBackend/obj/",
+        "outputPath": "/Users/kasper/Documents/GitHub/bachelor/Backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kasper/.nuget/NuGet/NuGet.Config"
@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
