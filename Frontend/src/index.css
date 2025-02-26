@@ -1,13 +1,120 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Sedan:wght@400;700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  /* Font Families */
+  --font-sans: Raleway, sans-serif;
+  --font-display: Sedan, sans-serif;
+
+  /* Colors */
+  --color-primary-dark: #4C6444;
+  --color-primary-brown: #4D2D18;
+  --color-background-beige1: #F5ECD5;
+  --color-background-beige2: #FFFAEC;
+  --color-text-dark: #102820;
+  --color-text-light: #F6FAF9;
+  --color-error: #950606;
+  --color-success: #056608;
+
+  /* Font Sizes */
+  --font-size-display-1: 48px;
+  --font-size-heading-1: 56px;
+  --font-size-heading-2: 48px;
+  --font-size-heading-3: 32px;
+  --font-size-heading-4: 24px;
+  --font-size-paragraph-1: 18px;
+  --font-size-paragraph-2: 16px;
+  --font-size-button: 20px;
+  --font-size-hyperlink: 20px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+
+  /* Box Shadows */
+  --shadow-custom1: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-custom2: 0px 4px 8px rgba(0, 0, 0, 0.10);
+  --shadow-custom3: 0px 2px 4px rgba(0, 0, 0, 0.10);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  /* Map custom properties to utility classes */
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .text-display-1 {
+    font-size: var(--font-size-display-1);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-tight);
+  }
+  .text-heading-1 {
+    font-size: var(--font-size-heading-1);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-heading-2 {
+    font-size: var(--font-size-heading-2);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-heading-3 {
+    font-size: var(--font-size-heading-3);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-heading-4 {
+    font-size: var(--font-size-heading-4);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-paragraph-1 {
+    font-size: var(--font-size-paragraph-1);
+    font-weight: var(--font-weight-regular);
+  }
+  .text-paragraph-2 {
+    font-size: var(--font-size-paragraph-2);
+    font-weight: var(--font-weight-regular);
+  }
+  .text-button {
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-hyperlink {
+    font-size: var(--font-size-hyperlink);
+    font-weight: var(--font-weight-semibold);
+  }
+  .bg-primary-dark {
+    background-color: var(--color-primary-dark);
+  }
+  .bg-primary-brown {
+    background-color: var(--color-primary-brown);
+  }
+  .bg-background-beige1 {
+    background-color: var(--color-background-beige1);
+  }
+  .bg-background-beige2 {
+    background-color: var(--color-background-beige2);
+  }
+  .text-dark {
+    color: var(--color-text-dark);
+  }
+  .text-light {
+    color: var(--color-text-light);
+  }
+  .text-error {
+    color: var(--color-error);
+  }
+  .text-success {
+    color: var(--color-success);
+  }
+  .shadow-custom1 {
+    box-shadow: var(--shadow-custom1);
+  }
+  .shadow-custom2 {
+    box-shadow: var(--shadow-custom2);
+  }
+  .shadow-custom3 {
+    box-shadow: var(--shadow-custom3);
+  }
 }

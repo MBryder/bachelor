@@ -1,0 +1,99 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ==============================
+# FRONTEND (React)
+# ==============================
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==============================
+# BACKEND (ASP.NET Core)
+# ==============================
+
+# Build output
+bin/
+obj/
+
+# User-specific files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+logs/
+logs/**
+
+# Dependencies
+packages/
+project.lock.json
+*.nuget.props
+*.nuget.targets
+
+# ASP.NET Core configuration
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Entity Framework Migrations (optional)
+Migrations/
+
+# Rider / JetBrains
+*.sln.iml
+.idea/
+
+# Visual Studio artifacts
+*.vs/
+.vs/
+*.vscode/
+
+# dotnet CLI
+artifacts/
