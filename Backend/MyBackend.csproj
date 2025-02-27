@@ -17,4 +17,14 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <Target Name="BuildRustLib" BeforeTargets="Build">
+    <Exec Command="cargo build --release" WorkingDirectory="rust_lib" />
+    <Copy SourceFiles="rust_lib/target/release/librust_lib.dylib"
+          DestinationFolder="bin/Debug/net9.0/"
+          Condition="'$(OS)' != 'Windows_NT'" />
+    <Copy SourceFiles="rust_lib/target/release/rust_lib.dll"
+          DestinationFolder="bin/Debug/net9.0/"
+          Condition="'$(OS)' == 'Windows_NT'" />
+  </Target>
+
 </Project>

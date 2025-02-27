@@ -56,8 +56,8 @@ yarn-error.log*
 # ==============================
 
 # Build output
-bin/
-obj/
+Backend/bin/
+Backend/obj/
 
 # User-specific files
 .vscode/
@@ -97,3 +97,12 @@ Migrations/
 
 # dotnet CLI
 artifacts/
+
+
+# ==============================
+# RUST (Rust Lib)
+# ==============================
+
+# Cargo build output
+Backend/rust_lib/target/
+Backend/rust_lib/Cargo.lock
