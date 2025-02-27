@@ -5,7 +5,7 @@
 # ==============================
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -13,15 +13,16 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Node modules & build output
+node_modules/
+dist/
+dist-ssr/
 *.local
 
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
@@ -29,18 +30,13 @@ dist-ssr
 *.sln
 *.sw?
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Testing
+/coverage/
 
-# testing
-/coverage
+# Production
+/build/
 
-# production
-/build
-
-# misc
+# Misc
 .DS_Store
 .env.local
 .env.development.local
@@ -56,8 +52,8 @@ yarn-error.log*
 # ==============================
 
 # Build output
-Backend/bin/
-Backend/obj/
+Backend/Backend/bin/**
+Backend/Backend/obj/**
 
 # User-specific files
 .vscode/
@@ -79,12 +75,12 @@ project.lock.json
 *.nuget.targets
 
 # ASP.NET Core configuration
-appsettings.Development.json
-appsettings.Local.json
-secrets.json
+Backend/appsettings.Development.json
+Backend/appsettings.Local.json
+Backend/secrets.json
 
 # Entity Framework Migrations (optional)
-Migrations/
+Backend/Migrations/
 
 # Rider / JetBrains
 *.sln.iml
@@ -97,12 +93,3 @@ Migrations/
 
 # dotnet CLI
 artifacts/
-
-
-# ==============================
-# RUST (Rust Lib)
-# ==============================
-
-# Cargo build output
-Backend/rust_lib/target/
-Backend/rust_lib/Cargo.lock
