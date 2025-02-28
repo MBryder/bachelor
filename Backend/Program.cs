@@ -25,7 +25,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
-        builder => builder.WithOrigins("http://localhost:3000") // Change to React frontend URL
+        builder => builder.WithOrigins("http://localhost:5173") // Change to React frontend URL
                           .AllowAnyMethod()
                           .AllowAnyHeader());
 });

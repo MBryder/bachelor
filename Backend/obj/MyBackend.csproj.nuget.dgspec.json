@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sigurd\\Documents\\GitHub\\bachelor\\Backend\\MyBackend.csproj": {}
+    "E:\\C code\\bachelor\\Backend\\MyBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sigurd\\Documents\\GitHub\\bachelor\\Backend\\MyBackend.csproj": {
+    "E:\\C code\\bachelor\\Backend\\MyBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sigurd\\Documents\\GitHub\\bachelor\\Backend\\MyBackend.csproj",
+        "projectUniqueName": "E:\\C code\\bachelor\\Backend\\MyBackend.csproj",
         "projectName": "MyBackend",
-        "projectPath": "C:\\Users\\Sigurd\\Documents\\GitHub\\bachelor\\Backend\\MyBackend.csproj",
-        "packagesPath": "C:\\Users\\Sigurd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sigurd\\Documents\\GitHub\\bachelor\\Backend\\obj\\",
+        "projectPath": "E:\\C code\\bachelor\\Backend\\MyBackend.csproj",
+        "packagesPath": "C:\\Users\\Marcus\\.nuget\\packages\\",
+        "outputPath": "E:\\C code\\bachelor\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sigurd\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Marcus\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

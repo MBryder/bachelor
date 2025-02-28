@@ -19,14 +19,14 @@
 
   /* Font Sizes */
   --font-size-display-1: 48px;
-  --font-size-heading-1: 56px;
-  --font-size-heading-2: 48px;
-  --font-size-heading-3: 32px;
-  --font-size-heading-4: 24px;
-  --font-size-paragraph-1: 18px;
-  --font-size-paragraph-2: 16px;
-  --font-size-button: 20px;
-  --font-size-hyperlink: 20px;
+  --font-size-heading-1: 48px;
+  --font-size-heading-2: 36px;
+  --font-size-heading-3: 30px;
+  --font-size-heading-4: 18px;
+  --font-size-paragraph-1: 14px;
+  --font-size-paragraph-2: 12px;
+  --font-size-button: 18px;
+  --font-size-hyperlink: 18px;
 
   /* Font Weights */
   --font-weight-regular: 400;
@@ -116,5 +116,10 @@
   }
   .shadow-custom3 {
     box-shadow: var(--shadow-custom3);
+  }
+
+  .scrollbar {
+    scrollbar-width: none;
+    scrollbar-color: var(--color-primary-brown) var(--color-background-beige1);
   }
 }
