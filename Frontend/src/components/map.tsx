@@ -1,47 +1,38 @@
-import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
-import { useMemo} from "react";
+import React from 'react';
 
-const MAP_API_KEY = import.meta.env.VITE_MAP_KEY; // Replace with your API key
+import {
+    AdvancedMarker,
+    APIProvider,
+    Map,
+    MapCameraChangedEvent,
+  } from '@vis.gl/react-google-maps';
 
-function Map() {
-    // Load Google Maps API
-    const { isLoaded } = useLoadScript({
-        googleMapsApiKey: MAP_API_KEY,
-    });
+import Markers from './markers';
+import MarkerWithInfoWindow from './markerInfoWindow';
 
-    // Define a default location = Marcus' lejlighed.
-    const center = useMemo(() => ({ lat: 55.6632, lng: 12.5939 }), []);
+type Poi = {key: string, location: google.maps.LatLngLiteral}
 
-        // Define locations with markers
-    const locations = [
-        { id: 1, name: "Marcus' Lejlighed", lat: 55.6632, lng: 12.5939 },
-        { id: 2, name: "Tivoli Gardens", lat: 55.6737, lng: 12.5681 },
-        { id: 3, name: "Nyhavn", lat: 55.6806, lng: 12.5885 },
-        { id: 4, name: "The Little Mermaid", lat: 55.6929, lng: 12.5993 },
-    ];
+const locations: Poi[] = [
+    {key: 'København', location: {lat: 55.860664, lng: 12.208138}},
+    {key: 'Det kgl bibliotek', location: {lat: 55.681209, lng: 12.575418}},
+    {key: 'Det kgl teater', location: {lat: 55.679548, lng: 12.575418}},
+];
 
-
+function MapCreate() {
     return (
-        <div className="w-full h-full rounded-xl overflow-hidden">
-            {!isLoaded ? (
-                <p>Loading Google Maps...</p>
-            ) : (
-                <GoogleMap
-                    mapContainerStyle={{ width: "100%", height: "100%" }}
-                    center={center}
-                    zoom={12} // Set a good zoom level
-                >
-                    {/* Add Markers */}
-                    {locations.map((location) => (
-                        <Marker
-                            key={location.id}
-                            position={{ lat: location.lat, lng: location.lng }}
-                        />
-                    ))}
-                </GoogleMap>
-            )}
-        </div>
+        <APIProvider apiKey={'AIzaSyCkruFvWecrOLNYhOSum0WKmHb-3dZcT5M'} onLoad={() => console.log('Maps API has loaded.')}>
+            <Map
+                defaultZoom={13}
+                defaultCenter={{ lat: 55.860664, lng: 12.208138 }}
+                mapId='51389869f40fdb4f'
+                onCameraChanged={(ev: MapCameraChangedEvent) =>
+                    console.log('camera changed:', ev.detail.center, 'zoom:', ev.detail.zoom)
+                }>
+                    <Markers pois={locations} />
+                    <MarkerWithInfoWindow/>
+            </Map>
+        </APIProvider>
     );
 }
 
-export default Map;
+export default MapCreate;
