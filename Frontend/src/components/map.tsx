@@ -20,25 +20,45 @@ function Map() {
         { id: 4, name: "The Little Mermaid", lat: 55.6929, lng: 12.5993 },
     ];
 
+    const mapOptions = {
+        mapTypeControl: false,       // Hides 'Kort' and 'Satellit'
+        fullscreenControl: false,    // Hides fullscreen button
+        streetViewControl: false,    // Hides Street View pegman
+    };
+    
 
     return (
-        <div className="w-full h-full rounded-xl overflow-hidden">
+        <div className="w-full h-full">
             {!isLoaded ? (
                 <p>Loading Google Maps...</p>
             ) : (
-                <GoogleMap
-                    mapContainerStyle={{ width: "100%", height: "100%" }}
-                    center={center}
-                    zoom={12} // Set a good zoom level
-                >
-                    {/* Add Markers */}
-                    {locations.map((location) => (
-                        <Marker
-                            key={location.id}
-                            position={{ lat: location.lat, lng: location.lng }}
+                <div className="relative w-full h-full">
+                    
+                    <GoogleMap
+                        mapContainerStyle={{ width: "100%", height: "100%" }}
+                        center={center}
+                        zoom={12} // Set a good zoom level
+                        options={mapOptions}
+                    >
+                        
+                        {/* Add Markers */}
+                        {locations.map((location) => (
+                            <Marker
+                                key={location.id}
+                                position={{ lat: location.lat, lng: location.lng }}
+                            />
+                        ))}
+                    </GoogleMap>
+                    <div className="absolute top-4 left-4 transform w-[300px] max-w-md">
+                        <input
+                            type="text"
+                            placeholder="Search location..."
+                            className="w-full p-2 px-4 bg-background-beige3 rounded-3xl shadow-md focus:outline-none text-paragraph-1"
                         />
-                    ))}
-                </GoogleMap>
+                    </div>
+                </div>
+
+                
             )}
         </div>
     );

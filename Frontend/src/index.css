@@ -12,17 +12,18 @@
   --color-primary-brown: #4D2D18;
   --color-background-beige1: #F5ECD5;
   --color-background-beige2: #FFFAEC;
+  --color-background-beige3: #FFFDF7;
   --color-text-dark: #102820;
   --color-text-light: #F6FAF9;
   --color-error: #950606;
   --color-success: #056608;
 
   /* Font Sizes */
-  --font-size-display-1: 48px;
-  --font-size-heading-1: 48px;
-  --font-size-heading-2: 36px;
-  --font-size-heading-3: 30px;
-  --font-size-heading-4: 18px;
+  --font-size-display-1: 36px;
+  --font-size-heading-1: 16px;
+  --font-size-heading-2: 14px;
+  --font-size-heading-3: 12px;
+  --font-size-heading-4: 10px;
   --font-size-paragraph-1: 14px;
   --font-size-paragraph-2: 12px;
   --font-size-button: 18px;
@@ -54,19 +55,19 @@
   }
   .text-heading-1 {
     font-size: var(--font-size-heading-1);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-heading-2 {
     font-size: var(--font-size-heading-2);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-heading-3 {
     font-size: var(--font-size-heading-3);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-heading-4 {
     font-size: var(--font-size-heading-4);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-paragraph-1 {
     font-size: var(--font-size-paragraph-1);
@@ -95,6 +96,9 @@
   }
   .bg-background-beige2 {
     background-color: var(--color-background-beige2);
+  }
+  .bg-background-beige3 {
+    background-color: var(--color-background-beige3);
   }
   .text-dark {
     color: var(--color-text-dark);
