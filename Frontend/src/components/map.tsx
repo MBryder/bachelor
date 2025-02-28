@@ -1,25 +1,61 @@
-import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
-import { useMemo} from "react";
+import { useLoadScript, GoogleMap, Marker, InfoWindow } from "@react-google-maps/api";
+import { useMemo, useState, useCallback } from "react";
 
-const MAP_API_KEY = import.meta.env.VITE_MAP_KEY; // Replace with your API key
+interface Place {
+    id: string;
+    name: string;
+    address: string;
+    lat: number;
+    lng: number;
+    placeUrl: string;
+}
 
-function Map() {
-    // Load Google Maps API
+interface MapProps {
+    setVisiblePlaces: (places: Place[]) => void;
+}
+
+const MAP_API_KEY = import.meta.env.VITE_MAP_KEY;
+
+function Map({ setVisiblePlaces }: MapProps) {
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: MAP_API_KEY,
+        libraries: ["places"], 
     });
 
-    // Define a default location = Marcus' lejlighed.
     const center = useMemo(() => ({ lat: 55.6632, lng: 12.5939 }), []);
+    const [map, setMap] = useState<google.maps.Map | null>(null);
+    const [visiblePlaces, setLocalVisiblePlaces] = useState<Place[]>([]);
+    const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
 
-        // Define locations with markers
-    const locations = [
-        { id: 1, name: "Marcus' Lejlighed", lat: 55.6632, lng: 12.5939 },
-        { id: 2, name: "Tivoli Gardens", lat: 55.6737, lng: 12.5681 },
-        { id: 3, name: "Nyhavn", lat: 55.6806, lng: 12.5885 },
-        { id: 4, name: "The Little Mermaid", lat: 55.6929, lng: 12.5993 },
-    ];
+    const fetchPlaces = useCallback(() => {
+        if (!map) return;
 
+        const bounds = map.getBounds();
+        if (!bounds) return;
+
+        const service = new google.maps.places.PlacesService(map);
+        service.nearbySearch(
+            {
+                bounds,
+                type: "point_of_interest", 
+            },
+            (results: google.maps.places.PlaceResult[] | null, status: google.maps.places.PlacesServiceStatus) => {
+                if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+                    const places: Place[] = results.map((place: google.maps.places.PlaceResult) => ({
+                        id: place.place_id || "",
+                        name: place.name || "Unknown Place",
+                        address: place.vicinity || "No Address",
+                        lat: place.geometry?.location?.lat() ?? 0,
+                        lng: place.geometry?.location?.lng() ?? 0,
+                        placeUrl: place.place_id ? `https://www.google.com/maps/place/?q=place_id:${place.place_id}` : "#",
+                    }));
+
+                    setLocalVisiblePlaces(places); 
+                    setVisiblePlaces(places); 
+                }
+            }
+        );
+    }, [map, setVisiblePlaces]);
 
     return (
         <div className="w-full h-full rounded-xl overflow-hidden">
@@ -29,15 +65,38 @@ function Map() {
                 <GoogleMap
                     mapContainerStyle={{ width: "100%", height: "100%" }}
                     center={center}
-                    zoom={12} // Set a good zoom level
+                    zoom={14}
+                    onLoad={(mapInstance) => setMap(mapInstance)} 
+                    onIdle={fetchPlaces}
                 >
-                    {/* Add Markers */}
-                    {locations.map((location) => (
-                        <Marker
-                            key={location.id}
-                            position={{ lat: location.lat, lng: location.lng }}
-                        />
-                    ))}
+                    {visiblePlaces.length > 0 &&
+                        visiblePlaces.map((place: Place) => (
+                            <Marker
+                                key={place.id}
+                                position={{ lat: place.lat, lng: place.lng }}
+                                onClick={() => setSelectedPlace(place)}
+                            />
+                        ))}
+
+                    {selectedPlace && (
+                        <InfoWindow
+                            position={{ lat: selectedPlace.lat, lng: selectedPlace.lng }}
+                            onCloseClick={() => setSelectedPlace(null)}
+                        >
+                            <div>
+                                <h3 className="font-bold">{selectedPlace.name}</h3>
+                                <p>{selectedPlace.address}</p>
+                                <a
+                                    href={selectedPlace.placeUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-600 underline"
+                                >
+                                    View on Google Maps
+                                </a>
+                            </div>
+                        </InfoWindow>
+                    )}
                 </GoogleMap>
             )}
         </div>
