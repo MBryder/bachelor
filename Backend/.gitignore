@@ -1,0 +1,57 @@
+# ==============================
+# BACKEND (ASP.NET Core)
+# ==============================
+
+# Build output
+bin/
+obj/
+
+# User-specific files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+logs/
+logs/**
+
+# Dependencies
+packages/
+project.lock.json
+*.nuget.props
+*.nuget.targets
+
+# ASP.NET Core configuration
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Entity Framework Migrations (optional)
+Migrations/
+
+# Rider / JetBrains
+*.sln.iml
+.idea/
+
+# Visual Studio artifacts
+*.vs/
+.vs/
+*.vscode/
+
+# dotnet CLI
+artifacts/
+
+# ==============================
+# RUST (Rust Lib)
+# ==============================
+
+# Cargo build output
+rust_lib/target/
+rust_lib/target/**
+
+# Ignore Cargo.lock only for libraries
+rust_lib/Cargo.lock
