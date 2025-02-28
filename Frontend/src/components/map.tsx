@@ -1,5 +1,7 @@
 import { useLoadScript, GoogleMap, Marker, InfoWindow } from "@react-google-maps/api";
 import { useMemo, useState, useCallback } from "react";
+import { AiOutlineSearch } from "react-icons/ai";
+
 
 interface Place {
     id: string;
@@ -57,8 +59,14 @@ function Map({ setVisiblePlaces }: MapProps) {
         );
     }, [map, setVisiblePlaces]);
 
+    const mapOptions = {
+        mapTypeControl: false,       // Hides 'Kort' and 'Satellit'
+        fullscreenControl: false,    // Hides fullscreen button
+        streetViewControl: false,    // Hides Street View pegman
+    };
+
     return (
-        <div className="w-full h-full rounded-xl overflow-hidden">
+        <div className="w-full h-full">
             {!isLoaded ? (
                 <p>Loading Google Maps...</p>
             ) : (
@@ -66,6 +74,7 @@ function Map({ setVisiblePlaces }: MapProps) {
                     mapContainerStyle={{ width: "100%", height: "100%" }}
                     center={center}
                     zoom={14}
+                    options={mapOptions}
                     onLoad={(mapInstance) => setMap(mapInstance)} 
                     onIdle={fetchPlaces}
                 >
