@@ -1,5 +1,6 @@
 import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 import { useMemo} from "react";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const MAP_API_KEY = import.meta.env.VITE_MAP_KEY; // Replace with your API key
 
@@ -33,7 +34,6 @@ function Map() {
                 <p>Loading Google Maps...</p>
             ) : (
                 <div className="relative w-full h-full">
-                    
                     <GoogleMap
                         mapContainerStyle={{ width: "100%", height: "100%" }}
                         center={center}
@@ -49,12 +49,15 @@ function Map() {
                             />
                         ))}
                     </GoogleMap>
-                    <div className="absolute top-4 left-4 transform w-[300px] max-w-md">
+                    <div className="absolute flex flex-row top-4 left-4 transform w-[300px] max-w-md justify-between bg-background-beige3 rounded-3xl shadow-md">
                         <input
                             type="text"
                             placeholder="Search location..."
-                            className="w-full p-2 px-4 bg-background-beige3 rounded-3xl shadow-md focus:outline-none text-paragraph-1"
+                            className="w-full p-2 px-4 text-paragraph-1"
                         />
+                        
+                            <p className="text-icon self-center px-4"><AiOutlineSearch/></p>
+
                     </div>
                 </div>
 

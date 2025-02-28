@@ -9,10 +9,10 @@ function Test() {
         <div className="bg-background-beige1 h-screen text-text-dark flex-row">
             <Head />
             <div className="flex h-[calc(100%-60px)]">
-                <div className="w-4/8 overflow-y-auto p-4  scrollbar">
-                    <div className="flex flex-wrap ">
+                <div className="w-7/16 overflow-y-auto p-4 scrollbar">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((item) => (
-                        <div key={item} className=" w-1/3 min-w-[200px] flex flex-col p-2 ">
+                        <div key={item} className=" min-w-[150px] flex flex-col p-2 ">
                             <div className="aspect-square w-full flex justify-center items-center">
                                 <img
                                     src={image} 

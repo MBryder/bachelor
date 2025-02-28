@@ -20,12 +20,13 @@
 
   /* Font Sizes */
   --font-size-display-1: 36px;
-  --font-size-heading-1: 16px;
-  --font-size-heading-2: 14px;
-  --font-size-heading-3: 12px;
-  --font-size-heading-4: 10px;
+  --font-size-heading-1: 24px;
+  --font-size-heading-2: 18px;
+  --font-size-heading-3: 14px;
+  --font-size-heading-4: 12px;
   --font-size-paragraph-1: 14px;
   --font-size-paragraph-2: 12px;
+  --font-size-icon: 20px;
   --font-size-button: 18px;
   --font-size-hyperlink: 18px;
 
@@ -42,6 +43,7 @@
   --shadow-custom2: 0px 4px 8px rgba(0, 0, 0, 0.10);
   --shadow-custom3: 0px 2px 4px rgba(0, 0, 0, 0.10);
 }
+
 
 @layer base {
   /* Map custom properties to utility classes */
@@ -76,6 +78,10 @@
   .text-paragraph-2 {
     font-size: var(--font-size-paragraph-2);
     font-weight: var(--font-weight-regular);
+  }
+  .text-icon {
+    font-size: var(--font-size-icon);
+    font-weight: var(--font-weight--regular);
   }
   .text-button {
     font-size: var(--font-size-button);
