@@ -1,6 +1,7 @@
 import Head from "../components/header";
 import MapCreate from "../components/map";
 import image from "../assets/Jens.jpg";
+import CreateMapWithSearch from "../components/mapWithSearch";
 
 
 

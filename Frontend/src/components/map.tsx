@@ -20,7 +20,9 @@ const locations: Poi[] = [
 
 function MapCreate() {
     return (
-        <APIProvider apiKey={'AIzaSyCkruFvWecrOLNYhOSum0WKmHb-3dZcT5M'} onLoad={() => console.log('Maps API has loaded.')}>
+        <APIProvider 
+          apiKey={'AIzaSyCkruFvWecrOLNYhOSum0WKmHb-3dZcT5M'}
+          libraries={["places"]} >
             <Map
                 defaultZoom={13}
                 defaultCenter={{ lat: 55.860664, lng: 12.208138 }}
