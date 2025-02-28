@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Head from "../components/header";
 import Map from "../components/map";
+import image from "../assets/Jens.jpg";
 
 interface Place {
     id: string;
@@ -11,34 +12,25 @@ interface Place {
     placeUrl: string;
 }
 
-function Home() {
+
+function Test() {
     const [visiblePlaces, setVisiblePlaces] = useState<Place[]>([]);
 
     return (
-        <div className="bg-background-beige1 h-screen text-text-dark px-8 flex-row">
+        <div className="bg-background-beige1 h-screen text-text-dark flex-row">
             <Head />
-            <div className="h-[70px] border-b-2 border-primary-brown flex items-center justify-between px-8">
-                <div className="flex items-center space-x-4 h-[50px]">
-                    <button className="border-2 border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl h-full w-[110px]">
-                        <p className=" text-primary-brown text-heading-4 ">Filter</p>
-                    </button>
-                </div>
-            </div>
-            <div className="flex h-[calc(100%-150px)]">
-                <div className="w-2/3 border-r border-gray-300">
-                    <div className="h-full flex justify-center items-center">
-                        <div className="w-full h-full border border-gray-300">
-                            <Map setVisiblePlaces={setVisiblePlaces} />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="w-1/3 overflow-y-auto p-4 h-full scrollbar">
-                    <h2 className="text-lg font-bold mb-2">Visible Locations</h2>
+            <div className="flex h-[calc(100%-60px)]">
+                <div className="w-7/16 overflow-y-auto p-4 scrollbar">
                     {visiblePlaces.length > 0 ? (
-                        <ul>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                             {visiblePlaces.map((place) => (
-                                <li key={place.id} className="mb-4 p-3 bg-gray-100 border border-gray-300 rounded">
+                                <div key={place.id} className=" min-w-[150px] flex flex-col p-2 ">
+                                    <div className="aspect-square w-full flex justify-center items-center">
+                                        <img
+                                            src={image} 
+                                            className="size-full object-cover rounded-2xl" 
+                                        />
+                                    </div>
                                     <h3 className="font-bold">{place.name}</h3>
                                     <p>{place.address}</p>
                                     <a
@@ -49,16 +41,27 @@ function Home() {
                                     >
                                         View on Google Maps
                                     </a>
-                                </li>
+                                </div>
                             ))}
-                        </ul>
+                        </div>
                     ) : (
                         <p>No locations visible.</p>
                     )}
                 </div>
+                
+                <div className="w-auto h-full flex-grow">
+                    <div className="h-full flex justify-center items-center">
+                        <div className="w-full h-full">
+                            <Map setVisiblePlaces={setVisiblePlaces} />
+                        </div>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
-    );
-}
 
-export default Home;
+    );
+};
+
+export default Test;

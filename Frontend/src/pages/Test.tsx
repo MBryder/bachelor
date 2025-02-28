@@ -1,9 +1,19 @@
+import { useState } from "react";
 import Head from "../components/header";
 import Map from "../components/map";
 import image from "../assets/Jens.jpg";
 
+interface Place {
+    id: string;
+    name: string;
+    address: string;
+    lat: number;
+    lng: number;
+    placeUrl: string;
+}
+
 function Test() {
-    
+    const [visiblePlaces, setVisiblePlaces] = useState<Place[]>([]);
 
     return (
         <div className="bg-background-beige1 h-screen text-text-dark flex-row">
@@ -37,7 +47,7 @@ function Test() {
                 <div className="w-auto h-full flex-grow">
                     <div className="h-full flex justify-center items-center">
                         <div className="w-full h-full">
-                            <Map />
+                            <Map setVisiblePlaces={setVisiblePlaces} />
                         </div>
                     </div>
                 </div>

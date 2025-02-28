@@ -70,43 +70,55 @@ function Map({ setVisiblePlaces }: MapProps) {
             {!isLoaded ? (
                 <p>Loading Google Maps...</p>
             ) : (
-                <GoogleMap
-                    mapContainerStyle={{ width: "100%", height: "100%" }}
-                    center={center}
-                    zoom={14}
-                    options={mapOptions}
-                    onLoad={(mapInstance) => setMap(mapInstance)} 
-                    onIdle={fetchPlaces}
-                >
-                    {visiblePlaces.length > 0 &&
-                        visiblePlaces.map((place: Place) => (
-                            <Marker
-                                key={place.id}
-                                position={{ lat: place.lat, lng: place.lng }}
-                                onClick={() => setSelectedPlace(place)}
-                            />
-                        ))}
+                <div className="relative w-full h-full">
+                    <GoogleMap
+                        mapContainerStyle={{ width: "100%", height: "100%" }}
+                        center={center}
+                        zoom={14}
+                        options={mapOptions}
+                        onLoad={(mapInstance) => setMap(mapInstance)} 
+                        onIdle={fetchPlaces}
+                    >
+                        {visiblePlaces.length > 0 &&
+                            visiblePlaces.map((place: Place) => (
+                                <Marker
+                                    key={place.id}
+                                    position={{ lat: place.lat, lng: place.lng }}
+                                    onClick={() => setSelectedPlace(place)}
+                                />
+                            ))}
 
-                    {selectedPlace && (
-                        <InfoWindow
-                            position={{ lat: selectedPlace.lat, lng: selectedPlace.lng }}
-                            onCloseClick={() => setSelectedPlace(null)}
-                        >
-                            <div>
-                                <h3 className="font-bold">{selectedPlace.name}</h3>
-                                <p>{selectedPlace.address}</p>
-                                <a
-                                    href={selectedPlace.placeUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-blue-600 underline"
-                                >
-                                    View on Google Maps
-                                </a>
-                            </div>
-                        </InfoWindow>
-                    )}
-                </GoogleMap>
+                        {selectedPlace && (
+                            <InfoWindow
+                                position={{ lat: selectedPlace.lat, lng: selectedPlace.lng }}
+                                onCloseClick={() => setSelectedPlace(null)}
+                            >
+                                <div>
+                                    <h3 className="font-bold">{selectedPlace.name}</h3>
+                                    <p>{selectedPlace.address}</p>
+                                    <a
+                                        href={selectedPlace.placeUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-blue-600 underline"
+                                    >
+                                        View on Google Maps
+                                    </a>
+                                </div>
+                            </InfoWindow>
+                        )}
+                    </GoogleMap>
+                    <div className="absolute flex flex-row top-4 left-4 transform w-[300px] max-w-md justify-between bg-background-beige3 rounded-3xl shadow-md">
+                        <input
+                            type="text"
+                            placeholder="Search location..."
+                            className="w-full p-2 px-4 text-paragraph-1 focus:outline-0 rounded-3xl"
+                        />
+                        
+                            <p className="text-icon self-center px-4"><AiOutlineSearch/></p>
+
+                    </div>
+                </div>
             )}
         </div>
     );
