@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Head from "../components/header";
 import Map from "../components/map";
-import image from "../assets/Jens.jpg";
 
 interface Place {
     id: string;
@@ -10,8 +9,9 @@ interface Place {
     lat: number;
     lng: number;
     placeUrl: string;
+    type: string;
+    photoUrl?: string;
 }
-
 
 function Test() {
     const [visiblePlaces, setVisiblePlaces] = useState<Place[]>([]);
@@ -24,15 +24,17 @@ function Test() {
                     {visiblePlaces.length > 0 ? (
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                             {visiblePlaces.map((place) => (
-                                <div key={place.id} className=" min-w-[150px] flex flex-col p-2 ">
+                                <div key={place.id} className="min-w-[150px] flex flex-col p-2">
                                     <div className="aspect-square w-full flex justify-center items-center">
                                         <img
-                                            src={image} 
-                                            className="size-full object-cover rounded-2xl" 
+                                            src={place.photoUrl || "https://via.placeholder.com/400"}
+                                            alt={place.name}
+                                            className="size-full object-cover rounded-2xl"
                                         />
                                     </div>
                                     <h3 className="font-bold">{place.name}</h3>
                                     <p>{place.address}</p>
+                                    <p className="italic">{place.type}</p>
                                     <a
                                         href={place.placeUrl}
                                         target="_blank"
@@ -48,7 +50,6 @@ function Test() {
                         <p>No locations visible.</p>
                     )}
                 </div>
-                
                 <div className="w-auto h-full flex-grow">
                     <div className="h-full flex justify-center items-center">
                         <div className="w-full h-full">
@@ -56,11 +57,8 @@ function Test() {
                         </div>
                     </div>
                 </div>
-
-                
             </div>
         </div>
-
     );
 };
 
