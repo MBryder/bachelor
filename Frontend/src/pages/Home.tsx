@@ -14,7 +14,7 @@ interface Place {
 }
 
 function Home() {
-    const [visiblePlaces, setVisiblePlaces] = useState<Place[]>([]);
+    const [visiblePlaces, setVisiblePlaces] = useState<google.maps.places.PlaceResult[]>([]);
 
     return (
         <div className="bg-background-beige1 h-screen text-text-dark flex-row">
@@ -24,19 +24,19 @@ function Home() {
                     {visiblePlaces.length > 0 ? (
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                             {visiblePlaces.map((place) => (
-                                <div key={place.id} className="min-w-[150px] flex flex-col p-2">
+                                <div key={place.place_id} className="min-w-[150px] flex flex-col p-2">
                                     <div className="aspect-square w-full flex justify-center items-center">
                                         <img
-                                            src={place.photoUrl || "https://via.placeholder.com/400"}
+                                            src={place.photos?.[0]?.getUrl()  || "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"}
                                             alt={place.name}
                                             className="size-full aspect-square object-cover rounded-2xl"
                                         />
                                     </div>
                                     <h3 className="font-bold">{place.name}</h3>
-                                    <p>{place.address}</p>
-                                    <p className="italic">{place.type}</p>
+                                    <p>{place.vicinity}</p>
+                                    <p className="italic">{place.types?.[0]}</p>
                                     <a
-                                        href={place.placeUrl}
+                                        href={place.photos?.[0]?.getUrl()}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-blue-600 underline"
@@ -53,7 +53,7 @@ function Home() {
                 <div className="w-auto h-full flex-grow">
                     <div className="h-full flex justify-center items-center">
                         <div className="w-full h-full">
-                            <Map setVisiblePlaces={setVisiblePlaces} />
+                            <Map setVisiblePlaces={setVisiblePlaces} visiblePlaces={visiblePlaces} />
                         </div>
                     </div>
                 </div>
