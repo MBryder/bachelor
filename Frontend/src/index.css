@@ -129,7 +129,24 @@
   }
 
   .scrollbar {
-    scrollbar-width: none;
     scrollbar-color: var(--color-primary-brown) var(--color-background-beige1);
-  }
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Makes scrollbar thinner */
+}
+
+/* For Webkit-based browsers (Chrome, Edge, Safari) */
+.scrollbar::-webkit-scrollbar {
+    width: 8px; /* Adjust width as needed */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: transparent; /* Makes track invisible */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-brown);
+    border-radius: 4px;
+    border: 2px solid transparent; /* Creates a margin effect */
+    background-clip: padding-box;
+}
 }
