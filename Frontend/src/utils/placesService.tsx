@@ -1,16 +1,5 @@
 // src/utils/placesService.ts
 
-interface Place {
-    id: string;
-    name: string;
-    address: string;
-    lat: number;
-    lng: number;
-    placeUrl: string;
-    type: string;
-    photoUrl?: string;
-}
-
 const entertainmentTypes = [
     "amusement_park",
     "aquarium",
@@ -27,7 +16,7 @@ const entertainmentTypes = [
 
 export const fetchPlaces = (
     map: google.maps.Map | null,
-    setVisiblePlaces: (places: Place[]) => void
+    setVisiblePlaces: (places: google.maps.places.PlaceResult[]) => void
 ) => {
     if (!map) return;
 
@@ -56,31 +45,7 @@ export const fetchPlaces = (
             (place, index, self) =>
                 index === self.findIndex((p) => p.place_id === place.place_id)
         );
-        
-        processResults(uniqueResults, setVisiblePlaces);
+
+        setVisiblePlaces(uniqueResults);
     });
-};
-
-const processResults = (
-    results: google.maps.places.PlaceResult[],
-    setVisiblePlaces: (places: Place[]) => void
-) => {
-    if (!results) return;
-
-    const places: Place[] = results.map((place) => ({
-        id: place.place_id || "",
-        name: place.name || "Unknown",
-        address: place.vicinity || "No Address",
-        lat: place.geometry?.location?.lat() ?? 0,
-        lng: place.geometry?.location?.lng() ?? 0,
-        placeUrl: place.place_id
-            ? `https://www.google.com/maps/place/?q=place_id:${place.place_id}`
-            : "#",
-        type: place.types?.[0] || "Unknown",
-        photoUrl:
-            place.photos?.[0]?.getUrl() ||
-            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-    }));
-
-    setVisiblePlaces(places);
 };

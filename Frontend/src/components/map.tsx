@@ -2,19 +2,9 @@ import { useLoadScript, GoogleMap, Marker, InfoWindow } from "@react-google-maps
 import { useMemo, useState, useCallback } from "react";
 import { fetchPlaces } from "../utils/placesService";
 
-interface Place {
-    id: string;
-    name: string;
-    address: string;
-    lat: number;
-    lng: number;
-    placeUrl: string;
-    type: string;
-    photoUrl?: string;
-}
-
 interface MapProps {
-    setVisiblePlaces: (places: Place[]) => void;
+    setVisiblePlaces: (places: google.maps.places.PlaceResult[]) => void;
+    visiblePlaces: google.maps.places.PlaceResult[];
 }
 
 const mapOptions = {
@@ -26,7 +16,7 @@ const mapOptions = {
 const MAP_API_KEY = import.meta.env.VITE_MAP_KEY;
 const libraries: ("places")[] = ["places"];
 
-function Map({ setVisiblePlaces }: MapProps) {
+function Map({ setVisiblePlaces, visiblePlaces }: MapProps) {
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: MAP_API_KEY,
         libraries,
@@ -34,12 +24,10 @@ function Map({ setVisiblePlaces }: MapProps) {
 
     const center = useMemo(() => ({ lat: 55.6632, lng: 12.5939 }), []);
     const [map, setMap] = useState<google.maps.Map | null>(null);
-    const [localVisiblePlaces, setLocalVisiblePlaces] = useState<Place[]>([]);
-    const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
+    const [selectedPlace, setSelectedPlace] = useState<google.maps.places.PlaceResult | null>(null);
 
     const handleFetchPlaces = useCallback(() => {
         fetchPlaces(map, (places) => {
-            setLocalVisiblePlaces(places);
             setVisiblePlaces(places);
         });
     }, [map, setVisiblePlaces]);
@@ -57,31 +45,41 @@ function Map({ setVisiblePlaces }: MapProps) {
                     onLoad={(mapInstance) => setMap(mapInstance)}
                     onIdle={handleFetchPlaces}
                 >
-                    {localVisiblePlaces.length > 0 &&
-                        localVisiblePlaces.map((place) => (
-                            <Marker
-                                key={place.id}
-                                position={{ lat: place.lat, lng: place.lng }}
-                                onClick={() => setSelectedPlace(place)}
-                            />
-                        ))}
+                    {visiblePlaces.length > 0 &&
+                        visiblePlaces.map((place) => (
+                            place.geometry?.location && ( // Ensure location exists before rendering
+                                <Marker
+                                    key={place.place_id} // Use `place_id` instead of `id`
+                                    position={{
+                                        lat: place.geometry.location.lat(),
+                                        lng: place.geometry.location.lng(),
+                                    }}
+                                    onClick={() => setSelectedPlace(place)}
+                                />
+                            )
+                        ))
+                    }
+
 
                     {selectedPlace && (
                         <InfoWindow
-                            position={{ lat: selectedPlace.lat, lng: selectedPlace.lng }}
+                        position={{
+                            lat: selectedPlace.geometry?.location?.lat() || 0,
+                            lng: selectedPlace.geometry?.location?.lng() || 0,
+                        }}   
                             onCloseClick={() => setSelectedPlace(null)}
                         >
                             <div>
                                 <img
-                                    src={selectedPlace.photoUrl}
+                                    src={selectedPlace.photos?.[0]?.getUrl() || "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"}
                                     alt={selectedPlace.name}
                                     className="w-full h-32 object-cover rounded-md"
                                 />
                                 <h3 className="font-bold">{selectedPlace.name}</h3>
-                                <p>{selectedPlace.address}</p>
-                                <p className="italic">{selectedPlace.type}</p>
+                                <p>{selectedPlace.vicinity}</p>
+                                <p className="italic">{selectedPlace.types?.[0]}</p>
                                 <a
-                                    href={selectedPlace.placeUrl}
+                                    href={selectedPlace.photos?.[0]?.getUrl()}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-blue-600 underline"
