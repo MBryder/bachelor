@@ -13,7 +13,7 @@ interface Place {
     photoUrl?: string;
 }
 
-function Test() {
+function Home() {
     const [visiblePlaces, setVisiblePlaces] = useState<Place[]>([]);
 
     return (
@@ -29,7 +29,7 @@ function Test() {
                                         <img
                                             src={place.photoUrl || "https://via.placeholder.com/400"}
                                             alt={place.name}
-                                            className="size-full object-cover rounded-2xl"
+                                            className="size-full aspect-square object-cover rounded-2xl"
                                         />
                                     </div>
                                     <h3 className="font-bold">{place.name}</h3>
@@ -62,4 +62,4 @@ function Test() {
     );
 };
 
-export default Test;
+export default Home;
