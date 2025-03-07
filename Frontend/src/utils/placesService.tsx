@@ -56,7 +56,7 @@ export const fetchPlaces = (
             (place, index, self) =>
                 index === self.findIndex((p) => p.place_id === place.place_id)
         );
-
+        
         processResults(uniqueResults, setVisiblePlaces);
     });
 };

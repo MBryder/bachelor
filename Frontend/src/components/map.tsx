@@ -17,6 +17,12 @@ interface MapProps {
     setVisiblePlaces: (places: Place[]) => void;
 }
 
+const mapOptions = {
+    mapTypeControl: false,       // Hides 'Kort' and 'Satellit'
+    fullscreenControl: false,    // Hides fullscreen button
+    streetViewControl: false,    // Hides Street View pegman
+};
+
 const MAP_API_KEY = import.meta.env.VITE_MAP_KEY;
 const libraries: ("places")[] = ["places"];
 
@@ -47,6 +53,7 @@ function Map({ setVisiblePlaces }: MapProps) {
                     mapContainerStyle={{ width: "100%", height: "100%" }}
                     center={center}
                     zoom={14}
+                    options={mapOptions}
                     onLoad={(mapInstance) => setMap(mapInstance)}
                     onIdle={handleFetchPlaces}
                 >
