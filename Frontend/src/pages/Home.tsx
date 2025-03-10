@@ -2,17 +2,6 @@ import { useState } from "react";
 import Head from "../components/header";
 import Map from "../components/map";
 
-interface Place {
-    id: string;
-    name: string;
-    address: string;
-    lat: number;
-    lng: number;
-    placeUrl: string;
-    type: string;
-    photoUrl?: string;
-}
-
 function Home() {
     const [visiblePlaces, setVisiblePlaces] = useState<google.maps.places.PlaceResult[]>([]);
 
