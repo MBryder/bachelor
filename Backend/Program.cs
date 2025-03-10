@@ -14,6 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddOpenApi();
 
 builder.Services.AddControllers();
+builder.Services.AddSingleton<GoogleMapsService>(_ => new GoogleMapsService());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -31,6 +32,11 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+app.MapGet("/api/distance", async (GoogleMapsService service) =>
+{
+    var result = await service.MakeSimpleApiCall();
+    return Results.Text(result, "application/json");
+});
 
 app.UseCors("AllowReactApp");
 
