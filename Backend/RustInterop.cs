@@ -22,7 +22,18 @@ public static class RustInterop
         }
         throw new PlatformNotSupportedException("Unsupported operating system");
     }
-
+    
+    // Making the add_numbers function available to C# code
     [DllImport("rust_lib", CallingConvention = CallingConvention.Cdecl, EntryPoint = "add_numbers")]
     public static extern int add_numbers(int a, int b);
+
+
+    // Making the multiply_numbers function available to C# code
+    [DllImport("rust_lib", CallingConvention = CallingConvention.Cdecl, EntryPoint = "multiply_numbers")]
+    public static extern int multiply_numbers(int a, int b);
+
+
+    [DllImport("rust_lib", CallingConvention = CallingConvention.Cdecl, EntryPoint = "held_karp_tsp_full")]
+    public static extern int HeldKarpTSPFull(int n, IntPtr distMatrix, IntPtr routeBuffer);
+
 }

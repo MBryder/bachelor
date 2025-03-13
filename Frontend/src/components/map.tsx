@@ -201,11 +201,17 @@ function Map({ setVisiblePlaces, visiblePlaces }: MapProps) {
         setIsDeleteMode(!isDeleteMode);
     };
 
+    function handleSubmit() {
+        // Mock implementation for submit button click handler
+        console.log("Submit button clicked");
+    }
+    
+
     return (
         <div className="flex w-full h-full">
             {/* Toast container */}
             <Toaster />
-
+    
             <div className="w-3/4 h-full rounded-xl overflow-hidden">
                 {!isLoaded ? (
                     <p>Loading Google Maps...</p>
@@ -233,7 +239,7 @@ function Map({ setVisiblePlaces, visiblePlaces }: MapProps) {
                                 )
                             ))
                         }
-
+    
                         {selectedPlace && (
                             <InfoWindow
                                 position={{
@@ -287,7 +293,7 @@ function Map({ setVisiblePlaces, visiblePlaces }: MapProps) {
                         {isDeleteMode ? 'Arrange Mode' : 'Delete Mode'}
                     </button>
                 </div>
-
+    
                 {isDeleteMode ? (
                     // Delete mode
                     <ul>
@@ -323,6 +329,12 @@ function Map({ setVisiblePlaces, visiblePlaces }: MapProps) {
                         </SortableContext>
                     </DndContext>
                 )}
+                <button
+                    onClick={handleSubmit}
+                    className="mt-4 p-2 bg-green-500 text-white rounded w-full"
+                >
+                    Submit
+                </button>
             </div>
         </div>
     );
