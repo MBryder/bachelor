@@ -19,6 +19,7 @@ import {
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import toast, { Toaster } from 'react-hot-toast';
+import { getShortestPath, getDistanceMatrix } from "../services/mapService";
 
 interface MapProps {
     setVisiblePlaces: (places: google.maps.places.PlaceResult[]) => void;
@@ -201,11 +202,36 @@ function Map({ setVisiblePlaces, visiblePlaces }: MapProps) {
         setIsDeleteMode(!isDeleteMode);
     };
 
-    function handleSubmit() {
-        // Mock implementation for submit button click handler
+    const [minCost, setMinCost] = useState<number | null>(null);
+    const [route, setRoute] = useState<number[]>([]);
+
+    // SUBMIT TIL TSP ENDPOINT!
+    const handleSubmit = async () => {
         console.log("Submit button clicked");
-    }
-    
+        console.log(selectedPlacesList);
+        console.log(selectedPlacesList.length);
+
+        const arrayOfGeo = selectedPlacesList.map(place => ({
+            lat: place.geometry?.location?.lat() || 0,
+            lng: place.geometry?.location?.lng() || 0
+        }));
+        console.log(arrayOfGeo);
+
+        try {
+            const distances1 = await getDistanceMatrix(arrayOfGeo);
+
+            const n = selectedPlacesList.length;
+            console.log(distances1);
+            console.log(n);
+
+            const result = await getShortestPath(distances1, n);
+            setRoute(result.route);
+            setMinCost(result.minCost);
+        } catch (error) {
+            console.error("Error fetching shortest path:", error);
+        }
+    };
+
 
     return (
         <div className="flex w-full h-full">
@@ -334,7 +360,14 @@ function Map({ setVisiblePlaces, visiblePlaces }: MapProps) {
                     className="mt-4 p-2 bg-green-500 text-white rounded w-full"
                 >
                     Submit
-                </button>
+                </button>'{minCost !== null ? (
+                <div>
+                    <p>Minimum Cost: {minCost}</p>
+                    <p>Route: {route.join(" → ")}</p>
+                </div>
+            ) : (
+                <p>Click the button to solve TSP.</p>
+            )}'
             </div>
         </div>
     );
