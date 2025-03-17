@@ -50,4 +50,30 @@ export const getDistanceMatrix = async (coordinates: { lat: number; lng: number;
     }
 };
 
+export const handleSubmit = async (selectedPlacesList: google.maps.places.PlaceResult[], setRoute: (route: number[]) => void, setMinCost: (minCost: number) => void) => {
+    console.log("Submit button clicked");
+    console.log(selectedPlacesList);
+    console.log(selectedPlacesList.length);
+
+    const arrayOfGeo = selectedPlacesList.map(place => ({
+        lat: place.geometry?.location?.lat() || 0,
+        lng: place.geometry?.location?.lng() || 0
+    }));
+    console.log(arrayOfGeo);
+
+    try {
+        const distances1 = await getDistanceMatrix(arrayOfGeo);
+
+        const n = selectedPlacesList.length;
+        console.log(distances1);
+        console.log(n);
+
+        const result = await getShortestPath(distances1, n);
+        setRoute(result.route);
+        setMinCost(result.minCost);
+    } catch (error) {
+        console.error("Error fetching shortest path:", error);
+    }
+};
+
 
