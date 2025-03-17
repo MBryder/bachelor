@@ -18,6 +18,8 @@ import {
 import { CSS } from '@dnd-kit/utilities';
 import toast from 'react-hot-toast';
 
+
+
 interface PlacesListProps {
     selectedPlacesList: google.maps.places.PlaceResult[];
     setSelectedPlacesList: (places: google.maps.places.PlaceResult[] | ((prevList: google.maps.places.PlaceResult[]) => google.maps.places.PlaceResult[])) => void;

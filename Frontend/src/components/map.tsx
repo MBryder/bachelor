@@ -7,10 +7,11 @@ import {
     isPlaceInList,
     getDefaultMarkerIcon,
     getSelectedMarkerIcon
-} from "../utils/mapUtiles"
+} from "../utils/mapUtils"
 import { Toaster } from "react-hot-toast";
 import PlacesList from "./placesList";
 import PlaceInfoWindow from "./placeInfoWindow"
+import { handleSubmit } from "../services/mapService";
 
 interface MapProps {
     setVisiblePlaces: (places: google.maps.places.PlaceResult[]) => void;
@@ -30,13 +31,12 @@ function Map({ setVisiblePlaces, visiblePlaces }: MapProps) {
     const [map, setMap] = useState<google.maps.Map | null>(null);
     const [selectedPlace, setSelectedPlace] = useState<google.maps.places.PlaceResult | null>(null);
     const [selectedPlacesList, setSelectedPlacesList] = useState<google.maps.places.PlaceResult[]>([]);
-
     const defaultMarkerIcon = getDefaultMarkerIcon(isLoaded);
     const selectedMarkerIcon = getSelectedMarkerIcon(isLoaded);
 
-    const handleSubmit = () => {
-        console.log("Submit button clicked", selectedPlacesList);
-    };
+    const [minCost, setMinCost] = useState<number | null>(null);
+    const [route, setRoute] = useState<number[]>([]);
+
 
     return (
         <div className="flex w-full h-full">
@@ -88,13 +88,20 @@ function Map({ setVisiblePlaces, visiblePlaces }: MapProps) {
             <PlacesList selectedPlacesList={selectedPlacesList} setSelectedPlacesList={setSelectedPlacesList} />
 
             <button
-                onClick={handleSubmit}
-                className="absolute bottom-4 right-4 px-6 py-3 bg-green-500 text-white font-bold rounded shadow-lg"
+                onClick={async () => await handleSubmit(selectedPlacesList, setRoute, setMinCost)}
+                className="mt-4 p-2 bg-green-500 text-white rounded w-full"
             >
                 Submit
-            </button>
+            </button>'{minCost !== null ? (
+                <div>
+                    <p>Minimum Cost: {minCost}</p>
+                    <p>Route: {route.join(" → ")}</p>
+                </div>
+            ) : (
+                <p>Click the button to solve TSP.</p>
+            )}'
         </div>
     );
 }
 
-export default Map;
+    export default Map;
