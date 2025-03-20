@@ -3,7 +3,7 @@ import Head from "../components/header";
 import Map from "../components/map";
 
 function Home() {
-    const [visiblePlaces, setVisiblePlaces] = useState<google.maps.places.PlaceResult[]>([]);
+    const [visiblePlaces, setVisiblePlaces] = useState<any[]>([]);
 
     return (
         <div className="bg-background-beige1 h-screen text-text-dark flex-row">
@@ -13,25 +13,16 @@ function Home() {
                     {visiblePlaces.length > 0 ? (
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                             {visiblePlaces.map((place) => (
-                                <div key={place.place_id} className="min-w-[150px] flex flex-col p-2">
+                                <div key={place.properties.id} className="min-w-[150px] flex flex-col p-2">
                                     <div className="aspect-square w-full flex justify-center items-center">
                                         <img
-                                            src={place.photos?.[0]?.getUrl()  || "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"}
-                                            alt={place.name}
+                                            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+                                            alt={place.properties.name}
                                             className="size-full aspect-square object-cover rounded-2xl"
                                         />
                                     </div>
-                                    <h3 className="font-bold">{place.name}</h3>
-                                    <p>{place.vicinity}</p>
-                                    <p className="italic">{place.types?.[0]}</p>
-                                    <a
-                                        href={place.photos?.[0]?.getUrl()}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-blue-600 underline"
-                                    >
-                                        View on Google Maps
-                                    </a>
+                                    <h3 className="font-bold">{place.properties.name || "Unknown"}</h3>
+                                    <p>{place.properties.address || "Unknown"}</p>
                                 </div>
                             ))}
                         </div>
@@ -42,13 +33,13 @@ function Home() {
                 <div className="w-auto h-full flex-grow">
                     <div className="h-full flex justify-center items-center">
                         <div className="w-full h-full">
-                            <Map />
+                            <Map setVisiblePlaces={setVisiblePlaces} visiblePlaces={visiblePlaces} />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     );
-};
+}
 
 export default Home;
