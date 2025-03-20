@@ -1,5 +1,5 @@
-import { useLoadScript, GoogleMap, Marker} from "@react-google-maps/api";
-import { useMemo, useState} from "react";
+import { useLoadScript, GoogleMap, Marker, Polyline } from "@react-google-maps/api";
+import { useMemo, useState } from "react";
 import { fetchPlaces } from "../utils/placesService";
 import {
     handleFetchPlaces,
@@ -7,10 +7,10 @@ import {
     isPlaceInList,
     getDefaultMarkerIcon,
     getSelectedMarkerIcon
-} from "../utils/mapUtils"
+} from "../utils/mapUtils";
 import { Toaster } from "react-hot-toast";
 import PlacesList from "./placesList";
-import PlaceInfoWindow from "./placeInfoWindow"
+import PlaceInfoWindow from "./placeInfoWindow";
 import { handleSubmit } from "../services/mapService";
 
 interface MapProps {
@@ -36,7 +36,7 @@ function Map({ setVisiblePlaces, visiblePlaces }: MapProps) {
 
     const [minCost, setMinCost] = useState<number | null>(null);
     const [route, setRoute] = useState<number[]>([]);
-
+    const [routeCoordinates, setRouteCoordinates] = useState<google.maps.LatLngLiteral[]>([]);
 
     return (
         <div className="flex w-full h-full">
@@ -73,35 +73,39 @@ function Map({ setVisiblePlaces, visiblePlaces }: MapProps) {
                                 ) : null
                             )}
 
-                        {/* Use the new PlaceInfoWindow component */}
                         <PlaceInfoWindow
                             selectedPlace={selectedPlace}
                             setSelectedPlace={setSelectedPlace}
                             isPlaceInList={(place) => isPlaceInList(place, selectedPlacesList)}
                             handleAddPlace={(place) => handleAddPlace(place, selectedPlacesList, setSelectedPlacesList)}
                         />
+
+                        {routeCoordinates.length > 1 && (
+                            <Polyline path={routeCoordinates} options={{ strokeColor: "#FF0000", strokeOpacity: 1.0, strokeWeight: 3 }} />
+                        )}
                     </GoogleMap>
                 )}
             </div>
 
-            {/* Using the refactored PlacesList component */}
             <PlacesList selectedPlacesList={selectedPlacesList} setSelectedPlacesList={setSelectedPlacesList} />
 
             <button
-                onClick={async () => await handleSubmit(selectedPlacesList, setRoute, setMinCost)}
+                onClick={async () => await handleSubmit(selectedPlacesList, setRoute, setMinCost, setRouteCoordinates, map)}
                 className="mt-4 p-2 bg-green-500 text-white rounded w-full"
             >
                 Submit
-            </button>'{minCost !== null ? (
+            </button>
+
+            {minCost !== null ? (
                 <div>
                     <p>Minimum Cost: {minCost}</p>
                     <p>Route: {route.join(" → ")}</p>
                 </div>
             ) : (
                 <p>Click the button to solve TSP.</p>
-            )}'
+            )}
         </div>
     );
 }
 
-    export default Map;
+export default Map;
