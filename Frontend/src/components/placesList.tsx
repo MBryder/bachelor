@@ -26,8 +26,8 @@ interface PlacesListProps {
 function PlaceItem({ place, index, handleDeletePlace }: {
     place: google.maps.places.PlaceResult,
     index: number,
-    handleDeletePlace: (index: number) => void
-}) {
+    handleDeletePlace: (index: number) => void}) 
+    {
     return (
         <li
             className="mb-2 p-2 bg-white rounded-md shadow flex justify-between items-center"
@@ -42,10 +42,11 @@ function PlaceItem({ place, index, handleDeletePlace }: {
     );
 }
 
-function SortableItem({ place, index }: {
+function SortableItem({ place, index, handleDeletePlace }: {
     place: google.maps.places.PlaceResult,
-    index: number
-}) {
+    index: number,
+    handleDeletePlace: (index: number) => void})
+    {
     const id = place.place_id || `place-${index}`;
     const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id });
 
@@ -66,7 +67,11 @@ function SortableItem({ place, index }: {
                 <h3 className="font-bold">{place.name}</h3>
                 <p>{place.vicinity}</p>
             </div>
-            <div className="text-gray-500">Drag to reorder</div>
+            <div className="text-gray-500">
+                <div className=" bg-yellow-300 w-6 h-6" onClick={() => handleDeletePlace(index)}>🗑️
+                </div>
+                Drag to reorder
+                </div>
         </li>
     );
 }
@@ -135,7 +140,7 @@ export default function PlacesList({ selectedPlacesList, setSelectedPlacesList }
                     >
                         <ul>
                             {selectedPlacesList.map((place, index) => (
-                                <SortableItem key={place.place_id || index} place={place} index={index} />
+                                <SortableItem key={place.place_id || index} place={place} index={index} handleDeletePlace={handleDeletePlace}/>
                             ))}
                         </ul>
                     </SortableContext>

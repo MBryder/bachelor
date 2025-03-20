@@ -42,7 +42,7 @@ function Home() {
                 <div className="w-auto h-full flex-grow">
                     <div className="h-full flex justify-center items-center">
                         <div className="w-full h-full">
-                            <Map setVisiblePlaces={setVisiblePlaces} visiblePlaces={visiblePlaces} />
+                            <Map />
                         </div>
                     </div>
                 </div>
