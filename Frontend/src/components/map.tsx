@@ -192,7 +192,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                 <div className="flex space-x-4">
                     <div className="flex flex-col items-center">
                         <button
-                            onClick={async () => await handleSubmit(selectedPlacesList, setRoute, setMinCost, setRouteCoordinates, mapRef.current)}
+                            onClick={async () => await handleSubmit(selectedPlacesList, setRoute, setMinCost, setRouteCoordinates)}
                             className="px-5 py-2 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg shadow-lg transition"
                         >
                             Submit

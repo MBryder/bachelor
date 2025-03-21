@@ -77,20 +77,19 @@ const getOSMRoadsPath = async (coordinates: google.maps.LatLngLiteral[]) => {
 };
 
 export const handleSubmit = async (
-    selectedPlacesList: google.maps.places.PlaceResult[],
+    selectedPlacesList: any[],
     setRoute: (route: number[]) => void,
     setMinCost: (minCost: number) => void,
-    setRouteCoordinates: (coordinates: google.maps.LatLngLiteral[]) => void,
-    map: google.maps.Map | null
+    setRouteCoordinates: (coordinates: any[]) => void,
 ) => {
     console.log("Submit button clicked");
     console.log(selectedPlacesList);
 
-    if (selectedPlacesList.length < 2 || !map) return;
+    if (selectedPlacesList.length < 2) return;
 
     const arrayOfGeo = selectedPlacesList.map(place => ({
-        lat: place.geometry?.location?.lat() || 0,
-        lng: place.geometry?.location?.lng() || 0
+        lat: place.geometry?.coordinates[0] || 0,
+        lng: place.geometry?.coordinates[1] || 0
     }));
 
     try {
