@@ -3,6 +3,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { useState, useEffect, useRef } from "react";
 import { Toaster, toast } from "react-hot-toast";
 import PlacesList from "./placesList";
+import { handleSubmit } from "../services/mapService";
 import PopupMarker from "./popUpMarker";
 
 function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
@@ -10,6 +11,9 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [geoJsonData, setGeoJsonData] = useState<any>(null);
     const [routeGeoJson, setRouteGeoJson] = useState<any>(null); // New: Store route data
     const mapRef = useRef<any>(null);
+    const [minCost, setMinCost] = useState<number | null>(null);
+    const [route, setRoute] = useState<number[]>([]);
+    const [routeCoordinates, setRouteCoordinates] = useState<google.maps.LatLngLiteral[]>([]);
 
     useEffect(() => {
         if (!mapRef.current) return;
@@ -97,9 +101,9 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     };
 
     return (
-        <div className="flex w-full h-full">
+        <div className="flex w-full h-full relative">
             <Toaster />
-
+    
             <div className="w-3/4 h-full rounded-xl overflow-hidden relative">
                 <Map
                     ref={mapRef}
@@ -118,7 +122,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         image="https://source.unsplash.com/200x150/?landscape"
                         description="This is the initial position"
                     />
-
+    
                     {/* Add markers for each place */}
                     {selectedPlacesList.map((place) => (
                         <Marker key={place.id} longitude={place.lng} latitude={place.lat}>
@@ -127,7 +131,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             </div>
                         </Marker>
                     ))}
-
+    
                     {/* Add GeoJSON markers */}
                     {geoJsonData && (
                         <Source id="places" type="geojson" data={geoJsonData}>
@@ -143,7 +147,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             />
                         </Source>
                     )}
-
+    
                     {/* Draw the route line */}
                     {routeGeoJson && (
                         <Source id="route" type="geojson" data={routeGeoJson}>
@@ -160,17 +164,42 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     )}
                 </Map>
             </div>
-
+    
             <PlacesList selectedPlacesList={selectedPlacesList} setSelectedPlacesList={setSelectedPlacesList} />
-
-            <button
-                onClick={fetchPlaces}
-                className="absolute bottom-4 right-4 px-6 py-3 bg-green-500 text-white font-bold rounded shadow-lg"
-            >
-                Fetch Places
-            </button>
+            <div className="absolute top-4 right-4 flex-col">
+                {/* Buttons Container: Submit + Fetch */}
+                <div className="flex space-x-4">
+                    <div className="flex flex-col items-center">
+                        <button
+                            onClick={async () => await handleSubmit(selectedPlacesList, setRoute, setMinCost, setRouteCoordinates, mapRef.current)}
+                            className="px-5 py-2 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg shadow-lg transition"
+                        >
+                            Submit
+                        </button>
+                        {minCost === null && (
+                            <p className="mt-2 text-sm text-gray-500">Click the button to solve TSP.</p>
+                        )}
+                    </div>
+        
+                    <button
+                        onClick={fetchPlaces}
+                        className="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg shadow-lg transition"
+                    >
+                        Fetch Places
+                    </button>
+                </div>
+        
+                {/* Display Min Cost and Route */}
+                {minCost !== null && (
+                    <div className="bg-white p-4 rounded-lg shadow-lg">
+                        <p className="font-semibold text-gray-700">Minimum Cost: {minCost}</p>
+                        <p className="text-gray-600">Route: {route.join(" → ")}</p>
+                    </div>
+                )}
+            </div>
         </div>
     );
+    
 }
 
 export default MapComponent;
