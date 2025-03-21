@@ -22,7 +22,7 @@ function Home() {
                                         />
                                     </div>
                                     <h3 className="font-bold">{place.properties.name || "Unknown"}</h3>
-                                    <p>{place.properties.address || "Unknown"}</p>
+                                    <p>{place.properties.amenity || "Unknown"}</p>
                                 </div>
                             ))}
                         </div>

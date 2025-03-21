@@ -71,6 +71,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
             };
 
             setGeoJsonData(geoJson);
+            console.log("Fetched places:", geoJson.features);
             setVisiblePlaces(geoJson.features);
 
             // Extract places into a route
@@ -145,7 +146,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     )}
 
                     {/* Draw the route line */}
-                    {routeGeoJson && (
+                    {/*{routeGeoJson && (
                         <Source id="route" type="geojson" data={routeGeoJson}>
                             <Layer
                                 id="route-layer"
@@ -157,7 +158,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                                 }}
                             />
                         </Source>
-                    )}
+                    )}*/}
                 </Map>
             </div>
 
