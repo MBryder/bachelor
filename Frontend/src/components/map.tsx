@@ -141,7 +141,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     
                     {/* Add GeoJSON markers */}
 
-                    {visiblePlaces.map((place: any) => (
+                    {visiblePlaces?.map((place: any) => (
                         <PopupMarker
                             key={place.properties.id}
                             longitude={place.geometry.coordinates[0]}
