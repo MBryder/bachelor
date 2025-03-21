@@ -7,9 +7,11 @@ interface PopupMarkerProps {
     title: string;
     image?: string; // Optional image URL
     description?: string; // Optional description
+    setSelectedPlacesList?: any;
+    place?: any;
 }
 
-const PopupMarker = ({ longitude, latitude, title, image, description }: PopupMarkerProps) => {
+const PopupMarker = ({ longitude, latitude, title, image, description, setSelectedPlacesList, place }: PopupMarkerProps) => {
     const [showPopup, setShowPopup] = useState(false);
 
     return (
@@ -56,6 +58,13 @@ const PopupMarker = ({ longitude, latitude, title, image, description }: PopupMa
                             onClick={() => setShowPopup(false)}
                         >
                             Close
+                        </button>
+                        
+                        <button
+                            className="mt-2 px-3 py-1 text-xs text-white bg-green-500 rounded"
+                            onClick={() => setSelectedPlacesList((prevList: any[]) => [...prevList, place])}
+                        >
+                            add to list
                         </button>
                     </div>
                 </Popup>

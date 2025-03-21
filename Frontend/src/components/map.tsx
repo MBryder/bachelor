@@ -75,6 +75,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
             };
 
             setGeoJsonData(geoJson);
+            console.log("Fetched places:", geoJson.features);
             setVisiblePlaces(geoJson.features);
 
             // Extract places into a route
@@ -121,18 +122,38 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         title="Initial Position"
                         image="https://source.unsplash.com/200x150/?landscape"
                         description="This is the initial position"
+                        setSelectedPlacesList={setSelectedPlacesList}
                     />
     
                     {/* Add markers for each place */}
                     {selectedPlacesList.map((place) => (
-                        <Marker key={place.id} longitude={place.lng} latitude={place.lat}>
-                            <div className="bg-red-600 text-white px-2 py-1 rounded shadow-lg text-sm">
-                                {place.name}
-                            </div>
-                        </Marker>
+                        <PopupMarker
+                            key={place.properties.id}
+                            longitude={place.geometry.coordinates[0]}
+                            latitude={place.geometry.coordinates[1]}
+                            title={place.properties.name}
+                            image="https://source.unsplash.com/200x150/?landscape"
+                            description="This is the initial position"
+                            setSelectedPlacesList={setSelectedPlacesList}
+                            place={place}
+                        />
                     ))}
     
                     {/* Add GeoJSON markers */}
+
+                    {visiblePlaces.map((place: any) => (
+                        <PopupMarker
+                            key={place.properties.id}
+                            longitude={place.geometry.coordinates[0]}
+                            latitude={place.geometry.coordinates[1]}
+                            title={place.properties.name}
+                            image="https://source.unsplash.com/200x150/?landscape"
+                            description="This is the initial position"
+                            setSelectedPlacesList={setSelectedPlacesList}
+                            place={place}
+                        />
+                    ))}
+
                     {geoJsonData && (
                         <Source id="places" type="geojson" data={geoJsonData}>
                             <Layer
