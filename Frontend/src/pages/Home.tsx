@@ -1,38 +1,55 @@
+
 import { useState } from "react";
 import Head from "../components/header";
-import MapComponent from "../components/map";
+import Map from "../components/map";
 
 function Home() {
-    const [visiblePlaces, setVisiblePlaces] = useState<any[]>([]);
+    const [visiblePlaces, setVisiblePlaces] = useState<google.maps.places.PlaceResult[]>([]);
 
     return (
-        <div className="bg-background-beige1 h-screen text-text-dark flex flex-col">
+        <div className="bg-background-beige1 h-screen text-text-dark flex-row">
             <Head />
             <div className="flex h-[calc(100%-60px)]">
-                {/* Left Side: Places List */}
-                <div className="w-1/3 overflow-y-auto p-4 scrollbar bg-white shadow-lg rounded-r-lg">
-                    <h2 className="text-lg font-bold mb-4">Visible Places</h2>
+                <div className="w-7/16 overflow-y-auto p-4 scrollbar">
                     {visiblePlaces.length > 0 ? (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                             {visiblePlaces.map((place) => (
-                                <div key={place.properties.id} className="p-3 bg-gray-100 rounded-lg shadow-sm">
-                                    <h3 className="font-semibold">{place.properties.name || "Unknown"}</h3>
-                                    <p className="text-sm text-gray-600">{place.properties.address || "Unknown"}</p>
+                                <div key={place.place_id} className="min-w-[150px] flex flex-col p-2">
+                                    <div className="aspect-square w-full flex justify-center items-center">
+                                        <img
+                                            src={place.photos?.[0]?.getUrl()  || "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"}
+                                            alt={place.name}
+                                            className="size-full aspect-square object-cover rounded-2xl"
+                                        />
+                                    </div>
+                                    <h3 className="font-bold">{place.name}</h3>
+                                    <p>{place.vicinity}</p>
+                                    <p className="italic">{place.types?.[0]}</p>
+                                    <a
+                                        href={place.photos?.[0]?.getUrl()}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-blue-600 underline"
+                                    >
+                                        View on Google Maps
+                                    </a>
                                 </div>
                             ))}
                         </div>
                     ) : (
-                        <p className="text-gray-500">No locations visible.</p>
+                        <p>No locations visible.</p>
                     )}
                 </div>
-
-                {/* Right Side: Map */}
-                <div className="flex-grow">
-                    <MapComponent setVisiblePlaces={setVisiblePlaces} visiblePlaces={visiblePlaces} />
+                <div className="w-auto h-full flex-grow">
+                    <div className="h-full flex justify-center items-center">
+                        <div className="w-full h-full">
+                            <Map />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     );
-}
+};
 
 export default Home;
