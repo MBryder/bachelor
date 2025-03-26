@@ -14,6 +14,31 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [minCost, setMinCost] = useState<number | null>(null);
     const [route, setRoute] = useState<number[]>([]);
     const [routeCoordinates, setRouteCoordinates] = useState<google.maps.LatLngLiteral[]>([]);
+    const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
+
+    // Get current GPS location
+    useEffect(() => {
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const { latitude, longitude } = position.coords;
+                    setUserLocation({ lat: latitude, lng: longitude });
+                    toast.success("Current location found!");
+                },
+                (error) => {
+                    toast.error("Unable to retrieve location.");
+                    console.error("Geolocation error:", error);
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 5000,
+                    maximumAge: 0,
+                }
+            );
+        } else {
+            toast.error("Geolocation not supported in this browser.");
+        }
+    }, []);
 
     useEffect(() => {
         if (!mapRef.current) return;
@@ -43,8 +68,6 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
         const query = `
             [out:json];
             (
-                node["amenity"](${_sw.lat},${_sw.lng},${_ne.lat},${_ne.lng});
-                node["leisure"](${_sw.lat},${_sw.lng},${_ne.lat},${_ne.lng});
                 node["tourism"](${_sw.lat},${_sw.lng},${_ne.lat},${_ne.lng});
             );
             out;
@@ -75,10 +98,8 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
             };
 
             setGeoJsonData(geoJson);
-            console.log("Fetched places:", geoJson.features);
             setVisiblePlaces(geoJson.features);
 
-            // build a default route from fetched places
             const routeGeoJSON = {
                 type: "FeatureCollection",
                 features: [
@@ -125,6 +146,13 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         setSelectedPlacesList={setSelectedPlacesList}
                     />
 
+                    {/* User GPS marker */}
+                    {userLocation && (
+                        <Marker longitude={userLocation.lng} latitude={userLocation.lat}>
+                            <div className="bg-blue-600 rounded-full w-4 h-4 border-2 border-white shadow-md" title="You are here" />
+                        </Marker>
+                    )}
+
                     {/* Markers for selected places */}
                     {selectedPlacesList.map((place) => (
                         <PopupMarker
@@ -153,7 +181,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         />
                     ))}
 
-                    {/* Circles on place locations */}
+                    {/* Circle layer */}
                     {geoJsonData && (
                         <Source id="places" type="geojson" data={geoJsonData}>
                             <Layer
@@ -169,25 +197,26 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         </Source>
                     )}
 
+                    {/* Snapped route path */}
                     {routeCoordinates.length > 1 && (
                         <Source
-                            id="snapped-route-display"
+                            id="snapped-route"
                             type="geojson"
                             data={{
                                 type: "Feature",
                                 geometry: {
                                     type: "LineString",
-                                    coordinates: routeCoordinates.map(coord => [coord.lng, coord.lat]), 
+                                    coordinates: routeCoordinates.map(coord => [coord.lng, coord.lat]),
                                 },
                                 properties: {},
                             }}
                         >
                             <Layer
-                                id="snapped-route-display-layer"
+                                id="snapped-route-layer"
                                 type="line"
                                 paint={{
-                                    "line-color": "#007AFF", // blue color
-                                    "line-width": 4,
+                                    "line-color": "#4CAF50",
+                                    "line-width": 5,
                                     "line-opacity": 0.9,
                                 }}
                             />
