@@ -9,7 +9,7 @@ import PopupMarker from "./popUpMarker";
 function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [selectedPlacesList, setSelectedPlacesList] = useState<any[]>([]);
     const [geoJsonData, setGeoJsonData] = useState<any>(null);
-    const [routeGeoJson, setRouteGeoJson] = useState<any>(null); // New: Store route data
+    const [routeGeoJson, setRouteGeoJson] = useState<any>(null);
     const mapRef = useRef<any>(null);
     const [minCost, setMinCost] = useState<number | null>(null);
     const [route, setRoute] = useState<number[]>([]);
@@ -78,7 +78,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
             console.log("Fetched places:", geoJson.features);
             setVisiblePlaces(geoJson.features);
 
-            // Extract places into a route
+            // build a default route from fetched places
             const routeGeoJSON = {
                 type: "FeatureCollection",
                 features: [
@@ -104,7 +104,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     return (
         <div className="flex w-full h-full relative">
             <Toaster />
-    
+
             <div className="w-3/4 h-full rounded-xl overflow-hidden relative">
                 <Map
                     ref={mapRef}
@@ -115,7 +115,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     }}
                     mapStyle="https://tiles.openfreemap.org/styles/bright"
                 >
-                    {/* Test marker at initialViewState */}
+                    {/* Static marker */}
                     <PopupMarker
                         longitude={12.5939}
                         latitude={55.6632}
@@ -124,8 +124,8 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         description="This is the initial position"
                         setSelectedPlacesList={setSelectedPlacesList}
                     />
-    
-                    {/* Add markers for each place */}
+
+                    {/* Markers for selected places */}
                     {selectedPlacesList.map((place) => (
                         <PopupMarker
                             key={place.properties.id}
@@ -138,9 +138,8 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             place={place}
                         />
                     ))}
-    
-                    {/* Add GeoJSON markers */}
 
+                    {/* Markers for visible places */}
                     {visiblePlaces?.map((place: any) => (
                         <PopupMarker
                             key={place.properties.id}
@@ -154,6 +153,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         />
                     ))}
 
+                    {/* Circles on place locations */}
                     {geoJsonData && (
                         <Source id="places" type="geojson" data={geoJsonData}>
                             <Layer
@@ -168,31 +168,50 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             />
                         </Source>
                     )}
-    
-                    {/* Draw the route line */}
-                    {routeGeoJson && (
-                        <Source id="route" type="geojson" data={routeGeoJson}>
-                            <Layer
-                                id="route-layer"
-                                type="line"
-                                paint={{
-                                    "line-color": "#1E90FF", // Blue line
-                                    "line-width": 4,
-                                    "line-opacity": 0.8,
+
+                        {routeCoordinates.length > 1 && (
+                            <Source
+                                id="snapped-route"
+                                type="geojson"
+                                data={{
+                                    type: "Feature",
+                                    geometry: {
+                                        type: "LineString",
+                                        coordinates: routeCoordinates.map((coord) => [coord.lat, coord.lng]),
+                                    },
+                                    properties: {},
                                 }}
-                            />
-                        </Source>
-                    )}
+                            >
+                                <Layer
+                                    id="snapped-route-layer"
+                                    type="line"
+                                    paint={{
+                                        "line-color": "#4CAF50", // green path
+                                        "line-width": 5,
+                                        "line-opacity": 0.9,
+                                    }}
+                                />
+                            </Source>
+                        )}
+
                 </Map>
             </div>
-    
+
             <PlacesList selectedPlacesList={selectedPlacesList} setSelectedPlacesList={setSelectedPlacesList} />
+
             <div className="absolute top-4 right-4 flex-col">
-                {/* Buttons Container: Submit + Fetch */}
+                {/* Buttons */}
                 <div className="flex space-x-4">
                     <div className="flex flex-col items-center">
                         <button
-                            onClick={async () => await handleSubmit(selectedPlacesList, setRoute, setMinCost, setRouteCoordinates)}
+                            onClick={async () =>
+                                await handleSubmit(
+                                    selectedPlacesList,
+                                    setRoute,
+                                    setMinCost,
+                                    setRouteCoordinates
+                                )
+                            }
                             className="px-5 py-2 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg shadow-lg transition"
                         >
                             Submit
@@ -201,7 +220,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             <p className="mt-2 text-sm text-gray-500">Click the button to solve TSP.</p>
                         )}
                     </div>
-        
+
                     <button
                         onClick={fetchPlaces}
                         className="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg shadow-lg transition"
@@ -209,10 +228,10 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         Fetch Places
                     </button>
                 </div>
-        
-                {/* Display Min Cost and Route */}
+
+                {/* Min Cost and Route Info */}
                 {minCost !== null && (
-                    <div className="bg-white p-4 rounded-lg shadow-lg">
+                    <div className="bg-white p-4 mt-4 rounded-lg shadow-lg">
                         <p className="font-semibold text-gray-700">Minimum Cost: {minCost}</p>
                         <p className="text-gray-600">Route: {route.join(" → ")}</p>
                     </div>
@@ -220,7 +239,6 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
             </div>
         </div>
     );
-    
 }
 
 export default MapComponent;

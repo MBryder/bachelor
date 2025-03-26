@@ -63,7 +63,7 @@ const PopupMarker = ({ longitude, latitude, title, image, description, setSelect
                         <button
                             className="mt-2 px-3 py-1 text-xs text-white bg-green-500 rounded"
                             onClick={() => setSelectedPlacesList((prevList: any[]) => [...prevList, place])}
-                        >
+                        >   
                             add to list
                         </button>
                     </div>
