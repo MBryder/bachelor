@@ -169,31 +169,30 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         </Source>
                     )}
 
-                        {routeCoordinates.length > 1 && (
-                            <Source
-                                id="snapped-route"
-                                type="geojson"
-                                data={{
-                                    type: "Feature",
-                                    geometry: {
-                                        type: "LineString",
-                                        coordinates: routeCoordinates.map((coord) => [coord.lat, coord.lng]),
-                                    },
-                                    properties: {},
+                    {routeCoordinates.length > 1 && (
+                        <Source
+                            id="snapped-route-display"
+                            type="geojson"
+                            data={{
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: routeCoordinates.map(coord => [coord.lng, coord.lat]), 
+                                },
+                                properties: {},
+                            }}
+                        >
+                            <Layer
+                                id="snapped-route-display-layer"
+                                type="line"
+                                paint={{
+                                    "line-color": "#007AFF", // blue color
+                                    "line-width": 4,
+                                    "line-opacity": 0.9,
                                 }}
-                            >
-                                <Layer
-                                    id="snapped-route-layer"
-                                    type="line"
-                                    paint={{
-                                        "line-color": "#4CAF50", // green path
-                                        "line-width": 5,
-                                        "line-opacity": 0.9,
-                                    }}
-                                />
-                            </Source>
-                        )}
-
+                            />
+                        </Source>
+                    )}
                 </Map>
             </div>
 
