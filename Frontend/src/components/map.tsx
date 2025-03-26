@@ -105,7 +105,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
         <div className="flex w-full h-full relative">
             <Toaster />
 
-            <div className="w-3/4 h-full rounded-xl overflow-hidden relative">
+            <div className="w-full h-full overflow-hidden relative">
                 <Map
                     ref={mapRef}
                     initialViewState={{
@@ -196,46 +196,6 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                 </Map>
             </div>
 
-            <PlacesList selectedPlacesList={selectedPlacesList} setSelectedPlacesList={setSelectedPlacesList} />
-
-            <div className="absolute top-4 right-4 flex-col">
-                {/* Buttons */}
-                <div className="flex space-x-4">
-                    <div className="flex flex-col items-center">
-                        <button
-                            onClick={async () =>
-                                await handleSubmit(
-                                    selectedPlacesList,
-                                    setRoute,
-                                    setMinCost,
-                                    setRouteCoordinates
-                                )
-                            }
-                            className="px-5 py-2 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg shadow-lg transition"
-                        >
-                            Submit
-                        </button>
-                        {minCost === null && (
-                            <p className="mt-2 text-sm text-gray-500">Click the button to solve TSP.</p>
-                        )}
-                    </div>
-
-                    <button
-                        onClick={fetchPlaces}
-                        className="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg shadow-lg transition"
-                    >
-                        Fetch Places
-                    </button>
-                </div>
-
-                {/* Min Cost and Route Info */}
-                {minCost !== null && (
-                    <div className="bg-white p-4 mt-4 rounded-lg shadow-lg">
-                        <p className="font-semibold text-gray-700">Minimum Cost: {minCost}</p>
-                        <p className="text-gray-600">Route: {route.join(" → ")}</p>
-                    </div>
-                )}
-            </div>
         </div>
     );
 }
