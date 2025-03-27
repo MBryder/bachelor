@@ -17,7 +17,7 @@ const PopupMarker = ({ longitude, latitude, title, image, description, setSelect
     return (
         <>
             {/* Emoji Marker */}
-            <Marker longitude={longitude} latitude={latitude}>
+            <Marker longitude={longitude} latitude={latitude} onClick={() => setShowPopup(true)}>
                 <div
                     className="relative cursor-pointer text-4xl" // Larger emoji
                     onClick={() => setShowPopup(true)}

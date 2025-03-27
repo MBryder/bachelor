@@ -5,6 +5,7 @@ import { Toaster, toast } from "react-hot-toast";
 import PlacesList from "./placesList";
 import { handleSubmit } from "../services/mapService";
 import PopupMarker from "./popUpMarker";
+import Sidebar from "./sidebar";
 
 function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [selectedPlacesList, setSelectedPlacesList] = useState<any[]>([]);
@@ -126,7 +127,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
         <div className="flex w-full h-full relative">
             <Toaster />
 
-            <div className="w-3/4 h-full rounded-xl overflow-hidden relative">
+            <div className="w-full h-full rounded-xl overflow-hidden relative">
                 <Map
                     ref={mapRef}
                     initialViewState={{
@@ -136,15 +137,8 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     }}
                     mapStyle="https://tiles.openfreemap.org/styles/bright"
                 >
-                    {/* Static marker */}
-                    <PopupMarker
-                        longitude={12.5939}
-                        latitude={55.6632}
-                        title="Initial Position"
-                        image="https://source.unsplash.com/200x150/?landscape"
-                        description="This is the initial position"
-                        setSelectedPlacesList={setSelectedPlacesList}
-                    />
+                    <Sidebar visiblePlaces={visiblePlaces}/>
+
 
                     {/* User GPS marker */}
                     {userLocation && (
@@ -222,12 +216,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             />
                         </Source>
                     )}
-                </Map>
-            </div>
-
-            <PlacesList selectedPlacesList={selectedPlacesList} setSelectedPlacesList={setSelectedPlacesList} />
-
-            <div className="absolute top-4 right-4 flex-col">
+                    <div className="absolute top-4 right-4 flex-col">
                 {/* Buttons */}
                 <div className="flex space-x-4">
                     <div className="flex flex-col items-center">
@@ -265,6 +254,13 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     </div>
                 )}
             </div>
+
+                </Map>
+            </div>
+
+            
+
+            
         </div>
     );
 }
