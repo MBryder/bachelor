@@ -5,6 +5,8 @@ import { Toaster, toast } from "react-hot-toast";
 import PlacesList from "./placesList";
 import { handleSubmit } from "../services/mapService";
 import PopupMarker from "./popUpMarker";
+import * as React from 'react';
+
 
 function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [selectedPlacesList, setSelectedPlacesList] = useState<any[]>([]);
@@ -15,6 +17,45 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [route, setRoute] = useState<number[]>([]);
     const [routeCoordinates, setRouteCoordinates] = useState<google.maps.LatLngLiteral[]>([]);
     const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
+    const [checked, setChecked] = React.useState(false);
+
+    const handleChange = () => {
+        const newChecked = !checked;
+        setChecked(newChecked);
+    
+        if (!userLocation) {
+            toast.error("User location not available yet.");
+            return;
+        }
+    
+        const userLocationFeature = {
+            geometry: {
+                coordinates: [userLocation.lng, userLocation.lat], // [lng, lat]
+            },
+            properties: {
+                id: "user-location",
+                name: "Your Location",
+            },
+        };
+    
+        if (newChecked) {
+            // Add current location if not already in the list
+            const alreadyAdded = selectedPlacesList.some(
+                (place) => place?.properties?.id === "user-location"
+            );
+    
+            if (!alreadyAdded) {
+                setSelectedPlacesList([userLocationFeature, ...selectedPlacesList]);
+            }
+        } else {
+            // Remove user location
+            const updatedList = selectedPlacesList.filter(
+                (place) => place?.properties?.id !== "user-location"
+            );
+            setSelectedPlacesList(updatedList);
+        }
+    };    
+    
 
     // Get current GPS location
     useEffect(() => {
@@ -136,16 +177,6 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     }}
                     mapStyle="https://tiles.openfreemap.org/styles/bright"
                 >
-                    {/* Static marker */}
-                    <PopupMarker
-                        longitude={12.5939}
-                        latitude={55.6632}
-                        title="Initial Position"
-                        image="https://source.unsplash.com/200x150/?landscape"
-                        description="This is the initial position"
-                        setSelectedPlacesList={setSelectedPlacesList}
-                    />
-
                     {/* User GPS marker */}
                     {userLocation && (
                         <Marker longitude={userLocation.lng} latitude={userLocation.lat}>
@@ -231,6 +262,14 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                 {/* Buttons */}
                 <div className="flex space-x-4">
                     <div className="flex flex-col items-center">
+                        <label>
+                            <input
+                            type="checkbox"
+                            checked={checked}
+                            onChange={handleChange}
+                            />
+                            Use current locations as starting point
+                        </label>
                         <button
                             onClick={async () =>
                                 await handleSubmit(
