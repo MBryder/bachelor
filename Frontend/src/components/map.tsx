@@ -97,7 +97,11 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         },
                     })),
             };
+            const uniqueTourism = Array.from(
+                new Set(geoJson.features.map((feature: { properties: { tourism: string } }) => feature.properties.tourism))
+              );
 
+            console.log("Unique tourism", uniqueTourism);
             setGeoJsonData(geoJson);
             setVisiblePlaces(geoJson.features);
 
