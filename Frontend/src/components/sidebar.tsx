@@ -63,15 +63,17 @@ function Sidebar({ visiblePlaces }: { visiblePlaces: any[] }) {
   };
 
   return (
-    <div className="h-full flex items-center">
+    <div className="h-full flex items-center py-2">
       <div
         className={`transition-all duration-500 ease-in-out ${
           showSidebar ? "transform translate-x-0" : "transform -translate-x-full"
-        } h-full w-[300px] bg-background-beige1 shadow-lg`}
+        } h-full w-[300px] border-1 bg-background-beige1 shadow-lg rounded-4xl m-2 ml-4`}
       >
-        <div className="p-2 h-full overflow-y-auto scrollbar">
-          <h1 className="text-xl font-bold border-b-2 border-primary-brown">Visible places</h1>
-          <ul className="mt-4 px-2">
+        <div className=" h-full">
+          <h1 className="text-heading-1 font-display border-b-2 rounded-t-4xl border-primary-brown text-primary-brown h-2/20 text-center justify-center flex items-center">
+            Visible places
+          </h1>
+          <ul className=" px-2 overflow-y-auto h-35/40 scrollbar">
             {visiblePlaces.map((place: any) => (
               <li key={place.id} className="pb-2 my-2 border-b border-primary-brown flex items-center">
                 <div className="mr-2">{getTourismIcon(place.properties.tourism)}</div>
