@@ -1,13 +1,12 @@
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
-
+using MyBackend.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add PostgreSQL Database
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(connectionString));
+// Add SQLite Database
+builder.Services.AddDbContext<MyDbContext>(options =>
+    options.UseSqlite("Data Source=mydatabase.db"));
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
