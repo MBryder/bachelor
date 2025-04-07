@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
-const Login: React.FC = () => {
+const Signup: React.FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -10,9 +9,9 @@ const Login: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-  
+
     try {
-      const response = await fetch('http://localhost:5001/user/login', {
+      const response = await fetch('http://localhost:5001/user/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -22,19 +21,22 @@ const Login: React.FC = () => {
           password,
         }),
       });
-  
+
       if (response.ok) {
         const data = await response.json();
-        console.log('Login successful:', data);
+        console.log('Register successful:', data);
         localStorage.setItem('username', username); // session handling
-        navigate('/home');
         setError('');
+        navigate('/home');
       } else {
-        const err = await response.text();
-        setError(err || 'Login failed');
+        const contentType = response.headers.get('Content-Type');
+        const err = contentType && contentType.includes('application/json')
+          ? (await response.json()).message
+          : await response.text();
+        setError(err || 'Register failed');
       }
     } catch (error) {
-      console.error('Login error:', error);
+      console.error('Register error:', error);
       setError('Could not connect to server');
     }
   };
@@ -45,7 +47,7 @@ const Login: React.FC = () => {
         onSubmit={handleSubmit}
         className="bg-white p-8 rounded-2xl shadow-md w-full max-w-sm"
       >
-        <h2 className="text-2xl font-semibold text-center mb-6">Login</h2>
+        <h2 className="text-2xl font-semibold text-center mb-6">Sign Up</h2>
 
         {error && (
           <p className="text-red-500 text-sm mb-4 text-center">{error}</p>
@@ -81,13 +83,13 @@ const Login: React.FC = () => {
 
         <button
           type="submit"
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition duration-200"
+          className="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition duration-200"
         >
-          Login
+          Sign Up
         </button>
       </form>
     </div>
   );
 };
 
-export default Login;
+export default Signup;
