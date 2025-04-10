@@ -15,6 +15,9 @@ namespace MyBackend.Data
         public DbSet<Photo> Photos { get; set; }
         public DbSet<PlaceType> PlaceTypes { get; set; }
 
+        public DbSet<Image> Images { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -33,6 +36,12 @@ namespace MyBackend.Data
                 .HasMany(p => p.Types)
                 .WithOne(type => type.Place)
                 .HasForeignKey(type => type.PlaceId);
+
+            modelBuilder.Entity<Image>()
+                .HasOne(i => i.Place)
+                .WithMany(p => p.Images)
+                .HasForeignKey(i => i.PlaceId)
+                .HasPrincipalKey(p => p.PlaceId);
         }
     }
 }

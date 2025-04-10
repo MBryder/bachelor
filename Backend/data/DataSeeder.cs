@@ -60,4 +60,30 @@ public class DataSeeder
 
         await _context.SaveChangesAsync();
     }
+
+    public async Task SeedImagesAsync(string jsonFilePath)
+    {
+        if (_context.Images.Any()) return;
+
+        var json = await File.ReadAllTextAsync(jsonFilePath);
+        var rawImages = JsonSerializer.Deserialize<List<ImageDTO>>(json);
+
+        foreach (var raw in rawImages)
+        {
+            // Optional: Check if place exists before adding the image
+            var placeExists = _context.Places.Any(p => p.PlaceId == raw.place_id);
+            if (!placeExists) continue;
+
+            var image = new Image
+            {
+                PlaceId = raw.place_id,
+                ImageUrl = raw.image_url
+            };
+
+            _context.Images.Add(image);
+        }
+
+        await _context.SaveChangesAsync();
+    }
+
 }

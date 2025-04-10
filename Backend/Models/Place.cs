@@ -30,5 +30,7 @@ namespace MyBackend.Models
 
         public ICollection<Photo> Photos { get; set; }
         public ICollection<PlaceType> Types { get; set; }
+
+        public ICollection<Image> Images { get; set; }
     }
 }

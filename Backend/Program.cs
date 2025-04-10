@@ -36,6 +36,7 @@ using (var scope = app.Services.CreateScope())
     var db = scope.ServiceProvider.GetRequiredService<MyDbContext>();
     var seeder = new DataSeeder(db);
     await seeder.SeedPlacesAsync("Data/SeedData/places.json");
+    await seeder.SeedImagesAsync("Data/SeedData/images.json");
 }
 
 app.UseCors("AllowReactApp");
