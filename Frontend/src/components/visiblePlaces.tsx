@@ -1,70 +1,17 @@
 import { useState, useEffect } from "react";
-import { 
-    MdHotel as HotelIcon,
-    MdOutlinePanorama as ViewpointIcon,
-    MdOutlinePermDeviceInformation  as InformationIcon,
-    MdMuseum as MuseumIcon,
-    MdLocalHotel as MotelIcon,
-    MdAttractions as AttractionIcon,
-    MdOutdoorGrill as PicnicSiteIcon,
-    MdBrush as ArtworkIcon
-} from "react-icons/md";
-import { 
-    FaHotel as HostelIcon,
-    FaImage as GalleryIcon,
-    FaBed as GuestHouseIcon,
+import { getTourismIcon } from "../utils/icons";
 
-    FaCampground as CampSiteIcon,
-    FaCaravan as CaravanSiteIcon,
-    FaMagic as ThemeParkIcon,
-    FaBuilding as ApartmentIcon
-} from "react-icons/fa";
-
-function Sidebar({ visiblePlaces, fetchPlaces }: { visiblePlaces: any[]; fetchPlaces: () => void }) {
-  const [showSidebar, setShowSidebar] = useState(true);
-
-  const getTourismIcon = (tourismType: string) => {
-    switch (tourismType) {
-      case "artwork":
-        return <ArtworkIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "hotel":
-        return <HotelIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "viewpoint":
-        return <ViewpointIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "information":
-        return <InformationIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "museum":
-        return <MuseumIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "motel":
-        return <MotelIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "attraction":
-        return <AttractionIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "hostel":
-        return <HostelIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "gallery":
-        return <GalleryIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "guest_house":
-        return <GuestHouseIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "picnic_site":
-        return <PicnicSiteIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "camp_site":
-        return <CampSiteIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "caravan_site":
-        return <CaravanSiteIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "theme_park":
-        return <ThemeParkIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      case "apartment":
-        return <ApartmentIcon className="h-10 text-primary-brown w-10 rounded-full border-2 border-primary-brown p-1"/>;
-      default:
-        return null;
-    }
-  };
-
+function Sidebar({ visiblePlaces, fetchPlaces, showSidebar, setShowSidebar }: {
+  visiblePlaces: any[];
+  fetchPlaces: () => void;
+  showSidebar: boolean;
+  setShowSidebar: (value: boolean) => void;
+}) {
   return (
-    <div className="h-full flex items-center py-2">
+    <div className="h-full w-full flex items-center py-2">
       <div
         className={`transition-all duration-500 ease-in-out ${
-          showSidebar ? "transform translate-x-0" : "transform -translate-x-full"
+          showSidebar ? "translate-x-0" : "-translate-x-full"
         } h-full w-[300px] border-1 bg-background-beige1 shadow-lg rounded-4xl m-2 ml-4 flex`}
       >
         <div className="h-full w-full">
@@ -73,19 +20,18 @@ function Sidebar({ visiblePlaces, fetchPlaces }: { visiblePlaces: any[]; fetchPl
           </h1>
           <ul className="px-2 overflow-y-auto h-32/40 scrollbar">
             {visiblePlaces.map((place: any) => (
-              <li key={place.id} className="pb-2  my-2 border-b border-primary-brown flex items-center">
+              <li key={place.id} className="pb-2 my-2 border-b border-primary-brown flex items-center">
                 <div className="mr-2">{getTourismIcon(place.properties.tourism)}</div>
                 <div>
                   <h2 className="text-primary-brown text-heading-4">{place.properties.name}</h2>
-                  <p className="">{place.properties.address}</p>
+                  <p>{place.properties.address}</p>
                 </div>
               </li>
             ))}
           </ul>
-          {/* Add Fetch Places Button */}
           <div className="p-4 h-4/40 border-t-2 border-primary-brown flex items-center justify-center">
             <button onClick={fetchPlaces} className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl h-full w-full">
-                <p className=" text-primary-brown text-heading-4 ">Fetch Places</p>
+              <p className="text-primary-brown text-heading-4">Fetch Places</p>
             </button>
           </div>
         </div>
@@ -94,7 +40,7 @@ function Sidebar({ visiblePlaces, fetchPlaces }: { visiblePlaces: any[]; fetchPl
       <button
         className={`fixed left-0 top-1/2 transform -translate-y-1/2 transition-all duration-500 ease-in-out ${
           showSidebar ? "translate-x-[300px]" : "translate-x-0"
-        } bg-primary text-primary-brown text-heading-4 ml-8 px-4 py-2 rounded-lg shadow-lg border border-primary-brown bg-background-beige2 `}
+        } bg-primary text-primary-brown text-heading-4 ml-8 px-4 py-2 rounded-lg shadow-lg border border-primary-brown bg-background-beige2`}
         onClick={() => setShowSidebar(!showSidebar)}
       >
         {showSidebar ? "Close" : "Open"}

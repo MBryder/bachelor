@@ -5,6 +5,7 @@ import { toast } from "react-hot-toast";
 import { handleSubmit } from "../services/mapService";
 import PopupMarker from "./popUpMarker";
 import Sidebar from "./visiblePlaces";
+import Selectedbar from "./selectedPlaces";
 import React from 'react';
 
 function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
@@ -17,6 +18,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [routeCoordinates, setRouteCoordinates] = useState<google.maps.LatLngLiteral[]>([]);
     const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
     const [checked, setChecked] = React.useState(false);
+    const [showSidebar, setShowSidebar] = useState(true);
 
     const handleChange = () => {
         const newChecked = !checked;
@@ -95,6 +97,15 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
             map.off("moveend", handleMapMove);
         };
     }, [mapRef.current]);
+    
+    const callSubmit = async ()=> {
+        await handleSubmit(
+            selectedPlacesList,
+            setRoute,
+            setMinCost,
+            setRouteCoordinates
+        )
+    }
 
     const fetchPlaces = async () => {
         if (!mapRef.current) {
@@ -180,8 +191,21 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     }}
                     mapStyle="https://tiles.openfreemap.org/styles/bright"
                 >
-                    <div className="flex h-full">
-                        <Sidebar visiblePlaces={visiblePlaces} fetchPlaces={fetchPlaces} />
+                    <div className="flex flex-row bg-amber-900 h-full w-full justify-end items-start">
+                        
+                        <Sidebar 
+                            visiblePlaces={visiblePlaces} 
+                            fetchPlaces={callSubmit}
+                            showSidebar={showSidebar}
+                            setShowSidebar={setShowSidebar}
+                        />
+                        <Selectedbar 
+                            selectedPlaces={selectedPlacesList} 
+                            Submit={fetchPlaces}
+                            showSidebar={showSidebar}
+                            setShowSidebar={setShowSidebar}
+                        />
+                        
                     </div>
                     
 
@@ -258,22 +282,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             />
                             Use current locations as starting point
                         </label>
-                        <button
-                            onClick={async () =>
-                                await handleSubmit(
-                                    selectedPlacesList,
-                                    setRoute,
-                                    setMinCost,
-                                    setRouteCoordinates
-                                )
-                            }
-                            className="px-5 py-2 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg shadow-lg transition"
-                        >
-                            Submit
-                        </button>
-                        {minCost === null && (
-                            <p className="mt-2 text-sm text-gray-500">Click the button to solve TSP.</p>
-                        )}
+                        
                     </div>
                 </div>
 
