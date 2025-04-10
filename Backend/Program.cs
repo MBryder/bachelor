@@ -31,6 +31,13 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<MyDbContext>();
+    var seeder = new DataSeeder(db);
+    await seeder.SeedPlacesAsync("Data/SeedData/places.json");
+}
+
 app.UseCors("AllowReactApp");
 
 if (app.Environment.IsDevelopment())

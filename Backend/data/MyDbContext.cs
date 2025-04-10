@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MyBackend.Models; // adjust to your project namespace
+using MyBackend.Models;
 
 namespace MyBackend.Data
 {
@@ -11,6 +11,9 @@ namespace MyBackend.Data
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Place> Places { get; set; }
+        public DbSet<Photo> Photos { get; set; }
+        public DbSet<PlaceType> PlaceTypes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -20,6 +23,16 @@ namespace MyBackend.Data
                 new User { Id = 1, Username = "admin", Password = "admin123" },
                 new User { Id = 2, Username = "test", Password = "password" }
             );
+
+            modelBuilder.Entity<Place>()
+                .HasMany(p => p.Photos)
+                .WithOne(photo => photo.Place)
+                .HasForeignKey(photo => photo.PlaceId);
+
+            modelBuilder.Entity<Place>()
+                .HasMany(p => p.Types)
+                .WithOne(type => type.Place)
+                .HasForeignKey(type => type.PlaceId);
         }
     }
 }
