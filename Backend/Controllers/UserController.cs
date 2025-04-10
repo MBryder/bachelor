@@ -53,5 +53,23 @@ namespace MyBackend.Controllers
 
             return Ok(new { message = "Login successful!" });
         }
+
+        // GET /user/test-places
+        [HttpGet("test-places")]
+        public async Task<IActionResult> TestPlacesQuery()
+        {
+            var places = await _context.Places
+                .OrderByDescending(p => p.Rating)
+                .Take(5)
+                .ToListAsync();
+
+            foreach (var place in places)
+            {
+                Console.WriteLine($"Place: {place.Name}, Rating: {place.Rating}");
+            }
+
+            return Ok(new { message = "Check console for results", count = places.Count });
+        }
+
     }
 }
