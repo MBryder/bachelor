@@ -1,11 +1,10 @@
 import { Map, Marker, Source, Layer } from "@vis.gl/react-maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useState, useEffect, useRef } from "react";
-import { Toaster, toast } from "react-hot-toast";
-import PlacesList from "./placesList";
+import { toast } from "react-hot-toast";
 import { handleSubmit } from "../services/mapService";
 import PopupMarker from "./popUpMarker";
-import Sidebar from "./sidebar";
+import Sidebar from "./visiblePlaces";
 import React from 'react';
 
 function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
@@ -104,6 +103,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
         }
 
         const bounds = mapRef.current.getBounds();
+        console.log(bounds); // Log the bounds to the console
         const { _sw, _ne } = bounds;
 
         const query = `
@@ -143,6 +143,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
 
             console.log("Unique tourism", uniqueTourism);
             setGeoJsonData(geoJson);
+            console.log("GeoJSON data:", geoJson);
             setVisiblePlaces(geoJson.features);
 
             const routeGeoJSON = {
@@ -169,8 +170,6 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
 
     return (
         <div className="flex w-full h-full relative">
-            <Toaster />
-
             <div className="w-full h-full rounded-xl overflow-hidden relative">
                 <Map
                     ref={mapRef}
@@ -181,7 +180,10 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     }}
                     mapStyle="https://tiles.openfreemap.org/styles/bright"
                 >
-                    <Sidebar visiblePlaces={visiblePlaces}/>
+                    <div className="flex h-full">
+                        <Sidebar visiblePlaces={visiblePlaces} fetchPlaces={fetchPlaces} />
+                    </div>
+                    
 
 
                     {/* User GPS marker */}
@@ -218,22 +220,6 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             place={place}
                         />
                     ))}
-
-                    {/* Circle layer */}
-                    {geoJsonData && (
-                        <Source id="places" type="geojson" data={geoJsonData}>
-                            <Layer
-                                id="places-layer"
-                                type="circle"
-                                paint={{
-                                    "circle-radius": 6,
-                                    "circle-color": "#FF5733",
-                                    "circle-stroke-width": 2,
-                                    "circle-stroke-color": "#fff",
-                                }}
-                            />
-                        </Source>
-                    )}
 
                     {/* Snapped route path */}
                     {routeCoordinates.length > 1 && (
@@ -289,13 +275,6 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             <p className="mt-2 text-sm text-gray-500">Click the button to solve TSP.</p>
                         )}
                     </div>
-
-                    <button
-                        onClick={fetchPlaces}
-                        className="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg shadow-lg transition"
-                    >
-                        Fetch Places
-                    </button>
                 </div>
 
                 {/* Min Cost and Route Info */}
