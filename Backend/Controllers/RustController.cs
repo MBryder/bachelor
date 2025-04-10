@@ -19,13 +19,15 @@ public class RustController : ControllerBase
         int result = RustInterop.multiply_numbers(a, b);
         return Ok(new { product = result });
     }
+    
 
     [HttpGet("test")]
     public IActionResult Test()
     {
         return Ok(new { message = "API is working" });
     }
-
+    
+    /*
     // **NEW API Endpoint for TSP using RustInterop**
     [HttpPost("tsp")]
     public IActionResult SolveTSP([FromBody] TSPRequest request)
@@ -65,4 +67,5 @@ public class RustController : ControllerBase
             route = route
         });
     }
+    */
 }
