@@ -185,13 +185,13 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         
                         <Sidebar 
                             visiblePlaces={visiblePlaces} 
-                            fetchPlaces={callSubmit}
+                            fetchPlaces={fetchPlaces}
                             showSidebar={showSidebar}
                             setShowSidebar={setShowSidebar}
                         />
                         <Selectedbar 
                             selectedPlaces={selectedPlacesList} 
-                            Submit={fetchPlaces}
+                            Submit={callSubmit}
                             showSidebar={showSidebar}
                             setShowSidebar={setShowSidebar}
                         />
