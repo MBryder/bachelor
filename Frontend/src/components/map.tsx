@@ -103,49 +103,39 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
         }
 
         const bounds = mapRef.current.getBounds();
-        console.log(bounds); // Log the bounds to the console
         const { _sw, _ne } = bounds;
-
-        const query = `
-            [out:json];
-            (
-                node["tourism"](${_sw.lat},${_sw.lng},${_ne.lat},${_ne.lng});
-            );
-            out;
-        `;
-
-        const url = `https://overpass-api.de/api/interpreter?data=${encodeURIComponent(query)}`;
-
+        
+        const backendUrl = `http://localhost:5001/places/by-bounds?swLat=${_sw.lat}&swLng=${_sw.lng}&neLat=${_ne.lat}&neLng=${_ne.lng}`;
+        
         try {
-            const response = await fetch(url);
-            const data = await response.json();
-
+            const response = await fetch(backendUrl);
+            const places = await response.json();
+        
             const geoJson = {
                 type: "FeatureCollection",
-                features: data.elements
-                    .filter((place: any) => place.tags?.name)
-                    .map((place: any) => ({
-                        type: "Feature",
-                        geometry: {
-                            type: "Point",
-                            coordinates: [place.lon, place.lat],
-                        },
-                        properties: {
-                            id: place.id,
-                            name: place.tags.name,
-                            ...place.tags,
-                        },
-                    })),
+                features: places.map((place: any) => ({
+                    type: "Feature",
+                    geometry: {
+                        type: "Point",
+                        coordinates: [place.longitude, place.latitude],
+                    },
+                    properties: {
+                        id: place.id,
+                        name: place.name,
+                        rating: place.rating,
+                        ...place
+                    },
+                })),
             };
+        
             const uniqueTourism = Array.from(
-                new Set(geoJson.features.map((feature: { properties: { tourism: string } }) => feature.properties.tourism))
-              );
-
+                new Set(geoJson.features.map((f: any) => f.properties.types?.join(", ")))
+            );
+        
             console.log("Unique tourism", uniqueTourism);
             setGeoJsonData(geoJson);
-            console.log("GeoJSON data:", geoJson);
             setVisiblePlaces(geoJson.features);
-
+        
             const routeGeoJSON = {
                 type: "FeatureCollection",
                 features: [
@@ -159,12 +149,12 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     },
                 ],
             };
-
+        
             setRouteGeoJson(routeGeoJSON);
             toast.success(`Found ${geoJson.features.length} places!`);
         } catch (error) {
-            console.error("Error fetching places:", error);
-            toast.error("Failed to fetch places.");
+            console.error("Error querying places:", error);
+            toast.error("Failed to fetch places from backend.");
         }
     };
 
