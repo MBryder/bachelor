@@ -192,8 +192,6 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         <Selectedbar 
                             selectedPlaces={selectedPlacesList} 
                             Submit={callSubmit}
-                            showSidebar={showSidebar}
-                            setShowSidebar={setShowSidebar}
                             handleChange={handleChange}
                         />
                         
