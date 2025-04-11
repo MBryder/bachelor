@@ -71,5 +71,45 @@ namespace MyBackend.Controllers
             return Ok(new { message = "Check console for results", count = places.Count });
         }
 
+        // GET /user/test-place-images
+        [HttpGet("test-place-images")]
+        public async Task<IActionResult> TestPlaceImagesQuery()
+        {
+            var places = await _context.Places
+                .Include(p => p.Images)
+                .Take(3)
+                .ToListAsync();
+
+            foreach (var place in places)
+            {
+                Console.WriteLine($"Place: {place.Name}");
+
+                if (place.Images != null && place.Images.Any())
+                {
+                    foreach (var image in place.Images)
+                    {
+                        Console.WriteLine($"  → Image URL: {image.ImageUrl}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("  → No images");
+                }
+            }
+
+            var result = places.Select(p => new
+            {
+                placeName = p.Name,
+                imageUrls = p.Images.Select(i => i.ImageUrl).ToList()
+            });
+
+            return Ok(new
+            {
+                message = "Fetched places with their image URLs",
+                count = places.Count,
+                places = result
+            });
+        }
+
     }
 }
