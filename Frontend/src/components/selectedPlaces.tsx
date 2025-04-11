@@ -1,12 +1,27 @@
 import { useState, useEffect } from "react";
 import { getTourismIcon } from "../utils/icons";
 
-function Selectedbar({ selectedPlaces, Submit, showSidebar, setShowSidebar }: {
+function Selectedbar({
+  selectedPlaces,
+  Submit,
+  showSidebar,
+  setShowSidebar,
+  handleChange,
+}: {
   selectedPlaces: any[];
   Submit: () => void;
   showSidebar: boolean;
   setShowSidebar: (value: boolean) => void;
+  handleChange: (value: boolean) => void;
 }) {
+  const [checked, setChecked] = useState(false);
+
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = e.target.checked;
+    setChecked(newValue);
+    handleChange(newValue);
+  };
+
   return (
     <div className="h-1/2 flex items-center py-2">
       <div
@@ -29,8 +44,19 @@ function Selectedbar({ selectedPlaces, Submit, showSidebar, setShowSidebar }: {
               </li>
             ))}
           </ul>
-          <div className="p-2 px-4 h-4/40 border-t-2 border-primary-brown flex items-center justify-center">
-            <button onClick={Submit} className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl h-full w-full">
+          <div className="p-2 px-4 h-4/40 border-t-2 border-primary-brown flex flex-col gap-2">
+            <label className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={checked}
+                onChange={handleCheckboxChange}
+              />
+              Use current locations as starting point
+            </label>
+            <button
+              onClick={Submit}
+              className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl h-full w-full"
+            >
               <p className="text-primary-brown text-heading-4">Submit</p>
             </button>
           </div>

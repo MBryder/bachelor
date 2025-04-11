@@ -20,7 +20,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [checked, setChecked] = React.useState(false);
     const [showSidebar, setShowSidebar] = useState(true);
 
-    const handleChange = () => {
+    const handleChange = (checked : boolean) => {
         const newChecked = !checked;
         setChecked(newChecked);
     
@@ -194,6 +194,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             Submit={callSubmit}
                             showSidebar={showSidebar}
                             setShowSidebar={setShowSidebar}
+                            handleChange={handleChange}
                         />
                         
                     </div>
@@ -261,20 +262,6 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         </Source>
                     )}
                     <div className="absolute top-4 right-4 flex-col">
-                {/* Buttons */}
-                <div className="flex space-x-4">
-                    <div className="flex flex-col items-center">
-                        <label>
-                            <input
-                            type="checkbox"
-                            checked={checked}
-                            onChange={handleChange}
-                            />
-                            Use current locations as starting point
-                        </label>
-                        
-                    </div>
-                </div>
 
                 {/* Min Cost and Route Info */}
                 {minCost !== null && (
