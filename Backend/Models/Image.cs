@@ -14,6 +14,7 @@ namespace MyBackend.Models
         public string PlaceId { get; set; }
 
         [ForeignKey("PlaceId")]
+        
         public Place Place { get; set; }
     }
 }
