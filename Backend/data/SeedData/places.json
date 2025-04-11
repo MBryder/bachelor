@@ -30,7 +30,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/116541235174530424806\">Scandic Palace Hotel</a>"
         ],
-        "photo_reference": "AeeoHcJoVv6XPhaXtFJ68q07nvvLgoX_QofFXFztLHm0ZSIC1-0XkmaiEPnleofRjHhpNZPb2vwYwBP9FjVAHb88vHq7_x3AFY9k0AAcJ1mc3EtYG65pMEn5xh9-P8E6rfSXVruFub1cmE_t7TZAZjRWED6ghku23-GiXM-bTlc_vqIu8GcCyYpGBvHD27mqqMhgPVloQAsersw2maKOxqACf2ZO3hucLSWP2FwKSmS_DuWfZ0AbRdPK2PKkqVSqBQhkZjHRb42SQ55sI7p-cyhZL4R_3YNML3F3fM_EgTEH6AyohXwQ-KdkeBljvvgXxdd_nQKAk0UGWnI",
+        "photo_reference": "AeeoHcJZk8SFX6jxkBVTqVGJqCI6zP-A_h4V5Wrd5ROgeOQ917SPD7yAaG-FZmGnrciUvBj_nuX87QbOO_tlDk7W3KjzCtu5dLdJ6A2cGqFbJL1K-mRYQJYwNg31VcFR-Wlq3A4rDMHGm9aNcROQHOLLRM0WrZTtoL4JKBin1pl_EEzPEG85xlxn_-QRJOE9_er2TaeVbZgkgGNrpe24ozLlHptKGtWJZLisN5ln6b1v1PuDtYDpIngbeuSqpmeRWDEcpQkMgoPGPE4O40exK4NGLFhBX4jrKddz7npOfYYYXHS72G5rXFkDeKpxmM6zY9bxQZsFlIdvD00",
         "width": 1600
       }
     ],
@@ -84,7 +84,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/111603859066089114922\">Ascot Hotel</a>"
         ],
-        "photo_reference": "AeeoHcJQOMdNa1ud7bEfOXs5BbFJ-SLpLiASGaBiHr9vgIPcGUDdWIt0FiwT-YKFZ5kxDB_0bysWIl2SPUX8P3FTudd_Os8dxdI7pvP8gX6fELpysYPv9cSwV8e8JX1j_00MVrsZ-UU8ZlnA123pm9vtELxihht2Dav1DcovSYZyPwZhoGtjKHytQXFd68GuB_BsTQhtNGLVbqok-kPrrbOsBO4KOl22A1vvPR0N1d3ht5qNyl7ttD-oxQgYwLLvmFfK6fHVTGAqKFhkB9B2Lygp99o4h1xo1EzjnjEpjgl_sy0BTo5tJx-28Q5JuwlZzvtSN-jHOTTbW5k",
+        "photo_reference": "AeeoHcJIzGFUXAdbvDga_12QdYgkXF_0EIxdDFKRyPu9C6LJwVBu5JGdPJlUOkXPTkqZlFuYPu7hsgZ53u_CCrPaAU9ssPUNY6R9SwgIFuQelxJ2tqdlgjAy_7tfqhr8q8esGUdc3TwnOlvqjpE0butTvWnorYOyUpicvzAdLOGpe7X4LQFSKRQ-xaeeNtIpZu38JAUXRaXFy5IZNuWlLBUUyiDxXPlAThKoosKzY-I398rfRMTRai-DMkJthRbXdKZm55ke7L_V9aYX0S_Ol5Ui1eMSd_M3_5vTHtLaTVnaqEggTg2ONXqxEFNiCMqOytsFKLsj2T6LRCk",
         "width": 1920
       }
     ],
@@ -99,10 +99,10 @@
     "types": [
       "bar",
       "lodging",
+      "health",
       "restaurant",
       "point_of_interest",
       "food",
-      "health",
       "establishment"
     ],
     "user_ratings_total": 1575,
@@ -139,7 +139,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/112586217891680143484\">Scandic Copenhagen</a>"
         ],
-        "photo_reference": "AeeoHcLdWjhl3Us8Fx33WsxoT9GnJdJEEqwHy_Y54VCXKHiqCmtEEHK1RICalm8GLDWiiM9nYFEEUNIwxqwkN6hdYyM4lqbQH1Eo7qQBwVKGVvOydV2bH6erY5e20Ev9WeiEi7w1aaODhtdP7XKz8pXMymeel9jqbu2sbbuvxl6kTemJHAMlnq6bbMArcAHtoPXVANqRtNxYd3udJ4P5D0_oWD1-Jy0auVHOBuWYJmk7StzRD0_THxtAHy_x768vB5lT3sOE_cuasS4Hnq8nuL2JbxktyDAV102-FtriBgxC-oZL5HTUB3p5B_SWmZ8B4QvpY9yVK8fvjzM",
+        "photo_reference": "AeeoHcLmVzVIcgSHCqPGDZS-ayGyUV0DDSYCtJINdoVTCD3OFT_Sfj_k5tophhh7dBKiIe0G52AKiUsZa03oj_V3zS--G-Di-yblcgwk35DrwK7jpzzcnv21mS0Pd38VJyRgShtisKMrReGQF9Rl5kCOz4tn9NBBbIH0WGPrrnpWgyfsVoXU3yUAURta78R1cCLw49wjgGoOiSk3JKP8ApHi2F3TylOUB4fm6xJbSjDiXxvzlINDIsdre5kIq1uZhcZh6X6Ce9TzickbWhRQWkSCLbZ3IjAN4ZJ5Fsm6lvVciKTc2TlQIKG9VY5XaGfx07jRQ4gcgnMhVgU",
         "width": 2048
       }
     ],
@@ -243,7 +243,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/112672360194478853496\">Hotel d’Angleterre</a>"
         ],
-        "photo_reference": "AeeoHcLv2ltr4mFweVyADcJgbN6M3F1dK-u-xIed334l2Lwg2gxMUvJ2koUaovd6iCvd4lnd2L_8UbTOSzAIT_yqtSJ2GlpzEUl5pdnbitVy4BIej8iUarx8r4Z12kh8Iw-sTuaat0Z2-M7X5xc64pTOlfMHcGtszygzaCmBQtwlCqp0Nl_3sgYWvKNCTZ4gV5Lnu3S7Oz2xQhk2kwRjoe7m5l5YT2WjpGfs_vOcBdtSC7QCvw3564ekPcHMbXOP89EC2D7T5UR0TAKu6TqYnDZ7mp8tvIHaNKdOeyq97HtG3xBwsNmRhXnSUgIH5z8fyQV3HL5pZrLLcrU",
+        "photo_reference": "AeeoHcIJaRPCXUI2vnG5v7udbrm4YVVGLyp3FgO7UBrS-ReBOA5aXbvB_9KfO-yT7buabmrbr9FGIxayLpoAsvVxS2JifEX0eIdJi3dhasf3UkeWGSoTYReMkKXiHit3WwGXqCmJb_G8mJQEONvODMcHi3DfreKK2eLJ9bD-v2D8BTiXpuYaRPIIrMDn-UKRuWeR4XDE5x3wbvU1mUC46H5feXJhOYERCm0c9povayWRW0TuSVc5vkg9PKzi_a5EHdWY-h8erEhncvISN4np_0UX_OSaL7V7UyyaUrshve_UZl93F7sOsmQf7sLfB46LxkLotd5lLbthAEQ",
         "width": 6720
       }
     ],
@@ -257,9 +257,9 @@
     "reference": "ChIJtRm9KRhTUkYRdv7vSCAmeVM",
     "scope": "GOOGLE",
     "types": [
-      "spa",
       "bar",
       "lodging",
+      "spa",
       "restaurant",
       "point_of_interest",
       "food",
@@ -299,7 +299,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/100914072844059593804\">Admiral Hotel Copenhagen</a>"
         ],
-        "photo_reference": "AeeoHcJFiIw8df8PmWnid6Z9NDd80XVEB_Le6hcvbK9PMIX9-W3KlizQrnViNnRedpkIANRgwpDcHgqvqAOZUlegxiO15H9bJ_NtRChG1nXDHA8rr98ty9Kba78if4ZDpsgNIu_3i5lj5r6w55ldd8XhCUNkPnDnlg1WgJhRAZhlgX6O3NOsFsVi-60WHBj0KJ0D9yvAhWZRjRhr2X_a0lnT58lb_mzmOvfNs81NhR-5J-0PgVis3v7K9cTYuj5081IeDxZPwAKeHyQsXgOR5fyh7nd6qupgGWrs0EHnEPrRoVHmsIIJU-ZOmoj8dWWQHxxWZ02nQddIDW8",
+        "photo_reference": "AeeoHcKLB1JCLICcUFLCCbcsOjS20KcW-w_3TGN_u0zg4IwNlle_17o3zAYyCsSValMJ-i9K_FE2oyrM9bpa-rVWgJCPksebr7oUKgcmMCDddPwdRJ2lg7QsGMj-wcJeegHFCWFIh0gbO99hXCJh-RJUYtRDWJ98sUpGJ9NwAuFlB_CX44u27WlO-0uzBcqC_K_1t7Sv0vMYoyndnuf8tN594XqzObQ6JlUyZTjDzBkpXbdEeTsQQZJd-m_LLkUDvYxvEjySg1f8LT4O-nyjb08paq6KmYU_WOMTV5Dzw5-cbvu7euQdqoLl-NsSQe3fOB8ETDmJB0MfluA",
         "width": 1536
       }
     ],
@@ -352,7 +352,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/111902771014913253726\">Comfort Hotel Vesterbro</a>"
         ],
-        "photo_reference": "AeeoHcLKGQIcK4VrTk3Bnhyp_KDeIrPy08XE02JYPqG4H3oeUKrS8tRQgT8ZDCQmT4d5OKgMbN9P2ZMjjxERBAwHdyb35ssM7nzPR0m6nDGJ-8Y_TUrkWmmeqdOnD-i4kGrzZGeftTMmfxvPyCirVyNrJV76TKZs9Z7BhMFXHUwyunAmVnJYrNRtP-YpaDxsi-LiNkSwxIq4FwneL6dS1D6SH6Fodu4vWGRMfl96Lz-CJfOgClfXLlWMQw-EZhCggw8SZROkKNEnwnYmOG5SJzDPeLIbsK5WQ5DzxvLuevS0Wkz8wUjf5SIH1kexvfnC9RoQFzZFK6dKVkc",
+        "photo_reference": "AeeoHcIjSTxmCNo9PKQSlSu42hqfGip2D9q6q6W4ZipTrKXKVtH-luOyFxHuKdp-e2PM10BxJwX4bOz6GZwC8jtKiHY8Jb0xGiXKmKQRkcRCdVubkTSlHj9wclpR-Yn2P7lI6QUnwUjy27KLd8FDWKJZo0t5gDOd0f-sfNpRrCr4GC4WfWdmqFRkM7NPPAZCjtc-8AmqO_W_a7sJ9nZEqSxnZDJ5VUP4dgB1xq0GmkMrdn-qTXv6G4K_L8SHS-VdIpyGW1_DVBq8TCF-iHUHIpamD7yXYKoJxQELcSMDU84_r6nPITsKtquCbsYihAaog9tjCs4tzFfGnnw",
         "width": 5760
       }
     ],
@@ -458,7 +458,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/118391994052319657435\">Scandic Front</a>"
         ],
-        "photo_reference": "AeeoHcIzaQFtNBE4p4JmgIcnPuxLRoRwAYicypkL9JGnBG3sJVLR6Tr9MAQRepiNNNoXOLk0a86XUpHbvlgPItzEz3uXL_oivyGIqAqXyc--865bKllXCortgTsMZ7ywOYQCeklWh7-stM3GV66dG1MwcjiA72l1Wol5Af5ObEF83JFdXjoxJ-mVNXQaB1-NRfta6r2eKAaAPrYgnb1iJdBbzhZTWzQ_LBXFURCQ-uwXj76Ac62ZlGwP2kihFuuxJU3qiHRlaR1hZK4IoYjgoqt2X-I-yjDm8frY9gjADMDhJJkFeZESgcemWharwh2TIcW0x5Imo6QzMGc",
+        "photo_reference": "AeeoHcJnHdtLCzEfI_o1zXo7nJ4gM927_DIiaA65eaAffst1W_V9SkSImLYaAKY8c5P_UiFJzcbn3VgZaV0Go0sPMbqadpd24A_5qTaA8mmnpJOfgC2BwLE96UGK750x5RtjxEUKjBfjiXmt-yFYvDT3Ufcvpexg2xw7qtdtUgio5DBECi1yGaBpvZT-CaHQmrkZlQglX2iUILmds5JJ9Miq-bfT2nBtNyTJZ7pJLmBXH7MWTFrqtUqGJKb5enjL_foMXmoR3Cjs0ePBMHufei6hon7mDJuUQ8i1glQt5ozJzf220ecbaR2d5GdSBodiPs2G0HX5H7Jpd00",
         "width": 2048
       }
     ],
@@ -472,11 +472,11 @@
     "reference": "ChIJMUfaHiNTUkYRv8SMa22_cXs",
     "scope": "GOOGLE",
     "types": [
-      "bar",
-      "lodging",
       "restaurant",
-      "point_of_interest",
+      "lodging",
       "food",
+      "bar",
+      "point_of_interest",
       "establishment"
     ],
     "user_ratings_total": 1064,
@@ -513,7 +513,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/109398511629615538436\">Generator Copenhagen</a>"
         ],
-        "photo_reference": "AeeoHcKZbm7-XE-p_XUKORBpQrlJ4ERDOi5i6jbUPrSFx6HIYwnLu2sCpdXcgCvG0K5BHzlgB1VToGI0nmdDFPQ8dl3LVoeYkIFUr-tp6SD5XCcxkCvHti7Qzwk2ZHwdw7NworhQRqp49U4WgI25rL0EcW9tB-Pg4XF2Zi8eNDxGSFHChJLtaNhjaWm4hzmqksr0W-ibMdbPNfsLUWUQQrVesa-MLp2i2ZrpBCAxCd3rRLsS3KGg-JEyTyZNm2QD5yaeKtQcPbmuT8Lzu732C-myes2M0UPd9Ra9-CQ6oQt4qDtUOK4QEDAI5nt5gvs5z-HZMDe-utvDdj4",
+        "photo_reference": "AeeoHcJTU1DIkb4-QTjLfy4Oh2wxSYrX53L7DjxFE9-Ed_lTMvH7dFzE4MJitRn2pEXt51CG4fcHjgs-cvUymAuEIf9OZBayxyxZmpWXMRdKu6YXsqkt9marnTdp9Fj5XjReNcB5qY8BkV9lqUCzGatogA5PI9pzQ2J5MgVwoEDYzPEqe2pqeozpZaiXEa0x3LAEPTYUuX2q_VyvVWMf5EP2AmE18-pXbxi859EZMUlJotHENM7Vat8IJJD0j3KR6121uP2MFySuH5uGNP_ZCHJKMNZ9X6qsnz2VisdlL2VcVHfp6HIMUiF3pAISaMvPaqy0VUObcCf9ddc",
         "width": 5632
       }
     ],
@@ -526,11 +526,11 @@
     "reference": "ChIJF5P3mRlTUkYRHFiOVIREJDw",
     "scope": "GOOGLE",
     "types": [
-      "bar",
-      "lodging",
       "restaurant",
-      "point_of_interest",
+      "lodging",
       "food",
+      "bar",
+      "point_of_interest",
       "establishment"
     ],
     "user_ratings_total": 4426,
@@ -567,7 +567,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/106915196900174182327\">Copenhagen Plaza | ProfilHotels</a>"
         ],
-        "photo_reference": "AeeoHcIT_sdTrHLU2YvUqTUGvPVz0dvYMrRgT42OIWZ6UCMdpNIOrqeX-8vTG-oQFnivo164cu-irSJCja3AYv0HzTY7BFxDeBKPVNCp2aKOK6iT14m7CnwZ2kXiCBXJUEcEprJX389XhNzqRnNZboY5AA_2bgDbHNJo58j2UvydQoI60NBTHX2_7Kja973UGb6e7dLwaBcPdBVxnWeG6nQfZWC52YBYSaQ9YAcERMYVOLoF3LTJPZzh0Reuec1NP8uocpcZhaFD-TZNWA34UQJCbmv1rEwUxfDp9cPrjiFHMwCSQ4goh2YehA1eMyjtUsmkNJRIZWml7OI",
+        "photo_reference": "AeeoHcJ7e2xDMJRbsfjxPM70ZpNg6ktpvgZxJZTV35muo13Mp5_R7n_QdapPHg7wzamUkrkXROU3RPz7Ez8uWZEKv-wd1lAiyHKqfN8kvL0jNBe8BS39tF1l-Gtawm0EQC1Kdm0vXGxh9s3LzT1LKkkyWu8G0rn2GlhGZUX_ILGUzHojl2gsKqKalSx_clX4ME5bGHEZRS0_I0xAi27a9btVO3W44hjBg-z9AoKJs2BoWcBAECLoDUVYDr5gGQehIq5zs_TLogLUCTNBSBSK6WY6OuNWMiOxFdMGAaFSmlFEBLxK08zvmAojOKCv1l1WFqxmTrTt8lUDonc",
         "width": 3000
       }
     ],
@@ -580,11 +580,11 @@
     "reference": "ChIJoev5BQ1TUkYRL1h0hFGNQ6w",
     "scope": "GOOGLE",
     "types": [
-      "bar",
       "lodging",
+      "bar",
       "restaurant",
-      "point_of_interest",
       "food",
+      "point_of_interest",
       "establishment"
     ],
     "user_ratings_total": 1153,
@@ -674,7 +674,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/116474678834767892701\">Hotel SKT. Annæ ApS</a>"
         ],
-        "photo_reference": "AeeoHcKV9U2oD_UoOjATTgT6PZqaB1FtmCX3p20t1ft1RKs4LSXvUk0FMOD4Jo-erl3RYR2VQ-Tty-d4L2FBCpDbPHOsoZTDZaGjnV1X-QVFNQkrUdl24JmIIZidSiQl_zfrEmgzLSWAnRD4S1Inzy-0Kya-ttDygqPNf1K_07A9A9nxlH7CuqpU4sBBnwr4ZNaPdMBXN8-Emu1i1Oyk-TphOCn3rBW7ffcBrrjo1mtSRsY5U2_FWI641uSoCfJpuFwOsolxyUU5B77UFN0Rc3lcfPzIPTaeHLk-ChJWrKJwpLYSaaAmEK99LnZTigY0qZswgldMR1r6ix4",
+        "photo_reference": "AeeoHcJJXtHas0jLkMCEOAJXV7iV7pAnUTExjHSqE7PuDYPDFO5vQoHFzINEsiG4WgO_q3cmirhgIAIN2GZsV_1JHBj11doUh3UPhCvoKbGEhS7E8g054QSgCBXL7pivfCUxisKvmvoKosHeXUaW3afZ7rpraoj7H-NyT-WWPeB3vOZdyTzYFoycuYqhRokuvCrL4d7bO8hI0sTC-OPRjeg-UjzYpDCiQJstd3eB94vJLKmpcLypdldxcgGxl9S2mx6vgQDJ-Le3BvewQnoUzcmWcxaVlrwugGzykQ1upFJMp_SM_Dsy1USCaRSbT23eJvEyVWseVkpT0To",
         "width": 1051
       }
     ],
@@ -687,11 +687,11 @@
     "reference": "ChIJOQgu3SJTUkYRyXwx2SzKwpI",
     "scope": "GOOGLE",
     "types": [
-      "bar",
-      "lodging",
       "restaurant",
-      "point_of_interest",
+      "lodging",
       "food",
+      "bar",
+      "point_of_interest",
       "establishment"
     ],
     "user_ratings_total": 1054,
@@ -782,7 +782,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/106600346720005885389\">Hotel Christian IV</a>"
         ],
-        "photo_reference": "AeeoHcJrR3mI4EnF2frylB8KZe8mZWf0SIK-P6A7XcxmLvhXBcnhgRL_Y-MH9SJ2WrCExvEjd-EpEvrV3Yx1rYg83zNYnXpP78ZQtp-PNXfz399HEfpy9CW3j4AEPvx3LTOcI7g_guJx32iShDgjBVVl6AWjBQ_R_PwIS86UTIeJq86SQGdYNcZioCKCT34kGNb-gWwYPTeZXxcY9zFw1xrIwIY6NEy1N21kti26Ghhrt6GbAM0vF9X-lXXil549OQZU6S6vTzjbl6b5CdiToWHcUo36pH9mL9OyIvnLcWzWdm8hE4yQeVw5zi6wb1_E8sYLiYb93AAlDUA",
+        "photo_reference": "AeeoHcIAPxfijvRbP0OPFqvMJVAfHqmSNAvEtNtngMKsTtAiO0AeYJAAcgPMx8lKVkYhoA8vAiK60fkbhimtnyX-9B1QFrNGE3SPZLDPiwWuD9wT8As_iMZWkfJOwS4EkFsHd4J1dVlDH0UC6bplhdnkM1yb-Frx9v_qRUBRh2XsNez9CcYhUtaQ8kTVvbeG9aMitRnhUWmLtfi5q15unH2WsJXBn1VP35Ke7Kers6irMGCywosX9fAR_vofBCpDgUpoC5OwemuACygZZaJwU7yirIoDPeBrjxvMbZw9VjNKGXWdAtzgpCfSRicO22QMJdLeqdv3iTQGfPc",
         "width": 850
       }
     ],
@@ -795,11 +795,11 @@
     "reference": "ChIJddtqbBlTUkYR_mVaE2d2P54",
     "scope": "GOOGLE",
     "types": [
-      "bar",
-      "lodging",
       "restaurant",
-      "point_of_interest",
+      "lodging",
       "food",
+      "bar",
+      "point_of_interest",
       "establishment"
     ],
     "user_ratings_total": 426,
@@ -836,7 +836,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/114398373447128930846\">Axel Guldsmeden Hotels</a>"
         ],
-        "photo_reference": "AeeoHcK5Tsj-8y1-Lo8XjBWgn7tvmQbYp2x0sYpRVbEQtpMiVi7lYUiPr124ui0yxI9NU-5s7A208tMLDq6G-gQZFwRYKjzCEkzFqQGLTpHCF32mEFdIW-y4TztT0XOMyop8k4AnpMb4xW7draM7EMnC-zIBe4HzVff5o9fkT6OM_YSrWCkCXRYeR4aunoOUiVGUPArfZyD4snDbVHN0nXxeD_6iEYNW309LFRwzPOkjxdTtcOcUL2qEPZAd9CphOtLm43JuysLp2LSfEMa7c1-0bxc0MPg5BU8wZmSjrdYDwvBZi_tU-Ea-8N3dMmsJX3HvjlGyvkvSkuY",
+        "photo_reference": "AeeoHcIlx5EH5--_NYH6UVqD47txNEmMthZcVOWR-XYpUGU5oRyYhK4XGNoG7jRB7mVbTQYpsQS4NpLIGUlcf-lzkfd9MM-KkfrC-seZlb5M-aMtRf-1AZkqihEdhsDMAnatJCSOGrZBgCT0EIEXm4EQUd7hC8Txrh3xfDXyoIip8ubqxc1p4LdZWBgSvak57f5Hj4gldEbVhwgxD9DMzKRwAa9BZd8QN2WuwWf4Mh2970o0vIsnwbOm9KGOjr3zva44m7R-d3KYXi1u183iLv_MBI3dloYPYhFReNryuA4pcq-2UHWf5ZY2BKG4V3DzHYPC8FCasMeiCgM",
         "width": 1770
       }
     ],
@@ -849,12 +849,12 @@
     "reference": "ChIJIQgAuAxTUkYREwhuAu591mY",
     "scope": "GOOGLE",
     "types": [
-      "bar",
-      "lodging",
       "cafe",
+      "lodging",
+      "bar",
       "restaurant",
-      "point_of_interest",
       "food",
+      "point_of_interest",
       "establishment"
     ],
     "user_ratings_total": 2040,
@@ -997,7 +997,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/100058078904436916000\">Vladimir Fronton</a>"
         ],
-        "photo_reference": "AeeoHcJNcRHh0rnH5OtV31P3hCWL3lnqaz6JqxbAqH8Yv80sxKhSwDngTDGDgDjLw44B71kgAn-KkEYVa7qy5AWAathlO-CLozQRqrrzFJ93IA91GPeDjxBNtVCoUKt2PzyTkwV-UVI-XL7IPnFNPdoeulBpfPX8VfobCF_htpdKNgO990tT_EBkRj7uDxYUZr_wzTjYaJKa3Kc-7YJjdqss0LBPj3dBWrBJjvcP3Nr7T5wVivRqgM98PlWLufv37q9peI6Az4VsR-yBmU42Bzi8Bp_HOVAZuRjfUhICvXwfay8hQSPNa3vSXINc-sgnr6B63oj6HCCkoXdjrBg9YgHVpmhRik6Rnu9En_08eKNgcYX28tpAyCUXTtlXDeJ9p67whgTUy-h2hu4dWjPVeS0jgMzeXMt-yFYSr79UrnHvOnwIs50DCnZjaSDwp1EhDkKGOIqOG6E73YmGfYjA1KdYlgORHzAGLxCJk5hxEtJ4HKMHPqCHCxXQJdlB4dN-nGpuDlhfhLanL0j2k8LfrMsOW5XEpl-uMeJjjgBTR0_kjewGB128gDhRbNBS6jPsZ7frmN3IPXh3baNiDZxq5GCSAYm3-io7tPStduX7EVUSZem1w4KVTL7_PIDDhVGSJhd1iyS9kw",
+        "photo_reference": "AeeoHcKg0YnhKTfx7Ae-8B3prufUKK0d66wcreRVademRbev5FFhMFq1mh5uTTOM7CiU5B2q_rP4rCHGRaXIIIVxa26g9NTPjxsm1wCMTtzNPL2PycLv_BjwoZH0-LubaPWL23kkdj9T9wHvjJrL5olMuwLgwVxJ9UiLT1BWGzv7WEvPUdx7KSfRwmKMvlh7S0zSjls3Zai383oNVxfp2x9UJMhUS8Y44Lw_vkaht1sI7Ficw_C_yKkwpKDoJcEZnY1EOIetSdj4UOfMySQg3h-3YxO9iFBPm4-UoLVljD0jCRHHhBttq0mlyEv7FMoC8xTSPUVKdHv7t6qY8ntJviDJ0NKMwTK_nSLEH_ZAub4hEKR7EHm1WRRhUz6_xCm_d4q6hJt-1YDC9riX7Fx8HejqIqkI6JZsZqLclJXWq7jwTCxL41EXdeYrrPNrFWuND3RMPblyj5_0wFGlJxvbUxKD3uc07DtQQZIgIeGBjDw10BUXEaj17UurZyjZBrRsI-N7OaJTtKT4y6eU2W_9iHWb_9LoIW2IcdxwKK5EhcKv_ze9zsz1OADoV3uVlQl0hKA5KJY0WZTIE_DLofuizVV8IQE-iNdTb4aL3F9K7UIKLoB8tPY9nG1QBvaKtY_pFG-rEgm2Ug",
         "width": 4000
       }
     ],
@@ -1012,8 +1012,8 @@
     "types": [
       "lodging",
       "restaurant",
-      "point_of_interest",
       "food",
+      "point_of_interest",
       "establishment"
     ],
     "user_ratings_total": 17,
@@ -1101,7 +1101,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/108035731742867301012\">Kastrup Fort</a>"
         ],
-        "photo_reference": "AeeoHcL3r2ntkDS3iFy4edD1C5TDykbHHoKVSv5ESZXA8Na-yOXKVICHe3hIIOENez_-g66AW9Q4Am_SZ_gJFVX4bG905SrFg3Ln9xgLVUWSU00y7rwvWd9hNt7x8Sv-ByckPHz67Zi0gN6sw8MXU2zemniXrzAdrSyb4_0RAI14FQfXWhiciXoc4mzbJuCRq-XHpnEBNCVYrrr49WISFcAptS-ngbaBdNLleeMi_JJp1tUPdQI784EyU9CYSlQgAGVUJ36j-KRgAQHen4oJCPIDTlona0q3IAGMDtAN8kC23fbUcDKqHOk3TwOCDSVg1j9EAWN5xi6nPuM",
+        "photo_reference": "AeeoHcL7WdsxUfiu9zmVXIP936agRi0JfWBglkX3hb_qNlG_Jhg3U0jgzAcAh5xp-HhY5rVs1TQnDqyLyaC9ucORi_1w58MCfuTky9BiCZkmQsiT6wo2yT1DdIvfjuzUUFbtnzEwxD7_9MCchUmMcqRq-As_d-gjeH1zz7oLUtxMFRDl-VNAfRyQwyJLs7DUhbrA4j6IcdKWwIIWexF_Ous8u3yDrZ_Nk0yiUaBdXMPrCdQgHEbSObwBJv5u2KjQDWL3n6g-U6eTc7j3oyqqpB3BDvlsWXvKlanjU98oFvlDjylxawEtltFCR6BbTBWQfYMwL25ILabBmNs",
         "width": 1600
       }
     ],
@@ -3229,7 +3229,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/108321463838048606334\">Jens C. F. Nielsen</a>"
         ],
-        "photo_reference": "AeeoHcKV66RNexNNpOLSEfQYL04eCYs8kMotadVj3CnNYLIt0C9HrXM-gbXAa5VzRdh1Fbkzas1mkHZ5n2Ew7D6GKQCg65Qub50Zd8FnggUSuKNCyjyMxebY_W_xfRhjRSmMJqAbaUIgtMNG-6CrUXOzeTyHg3eqOEw11cclPJLoxVErAbz2OLXI5u4jFhqosCHbgp5PfDb29vvo3Q3I6zImvNLHeWVKlk9g5T9mgIsjKIiKgm8kd88eIGcvcAOmJOJtSerEzDX0Lht4ybKqnGPOvq_oOfohVN80dASGZunM2gWXd44nExkudR8o2vDRuoRQuc6Whx0ht03ohppm_LT-hUd0qmvbsrm1SJ3hfuSPPVhzOZIRCB3WzY2jcbzHCSXnRCig1hUTS0mrUaOIoaEinMU1FfHgIIBv_F1lckAwIpvZUfF3SUPd3jL0rJMe3zWxXTb61fgMMBhjq1LPxVEL-aiLvJE-RqctsOrDb23l5nZ2r-EQTGk8xd-ZJC9njFGyYQzV9ry0_9blQU8gA2gXY3OF_EVHISW_cduVTeuwqZ4Loha-ampoMI5gPe8oHCdVps7lUcyvE0c7DRO4gh0BkOYLuQYyIyg4Ke4fOtjoMryqeGwHqvxMbB4IOiYqq5p4lk4uOg",
+        "photo_reference": "AeeoHcIKdKyc195Ii_UYilN7idYJ3lq7M30hBJ1E8ywrUJ6EB8dMwLDjyYGfQaCV8Uwr5LX2Zsbly-ASto0emLWOQUkJa_IsITOq3Z-2pHSuY9Ey4uogbzPuQxbRio-6RgpNid2XaX_GSfNmWel8w03DDi9igg8FcDIt9E8dKJkzSLqDlDaid_SQ-f3OGl64aT0tgfaLQ0LQiomQjFkpJtlAnOmLars0CM18F9FiqVve3SMg1uKtpIh64fKFDgVh4V45kTg1FUCtSx8wFUy7QE2LDAQy5AH2tNClDrDOc6zP4qPUi9-867yJOsGAUYWvSExbF00RnUBe0aB9Ns2lcbyQrnbswut2UjbaCXEvsb06tV8YCm1X2O4K6q9hM7kLYYyzPTkwySEAWSPqeg_1QXNmt2y8F38U-5aGhSmutR90M1kHtA-Y3gtc5LvE4EvgbwPA_a3i2GFvjQNzaNAfW_j2BigVlp7G07d1wjMd0fzavLDGVj-ny-uN32PUL3lMEs1G1rsbAjNXaVaRZYobixt5dOJVnjr5IUlPO7-ZOEvKQKZsIhUZ7bDR3uX_2zSNTbGdlhha8rkX8ntVKD4u43yZuLRxmLoTEKuUNHiGwW7_nn2uNfVU4rJpc8QsMHx4lVNC0-Yuhg",
         "width": 4032
       }
     ],
@@ -3242,8 +3242,8 @@
     "reference": "ChIJ8-r2gBJTUkYRsCcLtQ0Ltdk",
     "scope": "GOOGLE",
     "types": [
-      "tourist_attraction",
       "amusement_park",
+      "tourist_attraction",
       "park",
       "food",
       "point_of_interest",
@@ -3899,7 +3899,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/115259511213099484824\">Danil Kornovan</a>"
         ],
-        "photo_reference": "AeeoHcLxYgDg65cpGGbj48gDquaPrubbmVLtUE4D8JZtjXpDKRt-z3jrvwS829m2cIGl6-2f6WDmeRL-_ZfeaffUL7N2hMnDwn3qDdxLnqkmDDQKyIgja56ia--sG6XtunpMFTjmAENqiaJVITp8eaC6C1JXf4djFdaldSZHoUJzSEwvok0Sus6cEyaZd6Afp5XoGg7V4H32ypPeDcVz_A9ckUP7D5k3V6l9OnZhulS6TXGMoTJATRtB2PQadiN4L9UwMuSBB5h9nMzNKmG-cgcSpiTyR2e2wsWPHsoKnXLzCo4xuJsjpFdoz-y_dMCbBYhF1QzQUnIobmMPmHzqd0qTluDcalOP4AWkUKH_yIv3OGYEKheBoWzNLsiZ-8mLyEUqI1uXbPJy-yrE46vAR7D7ISfCKY4Jxjy0_h-ntZ4U5e-E0ZPIkk3Wa61Uf7Fev-4kgn-VGf5STle_Pxn-XC9m9-Oxp_mZHoHJoiyDoImE2VLz2UUojxvrfjUMQTqgXC-lYfz2lvb3ty1HbNI34o6Qkafu0Ko-8BtoeQmvPmbk5t67g7b2QIjGzfT544unVj4lkAhdFtlJCwIk40KVeKkLOcABrYPEZ-C0_FQDazmFziqK-0-V0dBrB8xg4eE6jm5Ijm_hgg",
+        "photo_reference": "AeeoHcLZF2v8t5yO6SfYAtcmwu7UkmLJPj7baNQ5N2V5KmTzta7C3oDXcrYuZZpYTDOMtdy_SL5WORLibisV5X_UVp3IiTIlwmf75MkTP0pq3qNVm7GD6aX-MTOouGg3qxqwYLmF22_PMh3-AwcVDTF4HuOXYm5hH9DIFm3Mbno7NCTFl-lQdYqKCP3-8L8mKjzjgMpe2j3z77jaH74DX_V3ZiRtXbU9jjEHEgsQB1oVllE6fCobB5RMfViKamVSyO6FgZzWcihosxTI0TzZLu7JQwjGbTsFc7MFvfENmrknR-PqcUowBsJQ8ykWND4hyvUxqMod1x1-fIULYov6IFOnvNt14arMdjmA8h2Zp6qLrBiP8JdRC3_6-d3ofy5mxM_y5-7ekI2a8pE0cYBPbx2VVD4DDyZq1gJEVuFDTuZ4aqOk0JbKgYY6k3nWkjG02ZPF50BbGkrejyHEOkbd1FO5aLykb2gZOC9VEsMAoVneOrmAfpY1rXfc22w7GdT12h3XWwnSIEZf2CHGrNG9snqwDXqek9yq8PPMSHS56IJAW08QWavAy4N3yVDv4Qd-qXbgyMLnYlmB9iiqxJ0Uf1eLs-7atR_53E2kw9jhcFSCaF7l9EaAKrjle8xYA0v44D37_FqfKA",
         "width": 4032
       }
     ],
@@ -4294,7 +4294,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/106578354021345382553\">Nordatlantens Brygge</a>"
         ],
-        "photo_reference": "AeeoHcLCD4EiIW8N66sF4Ml6eX701mf4QlkkOSEytJ-vt1KZCCH9xM5wF4d4JOOaibaEhIlUhcnwZBzS0UWz-pQPjs1qAlRj-on6LZY0RuN0zc9_9b_VBWWJmkFGEnkYtwg0PJbcH913I5QOPBNg9uUwCfZB8m_WxOMSW3aEkvjo7eUa9-BvYFkCA_qUX5tqnPMD_qsUatgKm-FHfXD1ZaqzU8R8R6eZHDD5P5-IPcGZNniPPtan4LNwoaQlTxOhoL0cFNtbCyd6EfFP2vk9cq1g48LbfVyBUP70cc7FGWdJoTBIuFGtz0wVV8QxLDPiKrmzN1CiqUjNL8l9ov6lMc1MlkQhuMqTH65-sHX8uqz7nmy1MTT9AvLN1qPL5xko5jEkM_X69lBXvHLZsj8lLG7DAAiDACshlwKxc9H88DAXj0YY-LkI9paKUhexklGJnKXrZqyAy73FewEmEGHNkU3SYlOxabw15jU3Q2pv05h3vmvXl-Ck5tqEwd_3RBm8UsG5RwE3Gcrr7gC7NnbXz2oi70y37aXqoCFoN0DABZOMVl-zqc8L8hASAFPc89qaFol1wGUbCHHtDABvUa0BpPXuqJ9XK8Ut2XCihSNgMx9oyc7ka5YatCinEdBkMDdCMvfa09issA",
+        "photo_reference": "AeeoHcLGjJ7oYWucJVkE8ft0-E-u3yGO8Nzfc7uQf3RwPAMpQBn4fXg725LkYIjK87qH_L9sTLvaVYw4U568MwSJ-CPap807_OumHxQGKudLu9F_URi7iugHIMdL_MMKMnTXBCluEd1GvIYnaOaJ5i1JTbC2EpBvielfT2JUERS9MjqV6pVTU5vXB7qU7W9W2yd-epC4T-hq1UtDI9B1oy501Yhoh6NjKwTHzfXJT0kkUPpAvZLu7WsU97YenIXWip-bf1XGhwQd-4QoT49mCAVlTISOmMjvxOJbaSyeJm9q4ezpz2i_tZu78GeWLQf7WBQTcQHIVS_rZMN4lD7biv5lm9WQT5j3wgWHPdyCuH39gl3WhYbOC_AMr0uxqPAFW4O1CffLVyixCjIPv3Ulr5AyokDUc0zPqUpgwZdTtSm3YUwwnLn7ch_44jkKU4qwsOcQWrJeQY12nwrPtR1F1Si6zojJufJUF__LwuoDbcNp9Uehxq3DtST45A3vwhIpKAanAsQQpcdJXwP9XQwVVXZoUFTEU_MCyNKTJ6zh-yeUYK5OR_ZG8oxkm5Tajr2_VihOyIaak_LKqW-Bz9LitiAmzEmpvXzDFmXsqY5NttNrooirE5tF6eAbCcwob0QUgcwUglWCyg",
         "width": 5760
       }
     ],
@@ -4307,12 +4307,12 @@
     "reference": "ChIJw_XJaDtTUkYRfVOCvQxdfIY",
     "scope": "GOOGLE",
     "types": [
-      "tourist_attraction",
       "art_gallery",
-      "museum",
+      "tourist_attraction",
       "restaurant",
-      "food",
+      "museum",
       "point_of_interest",
+      "food",
       "establishment"
     ],
     "user_ratings_total": 572,
@@ -7411,7 +7411,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/117644021486955963328\">Lars Wenstrup</a>"
         ],
-        "photo_reference": "AeeoHcIWN7ZPb9C6jExhGm6OMEO4UlrnfE6T_Aeo6LrHTtEpf0mt_48nEODHAoNgjg_hysSY8kFHMDTN8kRXfPbKjznPG8ZwvuezHow81wfYE4T91oPMWztwiYS9p0Wik33FBi8oBdnSxLbUjx41UUxvgyK_Yq1UDDMc8JLPWtlJwK9sDai4yHs7j0tj1SDxigrfn5NNAMMaTtjNX0T-J5GpXUh3W6M77A_Jr4Aw3ODhM4Akm850mwzHm7vm6n_7m0yqnaWEeNbE1iVd08mYy1GlzNxvyHv8VUlVMrolr2AIJ2p-QoT8MSh8HJ-THv0iH-5jjNfNok65WIlx_d3EA8AlS2vlGZE2br1G68AThEDhH1-2FL4TBNlOMg5nyjZRz1_3dKqUzG0fpEQfZXyhLPZ573CVku8ipxSqn_si7IUs-hM5bBsYGS_1_TsMIuaLol-FQeteyzW3LXaG58fQzCw4Kmcfyy9bu1EUsbw0dRy_ijZHppgujorFHCbnbVCImk0oJh6b1t26zp9k3bQIM2AEFG41ky87NyI44_Y8TBG2-UMN8E97Y4eIB7DKutJ-aTkKth_oMo5zSAgV0DUs1KiNGeHgrLEoDU30DZIQR7ZOgr2N6m5-ziSDKoKnaiWAqzuoaQCkbw",
+        "photo_reference": "AeeoHcLAvzf6dTYNVsa5zyN39D4gvDYENKDx1QrgHOSnOOeJONlmtoTkJtXHM2Ct-lNoSX1jg7Srf9Dk9kDkBTHQVdZ3VSVIWqkLraB5Vt--PHgbneqr5w-PL7QYnmNunhpqYz2XOAzVCzw5kL7iSUjfRY98OCpwNz0ewWFVrUAFpZcikerSKxGCHq_qt2t8IMBzIGqOah5PzdAP0KawqXSo-qwJMQKHiTE94tzEyjfhXGVwRbAbryjvOqjvw_VXIEBIuD5vBLkqoVRuD52MSoQ9Fd3-ToVvGePjTo4m9r50gQIEZVDRdT2BoHe4nW4a-x-nASxjVn8ZdMQ5rD6MdRv43ap64nM8ALVZhsGn8QaiPyWZqKyrWRZ3xNrKUnQFzDaddKcm0KeYKCc-ZkayeRFarNqDcth6-ZSzCivnIR6TPWSnMC4cSqnaKbVb4ev0bzxi0HVoRpOGv5b0FaZV5EexA9VRv5CjMycJd-oG6g-w2OR_aVI9nbGeZHImMBCa1bdE2TLmky1ouU7dN_n-W9n_e5FaY2jjYxFUISmxOkyytnS8IJv3xWygM54RVyejHW-dkXx4GO7jzpVsk3yTn3lxveSx0eqMGAl5aNV-BYT73_pj8lNILhOiQddu_A3odKvW87-Uhg",
         "width": 4032
       }
     ],
@@ -7425,9 +7425,9 @@
     "scope": "GOOGLE",
     "types": [
       "shopping_mall",
-      "bowling_alley",
       "movie_theater",
       "car_wash",
+      "bowling_alley",
       "point_of_interest",
       "health",
       "establishment"
@@ -9155,7 +9155,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/104169136228362622750\">Cinemateket</a>"
         ],
-        "photo_reference": "AeeoHcIK2j3F65c8Bn19ExVMq4KxocWe30ZPWYAp3o_26JYFLFxNmSBMOxyDcqaQHpf59bhCGzeK7tW-g69mXL5Rwaw15QdntK6f4mN4MQqkFjaYzNJFI0uMpyJqmWwcGNi3R9675KFjauyNXzin0gqHuFVF70MW2IzxoteoKf2bVzR-XDgPS-pcxOguF1ZweDNX6rAgl28VUrkGXc_CfRIWd788NSvWYflxvoD7aRTT29PmO43i6JMLm9dL-P3UqFgC_6OzH2cO6Qbq2X7w8EMghlO8e7Nkq8TP2v3F2GWMRUZBV0aoLIldaMppAbFM29GjOJStbs95uYA",
+        "photo_reference": "AeeoHcIT-tFiTF71D39UyyXwzVKNPgxtElPCm4DgYOLbsHCzTOC6Q2jwIux5f6jf6Ed8wEsD-FdfifhKCHb16K2aCVHr5GsGIM2PRV40gYjzFdKEDkRSbqqJXwASMJW48X-Rc4mdhx6S9_eB5-b50-hfV2mNBvpqmSEdmAgiuBX1bbjEoAENawqqEyqQvcHYsbYHDitWSpe41mLoBwomAoOr9-3Y4_x1565lMIEkptlx5IHYzxx3gLJyn_FZ7p8-Ts81xMQ8eN2XW-oChIy4UouY0odx8-fCxlm8J36K4JIu75TcA5_jpQ0LwHyUicSQUJMaGQLBFzOkh00",
         "width": 2048
       }
     ],
@@ -9169,8 +9169,8 @@
     "scope": "GOOGLE",
     "types": [
       "movie_theater",
-      "museum",
       "library",
+      "museum",
       "point_of_interest",
       "store",
       "establishment"
@@ -9515,7 +9515,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/105546974940307047850\">Planetarium</a>"
         ],
-        "photo_reference": "AeeoHcK7jhIuUgF5zb4T9faPtfYNQzBQUlncT57kMvGPOUNYQqonq4mdGeVPAe6G9Tq05iphkosCHabIga7YkImduqqgwHq_oft38XA8pOW9usHBQCgzayHVu1RcHaB63NbdPhBSbhBvW7SJL3zQ9crTQI0iACpiebh5AVSmpRPlKJPHlqcnFbDlTSMTGGRqduosNBeGhVLJdWLHAeOOptNYjvWOVfkDSQBFu1aTOfd2WHILnyDJWmN3Y6y9TfXAaCM4pt1J9-kJmO9YiAAJHqkqQjVtnXIlEmWIYEAuOzkQ_kqllG729XwpEBcaPC7b-_Irh2C2vpjR52A",
+        "photo_reference": "AeeoHcJSUims33nnf0M-J_d_oXnjYvuhX-ctjUwLfo31xjqxKSMi1UJzJljrFALvDQeMXi9DcLsewFTY7v-noKclAlPBOe28SoEqFijFzsaN42oZZRfyszsjlVl94RrkKbVd1lEQlf0fz0Rg9lXGZ-701tKpcYYhh29ey3Hz1qJxFBLfESgCj4aoH3S9kWxVXnDyhaMGiTCojs_jStyfWCTNShN-PElhKVf7mLnEl0f5bBvbADOH4ChvhMomAbjX7izAa4i4YbdgLZdH4kkBVc764gtrTFc6KEaNgQlxXsQeoSrczLmPmp2dDAHFsFBN0qpHkdB_et9CEJM",
         "width": 2000
       }
     ],
@@ -11216,61 +11216,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.6796242,
-        "lng": 12.456464
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.68035245000001,
-          "lng": 12.4578055802915
-        },
-        "southwest": {
-          "lat": 55.67743945,
-          "lng": 12.4551076197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
-    "icon_background_color": "#4B96F3",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
-    "name": "Rødovre Centrum",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3024,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/117644021486955963328\">Lars Wenstrup</a>"
-        ],
-        "photo_reference": "AeeoHcLAvzf6dTYNVsa5zyN39D4gvDYENKDx1QrgHOSnOOeJONlmtoTkJtXHM2Ct-lNoSX1jg7Srf9Dk9kDkBTHQVdZ3VSVIWqkLraB5Vt--PHgbneqr5w-PL7QYnmNunhpqYz2XOAzVCzw5kL7iSUjfRY98OCpwNz0ewWFVrUAFpZcikerSKxGCHq_qt2t8IMBzIGqOah5PzdAP0KawqXSo-qwJMQKHiTE94tzEyjfhXGVwRbAbryjvOqjvw_VXIEBIuD5vBLkqoVRuD52MSoQ9Fd3-ToVvGePjTo4m9r50gQIEZVDRdT2BoHe4nW4a-x-nASxjVn8ZdMQ5rD6MdRv43ap64nM8ALVZhsGn8QaiPyWZqKyrWRZ3xNrKUnQFzDaddKcm0KeYKCc-ZkayeRFarNqDcth6-ZSzCivnIR6TPWSnMC4cSqnaKbVb4ev0bzxi0HVoRpOGv5b0FaZV5EexA9VRv5CjMycJd-oG6g-w2OR_aVI9nbGeZHImMBCa1bdE2TLmky1ouU7dN_n-W9n_e5FaY2jjYxFUISmxOkyytnS8IJv3xWygM54RVyejHW-dkXx4GO7jzpVsk3yTn3lxveSx0eqMGAl5aNV-BYT73_pj8lNILhOiQddu_A3odKvW87-Uhg",
-        "width": 4032
-      }
-    ],
-    "place_id": "ChIJmda--vhRUkYRR-HY1vwUPrk",
-    "plus_code": {
-      "compound_code": "MFH4+RH Rødovre, Denmark",
-      "global_code": "9F7JMFH4+RH"
-    },
-    "rating": 4.3,
-    "reference": "ChIJmda--vhRUkYRR-HY1vwUPrk",
-    "scope": "GOOGLE",
-    "types": [
-      "shopping_mall",
-      "movie_theater",
-      "car_wash",
-      "bowling_alley",
-      "point_of_interest",
-      "health",
-      "establishment"
-    ],
-    "user_ratings_total": 6919,
-    "vicinity": "Rødovre Centrum 1 R, 1, 202, Rødovre"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.6738049,
         "lng": 12.4541144
       },
@@ -11555,7 +11500,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/111332840568112820591\">Luigi Nevola</a>"
         ],
-        "photo_reference": "AeeoHcIM_7GxBR5qXeBASpL-sb8UNTRwzDltRHktsIDqJEsXJ7SUg1sTr4dMZZzKCTS1nafTr924U5DxZ-xpr60NxebVr7lBkyDgKEeuuKjpyZF3KfAkoPxwuyOn-GedpHZhMnD8XdkZ27v70wR5hBmCTN4mhVyLja3Ksa759smd-5DQUDVcH43eGSyTUI9v62qMVONqo8dzGV7dw2GLh_qX8SFh2KJzbu_OK6JQXgBjtFSjpsyLwSMYzHmQC1nQMcr89_kbXPusC_xOeIwzGMqhNNPQ6gDYmYBCzq_tJGs-SQZhIMhr0N-_r1RoZ7MdjMjuLZ-mjhjAgErwUJo4tkEPy9G3IHzNf2NjV1AkdMqTN9BnKOGgSPELxwYWcomr08DvkL8leum2xNFbT441amcMZfvvpiwVjpxQL6X2sq4nlRXe5jj1zjhhgItt8wPW10vMYKa5JWv-kfTXiXysxr2KBq7P26Xl2PhLpgHHIf4bnaoCnTuX60P_DN2WwOaQ6l1ZouJ531bnbpiWhcA5u7ACXHDGFL8Zb-jIBwIjYJVK6UYfRlFIImUZRMmm8bIvd-e8LvjGpixyDrgyym7GbA3DIxLqeB1aok9AZ9yuXgyZfDhK9yH1_oyKh9OKeauSmmkbeOCmJw",
+        "photo_reference": "AeeoHcL6bahxfaYifx7pM-tn1nJJOh7nR1b4RMuLPtZnsugaEySAh7PGsZXOO1O4cVWDAwKvPqA79pJ5HqFxNYzv_AdXKilmcqG3nPLHhFKmyF26sXU0zBumxGIA5rve8wMjIgn_9ocvVGe7ynXmMQtnI5FdYEas-v-M3PrUnDRtFYKQwerztxrJD--unUEMbU3ApNy5IkwudJ-UiisYTMzyJnloVqNTf6TbGCzwU4QIxy6UkAxMG-P26cwAMaJBBacB6y6SsYaR76Y7uee1moj5EVEoORVWQAU8BYFj68FbfCjT_ev6ynuCz2JA04FVlzVFfiDyCU7sQDHTiI-HG4of5BHINA4bT8lBdyxs9DIfyXYqyzHSkMHxKykRCiLp4Sy7v9_xVP3I6138wdVivrLohtUUDX7MBXFxd2rrk0hIzh5BrBXa7HgG24_Y_gnxtEFYitb0zASxSpWnaQTuNxB8zrzpddLmRZpcNkOzewTYuVfmiM861vpzkf6vNxq-EI7Z62_Ag4QOWPlq1veM0NhvG3RJNqDy-KCc0ooIZwDOGADisOy6qj50fdvUzJfZMQ5stYoZg5_va4WQyKihRMYrYsu9IlPH0sL0KnwrMhBp_r7zXnhPfvEWnTzSGhEkNNFHV4oQSA",
         "width": 982
       }
     ],
@@ -11607,7 +11552,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/112001203321273908293\">Engin Dikmen</a>"
         ],
-        "photo_reference": "AeeoHcJBaoAs3ITZU4q1J3dJdmxiQTqdhD8tMZek2wfR-WjPvzJIGwUWutF_g6vx1M8__LezD67CAb5U4IJlcq0DtpI2cz46G9zVf5ViJk-FQO26Qme4WxgtdeZ3Ee0I1_udzrdJp1v6A-wJgjeBt2QZ7RWrwE7QWnZR82LlcPWO0xKRAoicJL3d4biglT2K08OuaASYdonKvOHrH81GELFV6D0QCi8ayymRu7TAgFpvZV38Ij0JhdASibORpLxZby8_iby3ed9600FQuaT_JouotvjzOOJXovtgvaqKHlTh6XD9mViscd2Ganr9ePS75bIQ2zcqkLSx7EjhvOw0DFWQn8A2nCTkHaUk1NZuWjiDcP8xh354WJyZA8hWI81RbGv0D2C1JAFQCLcykRXHTO5mjFRNWVZGEZF5nGe7m9hrJ7-4vzZoglsDau2GfNme9dbyLFy531jRrMx6o9o3Fvsh3ww2erBm1Z-UxV3w7hzA4Lf5jSTvLq_vKfW5swvdx7IN2q8sgjdbRHzVEdSqoLw6JGeKzaTx6F75plEkqZ56RcdR-irgAxaFTxXuyOm19E-pDO3E79Y9ifD5JIortpKbEEAfk9QkgjVdE3w7hnVnUALCVnpT6Rpshe4MhM9X2LBCX5FQglXX",
+        "photo_reference": "AeeoHcLWr_kuqefabs6K8Ocyj5XxX2ec3P6jD3zSiNaLNqFJxyBT6qzaNQojuSHEhExtp0GHidJXGKqsILr-iipBAbAlz5O7v4I6k_qjh4jXQEz7OyQL-bJRJwxfU9yiqzQMgjj1BZSdAYfRznKH9eKStHnn9vScfi1Nsjdcd5r5IjYvOwuxsaVFYqi9-rgrIiYF91V9t-8iwgye5oJ_TbGBSEt9MV1QnC7JYRAADheAMG1P1A4mWW8m0ATX9ixRQVh5-6_eSpvTja4k5Wb4ydDoT2dextsWDIcfxOjTuCNPr4zaqPReK21M6OUYoo3VreW0Me6t5aeVrC3QQAbVEPncF7Srw1FugwfPCIDeAPwgjmtm3Qqm8hY3MGNqhsxL7-q5hcYl5BVEMCSegkZ8_uoHsuxnbTBF7h14owt_a1MHD0adgEKXltYreDwxwmktwZ7sDbhLHlEf8_xn8rsRGOFkg4uI2-0BE3lyFGRFq7VRs2zaMW29-CoRvv2uEyR-B1a8jgJGYUhVZos5Q1X-JZFxjXucEjaWBUs8ZrUmOl5QM_26QrGOSqsAdBRHbTUbls7e3g2hk5Pe2zCOx35aRQZH_SMNual9tboAtZzAxk4ZwMTvzVhkC0J2PUeo5QeGpBBGADC_UeOv",
         "width": 4032
       }
     ],
@@ -11627,57 +11572,6 @@
     ],
     "user_ratings_total": 12334,
     "vicinity": "Ny Vestergade 10, København K"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.683218,
-        "lng": 12.5783977
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6844518302915,
-          "lng": 12.5798311802915
-        },
-        "southwest": {
-          "lat": 55.6817538697085,
-          "lng": 12.57713321970849
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/movies-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/movie_pinlet",
-    "name": "Cinemateket",
-    "photos": [
-      {
-        "height": 1367,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/104169136228362622750\">Cinemateket</a>"
-        ],
-        "photo_reference": "AeeoHcIT-tFiTF71D39UyyXwzVKNPgxtElPCm4DgYOLbsHCzTOC6Q2jwIux5f6jf6Ed8wEsD-FdfifhKCHb16K2aCVHr5GsGIM2PRV40gYjzFdKEDkRSbqqJXwASMJW48X-Rc4mdhx6S9_eB5-b50-hfV2mNBvpqmSEdmAgiuBX1bbjEoAENawqqEyqQvcHYsbYHDitWSpe41mLoBwomAoOr9-3Y4_x1565lMIEkptlx5IHYzxx3gLJyn_FZ7p8-Ts81xMQ8eN2XW-oChIy4UouY0odx8-fCxlm8J36K4JIu75TcA5_jpQ0LwHyUicSQUJMaGQLBFzOkh00",
-        "width": 2048
-      }
-    ],
-    "place_id": "ChIJBdIHRxpTUkYRmLFH9xtsVXY",
-    "plus_code": {
-      "compound_code": "MHMH+79 Copenhagen, Denmark",
-      "global_code": "9F7JMHMH+79"
-    },
-    "rating": 4.5,
-    "reference": "ChIJBdIHRxpTUkYRmLFH9xtsVXY",
-    "scope": "GOOGLE",
-    "types": [
-      "movie_theater",
-      "library",
-      "museum",
-      "point_of_interest",
-      "store",
-      "establishment"
-    ],
-    "user_ratings_total": 340,
-    "vicinity": "Gothersgade 55, København"
   },
   {
     "business_status": "OPERATIONAL",
@@ -11710,7 +11604,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/103193536983257533418\">Lynn S</a>"
         ],
-        "photo_reference": "AeeoHcLpzxhiU5yhU7fHRPSGstw1vHXViwHLYb1oHNIPblQgvzCN-VqGOW93QYLNAhzHRS7nQ-2m8vB7y33J0X6kjn15rVIv-KN4Y2zf27m2fOR2sNxMWlDuYfVFJiQAiD8UfxvHJOSkvRzNp9jm8iPeajxdvG74Pi92ZmuinXPuh1HSFXCpofIKwxugKbE1nKs_MlDWC4gteNofKJbAeDZyDEdEGo-8kEs1PSqKzsTZH7PIch1r049eT5L5x7Bb6CbjZl9LDl-4w77La5egl5ex6QtYeXrTKyZe0VFUF9ZVwip3VHsAT26sKfwai1YD7vTR90J-_klCqkcnw4b8M5CZHx2utKSFn3B3xqo_au4bGep_I27jC5YVhJIEt0kSthAQUIM1JM_7EyI_eHj5bcrbBLt7qhmtehHZFS0H9NDs54wjDg1wyiFqDfJXtM7PSXFbkeYZWqMoF0HWqQT4QLVzA7PYdGU0bpt_1fj8-wcQlvONXoUE1Za5gOPTmmgXZtqd7PTZ8sFo8eapULVYN1VTH7bNV8hwLvQO44Oggv_C16QtrZuuHE1w4UkIiXEQEVcJLh7nz4zrLNTpz9WNtrxQBiX_WNFB4EDN9EIZtVdoQL7yFTI_7LntI9_MvIM2wewV7KG7zA",
+        "photo_reference": "AeeoHcLrchsBUz_SlPqmnkQ1gQ97HPP6RPAgcaaMMAH16RfhtVGx74Ow8FXDJXL5ceVClwl_qp86Cr97-d61vFogQHggpb_5WcyatRg2H3TRXpWfovlSYMonD-baa9eZ-HjMAVEs4EXQYZeIzy7gWnCUt0lwRKqLpFCWaloN465KKw9E2CieZr-cJpIgfve0ICl-mtM9rQ31MOngYmks9IAqHlqbNS0hN5Dv6EbydeyliGVu9KFc2Ff_dhx5TYlGd9G7m1oz1CwH3ASdY428hyrvkKWubOkEjNEOlc9p51EROQmGIfdBcABTyP0Z_nDOHKxugFvZwXCXpCiJyZNbyjEgNyxDOLCuh-FD4-V1l5kDARXbgqIjcm2TlRa4VTBQ2bevIQ_UkCpawPKMVPIWw9wLVmxQgr5kgS1a40IZ2CwR1Lmabn28WiLDZcPkTOgUkMFXxTpW9rD94SmlniPcLLj3L3zvXl4Eb1aQs36O3iR0Fmhg-LKObNjvxOIIUqiIGTY9CzyPVgXpOytguJDM88lwXQjpE1At9-OGrJOKhSZIw7NYn5CnbFK6dSAoW9okY0Iliayw-QG-5QNaVQguRCpO5TZe34dCwx0iFcp41czf_hRyN_qLRhLAvTrfl5mC7yopederZQ",
         "width": 3968
       }
     ],
@@ -11762,7 +11656,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/113946866885058476925\">Jose Luis del Val</a>"
         ],
-        "photo_reference": "AeeoHcLB2cfT8B8aH-6IXQV-j74KnPs-npwwX9_mo6N6JoyEMAEdBKTYS7_xSfdkKvD8Uk-4yTQKgZuwc7CdARs3ptjrE1OB73SXNyDjFcsNQa_AD-5rhy95JOl9f1RS1XfBZPL761bHWQBOy67ytJ7hu8q9WyMI04-Ff7tlUtTDzgjw74kCZhg8UQhW4E4k1umTNyO5tZoYlshQJcgCmG9mJTOKOLCfIASeEJpMiu_f2nYYC8u2qkg0XozWQw9jPTiIRxAjljxN_ahXI49o3qkTBQ6iqmj6HMhK26MXV7Vph8cDlDsyQMTcZ6umFEf0ThZ1DO2l7Du3QtJvV6TqFphkEHk_hBLwCOX8DJDoKTdyMHJvajzQB53iFuwaqhqEqX-4C5PUZUvDAPPvC0iLOkkegHwdp7Jqf5ShaJgJPKxS52s1JqQJGvCQabyjFI_Xl5EA0ccHkhLGIPp5cwjZzXlJb1wEVkN2ez0fM9HUnmsi-VqIV0xvL7HWiW-3UKM_hhq8zLXptZT-8pO7OLbt74i9551iFwGKdb8NMo3ONn5GYsIoQE-CH0GQKDxXrEGYOkKs9SONBl_QpJ9dahWT2Ln915gAW_QTS0HC_QBy95HQJnBYjOnQhHCekIp_sZ0Ahfp8iQBsbxo8",
+        "photo_reference": "AeeoHcLVQ54KBfBr43JOzPByYzVX-swVSY-CtISMUyl5QGtJ7QJxyd14APtjkk7E3FyUcVCoUOGoWtrVkJ5CV8Bn4oevYToWfR3E9yjIi44cuJuIPtk7osTQV3AbFf_sXezk7WbljcWkZEasMnc2Tnv3vCiWomWb1Imqr70IUaKJ8xJuLneHDF3ScumTkzIuJtRYbMrgcn3n_92RE-VLuBoBlIIUGTUfEdUSpALhs7UpzqvbMGjtA7Y6ZM_vOyrd5CV4n9_OBiGvAZFHk_B3JsZc9egEBNgz33Gbly4kf6PhYklFXJPzI6nilm2XUuKb2FQdnJi6U1D7xequD9dlcvnClQCznAruID9n0tJdY_vgGb9oXMPkQYVCOtB-CPp6svYbrkJcvWR8kYavV267DlXSACjRmDPJalWv5u9CQuHRob4ew3dkxfDVNFI61BxhOAAzBQO3ohII3iDxZeYnktzAWj5e0C55iMjC4s86zVdydiK919BVu9qBr52tfrZOTDqufgA1gBemFTmxMuAGvDnCMQEQBdTVXGLK4ExGMrc0t7WCDgMpYyk3HHMpn7mVbCz0gFZLqTGkvRd63JCLvZy54ee4k7KLf4sfC3vqCbJraaCc2qu4ajFICgzNiiyIzloXudhTvSUL",
         "width": 4000
       }
     ],
@@ -11811,7 +11705,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/111646295450585136542\">Laurent</a>"
         ],
-        "photo_reference": "AeeoHcKcKFYUX377he_fKjW4I-91j_qEjjNaE7Otb1MoMlC8UGRzFsI48L0IOlt4_eGipDBtS_c2cbtgyjg21Ok6KrHHrS1q6xUQRQFEO5eZg6WSfBxNUBcC5Lsg_p8SHL-_dbkcEzC3jzJ3733O4GYTRXz_HQsE6XPteU_4dfGwSDvfffWVbPUxa7ADcATCJRLcWOYfP-z4ZeA9AdOE5rXtojOe_J3iJ7_JCX-xI2U7virI7rtRVRNmbYY-Rk_yHMpT5R0qj7edz5f1dIYM2ptRJrlRRE8K9jniEUKRP0sqkDFS_iyZ7oMz33p0HAwcVT3wnfcOJ-r_RClP4dmdomAAehIPdmTJhTch23YHfIIWf_99AoXRmU6i39NHh9fFiyyYhYErsX7P4XSYUW99a2S1G8U0-6pwE9T-LKjNLYB7xOG9ULFvHHY8AbhSE3Y0c8Qbusbu43abzxzDf8Amu_M_D0k1md6SjdpFY9av6k9bPolvQVAknlqVx-g5Lw35_VyFdjPQ5UaM-jxuPRz5gYzgIJzQ0TrVCFm4vpGyG_Ie71U2E4Drm8mIDt_4N9E9zuo76EV0dmnFiIWsE3n8sM25r-jzeKvhxskaYlX13MlGn0eNuFed-Xx5CrenuSkdqDLzdtZwlQ",
+        "photo_reference": "AeeoHcIlgV4qaH6WUw4-LI_BpGBGkexBcJPueh2JTkDOtQfc4c2BwieVX8imOX_eKG_YVw9aVILwTZQr3bEQ88QVCfaVGXXOc0Woi342QJ6RkCslvcJnfREYVQ81EH2TYTsgccdTapz5RZN0hxQiQlDaXZS-z49QAvAkegyi19Hmo76kZXHEx5sS_FcEZeM81wcLCxKYEZyYE6xQmuE1JSrhkCIqMm-CSNrKf0AVWwSZYkrtxXHMAzsfiFQ7-aaAut3FbOSuxbbAdJw9DC1ez5kwVQKO-Jc_sSZ17iQmHXVy5qQvlB9eg5Rwlu6Xe09W8mYLE9qJZcOH9kgb81eemyfOxzwnIk0aWe8OUesJX7prHO1moPq2FZ5Vp_q2wVn0pwZkPane3hYl3vftlYnguQfuMLpAOdnJgTLt-ucu1If2MG6ng5xDe4NO5SBwEyCEV5wtttOBqmwNpk2ggOAPXNLUIhvXY6PYRdLeoXMpstOPbDNOeEhATqmiA0rT6UfMEzPMZZTy-sXUltj_kGhzmAjpHHN8lwjhxyWNPTPgEKlWrlZeSFFqzbVYQnv9dJlSffc9CsE9Kaj_JcCZsUcVLJJ_-PTDXA_DU-QYk0I3HJrUrAsOX65armtOWf-s5lBxMKgTKQAgmQ",
         "width": 5998
       }
     ],
@@ -11863,7 +11757,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/113328250976282578924\">Tanja Schönbeck</a>"
         ],
-        "photo_reference": "AeeoHcJxJZklCDKaNYup_8edkEyErLscDs96PCeXfERcDFgtDXAkAJTMM7Y54QUHyx9WBT_T8lnuiImbwADXtc70IyItOFQMYZLEXF4LFa_LLy2iAX6ITx7CE8hy9D01I7UWyeV8VwE6dzbjvrcF6HZVWPA_HreSMa6yuyor4JwrF7QNoTPJFSgFKe2Wp7vE0MqIL-zD3F7S3r0rwy1ROeUeWOlcTOuo_IMLmMaV0Dt6me3c1DEEwMVCKqAKokay3HYdhGr4uQEQigxcXNSTDBVuk7_RoX87xMvcl6Oj8G3CMzIIA8iBjHiqXCberRun2sSgupgNEDldl1wFc5V5GMv0qk8ZTlJtEus2vvPhfa2UHBqOdO2SfjGSU1lruzQqavUw2r5K2xMcYlkm-kST4JZifTXtlcZAAUigfFeqgFyFyt4yn4NAFdXLEn1VbAjm-0jOSuUvbfdq_2bQXtTPfoRGVODYxORmJkycAZU21WgQTsA7uca22j3YiDZfX99Th5fCz80nyf2UsdhVb4DBl3lx3ZbjulDg0KNtWrdjDuFeCAO7I1HMprYsgGn1bcVGTMOZ6naSHAaQJmneBRACfJhbQk_AG9xT1NkCuY9mA0OUbMwg4D2GdrnxR9sClueUhWKl132nuZYM",
+        "photo_reference": "AeeoHcL8T-rXwOAo4_k8Eh56BKXjd2ad77FUcPx36dpGmWjT1xRnJK6BJxLCvpwKdspoIyrCNYlBwSrD-msqIFswyAjKkfUVeraJ_A1TmlNS0yNJFni35qqzFjSvR_3PmBdtxuw2nEL0LhfzVP5fgRDAsyiNvx-c9OYuYtFHrRq6CriTJWve1cNbtAEVjqCJART5y7OJfK_f8u1s_d16hUm-HDjzMJkbqn-IN3M9m-DELfxkLBSIppvXNyAlLEIVYpT93YyF6Qk_BKZNuJeaWwlKpbEBrGDPGElE1OONQHOQSYgzJWfsG0bXs6Eq5ioOV0JzaWFey0BiFX2u5_iVItngj0E4NeUBm0Us9PLRXFC_GSFcastkt6rz7GTmnj88d1BX375rIZDW8OaBL7eg3_zy6s3Fxeh-15Xz6Y4tZhdKCeK5o190JURM6MMLzlfJ9kLPn3uzh0Zam00CFBVxuo9SbgQ_IbRjfe7xPIrRvPh-iOQVfhZohFH-QDedRmVFiMYFi9KwHoEf_L1KC8euQvwWoktk6gqOjRDObaCBsHcjWbB8BRKsykF1db_BlMgkkvxX5dTwaRPiwrc0ON-usXkoBh3-M08lR2rFW9icOJIyS8G0OAi8xFcVBxlnwgOZKDFqrQJyfS5b",
         "width": 4032
       }
     ],
@@ -11939,59 +11833,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.67465079999999,
-        "lng": 12.5580804
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67589838029151,
-          "lng": 12.5595466802915
-        },
-        "southwest": {
-          "lat": 55.67320041970851,
-          "lng": 12.5568487197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
-    "icon_background_color": "#7B9EB0",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/school_pinlet",
-    "name": "Planetarium",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 1125,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/105546974940307047850\">Planetarium</a>"
-        ],
-        "photo_reference": "AeeoHcKJDKbrWVLjk6RwowxR3sBssPxKQ8XVsAp-Tpg9XhnnbXtxK9XCL3qQKLUxBHomdV5jGxF2V5GOdNYKVNPiKKfU3pUF2XFk1DPN0-zDSFvC99pLQAsry-S5wA3hCqDmfdvcWW4ALMnUtuSyM5ysuGQzGioyunHoAN3MaQGyX-45TGVqezi9md94KRpeRw4qBLDVucYq40EwoRNo_JO1WxnR6dgnEKSxecSWm0qAWDD_MWhnYww8R7EHMXW9dX-zdPupfRKWjIeZ0Crbi1_QK12Wz3GHPHalGpzwEJC3pvRYEUxTQY32vhgCtplCBWrMlU5oNVawGpM",
-        "width": 2000
-      }
-    ],
-    "place_id": "ChIJ0VKKcwtTUkYRYskOpknXs7A",
-    "plus_code": {
-      "compound_code": "MHF5+V6 Indre By, Copenhagen, Denmark",
-      "global_code": "9F7JMHF5+V6"
-    },
-    "rating": 3.8,
-    "reference": "ChIJ0VKKcwtTUkYRYskOpknXs7A",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "movie_theater",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 985,
-    "vicinity": "Gammel Kongevej 10, Indre By"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.67438319999999,
         "lng": 12.5768164
       },
@@ -12019,7 +11860,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/113557450020876373127\">Cece</a>"
         ],
-        "photo_reference": "AeeoHcJLNhjJ3GbaW7yq3D8EjteuncQg2Pyvlcj7DDf9DC2cbYMrZzd6Er4C1cWpqYCpEwjh60IzSNy19SBA7NNoWznb6c4tqOxkaOqat5a--4Ri7PeLYu9NnEAOHFikr4mS8kwsPcIdUuW9ODxQnHFLB2ICTx__DxFRlADhpAsLA4eH72T9uh5r-0dngGcsHQSO5vbT4JJ4hTPtF10ltPMf7X_SGBvIAoY_SSuSgGey5KWEIzdxJ4Zm-JLaMsT1rPM0hJzvCwW8n6K_ElCjSRTqXuFayuHZ_59wobjr00g41XXwpI-ZYMYnLIkVv9bEv_nAaP6Vf5kAtqvT3fN_K5XPmJ4oVhfQKicNSCZUZ2ts3TmD82y0phjvdNqcXYeRGQ5KnjOHAAob-8415GYZwdZT6c_yjpwGYIveXPnfm-AYdb3IcBH96UGTb_FUEF0oPUPfaQDFVHt-MbcO1VeWyu3D8Dso0hl7u8fbja3DLECFGl59wJODM2O18p__IwmK39fRVioHJBypT5PH127zl2YO5Hi2_GfJONbxQio3owzieybMlfKyHrCgM_a26hJHV1FHWMgQLbIqLWvXy2iSy70mKuEerYKH0Eo1epnNqaMsPIvjUlhHJRcuA6kxwOQZLuZaO9Q5lQ",
+        "photo_reference": "AeeoHcLaCclEtuR2z-Sm_xtspk6wigV15BTCA2LObKVmRMvgX_PRXNFD2zAH5e0exnM_K10H3b_AsqgYsHfA11Hfk9EzlPtetD52rKIF6QEAVKAP33rnknOhyDU8cSxYhu3eWF5U4cQKZkmPFTzyRL4ybzfOsjjByhyRqPtMjtnyRlborU5zqgODCjxfcyAMndbxVQ_1_huFYzox57AaRZBBlEF03pEZJBQrB-j6c_vBA91oh2oaL_m5i2X3S-fThdL78NP9IYAhyFFUCjM2rVc2jfYdMG4ouUPkAAtmHoqSEDNOz9esOLwNvb8FcxZR_BKZI4wOjNaVqBwoEwVfYXGXjk_Mca_EyB5suEFqFjVqPe8E2xH1-wDsEMmFMRlTOVrdFnapie2EMuCEKBxYm-q5JPkUkWUR9XyKIlK0bzZZuqzYdFcO_hAUumfNgVEFXOSBZtlFximSzKiQFgH_xvyLtnPZ-FQQz_LySrM4rZB5h2iGkZLN-2vhRbjESlttvH_0oh3zkWEzB5XUsXMG0a9qOVbUuCb90IOCBXksd2L8FI-1UVtRav3amOnayTINvghzFQttcnZiP2K8JGiMgFTBss5FQ4hpfjJXRJZSVHp29mbAcnyzj1dpriVo6jhHQmv2qViobQ",
         "width": 4032
       }
     ],
@@ -12071,7 +11912,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/102449197797431864226\">Frihedsmuseet</a>"
         ],
-        "photo_reference": "AeeoHcL3C6XqOX10T2YVpWVjIgSnM5hoThL36dHg6cATZ_-jXQcJZd8Vd0h9GkskGFKwCPBMyzjnKFNukzyOj0czCVq7yaF-VXxo6VITe66bbi0hBuP4tng30fxqtisggvS8R5lip_mjCRF3cdKuOZwtZy_7izhLEUhzDS_8iL0wJHc53B1a9CSaLaUVEn05EJ4CEw9Jz9u8MajvuW3XUVjtmHYKDA4KBzFzaFPmB29XRBuF7c0ZhohJH_8-g0vzcumWf7q_qVhcp4LjOjx67Smt9bZYPUBa8xPV8dy5eMj8FraPqZXfUi20bHm4C7qB1YlVoTeTCm1oySw",
+        "photo_reference": "AeeoHcKThgIi-b6RCou5YJWxLxW1bXR_toIDwdVRoAHdDv2zZZsKEuOYOh4gMFTN-nF7XKDu6Czta_WE9L0pqHVx_NM4-EqSBOGDC3Pktl7jNPQaCBM32X6UsQl8j9ahI5qzUVAh8KhK12WvgaMF6oknwUHQgBryxeOWSI448FAP6_gBgtMiEPVAL5gTBC2Et4bOIh-61JfpmXGPmOkR_AC-HxL3D4PXcKjh11fE9NwDOpJ-ac9zbQRo1AQIi-ZB_s1qt1NzuHrhev8vFkTBmnRwhGDbKjuf1zgUiY1yekUJwtvKov1zSKQlZGcaVuMHzmO-3IkW8vhfesA",
         "width": 5669
       }
     ],
@@ -12123,7 +11964,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/100441450755233310895\">Den Hirschsprungske Samling</a>"
         ],
-        "photo_reference": "AeeoHcLgYbQqQkU66kTL0I5YmDaA1UIDMa9k5VfR0JDpSeCAGrWkM585YRnea0a_Q12IZVXhbK8lMo7oa-UlcH40ofS61H0TgYjbjus-czdB0Km2-1B_pwsaa8nuSQ7xvTb4aLmsQ1xFnpR81Ht-JfIjbaOWZkhUFXBR5nH7R47MjW1no0O1gptmoYf_ISa9Vc7lVU7b4Jpxdv537hXfsgZo_8ZEW4rPmEMDJD2hT6fL0sK-487O4L9sGGdwdtrB_qtIt383DwvZL2WJaIFw7V87Vd5-g0fPavZmp24ODNBCsE6A5_CnI3IYtUAnI6c8Ua2qNxupcy1g_Gc",
+        "photo_reference": "AeeoHcKOITUwCmYrZDQyUUBjXEhEmwq3oIAsHOSTJViI1q37PepPB5nGONF8c4NxKxHCDVVXRkF00zAcZ-IqpCqVbSukUZmoQrbzmztxoNFu4xJV660msuGsAsprmSLAbW1oNBTnzQW0A3Sq2qMUvufLGIeG_u2Qv-HchsFwSCgXmhHH5L4-0MW45enotKNP0J3fGrIuqFbyxSizG61qt4ZePypP_o_U9FWUFZbjic8m7cWn6juXiM4B6jxnjvTUnGY6eiWJi4a5YAO0dAD2Tv3vhY-lycgZauSkdYkV3EHLAuG4Ni3rdMnMTY1crEmWbP_JZ2BW3y_D4XM",
         "width": 4355
       }
     ],
@@ -12175,7 +12016,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/110495368331273237257\">Thorvaldsens Museum</a>"
         ],
-        "photo_reference": "AeeoHcKMTWnPGfqoRZsspJytWBuKgZY8pdFXMncY6rMgYS5pNwYwdJeFABBOH3ieigl6YnyXuGuBkdV4jyHjEUQ--T1hZzXCS3eXj6NXYTeBp220Us5MNTNCiyQTbhNTFHH0IrYe3tCeFEviwB_a2pB3yhzVIOcNOAuKlcUS-AnNatOY7KwmpCeN943ts_35K2oTc7p7d54xw9y6gZy0-x20jQ5v1REOJf0NFB96xcLs6B-R2ceQQY1RziHStFhJd0DQF6FIuS_Itj2P3bBjFza4rGodrOoGtsnpynlDgi1T_a6hiHv_jjNirFtIH-NSBy2c9a6QPV9XtHA",
+        "photo_reference": "AeeoHcKGtf5Lxs4fytzgig_bCOOUHQZyukGQNMnzZMFqm7CyvgLn9L9iUzpByJp3fQjzXrfs0W4i3z5j31fIC3SXQJvIlbjkc-1atxYptvhfzpFPzTY86_zaOAOBT9K50qvMBHaQYx1h2y8H25k1ch1UGr-_KCbMSfpFnpwq6PzNzPZS5J8JPqGN15SFp5Seey59ptEhpP9wR2sE5tgyhzApseaW4H3yM2WRmq6ZM5g3nageQ8sKUQolGb8VRonAvj4FboqUTyXFitWiAA7vxUHSnQDsL7pOyGhH_ntJp_MZ1q8HFqqcyKgBErs2KKKWSae2OXp9p2MC4GU",
         "width": 5576
       }
     ],
@@ -12227,7 +12068,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/102239110408948400086\">Peter Poot</a>"
         ],
-        "photo_reference": "AeeoHcIaC9xXnOt1P1wOMLV3aUiBjUtceZspLSpau5TLTm3biroAhESuvYOKHQyFJR8zDd80bhnELQttJLnPC5i2QPq7cgC9iu80PM8DOAE0LW2KPLIVONNLLk5Ra4P8LA2V0AwCV-xXu-NCL7lpcPTjwYBnQh78d5oUsQ9hWWD1k0wVKRuf4cHRsZG6gY3mMLMkDepKmb2-3o8oSSHwCNKJgca1ta7YYEcNF0yyWMpbvHGTjxVcpLN56QzOiULUQHG35NITRuOCEAFZjwV2jK-GIlbsJqBIHn0PDFCWjxkKC5if-VZYQ7JvmTKTOL8u6Yj8YFGOaC4DYQPW-UrTYm0fA8oot7dkB9-7QnCk2ajgQp7je-JE1ro1oH7uxuZpYRuhNjuJgdvirbg2yeGn03yBhDkqJHDo8sKvQchNztrfqNH1m4F63HNuS1lOgoUT6Xnly-viU2hmdNAMscLMSD5m5db8klmF1IjK-BWgdAj6LBwk4ZEFR2D4p_h1gPYQYE17bjuZRWi-KODzBK_3Ev0h6vdyFwUOgmgyDe32vJI-97rL8p00NWK03PBxSuZvyYxmLvojnvJc2H6GPrwIWj-RSYw-Pr12fKks6CxuIkyv6fsQPAKP1wI45yCNfB0r0qaiRp1CqsF-",
+        "photo_reference": "AeeoHcLLKVMvIKeYGJcHIjheApQKxHf3ZKNyMVMfz5pxyybEFHh55sCa_Xs4O2gqasX__vspi1DvgvmQe4ZFV6NV1u6WTs5yEN5pmwa_cHRBCg-1iMlh-Ug2-YA_xVSM8-K8pwSW0pOrQBHFvA-68z9LSvBL4Okr4KffvBJ78aq7Bp7cv5NpCgnFsQZ00vK7p6g3lJZw59f-aBYCPD1PBwdETGS1lotsWg-3Rxgn2KJLYxZpBF9oR44oVoEC8INwDE6a0LSq1YU2wajG744WcXBcIh4BP_6nHs4nS-6_Wa7DSnvc564ICI2MwZCuCksLvtKKPJRgvxotmiDS9duhmNrRpOXp3zB6ax5Bj3IYfoELbS1SK0AWoZpDzz6FiMK0pdn5XVZs-2VLgORc50pPqAB4EQK5swcGF-dmvpjEb9vGwu08bVR6WeI7HSY3k500nJTiPmOpJ8Df4cGIE-jfN4v2ANkT-lF46tld07ZDbX6TwmPNi0_2mdiH1UfCeCvUQ1JK4ayHxTPw_qcVsw7ehOBPjkra3FAGztfAQBDpYGHacqP08FyD-LuncSNz-xQCDEhSFJPP2ZDvosT2zxQKGzT4n9zzqHo4uFxqvgGBiVIr2xNN8wc8e8GPMmCxgVBdkQ2xF7ezOBdl",
         "width": 4032
       }
     ],
@@ -12279,7 +12120,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/102534781214393994321\">Statens Naturhistoriske Museum</a>"
         ],
-        "photo_reference": "AeeoHcJw8M2cxOhECblDkPKpbMuVWPp2ItrZ0lAhr2OkzSNImV3T_4yCoqjfic-NZQC5bldZ16uY5OK99RjqkqRmcdeUm0GzG8mF0eizP-4hb6ofa4cZDnRjPigmrW77QyLYR7SY2s7tnfX3z7XKVNBmNg3mS91NEVbi_cTBAk0PoSI2aFa4NgRuws0t3Vq3HyFH40p3G72AO8YMoTGUUeH68_UBgKJ3ZcPlro6k6nKW8YNdySHMlrR6h7VTUSRzJHLyguWTfqIlQlCuC_MxNjvvklo80i9BJ-lXADLPCcMIqJ4fm2YsxJn44I74MuSSiYsZOkwgz-oswEg",
+        "photo_reference": "AeeoHcIZfdEc6uhzEFZwpbL8DC3SIGBlowrmOd9rRvqbw1xbILUC1cGOd67keEBaIsva4FP_H1sLgmb_oX-OMAUkh0oLcslbQzhe9thbCcNNh33bIXnwM8iZPwy2Oqep89ZiOTNbMOI9zTWPoXmnZuwLrwoO3ReMB7gMUeT3vXx6iP-UEIMZ44PUdaEkyCmh6biz-qy6DJYvns7qrCcLHTeBc39CzUKKB-erG5VxQhK3O1eVHzfpILoBw6D54-M1Cr9L3F_m9Hfk8MlS6o0FQb_j3YyP99QPYknZ0dZE1FMjcfL1aHrxCK6pyIsPExzA9aQvN8ZBot3M9W8",
         "width": 7778
       }
     ],
@@ -12331,7 +12172,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/100484204927837166017\">Medicinsk Museion</a>"
         ],
-        "photo_reference": "AeeoHcKMpag2yIA3iPKVwWnYiaNeqb5a6pQsslp3a1fkk-wzg4hTJrZgOvkveNgaGDxMw7pY_HrM7HtN0RaA8M1Yq3AtL95yq7akBh5LDOB-ig_zkxW6-E5fAdjtyNR1pqPOht7ESPo7LDVRTTF8wflVXn0GAdYODiBLi-sIxlzjGPsZLv-c3FRSTHsfWXme9Dt7J-aB-kVi4GIimLdeJeZn-vgFctP-mi9XgOq-GyX8biMRaG9DGlPfBLNtB4kiRgk0nSARZ8beTuiX99ApNrEP_UnBIluRuVULvQGCC0mK6l5S-23KDrql3YoqpbwseqK68WDpVjTnebk",
+        "photo_reference": "AeeoHcI-i-_EuO1V55W6MhxOyNVtgN5Oe1HX-lwwJLbnZd-Mo9FoKLm1R6hunMpvw4C_RXmiFQQ_vk8bT00l9lQGxLQuEcI0L3IAED1N989AG_EwaUCFSNZUjcy-g549y9yFraavBiJfqy7PYskNcZseUCCTIusCrBKB3S4WGirgYPaJpQKT16qAbY1xz4vOby5s3He05naP8iPOiF1v1R6g9iehvcuBaARUEa6uWLxLH2ebP9fkaYwc1CarrK3iJ5omiurN528Hf8u6nxZnbuNLwWdUDN3TIgoNV6Aq7mERCdYcJY__BPuMsQzNlZ2VJtX3odLrlPpeMXY",
         "width": 1559
       }
     ],
@@ -12383,7 +12224,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/107081258892947790454\">Nikolaj Kunsthal</a>"
         ],
-        "photo_reference": "AeeoHcLrENbI-ioEx9w5cKO2Gf4aGszqZ9m1J3cO1WM-EPfP2zrF0kbwWUvSllR7ebtVcxQe9DgESgjVx6DH4_EivNb2fF5QK_ZweEmoPrSurkIlLJwymztYK0_Ob9SV4lSh6pY_w_UteJ-BFm-uhpOqAazdkF3FhcZInBEArOEjX_2Ujks48a9R_fL-qj1yYPK_Sm9jzNGIAokAf5xS8M9R8WFk_gOnqAlFTAO1EuVwRBeQZPOp_Iz7ustVlQn7_utYv5pPggzbBKfu424Akb8SWUfCPwmvw4apGcMq5MkzVnr76IASRcxOCfMZ9IsmMPone3s_xvo2lh8",
+        "photo_reference": "AeeoHcKmykM740ZCrD40MG9BydH6v6WX7qajeWwxqYYJCKH1H7vWsGfEsQ-LdiY47dBDaSvLLR2HZaLG1DwR8FBJMSqX5iIt6EEHxAUT9r3O4nnTtc9Km5X-s4wcSzNJBQslSr5fNEtMnkdpMDsJQJp4Dw6ESTwqVuKACSTBcL9kEgSMz5gSsSNL9A9lbOfRPQJDWzRP_F1jjqlQ2lQCQ-lDVUBR4klbbOWnPYSRP_au0Qiye2d5qt5OF9CCWGtEL3yQjkDNTM4MapUF1qI18AjEJ_kTRvbI046rDqjomPxlAP9pXu1ZBp-m48cLvL2L5FDKqV_wVveKioI",
         "width": 3070
       }
     ],
@@ -12486,7 +12327,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/112385167113131891563\">Arbejdermuseet</a>"
         ],
-        "photo_reference": "AeeoHcLIvG_bVlzQzH9iXzR64yvf-6bW9n-JzhDWDdI7J-8t91wqQFUGNqDwyieofN7EHz_mgG30SVm_QFpMndWvn0KWB3-vAHNn4pAS7fPVbOPh9w_TYsw8dP8jQKms_XXTrv-tjgrPE1YVWbUcdEkJQOerOouZ3t29RNFlmHDEOHh-Q0Mtol-oYHeYgfVEFNHrH8QXSTyVumXildxmCCdtesiS22OPHPWL0FQEiIu1qW9f7oYLiiyoveSN25A0ttjeZIkO2X-wQKbu7qjZAtKu8LoFBeswn0C6mrb4Pt3hoyewQ5hZGFsP2fLMFYyUByyJ8G0wy1i_",
+        "photo_reference": "AeeoHcKAFPivnyQrbsagJVIpf6AwpHLv3oEOQlCaGNzqLLE3OYrmu78sdOGutIm3shNUJ8LMjZegsOCaFgGs3iT0G6lxn9DjpdpuSfzIJl9tOUar6HSu-GAzhNpHvFojdszS--TXSRkDR7H7wt6yVYqhuoaz0cfmfHwyu_LbihKiuVytjS_SaWFVSFIoTqH6gKwU57LobgAXeiMxZiTNCOctToTp_P_EFSLafc3G4R_-8hGo3yprA7BCmvktZ7tNctV6CfMzBdhSKgMMAJIRxckP_eGVMY4JLMczCG9w9oXhuyusJDo_yP5WRclMSQPfUOZAjtkq28Lm",
         "width": 4242
       }
     ],
@@ -12538,7 +12379,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/111875396455942977509\">A Z</a>"
         ],
-        "photo_reference": "AeeoHcJi4L-FZonMxTwqT3poLvUhs_AolLGB-vE3zrF-SsnaQHHL57Bz1eICgsSEJ5_c3C9RXXANcwoO3wXaLjgxfpkS07OwiGuTR9v7SL5HpPhzNlfvK1apJeh46SiOzY7hSvBByAFfpkXGg7IEoPCau5O3HZv_0HBOQE6OAfNEGr7ZAgWRnSo9aEXgDvNbx3gUPBps3QnKdDATZ0guZzIrU-TzbOuFhrGYDPkx0h5nYnZu45yKRGNWa0KrtddbOcr-AF2H5nZnDNGYoDMVbZ6ge9yU_ZcRuN1PHmdtLfTDDBw9tB799HmyaETQ9t1GDnczgydfbN-_LULyDBTc9ag0smTPhX8FInPsL6K77-UEdcmDs3XTbK7HZI_7rW18ML0ePY-oRp7jj9p1ywNvqgOoGPZUI4DB4725xAfh6Qg0a46AuXuGcy33KhF4oYNIhWxGeaORdD7cMzLOKkzgXH2M_JgAkQgYHAyyIpD1fJ73yQtiAb6eq9aYxTODgWlI3ZPlNLhKXZw4Rasss2eyuiNvzdUcbkEfy78F9yO0EGEjnT7Hews7orTgLmMiIoFhTTzw3u8ZsRQ04wvTN4g7Izlyjh-7IVL9_fqTuUdJdoV68NQj29ArqN9ofKJe33IukvGNxBj4Tgjk",
+        "photo_reference": "AeeoHcK0BXx1obcmk_8jnHAyEIF_Kf95Y7Bweu8fo7-5puQmytJpqGcDu4F88AZ-sYgwU_30_DC_o8zhlbJjbvLUxXRNiXxMHThdEj-JZtgWLuCR9a9EpFTUkEP3oP3dHxX4u9ZP52oQ-2P9rbrLvgDJK5MXUQmTfr4X6fn92GKMO9IwS-HpQfUndb94fex0-p_em27xBkgGLrIjLbptccDAsq2YoboaivA2f9sSFugkPQrt29LEbRSf_sSzwB86u9HPAru_IDuhq4K8vXknA2QCpCWpxbNNuAc1tXK-irM6lx0l3k4ojtmMpYJDhzQv_SK1YBrxa0zEKmhG7d4QFsxi5zKcLnJuLRpJl7gWwK14oTqI0m_vG4Tb_ClNCm6krKBLLS5WV_4bd-MD2cR24a3WChbJPcJeXK65e0hZRVRUwGUBEWnxIrPHOQAdQ-lqMzApfnR3byYmN69_2g1c2Oj-AAj8Ms7MC1kMby0WH986BaHch-6sZIeSamTX-VWbgrzoD7TOe2wiOMNttTvbcu3_yTan0EXgXmQFPVi2Y-oEilUp71_LjDrnWVNcNZNJkTVvHZmZV7cIlO_v8nxSr5JbLHJuVTF4_700jxF-IbjfG2PRET3Rw30ztMdRhKhCCd0Y-OuGuDJL",
         "width": 4032
       }
     ],
@@ -12590,7 +12431,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/116695807078788406040\">Storm</a>"
         ],
-        "photo_reference": "AeeoHcJQFmbmQkpWhzZm_vkTIqqzXGAsls4S5EuJie67TWVJ7rRBf9OySpRJUJVdSPdAdK9Lx00OZAen1fnjI_3jKPu2jE4vQ9pcwEgTzhC5aUS1ZjLYrtH5eGd_0npuACULtdh5YXPHEb2HSqIFXJO8qs1tv4_3hV1mA4DZifAlg7q2o_8OSESZl-A7uoikBYvSinUcB2S_leyKYp3aBfDY7AefRfD2CoHhHzuXv2fPkc5qqVWQeAtuyOMBHGjt6seeCQg0Z62BAAs4aDBXBYDVf-0uKR_fbiVOs16RPDRaGz039jwdGaOvsWW-owplW11XPzd-EOLU1Ew",
+        "photo_reference": "AeeoHcJiZRymMvopvP5W1BRjnJuIU3tY0KsAgcqWxoUx381g7VA3b79FYjY13mLIhh-_uf3GbYrmxs9juif4s6a6EIgzVNKRSAo5mUun8cpsPRQgdybtZKFCP-aeuoQ98I2lf3SiQt9zGrER3In5JjXjIKom6E0lFhtn6VxnEW75udrcmpxdgVOoax_jFQK-1tv7omB2Ox4No0EQPTGioMV5Rk0Ds9YFTTxHaseE0mfMc_htpY2ESEWV6oX27ijxIc2RKRZlndJZ_BSVaeXiUhDiJ6F90g-DVAWYAC33YqZ9fFjDOexdnTtchlYpoqgOT2s2l2FNivbo-kQ",
         "width": 1024
       }
     ],
@@ -12642,7 +12483,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/109782334002335420426\">Dansk Jødisk Museum</a>"
         ],
-        "photo_reference": "AeeoHcLsAsQF_kTvOAQo4326uldzvHMAdCLJN7nNcmenWm9cbVOAOZRYXGyvtHnxRTKJ4CUZD1rMxwrSItN2wtGwkNj3D1z-QNqbPMWUEv2yUe-bQ313p07VuGtrwjco2qHuXc9wL3MhYjJUVSli0tlZfzgI0UHs1eXrY6_aVaZfrZ6gc00c1gaX3Omn1lDw6RYNEx6UhbEoG0fxRp5HlI_Iph3ArvRi6fqZw7h4YRvxuQUbMMwH9WOwoBkLedgkEomTuBlOWyLrVHinS4tSI4exP1OWUCwoxE-nHMtFcXiCQUFo1_KH75ySVFu-2sYXnGBrUqNPyOGk7Gc",
+        "photo_reference": "AeeoHcLHz1USnv2vtRbfX9_kK4SBdnNOYIuCKhnM6B15zWaFegG0Zk_XGdSVtqPHuwswMuqh0zsdv_rLVghB5FEV8NJhUiPEYGFj6jZgwJNy79eum_lqP8yeD8hx7exx2n6Z9kEhbclFZs0dzidKvx2jFzU2gQvsND99vKwAr3G0mIVtseBBkZKr3hkS5IuGVRy5eyPGlTx_nm8CDOggAhZCug_7XhApZe5KFvGX87IXfRPHCkkV8MqxIY95wNUANWDA08B5ANQXBZAHaCHqHvWU_7-TmOSmzqT0Wv-Jk3LhbcXiwHELhRpqlGExLMnCLK-5Qg-1MPPObE4",
         "width": 2474
       }
     ],
@@ -12694,7 +12535,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/111366329078809822290\">Politimuseet - Danish Police Museum</a>"
         ],
-        "photo_reference": "AeeoHcJyQOdt-pj8TyH0tF8-S8gP2_Fg5d8fS1VCED_FJWyKGDKX_pY0Bu4V6q5-QGESzAUIbCVE3cDUa5NwInOgwRoP693vmyrfHzkbPlRKkuUKJSMc6eV77k9R94JFPwhP9VE2eTns-xNe5MllB9RwQOlwW7BcW0trw7ogW8Ccoy5LPCUUncx2NEkmeK6c_pm-Equu5iGFy1ptgdD_I1jI_9pZPhaWhJ9ta8bGyqKkacgSlIA4A9Cjgl2xY17TaeSQPDRzErDRnz6hRPCotvs56qruiqQQNNAWQbcb7NBRevUD_AZzFiDufkmk3jX6CbV5GmNCUdUQE_4",
+        "photo_reference": "AeeoHcJVLqc2sGWlFDEkRRdXrRVgJxKvlu30zcmpAvYq1LFgSghtB0FQbKXLL5o7ZlA_fwGs1SrNnfdK55PD2zT1paAk3ts9Dj6-15st_v26tjKX4ziFOO8cHAQJgg2hKCkxc2-BpSZj3enp45GWy0Uk-hUfocapEtVqBfLVRnTIjP2i1tMrh5kuE1HzNKjBgwDJvxqXqbytH2ki1Rvm05ZYofmCnjFSTSJ_GHWMuDiFOSdNT8Sae5ueNLD1lQ1bZfXR23b1iXLHXTpvXOFVDehX7HogW0Q8XY65NEJ4A1qTGCXjv6GZMBZqnAfuCXVZdgXERWlv7JPsxrs",
         "width": 956
       }
     ],
@@ -12746,7 +12587,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/111998164061177585722\">Frilandsmuseet</a>"
         ],
-        "photo_reference": "AeeoHcIfGHK7qwzUAe0bQcyT-AtJW4BSIYvMJCt4DgmxCEhusQD7MinDWQAccPGWzx1lhx1P_okFXMtX3uzO140MM4swrutG_LNtYSxGvHENYlHrefOyBbYJI8Qgto8xEooKIWWIf0CUsRmM7XadzI4Wbgat0ubstkkSbHdOZvZWUYfUk7nLhXX-7Gkdt9JgXc5AlMEsDE6dB67xt7KpXqKnnstmGFDaoXZ78eVKpZopbJ1BPnCYWFM1PMzW9oOGBOiDtXZC2K7Bkial-uHVrhNR-GKHWGB825HknS-BvUqdmtEG-0j4WqM0ew1gZVym4BftHnDuHeXVX5M",
+        "photo_reference": "AeeoHcJFLAgBrb97nfjmQ_XgeWvnL7pumi6AsaYv7TljHqUWmEYrVj3z4erwVK5IWLfaMssYLsQiPSsKM-_-CLk0uwaBPaZ1u_W74tbL1CDvj0cg1BW8lT6iR8cE4XXB9PANW2K2f_d8pNe1kXy9Pj0PcyEuKSS0vHoysPNJoyOGUxReuu73FzJvP700626-anyoAUZbC_ui7HELNM9XPL2bKSIw4tZBVnSEGzlUjnLAC-7oDB_oBaFY1RrzfsPuZ6CuZanxRgpz_d66Y8W4Voc6cDi-yDnY4Fld1CeKor9Mi2uKHtfnK92OXrGm9xgTvq90HO5aNyPoknU",
         "width": 1393
       }
     ],
@@ -12798,7 +12639,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/107309693604132245988\">Ordrupgaard</a>"
         ],
-        "photo_reference": "AeeoHcL_ivft5kwGGvqjuhj2DgQFrVFfwMhfImEjWfFxHcxou9yOWvBJcKgel-k27P3IQVBSJR_9GV0mQnMIZIg_VumdpBUbipu4X8neFi4FFqwexNkYmxl-6CIL3TiNWiv0Jm3CGTHaCfOYuxg-FQJ4aTXQSB_oZZNxAwdfhjam6Q1pWadqRWxM_OIKme8rAo91PtfpiT_034LU2MdPAAtISGpRO2pzsKqvDA7J-hOexw_SfH_ipSLOv4DfqyWPSLHBPxCZMY8cDaNbKCPeV_bYe1KXJIKALeHN_R_eg77imBQ0gWw0jiq-YMe7l2cnMRp7bXtA9ygy5js",
+        "photo_reference": "AeeoHcLjUBxQmr7zqHLIwfFmwhWFlwbTdZOWPS6jgl2wDCb4b83-syyUPHMb4KSUS8fYpQbZGEao54eCaPOXNeinLjplzRDh0MPo0zxZX2I8j7x5r6pt7r36xjGnNCknkasohmroHTmO6wNwYwKXnApHB-xpbrvv8u_YxnSC-kqA2serMJNzCe8wPEI3Kgi2w4JI54BcWlKmGpcFLsYkpDuxy_s2_yIymAn28OEVmwc4NBb816uBn-g8dytX-hs_tW6GiMgSqxsJw8BBGKRqkDNDiPLSBULKn68eUszKJPiRBFSM1pO5L1ps7lquNEcMO12aRoWoAM6CIAI",
         "width": 1920
       }
     ],
@@ -12874,61 +12715,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.6776793,
-        "lng": 12.5966259
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6788629802915,
-          "lng": 12.5980454302915
-        },
-        "southwest": {
-          "lat": 55.67616501970851,
-          "lng": 12.5953474697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    "icon_background_color": "#7B9EB0",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "North Atlantic House",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3840,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/106578354021345382553\">Nordatlantens Brygge</a>"
-        ],
-        "photo_reference": "AeeoHcJf-5URE4m63FWwJURvTwHjZcjHS3uIkfjhaOqFretIWuC0tcEYcrdsffKxLkrKM5U8n18LDyxBXzVxPLlZ44ZhoiCSIga5LBZ3p6_QJgLTiGrBP29t-_xD6xa_8h8Y_-NEs75LNj_sDEFeKexTCNb0OWPTadOtqgnxlC2STskkelD3rwIwkkuFqjYwusUEMtrUlelsU4-nh86hXjwT3rQylCGfV9om1ATngqXwmI_dts-q0SAPNnXEbkpXf72vYD-ksEaoIK71eGVJsZTk_i91pCg79KM_aflj0yBNO93vybcrFV1AZ76ejj0U9HLk7IKkRvljPudfbqqu4_23jdJUtJTYXGixZwzcf9AbaZ2dYeQplh6e5cv3mLf4-aZfKcTaeu43fNM502bRcoFJFe8-5tMvX8QLDTqDLMqg2CNgN8jt3iXJaaEAWSy8S59DPe-LYVen1lRZY9UnnjNWikR9LuqtMp74aiwz8szl2DHIv31c7o8EZj3i9qTCTc0I5Qfhby8XRca8heols-fDDDKQIrtPFkT-l4_cxT9G1CiuSfRzheex2aHEEoVTBghPpWYcw8LbUE7EH5s7KUtKBGVtsCmE8EOtg227dGJpJOc05_EQMRPbFE1c26aTZQNLcPAQAA",
-        "width": 5760
-      }
-    ],
-    "place_id": "ChIJw_XJaDtTUkYRfVOCvQxdfIY",
-    "plus_code": {
-      "compound_code": "MHHW+3M Copenhagen, Denmark",
-      "global_code": "9F7JMHHW+3M"
-    },
-    "rating": 4.3,
-    "reference": "ChIJw_XJaDtTUkYRfVOCvQxdfIY",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "art_gallery",
-      "museum",
-      "restaurant",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 572,
-    "vicinity": "Strandgade 91, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.67415099999999,
         "lng": 12.5803648
       },
@@ -12956,7 +12742,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/113725207452016493673\">Krigsmuseet</a>"
         ],
-        "photo_reference": "AeeoHcK1dmwD9qkUCJoOXQosa78O-LokD0NO_OzBAolHVSnBp8CYKS8E44UU3RRhFPdsquU7PkWwZLm7hnxBkrofaYW7vAQPt1JcGlWF-JVm6RBlZ6xW4DchlNA6BYwkEIfgXeo0hD6kr1Z0mRT3MKouOidt58tMjr30vyEhiEdVc6__WvUK3vL-owHxozUqLHGLp14LHJvh9pc_dpvNOBjTBBjEGwn_kWi1uRD1sMBMBOsdQEw4PoZ5AAkBp3DS1v1yTTrz792_qW9vFRtUpZK2HhInHA8SHdd-9tJzCXmb3nwNttu1qVkJj67huBwU6AjAO3BlH-HQlqU",
+        "photo_reference": "AeeoHcLpVyoD2qTQFxDLpgk2QTyl_-W1rFnFfjLXyIXn5JI2NA0FOKFt3YHlZ3eRDRnCAGLMX7K4yyuPvi4nKJSfy3_FFRVQNRNrweaC0tyK6dDCbx3Z9MLsT_9RPUdKXmNF_Zn5j3RNDfuQqXPNycTHP4TlYDJP3G8B5DMFuTspUn5Z1_5_GfegV47w-VtuGkposmt08T7e-NYP0-2gXbwGJ5G3GeJOHr52B4MPuTKJnPZv2H9YXXdmeaBMkIH9ZuaWPYj0Tt6Aeksrv2zon8NOeJiImzEfk9EbUP2KEW4Hfm0Izug0054z9_ILcLXTI4nli5efrvFKvLc",
         "width": 5464
       }
     ],
@@ -13008,7 +12794,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/107839969183050880885\">Forstadsmuseet</a>"
         ],
-        "photo_reference": "AeeoHcJReymHm1jOdcjuvUCb8cVr_dXME3eVSqVEUoNBAMDY0Jss4QNwut8u1_4Qygako-Gsxdzuivv2tZhcd3rTAgofDLieWGZG42_02ThQRczICbowHUx4B6cFzDOuI87PHNlsz8nqDw0TWvdu5SEjj1kMV72zMo0srckjrs6ddFfIEiQYQi2k08SxF2Cxcd6niWNfBq5dIT1LgVZmL_gp85caIAJuf4EDvPZR7EsAW4tKjp7Bj82dGeIww5b5viyJX9rzVi66Lhm6583Tkwyy8UovbMxcnGgFpbwGGAQTRsGC3sjCvx1Qxf0QqEd4_3SpOnONVTd_hlE",
+        "photo_reference": "AeeoHcKmjmaOIuQvFrxBB6q57Zy9QgxozCwPIFqfRUMljxV4Zs028rtWbr6euNt6oNuufkcFZcq3waUZwqRk7WirGsm0hLu2y1Cg6mKSJW4Z_wEouhEzGPL1WuoRKUeZ3I-fYmLosb1_xsu40YL3UrUr6xFKCghYgc6M4RSYbOMZtHPsuhz1-UJ7saen_U0iomxdrI9K7tZOqZ7wABVupprP808EnxtIL0TCIkOYyCWrXkRsxzc-UKKC7ItV-kZ4hAW4Ve_QW3U70z9S_0dWn7ujCmKrFdanmApAK1P3b8FvnRQpWzTAg5XTmr9RrhkU8sxWbcUdKeRHECk",
         "width": 2048
       }
     ],
@@ -16380,7 +16166,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/103073689132891175826\">Tamas S</a>"
         ],
-        "photo_reference": "AeeoHcIUJX55P5CGLAaccYiEbh1MnPI-DWFhxPvBtQqmsde9ONYpIOT2VqvBZLJztShqRj48Xav0Rsa_kdPobKJceaO1--keFU9jEQkHNvGlUXjQxB83ERXk66zxRpJXV7t4_TiOB_Wp7iwANa9ZG56ju6wSEndQZEnqawG7DpOJ8dBXGxoWxVtRDRSZDAkeBt0-QOWmhxRp5QiUAm5Fa3QIMKl0z1thTelJEIpqpoJEOE4-J89aUDBaCOslxWSSWVNjvuIrwbcrGoihsBzE3s-DutqO3LPOxQBWBOWs5Nr-fSYHKQwy4RKnIkM7n7pz3SbxyG2y7SZMMCbaQ8ULIlnxzLoXTlbfqb58gfkyB8v22kG_QsflTTCmUi4CPHP1SSftG3Uqs0xUvKYKwXx4oL05Uc9siVhOl-alR0YoHXcJ5W8qtFCTc5bEwKffaflxueYThwJBGVOdhKtA1LI6uGmistNtukBnQl0tsNK9ldyN7YLuWlDyPjESHeyGQUGMaLC0Lh08agPWsJ9Wlw5-QxH5jYKoPVQArBhIJwc-p0xrzJKDZOu4PYNXXoPG6p4NqfwRaqcCSrJMGT09jNPKMk17fxcfKycByv-aV9Rd-Uh5XUz0vlf6hSfQaeoZwcd5Spz3",
+        "photo_reference": "AeeoHcJ7ng94OU5mYwwCCpbwXqS0rRYwH4SGDiZZG5yQM3rSPjJTmAKqpar7tQ2VTNsY7r4odxyK6s4Ek2nwKTwZYdoNNcqSIsPZ7vJu6sqLko1d96cuS-5OQ-rwHc_3hmqzEhAebmB-MCarAMmaRIPTdN2pha6_qSs9K9S9p3lsvJZ904MZRc-pzGb52jSMjZniD5ulCZoOo0_4Emeinest28aVGKpbldhFPrzhuMsNXLunFbJhwRxbIgOafwdTDhWftZSuImDtMLfvHa1KQA3z4tegz6N5LQgmUVnRQiCdM_KVKHrainC_HH39H5WblAp20Br_lrxdRqAGOaIcmgheR6wHROH_OW7J173U5uZbAxE8VtWp4OyBCoI3PLZOk9LRTjHNO9d_C3nQr9m3a-5xNrR8vzNjTwGpqRNt1DTA89q_nw70FX_nH93FXXWgskWNBh6mriv0mYjZIAj4QoU_YfMuQ7uzbD6IQ2URl4P_I6qZTycB2eY0EuQLchLQy1ugtd7RFejjUtX8SK_sNegT3c3v51TSlx4iQSvHo5siNPXx6ubC_SLwn4x0Tw2IbY-txUfOBw7BYgBPwMMAp4ikwPa1URstM4YP-5w_2mSOrTuKoxTd7OoobWCpvxbHuOT5",
         "width": 2155
       }
     ],
@@ -16400,59 +16186,6 @@
     ],
     "user_ratings_total": 565,
     "vicinity": "Vestergade, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6486111,
-        "lng": 12.6402778
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6500995302915,
-          "lng": 12.6422476302915
-        },
-        "southwest": {
-          "lat": 55.6474015697085,
-          "lng": 12.6395496697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-    "icon_background_color": "#FF9E67",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-    "name": "Kastrup Fortress",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 899,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/108035731742867301012\">Kastrup Fort</a>"
-        ],
-        "photo_reference": "AeeoHcL7WdsxUfiu9zmVXIP936agRi0JfWBglkX3hb_qNlG_Jhg3U0jgzAcAh5xp-HhY5rVs1TQnDqyLyaC9ucORi_1w58MCfuTky9BiCZkmQsiT6wo2yT1DdIvfjuzUUFbtnzEwxD7_9MCchUmMcqRq-As_d-gjeH1zz7oLUtxMFRDl-VNAfRyQwyJLs7DUhbrA4j6IcdKWwIIWexF_Ous8u3yDrZ_Nk0yiUaBdXMPrCdQgHEbSObwBJv5u2KjQDWL3n6g-U6eTc7j3oyqqpB3BDvlsWXvKlanjU98oFvlDjylxawEtltFCR6BbTBWQfYMwL25ILabBmNs",
-        "width": 1600
-      }
-    ],
-    "place_id": "ChIJ1W-3dqKsU0YRzL9eo0eP3kw",
-    "plus_code": {
-      "compound_code": "JJXR+C4 Copenhagen, Denmark",
-      "global_code": "9F7JJJXR+C4"
-    },
-    "rating": 4.2,
-    "reference": "ChIJ1W-3dqKsU0YRzL9eo0eP3kw",
-    "scope": "GOOGLE",
-    "types": [
-      "restaurant",
-      "tourist_attraction",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 448,
-    "vicinity": "Amager Strandvej 246, København"
   },
   {
     "business_status": "OPERATIONAL",
@@ -16504,164 +16237,6 @@
     ],
     "user_ratings_total": 5,
     "vicinity": "Gladsaxevej, Søborg"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.67298,
-        "lng": 12.572543
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6738905302915,
-          "lng": 12.57372975
-        },
-        "southwest": {
-          "lat": 55.6711925697085,
-          "lng": 12.57004435
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Ny Carlsberg Glyptotek",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 645,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/111332840568112820591\">Luigi Nevola</a>"
-        ],
-        "photo_reference": "AeeoHcL6bahxfaYifx7pM-tn1nJJOh7nR1b4RMuLPtZnsugaEySAh7PGsZXOO1O4cVWDAwKvPqA79pJ5HqFxNYzv_AdXKilmcqG3nPLHhFKmyF26sXU0zBumxGIA5rve8wMjIgn_9ocvVGe7ynXmMQtnI5FdYEas-v-M3PrUnDRtFYKQwerztxrJD--unUEMbU3ApNy5IkwudJ-UiisYTMzyJnloVqNTf6TbGCzwU4QIxy6UkAxMG-P26cwAMaJBBacB6y6SsYaR76Y7uee1moj5EVEoORVWQAU8BYFj68FbfCjT_ev6ynuCz2JA04FVlzVFfiDyCU7sQDHTiI-HG4of5BHINA4bT8lBdyxs9DIfyXYqyzHSkMHxKykRCiLp4Sy7v9_xVP3I6138wdVivrLohtUUDX7MBXFxd2rrk0hIzh5BrBXa7HgG24_Y_gnxtEFYitb0zASxSpWnaQTuNxB8zrzpddLmRZpcNkOzewTYuVfmiM861vpzkf6vNxq-EI7Z62_Ag4QOWPlq1veM0NhvG3RJNqDy-KCc0ooIZwDOGADisOy6qj50fdvUzJfZMQ5stYoZg5_va4WQyKihRMYrYsu9IlPH0sL0KnwrMhBp_r7zXnhPfvEWnTzSGhEkNNFHV4oQSA",
-        "width": 982
-      }
-    ],
-    "place_id": "ChIJfXQRBBNTUkYRoec4408un1k",
-    "plus_code": {
-      "compound_code": "MHFF+52 Copenhagen, Denmark",
-      "global_code": "9F7JMHFF+52"
-    },
-    "rating": 4.6,
-    "reference": "ChIJfXQRBBNTUkYRoec4408un1k",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 13048,
-    "vicinity": "Dantes Plads 7, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6744995,
-        "lng": 12.5746442
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6757178302915,
-          "lng": 12.5761966302915
-        },
-        "southwest": {
-          "lat": 55.6730198697085,
-          "lng": 12.5734986697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "National Museum of Denmark",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3024,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/112001203321273908293\">Engin Dikmen</a>"
-        ],
-        "photo_reference": "AeeoHcLWr_kuqefabs6K8Ocyj5XxX2ec3P6jD3zSiNaLNqFJxyBT6qzaNQojuSHEhExtp0GHidJXGKqsILr-iipBAbAlz5O7v4I6k_qjh4jXQEz7OyQL-bJRJwxfU9yiqzQMgjj1BZSdAYfRznKH9eKStHnn9vScfi1Nsjdcd5r5IjYvOwuxsaVFYqi9-rgrIiYF91V9t-8iwgye5oJ_TbGBSEt9MV1QnC7JYRAADheAMG1P1A4mWW8m0ATX9ixRQVh5-6_eSpvTja4k5Wb4ydDoT2dextsWDIcfxOjTuCNPr4zaqPReK21M6OUYoo3VreW0Me6t5aeVrC3QQAbVEPncF7Srw1FugwfPCIDeAPwgjmtm3Qqm8hY3MGNqhsxL7-q5hcYl5BVEMCSegkZ8_uoHsuxnbTBF7h14owt_a1MHD0adgEKXltYreDwxwmktwZ7sDbhLHlEf8_xn8rsRGOFkg4uI2-0BE3lyFGRFq7VRs2zaMW29-CoRvv2uEyR-B1a8jgJGYUhVZos5Q1X-JZFxjXucEjaWBUs8ZrUmOl5QM_26QrGOSqsAdBRHbTUbls7e3g2hk5Pe2zCOx35aRQZH_SMNual9tboAtZzAxk4ZwMTvzVhkC0J2PUeo5QeGpBBGADC_UeOv",
-        "width": 4032
-      }
-    ],
-    "place_id": "ChIJRZnqvxNTUkYRr1KKLRhldd4",
-    "plus_code": {
-      "compound_code": "MHFF+QV Copenhagen, Denmark",
-      "global_code": "9F7JMHFF+QV"
-    },
-    "rating": 4.5,
-    "reference": "ChIJRZnqvxNTUkYRr1KKLRhldd4",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 12334,
-    "vicinity": "Ny Vestergade 10, København K"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6736841,
-        "lng": 12.5681471
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67570585000001,
-          "lng": 12.57527035
-        },
-        "southwest": {
-          "lat": 55.67231685,
-          "lng": 12.56204895
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    "icon_background_color": "#7B9EB0",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "Tivoli Gardens",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3024,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/108321463838048606334\">Jens C. F. Nielsen</a>"
-        ],
-        "photo_reference": "AeeoHcIOV0gr2EDQdpY_5xcevUtGmyTZqMHIRLS6mXte-x7kao7Sd4dNxB7F70AnNGZzqNv6TO0lGiCVPZmlyToc-xEUlIi4y5d2kfrmtRR00BZ0rpS3_x614oBNngZ4Hl8awH7IwPKWrYqtldftFpvaLLRWKY3aMhcrZZ1timSwK4OjSiEmI5U-XHPuP1Dbvm-miB5dTQ5Plv-Dsidpw4zC7POVpmYbktiFtIjn0jeMxNEtyYGdKLVxdQwL1XRfv4MAatTjd02cl8Cto_UGQiOTX37krGOdcXwL6NgE7Lkqh--Ay-qn5_OLBhI3uTs2361TYc0PpmXJ3Ceb9P6X7AFyNcnYG-m9BVOTWEfEJoYWmpWjcda5yVtonu2qrxA7JUToPFgSu3I-sz8-I8vA4mefrpP1-hSw4U83b7a3x_Jsb--67YZVyWf8MbN5q-JavmL4AtjbsXQly8A7OZiG4BvWqkclFolvI80AoaFoNCpyeWd9LDTbsONjM4TbV8Q_d5mHzqGHXIggskTFdYCwLppJz3VBMSvRaeR4fukJhjOxd5GJxaPLbsWLQT4gw7mk3P6LDF5KN9_aNAI5ovCks4my2Z7JhtBxgMTOyluxjcWrV19h6phNbtWkBW2MfmyCja2B0HgOiQ",
-        "width": 4032
-      }
-    ],
-    "place_id": "ChIJ8-r2gBJTUkYRsCcLtQ0Ltdk",
-    "plus_code": {
-      "compound_code": "MHF9+F7 Copenhagen, Denmark",
-      "global_code": "9F7JMHF9+F7"
-    },
-    "rating": 4.5,
-    "reference": "ChIJ8-r2gBJTUkYRsCcLtQ0Ltdk",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "amusement_park",
-      "park",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 83227,
-    "vicinity": "Vesterbrogade 3, København V"
   },
   {
     "business_status": "OPERATIONAL",
@@ -16763,110 +16338,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.6858274,
-        "lng": 12.5772687
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6874533302915,
-          "lng": 12.5781442302915
-        },
-        "southwest": {
-          "lat": 55.6847553697085,
-          "lng": 12.5754462697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "Rosenborg Castle",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 2877,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/103193536983257533418\">Lynn S</a>"
-        ],
-        "photo_reference": "AeeoHcLrchsBUz_SlPqmnkQ1gQ97HPP6RPAgcaaMMAH16RfhtVGx74Ow8FXDJXL5ceVClwl_qp86Cr97-d61vFogQHggpb_5WcyatRg2H3TRXpWfovlSYMonD-baa9eZ-HjMAVEs4EXQYZeIzy7gWnCUt0lwRKqLpFCWaloN465KKw9E2CieZr-cJpIgfve0ICl-mtM9rQ31MOngYmks9IAqHlqbNS0hN5Dv6EbydeyliGVu9KFc2Ff_dhx5TYlGd9G7m1oz1CwH3ASdY428hyrvkKWubOkEjNEOlc9p51EROQmGIfdBcABTyP0Z_nDOHKxugFvZwXCXpCiJyZNbyjEgNyxDOLCuh-FD4-V1l5kDARXbgqIjcm2TlRa4VTBQ2bevIQ_UkCpawPKMVPIWw9wLVmxQgr5kgS1a40IZ2CwR1Lmabn28WiLDZcPkTOgUkMFXxTpW9rD94SmlniPcLLj3L3zvXl4Eb1aQs36O3iR0Fmhg-LKObNjvxOIIUqiIGTY9CzyPVgXpOytguJDM88lwXQjpE1At9-OGrJOKhSZIw7NYn5CnbFK6dSAoW9okY0Iliayw-QG-5QNaVQguRCpO5TZe34dCwx0iFcp41czf_hRyN_qLRhLAvTrfl5mC7yopederZQ",
-        "width": 3968
-      }
-    ],
-    "place_id": "ChIJHVOeQhtTUkYRPBsoRTOcNVI",
-    "plus_code": {
-      "compound_code": "MHPG+8W Copenhagen, Denmark",
-      "global_code": "9F7JMHPG+8W"
-    },
-    "rating": 4.6,
-    "reference": "ChIJHVOeQhtTUkYRPBsoRTOcNVI",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 21845,
-    "vicinity": "Øster Voldgade 4A, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6381189,
-        "lng": 12.656221
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6395141802915,
-          "lng": 12.6569098802915
-        },
-        "southwest": {
-          "lat": 55.6368162197085,
-          "lng": 12.6542119197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "Den Blå Planet",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3024,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/115259511213099484824\">Danil Kornovan</a>"
-        ],
-        "photo_reference": "AeeoHcLZF2v8t5yO6SfYAtcmwu7UkmLJPj7baNQ5N2V5KmTzta7C3oDXcrYuZZpYTDOMtdy_SL5WORLibisV5X_UVp3IiTIlwmf75MkTP0pq3qNVm7GD6aX-MTOouGg3qxqwYLmF22_PMh3-AwcVDTF4HuOXYm5hH9DIFm3Mbno7NCTFl-lQdYqKCP3-8L8mKjzjgMpe2j3z77jaH74DX_V3ZiRtXbU9jjEHEgsQB1oVllE6fCobB5RMfViKamVSyO6FgZzWcihosxTI0TzZLu7JQwjGbTsFc7MFvfENmrknR-PqcUowBsJQ8ykWND4hyvUxqMod1x1-fIULYov6IFOnvNt14arMdjmA8h2Zp6qLrBiP8JdRC3_6-d3ofy5mxM_y5-7ekI2a8pE0cYBPbx2VVD4DDyZq1gJEVuFDTuZ4aqOk0JbKgYY6k3nWkjG02ZPF50BbGkrejyHEOkbd1FO5aLykb2gZOC9VEsMAoVneOrmAfpY1rXfc22w7GdT12h3XWwnSIEZf2CHGrNG9snqwDXqek9yq8PPMSHS56IJAW08QWavAy4N3yVDv4Qd-qXbgyMLnYlmB9iiqxJ0Uf1eLs-7atR_53E2kw9jhcFSCaF7l9EaAKrjle8xYA0v44D37_FqfKA",
-        "width": 4032
-      }
-    ],
-    "place_id": "ChIJ9ZSRDH2rU0YR3BGeFfl0E2M",
-    "plus_code": {
-      "compound_code": "JMQ4+6F Kastrup, Denmark",
-      "global_code": "9F7JJMQ4+6F"
-    },
-    "rating": 4.4,
-    "reference": "ChIJ9ZSRDH2rU0YR3BGeFfl0E2M",
-    "scope": "GOOGLE",
-    "types": [
-      "aquarium",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 19419,
-    "vicinity": "Jacob Fortlingsvej 1, Kastrup"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.68217579999999,
         "lng": 12.6000932
       },
@@ -16910,58 +16381,6 @@
     ],
     "user_ratings_total": 6975,
     "vicinity": "Ekvipagemestervej 10, København K"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6743505,
-        "lng": 12.5724863
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67563828029151,
-          "lng": 12.5740155302915
-        },
-        "southwest": {
-          "lat": 55.67294031970851,
-          "lng": 12.5713175697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Museum of Copenhagen",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3000,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/113946866885058476925\">Jose Luis del Val</a>"
-        ],
-        "photo_reference": "AeeoHcLVQ54KBfBr43JOzPByYzVX-swVSY-CtISMUyl5QGtJ7QJxyd14APtjkk7E3FyUcVCoUOGoWtrVkJ5CV8Bn4oevYToWfR3E9yjIi44cuJuIPtk7osTQV3AbFf_sXezk7WbljcWkZEasMnc2Tnv3vCiWomWb1Imqr70IUaKJ8xJuLneHDF3ScumTkzIuJtRYbMrgcn3n_92RE-VLuBoBlIIUGTUfEdUSpALhs7UpzqvbMGjtA7Y6ZM_vOyrd5CV4n9_OBiGvAZFHk_B3JsZc9egEBNgz33Gbly4kf6PhYklFXJPzI6nilm2XUuKb2FQdnJi6U1D7xequD9dlcvnClQCznAruID9n0tJdY_vgGb9oXMPkQYVCOtB-CPp6svYbrkJcvWR8kYavV267DlXSACjRmDPJalWv5u9CQuHRob4ew3dkxfDVNFI61BxhOAAzBQO3ohII3iDxZeYnktzAWj5e0C55iMjC4s86zVdydiK919BVu9qBr52tfrZOTDqufgA1gBemFTmxMuAGvDnCMQEQBdTVXGLK4ExGMrc0t7WCDgMpYyk3HHMpn7mVbCz0gFZLqTGkvRd63JCLvZy54ee4k7KLf4sfC3vqCbJraaCc2qu4ajFICgzNiiyIzloXudhTvSUL",
-        "width": 4000
-      }
-    ],
-    "place_id": "ChIJuT-bLnVTUkYRhsDbOa81Gj0",
-    "plus_code": {
-      "compound_code": "MHFC+PX Copenhagen, Denmark",
-      "global_code": "9F7JMHFC+PX"
-    },
-    "rating": 4.3,
-    "reference": "ChIJuT-bLnVTUkYRhsDbOa81Gj0",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 1540,
-    "vicinity": "Stormgade 18, København"
   },
   {
     "business_status": "OPERATIONAL",
@@ -17069,55 +16488,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.6840588,
-        "lng": 12.5930201
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.68543349999999,
-          "lng": 12.5961361
-        },
-        "southwest": {
-          "lat": 55.6823939,
-          "lng": 12.5902225
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "Amalienborg Palace",
-    "photos": [
-      {
-        "height": 3998,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/111646295450585136542\">Laurent</a>"
-        ],
-        "photo_reference": "AeeoHcIlgV4qaH6WUw4-LI_BpGBGkexBcJPueh2JTkDOtQfc4c2BwieVX8imOX_eKG_YVw9aVILwTZQr3bEQ88QVCfaVGXXOc0Woi342QJ6RkCslvcJnfREYVQ81EH2TYTsgccdTapz5RZN0hxQiQlDaXZS-z49QAvAkegyi19Hmo76kZXHEx5sS_FcEZeM81wcLCxKYEZyYE6xQmuE1JSrhkCIqMm-CSNrKf0AVWwSZYkrtxXHMAzsfiFQ7-aaAut3FbOSuxbbAdJw9DC1ez5kwVQKO-Jc_sSZ17iQmHXVy5qQvlB9eg5Rwlu6Xe09W8mYLE9qJZcOH9kgb81eemyfOxzwnIk0aWe8OUesJX7prHO1moPq2FZ5Vp_q2wVn0pwZkPane3hYl3vftlYnguQfuMLpAOdnJgTLt-ucu1If2MG6ng5xDe4NO5SBwEyCEV5wtttOBqmwNpk2ggOAPXNLUIhvXY6PYRdLeoXMpstOPbDNOeEhATqmiA0rT6UfMEzPMZZTy-sXUltj_kGhzmAjpHHN8lwjhxyWNPTPgEKlWrlZeSFFqzbVYQnv9dJlSffc9CsE9Kaj_JcCZsUcVLJJ_-PTDXA_DU-QYk0I3HJrUrAsOX65armtOWf-s5lBxMKgTKQAgmQ",
-        "width": 5998
-      }
-    ],
-    "place_id": "ChIJcwY-NiJTUkYRP1UVnat_8Vw",
-    "plus_code": {
-      "compound_code": "MHMV+J6 Copenhagen, Denmark",
-      "global_code": "9F7JMHMV+J6"
-    },
-    "rating": 4.5,
-    "reference": "ChIJcwY-NiJTUkYRP1UVnat_8Vw",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 28463,
-    "vicinity": "Amalienborg Slotsplads, København K"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.6852905,
         "lng": 12.5798452
       },
@@ -17145,7 +16515,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/111646295450585136542\">Laurent</a>"
         ],
-        "photo_reference": "AeeoHcI3L6ZeKYEsrHSvbGAcadChYdJ9kqEokRvkpyo_5ulXTBvK20If1nLYWq9EHkN8jPUdt6-AgIXYqgrvFweu2FYtWrhwGQNu_x0854ZUDT-X9wCGH3Mpp-8-PzjLRjyB8a_UrEvuPd0VE9ibRU0UWtbWsr0zk7tCr6F-hbU115pqs76UiF91xZfoEkyLWRIG8oUNFxz0Yj_6UaCHIXlt_wulUNpxGb8-9FnFMSI8EGZGUa0-oL4qg5V4OZo-mJJx1RXGmyzeZHn9fnHifr78Xe76MlSDCkxWlAAUeu_Zj3WWVpCOx3Xy2H6CgjhVYGln_Rm63muVgm89ff8LeEPaS80bMWC2mef7fwstnmMX0EFZRPt3jINRsOGy-VKRP5hg7fbq_AP-Z9Oe47eby2jEOu8QfGTe9dl-JqNZ850ajnFbenhNyiJ3RxR_WSoXCK5rg_zRL0vajjeU2IQ-w7o1E4JZoVN5k07zzTihklW9hPz-ZNn6BOFkJZHetqMEwJ_WM0MvVHrhSzhrR1IWTHyZXxVYgADbEut12mbEYlu6SjBKBq6mkt_uwSnAxqcfydLDIDwq7Y0puFSg_ppQJAfgBrVDMGlHmzXJpNb7YZtbfcLSAGiuHdVAZt2e2XWe112tYc8VGfJE",
+        "photo_reference": "AeeoHcJrVr463bDwnoS890Hn13LeC5d1WvdLVKG6ICxbHTVkN76D8YImbhpLawPs_TWM89upC2PGri35rT_dOOBJvD3DfzhyT9kNm8k3UV9wlnqR9lPwoh-WfMXazfbMSYiRihAJRUFTzaoERKEemFm7lkzzqas32DaZTgDCXg3Jgrs7yM5ORYyNjz8_k6XnGTq_u6Fexx_lQMky08beQTGfEOzJsOE-CS8tq5jPtfYdOA4IOWGW1mwYqflTNqCu-HpodDw4yymbmhfMznEdI7QmWJLpLwCBn4aa7ejW5sQhdvyRsS50qkRtXcDqUoZE_0TqABScqKCO7eW_QirNuYmjqGZJc003yxiy0cPLN1FVIAO1ZKrSDljnWvOds6YXRv5zIWUXBKZW7WjZbmXz2T43PxgYo3qGzYnanQXwHXrFgR0wjvyeWKYYX8mel8L27zfSzCL0mtTMYtI6lSAiru7JWkxRkovSs2m1egRSmivKmZKtYNNoD56xuz63_JzC53a6Z0EhdxUJOkgJd4eCOjaaX1tWi8spJ9w4nYddXVRpZfUA06SKRmI1RR1xjlioiXuiufRDZPhb1cL0n4uFTgtImOkl7yB6_tX8cQTpRAs1qMsbmzoKQpfdzrrT57yJe1HETonIAa5J",
         "width": 5181
       }
     ],
@@ -17213,58 +16583,6 @@
     ],
     "user_ratings_total": 21278,
     "vicinity": "Copenhagen"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6865563,
-        "lng": 12.5928422
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6880123302915,
-          "lng": 12.5941724302915
-        },
-        "southwest": {
-          "lat": 55.6853143697085,
-          "lng": 12.5914744697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Designmuseum Danmark",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 2268,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/113328250976282578924\">Tanja Schönbeck</a>"
-        ],
-        "photo_reference": "AeeoHcL8T-rXwOAo4_k8Eh56BKXjd2ad77FUcPx36dpGmWjT1xRnJK6BJxLCvpwKdspoIyrCNYlBwSrD-msqIFswyAjKkfUVeraJ_A1TmlNS0yNJFni35qqzFjSvR_3PmBdtxuw2nEL0LhfzVP5fgRDAsyiNvx-c9OYuYtFHrRq6CriTJWve1cNbtAEVjqCJART5y7OJfK_f8u1s_d16hUm-HDjzMJkbqn-IN3M9m-DELfxkLBSIppvXNyAlLEIVYpT93YyF6Qk_BKZNuJeaWwlKpbEBrGDPGElE1OONQHOQSYgzJWfsG0bXs6Eq5ioOV0JzaWFey0BiFX2u5_iVItngj0E4NeUBm0Us9PLRXFC_GSFcastkt6rz7GTmnj88d1BX375rIZDW8OaBL7eg3_zy6s3Fxeh-15Xz6Y4tZhdKCeK5o190JURM6MMLzlfJ9kLPn3uzh0Zam00CFBVxuo9SbgQ_IbRjfe7xPIrRvPh-iOQVfhZohFH-QDedRmVFiMYFi9KwHoEf_L1KC8euQvwWoktk6gqOjRDObaCBsHcjWbB8BRKsykF1db_BlMgkkvxX5dTwaRPiwrc0ON-usXkoBh3-M08lR2rFW9icOJIyS8G0OAi8xFcVBxlnwgOZKDFqrQJyfS5b",
-        "width": 4032
-      }
-    ],
-    "place_id": "ChIJMTzE6yFTUkYR90_sHEhzRqc",
-    "plus_code": {
-      "compound_code": "MHPV+J4 Copenhagen, Denmark",
-      "global_code": "9F7JMHPV+J4"
-    },
-    "rating": 4.3,
-    "reference": "ChIJMTzE6yFTUkYR90_sHEhzRqc",
-    "scope": "GOOGLE",
-    "types": [
-      "museum",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 6856,
-    "vicinity": "Bredgade 68, København"
   },
   {
     "business_status": "OPERATIONAL",
@@ -17348,7 +16666,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/100838919763033327810\">Pooja Mann</a>"
         ],
-        "photo_reference": "AeeoHcL-E1xOZtAUMZS5KvZNgn9SUoRlAPtwjlGStD2eI-lsLtwtWgd-67lRLEl0sCPmtIBUAkux9jwaxtjH52RaKjkPXj-D4bjgAp2fvf2Llyi9ksOWPnztRfNAfXT78Np_48497HrsA23eS4VinsieOJtA_l1BXF67hUB5YFySaitvYPSoI0kM-nx_QxEMx2CppxI-YH8iCz8WW1ryMagwCMZd_FeCVHTRcI7GZCgKteH68lMzRNz_CmdsXypbo_J3BW93FbJt-y4OlHlBWBeS4mWN4sOndmk-xeDyWb4oslnAXYA73fbybT-6Iy4Pka2JkvCBfQ2wE--3ncBp9KpHlrzunKrhIwO4WkKAPl_lV6MdDrzTiE-_8iwHPC8ghbWfgSU9ptK7fKr3i0WTN0ZnVt2QNsvAzVPCPrjOrXgWOPH5AOCYT_XAYOPzwcUGP6lMqne9O61PB-whTF2IX5staW-DRWSPCDscLfA9qUwAizia8H-MwBmf_-rFN-q8963A9DDKUtlDM38EAWOHJMsQr8GBHSWCFvR1O6FmbSQ87p_EDjLIZGojqWajbnHndJHg4OjRV0iZeATylyk3glI6LOno9X7Bf9qhXS3i6bRej49ON2VWLajXRdQ4KTrfjsBT",
+        "photo_reference": "AeeoHcIXtVNKzZPm5CGyKRcBpZlh5Qjg-HCHPWwxqIPaCW8myfP3j3KaCLP9GpYWJJdD7XmwEHxK1IEwMjB4XuecUrKLs-I6b7n-vKpIdZI2Budg9rtoflYzhEUQ2J6NUjdJ6EN65toJni6BsUS6H4gh7Ns1v-OzG9OyCg9ohjRA0tA_ZJdW5_W6yik3lGDwygU5mV4YaAonIk4ea3BkMZeH0i8x2FkIUI1Eyr8Rx5O4OhJn42e5J3eKwJnj_Q3JX_PsTAtr9XswEoHP9C3io7tIaz2G5WJoafItWjpxtfkMQtzk9t5OQsy2-9qieXiZ7RVnUv5lrPDDGToB2WnEp_wrsxkfyr1r6e-nQ8DmeX_hUZhmp5VgnH7Tgj8G3YqaIo2cexyZC9z0wzVx5NTVZIEvXDdl5t82l6uE7ooNZOc9-OpcysD3v46hAkSoe5kJU5kI75TLGueO3C-ggycTkXTykNECRQCdjG07qajYCqGCfrTKnjOPgeHDGASVMgAsmNYTMgTCqFiV_pnowG-BR11f5zt_UulAdt_SDRRHd3cN-PkEEKum2ZDXaMsn_o2Rb7fMLSzWwz0sala5pChlf1WtwkIxetgRwfG8y8oKtR7gWyyK3wwtZnvXPR5k_V1z05w1",
         "width": 3060
       }
     ],
@@ -17368,59 +16686,6 @@
     ],
     "user_ratings_total": 24614,
     "vicinity": "Roskildevej 32, Frederiksberg"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.67465079999999,
-        "lng": 12.5580804
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67589838029151,
-          "lng": 12.5595466802915
-        },
-        "southwest": {
-          "lat": 55.67320041970851,
-          "lng": 12.5568487197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
-    "icon_background_color": "#7B9EB0",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/school_pinlet",
-    "name": "Planetarium",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 1125,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/105546974940307047850\">Planetarium</a>"
-        ],
-        "photo_reference": "AeeoHcJSUims33nnf0M-J_d_oXnjYvuhX-ctjUwLfo31xjqxKSMi1UJzJljrFALvDQeMXi9DcLsewFTY7v-noKclAlPBOe28SoEqFijFzsaN42oZZRfyszsjlVl94RrkKbVd1lEQlf0fz0Rg9lXGZ-701tKpcYYhh29ey3Hz1qJxFBLfESgCj4aoH3S9kWxVXnDyhaMGiTCojs_jStyfWCTNShN-PElhKVf7mLnEl0f5bBvbADOH4ChvhMomAbjX7izAa4i4YbdgLZdH4kkBVc764gtrTFc6KEaNgQlxXsQeoSrczLmPmp2dDAHFsFBN0qpHkdB_et9CEJM",
-        "width": 2000
-      }
-    ],
-    "place_id": "ChIJ0VKKcwtTUkYRYskOpknXs7A",
-    "plus_code": {
-      "compound_code": "MHF5+V6 Indre By, Copenhagen, Denmark",
-      "global_code": "9F7JMHF5+V6"
-    },
-    "rating": 3.8,
-    "reference": "ChIJ0VKKcwtTUkYRYskOpknXs7A",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "movie_theater",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 985,
-    "vicinity": "Gammel Kongevej 10, Indre By"
   },
   {
     "business_status": "OPERATIONAL",
@@ -17636,318 +16901,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.67438319999999,
-        "lng": 12.5768164
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6757564802915,
-          "lng": 12.5782262302915
-        },
-        "southwest": {
-          "lat": 55.6730585197085,
-          "lng": 12.5755282697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "The Victorian Home",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3024,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/113557450020876373127\">Cece</a>"
-        ],
-        "photo_reference": "AeeoHcLaCclEtuR2z-Sm_xtspk6wigV15BTCA2LObKVmRMvgX_PRXNFD2zAH5e0exnM_K10H3b_AsqgYsHfA11Hfk9EzlPtetD52rKIF6QEAVKAP33rnknOhyDU8cSxYhu3eWF5U4cQKZkmPFTzyRL4ybzfOsjjByhyRqPtMjtnyRlborU5zqgODCjxfcyAMndbxVQ_1_huFYzox57AaRZBBlEF03pEZJBQrB-j6c_vBA91oh2oaL_m5i2X3S-fThdL78NP9IYAhyFFUCjM2rVc2jfYdMG4ouUPkAAtmHoqSEDNOz9esOLwNvb8FcxZR_BKZI4wOjNaVqBwoEwVfYXGXjk_Mca_EyB5suEFqFjVqPe8E2xH1-wDsEMmFMRlTOVrdFnapie2EMuCEKBxYm-q5JPkUkWUR9XyKIlK0bzZZuqzYdFcO_hAUumfNgVEFXOSBZtlFximSzKiQFgH_xvyLtnPZ-FQQz_LySrM4rZB5h2iGkZLN-2vhRbjESlttvH_0oh3zkWEzB5XUsXMG0a9qOVbUuCb90IOCBXksd2L8FI-1UVtRav3amOnayTINvghzFQttcnZiP2K8JGiMgFTBss5FQ4hpfjJXRJZSVHp29mbAcnyzj1dpriVo6jhHQmv2qViobQ",
-        "width": 4032
-      }
-    ],
-    "place_id": "ChIJRZnqvxNTUkYRqzD4wYluqq4",
-    "plus_code": {
-      "compound_code": "MHFG+QP Copenhagen, Denmark",
-      "global_code": "9F7JMHFG+QP"
-    },
-    "rating": 4.4,
-    "reference": "ChIJRZnqvxNTUkYRqzD4wYluqq4",
-    "scope": "GOOGLE",
-    "types": [
-      "museum",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 99,
-    "vicinity": "Frederiksholms Kanal 18, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6881676,
-        "lng": 12.5959675
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6894275802915,
-          "lng": 12.5973538802915
-        },
-        "southwest": {
-          "lat": 55.6867296197085,
-          "lng": 12.5946559197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Museum of Danish Resistance",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 2667,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/102449197797431864226\">Frihedsmuseet</a>"
-        ],
-        "photo_reference": "AeeoHcKThgIi-b6RCou5YJWxLxW1bXR_toIDwdVRoAHdDv2zZZsKEuOYOh4gMFTN-nF7XKDu6Czta_WE9L0pqHVx_NM4-EqSBOGDC3Pktl7jNPQaCBM32X6UsQl8j9ahI5qzUVAh8KhK12WvgaMF6oknwUHQgBryxeOWSI448FAP6_gBgtMiEPVAL5gTBC2Et4bOIh-61JfpmXGPmOkR_AC-HxL3D4PXcKjh11fE9NwDOpJ-ac9zbQRo1AQIi-ZB_s1qt1NzuHrhev8vFkTBmnRwhGDbKjuf1zgUiY1yekUJwtvKov1zSKQlZGcaVuMHzmO-3IkW8vhfesA",
-        "width": 5669
-      }
-    ],
-    "place_id": "ChIJP1Iq_yBTUkYRWZIXkjpa5bE",
-    "plus_code": {
-      "compound_code": "MHQW+79 Copenhagen, Denmark",
-      "global_code": "9F7JMHQW+79"
-    },
-    "rating": 4.3,
-    "reference": "ChIJP1Iq_yBTUkYRWZIXkjpa5bE",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 1206,
-    "vicinity": "Esplanaden 13, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.68999299999999,
-        "lng": 12.5773931
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6914437302915,
-          "lng": 12.5786297302915
-        },
-        "southwest": {
-          "lat": 55.6887457697085,
-          "lng": 12.5759317697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Hirschsprung Collection",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 2232,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/100441450755233310895\">Den Hirschsprungske Samling</a>"
-        ],
-        "photo_reference": "AeeoHcKOITUwCmYrZDQyUUBjXEhEmwq3oIAsHOSTJViI1q37PepPB5nGONF8c4NxKxHCDVVXRkF00zAcZ-IqpCqVbSukUZmoQrbzmztxoNFu4xJV660msuGsAsprmSLAbW1oNBTnzQW0A3Sq2qMUvufLGIeG_u2Qv-HchsFwSCgXmhHH5L4-0MW45enotKNP0J3fGrIuqFbyxSizG61qt4ZePypP_o_U9FWUFZbjic8m7cWn6juXiM4B6jxnjvTUnGY6eiWJi4a5YAO0dAD2Tv3vhY-lycgZauSkdYkV3EHLAuG4Ni3rdMnMTY1crEmWbP_JZ2BW3y_D4XM",
-        "width": 4355
-      }
-    ],
-    "place_id": "ChIJh3wvJx1TUkYRsBM5GKdGnxs",
-    "plus_code": {
-      "compound_code": "MHQG+XX Copenhagen, Denmark",
-      "global_code": "9F7JMHQG+XX"
-    },
-    "rating": 4.6,
-    "reference": "ChIJh3wvJx1TUkYRsBM5GKdGnxs",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 657,
-    "vicinity": "Stockholmsgade 20, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6765485,
-        "lng": 12.5782685
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67811723029149,
-          "lng": 12.5795636302915
-        },
-        "southwest": {
-          "lat": 55.67541926970849,
-          "lng": 12.5768656697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Thorvaldsens Museum",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3717,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/110495368331273237257\">Thorvaldsens Museum</a>"
-        ],
-        "photo_reference": "AeeoHcKGtf5Lxs4fytzgig_bCOOUHQZyukGQNMnzZMFqm7CyvgLn9L9iUzpByJp3fQjzXrfs0W4i3z5j31fIC3SXQJvIlbjkc-1atxYptvhfzpFPzTY86_zaOAOBT9K50qvMBHaQYx1h2y8H25k1ch1UGr-_KCbMSfpFnpwq6PzNzPZS5J8JPqGN15SFp5Seey59ptEhpP9wR2sE5tgyhzApseaW4H3yM2WRmq6ZM5g3nageQ8sKUQolGb8VRonAvj4FboqUTyXFitWiAA7vxUHSnQDsL7pOyGhH_ntJp_MZ1q8HFqqcyKgBErs2KKKWSae2OXp9p2MC4GU",
-        "width": 5576
-      }
-    ],
-    "place_id": "ChIJF2rIsxZTUkYRwtHCYRGSY5c",
-    "plus_code": {
-      "compound_code": "MHGH+J8 Copenhagen, Denmark",
-      "global_code": "9F7JMHGH+J8"
-    },
-    "rating": 4.5,
-    "reference": "ChIJF2rIsxZTUkYRwtHCYRGSY5c",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 1487,
-    "vicinity": "Bertel Thorvaldsens Plads 2, København K"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6695374,
-        "lng": 12.5242031
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67201179999999,
-          "lng": 12.5252200802915
-        },
-        "southwest": {
-          "lat": 55.66871259999999,
-          "lng": 12.5225221197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Cisterns in Søndermarken",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3024,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/102239110408948400086\">Peter Poot</a>"
-        ],
-        "photo_reference": "AeeoHcLLKVMvIKeYGJcHIjheApQKxHf3ZKNyMVMfz5pxyybEFHh55sCa_Xs4O2gqasX__vspi1DvgvmQe4ZFV6NV1u6WTs5yEN5pmwa_cHRBCg-1iMlh-Ug2-YA_xVSM8-K8pwSW0pOrQBHFvA-68z9LSvBL4Okr4KffvBJ78aq7Bp7cv5NpCgnFsQZ00vK7p6g3lJZw59f-aBYCPD1PBwdETGS1lotsWg-3Rxgn2KJLYxZpBF9oR44oVoEC8INwDE6a0LSq1YU2wajG744WcXBcIh4BP_6nHs4nS-6_Wa7DSnvc564ICI2MwZCuCksLvtKKPJRgvxotmiDS9duhmNrRpOXp3zB6ax5Bj3IYfoELbS1SK0AWoZpDzz6FiMK0pdn5XVZs-2VLgORc50pPqAB4EQK5swcGF-dmvpjEb9vGwu08bVR6WeI7HSY3k500nJTiPmOpJ8Df4cGIE-jfN4v2ANkT-lF46tld07ZDbX6TwmPNi0_2mdiH1UfCeCvUQ1JK4ayHxTPw_qcVsw7ehOBPjkra3FAGztfAQBDpYGHacqP08FyD-LuncSNz-xQCDEhSFJPP2ZDvosT2zxQKGzT4n9zzqHo4uFxqvgGBiVIr2xNN8wc8e8GPMmCxgVBdkQ2xF7ezOBdl",
-        "width": 4032
-      }
-    ],
-    "place_id": "ChIJfyjMH5dTUkYRb6MBP3wrqC0",
-    "plus_code": {
-      "compound_code": "MG9F+RM Frederiksberg, Denmark",
-      "global_code": "9F7JMG9F+RM"
-    },
-    "rating": 4.2,
-    "reference": "ChIJfyjMH5dTUkYRb6MBP3wrqC0",
-    "scope": "GOOGLE",
-    "types": [
-      "museum",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 1783,
-    "vicinity": "Roskildevej 25A, Frederiksberg"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6874652,
-        "lng": 12.5767806
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.68880713029151,
-          "lng": 12.5781578802915
-        },
-        "southwest": {
-          "lat": 55.68610916970851,
-          "lng": 12.5754599197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Museum of Natural History",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 5124,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/102534781214393994321\">Statens Naturhistoriske Museum</a>"
-        ],
-        "photo_reference": "AeeoHcIZfdEc6uhzEFZwpbL8DC3SIGBlowrmOd9rRvqbw1xbILUC1cGOd67keEBaIsva4FP_H1sLgmb_oX-OMAUkh0oLcslbQzhe9thbCcNNh33bIXnwM8iZPwy2Oqep89ZiOTNbMOI9zTWPoXmnZuwLrwoO3ReMB7gMUeT3vXx6iP-UEIMZ44PUdaEkyCmh6biz-qy6DJYvns7qrCcLHTeBc39CzUKKB-erG5VxQhK3O1eVHzfpILoBw6D54-M1Cr9L3F_m9Hfk8MlS6o0FQb_j3YyP99QPYknZ0dZE1FMjcfL1aHrxCK6pyIsPExzA9aQvN8ZBot3M9W8",
-        "width": 7778
-      }
-    ],
-    "place_id": "ChIJaYrImBxTUkYRTv3YfV7vceY",
-    "plus_code": {
-      "compound_code": "MHPG+XP Indre By, Copenhagen, Denmark",
-      "global_code": "9F7JMHPG+XP"
-    },
-    "rating": 4.1,
-    "reference": "ChIJaYrImBxTUkYRTv3YfV7vceY",
-    "scope": "GOOGLE",
-    "types": [
-      "museum",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 3080,
-    "vicinity": "Øster Voldgade 5, 7, Indre By"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.6893283,
         "lng": 12.5976365
       },
@@ -17975,7 +16928,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/111340386174417487889\">J • B •</a>"
         ],
-        "photo_reference": "AeeoHcJQ20NgVz28qpVXUdgvhpSBSqIc2VDJNdMJhXa-RCae98_Ai5MWKUTj1i7t274PDgXlPkUB4GeAm9y4Fsy4EyasdMNuSCN15zxp3D-XuYIXCmk7fzFA9P2nkxJtJRX87DiPmgyKw24VmmTNeCCzVZUgWDDvqifFdaLSTeDw5gPQAdXMAgF2Ovl-fy1SZBqKIKXnIieOjHHgaWx-UVIDzdpRoXSx06h6FebZqkVDjpe9jSmBQlcRuNO1Mo0tWIoUJzKJDF86Sx9S1vP_Gttknlbvs1HKra6_WbrmRacqSNln8BDqNasAEnZzcFt4BA2NNvBiWMhYk7nKFZTzkjp3OyWLzvlWM-5ptEAu0LHFOqcZLf9wnvfiJVXOgxJZYORlrapQt1lmKPBcHhWWP6Nhg-FgjK3X9A9qEIThO0fQxBugoWibc5EZvaNzwIYvu75x1Tdf1gUpjhplHPasdBi4f2wnQwrXQ4_mnFy1bp3YTVLEXFCVzsMtToBHVzWuX65UNZ5Ygu1BNfi1saGEZHuofNCebsliAOAPOJZu0tXIdM_CqrqRWpXnP9OIK1aRlCoiaMy2NhDu3-0KoAMtkw8tGdEnOjVyEKXUpYU4C8oV3txrXvu7BMl_9yOKxDuojAEIdmOjDTXZ",
+        "photo_reference": "AeeoHcLFF0D3qRjdFroUIv8b17UK-ckB-hVgHprWqYSvZGM4vCfoisLtka3P4Ipy1LFAHbuQ5erXBRZC_s49xgd-mwJVE4N9a6_RIm-Zto4OdxzevEAAv_6ybma1bArd5z1EmcqPbQvvLXKiLqWhSPzvoScUhUxABuM5SNCL3MFStpeVl6JxpSxuOmFelgJad4TBm-9f0xFUqozMKtjAj4cC1tCAKjOdTGcpZx3hXwCIWeKMNe7Srr_tI9eqLUs8g3lWOIikJsjxZVfjFKmutyKjY5lCSLMLNMvXbva-OovC7gnKt5pGbihD71RIZMqCRr4JpbWgcJ8GR2o2qHp2SMPtEThVPJQy6IJVv-a5A0iAfT-CWkF62ll49LEGVHGW5e-s9q3ECg9YleM5rYsJ6kIRZYLUe8Bl4VHqrvLVy9vhNBfMfeY5wU0QTR-RUjoVkydDS3nHpXtd0Nyr79GWpL6DLq4ssS0EkH4bXLUkSsnBf0uYhP3q8oXx11e6NDYb_Wfahd2dQmeRj5E40zQMUgyQxAiS2pKpexAYlqYDD4dfbfzykc2bqD-FSaYoH3z4hCiTKQFcZWzvMMeVkqDD7UORWGLLyZNhmMXxO0y8nqf5PrxiRHHok8VS99bTv8ZyYmDi0SkXjKBU",
         "width": 4989
       }
     ],
@@ -18024,7 +16977,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/109340598330169621385\">Morten Bjerregaard</a>"
         ],
-        "photo_reference": "AeeoHcKnEy0B6G8mdhma0xInwrj10sf24xd0owBhfhe2q2-aKKPNHOJoNJr9CpMl1yc59Jnw1GOCogrPQQoxKIuDmMxFSq3G_DlThVo4LiKqTLtnwhbWTdOiPkXHpdc_hu3RgvXcfRIsL3CXhLj80HMhCLg2rAroV2vKmHyOXHpI4_EVLnJU-g9kolw5KQRSxRhr7kvHxjdShkm9k1fx6CY9sMtcRB8_YMfpDka8ODa2kN3cXgqxJQ6NSbiNuuIKQAQx_x8PbBcae3OR5yCnqEt4xE8p4RU2TmtxbU8LlwebUK64W_KN7wXj4AJuAcRd9hHemsgOgRieL3HKpNfTMppcMmjdpCW2eI_AvuE2bFOerMq_NAmcqNRm_KhOsAkLVI8Yp5wPDrOD5TDRHvKWwxjWKT6Mzn6_RdXcUgZ464I1cNRNGrrPZZVjZ8QxhiZTZNfu1f2Z766hTvvpEY4lwcHyftqU2tElFP7k_tTcuXFb3DhDY6HKkZZ06Bxdg9F2qKiBtusgHRTYwlwAxzEl_mFkwi3ZfjTcsAkHys5hqI94BOJR8q6pV9iX6JTyfx0qxATRmQR9vJjcfnsaEZrxAF9jwj2V6fpMENV2S6dBt-SwXN8nG-ktFo0gV9IV-YcXKUoltidFNA",
+        "photo_reference": "AeeoHcIaMzzeU2QcXSlfvL6TrWhx51-zrLMfsQs9xQRkLZo-PdNaMY5SQdI-re4qx8fqghMFidapDEVZm0EovgIOulNMzNh_b0Pi4AXUVLdXFLtJIwGIPKwk3Rg169crB3rBoiyt2_AOWmLLAkqTPjfQ7_irWQ0zG5EBtmzldGXu02TepVATKc19jbGn9CLYLJ9u3-tclhODjDbo-GQjmxKhCV7GbY3uy5W1kviUGnsI9-HmA659AGXz1Tka6ktH7gDYjLEzjPXOJDSTSXhxu940YRr408XDkFcJQsCng43syQyc4A1ccNc7-hvaEniAjpZ13qrsL0DMUcdvZPflCyoEet7SXiPlt6B4eHYAIyopCQp86QODSOCelPMhHDiuIRHVWMM6fbgXDT0XKCbOUM6Y7dmLA35T40BQ2zlv4P-jKOR5zsGwjfY2kzTOh-m3uGafnOEQcQoWioooAdf8ZWcJcoB0Uz3vlxfr336xecZwITYrowW2Q5V6lMWbmcm6xnpan8rhPEm57GVbUU3rC2t-M3vDQPsqdOu-7FIhZb3kvNrR7uuSk0URgeltiCt1HYAvAj7rEmWZBGI1cXDBLLRFaz2w6ujKuLHnQkcC6xbCJ-rbU_dt4KlCYaxnU7fuxDsYvu0VuA",
         "width": 4032
       }
     ],
@@ -18129,7 +17082,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/108284676283288660976\">Hans Adam Sønderby</a>"
         ],
-        "photo_reference": "AeeoHcLZlsj8Oqka0298_AkY7LvOb6NhvHL8pu_7Z2QJ70EPD78xEFLgO8YeCsJuOAOXjV6AFeixWCuOjmR8ad7dDQK-WymqaxWtqYpWX7734x_U1023EtnM5RGFi7OLhYPSYxgOrfROS1zqQNLAjZEAL3zMfi0c0CzwPJqG_-jUQOAsfG2_Hn5RtjbvMdhD6YJwIT1d4ge-kI7NC-d3hJxZ1LAcABmFwXYy4lG2eWIxpgsrWEhWKRyY4JnOaRRtkijqE9Wvhq2ene84SF679YKE5jnwbztHlxkRl4eY5YL30eQFTO27lHBIIvSaPhD2ge3v79SOLTAw5PK002ZYlIN1zKjNmk_bZKKgfUh9gh7ksAdgKUjzy5dRmbMjnneA3MESekAYv4J25ggaFviqE2pWasCIH4CalCGsONzGvPh3o2leY_vWX029Or8H-gorLDl5he_QbY9XGliVPEiEtukAsPB8ixgVOEovPN9ytdUEazFQt3UW3fwYue8CNsUkn6ruLtabGeIsNce1LiNt8mlCGCgd67Chk9LZUd5gQ3ns7pfLiHRVoRY8w5hfj0w4YMeDK6-XlYzfksQgwEpex9IhN69wBjj3MH-OKvkQXE5XpD3gkh-b1BS9TD4rEXHBocj_16xCZbeZ",
+        "photo_reference": "AeeoHcLRAY5qtDps5IhzQ-cHnX5Gqv6hV449j3yrrBWfb8FuplJHGjEGxVCUVlMImhYdv0hBq2qfJUXu_OR2f-6nskkCylTPRSadDCzDLnN2aaPmj-6wIksu-ia26cyfG94_WP3e6hweJydfpF5msideitQwwCa-kyFWuszLC69j3erk-MxUIxnGsr5ui5eh7ngoJjQeDy7CWWz6dV64bfHxh53X0otTnJzXC2eP3PNSdo5SGwDQaM6ObPojsnWLfFDA-6ahfdgFDoFXEXQhm8kRQoQSYqcgJxZqY-Iviy81reEvuIPrTAunXhz59CKFAzFyMLNycL_SJioMB9TNdACYcvAU7FRxKEYj4XJ9gC2W7uNp_-Mo-Ocq9-sw8bxUcg-uj6yCzychz34plJ19wLJGjJriSr-3IhU_YDi3tykYJeh1BKMjokKzjTiOyijgIs5MLa3x3rxMH9NZSwAFHmPQw6txynNRa9cALdFyp9awCAVGpmPZrezCRQ-j_Wh41qoXHWm2KHvfyYbBZlJl-U4naOMOyAXk6sUpNyKCy350jp-LT96Hh4_tsoLBUE7fVDLG6xMlkFwRGMUAEBVurxcWiVhJyFlOE-htpb4_IkE14MjaySO_uF83oY_hQtYp4mXGjAfuIPwa",
         "width": 4160
       }
     ],
@@ -18334,7 +17287,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/104255323862580986593\">Kaan Alkan</a>"
         ],
-        "photo_reference": "AeeoHcIbvDpQxXMJLPDJLgxIGt6fEsooWEsedbgYmJJCym_vfcGPwntwjMiG-HZgZWPk71fyy2WyrbIWW-2An0Dhy4xcyCs1pGsUJ4WOsM5s_51UhW1Hy--lupIRZ9_4HRdJoQ7cLqGM48_QDUQdKOAlf63G2u70SuWxvMc37UIEhqA02cgYlwRWMjhSqzaK8Yjhj9aHACaZYLd-UmbSkw0WGZgbZ1AlkmS78HAhUfJMfNBE72W0JFhKLC7tmLRVfZmZE0KU7MO2DNBU-ed6FIQIadhy3vESuIlLIUxNeidw_kEN22b8t-pHlZQPzDxltzM9V3Lmvfd9U61HSDEA24Nh948cF3sDSdfxyIs-05WnzPC1xjpsdClctYI7lSFIgIimeXWo3gsPV0UdQpGp0WFJrG5Ac90o_peGj03YKQB5VevBLokvMy5yBJWrhAtnxirGMIDzUpNVMfes4n1HuOnPaPiQ501W0obD65Q2iWWA6-u47OlOmseLw2d1oujZLp3i0gDqAtszgQgsPmB_jvbe4bQRxgBlcwGVBMoSaP3g-4zgn9GrsKRtW0PLBR8-XZWZJU-4TXJguqqlpm9Ol_FSzMwYnyzxHcZNBf0Y-YkW8nrdvI7TJm4uB5TcWsTM0NdeI6ouU289",
+        "photo_reference": "AeeoHcKl4mOqZQJ5kujWdFLCVhu1rnpgcsPNWM2HgLZ8GKYL-tglaB1Pel05fuOlfXh3nR3zuEsQq2kTsJfYlgFQsn9JwOZd_0-cpRLtI7TTVl_Sv42NnubjArijfX-A0vSbWoODHuGrOMTP2fFI0jDXh_Qj80SuYIFk7lkz-lcs8Xhvih2AN9-eVxaxTGRkPNamOjzYJ8szOvjpyfWxtFsp4i6dtj0MqHUlMyXI_hWpxQe2uCbfC47akHoiv7utDn3Dtd2jg996gFneOm0D615esyZsKcAAwgNbouicqHgN1VarqJBBv7AY-2nkix5eWv7cbb1_n88HMdJjWgjJ_9S8RjjTTyVF2Y-vtEYerg9Hu8oKT8IYRSZZ6m_6-NqyndsqyezmQCITk1Lq4yNKIEfapDa5mtUg5vljrLehbrkDeFovI5N-BDlRTk_jPkXg_x_VtAsKp2CsNY92sa7RsvXggXbE8fdk5dKgUqyIdEiTwADJrGWBs--bHiBLI6E45GdVRvqT95j6_ddlyvGAbGhwFnUhrnSUESXyEr9vpXjp6dbEj9jfHl70bNJOQzEPMPp6e0tAzL0t0tRo_wHNJ0yTv6ZWWGPh-G4Y24koUoGxOQnTdIqEpHgQrncI5Elb0u8UIow1ukNU",
         "width": 4284
       }
     ],
@@ -18460,110 +17413,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.68598489999999,
-        "lng": 12.5917864
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6873415302915,
-          "lng": 12.5930693802915
-        },
-        "southwest": {
-          "lat": 55.68464356970851,
-          "lng": 12.5903714197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Medicinsk Museion",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 878,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/100484204927837166017\">Medicinsk Museion</a>"
-        ],
-        "photo_reference": "AeeoHcI-i-_EuO1V55W6MhxOyNVtgN5Oe1HX-lwwJLbnZd-Mo9FoKLm1R6hunMpvw4C_RXmiFQQ_vk8bT00l9lQGxLQuEcI0L3IAED1N989AG_EwaUCFSNZUjcy-g549y9yFraavBiJfqy7PYskNcZseUCCTIusCrBKB3S4WGirgYPaJpQKT16qAbY1xz4vOby5s3He05naP8iPOiF1v1R6g9iehvcuBaARUEa6uWLxLH2ebP9fkaYwc1CarrK3iJ5omiurN528Hf8u6nxZnbuNLwWdUDN3TIgoNV6Aq7mERCdYcJY__BPuMsQzNlZ2VJtX3odLrlPpeMXY",
-        "width": 1559
-      }
-    ],
-    "place_id": "ChIJc6Dg8CFTUkYRMb9YySXljOQ",
-    "plus_code": {
-      "compound_code": "MHPR+9P Copenhagen, Denmark",
-      "global_code": "9F7JMHPR+9P"
-    },
-    "rating": 4.4,
-    "reference": "ChIJc6Dg8CFTUkYRMb9YySXljOQ",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 1436,
-    "vicinity": "Bredgade 62, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.678644,
-        "lng": 12.5815874
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67995863029149,
-          "lng": 12.58267543029151
-        },
-        "southwest": {
-          "lat": 55.6772606697085,
-          "lng": 12.5799774697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    "icon_background_color": "#7B9EB0",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "Nikolaj Art Gallery",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 2048,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/107081258892947790454\">Nikolaj Kunsthal</a>"
-        ],
-        "photo_reference": "AeeoHcKmykM740ZCrD40MG9BydH6v6WX7qajeWwxqYYJCKH1H7vWsGfEsQ-LdiY47dBDaSvLLR2HZaLG1DwR8FBJMSqX5iIt6EEHxAUT9r3O4nnTtc9Km5X-s4wcSzNJBQslSr5fNEtMnkdpMDsJQJp4Dw6ESTwqVuKACSTBcL9kEgSMz5gSsSNL9A9lbOfRPQJDWzRP_F1jjqlQ2lQCQ-lDVUBR4klbbOWnPYSRP_au0Qiye2d5qt5OF9CCWGtEL3yQjkDNTM4MapUF1qI18AjEJ_kTRvbI046rDqjomPxlAP9pXu1ZBp-m48cLvL2L5FDKqV_wVveKioI",
-        "width": 3070
-      }
-    ],
-    "place_id": "ChIJZ7XgGRdTUkYRmi-Kary7yRs",
-    "plus_code": {
-      "compound_code": "MHHJ+FJ Copenhagen, Denmark",
-      "global_code": "9F7JMHHJ+FJ"
-    },
-    "rating": 4.1,
-    "reference": "ChIJZ7XgGRdTUkYRmi-Kary7yRs",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 1286,
-    "vicinity": "Nikolaj Plads 10, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.6805274,
         "lng": 12.587945
       },
@@ -18611,370 +17460,6 @@
     ],
     "user_ratings_total": 2969,
     "vicinity": "Nyhavn 3, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6849417,
-        "lng": 12.5701915
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6862638302915,
-          "lng": 12.5714288802915
-        },
-        "southwest": {
-          "lat": 55.6835658697085,
-          "lng": 12.5687309197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Workers Museum",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 2828,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/112385167113131891563\">Arbejdermuseet</a>"
-        ],
-        "photo_reference": "AeeoHcKAFPivnyQrbsagJVIpf6AwpHLv3oEOQlCaGNzqLLE3OYrmu78sdOGutIm3shNUJ8LMjZegsOCaFgGs3iT0G6lxn9DjpdpuSfzIJl9tOUar6HSu-GAzhNpHvFojdszS--TXSRkDR7H7wt6yVYqhuoaz0cfmfHwyu_LbihKiuVytjS_SaWFVSFIoTqH6gKwU57LobgAXeiMxZiTNCOctToTp_P_EFSLafc3G4R_-8hGo3yprA7BCmvktZ7tNctV6CfMzBdhSKgMMAJIRxckP_eGVMY4JLMczCG9w9oXhuyusJDo_yP5WRclMSQPfUOZAjtkq28Lm",
-        "width": 4242
-      }
-    ],
-    "place_id": "ChIJhYY5HQVTUkYRU7nk0bC9YhU",
-    "plus_code": {
-      "compound_code": "MHMC+X3 Copenhagen, Denmark",
-      "global_code": "9F7JMHMC+X3"
-    },
-    "rating": 4.4,
-    "reference": "ChIJhYY5HQVTUkYRU7nk0bC9YhU",
-    "scope": "GOOGLE",
-    "types": [
-      "museum",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 2306,
-    "vicinity": "Rømersgade 22, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.606182,
-        "lng": 12.3876347
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.60798595,
-          "lng": 12.3887521802915
-        },
-        "southwest": {
-          "lat": 55.60494415,
-          "lng": 12.3860542197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "ARKEN Museum of Contemporary Art",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3024,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/111875396455942977509\">A Z</a>"
-        ],
-        "photo_reference": "AeeoHcK0BXx1obcmk_8jnHAyEIF_Kf95Y7Bweu8fo7-5puQmytJpqGcDu4F88AZ-sYgwU_30_DC_o8zhlbJjbvLUxXRNiXxMHThdEj-JZtgWLuCR9a9EpFTUkEP3oP3dHxX4u9ZP52oQ-2P9rbrLvgDJK5MXUQmTfr4X6fn92GKMO9IwS-HpQfUndb94fex0-p_em27xBkgGLrIjLbptccDAsq2YoboaivA2f9sSFugkPQrt29LEbRSf_sSzwB86u9HPAru_IDuhq4K8vXknA2QCpCWpxbNNuAc1tXK-irM6lx0l3k4ojtmMpYJDhzQv_SK1YBrxa0zEKmhG7d4QFsxi5zKcLnJuLRpJl7gWwK14oTqI0m_vG4Tb_ClNCm6krKBLLS5WV_4bd-MD2cR24a3WChbJPcJeXK65e0hZRVRUwGUBEWnxIrPHOQAdQ-lqMzApfnR3byYmN69_2g1c2Oj-AAj8Ms7MC1kMby0WH986BaHch-6sZIeSamTX-VWbgrzoD7TOe2wiOMNttTvbcu3_yTan0EXgXmQFPVi2Y-oEilUp71_LjDrnWVNcNZNJkTVvHZmZV7cIlO_v8nxSr5JbLHJuVTF4_700jxF-IbjfG2PRET3Rw30ztMdRhKhCCd0Y-OuGuDJL",
-        "width": 4032
-      }
-    ],
-    "place_id": "ChIJ0TCvI-hNUkYRX0SeGQg_QaE",
-    "plus_code": {
-      "compound_code": "J94Q+F3 Ishøj, Denmark",
-      "global_code": "9F7JJ94Q+F3"
-    },
-    "rating": 4.3,
-    "reference": "ChIJ0TCvI-hNUkYRX0SeGQg_QaE",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 4487,
-    "vicinity": "Skovvej 100, Ishøj"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.67451390000001,
-        "lng": 12.5320843
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67586388029149,
-          "lng": 12.5334335802915
-        },
-        "southwest": {
-          "lat": 55.6731659197085,
-          "lng": 12.5307356197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Storm P. Museum",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 592,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/116695807078788406040\">Storm</a>"
-        ],
-        "photo_reference": "AeeoHcJiZRymMvopvP5W1BRjnJuIU3tY0KsAgcqWxoUx381g7VA3b79FYjY13mLIhh-_uf3GbYrmxs9juif4s6a6EIgzVNKRSAo5mUun8cpsPRQgdybtZKFCP-aeuoQ98I2lf3SiQt9zGrER3In5JjXjIKom6E0lFhtn6VxnEW75udrcmpxdgVOoax_jFQK-1tv7omB2Ox4No0EQPTGioMV5Rk0Ds9YFTTxHaseE0mfMc_htpY2ESEWV6oX27ijxIc2RKRZlndJZ_BSVaeXiUhDiJ6F90g-DVAWYAC33YqZ9fFjDOexdnTtchlYpoqgOT2s2l2FNivbo-kQ",
-        "width": 1024
-      }
-    ],
-    "place_id": "ChIJ29Bo2ZdTUkYRfFLOXgQMGJc",
-    "plus_code": {
-      "compound_code": "MGFJ+RR Frederiksberg, Denmark",
-      "global_code": "9F7JMGFJ+RR"
-    },
-    "rating": 4.3,
-    "reference": "ChIJ29Bo2ZdTUkYRfFLOXgQMGJc",
-    "scope": "GOOGLE",
-    "types": [
-      "museum",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 418,
-    "vicinity": "Frederiksberg Runddel, Frederiksberg"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.67427199999999,
-        "lng": 12.582269
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6752251302915,
-          "lng": 12.5838341
-        },
-        "southwest": {
-          "lat": 55.6725271697085,
-          "lng": 12.5809809
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Danish Jewish Museum",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 1650,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/109782334002335420426\">Dansk Jødisk Museum</a>"
-        ],
-        "photo_reference": "AeeoHcLHz1USnv2vtRbfX9_kK4SBdnNOYIuCKhnM6B15zWaFegG0Zk_XGdSVtqPHuwswMuqh0zsdv_rLVghB5FEV8NJhUiPEYGFj6jZgwJNy79eum_lqP8yeD8hx7exx2n6Z9kEhbclFZs0dzidKvx2jFzU2gQvsND99vKwAr3G0mIVtseBBkZKr3hkS5IuGVRy5eyPGlTx_nm8CDOggAhZCug_7XhApZe5KFvGX87IXfRPHCkkV8MqxIY95wNUANWDA08B5ANQXBZAHaCHqHvWU_7-TmOSmzqT0Wv-Jk3LhbcXiwHELhRpqlGExLMnCLK-5Qg-1MPPObE4",
-        "width": 2474
-      }
-    ],
-    "place_id": "ChIJS7YcxRVTUkYRQ0ZvaPs-cGo",
-    "plus_code": {
-      "compound_code": "MHFJ+PW Copenhagen, Denmark",
-      "global_code": "9F7JMHFJ+PW"
-    },
-    "rating": 4,
-    "reference": "ChIJS7YcxRVTUkYRQ0ZvaPs-cGo",
-    "scope": "GOOGLE",
-    "types": [
-      "museum",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 347,
-    "vicinity": "Proviantpassagen 6, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6901224,
-        "lng": 12.5608252
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.69138908029149,
-          "lng": 12.5621636802915
-        },
-        "southwest": {
-          "lat": 55.68869111970849,
-          "lng": 12.5594657197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Politimuseet - Danish Police Museum",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 960,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/111366329078809822290\">Politimuseet - Danish Police Museum</a>"
-        ],
-        "photo_reference": "AeeoHcJVLqc2sGWlFDEkRRdXrRVgJxKvlu30zcmpAvYq1LFgSghtB0FQbKXLL5o7ZlA_fwGs1SrNnfdK55PD2zT1paAk3ts9Dj6-15st_v26tjKX4ziFOO8cHAQJgg2hKCkxc2-BpSZj3enp45GWy0Uk-hUfocapEtVqBfLVRnTIjP2i1tMrh5kuE1HzNKjBgwDJvxqXqbytH2ki1Rvm05ZYofmCnjFSTSJ_GHWMuDiFOSdNT8Sae5ueNLD1lQ1bZfXR23b1iXLHXTpvXOFVDehX7HogW0Q8XY65NEJ4A1qTGCXjv6GZMBZqnAfuCXVZdgXERWlv7JPsxrs",
-        "width": 956
-      }
-    ],
-    "place_id": "ChIJFUMgvgBTUkYRGwrGYOWsLP4",
-    "plus_code": {
-      "compound_code": "MHR6+28 Copenhagen, Denmark",
-      "global_code": "9F7JMHR6+28"
-    },
-    "rating": 4.4,
-    "reference": "ChIJFUMgvgBTUkYRGwrGYOWsLP4",
-    "scope": "GOOGLE",
-    "types": [
-      "museum",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 851,
-    "vicinity": "Fælledvej 20, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.78567959999999,
-        "lng": 12.4901441
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.7871047802915,
-          "lng": 12.4913539802915
-        },
-        "southwest": {
-          "lat": 55.7844068197085,
-          "lng": 12.4886560197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "The Open Air Museum",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 785,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/111998164061177585722\">Frilandsmuseet</a>"
-        ],
-        "photo_reference": "AeeoHcJFLAgBrb97nfjmQ_XgeWvnL7pumi6AsaYv7TljHqUWmEYrVj3z4erwVK5IWLfaMssYLsQiPSsKM-_-CLk0uwaBPaZ1u_W74tbL1CDvj0cg1BW8lT6iR8cE4XXB9PANW2K2f_d8pNe1kXy9Pj0PcyEuKSS0vHoysPNJoyOGUxReuu73FzJvP700626-anyoAUZbC_ui7HELNM9XPL2bKSIw4tZBVnSEGzlUjnLAC-7oDB_oBaFY1RrzfsPuZ6CuZanxRgpz_d66Y8W4Voc6cDi-yDnY4Fld1CeKor9Mi2uKHtfnK92OXrGm9xgTvq90HO5aNyPoknU",
-        "width": 1393
-      }
-    ],
-    "place_id": "ChIJncXEL1pOUkYRN3Oia9AfiDo",
-    "plus_code": {
-      "compound_code": "QFPR+73 Lyngby, Denmark",
-      "global_code": "9F7JQFPR+73"
-    },
-    "rating": 4.6,
-    "reference": "ChIJncXEL1pOUkYRN3Oia9AfiDo",
-    "scope": "GOOGLE",
-    "types": [
-      "museum",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 3012,
-    "vicinity": "Kongevejen 100, Kongens Lyngby"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.7668196,
-        "lng": 12.5625076
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.76875958029149,
-          "lng": 12.5637062
-        },
-        "southwest": {
-          "lat": 55.7660616197085,
-          "lng": 12.5589118
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "Ordrupgaard",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 1050,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/107309693604132245988\">Ordrupgaard</a>"
-        ],
-        "photo_reference": "AeeoHcLjUBxQmr7zqHLIwfFmwhWFlwbTdZOWPS6jgl2wDCb4b83-syyUPHMb4KSUS8fYpQbZGEao54eCaPOXNeinLjplzRDh0MPo0zxZX2I8j7x5r6pt7r36xjGnNCknkasohmroHTmO6wNwYwKXnApHB-xpbrvv8u_YxnSC-kqA2serMJNzCe8wPEI3Kgi2w4JI54BcWlKmGpcFLsYkpDuxy_s2_yIymAn28OEVmwc4NBb816uBn-g8dytX-hs_tW6GiMgSqxsJw8BBGKRqkDNDiPLSBULKn68eUszKJPiRBFSM1pO5L1ps7lquNEcMO12aRoWoAM6CIAI",
-        "width": 1920
-      }
-    ],
-    "place_id": "ChIJgRvPWb9NUkYRZ0H_K9PuqYY",
-    "plus_code": {
-      "compound_code": "QH87+P2 Charlottenlund, Denmark",
-      "global_code": "9F7JQH87+P2"
-    },
-    "rating": 4.5,
-    "reference": "ChIJgRvPWb9NUkYRZ0H_K9PuqYY",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 1145,
-    "vicinity": "Vilvordevej 110, Charlottenlund"
   },
   {
     "business_status": "OPERATIONAL",
@@ -19028,61 +17513,6 @@
     ],
     "user_ratings_total": 830,
     "vicinity": "Holmens Kanal 21, Indre By"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6776793,
-        "lng": 12.5966259
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6788629802915,
-          "lng": 12.5980454302915
-        },
-        "southwest": {
-          "lat": 55.67616501970851,
-          "lng": 12.5953474697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    "icon_background_color": "#7B9EB0",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "North Atlantic House",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3840,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/106578354021345382553\">Nordatlantens Brygge</a>"
-        ],
-        "photo_reference": "AeeoHcLGjJ7oYWucJVkE8ft0-E-u3yGO8Nzfc7uQf3RwPAMpQBn4fXg725LkYIjK87qH_L9sTLvaVYw4U568MwSJ-CPap807_OumHxQGKudLu9F_URi7iugHIMdL_MMKMnTXBCluEd1GvIYnaOaJ5i1JTbC2EpBvielfT2JUERS9MjqV6pVTU5vXB7qU7W9W2yd-epC4T-hq1UtDI9B1oy501Yhoh6NjKwTHzfXJT0kkUPpAvZLu7WsU97YenIXWip-bf1XGhwQd-4QoT49mCAVlTISOmMjvxOJbaSyeJm9q4ezpz2i_tZu78GeWLQf7WBQTcQHIVS_rZMN4lD7biv5lm9WQT5j3wgWHPdyCuH39gl3WhYbOC_AMr0uxqPAFW4O1CffLVyixCjIPv3Ulr5AyokDUc0zPqUpgwZdTtSm3YUwwnLn7ch_44jkKU4qwsOcQWrJeQY12nwrPtR1F1Si6zojJufJUF__LwuoDbcNp9Uehxq3DtST45A3vwhIpKAanAsQQpcdJXwP9XQwVVXZoUFTEU_MCyNKTJ6zh-yeUYK5OR_ZG8oxkm5Tajr2_VihOyIaak_LKqW-Bz9LitiAmzEmpvXzDFmXsqY5NttNrooirE5tF6eAbCcwob0QUgcwUglWCyg",
-        "width": 5760
-      }
-    ],
-    "place_id": "ChIJw_XJaDtTUkYRfVOCvQxdfIY",
-    "plus_code": {
-      "compound_code": "MHHW+3M Copenhagen, Denmark",
-      "global_code": "9F7JMHHW+3M"
-    },
-    "rating": 4.3,
-    "reference": "ChIJw_XJaDtTUkYRfVOCvQxdfIY",
-    "scope": "GOOGLE",
-    "types": [
-      "art_gallery",
-      "tourist_attraction",
-      "restaurant",
-      "museum",
-      "point_of_interest",
-      "food",
-      "establishment"
-    ],
-    "user_ratings_total": 572,
-    "vicinity": "Strandgade 91, København"
   },
   {
     "business_status": "OPERATIONAL",
@@ -19194,58 +17624,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.67415099999999,
-        "lng": 12.5803648
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6758996302915,
-          "lng": 12.5814359302915
-        },
-        "southwest": {
-          "lat": 55.6732016697085,
-          "lng": 12.5787379697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
-    "icon_background_color": "#13B5C7",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-    "name": "The War Museum",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 8192,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/113725207452016493673\">Krigsmuseet</a>"
-        ],
-        "photo_reference": "AeeoHcLpVyoD2qTQFxDLpgk2QTyl_-W1rFnFfjLXyIXn5JI2NA0FOKFt3YHlZ3eRDRnCAGLMX7K4yyuPvi4nKJSfy3_FFRVQNRNrweaC0tyK6dDCbx3Z9MLsT_9RPUdKXmNF_Zn5j3RNDfuQqXPNycTHP4TlYDJP3G8B5DMFuTspUn5Z1_5_GfegV47w-VtuGkposmt08T7e-NYP0-2gXbwGJ5G3GeJOHr52B4MPuTKJnPZv2H9YXXdmeaBMkIH9ZuaWPYj0Tt6Aeksrv2zon8NOeJiImzEfk9EbUP2KEW4Hfm0Izug0054z9_ILcLXTI4nli5efrvFKvLc",
-        "width": 5464
-      }
-    ],
-    "place_id": "ChIJG7BEIxRTUkYRpKmcPLGhqDw",
-    "plus_code": {
-      "compound_code": "MHFJ+M4 Copenhagen, Denmark",
-      "global_code": "9F7JMHFJ+M4"
-    },
-    "rating": 4.5,
-    "reference": "ChIJG7BEIxRTUkYRpKmcPLGhqDw",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 2185,
-    "vicinity": "Tøjhusgade 3, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.6835645,
         "lng": 12.595153
       },
@@ -19273,7 +17651,7 @@
         "html_attributions": [
           "<a href=\"https://maps.google.com/maps/contrib/106377599066560355676\">Andrzej Trzmiel</a>"
         ],
-        "photo_reference": "AeeoHcJrsJwpLf0Hxy-B2SeeZYFyAWWbpc4LCVnNkFXKi-MN_QxmQCUBZJCJF64KlI4Td4_FUmFpy89OMSWPkWYE11kMKvw6B80zYsX6lGOp1Xzze1D2i374OQpi9N_fGLGyUIR8XLS61wE172aU07d7C2XZQwUpTdMb4hkEs0AOy8Ko0khekLDf_vuOUUAJdovN-mUg_DcRjeRlohzJoVNBvUIj1sckJx1HBR2vawIgpzUd04jc5CpIF3gUrYYTrDKqhLJDeYsUqHMvPwNrJfCBI6oYxy_ysg1oXPLf4uSfAWt6KHSmvH3NYfHYQuD8l8I-GhYrxBuQQxBQRowNFWRen8QHFe1ySN72_MijRyovjzyX5ZJdI0gHyK3v_CkzrbS-Wo5yKLrPrAYlzbC3iTyvUyDjckEUQwWl6tifG8gUULg_dBEvkT54nnFGqsZg7ntbgqQ16f9ta6Xqnn_PMa6Xba9mW0yMZ25cQLZ8L32NoPacGrnSsH26N3X9p9T-ZlxLi3ZxkzOVwhnp7wURSwr_wS2hOGp7CkirDcKo5o3wFaF31cv1buwPv7n4v26bttWLlg6ux6KdkbmcQF8xU9gnTSxSTAe92uf8yDVotHkUXyRCm1TIe_FsJ2LiKy_s-6t0XzLwfnSx",
+        "photo_reference": "AeeoHcLQmw1qXX98Aj6CuwLqIbc5YrbwKnYVyPvbO_S-JzB2e6yfds3ffhjBgRJWU7TCtMNgwb3nVWnfnO7mVFUJywkEJ1pt20j-KxgJ9pOIgMraTDaORvqn6QvMZEJnXTbYCN2iiGiJJmaJWCzRozgiuvDx0VfR12fcK49G9OzKTQX4BUqNLhxqytLTwaKBmqB0kGLLIDe2stF0oh_8m_teIN-pj8syL4jv9T-9qBgtvCykd_4xVP3YVUGg6iIsZjb9qcVk5Se1urBCnUQb67aMMhqKaqCOwpu-QISUKtpwPzhKFnzwhBGyzpcotLeD2YyAhDtPZNUBNlkqFmX28BJ5yRJbt3PJujUK_X6cDK72lSLV5BzMlnkMZ7lXif6K_O2wnPC3QsRXddAVsQOUe10FezPEagFEqmVv1efAzVAE7svdgBAQoxyPXoPJuzrXpUkSGoyvWGt2Z3ZoDpoVjq3BLTTZ-PxgXeFakETWEMg9H3TcFDfS8elrU_EOcdb4zqLJBfoKiz1ktyxzPu_aPblZNPBmMuDD2tcD954k3-XYEjN8q57fMLLgq_6oSTX66Bk9-al2U6__2HbUf5T9WKl6DRCUT1nKscUu1Lk1no03uGu5Li3xD6JF3mmCBj3hHm7igww-kARo",
         "width": 6016
       }
     ],
@@ -19286,65 +17664,13 @@
     "reference": "ChIJHWOjuSNTUkYR4F-CiktZrfE",
     "scope": "GOOGLE",
     "types": [
-      "park",
       "tourist_attraction",
+      "park",
       "point_of_interest",
       "establishment"
     ],
     "user_ratings_total": 967,
     "vicinity": "Toldbodgade, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6321862,
-        "lng": 12.4482748
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.63356723029149,
-          "lng": 12.4498036802915
-        },
-        "southwest": {
-          "lat": 55.63086926970849,
-          "lng": 12.4471057197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    "icon_background_color": "#7B9EB0",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "Forstadsmuseet",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 1365,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/107839969183050880885\">Forstadsmuseet</a>"
-        ],
-        "photo_reference": "AeeoHcKmjmaOIuQvFrxBB6q57Zy9QgxozCwPIFqfRUMljxV4Zs028rtWbr6euNt6oNuufkcFZcq3waUZwqRk7WirGsm0hLu2y1Cg6mKSJW4Z_wEouhEzGPL1WuoRKUeZ3I-fYmLosb1_xsu40YL3UrUr6xFKCghYgc6M4RSYbOMZtHPsuhz1-UJ7saen_U0iomxdrI9K7tZOqZ7wABVupprP808EnxtIL0TCIkOYyCWrXkRsxzc-UKKC7ItV-kZ4hAW4Ve_QW3U70z9S_0dWn7ujCmKrFdanmApAK1P3b8FvnRQpWzTAg5XTmr9RrhkU8sxWbcUdKeRHECk",
-        "width": 2048
-      }
-    ],
-    "place_id": "ChIJQdVeBJpWUkYRqP9lJ6TkwEY",
-    "plus_code": {
-      "compound_code": "JCJX+V8 Hvidovre, Denmark",
-      "global_code": "9F7JJCJX+V8"
-    },
-    "rating": 4.2,
-    "reference": "ChIJQdVeBJpWUkYRqP9lJ6TkwEY",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "museum",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 29,
-    "vicinity": "Alarmpladsen 3, Hvidovre"
   },
   {
     "business_status": "OPERATIONAL",
@@ -19395,58 +17721,6 @@
     ],
     "user_ratings_total": 185,
     "vicinity": "Vangedevej 50, Gentofte"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.671691,
-        "lng": 12.523429
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6729950302915,
-          "lng": 12.5250351
-        },
-        "southwest": {
-          "lat": 55.6702970697085,
-          "lng": 12.5189619
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    "icon_background_color": "#4DB546",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "Copenhagen Zoo",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 4080,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/100838919763033327810\">Pooja Mann</a>"
-        ],
-        "photo_reference": "AeeoHcIXtVNKzZPm5CGyKRcBpZlh5Qjg-HCHPWwxqIPaCW8myfP3j3KaCLP9GpYWJJdD7XmwEHxK1IEwMjB4XuecUrKLs-I6b7n-vKpIdZI2Budg9rtoflYzhEUQ2J6NUjdJ6EN65toJni6BsUS6H4gh7Ns1v-OzG9OyCg9ohjRA0tA_ZJdW5_W6yik3lGDwygU5mV4YaAonIk4ea3BkMZeH0i8x2FkIUI1Eyr8Rx5O4OhJn42e5J3eKwJnj_Q3JX_PsTAtr9XswEoHP9C3io7tIaz2G5WJoafItWjpxtfkMQtzk9t5OQsy2-9qieXiZ7RVnUv5lrPDDGToB2WnEp_wrsxkfyr1r6e-nQ8DmeX_hUZhmp5VgnH7Tgj8G3YqaIo2cexyZC9z0wzVx5NTVZIEvXDdl5t82l6uE7ooNZOc9-OpcysD3v46hAkSoe5kJU5kI75TLGueO3C-ggycTkXTykNECRQCdjG07qajYCqGCfrTKnjOPgeHDGASVMgAsmNYTMgTCqFiV_pnowG-BR11f5zt_UulAdt_SDRRHd3cN-PkEEKum2ZDXaMsn_o2Rb7fMLSzWwz0sala5pChlf1WtwkIxetgRwfG8y8oKtR7gWyyK3wwtZnvXPR5k_V1z05w1",
-        "width": 3060
-      }
-    ],
-    "place_id": "ChIJhwUoPJRTUkYR78kejeKf2zs",
-    "plus_code": {
-      "compound_code": "MGCF+M9 Frederiksberg, Denmark",
-      "global_code": "9F7JMGCF+M9"
-    },
-    "rating": 4.4,
-    "reference": "ChIJhwUoPJRTUkYR78kejeKf2zs",
-    "scope": "GOOGLE",
-    "types": [
-      "zoo",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 24614,
-    "vicinity": "Roskildevej 32, Frederiksberg"
   },
   {
     "business_status": "OPERATIONAL",
@@ -19546,265 +17820,6 @@
     ],
     "user_ratings_total": 14,
     "vicinity": "Det Gamle elefanthus, Roskildevej 32, Frederiksberg"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6780774,
-        "lng": 12.5723344
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6795529302915,
-          "lng": 12.5735474802915
-        },
-        "southwest": {
-          "lat": 55.6768549697085,
-          "lng": 12.5708495197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
-    "icon_background_color": "#4DB546",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
-    "name": "Caritas fountain by Statius Otto",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 2349,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/103073689132891175826\">Tamas S</a>"
-        ],
-        "photo_reference": "AeeoHcLI0OVLT3S3_McslaeBibdioFYVBZy5PXgQ2idI7QpWEhvAXRxZQrOFHusf0J-5JZAiWHVlskiwUYq2GulcUCSB-WysJlz9rSbcpRZb8WFHGWJx3i065PapMLq0Tm1H485kO_I9RfryyWBAcViHa635RdABGMPKdDBp9279a5PA3ZDv-8bzlKDnJIHNIA3ukOjXnVO5Z5-2suYs4mVihQ7uawR-i0gJXzu1Gu69dJY0r6js2CpVnKcKP1r2vheoPFDHy-qw1nfLeqzhpXNkboEp26sb3jryrro6o4xWN30OJbFn9DtjoiGlByF63R4YXwblyDusR2Bfn5i27PrLot7TInzuMGo_bwh75BjhFPjprkgOdWrQVPsmfM0UtDvOuJDG9YK4kDzYmUr2k_Su_WR_YdWnhVnTj3DnNAW9jIqlMkIdqLtoXRazH6RJd9pU-NAnay1Rx-coFP1UJBhgzEoPSAAZm4bBs9wqOPMTtYuD6hLve6EYF0Al_HOoxo3hQGgNPTs5FlVaFyFmLHjGI9rE63qYYilGRboO2fU3Wobrj4-l6pUxF8uvq6wtxubTJvl5EHk9OgAFxseed7NcljI4gpi15-boH1WUPiBXuv2sP-OAmG-F9gv5_h1Ah_mv",
-        "width": 2155
-      }
-    ],
-    "place_id": "ChIJ7ymjuBFTUkYRGnfQZO8hyWc",
-    "plus_code": {
-      "compound_code": "MHHC+6W Copenhagen, Denmark",
-      "global_code": "9F7JMHHC+6W"
-    },
-    "rating": 4.3,
-    "reference": "ChIJ7ymjuBFTUkYRGnfQZO8hyWc",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "park",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 565,
-    "vicinity": "Vestergade, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6736841,
-        "lng": 12.5681471
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67570585000001,
-          "lng": 12.57527035
-        },
-        "southwest": {
-          "lat": 55.67231685,
-          "lng": 12.56204895
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    "icon_background_color": "#7B9EB0",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "Tivoli Gardens",
-    "opening_hours": {
-      "open_now": false
-    },
-    "photos": [
-      {
-        "height": 3024,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/108321463838048606334\">Jens C. F. Nielsen</a>"
-        ],
-        "photo_reference": "AeeoHcIKdKyc195Ii_UYilN7idYJ3lq7M30hBJ1E8ywrUJ6EB8dMwLDjyYGfQaCV8Uwr5LX2Zsbly-ASto0emLWOQUkJa_IsITOq3Z-2pHSuY9Ey4uogbzPuQxbRio-6RgpNid2XaX_GSfNmWel8w03DDi9igg8FcDIt9E8dKJkzSLqDlDaid_SQ-f3OGl64aT0tgfaLQ0LQiomQjFkpJtlAnOmLars0CM18F9FiqVve3SMg1uKtpIh64fKFDgVh4V45kTg1FUCtSx8wFUy7QE2LDAQy5AH2tNClDrDOc6zP4qPUi9-867yJOsGAUYWvSExbF00RnUBe0aB9Ns2lcbyQrnbswut2UjbaCXEvsb06tV8YCm1X2O4K6q9hM7kLYYyzPTkwySEAWSPqeg_1QXNmt2y8F38U-5aGhSmutR90M1kHtA-Y3gtc5LvE4EvgbwPA_a3i2GFvjQNzaNAfW_j2BigVlp7G07d1wjMd0fzavLDGVj-ny-uN32PUL3lMEs1G1rsbAjNXaVaRZYobixt5dOJVnjr5IUlPO7-ZOEvKQKZsIhUZ7bDR3uX_2zSNTbGdlhha8rkX8ntVKD4u43yZuLRxmLoTEKuUNHiGwW7_nn2uNfVU4rJpc8QsMHx4lVNC0-Yuhg",
-        "width": 4032
-      }
-    ],
-    "place_id": "ChIJ8-r2gBJTUkYRsCcLtQ0Ltdk",
-    "plus_code": {
-      "compound_code": "MHF9+F7 Copenhagen, Denmark",
-      "global_code": "9F7JMHF9+F7"
-    },
-    "rating": 4.5,
-    "reference": "ChIJ8-r2gBJTUkYRsCcLtQ0Ltdk",
-    "scope": "GOOGLE",
-    "types": [
-      "amusement_park",
-      "tourist_attraction",
-      "park",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 83227,
-    "vicinity": "Vesterbrogade 3, København V"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6852905,
-        "lng": 12.5798452
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.68948910000001,
-          "lng": 12.5838917
-        },
-        "southwest": {
-          "lat": 55.68078829999999,
-          "lng": 12.5763525
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
-    "icon_background_color": "#4DB546",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
-    "name": "The King's Garden",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 3454,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/111646295450585136542\">Laurent</a>"
-        ],
-        "photo_reference": "AeeoHcJrVr463bDwnoS890Hn13LeC5d1WvdLVKG6ICxbHTVkN76D8YImbhpLawPs_TWM89upC2PGri35rT_dOOBJvD3DfzhyT9kNm8k3UV9wlnqR9lPwoh-WfMXazfbMSYiRihAJRUFTzaoERKEemFm7lkzzqas32DaZTgDCXg3Jgrs7yM5ORYyNjz8_k6XnGTq_u6Fexx_lQMky08beQTGfEOzJsOE-CS8tq5jPtfYdOA4IOWGW1mwYqflTNqCu-HpodDw4yymbmhfMznEdI7QmWJLpLwCBn4aa7ejW5sQhdvyRsS50qkRtXcDqUoZE_0TqABScqKCO7eW_QirNuYmjqGZJc003yxiy0cPLN1FVIAO1ZKrSDljnWvOds6YXRv5zIWUXBKZW7WjZbmXz2T43PxgYo3qGzYnanQXwHXrFgR0wjvyeWKYYX8mel8L27zfSzCL0mtTMYtI6lSAiru7JWkxRkovSs2m1egRSmivKmZKtYNNoD56xuz63_JzC53a6Z0EhdxUJOkgJd4eCOjaaX1tWi8spJ9w4nYddXVRpZfUA06SKRmI1RR1xjlioiXuiufRDZPhb1cL0n4uFTgtImOkl7yB6_tX8cQTpRAs1qMsbmzoKQpfdzrrT57yJe1HETonIAa5J",
-        "width": 5181
-      }
-    ],
-    "place_id": "ChIJHVOeQhtTUkYRaKzp1xE05Q0",
-    "plus_code": {
-      "compound_code": "MHPH+4W Copenhagen, Denmark",
-      "global_code": "9F7JMHPH+4W"
-    },
-    "rating": 4.6,
-    "reference": "ChIJHVOeQhtTUkYRaKzp1xE05Q0",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "park",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 12573,
-    "vicinity": "Øster Voldgade 4A, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6893283,
-        "lng": 12.5976365
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6905393302915,
-          "lng": 12.5989961802915
-        },
-        "southwest": {
-          "lat": 55.6878413697085,
-          "lng": 12.5962982197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
-    "icon_background_color": "#4DB546",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
-    "name": "Gefion Fountain",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 3326,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/111340386174417487889\">J • B •</a>"
-        ],
-        "photo_reference": "AeeoHcLFF0D3qRjdFroUIv8b17UK-ckB-hVgHprWqYSvZGM4vCfoisLtka3P4Ipy1LFAHbuQ5erXBRZC_s49xgd-mwJVE4N9a6_RIm-Zto4OdxzevEAAv_6ybma1bArd5z1EmcqPbQvvLXKiLqWhSPzvoScUhUxABuM5SNCL3MFStpeVl6JxpSxuOmFelgJad4TBm-9f0xFUqozMKtjAj4cC1tCAKjOdTGcpZx3hXwCIWeKMNe7Srr_tI9eqLUs8g3lWOIikJsjxZVfjFKmutyKjY5lCSLMLNMvXbva-OovC7gnKt5pGbihD71RIZMqCRr4JpbWgcJ8GR2o2qHp2SMPtEThVPJQy6IJVv-a5A0iAfT-CWkF62ll49LEGVHGW5e-s9q3ECg9YleM5rYsJ6kIRZYLUe8Bl4VHqrvLVy9vhNBfMfeY5wU0QTR-RUjoVkydDS3nHpXtd0Nyr79GWpL6DLq4ssS0EkH4bXLUkSsnBf0uYhP3q8oXx11e6NDYb_Wfahd2dQmeRj5E40zQMUgyQxAiS2pKpexAYlqYDD4dfbfzykc2bqD-FSaYoH3z4hCiTKQFcZWzvMMeVkqDD7UORWGLLyZNhmMXxO0y8nqf5PrxiRHHok8VS99bTv8ZyYmDi0SkXjKBU",
-        "width": 4989
-      }
-    ],
-    "place_id": "ChIJXYp1kiBTUkYRrjkQMxuLT8o",
-    "plus_code": {
-      "compound_code": "MHQX+P3 Copenhagen, Denmark",
-      "global_code": "9F7JMHQX+P3"
-    },
-    "rating": 4.6,
-    "reference": "ChIJXYp1kiBTUkYRrjkQMxuLT8o",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "park",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 2477,
-    "vicinity": "Churchillparken, København K"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.680522,
-        "lng": 12.585957
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6821943,
-          "lng": 12.5882348
-        },
-        "southwest": {
-          "lat": 55.6789191,
-          "lng": 12.58413
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    "icon_background_color": "#7B9EB0",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "Kongens Nytorv",
-    "photos": [
-      {
-        "height": 3024,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/109340598330169621385\">Morten Bjerregaard</a>"
-        ],
-        "photo_reference": "AeeoHcIaMzzeU2QcXSlfvL6TrWhx51-zrLMfsQs9xQRkLZo-PdNaMY5SQdI-re4qx8fqghMFidapDEVZm0EovgIOulNMzNh_b0Pi4AXUVLdXFLtJIwGIPKwk3Rg169crB3rBoiyt2_AOWmLLAkqTPjfQ7_irWQ0zG5EBtmzldGXu02TepVATKc19jbGn9CLYLJ9u3-tclhODjDbo-GQjmxKhCV7GbY3uy5W1kviUGnsI9-HmA659AGXz1Tka6ktH7gDYjLEzjPXOJDSTSXhxu940YRr408XDkFcJQsCng43syQyc4A1ccNc7-hvaEniAjpZ13qrsL0DMUcdvZPflCyoEet7SXiPlt6B4eHYAIyopCQp86QODSOCelPMhHDiuIRHVWMM6fbgXDT0XKCbOUM6Y7dmLA35T40BQ2zlv4P-jKOR5zsGwjfY2kzTOh-m3uGafnOEQcQoWioooAdf8ZWcJcoB0Uz3vlxfr336xecZwITYrowW2Q5V6lMWbmcm6xnpan8rhPEm57GVbUU3rC2t-M3vDQPsqdOu-7FIhZb3kvNrR7uuSk0URgeltiCt1HYAvAj7rEmWZBGI1cXDBLLRFaz2w6ujKuLHnQkcC6xbCJ-rbU_dt4KlCYaxnU7fuxDsYvu0VuA",
-        "width": 4032
-      }
-    ],
-    "place_id": "ChIJJ7ITIBhTUkYR4AvPXAdIYgM",
-    "plus_code": {
-      "compound_code": "MHJP+69 Indre By, Copenhagen, Denmark",
-      "global_code": "9F7JMHJP+69"
-    },
-    "rating": 4.5,
-    "reference": "ChIJJ7ITIBhTUkYR4AvPXAdIYgM",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "park",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 18131,
-    "vicinity": "Kongens Nytorv, Indre By"
   },
   {
     "business_status": "OPERATIONAL",
@@ -19919,110 +17934,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.65453249999999,
-        "lng": 12.6496067
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6558076802915,
-          "lng": 12.6504067
-        },
-        "southwest": {
-          "lat": 55.6531097197085,
-          "lng": 12.6472091
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
-    "icon_background_color": "#4DB546",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
-    "name": "Amager Beachpark",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 3120,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/108284676283288660976\">Hans Adam Sønderby</a>"
-        ],
-        "photo_reference": "AeeoHcLRAY5qtDps5IhzQ-cHnX5Gqv6hV449j3yrrBWfb8FuplJHGjEGxVCUVlMImhYdv0hBq2qfJUXu_OR2f-6nskkCylTPRSadDCzDLnN2aaPmj-6wIksu-ia26cyfG94_WP3e6hweJydfpF5msideitQwwCa-kyFWuszLC69j3erk-MxUIxnGsr5ui5eh7ngoJjQeDy7CWWz6dV64bfHxh53X0otTnJzXC2eP3PNSdo5SGwDQaM6ObPojsnWLfFDA-6ahfdgFDoFXEXQhm8kRQoQSYqcgJxZqY-Iviy81reEvuIPrTAunXhz59CKFAzFyMLNycL_SJioMB9TNdACYcvAU7FRxKEYj4XJ9gC2W7uNp_-Mo-Ocq9-sw8bxUcg-uj6yCzychz34plJ19wLJGjJriSr-3IhU_YDi3tykYJeh1BKMjokKzjTiOyijgIs5MLa3x3rxMH9NZSwAFHmPQw6txynNRa9cALdFyp9awCAVGpmPZrezCRQ-j_Wh41qoXHWm2KHvfyYbBZlJl-U4naOMOyAXk6sUpNyKCy350jp-LT96Hh4_tsoLBUE7fVDLG6xMlkFwRGMUAEBVurxcWiVhJyFlOE-htpb4_IkE14MjaySO_uF83oY_hQtYp4mXGjAfuIPwa",
-        "width": 4160
-      }
-    ],
-    "place_id": "ChIJp8jZW2pTUkYRQmmHh_lfaPk",
-    "plus_code": {
-      "compound_code": "MJ3X+RR Copenhagen, Denmark",
-      "global_code": "9F7JMJ3X+RR"
-    },
-    "rating": 4.6,
-    "reference": "ChIJp8jZW2pTUkYRQmmHh_lfaPk",
-    "scope": "GOOGLE",
-    "types": [
-      "park",
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 9972,
-    "vicinity": "Amager Strand Promenaden 1, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.67883560000001,
-        "lng": 12.579573
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.68017458029151,
-          "lng": 12.5810725802915
-        },
-        "southwest": {
-          "lat": 55.67747661970851,
-          "lng": 12.5783746197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
-    "icon_background_color": "#4DB546",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
-    "name": "Stork Fountain",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 5712,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/104255323862580986593\">Kaan Alkan</a>"
-        ],
-        "photo_reference": "AeeoHcKl4mOqZQJ5kujWdFLCVhu1rnpgcsPNWM2HgLZ8GKYL-tglaB1Pel05fuOlfXh3nR3zuEsQq2kTsJfYlgFQsn9JwOZd_0-cpRLtI7TTVl_Sv42NnubjArijfX-A0vSbWoODHuGrOMTP2fFI0jDXh_Qj80SuYIFk7lkz-lcs8Xhvih2AN9-eVxaxTGRkPNamOjzYJ8szOvjpyfWxtFsp4i6dtj0MqHUlMyXI_hWpxQe2uCbfC47akHoiv7utDn3Dtd2jg996gFneOm0D615esyZsKcAAwgNbouicqHgN1VarqJBBv7AY-2nkix5eWv7cbb1_n88HMdJjWgjJ_9S8RjjTTyVF2Y-vtEYerg9Hu8oKT8IYRSZZ6m_6-NqyndsqyezmQCITk1Lq4yNKIEfapDa5mtUg5vljrLehbrkDeFovI5N-BDlRTk_jPkXg_x_VtAsKp2CsNY92sa7RsvXggXbE8fdk5dKgUqyIdEiTwADJrGWBs--bHiBLI6E45GdVRvqT95j6_ddlyvGAbGhwFnUhrnSUESXyEr9vpXjp6dbEj9jfHl70bNJOQzEPMPp6e0tAzL0t0tRo_wHNJ0yTv6ZWWGPh-G4Y24koUoGxOQnTdIqEpHgQrncI5Elb0u8UIow1ukNU",
-        "width": 4284
-      }
-    ],
-    "place_id": "ChIJW7zM0hBTUkYR6ZKVuxWzFgw",
-    "plus_code": {
-      "compound_code": "MHHH+GR Copenhagen, Denmark",
-      "global_code": "9F7JMHHH+GR"
-    },
-    "rating": 4.4,
-    "reference": "ChIJW7zM0hBTUkYR6ZKVuxWzFgw",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "park",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 2975,
-    "vicinity": "Amagertorv 6, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.70178920000001,
         "lng": 12.567908
       },
@@ -20119,58 +18030,6 @@
     ],
     "user_ratings_total": 1109,
     "vicinity": "Hvidkildevej 66, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6835645,
-        "lng": 12.595153
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6849482302915,
-          "lng": 12.5962687802915
-        },
-        "southwest": {
-          "lat": 55.6822502697085,
-          "lng": 12.5935708197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
-    "icon_background_color": "#4DB546",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
-    "name": "Amaliehaven",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 4000,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/106377599066560355676\">Andrzej Trzmiel</a>"
-        ],
-        "photo_reference": "AeeoHcLQmw1qXX98Aj6CuwLqIbc5YrbwKnYVyPvbO_S-JzB2e6yfds3ffhjBgRJWU7TCtMNgwb3nVWnfnO7mVFUJywkEJ1pt20j-KxgJ9pOIgMraTDaORvqn6QvMZEJnXTbYCN2iiGiJJmaJWCzRozgiuvDx0VfR12fcK49G9OzKTQX4BUqNLhxqytLTwaKBmqB0kGLLIDe2stF0oh_8m_teIN-pj8syL4jv9T-9qBgtvCykd_4xVP3YVUGg6iIsZjb9qcVk5Se1urBCnUQb67aMMhqKaqCOwpu-QISUKtpwPzhKFnzwhBGyzpcotLeD2YyAhDtPZNUBNlkqFmX28BJ5yRJbt3PJujUK_X6cDK72lSLV5BzMlnkMZ7lXif6K_O2wnPC3QsRXddAVsQOUe10FezPEagFEqmVv1efAzVAE7svdgBAQoxyPXoPJuzrXpUkSGoyvWGt2Z3ZoDpoVjq3BLTTZ-PxgXeFakETWEMg9H3TcFDfS8elrU_EOcdb4zqLJBfoKiz1ktyxzPu_aPblZNPBmMuDD2tcD954k3-XYEjN8q57fMLLgq_6oSTX66Bk9-al2U6__2HbUf5T9WKl6DRCUT1nKscUu1Lk1no03uGu5Li3xD6JF3mmCBj3hHm7igww-kARo",
-        "width": 6016
-      }
-    ],
-    "place_id": "ChIJHWOjuSNTUkYR4F-CiktZrfE",
-    "plus_code": {
-      "compound_code": "MHMW+C3 Copenhagen, Denmark",
-      "global_code": "9F7JMHMW+C3"
-    },
-    "rating": 4.5,
-    "reference": "ChIJHWOjuSNTUkYR4F-CiktZrfE",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "park",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 967,
-    "vicinity": "Toldbodgade, København"
   },
   {
     "business_status": "OPERATIONAL",
@@ -22585,169 +20444,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.6763127,
-        "lng": 12.5702264
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67761523029149,
-          "lng": 12.5711482802915
-        },
-        "southwest": {
-          "lat": 55.6749172697085,
-          "lng": 12.5684503197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "Scandic Palace Hotel",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 1243,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/116541235174530424806\">Scandic Palace Hotel</a>"
-        ],
-        "photo_reference": "AeeoHcJZk8SFX6jxkBVTqVGJqCI6zP-A_h4V5Wrd5ROgeOQ917SPD7yAaG-FZmGnrciUvBj_nuX87QbOO_tlDk7W3KjzCtu5dLdJ6A2cGqFbJL1K-mRYQJYwNg31VcFR-Wlq3A4rDMHGm9aNcROQHOLLRM0WrZTtoL4JKBin1pl_EEzPEG85xlxn_-QRJOE9_er2TaeVbZgkgGNrpe24ozLlHptKGtWJZLisN5ln6b1v1PuDtYDpIngbeuSqpmeRWDEcpQkMgoPGPE4O40exK4NGLFhBX4jrKddz7npOfYYYXHS72G5rXFkDeKpxmM6zY9bxQZsFlIdvD00",
-        "width": 1600
-      }
-    ],
-    "place_id": "ChIJAwi1AxJTUkYRH7VIhBzPxuY",
-    "plus_code": {
-      "compound_code": "MHGC+G3 Copenhagen, Denmark",
-      "global_code": "9F7JMHGC+G3"
-    },
-    "rating": 4.1,
-    "reference": "ChIJAwi1AxJTUkYRH7VIhBzPxuY",
-    "scope": "GOOGLE",
-    "types": [
-      "bar",
-      "lodging",
-      "restaurant",
-      "point_of_interest",
-      "food",
-      "establishment"
-    ],
-    "user_ratings_total": 1735,
-    "vicinity": "Palace Hotel, Rådhuspladsen 57, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6768672,
-        "lng": 12.5652595
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6783092302915,
-          "lng": 12.5665952302915
-        },
-        "southwest": {
-          "lat": 55.6756112697085,
-          "lng": 12.5638972697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "Ascot Hotel",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 1281,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/111603859066089114922\">Ascot Hotel</a>"
-        ],
-        "photo_reference": "AeeoHcJIzGFUXAdbvDga_12QdYgkXF_0EIxdDFKRyPu9C6LJwVBu5JGdPJlUOkXPTkqZlFuYPu7hsgZ53u_CCrPaAU9ssPUNY6R9SwgIFuQelxJ2tqdlgjAy_7tfqhr8q8esGUdc3TwnOlvqjpE0butTvWnorYOyUpicvzAdLOGpe7X4LQFSKRQ-xaeeNtIpZu38JAUXRaXFy5IZNuWlLBUUyiDxXPlAThKoosKzY-I398rfRMTRai-DMkJthRbXdKZm55ke7L_V9aYX0S_Ol5Ui1eMSd_M3_5vTHtLaTVnaqEggTg2ONXqxEFNiCMqOytsFKLsj2T6LRCk",
-        "width": 1920
-      }
-    ],
-    "place_id": "ChIJvejpKgxTUkYRdw9K80kbCUs",
-    "plus_code": {
-      "compound_code": "MHG8+P4 Copenhagen, Denmark",
-      "global_code": "9F7JMHG8+P4"
-    },
-    "rating": 4,
-    "reference": "ChIJvejpKgxTUkYRdw9K80kbCUs",
-    "scope": "GOOGLE",
-    "types": [
-      "bar",
-      "lodging",
-      "health",
-      "restaurant",
-      "point_of_interest",
-      "food",
-      "establishment"
-    ],
-    "user_ratings_total": 1575,
-    "vicinity": "Studiestræde 61, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.67494479999999,
-        "lng": 12.5596266
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67646783029149,
-          "lng": 12.5606007802915
-        },
-        "southwest": {
-          "lat": 55.67376986970849,
-          "lng": 12.5579028197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "Scandic Copenhagen",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 1363,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/112586217891680143484\">Scandic Copenhagen</a>"
-        ],
-        "photo_reference": "AeeoHcLmVzVIcgSHCqPGDZS-ayGyUV0DDSYCtJINdoVTCD3OFT_Sfj_k5tophhh7dBKiIe0G52AKiUsZa03oj_V3zS--G-Di-yblcgwk35DrwK7jpzzcnv21mS0Pd38VJyRgShtisKMrReGQF9Rl5kCOz4tn9NBBbIH0WGPrrnpWgyfsVoXU3yUAURta78R1cCLw49wjgGoOiSk3JKP8ApHi2F3TylOUB4fm6xJbSjDiXxvzlINDIsdre5kIq1uZhcZh6X6Ce9TzickbWhRQWkSCLbZ3IjAN4ZJ5Fsm6lvVciKTc2TlQIKG9VY5XaGfx07jRQ4gcgnMhVgU",
-        "width": 2048
-      }
-    ],
-    "place_id": "ChIJFTasnAtTUkYRw8_1UeZ-Nls",
-    "plus_code": {
-      "compound_code": "MHF5+XV Copenhagen, Denmark",
-      "global_code": "9F7JMHF5+XV"
-    },
-    "rating": 4,
-    "reference": "ChIJFTasnAtTUkYRw8_1UeZ-Nls",
-    "scope": "GOOGLE",
-    "types": [
-      "bar",
-      "lodging",
-      "restaurant",
-      "point_of_interest",
-      "food",
-      "establishment"
-    ],
-    "user_ratings_total": 4042,
-    "vicinity": "Vester Søgade 6, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.67193779999999,
         "lng": 12.562498
       },
@@ -23096,62 +20792,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.68060519999999,
-        "lng": 12.5846997
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.68194028029149,
-          "lng": 12.5861861802915
-        },
-        "southwest": {
-          "lat": 55.67924231970849,
-          "lng": 12.5834882197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "Hotel D'Angleterre",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 4480,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/112672360194478853496\">Hotel d’Angleterre</a>"
-        ],
-        "photo_reference": "AeeoHcIJaRPCXUI2vnG5v7udbrm4YVVGLyp3FgO7UBrS-ReBOA5aXbvB_9KfO-yT7buabmrbr9FGIxayLpoAsvVxS2JifEX0eIdJi3dhasf3UkeWGSoTYReMkKXiHit3WwGXqCmJb_G8mJQEONvODMcHi3DfreKK2eLJ9bD-v2D8BTiXpuYaRPIIrMDn-UKRuWeR4XDE5x3wbvU1mUC46H5feXJhOYERCm0c9povayWRW0TuSVc5vkg9PKzi_a5EHdWY-h8erEhncvISN4np_0UX_OSaL7V7UyyaUrshve_UZl93F7sOsmQf7sLfB46LxkLotd5lLbthAEQ",
-        "width": 6720
-      }
-    ],
-    "place_id": "ChIJtRm9KRhTUkYRdv7vSCAmeVM",
-    "plus_code": {
-      "compound_code": "MHJM+6V Copenhagen, Denmark",
-      "global_code": "9F7JMHJM+6V"
-    },
-    "price_level": 3,
-    "rating": 4.7,
-    "reference": "ChIJtRm9KRhTUkYRdv7vSCAmeVM",
-    "scope": "GOOGLE",
-    "types": [
-      "bar",
-      "lodging",
-      "spa",
-      "restaurant",
-      "point_of_interest",
-      "food",
-      "establishment"
-    ],
-    "user_ratings_total": 1568,
-    "vicinity": "Kongens Nytorv 34, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.6837343,
         "lng": 12.5683171
       },
@@ -23347,112 +20987,6 @@
     "vicinity": "Carsten Niebuhrs Gade 11, København V"
   },
   {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.67290939999999,
-        "lng": 12.5593586
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6742785302915,
-          "lng": 12.5604855802915
-        },
-        "southwest": {
-          "lat": 55.6715805697085,
-          "lng": 12.5577876197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "Comfort Hotel Vesterbro",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 3840,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/111902771014913253726\">Comfort Hotel Vesterbro</a>"
-        ],
-        "photo_reference": "AeeoHcIjSTxmCNo9PKQSlSu42hqfGip2D9q6q6W4ZipTrKXKVtH-luOyFxHuKdp-e2PM10BxJwX4bOz6GZwC8jtKiHY8Jb0xGiXKmKQRkcRCdVubkTSlHj9wclpR-Yn2P7lI6QUnwUjy27KLd8FDWKJZo0t5gDOd0f-sfNpRrCr4GC4WfWdmqFRkM7NPPAZCjtc-8AmqO_W_a7sJ9nZEqSxnZDJ5VUP4dgB1xq0GmkMrdn-qTXv6G4K_L8SHS-VdIpyGW1_DVBq8TCF-iHUHIpamD7yXYKoJxQELcSMDU84_r6nPITsKtquCbsYihAaog9tjCs4tzFfGnnw",
-        "width": 5760
-      }
-    ],
-    "place_id": "ChIJ9XKqWQtTUkYRgG3s1F5didw",
-    "plus_code": {
-      "compound_code": "MHF5+5P Copenhagen, Denmark",
-      "global_code": "9F7JMHF5+5P"
-    },
-    "rating": 4,
-    "reference": "ChIJ9XKqWQtTUkYRgG3s1F5didw",
-    "scope": "GOOGLE",
-    "types": [
-      "lodging",
-      "restaurant",
-      "point_of_interest",
-      "food",
-      "establishment"
-    ],
-    "user_ratings_total": 3719,
-    "vicinity": "Vesterbrogade 23/29, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.68174379999999,
-        "lng": 12.5938583
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6832346302915,
-          "lng": 12.5949334802915
-        },
-        "southwest": {
-          "lat": 55.6805366697085,
-          "lng": 12.5922355197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "Copenhagen Admiral Hotel",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 768,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/100914072844059593804\">Admiral Hotel Copenhagen</a>"
-        ],
-        "photo_reference": "AeeoHcKLB1JCLICcUFLCCbcsOjS20KcW-w_3TGN_u0zg4IwNlle_17o3zAYyCsSValMJ-i9K_FE2oyrM9bpa-rVWgJCPksebr7oUKgcmMCDddPwdRJ2lg7QsGMj-wcJeegHFCWFIh0gbO99hXCJh-RJUYtRDWJ98sUpGJ9NwAuFlB_CX44u27WlO-0uzBcqC_K_1t7Sv0vMYoyndnuf8tN594XqzObQ6JlUyZTjDzBkpXbdEeTsQQZJd-m_LLkUDvYxvEjySg1f8LT4O-nyjb08paq6KmYU_WOMTV5Dzw5-cbvu7euQdqoLl-NsSQe3fOB8ETDmJB0MfluA",
-        "width": 1536
-      }
-    ],
-    "place_id": "ChIJuUjwBCNTUkYRI2UHKcbTNMQ",
-    "plus_code": {
-      "compound_code": "MHJV+MG Copenhagen, Denmark",
-      "global_code": "9F7JMHJV+MG"
-    },
-    "rating": 4.4,
-    "reference": "ChIJuUjwBCNTUkYRI2UHKcbTNMQ",
-    "scope": "GOOGLE",
-    "types": [
-      "lodging",
-      "restaurant",
-      "point_of_interest",
-      "food",
-      "establishment"
-    ],
-    "user_ratings_total": 3329,
-    "vicinity": "Toldbodgade 24, 28, København K"
-  },
-  {
     "geometry": {
       "location": {
         "lat": 55.6813973,
@@ -23645,60 +21179,6 @@
     ],
     "user_ratings_total": 1114,
     "vicinity": "Colbjørnsensgade 29, Vesterbro"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6737712,
-        "lng": 12.5647803
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6751491302915,
-          "lng": 12.5662763302915
-        },
-        "southwest": {
-          "lat": 55.6724511697085,
-          "lng": 12.5635783697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "ProfilHotels Copenhagen Plaza",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 2318,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/106915196900174182327\">Copenhagen Plaza | ProfilHotels</a>"
-        ],
-        "photo_reference": "AeeoHcJ7e2xDMJRbsfjxPM70ZpNg6ktpvgZxJZTV35muo13Mp5_R7n_QdapPHg7wzamUkrkXROU3RPz7Ez8uWZEKv-wd1lAiyHKqfN8kvL0jNBe8BS39tF1l-Gtawm0EQC1Kdm0vXGxh9s3LzT1LKkkyWu8G0rn2GlhGZUX_ILGUzHojl2gsKqKalSx_clX4ME5bGHEZRS0_I0xAi27a9btVO3W44hjBg-z9AoKJs2BoWcBAECLoDUVYDr5gGQehIq5zs_TLogLUCTNBSBSK6WY6OuNWMiOxFdMGAaFSmlFEBLxK08zvmAojOKCv1l1WFqxmTrTt8lUDonc",
-        "width": 3000
-      }
-    ],
-    "place_id": "ChIJoev5BQ1TUkYRL1h0hFGNQ6w",
-    "plus_code": {
-      "compound_code": "MHF7+GW Copenhagen, Denmark",
-      "global_code": "9F7JMHF7+GW"
-    },
-    "rating": 4,
-    "reference": "ChIJoev5BQ1TUkYRL1h0hFGNQ6w",
-    "scope": "GOOGLE",
-    "types": [
-      "lodging",
-      "bar",
-      "restaurant",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 1153,
-    "vicinity": "Bernstorffsgade 4, København"
   },
   {
     "business_status": "OPERATIONAL",
@@ -24104,61 +21584,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.672146,
-        "lng": 12.5619202
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.67351318029149,
-          "lng": 12.5633697802915
-        },
-        "southwest": {
-          "lat": 55.67081521970849,
-          "lng": 12.5606718197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "Axel Guldsmeden Hotels",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 1417,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/114398373447128930846\">Axel Guldsmeden Hotels</a>"
-        ],
-        "photo_reference": "AeeoHcIlx5EH5--_NYH6UVqD47txNEmMthZcVOWR-XYpUGU5oRyYhK4XGNoG7jRB7mVbTQYpsQS4NpLIGUlcf-lzkfd9MM-KkfrC-seZlb5M-aMtRf-1AZkqihEdhsDMAnatJCSOGrZBgCT0EIEXm4EQUd7hC8Txrh3xfDXyoIip8ubqxc1p4LdZWBgSvak57f5Hj4gldEbVhwgxD9DMzKRwAa9BZd8QN2WuwWf4Mh2970o0vIsnwbOm9KGOjr3zva44m7R-d3KYXi1u183iLv_MBI3dloYPYhFReNryuA4pcq-2UHWf5ZY2BKG4V3DzHYPC8FCasMeiCgM",
-        "width": 1770
-      }
-    ],
-    "place_id": "ChIJIQgAuAxTUkYREwhuAu591mY",
-    "plus_code": {
-      "compound_code": "MHC6+VQ Copenhagen, Denmark",
-      "global_code": "9F7JMHC6+VQ"
-    },
-    "rating": 4.3,
-    "reference": "ChIJIQgAuAxTUkYREwhuAu591mY",
-    "scope": "GOOGLE",
-    "types": [
-      "cafe",
-      "lodging",
-      "bar",
-      "restaurant",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 2040,
-    "vicinity": "Colbjørnsensgade 14, København V"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.67703419999999,
         "lng": 12.5660768
       },
@@ -24247,109 +21672,6 @@
       "establishment"
     ],
     "vicinity": "Fiolstræde 22, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6780774,
-        "lng": 12.5723344
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6795529302915,
-          "lng": 12.5735474802915
-        },
-        "southwest": {
-          "lat": 55.6768549697085,
-          "lng": 12.5708495197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
-    "icon_background_color": "#4DB546",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
-    "name": "Caritas fountain by Statius Otto",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 2349,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/103073689132891175826\">Tamas S</a>"
-        ],
-        "photo_reference": "AeeoHcJ7ng94OU5mYwwCCpbwXqS0rRYwH4SGDiZZG5yQM3rSPjJTmAKqpar7tQ2VTNsY7r4odxyK6s4Ek2nwKTwZYdoNNcqSIsPZ7vJu6sqLko1d96cuS-5OQ-rwHc_3hmqzEhAebmB-MCarAMmaRIPTdN2pha6_qSs9K9S9p3lsvJZ904MZRc-pzGb52jSMjZniD5ulCZoOo0_4Emeinest28aVGKpbldhFPrzhuMsNXLunFbJhwRxbIgOafwdTDhWftZSuImDtMLfvHa1KQA3z4tegz6N5LQgmUVnRQiCdM_KVKHrainC_HH39H5WblAp20Br_lrxdRqAGOaIcmgheR6wHROH_OW7J173U5uZbAxE8VtWp4OyBCoI3PLZOk9LRTjHNO9d_C3nQr9m3a-5xNrR8vzNjTwGpqRNt1DTA89q_nw70FX_nH93FXXWgskWNBh6mriv0mYjZIAj4QoU_YfMuQ7uzbD6IQ2URl4P_I6qZTycB2eY0EuQLchLQy1ugtd7RFejjUtX8SK_sNegT3c3v51TSlx4iQSvHo5siNPXx6ubC_SLwn4x0Tw2IbY-txUfOBw7BYgBPwMMAp4ikwPa1URstM4YP-5w_2mSOrTuKoxTd7OoobWCpvxbHuOT5",
-        "width": 2155
-      }
-    ],
-    "place_id": "ChIJ7ymjuBFTUkYRGnfQZO8hyWc",
-    "plus_code": {
-      "compound_code": "MHHC+6W Copenhagen, Denmark",
-      "global_code": "9F7JMHHC+6W"
-    },
-    "rating": 4.3,
-    "reference": "ChIJ7ymjuBFTUkYRGnfQZO8hyWc",
-    "scope": "GOOGLE",
-    "types": [
-      "tourist_attraction",
-      "park",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 565,
-    "vicinity": "Vestergade, København"
-  },
-  {
-    "business_status": "CLOSED_TEMPORARILY",
-    "geometry": {
-      "location": {
-        "lat": 55.6726439,
-        "lng": 12.5616554
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6740092302915,
-          "lng": 12.5630950302915
-        },
-        "southwest": {
-          "lat": 55.6713112697085,
-          "lng": 12.5603970697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "First Hotel Excelsior",
-    "permanently_closed": true,
-    "photos": [
-      {
-        "height": 3000,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/100058078904436916000\">Vladimir Fronton</a>"
-        ],
-        "photo_reference": "AeeoHcKg0YnhKTfx7Ae-8B3prufUKK0d66wcreRVademRbev5FFhMFq1mh5uTTOM7CiU5B2q_rP4rCHGRaXIIIVxa26g9NTPjxsm1wCMTtzNPL2PycLv_BjwoZH0-LubaPWL23kkdj9T9wHvjJrL5olMuwLgwVxJ9UiLT1BWGzv7WEvPUdx7KSfRwmKMvlh7S0zSjls3Zai383oNVxfp2x9UJMhUS8Y44Lw_vkaht1sI7Ficw_C_yKkwpKDoJcEZnY1EOIetSdj4UOfMySQg3h-3YxO9iFBPm4-UoLVljD0jCRHHhBttq0mlyEv7FMoC8xTSPUVKdHv7t6qY8ntJviDJ0NKMwTK_nSLEH_ZAub4hEKR7EHm1WRRhUz6_xCm_d4q6hJt-1YDC9riX7Fx8HejqIqkI6JZsZqLclJXWq7jwTCxL41EXdeYrrPNrFWuND3RMPblyj5_0wFGlJxvbUxKD3uc07DtQQZIgIeGBjDw10BUXEaj17UurZyjZBrRsI-N7OaJTtKT4y6eU2W_9iHWb_9LoIW2IcdxwKK5EhcKv_ze9zsz1OADoV3uVlQl0hKA5KJY0WZTIE_DLofuizVV8IQE-iNdTb4aL3F9K7UIKLoB8tPY9nG1QBvaKtY_pFG-rEgm2Ug",
-        "width": 4000
-      }
-    ],
-    "place_id": "ChIJV1QgxwxTUkYR2ACsZK3Fecw",
-    "plus_code": {
-      "compound_code": "MHF6+3M Copenhagen, Denmark",
-      "global_code": "9F7JMHF6+3M"
-    },
-    "rating": 3.6,
-    "reference": "ChIJV1QgxwxTUkYR2ACsZK3Fecw",
-    "scope": "GOOGLE",
-    "types": [
-      "lodging",
-      "restaurant",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 17,
-    "vicinity": "Colbjørnsensgade 6, København"
   },
   {
     "business_status": "OPERATIONAL",
@@ -24700,115 +22022,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.6831332,
-        "lng": 12.5827597
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6844508802915,
-          "lng": 12.5841756302915
-        },
-        "southwest": {
-          "lat": 55.6817529197085,
-          "lng": 12.5814776697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "Generator Copenhagen",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 3755,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/109398511629615538436\">Generator Copenhagen</a>"
-        ],
-        "photo_reference": "AeeoHcJTU1DIkb4-QTjLfy4Oh2wxSYrX53L7DjxFE9-Ed_lTMvH7dFzE4MJitRn2pEXt51CG4fcHjgs-cvUymAuEIf9OZBayxyxZmpWXMRdKu6YXsqkt9marnTdp9Fj5XjReNcB5qY8BkV9lqUCzGatogA5PI9pzQ2J5MgVwoEDYzPEqe2pqeozpZaiXEa0x3LAEPTYUuX2q_VyvVWMf5EP2AmE18-pXbxi859EZMUlJotHENM7Vat8IJJD0j3KR6121uP2MFySuH5uGNP_ZCHJKMNZ9X6qsnz2VisdlL2VcVHfp6HIMUiF3pAISaMvPaqy0VUObcCf9ddc",
-        "width": 5632
-      }
-    ],
-    "place_id": "ChIJF5P3mRlTUkYRHFiOVIREJDw",
-    "plus_code": {
-      "compound_code": "MHMM+74 Copenhagen, Denmark",
-      "global_code": "9F7JMHMM+74"
-    },
-    "rating": 4.1,
-    "reference": "ChIJF5P3mRlTUkYRHFiOVIREJDw",
-    "scope": "GOOGLE",
-    "types": [
-      "restaurant",
-      "lodging",
-      "food",
-      "bar",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 4426,
-    "vicinity": "Adelgade 5, 7, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6813386,
-        "lng": 12.5932285
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.68263383029149,
-          "lng": 12.5945669802915
-        },
-        "southwest": {
-          "lat": 55.67993586970849,
-          "lng": 12.5918690197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "Scandic Front",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 1473,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/118391994052319657435\">Scandic Front</a>"
-        ],
-        "photo_reference": "AeeoHcJnHdtLCzEfI_o1zXo7nJ4gM927_DIiaA65eaAffst1W_V9SkSImLYaAKY8c5P_UiFJzcbn3VgZaV0Go0sPMbqadpd24A_5qTaA8mmnpJOfgC2BwLE96UGK750x5RtjxEUKjBfjiXmt-yFYvDT3Ufcvpexg2xw7qtdtUgio5DBECi1yGaBpvZT-CaHQmrkZlQglX2iUILmds5JJ9Miq-bfT2nBtNyTJZ7pJLmBXH7MWTFrqtUqGJKb5enjL_foMXmoR3Cjs0ePBMHufei6hon7mDJuUQ8i1glQt5ozJzf220ecbaR2d5GdSBodiPs2G0HX5H7Jpd00",
-        "width": 2048
-      }
-    ],
-    "place_id": "ChIJMUfaHiNTUkYRv8SMa22_cXs",
-    "plus_code": {
-      "compound_code": "MHJV+G7 Copenhagen, Denmark",
-      "global_code": "9F7JMHJV+G7"
-    },
-    "price_level": 2,
-    "rating": 4,
-    "reference": "ChIJMUfaHiNTUkYRv8SMa22_cXs",
-    "scope": "GOOGLE",
-    "types": [
-      "restaurant",
-      "lodging",
-      "food",
-      "bar",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 1064,
-    "vicinity": "Sankt Annæ Plads 21, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.677252,
         "lng": 12.5902361
       },
@@ -24908,60 +22121,6 @@
     "business_status": "OPERATIONAL",
     "geometry": {
       "location": {
-        "lat": 55.6812469,
-        "lng": 12.5917406
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6826430302915,
-          "lng": 12.5931381302915
-        },
-        "southwest": {
-          "lat": 55.6799450697085,
-          "lng": 12.5904401697085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "Hotel SKT. Annæ ApS",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 650,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/116474678834767892701\">Hotel SKT. Annæ ApS</a>"
-        ],
-        "photo_reference": "AeeoHcJJXtHas0jLkMCEOAJXV7iV7pAnUTExjHSqE7PuDYPDFO5vQoHFzINEsiG4WgO_q3cmirhgIAIN2GZsV_1JHBj11doUh3UPhCvoKbGEhS7E8g054QSgCBXL7pivfCUxisKvmvoKosHeXUaW3afZ7rpraoj7H-NyT-WWPeB3vOZdyTzYFoycuYqhRokuvCrL4d7bO8hI0sTC-OPRjeg-UjzYpDCiQJstd3eB94vJLKmpcLypdldxcgGxl9S2mx6vgQDJ-Le3BvewQnoUzcmWcxaVlrwugGzykQ1upFJMp_SM_Dsy1USCaRSbT23eJvEyVWseVkpT0To",
-        "width": 1051
-      }
-    ],
-    "place_id": "ChIJOQgu3SJTUkYRyXwx2SzKwpI",
-    "plus_code": {
-      "compound_code": "MHJR+FM Copenhagen, Denmark",
-      "global_code": "9F7JMHJR+FM"
-    },
-    "rating": 4.3,
-    "reference": "ChIJOQgu3SJTUkYRyXwx2SzKwpI",
-    "scope": "GOOGLE",
-    "types": [
-      "restaurant",
-      "lodging",
-      "food",
-      "bar",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 1054,
-    "vicinity": "Sankt Annæ Plads 18, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
         "lat": 55.6728917,
         "lng": 12.5482306
       },
@@ -25008,60 +22167,6 @@
     ],
     "user_ratings_total": 559,
     "vicinity": "Frederiksberg Allé 7, København"
-  },
-  {
-    "business_status": "OPERATIONAL",
-    "geometry": {
-      "location": {
-        "lat": 55.6845583,
-        "lng": 12.5834111
-      },
-      "viewport": {
-        "northeast": {
-          "lat": 55.6859388802915,
-          "lng": 12.5848120802915
-        },
-        "southwest": {
-          "lat": 55.6832409197085,
-          "lng": 12.5821141197085
-        }
-      }
-    },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    "icon_background_color": "#909CE1",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-    "name": "Christian IV",
-    "opening_hours": {
-      "open_now": true
-    },
-    "photos": [
-      {
-        "height": 567,
-        "html_attributions": [
-          "<a href=\"https://maps.google.com/maps/contrib/106600346720005885389\">Hotel Christian IV</a>"
-        ],
-        "photo_reference": "AeeoHcIAPxfijvRbP0OPFqvMJVAfHqmSNAvEtNtngMKsTtAiO0AeYJAAcgPMx8lKVkYhoA8vAiK60fkbhimtnyX-9B1QFrNGE3SPZLDPiwWuD9wT8As_iMZWkfJOwS4EkFsHd4J1dVlDH0UC6bplhdnkM1yb-Frx9v_qRUBRh2XsNez9CcYhUtaQ8kTVvbeG9aMitRnhUWmLtfi5q15unH2WsJXBn1VP35Ke7Kers6irMGCywosX9fAR_vofBCpDgUpoC5OwemuACygZZaJwU7yirIoDPeBrjxvMbZw9VjNKGXWdAtzgpCfSRicO22QMJdLeqdv3iTQGfPc",
-        "width": 850
-      }
-    ],
-    "place_id": "ChIJddtqbBlTUkYR_mVaE2d2P54",
-    "plus_code": {
-      "compound_code": "MHMM+R9 Copenhagen, Denmark",
-      "global_code": "9F7JMHMM+R9"
-    },
-    "rating": 3.9,
-    "reference": "ChIJddtqbBlTUkYR_mVaE2d2P54",
-    "scope": "GOOGLE",
-    "types": [
-      "restaurant",
-      "lodging",
-      "food",
-      "bar",
-      "point_of_interest",
-      "establishment"
-    ],
-    "user_ratings_total": 426,
-    "vicinity": "Dronningens Tværgade 45, København"
   },
   {
     "business_status": "OPERATIONAL",
