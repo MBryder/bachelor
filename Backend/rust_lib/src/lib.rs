@@ -1,6 +1,8 @@
 use std::collections::HashMap;
-use std::cmp::min;
+use itertools::Itertools;
+use std::slice;
 use std::ptr;
+
 
 #[no_mangle]
 pub extern "C" fn add_numbers(a: i32, b: i32) -> i32 {
@@ -12,87 +14,113 @@ pub extern "C" fn multiply_numbers(a: i32, b: i32) -> i32 {
     a * b
 }
 
-// Shortest path TSP held karp returning both cost and optimal route
 #[no_mangle]
 pub extern "C" fn held_karp_tsp_full(n: usize, dist_ptr: *const i32, route_ptr: *mut i32) -> i32 {
-    if dist_ptr.is_null() || route_ptr.is_null() {
-        return -1; // Error case
-    }
-
-    // Convert the raw pointer to a slice
     let dist_slice = unsafe { std::slice::from_raw_parts(dist_ptr, n * n) };
-
-    // Convert the flat slice into a 2D Vec<Vec<i32>>
-    let mut dist = vec![vec![0; n]; n];
+    let mut dist: Vec<Vec<i32>> = vec![vec![0; n]; n];
     for i in 0..n {
         for j in 0..n {
             dist[i][j] = dist_slice[i * n + j];
         }
     }
 
-    let mut memo = HashMap::new();
-    let mut parent = HashMap::new();
+    let mut subproblemsolutions = std::collections::HashMap::new();
+    compute_base_case(&mut subproblemsolutions, &dist);
+    compute_min_cost(&mut subproblemsolutions, &dist);
 
-    // Solve TSP
-    let min_cost = tsp_held_karp(0, 1, n, &dist, &mut memo, &mut parent);
+    let (final_cost, path) = return_to_start_and_backtrack(&subproblemsolutions, &dist);
 
-    // Reconstruct the path
-    let mut path = vec![0; n + 1];
-    let mut visited = 1;
-    let mut pos = 0;
-
-    for i in 1..n {
-        if let Some(&next_city) = parent.get(&(pos, visited)) {
-            path[i] = next_city as i32;
-            visited |= 1 << next_city;
-            pos = next_city;
+    unsafe {
+        for (i, &city) in path.iter().enumerate() {
+            *route_ptr.add(i) = city as i32;
         }
     }
-    path[n] = 0; // Return to start
 
-    // Copy the route to the provided pointer
-    unsafe {
-        ptr::copy_nonoverlapping(path.as_ptr(), route_ptr, n + 1);
-    }
-
-    min_cost
+    final_cost
 }
 
-fn tsp_held_karp(
-    pos: usize,
-    visited: usize,
-    n: usize,
+
+fn compute_base_case(
+    subproblemsolutions: &mut HashMap<(u64, usize), (i32, usize)>,
     dist: &Vec<Vec<i32>>,
-    memo: &mut HashMap<(usize, usize), i32>,
-    parent: &mut HashMap<(usize, usize), usize>,
-) -> i32 {
-    if visited == (1 << n) - 1 {
-        return dist[pos][0];
+) {
+    let n = dist.len();
+    for city in 1..n {
+        let mask = 1 << city;
+        let cost = dist[0][city];
+        subproblemsolutions.insert((mask, city), (cost, 0));
     }
+}
 
-    if let Some(&res) = memo.get(&(pos, visited)) {
-        return res;
+fn compute_min_cost(
+    subproblemsolutions: &mut HashMap<(u64, usize), (i32, usize)>,
+    dist: &Vec<Vec<i32>>,
+) {
+    let n = dist.len();
+    for subset_size in 2..n {
+        for combo in (1..n).combinations(subset_size) {
+            let mask = combo.iter().fold(0u64, |acc, &c| acc | (1 << c));
+            for &last_city in &combo {
+                let prev_mask = mask & !(1 << last_city);
+                let mut min_cost = i32::MAX;
+                let mut best_prev_city = 0;
+
+                for &prev_city in &combo {
+                    if prev_city == last_city {
+                        continue;
+                    }
+                    if let Some(&(cost_to_prev, _)) =
+                        subproblemsolutions.get(&(prev_mask, prev_city))
+                    {
+                        let total_cost = cost_to_prev + dist[prev_city][last_city];
+                        if total_cost < min_cost {
+                            min_cost = total_cost;
+                            best_prev_city = prev_city;
+                        }
+                    }
+                }
+
+                subproblemsolutions.insert((mask, last_city), (min_cost, best_prev_city));
+            }
+        }
     }
+}
 
-    let mut min_cost = i32::MAX;
-    let mut best_next = None;
+fn return_to_start_and_backtrack(
+    subproblemsolutions: &HashMap<(u64, usize), (i32, usize)>,
+    dist: &Vec<Vec<i32>>,
+) -> (i32, Vec<usize>) {
+    let n = dist.len();
+    let full_mask = (1 << n) - 2;
+    let mut min_total_cost = i32::MAX;
+    let mut final_last_city = 0;
 
-    for next in 0..n {
-        if visited & (1 << next) == 0 {
-            let new_visited = visited | (1 << next);
-            let cost = dist[pos][next] + tsp_held_karp(next, new_visited, n, dist, memo, parent);
-
-            if cost < min_cost {
-                min_cost = cost;
-                best_next = Some(next);
+    for last_city in 1..n {
+        if let Some(&(cost, _)) = subproblemsolutions.get(&(full_mask, last_city)) {
+            let total_cost = cost + dist[last_city][0];
+            if total_cost < min_total_cost {
+                min_total_cost = total_cost;
+                final_last_city = last_city;
             }
         }
     }
 
-    memo.insert((pos, visited), min_cost);
-    if let Some(next_city) = best_next {
-        parent.insert((pos, visited), next_city);
+    let mut path = vec![0];
+    let mut mask = full_mask;
+    let mut last_city = final_last_city;
+
+    path.push(last_city);
+    while mask != 0 {
+        let &(_, prev_city) = subproblemsolutions.get(&(mask, last_city)).unwrap();
+        if prev_city == 0 {
+            break;
+        }
+        path.push(prev_city);
+        mask &= !(1 << last_city);
+        last_city = prev_city;
     }
 
-    min_cost
+    path.push(0);
+    path.reverse();
+    (min_total_cost, path)
 }
