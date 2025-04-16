@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { getTourismIcon } from "../utils/icons";
 
 function Sidebar({ visiblePlaces, fetchPlaces, showSidebar, setShowSidebar }: {
