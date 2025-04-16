@@ -86,4 +86,34 @@ public class DataSeeder
         await _context.SaveChangesAsync();
     }
 
+    public async Task SeedDetailsAsync(string jsonFilePath)
+{
+    if (_context.Details.Any()) return; // Avoid reseeding
+
+    var json = await File.ReadAllTextAsync(jsonFilePath);
+    var rawDetails = JsonSerializer.Deserialize<List<DetailsDTO>>(json);
+
+    foreach (var dto in rawDetails)
+    {
+        // Optional: skip if PlaceId not found in Places
+        var placeExists = _context.Places.Any(p => p.PlaceId == dto.PlaceId);
+        if (!placeExists) continue;
+
+        var details = new Details
+        {
+            PlaceId = dto.PlaceId,
+            Name = dto.Name,
+            FormattedAddress = dto.FormattedAddress,
+            FormattedPhoneNumber = dto.FormattedPhoneNumber,
+            PriceLevel = dto.PriceLevel,
+            UserRatingsTotal = dto.UserRatingsTotal,
+            WheelchairAccessibleEntrance = dto.WheelchairAccessibleEntrance
+        };
+
+        _context.Details.Add(details);
+    }
+
+    await _context.SaveChangesAsync();
+}
+
 }
