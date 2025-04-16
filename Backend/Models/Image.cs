@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+
 
 namespace MyBackend.Models
 {
@@ -15,6 +17,7 @@ namespace MyBackend.Models
 
         [ForeignKey("PlaceId")]
         
+        [JsonIgnore]
         public Place Place { get; set; }
     }
 }

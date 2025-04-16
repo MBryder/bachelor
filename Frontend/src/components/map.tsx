@@ -213,8 +213,8 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             longitude={place.geometry.coordinates[0]}
                             latitude={place.geometry.coordinates[1]}
                             title={place.properties.name}
-                            image="https://source.unsplash.com/200x150/?landscape"
-                            description="This is the initial position"
+                            image={place.properties.images?.[0]?.imageUrl || "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"}
+                            description="Description of this awesome place."
                             setSelectedPlacesList={setSelectedPlacesList}
                             place={place}
                         />
@@ -227,8 +227,8 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             longitude={place.geometry.coordinates[0]}
                             latitude={place.geometry.coordinates[1]}
                             title={place.properties.name}
-                            image="https://source.unsplash.com/200x150/?landscape"
-                            description="This is the initial position"
+                            image={place.properties.images?.[0]?.imageUrl || "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"}
+                            description="Description of this awesome place."
                             setSelectedPlacesList={setSelectedPlacesList}
                             place={place}
                         />
