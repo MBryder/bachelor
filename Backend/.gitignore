@@ -6,6 +6,11 @@
 bin/
 obj/
 
+# Database files
+*.db-shm
+*.db-wal
+*.db
+
 # User-specific files
 .vscode/
 .idea/
