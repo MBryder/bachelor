@@ -1,0 +1,4151 @@
+[
+  {
+    "place_id": "ChIJAwi1AxJTUkYRH7VIhBzPxuY",
+    "name": "Scandic Palace Hotel",
+    "formatted_address": "Palace Hotel, Rådhuspladsen 57, 1550 København, Denmark",
+    "formatted_phone_number": "33 14 40 50",
+    "price_level": null,
+    "user_ratings_total": 1735,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJvejpKgxTUkYRdw9K80kbCUs",
+    "name": "Ascot Hotel",
+    "formatted_address": "Studiestræde 61, 1554 København, Denmark",
+    "formatted_phone_number": "33 12 60 00",
+    "price_level": null,
+    "user_ratings_total": 1575,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJFTasnAtTUkYRw8_1UeZ-Nls",
+    "name": "Scandic Copenhagen",
+    "formatted_address": "Vester Søgade 6, 1602 København, Denmark",
+    "formatted_phone_number": "33 14 35 35",
+    "price_level": null,
+    "user_ratings_total": 4042,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJa12GHNVQUkYRRwt6fS4oCcw",
+    "name": "Glostrup Park Hotel",
+    "formatted_address": "Hovedvejen 41, 2600 Glostrup, Denmark",
+    "formatted_phone_number": "43 96 00 38",
+    "price_level": null,
+    "user_ratings_total": 2171,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJtRm9KRhTUkYRdv7vSCAmeVM",
+    "name": "Hotel D'Angleterre",
+    "formatted_address": "Kongens Nytorv 34, 1050 København, Denmark",
+    "formatted_phone_number": "33 12 00 95",
+    "price_level": 3,
+    "user_ratings_total": 1568,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJuUjwBCNTUkYRI2UHKcbTNMQ",
+    "name": "Copenhagen Admiral Hotel",
+    "formatted_address": "Toldbodgade 24, 28, 1253 København K, Denmark",
+    "formatted_phone_number": "33 74 14 14",
+    "price_level": null,
+    "user_ratings_total": 3329,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ9XKqWQtTUkYRgG3s1F5didw",
+    "name": "Comfort Hotel Vesterbro",
+    "formatted_address": "Vesterbrogade 23/29, 1620 København, Denmark",
+    "formatted_phone_number": "33 78 80 00",
+    "price_level": null,
+    "user_ratings_total": 3719,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ25E0LwtNUkYRrh4Hd8-PDlY",
+    "name": "Skovshoved Hotel",
+    "formatted_address": "Strandvejen 267, 2920 Charlottenlund, Denmark",
+    "formatted_phone_number": "39 64 00 28",
+    "price_level": null,
+    "user_ratings_total": 498,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJMUfaHiNTUkYRv8SMa22_cXs",
+    "name": "Scandic Front",
+    "formatted_address": "Sankt Annæ Pl. 21, 1250 København, Denmark",
+    "formatted_phone_number": "33 13 34 00",
+    "price_level": 2,
+    "user_ratings_total": 1064,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJF5P3mRlTUkYRHFiOVIREJDw",
+    "name": "Generator Copenhagen",
+    "formatted_address": "Adelgade 5, 7, 1304 København, Denmark",
+    "formatted_phone_number": "78 77 54 00",
+    "price_level": null,
+    "user_ratings_total": 4426,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJoev5BQ1TUkYRL1h0hFGNQ6w",
+    "name": "ProfilHotels Copenhagen Plaza",
+    "formatted_address": "Bernstorffsgade 4, 1577 København, Denmark",
+    "formatted_phone_number": "33 14 92 62",
+    "price_level": null,
+    "user_ratings_total": 1153,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ3_f563qrU0YRQOdzWc4SEGk",
+    "name": "Clarion Hotel Copenhagen Airport",
+    "formatted_address": "Copenhagen Airport, Ellehammersvej 20, 2770 Kastrup, Denmark",
+    "formatted_phone_number": "32 50 15 01",
+    "price_level": null,
+    "user_ratings_total": 3166,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJOQgu3SJTUkYRyXwx2SzKwpI",
+    "name": "Hotel SKT. Annæ ApS",
+    "formatted_address": "Sankt Annæ Pl. 18, 1250 København, Denmark",
+    "formatted_phone_number": "33 96 20 00",
+    "price_level": null,
+    "user_ratings_total": 1054,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJFd4qxitRUkYRQzEzuKbgz4M",
+    "name": "Scandic Glostrup",
+    "formatted_address": "Roskildevej 550, 2605 Brøndby, Denmark",
+    "formatted_phone_number": "43 43 42 00",
+    "price_level": null,
+    "user_ratings_total": 1145,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJddtqbBlTUkYR_mVaE2d2P54",
+    "name": "Christian IV",
+    "formatted_address": "Dronningens Tværgade 45, 1302 København, Denmark",
+    "formatted_phone_number": "33 32 10 44",
+    "price_level": null,
+    "user_ratings_total": 426,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJIQgAuAxTUkYREwhuAu591mY",
+    "name": "Axel Guldsmeden Hotels",
+    "formatted_address": "Colbjørnsensgade 14, 1652 København V, Denmark",
+    "formatted_phone_number": "33 31 32 66",
+    "price_level": null,
+    "user_ratings_total": 2040,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ14nnSqRWUkYRF7QujDRKLhw",
+    "name": "Scandic Hvidovre",
+    "formatted_address": "Kettevej 4, 2650 Hvidovre, Denmark",
+    "formatted_phone_number": "36 86 04 00",
+    "price_level": null,
+    "user_ratings_total": 1579,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJE8Lo1YFTUkYRkFA6O1UGRHs",
+    "name": "Scandic Sydhavnen",
+    "formatted_address": "Sydhavns Pl. 15, 2450 København, Denmark",
+    "formatted_phone_number": "88 33 36 66",
+    "price_level": null,
+    "user_ratings_total": 2872,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJV1QgxwxTUkYR2ACsZK3Fecw",
+    "name": "First Hotel Excelsior",
+    "formatted_address": "Colbjørnsensgade 6, 1652 København, Denmark",
+    "formatted_phone_number": "33 24 50 85",
+    "price_level": null,
+    "user_ratings_total": 17,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJY5cQkbSrU0YRRoZIaSlb1DI",
+    "name": "Dragør Hotel & Apartments",
+    "formatted_address": "Strandlinien 9, 2791 Dragør, Denmark",
+    "formatted_phone_number": "21 68 55 27",
+    "price_level": null,
+    "user_ratings_total": 128,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJ1W-3dqKsU0YRzL9eo0eP3kw",
+    "name": "Kastrup Fortress",
+    "formatted_address": "Amager Strandvej 246, 2300 København, Denmark",
+    "formatted_phone_number": "53 82 60 90",
+    "price_level": null,
+    "user_ratings_total": 448,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ1QgCxiFTUkYRRXXtQZgSvig",
+    "name": "Babette Guldsmeden",
+    "formatted_address": "Bredgade 78, 1260 København, Denmark",
+    "formatted_phone_number": "33 14 15 00",
+    "price_level": null,
+    "user_ratings_total": 1090,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJm43fcg1TUkYRWyWZGBr4kiA",
+    "name": "Nimb Hotel, an SLH Hotel",
+    "formatted_address": "Bernstorffsgade 5, 1577 København, Denmark",
+    "formatted_phone_number": "88 70 00 00",
+    "price_level": null,
+    "user_ratings_total": 1373,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJTdCjQ3NQUkYRLJNU50JpKBE",
+    "name": "Hotel Lautrup Park",
+    "formatted_address": "Borupvang 2e, 2750 Ballerup, Denmark",
+    "formatted_phone_number": "44 68 10 00",
+    "price_level": null,
+    "user_ratings_total": 850,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJNVulD0yrU0YRsIhUBB0N7ME",
+    "name": "Hotel Astoria, BW Signature Collection",
+    "formatted_address": "Banegårdspladsen 4, 1570 København, Denmark",
+    "formatted_phone_number": "44 40 10 01",
+    "price_level": null,
+    "user_ratings_total": 1152,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJXTPfEkuqU0YRNBnbnGNEo1U",
+    "name": "Dragør Badehotel / Copenhagen Airport Hotel",
+    "formatted_address": "Drogdensvej 43, 2791 Dragør, Denmark",
+    "formatted_phone_number": "32 53 05 00",
+    "price_level": 2,
+    "user_ratings_total": 533,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJeVFZNRJTUkYRmo0TNDNliS8",
+    "name": "Hotel Danmark - By Brøchner Hotels",
+    "formatted_address": "Vester Voldgade 89, 1552 København, Denmark",
+    "formatted_phone_number": "33 11 48 06",
+    "price_level": null,
+    "user_ratings_total": 1005,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJR9vArbtPUkYRcB6TpDkv3_E",
+    "name": "Frederiksdal Sinatur Hotel & Konference",
+    "formatted_address": "Frederiksdalsvej 360, 2800 Kongens Lyngby, Denmark",
+    "formatted_phone_number": "45 85 43 33",
+    "price_level": null,
+    "user_ratings_total": 819,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJwdrCyAVTUkYRLM0WFavcxfY",
+    "name": "Kalaset",
+    "formatted_address": "Vendersgade 16, 1363 Indre By, Denmark",
+    "formatted_phone_number": null,
+    "price_level": 2,
+    "user_ratings_total": 1603,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJLR6-q3RTUkYRLpNnm3EZBDU",
+    "name": "Cofoco",
+    "formatted_address": "Abel Cathrines Gade 7, 1654 Vesterbro, Denmark",
+    "formatted_phone_number": "33 13 60 60",
+    "price_level": 2,
+    "user_ratings_total": 1479,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJhSky5L5TUkYRzS0oqy6YiEc",
+    "name": "Restaurant Frederiks Have",
+    "formatted_address": "Virginiavej 1, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "38 88 33 35",
+    "price_level": 3,
+    "user_ratings_total": 533,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJGWMBpQ1TUkYRzYR5oWDqDhM",
+    "name": "Hard Rock Cafe Copenhagen",
+    "formatted_address": "Rådhuspladsen 45, 47, 1550 Copenhagen V, Denmark",
+    "formatted_phone_number": "33 12 43 33",
+    "price_level": 2,
+    "user_ratings_total": 7631,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJEyVf6xhTUkYRaLSaikIOdVQ",
+    "name": "Madklubben Copenhagen",
+    "formatted_address": "Store Kongensgade 66, 1264 København K, Denmark",
+    "formatted_phone_number": "38 42 34 14",
+    "price_level": 2,
+    "user_ratings_total": 1033,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJpYCQZztTUkYRFOE368Xs6kI",
+    "name": "Noma",
+    "formatted_address": "Refshalevej 96, 1432 Indre By, Denmark",
+    "formatted_phone_number": "32 96 32 97",
+    "price_level": 4,
+    "user_ratings_total": 2191,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJvY9hWg5TUkYR1jm4WtjFTkc",
+    "name": "Hotel SP34 - By Brøchner Hotels",
+    "formatted_address": "Sankt Peders Stræde 34, 1453 København, Denmark",
+    "formatted_phone_number": "33 13 30 00",
+    "price_level": null,
+    "user_ratings_total": 1075,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJwbOs_u5SUkYRRsve7jzEvIw",
+    "name": "Charlottehaven",
+    "formatted_address": "Hjørringgade 12C, 2100 København, Denmark",
+    "formatted_phone_number": "35 27 15 00",
+    "price_level": null,
+    "user_ratings_total": 163,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJST0zbBFTUkYRMeqA-2NlteQ",
+    "name": "RizRaz",
+    "formatted_address": "Store Kannikestræde 19, 1169 København, Denmark",
+    "formatted_phone_number": "33 15 05 75",
+    "price_level": 1,
+    "user_ratings_total": 2989,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJNRCSrhBTUkYRRMmcCSRdsZk",
+    "name": "Café Sommersko",
+    "formatted_address": "Palægade 6, 1261 København, Denmark",
+    "formatted_phone_number": "70 70 23 29",
+    "price_level": null,
+    "user_ratings_total": 229,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJL6f4pA1TUkYRIop6ml11sYM",
+    "name": "A Hereford Beefstouw",
+    "formatted_address": "Vesterbrogade 3, 1620 København, Denmark",
+    "formatted_phone_number": "33 12 74 41",
+    "price_level": 3,
+    "user_ratings_total": 1964,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJT5uqDhFTUkYRP5nAjFQOMw8",
+    "name": "Cafe Sorgenfri",
+    "formatted_address": "Brolæggerstræde 8, 1211 København, Denmark",
+    "formatted_phone_number": "33 11 58 80",
+    "price_level": 2,
+    "user_ratings_total": 753,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJTVkWzwVTUkYR6lYftsfrNZ4",
+    "name": "La Rocca",
+    "formatted_address": "Vendersgade 23, 1363 København, Denmark",
+    "formatted_phone_number": "33 12 66 55",
+    "price_level": 2,
+    "user_ratings_total": 1321,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJBdrmsyJTUkYRCQd95ThecFk",
+    "name": "Cap Horn",
+    "formatted_address": "Nyhavn 21, 1051 København, Denmark",
+    "formatted_phone_number": "33 12 85 04",
+    "price_level": 3,
+    "user_ratings_total": 1137,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJL8NdbTxTUkYR-bra61KbZcc",
+    "name": "Restaurant Kanalen",
+    "formatted_address": "Wilders Pl. 2, 1403 København K, Denmark",
+    "formatted_phone_number": "32 95 13 30",
+    "price_level": 3,
+    "user_ratings_total": 942,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJeYMQ1wpTUkYRl7dnTD-Tl00",
+    "name": "Lundgren V.I.P.",
+    "formatted_address": "Bagerstræde 6, 1617 København, Denmark",
+    "formatted_phone_number": "60 81 83 70",
+    "price_level": 2,
+    "user_ratings_total": 555,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJ89YV8HVTUkYRmkt4UoHTLz8",
+    "name": "Bang & Jensen",
+    "formatted_address": "Istedgade 130, 1650 København, Denmark",
+    "formatted_phone_number": "33 25 53 18",
+    "price_level": 2,
+    "user_ratings_total": 845,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJL3FhnwxTUkYRQ92-i54Uvmw",
+    "name": "Floras Café & Steakhouse",
+    "formatted_address": "Vesterbrogade 16, 1620 København, Denmark",
+    "formatted_phone_number": "33 23 09 02",
+    "price_level": 2,
+    "user_ratings_total": 1607,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJxYb1Og5TUkYRWKm9JRjAiN8",
+    "name": "The Living Room",
+    "formatted_address": "Larsbjørnsstræde 17, 1454 København, Denmark",
+    "formatted_phone_number": "33 32 66 10",
+    "price_level": 2,
+    "user_ratings_total": 1768,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJDUpGThBTUkYRb0OrMCHPXCg",
+    "name": "Ristorante Italiano",
+    "formatted_address": "Fiolstræde 2, 1171 Indre By, Denmark",
+    "formatted_phone_number": "33 11 12 95",
+    "price_level": 2,
+    "user_ratings_total": 4727,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJB57HZxBTUkYRognketO_9qs",
+    "name": "Det Lille Apotek",
+    "formatted_address": "Store Kannikestræde 15, 1169 København, Denmark",
+    "formatted_phone_number": "33 12 56 06",
+    "price_level": 2,
+    "user_ratings_total": 2449,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJD8FxG6BTUkYRMtZaGD-1CBU",
+    "name": "Granola",
+    "formatted_address": "Værnedamsvej 5, 1819 København, Denmark",
+    "formatted_phone_number": "33 33 00 95",
+    "price_level": 3,
+    "user_ratings_total": 951,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJjTQLvD5TUkYR8VajwYZ8si4",
+    "name": "Era Ora",
+    "formatted_address": "Overgaden Neden Vandet 33B, 1414 København, Denmark",
+    "formatted_phone_number": "32 54 06 93",
+    "price_level": 4,
+    "user_ratings_total": 205,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJZ_JSGQFTUkYRZPtLj-n1UcI",
+    "name": "Nørrebro Bryghus",
+    "formatted_address": "Ryesgade 3, 2200 København, Denmark",
+    "formatted_phone_number": "35 30 05 30",
+    "price_level": 2,
+    "user_ratings_total": 1586,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJxwYLkhlTUkYRH3b6r8kqvBs",
+    "name": "Pastis",
+    "formatted_address": "Gothersgade 52, 1304 København, Denmark",
+    "formatted_phone_number": "33 93 44 11",
+    "price_level": 3,
+    "user_ratings_total": 763,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJdTW9UwZUUkYRdSMQ_xsrndc",
+    "name": "Al-Faridi Grillbar",
+    "formatted_address": "Vigerslevvej 231, 2500 Valby, Denmark",
+    "formatted_phone_number": "36 16 84 74",
+    "price_level": 1,
+    "user_ratings_total": 204,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJC9GK_6hUUkYRHZMx0Dhh3fM",
+    "name": "Fido's Pølse og Sandwichbar",
+    "formatted_address": "Røde Mellemvej 114, 2300 København, Denmark",
+    "formatted_phone_number": "28 56 90 06",
+    "price_level": 2,
+    "user_ratings_total": 234,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJtTcE4BFTUkYRK-0p8cDWSSE",
+    "name": "Husmanns Vinstue",
+    "formatted_address": "Larsbjørnsstræde 2, 1454 København, Denmark",
+    "formatted_phone_number": "33 11 58 86",
+    "price_level": 2,
+    "user_ratings_total": 546,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJG5J4OxhTUkYRq58PdgX8KLs",
+    "name": "Trattoria Fiat",
+    "formatted_address": "Kongens Nytorv 18, 1050 København K, Denmark",
+    "formatted_phone_number": "33 14 22 77",
+    "price_level": 2,
+    "user_ratings_total": 1335,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJXdbkpBdTUkYRO6NpiMExk-w",
+    "name": "King Hans Cellar",
+    "formatted_address": "Vingårdstræde 6, 1070 København, Denmark",
+    "formatted_phone_number": "33 11 68 68",
+    "price_level": 4,
+    "user_ratings_total": 276,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJ5x9MMSOrU0YRHjXvUfdv3Uw",
+    "name": "Babs Aps",
+    "formatted_address": "Tømmerupvej 75, 2770 Kastrup, Denmark",
+    "formatted_phone_number": "32 50 40 19",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ93xfW-1TUkYRv1Qo9GUOBOU",
+    "name": "Café Phenix",
+    "formatted_address": "Valby Langgade 74, 2500 København, Denmark",
+    "formatted_phone_number": "36 30 33 79",
+    "price_level": 2,
+    "user_ratings_total": 1016,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ8-r2gBJTUkYRsCcLtQ0Ltdk",
+    "name": "Tivoli Gardens",
+    "formatted_address": "Vesterbrogade 3, 1630 København V, Denmark",
+    "formatted_phone_number": "33 15 10 01",
+    "price_level": null,
+    "user_ratings_total": 83227,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ3yhqW8yqU0YR6H1GP3MsB0w",
+    "name": "Shoot to Thrill - Paintball & Lasergame i Kongelunden",
+    "formatted_address": "Hallumvej 18, 2791 Dragør, Denmark",
+    "formatted_phone_number": "32 97 44 04",
+    "price_level": null,
+    "user_ratings_total": 341,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJFUrP-9ZSUkYRFdbz6cxX-9I",
+    "name": "Copenhagen Paintball Arena",
+    "formatted_address": "Refshalevej 177, A, 1432 København K, Denmark",
+    "formatted_phone_number": "32 95 35 35",
+    "price_level": null,
+    "user_ratings_total": 480,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJSf5HpXZUUkYRWTllQtVNt7s",
+    "name": "Valby Vandkulturhus",
+    "formatted_address": "Julius Andersens Vej 1A, 2450 København SV, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 1172,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJkVPyB75SUkYRgqp1-gZ61mQ",
+    "name": "Airtrix Trampolinpark Nordhavn",
+    "formatted_address": "Kattegatvej 4, 2150 København, Denmark",
+    "formatted_phone_number": "31 48 61 69",
+    "price_level": null,
+    "user_ratings_total": 760,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJxwHFTLBRUkYRwFIGuH5B2FY",
+    "name": "Leo's Legeland",
+    "formatted_address": "Herlev Hovedgade 31, 2730 Herlev, Denmark",
+    "formatted_phone_number": "44 65 00 60",
+    "price_level": null,
+    "user_ratings_total": 926,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJQQ4bLrFNUkYRJt98_Q2Q8JA",
+    "name": "Bakken",
+    "formatted_address": "Dyrehavsbakken 71, 2930 Klampenborg, Denmark",
+    "formatted_phone_number": "39 63 22 44",
+    "price_level": null,
+    "user_ratings_total": 4,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJQ2EHr7FNUkYR6MySpNSMlls",
+    "name": "Bakken",
+    "formatted_address": "Dyrehavsbakken 207, 2930 Klampenborg, Denmark",
+    "formatted_phone_number": "39 63 35 44",
+    "price_level": null,
+    "user_ratings_total": 21305,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ6bQ62SxTUkYRcz9Kdg-8m1U",
+    "name": "Copenhagen Cablepark",
+    "formatted_address": "Kraftværksvej 24, 2300 København, Denmark",
+    "formatted_phone_number": "32 96 92 90",
+    "price_level": null,
+    "user_ratings_total": 461,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJV-A-IlZSUkYRplXscThrnRA",
+    "name": "Vandlegepladsen",
+    "formatted_address": "2100 Copenhagen, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 167,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJvX-u7CZTUkYRNQ8bJx8H2pA",
+    "name": "GoMonkey Forest København",
+    "formatted_address": "søndermarken, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "25 53 30 22",
+    "price_level": null,
+    "user_ratings_total": 42,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ-85mjJpTUkYRNVGAp1cV5DQ",
+    "name": "Klatreskoven",
+    "formatted_address": "Stadionvej 80, 2600 Glostrup, Denmark",
+    "formatted_phone_number": "28 94 46 48",
+    "price_level": null,
+    "user_ratings_total": 80,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ3Q1o27FPUkYRN-LPjV_F9Vc",
+    "name": "Til-Tops",
+    "formatted_address": "Hummeltoftevej 179, 2830 Virum, Denmark",
+    "formatted_phone_number": "21 17 37 43",
+    "price_level": null,
+    "user_ratings_total": 181,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ9ZSRDH2rU0YR3BGeFfl0E2M",
+    "name": "Den Blå Planet",
+    "formatted_address": "Jacob Fortlingsvej 1, 2770 Kastrup, Denmark",
+    "formatted_phone_number": "44 22 22 44",
+    "price_level": null,
+    "user_ratings_total": 19419,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJmx8ZDJxTUkYROncONYhCTBA",
+    "name": "Venteværelseakvarier v/Nicholas Kodahl",
+    "formatted_address": "Ejderstedgade 10, 1761 København, Denmark",
+    "formatted_phone_number": "40 27 47 50",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ-zo-dHNTUkYRT2jBQec3ZaY",
+    "name": "Akvarieservice",
+    "formatted_address": "Ejderstedgade 10, kælder, 1761 København, Denmark",
+    "formatted_phone_number": "40 27 47 50",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJmfwS-MBTUkYRBLI_mdVwtPc",
+    "name": "Akvarieudlejningen v/Frank Sørensen",
+    "formatted_address": "Peter Bangs Vej 18, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "40 11 01 12",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJx6XV9vtRUkYR8_KU2QxUaBc",
+    "name": "Søborg Dyrecenter",
+    "formatted_address": "Søborg Hovedgade 146, 148, 2860 Søborg, Denmark",
+    "formatted_phone_number": "39 67 58 27",
+    "price_level": null,
+    "user_ratings_total": 265,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ8xogjptTUkYRxaJoB-JTZeM",
+    "name": "NILS STÆRK",
+    "formatted_address": "Glentevej 49, 2400 København NV, Denmark",
+    "formatted_phone_number": "32 54 45 62",
+    "price_level": null,
+    "user_ratings_total": 38,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJJWzgzxlTUkYRrMs-YibWE-Y",
+    "name": "Tage Andersen",
+    "formatted_address": "Ny Adelgade 12, 1104 København K, Denmark",
+    "formatted_phone_number": "33 93 09 13",
+    "price_level": null,
+    "user_ratings_total": 105,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJva-LSnJTUkYRbthlrPEhlHw",
+    "name": "V1 Gallery",
+    "formatted_address": "Slagtehusgade 44, D, 1715 København, Denmark",
+    "formatted_phone_number": "33 31 03 21",
+    "price_level": null,
+    "user_ratings_total": 63,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJw_XJaDtTUkYRfVOCvQxdfIY",
+    "name": "North Atlantic House",
+    "formatted_address": "Strandgade 91, 1401 København, Denmark",
+    "formatted_phone_number": "32 83 37 00",
+    "price_level": null,
+    "user_ratings_total": 572,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJF9Nu7ptTUkYRzsIRALe_WxU",
+    "name": "Galleri Nicolai Wallner",
+    "formatted_address": "Glentevej 49, 2400 København, Denmark",
+    "formatted_phone_number": "32 57 09 70",
+    "price_level": null,
+    "user_ratings_total": 93,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJLSYcDT1TUkYRXPbZFymYzI8",
+    "name": "Galleri Specta",
+    "formatted_address": "Peder Skrams Gade 13, 1054 København, Denmark",
+    "formatted_phone_number": "33 13 01 23",
+    "price_level": null,
+    "user_ratings_total": 9,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJfyjMH5dTUkYRVgou0G64tEc",
+    "name": "Galerie Max Seidenfaden",
+    "formatted_address": "Pile Allé 55, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "31 45 49 00",
+    "price_level": null,
+    "user_ratings_total": 4,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJM4vLXT1TUkYRT4J8gYfrxLU",
+    "name": "Space Q",
+    "formatted_address": "Peder Skrams Gade 2, 1054 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJRWUt4UdTUkYRM77VUVUR4Hs",
+    "name": "Galleri Bomhuset",
+    "formatted_address": "Amagerbrogade 16A, 2300 København, Denmark",
+    "formatted_phone_number": "50 17 41 74",
+    "price_level": null,
+    "user_ratings_total": 8,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJzxUarANTUkYRVyWLTwNWYvk",
+    "name": "Rørholmsgade arts and crafts",
+    "formatted_address": "1352 Copenhagen, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 7,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJq6XzCYtSUkYRU9f0UK6kIUU",
+    "name": "Birgitte Willumsen",
+    "formatted_address": "Østerled 4, 2100 København, Denmark",
+    "formatted_phone_number": "39 27 51 00",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJcZPDQRhTUkYRTBbrjXGv4v4",
+    "name": "Bendixen Og Rosenmejer ApS",
+    "formatted_address": "Palægade 5, 1261 København, Denmark",
+    "formatted_phone_number": "36 16 03 25",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJh2Sv8hFTUkYRw-tFg7F_9CQ",
+    "name": "Undergrunden",
+    "formatted_address": "Kattesundet 12, 1458 København, Denmark",
+    "formatted_phone_number": "33 11 90 95",
+    "price_level": null,
+    "user_ratings_total": 129,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJNb-eDBhTUkYR0GX2l5AEfdY",
+    "name": "Galleri Montan",
+    "formatted_address": "Bredgade 10, 1260 København, Denmark",
+    "formatted_phone_number": "35 37 00 68",
+    "price_level": null,
+    "user_ratings_total": 5,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJH3jMmvxSUkYR1hu3SYqGVUs",
+    "name": "Galleri Hugo",
+    "formatted_address": "Ryesgade 117, 2100 København, Denmark",
+    "formatted_phone_number": "40 41 55 50",
+    "price_level": null,
+    "user_ratings_total": 6,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJHfcocGpTUkYRS8cCwxG_pfM",
+    "name": "Kunst På Arbejde",
+    "formatted_address": "Sølvgade 4, 1307 København, Denmark",
+    "formatted_phone_number": "33 13 56 01",
+    "price_level": null,
+    "user_ratings_total": 4,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ4Y787gVTUkYREW87gA8OKwI",
+    "name": "Space Poetry",
+    "formatted_address": "Ahlefeldtsgade 24, 1359 København, Denmark",
+    "formatted_phone_number": "33 15 30 81",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ5_jbfZtTUkYRblO-GGK0Si8",
+    "name": "NLHspace",
+    "formatted_address": "Vesterfælledvej 63, 1750 København, Denmark",
+    "formatted_phone_number": "33 22 91 31",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ01JxBxxTUkYRpmMfwn2wdA8",
+    "name": "Bie & Vadstrup Galleri",
+    "formatted_address": "Sølvgade 26, 1307 København, Denmark",
+    "formatted_phone_number": "33 93 33 12",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ2fUBUh9TUkYRWNJOBLfaAsU",
+    "name": "Galleri Vincent",
+    "formatted_address": "Fredericiagade 30, 1310 Indre By, Denmark",
+    "formatted_phone_number": "60 25 79 01",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJcdvW4YlTUkYRMLiRIL_8c8M",
+    "name": "Hagedornhagen Aps",
+    "formatted_address": "Carl Jacobsens Vej 16, 2500 København, Denmark",
+    "formatted_phone_number": "26 12 66 21",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJgRMXzUxSUkYRTqRTnj2kdNA",
+    "name": "Streetheart",
+    "formatted_address": "Sandbjerggade 48, 2200 København, Denmark",
+    "formatted_phone_number": "26 29 53 13",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJsyuIGqBTUkYRZzjz4J0v--I",
+    "name": "Kontorprojects",
+    "formatted_address": "Værnedamsvej 7, 1819 Frederiksberg, Denmark",
+    "formatted_phone_number": "27 91 41 64",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ-3-OnoFNUkYRKOYVmj2tGIM",
+    "name": "Galleri Stokkebro",
+    "formatted_address": "Strandvejen 140, 2900 Hellerup, Denmark",
+    "formatted_phone_number": "28 57 69 54",
+    "price_level": null,
+    "user_ratings_total": 3,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJz8ETFwNTUkYRx6aiXD4gUDE",
+    "name": "Galleri Lejlighedsvis Privacy",
+    "formatted_address": "Rørholmsgade 6, 1352 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJY-pFA51TUkYRlpnF4QRGqWY",
+    "name": "Louise Sass",
+    "formatted_address": "Enghave Passage 3, 1739 København, Denmark",
+    "formatted_phone_number": "33 23 30 37",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJGb_QqQNTUkYRyyiPrNQrT5g",
+    "name": "Galleri Tove Balling",
+    "formatted_address": "Rørholmsgade 19, 1352 København, Denmark",
+    "formatted_phone_number": "26 48 97 27",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJzTN3-lFSUkYR2zmHUrDbTvQ",
+    "name": "Ydre Nørrebro Kultur Bureau",
+    "formatted_address": "Baldersgade 70, 2200 København, Denmark",
+    "formatted_phone_number": "20 61 31 73",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJh5wyaJJTUkYRrVkxTgYC4zE",
+    "name": "Litografisk",
+    "formatted_address": "Valhøjvej 13C, 2500 Valby, Denmark",
+    "formatted_phone_number": "40 21 23 88",
+    "price_level": null,
+    "user_ratings_total": 5,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJOTdjdiJTUkYRAG6RTor5zxE",
+    "name": "Christa's",
+    "formatted_address": "Bredgade 36, 1260 København, Denmark",
+    "formatted_phone_number": "33 11 12 54",
+    "price_level": null,
+    "user_ratings_total": 8,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJt9ksTUtSUkYRczpmH1iavNg",
+    "name": "Danafrika Kulturklub",
+    "formatted_address": "Nordre Fasanvej 194, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "38 19 99 56",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJw4OGneNSUkYRWStKGIqNIU8",
+    "name": "European Tapestry Forum",
+    "formatted_address": "Kastelsvej 6, 2100 København, Denmark",
+    "formatted_phone_number": "26 70 20 24",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJtYrz7RtUUkYRTAFpPR5g90Y",
+    "name": "Hvidovre Censurerede Udstilling",
+    "formatted_address": "Hvidovrevej 280, 2650 Hvidovre, Denmark",
+    "formatted_phone_number": "36 39 20 20",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJh3mB6UxSUkYRRgTHbvkNcsY",
+    "name": "Signe Guttormsen",
+    "formatted_address": "Esromgade 15, 2200 København, Denmark",
+    "formatted_phone_number": "25 53 79 65",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJkfAmD_ZSUkYR19uHIp4wRxs",
+    "name": "Galleri Gade",
+    "formatted_address": "Vennemindevej 26, 2100 København, Denmark",
+    "formatted_phone_number": "23 41 79 42",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJQ4bnMJlTUkYRp6MrVpa1tRw",
+    "name": "Signe Schjøth",
+    "formatted_address": "Vesterbrogade 137, 1620 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ-w6tXTdSUkYRlJsX9h1E9bQ",
+    "name": "Marianne Krumbach",
+    "formatted_address": "Birkedommervej 29, 2400 København, Denmark",
+    "formatted_phone_number": "26 65 83 62",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJpxP1grWsU0YRfeBarz_JO0g",
+    "name": "Teis Dich Abrahamsen",
+    "formatted_address": "Nyrnberggade 23, 2300 København, Denmark",
+    "formatted_phone_number": "33 24 30 39",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJXbxF0RFTUkYRDjT4wQNjrEM",
+    "name": "Maria Permin Berger",
+    "formatted_address": "Nørregade 7D, 1165 København, Denmark",
+    "formatted_phone_number": "61 33 57 11",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJq23NuhNTUkYRPjuw1Voq4ok",
+    "name": "Ulrik Crone",
+    "formatted_address": "Vester Voldgade 90, 1552 København, Denmark",
+    "formatted_phone_number": "29 72 41 57",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJZQ8UQRFTUkYR8JOaZ9zOmB8",
+    "name": "Gallery Bohéme",
+    "formatted_address": "Snaregade 12, 1205 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJjyopFTdSUkYRRl72FkiXu44",
+    "name": "Christian Andersen",
+    "formatted_address": "Frederiksholms Kanal 28A, 1220 København, Denmark",
+    "formatted_phone_number": "25 37 41 01",
+    "price_level": null,
+    "user_ratings_total": 6,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJI_JgZhRTUkYRtbYcUG1-Mfk",
+    "name": "Bianca D'Alessandro",
+    "formatted_address": "Frederiksholms Kanal 28A, 1220 Copenhagen K, Denmark",
+    "formatted_phone_number": "22 99 43 01",
+    "price_level": null,
+    "user_ratings_total": 4,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJGys3lhRTUkYRnT-kmVLncZo",
+    "name": "Rasmussen & Ruelas A/S",
+    "formatted_address": "H. C. Andersens Blvd. 51, 1553 København, Denmark",
+    "formatted_phone_number": "33 36 60 00",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJN5wtvK1TUkYRiPow6EC3Skw",
+    "name": "Wild Things",
+    "formatted_address": "Ahlefeldtsgade 21, 1 th, 1359 København, Denmark",
+    "formatted_phone_number": "42 40 20 26",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ2ZKqGAtTUkYR6MBEclkRa_Y",
+    "name": "T. Christoffersen ApS",
+    "formatted_address": "Skindergade 5, 1159 København, Denmark",
+    "formatted_phone_number": "33 91 76 10",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJi5Mo5AVTUkYRExKGHEunQ4A",
+    "name": "Schäfer",
+    "formatted_address": "Nansensgade 43, sal kldth, 1366 København, Denmark",
+    "formatted_phone_number": "33 13 12 31",
+    "price_level": null,
+    "user_ratings_total": 5,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJMaCIixpTUkYRCsRAyhT2yP8",
+    "name": "Prince Gallery",
+    "formatted_address": "Hauser Pl. 16, A, 1127 København, Denmark",
+    "formatted_phone_number": "81 71 03 14",
+    "price_level": null,
+    "user_ratings_total": 3,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJmwSyqghTUkYRT-E82VGThWU",
+    "name": "Format Artspace",
+    "formatted_address": "Gasværksvej 9, 1656 København, Denmark",
+    "formatted_phone_number": "93 86 84 58",
+    "price_level": null,
+    "user_ratings_total": 25,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ3SYQ98kq3EMRszZ5MJhO224",
+    "name": "Fotografisk Center",
+    "formatted_address": "Staldgade 16, 1699 København, Denmark",
+    "formatted_phone_number": "33 93 09 96",
+    "price_level": null,
+    "user_ratings_total": 59,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJoxA85iFTUkYRM8J4BilYWkM",
+    "name": "Danske Gallerier",
+    "formatted_address": "Børsen, 1217 København K, Denmark",
+    "formatted_phone_number": "33 74 62 40",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJyTONNHJTUkYRHqDdkiHXbIY",
+    "name": "Eva Schlegel",
+    "formatted_address": "Flæsketorvet 85B, 1711 København, Denmark",
+    "formatted_phone_number": "33 93 42 21",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJPaM9pwpTUkYRF4_I_abTKUY",
+    "name": "CAN",
+    "formatted_address": "Tullinsgade 5, 1618 København, Denmark",
+    "formatted_phone_number": "31 79 63 47",
+    "price_level": null,
+    "user_ratings_total": 36,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJQcBKNHJTUkYRiO9IWhlYA74",
+    "name": "Gether Contemporary",
+    "formatted_address": "Flæsketorvet 77, 79, 1711 København V, Denmark",
+    "formatted_phone_number": "31 70 16 50",
+    "price_level": null,
+    "user_ratings_total": 11,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJAeTZKRpTUkYRf-6qX0RWmeU",
+    "name": "Alsing",
+    "formatted_address": "Kronprinsessegade 5, 1306 Indre By, Denmark",
+    "formatted_phone_number": "29 82 72 73",
+    "price_level": null,
+    "user_ratings_total": 9,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJmcjTUXVTUkYRvL4NjO20AEs",
+    "name": "Plakatfabrikken",
+    "formatted_address": "Istedgade 59, 1650 København, Denmark",
+    "formatted_phone_number": "22 11 95 93",
+    "price_level": null,
+    "user_ratings_total": 6,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJB-8aXK1TUkYRSVfo8OBO3TY",
+    "name": "Culture Tower on Knippels Bridge",
+    "formatted_address": "Knippelsbro 2, 1400 Indre By, Denmark",
+    "formatted_phone_number": "28 71 28 15",
+    "price_level": null,
+    "user_ratings_total": 252,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJlRLMP3RTUkYRPzt9wiP_Xus",
+    "name": "Third Space",
+    "formatted_address": "Skydebanegade 31, 1709 København, Denmark",
+    "formatted_phone_number": "20 66 35 87",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJX7BG33NTUkYRL4b1m7oCtwo",
+    "name": "Thomas Pålsson",
+    "formatted_address": "Kødboderne 30, 1714 København, Denmark",
+    "formatted_phone_number": "32 16 10 08",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJc3q1kMsoS0YRptToIUl5sY0",
+    "name": "KANT",
+    "formatted_address": "Store Kongensgade 3, 1264 Indre By, Denmark",
+    "formatted_phone_number": "23 38 49 24",
+    "price_level": null,
+    "user_ratings_total": 14,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJW21bhY1TUkYRK_vms6BkVds",
+    "name": "Big Bowl Entertainment Centre",
+    "formatted_address": "Gammel Jernbanevej 31, 2500 København, Denmark",
+    "formatted_phone_number": "70 10 07 00",
+    "price_level": null,
+    "user_ratings_total": 1654,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJdQkOuDJSUkYRROB2VwQX828",
+    "name": "Grøndal MultiCenter",
+    "formatted_address": "Hvidkildevej 64, 2400 Vanløse, Denmark",
+    "formatted_phone_number": "33 66 24 00",
+    "price_level": null,
+    "user_ratings_total": 1357,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJiYxcBUFRUkYRPyOcy4PhauY",
+    "name": "World Cup Hallen",
+    "formatted_address": "Rødovre Centrum 99, 2610 Rødovre, Denmark",
+    "formatted_phone_number": "36 41 12 47",
+    "price_level": null,
+    "user_ratings_total": 289,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJT80vc3hQUkYRVng2IU4I3T4",
+    "name": "Ballerup Bowling & Minigolf",
+    "formatted_address": "Tempovej 35, 2750 Ballerup, Denmark",
+    "formatted_phone_number": "30 30 27 82",
+    "price_level": null,
+    "user_ratings_total": 583,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJixLU0EdQUkYRygIQgk_9Ddg",
+    "name": "Bowlerneshal - Grøndal",
+    "formatted_address": "Hvidkildevej 64, 2400 København NV:, Denmark",
+    "formatted_phone_number": "33 23 23 23",
+    "price_level": null,
+    "user_ratings_total": 252,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJdQkOuDJSUkYRFO4yclDZNcM",
+    "name": "Den Selvejenden Institution - Bowlernes Hal",
+    "formatted_address": "Hvidkildevej 64, 2400 København, Denmark",
+    "formatted_phone_number": "82 20 57 10",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJhxwetfFRUkYR2vA4QMARMbw",
+    "name": "Gladsaxe Bowlinghal",
+    "formatted_address": "Gladsaxevej 200, 2860 Gladsaxe, Denmark",
+    "formatted_phone_number": "39 57 62 40",
+    "price_level": null,
+    "user_ratings_total": 129,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJVb1S6nJTUkYR2j9gJ8H6e3g",
+    "name": "DGI City Bowling",
+    "formatted_address": "Tietgensgade 65, 1704 København V, Denmark",
+    "formatted_phone_number": "33 29 80 20",
+    "price_level": null,
+    "user_ratings_total": 521,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJD4mfbE5QUkYRrVbEawi2Vhk",
+    "name": "Cecilie's",
+    "formatted_address": "Hørkær 1, 2730 Herlev, Denmark",
+    "formatted_phone_number": "55 55 50 50",
+    "price_level": null,
+    "user_ratings_total": 1543,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJc7lwLs-rU0YRKDwZwFZ-zsU",
+    "name": "Amar Bowl",
+    "formatted_address": "Astridsvej 70, 2770 Kastrup, Denmark",
+    "formatted_phone_number": "32 52 05 20",
+    "price_level": null,
+    "user_ratings_total": 26,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJM52C-0BRUkYR7ZcG4sPnXw8",
+    "name": "Rødovre B​owlinghal",
+    "formatted_address": "Rødovre Parkvej 150, 2610 Rødovre, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 63,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJmda--vhRUkYRR-HY1vwUPrk",
+    "name": "Rødovre Centrum",
+    "formatted_address": "Rødovre Centrum 1 R, 1, 202, 2610 Rødovre, Denmark",
+    "formatted_phone_number": "36 70 99 44",
+    "price_level": null,
+    "user_ratings_total": 6919,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJvdgcFUBTUkYRPwBH8MjaM6Q",
+    "name": "Casino Copenhagen",
+    "formatted_address": "Amager Boul. 70, 2300 København, Denmark",
+    "formatted_phone_number": "33 96 59 65",
+    "price_level": null,
+    "user_ratings_total": 811,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJS2pX7f5TUkYRP_vsIR54CBo",
+    "name": "Las Vegas",
+    "formatted_address": "Vigerslevvej 137, 2500 København, Denmark",
+    "formatted_phone_number": "36 17 20 59",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ50iRp1JSUkYRuQIttJaVaUY",
+    "name": "Bezzerwizzer Holding ApS",
+    "formatted_address": "1, Nørrebrogade 176, 2200 København, Denmark",
+    "formatted_phone_number": "70 28 10 68",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": null,
+    "name": null,
+    "formatted_address": null,
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJT46IrLJWUkYRhoU6mUrVlk8",
+    "name": "Learn By Interaction ApS",
+    "formatted_address": "Kløverprisvej 107, 2650 Hvidovre, Denmark",
+    "formatted_phone_number": "60 68 65 88",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJk1wWRbJRUkYRM-qgWGXjR_w",
+    "name": "Herlev Pitten Spillehal",
+    "formatted_address": "Stationsalleen 44A, 2730 Herlev, Denmark",
+    "formatted_phone_number": "28 51 77 69",
+    "price_level": null,
+    "user_ratings_total": 9,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJw_3zwbVTUkYRDU2PkA_nre0",
+    "name": "Casino Vesterport",
+    "formatted_address": "Hammerichsgade 3, 1611 København V, Denmark",
+    "formatted_phone_number": "33 69 00 00",
+    "price_level": null,
+    "user_ratings_total": 31,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJVVVpMAtTUkYRhGqLtoHXlZ0",
+    "name": "JoyPac",
+    "formatted_address": "Vesterbrogade 34, 4, 1620 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJSZHZoAVTUkYRY1XRrkpglFQ",
+    "name": "Ns Købmand",
+    "formatted_address": "Rømersgade 15, 1362 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 8,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJDQ30fqJTUkYRBndnpER7a2k",
+    "name": "pip.dk",
+    "formatted_address": "Pilestræde 52A, 1112 København K, Denmark",
+    "formatted_phone_number": "30 21 92 10",
+    "price_level": 2,
+    "user_ratings_total": 37,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ7VJW6QJTUkYRgiVzzl35toA",
+    "name": "Casino House Vesterbrogade",
+    "formatted_address": "Vesterbrogade 81, 1620 København, Denmark",
+    "formatted_phone_number": "71 90 15 78",
+    "price_level": null,
+    "user_ratings_total": 3,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJZf2D3UFTUkYRCTAZEt3mkDQ",
+    "name": "Spillehal",
+    "formatted_address": "Njalsgade 35, 2300 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJhctbR-VTUkYRDsOSLEu2VKQ",
+    "name": "Bonus Casino – Für neue Spieler aus Kopenhagen",
+    "formatted_address": "Hedebygade 30, 1754 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJl-TirutTUkYR3KY1pS8F6s4",
+    "name": "BETO | Casino Bonus",
+    "formatted_address": "Fredericiagade 15B, 1310 København, Denmark",
+    "formatted_phone_number": "50 13 41 69",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJe9X_yadTUkYRQtQcA0_WhvE",
+    "name": "Spilhuset",
+    "formatted_address": "Rolighedsvej 5, 1958 Frederiksberg, Denmark",
+    "formatted_phone_number": "78 75 99 12",
+    "price_level": null,
+    "user_ratings_total": 8,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJH1E8PZVTUkYR8Z1zCNwgE6A",
+    "name": "Spilhuset",
+    "formatted_address": "Amagerbrogade 17, 2300 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJg2oBnZdTUkYRUmO5jus8zAI",
+    "name": "500 Casino – Online Kasino in Kopenhagen",
+    "formatted_address": "Sundholmsvej 30, 2300 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJlYJzc-JTUkYR8z-8fdmEcI8",
+    "name": "Casino House Valby Langgade",
+    "formatted_address": "Valby Langgade 29, 2500 København, Denmark",
+    "formatted_phone_number": "71 90 13 94",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ5WpifOFTUkYRgE-8qM563Lk",
+    "name": "Cashpoint",
+    "formatted_address": "Frederikssundsvej 5, 2200 København, Denmark",
+    "formatted_phone_number": "28 56 96 88",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJVYC3npxTUkYRZRkCd-DVswA",
+    "name": "Cashpoint",
+    "formatted_address": "Toftegårds Allé 43, 2500 København, Denmark",
+    "formatted_phone_number": "60 62 68 89",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJFyTIce5TUkYRJlgJBgM8-s4",
+    "name": "Spilhuset",
+    "formatted_address": "Lyngbyvej 15, 2100 København, Denmark",
+    "formatted_phone_number": "78 75 99 12",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJs3YOAItTUkYR1Jf-uB2QRhA",
+    "name": "Casino House Tagensvej",
+    "formatted_address": "Tagensvej 165, 2400 København, Denmark",
+    "formatted_phone_number": "71 90 13 95",
+    "price_level": null,
+    "user_ratings_total": 3,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJF7Gqvd5TUkYRTk2DM6FZjwM",
+    "name": "Fortuna Hillerødgade Spillehal",
+    "formatted_address": "Hillerødgade 179, 2400 Vanløse, Denmark",
+    "formatted_phone_number": "28 51 77 69",
+    "price_level": null,
+    "user_ratings_total": 3,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJvTAgflNTUkYRFCMChM2QnBY",
+    "name": "Casino House Sallingvej",
+    "formatted_address": "Sallingvej 66, 2720 København, Denmark",
+    "formatted_phone_number": "42 67 53 83",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJY84r1p5TUkYRL8Exq4Rt6lM",
+    "name": "Casino Monte Carlo",
+    "formatted_address": "Vigerslevvej 44, 2500 København, Denmark",
+    "formatted_phone_number": "36 44 15 44",
+    "price_level": null,
+    "user_ratings_total": 9,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJnfTqAnVTUkYR1HKBBbx6IDM",
+    "name": "Casino House",
+    "formatted_address": "Roskildevej 167, 2500 Valby, Denmark",
+    "formatted_phone_number": "71 90 15 54",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJb4rtwJdRUkYR8bFA7XgefK4",
+    "name": "Cashpoint",
+    "formatted_address": "Bogholder Allé 63, 2720 København, Denmark",
+    "formatted_phone_number": "27 57 44 46",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJHSoI88dRUkYRv6lNcfJtGM0",
+    "name": "Casino House Jyllingevej",
+    "formatted_address": "Jyllingevej 62, 2720 København, Denmark",
+    "formatted_phone_number": "71 90 15 69",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJu4VSQRJRUkYR8XvObMbptGM",
+    "name": "Casino House",
+    "formatted_address": "Skjulhøj Allé 15, 2720 København, Denmark",
+    "formatted_phone_number": "32 17 70 07",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJs5UFYupRUkYRHAaf01UhVj4",
+    "name": "Spilhuset",
+    "formatted_address": "Islevhusvej 43, 2700 København, Denmark",
+    "formatted_phone_number": "78 75 99 12",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJX97E_TBRUkYRPrGJOeGIJdQ",
+    "name": "Tivoli Casino",
+    "formatted_address": "Korsdalsvej 135, 2605 Brøndby, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJWdhlc7NRUkYR3XIhcCczwOY",
+    "name": "Spilhuset",
+    "formatted_address": "Herlev Hovedgade 105, 2730 Herlev, Denmark",
+    "formatted_phone_number": "78 75 99 12",
+    "price_level": null,
+    "user_ratings_total": 7,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJZeEtkdRQUkYRO0bI-VaVBqU",
+    "name": "Glostrup Spilleland/Shawarma Pizza Bar v/Jabar Ahmad",
+    "formatted_address": "Hovedvejen 68, 2600 Glostrup, Denmark",
+    "formatted_phone_number": "43 96 06 08",
+    "price_level": null,
+    "user_ratings_total": 9,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJjdRGp_FXUkYRFDDgJhq1v7A",
+    "name": "Cashpoint",
+    "formatted_address": "Glostrup Shoppingcenter 112, 2600 Glostrup, Denmark",
+    "formatted_phone_number": "25 30 00 07",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJoxdx9RFTUkYR6osHpAdE-64",
+    "name": "Grand Teatret",
+    "formatted_address": "Mikkel Bryggers Gade 8, 1460 København, Denmark",
+    "formatted_phone_number": "33 15 16 11",
+    "price_level": null,
+    "user_ratings_total": 1868,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJBdIHRxpTUkYRmLFH9xtsVXY",
+    "name": "Cinemateket",
+    "formatted_address": "Gothersgade 55, 1123 København, Denmark",
+    "formatted_phone_number": "33 74 34 12",
+    "price_level": null,
+    "user_ratings_total": 340,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJodE9OwxTUkYRD_tmOvhhKAQ",
+    "name": "Palads",
+    "formatted_address": "Axeltorv 9, 1609 København V, Denmark",
+    "formatted_phone_number": "70 13 12 11",
+    "price_level": null,
+    "user_ratings_total": 4939,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJQW4GHBJTUkYRREQzYo55El8",
+    "name": "Gloria Biograf",
+    "formatted_address": "Rådhuspladsen 59, 1550 København, Denmark",
+    "formatted_phone_number": "33 12 42 92",
+    "price_level": null,
+    "user_ratings_total": 178,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJZwp_cAxTUkYRWf2PuFsEi1c",
+    "name": "Imperial",
+    "formatted_address": "Ved Vesterport 4, 1612 København V, Denmark",
+    "formatted_phone_number": "70 13 12 11",
+    "price_level": null,
+    "user_ratings_total": 3155,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJEw4m_KpTUkYRW_PvEauDHVU",
+    "name": "Empire Cinema",
+    "formatted_address": "Guldbergsgade 29F, 2200 København, Denmark",
+    "formatted_phone_number": "35 36 00 36",
+    "price_level": null,
+    "user_ratings_total": 2034,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJc3G0DLxTUkYRMa9e09kIuSU",
+    "name": "Nordic Film Cinemas Falconer",
+    "formatted_address": "Sylows Alle 15, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "70 13 12 11",
+    "price_level": null,
+    "user_ratings_total": 1797,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJFSYCzA1TUkYRd4Oc341HdWc",
+    "name": "Dagmar Teatret",
+    "formatted_address": "Jernbanegade 2, 1608 København, Denmark",
+    "formatted_phone_number": "70 13 12 11",
+    "price_level": null,
+    "user_ratings_total": 1073,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ0VKKcwtTUkYRYskOpknXs7A",
+    "name": "Planetarium",
+    "formatted_address": "Gl. Kongevej 10, 1610 Indre By, Denmark",
+    "formatted_phone_number": "33 12 12 24",
+    "price_level": null,
+    "user_ratings_total": 985,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJFWd3LHBTUkYRTSATHnZMO8g",
+    "name": "Vue",
+    "formatted_address": "Kalvebod Brygge 57, 1560 København V, Denmark",
+    "formatted_phone_number": "70 10 12 02",
+    "price_level": null,
+    "user_ratings_total": 6162,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJPeoAnfBSUkYRjqrGV2A9kgI",
+    "name": "Park Bio",
+    "formatted_address": "Østerbro Svømmehal, Østerbrogade 79, stuen th, 2100 København, Denmark",
+    "formatted_phone_number": "35 38 33 62",
+    "price_level": null,
+    "user_ratings_total": 648,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJW_DpLnVTUkYRU1kZbIqmqxQ",
+    "name": "Vester Vov Vov",
+    "formatted_address": "Absalonsgade 5, 1658 København, Denmark",
+    "formatted_phone_number": "33 24 42 00",
+    "price_level": null,
+    "user_ratings_total": 407,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJY1ssXWxOUkYRpwlHeKCvbrQ",
+    "name": "Nordisk Film Cinemas Lyngby",
+    "formatted_address": "Klampenborgvej 215A, 2800 Kongens Lyngby, Denmark",
+    "formatted_phone_number": "70 13 12 11",
+    "price_level": null,
+    "user_ratings_total": 3381,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJD6C_6w1TUkYRqzJFQ31tmdo",
+    "name": "Field's",
+    "formatted_address": "Arne Jacobsens Allé 12, 2300 København, Denmark",
+    "formatted_phone_number": "70 20 85 05",
+    "price_level": null,
+    "user_ratings_total": 18495,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJWTINdhFTUkYRXrKYCpC4JaA",
+    "name": "Posthusteatret",
+    "formatted_address": "Rådhusstræde 1, 1466 København, Denmark",
+    "formatted_phone_number": "33 11 66 11",
+    "price_level": null,
+    "user_ratings_total": 41,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJvaHVK0BRUkYR3-aoKz6xFL0",
+    "name": "Viften",
+    "formatted_address": "Rødovre Parkvej 130, 2610 Rødovre, Denmark",
+    "formatted_phone_number": "30 76 97 70",
+    "price_level": null,
+    "user_ratings_total": 1188,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJfQK2zfZNUkYRdoCnChIpkiA",
+    "name": "Gentofte Kino",
+    "formatted_address": "Gentoftegade 39, 2820 Gentofte, Denmark",
+    "formatted_phone_number": "39 65 33 50",
+    "price_level": null,
+    "user_ratings_total": 404,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ7Wio7ktSUkYRU2TFTebymgc",
+    "name": "FilmStationen",
+    "formatted_address": "Lygten 2, 2400 København, Denmark",
+    "formatted_phone_number": "70 20 96 00",
+    "price_level": null,
+    "user_ratings_total": 6,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJmeqNIjNXUkYRlM4jtLFk9T4",
+    "name": "Glostrup Bio",
+    "formatted_address": "Bryggergårdsvej 2, 2600 Glostrup, Denmark",
+    "formatted_phone_number": "43 96 02 01",
+    "price_level": null,
+    "user_ratings_total": 392,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJifujZBFTUkYRtT4mCXhheNs",
+    "name": "Huset-KBH",
+    "formatted_address": "Rådhusstræde 13, 1466 København, Denmark",
+    "formatted_phone_number": "21 51 21 51",
+    "price_level": null,
+    "user_ratings_total": 1169,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJnQIzL-1TUkYRfm7bJzhKbIM",
+    "name": "Foreningen Af Filmudlejere I Danmark - Fafid",
+    "formatted_address": "Mosedalvej 14, 2500 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJA-ABahpTUkYRHZs4VoaUBY8",
+    "name": "Den Erhvervsdrivende Fond Biografklub Danmark",
+    "formatted_address": "Vognmagergade 10, 1120 København, Denmark",
+    "formatted_phone_number": "33 11 36 32",
+    "price_level": null,
+    "user_ratings_total": 14,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJYSOJgo1TUkYR1zzDH0F3qG8",
+    "name": "Valby Cinema",
+    "formatted_address": "Gammel Jernbanevej 40, 2500 København, Denmark",
+    "formatted_phone_number": "71 99 36 40",
+    "price_level": null,
+    "user_ratings_total": 789,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJSQ5e6rlUUkYRO5ip4E-pEAk",
+    "name": "Nordisk Film Biografer Fields",
+    "formatted_address": "Arne Jacobsens Allé 12, 2300 København, Denmark",
+    "formatted_phone_number": "70 13 12 11",
+    "price_level": null,
+    "user_ratings_total": 2100,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJMyge3EBRUkYRJ8YtT8UR5w8",
+    "name": "ATLAS Biograferne",
+    "formatted_address": "Rødovre Centrum 1F, 96, 2610 Rødovre, Denmark",
+    "formatted_phone_number": "36 70 40 80",
+    "price_level": null,
+    "user_ratings_total": 1972,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJkUQ_tbZNUkYRGr4Wp3vChk0",
+    "name": "5D Cinema",
+    "formatted_address": "Dyrehavsbakken 101, 2930 Klampenborg, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 3,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ1YHeq9NQUkYRflGp4vAyuAU",
+    "name": "Glostrup Filmklub For Børn og Unge",
+    "formatted_address": "Bryggergårdsvej 2, 2600 Glostrup, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJHR6XiD5XUkYR6GvRKNKmTzw",
+    "name": "Room AV",
+    "formatted_address": "Abildager 13, 2605 Brøndby, Denmark",
+    "formatted_phone_number": "28 30 81 80",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ_4-h1F-rU0YREjuVIzfq4l4",
+    "name": "Kulturhuset Kastrup BIO",
+    "formatted_address": "Kastrupvej 270, 2770 Kastrup, Denmark",
+    "formatted_phone_number": "32 50 55 07",
+    "price_level": null,
+    "user_ratings_total": 824,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJDYBGnbpPUkYRM3-vtRlEhRo",
+    "name": "Cubus Film & Tv ApS",
+    "formatted_address": "Hummeltoftevej 185, 2830 Virum, Denmark",
+    "formatted_phone_number": "39 90 07 70",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJY1ssXWxOUkYR2SyBRcv3ftc",
+    "name": "Lyngby Culture House",
+    "formatted_address": "Klampenborgvej 215, 2800 Kongens Lyngby, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 30,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJHQ4OahpTUkYRH9qGg7oB0Yc",
+    "name": "Danske Biografer",
+    "formatted_address": "Vognmagergade 10, 1120 København, Denmark",
+    "formatted_phone_number": "45 46 10 52",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJd_BTFUtQUkYRQeXV0fAObkg",
+    "name": "Herlev Teaterbio",
+    "formatted_address": "Herlev Bygade 30, 2730 Herlev, Denmark",
+    "formatted_phone_number": "44 52 58 00",
+    "price_level": null,
+    "user_ratings_total": 215,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ27_AqzBTUkYR5jo6ejqZlqk",
+    "name": "The City's Light",
+    "formatted_address": "Fabriksområdet, 1440 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 81,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ7VO-wNJPUkYR4VYQTx-VWkQ",
+    "name": "Bibliografen",
+    "formatted_address": "Bagsværd Hovedgade 116, 2880 Bagsværd, Denmark",
+    "formatted_phone_number": "39 57 64 64",
+    "price_level": null,
+    "user_ratings_total": 622,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJy1oxbZ9TUkYRbeCO74_ucs0",
+    "name": "Body Bio",
+    "formatted_address": "Kingosgade 7, kld, 1623 København, Denmark",
+    "formatted_phone_number": "24 61 47 90",
+    "price_level": null,
+    "user_ratings_total": 65,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJm2kGSwBTUkYRm0l5Djy1v9E",
+    "name": "Huset’s Cinema",
+    "formatted_address": "Rådhusstræde 13, 1466 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 11,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJv69LrxpTUkYRnomDIY4HSoo",
+    "name": "Husets Børnefilmklub",
+    "formatted_address": "Magstræde 14, 2. sal, 1466 København K, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ8RZ9mKlTUkYRJX5ttAQ47Cs",
+    "name": "Off-Kino I/S",
+    "formatted_address": "Prins Jørgens Gade 14A, 2200 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJk2lHh_1TUkYRrSf4E2Gqg9Y",
+    "name": "Reservoir Kbh",
+    "formatted_address": "Bryggernes Plads 10, 1799 København, Denmark",
+    "formatted_phone_number": "70 13 12 11",
+    "price_level": null,
+    "user_ratings_total": 54,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJMZGZgDxTUkYRsdKpvZ3igus",
+    "name": "Big Bio Nordhavn",
+    "formatted_address": "Hamborg Pl. 6, 2150 København, Denmark",
+    "formatted_phone_number": "39 20 20 10",
+    "price_level": null,
+    "user_ratings_total": 577,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJF_o0YsKrU0YRZDvL0vtGUJg",
+    "name": "Amagerteatret",
+    "formatted_address": "Hyben Alle 43, 2770 Kastrup, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJx3wuRpVTUkYRY16PfcgmNMc",
+    "name": "MovieHouse",
+    "formatted_address": "Tuborg Blvd. 10, 2900 Hellerup, Denmark",
+    "formatted_phone_number": "44 94 29 00",
+    "price_level": null,
+    "user_ratings_total": 776,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJodoN6kBRUkYR8j62S_2f2Es",
+    "name": "Biografjob",
+    "formatted_address": "Rødovre Centrum, 2610 Rødovre, Denmark",
+    "formatted_phone_number": "36 70 40 80",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ-ar2GFdRUkYRkSDYX_CsGOQ",
+    "name": "Belinay",
+    "formatted_address": "Valhøjs Alle 72A, 2610 Rødovre, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJfxj0tLFRUkYRC7tFpbQQZdM",
+    "name": "Big Bio",
+    "formatted_address": "Herlev Hovedgade 31, 2730 Herlev, Denmark",
+    "formatted_phone_number": "44 94 60 20",
+    "price_level": null,
+    "user_ratings_total": 2700,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJfTFWz7FRUkYR6ozNK1nuY68",
+    "name": "Birk-Entreprise ApS",
+    "formatted_address": "Herlev Hovedgade 17, 2730 Herlev, Denmark",
+    "formatted_phone_number": "40 46 24 06",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJiSE_-FpRUkYR_nER3oAR5VM",
+    "name": "Drive in events Ballerup",
+    "formatted_address": "Kræmmerstien 1, 2740 Skovlunde, Denmark",
+    "formatted_phone_number": "31 11 66 06",
+    "price_level": null,
+    "user_ratings_total": 8,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJzwSQ5VpXUkYRip7oMLx7Qyo",
+    "name": "Albertslund Biograferne",
+    "formatted_address": "Bibliotekstorvet 1, 2620 Albertslund, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 4,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ6VWX9ctbUkYRX5o91lJIopI",
+    "name": "FORMAT Biograf",
+    "formatted_address": "Ballerup-Centret 2, 2750 Ballerup, Denmark",
+    "formatted_phone_number": "44 64 32 32",
+    "price_level": null,
+    "user_ratings_total": 544,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJfXQRBBNTUkYRoec4408un1k",
+    "name": "Ny Carlsberg Glyptotek",
+    "formatted_address": "Dantes Plads 7, 1556 København, Denmark",
+    "formatted_phone_number": "33 41 81 41",
+    "price_level": null,
+    "user_ratings_total": 13048,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJRZnqvxNTUkYRr1KKLRhldd4",
+    "name": "National Museum of Denmark",
+    "formatted_address": "Ny Vestergade 10, 1471 København K, Denmark",
+    "formatted_phone_number": "33 13 44 11",
+    "price_level": null,
+    "user_ratings_total": 12336,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJHVOeQhtTUkYRPBsoRTOcNVI",
+    "name": "Rosenborg Castle",
+    "formatted_address": "Øster Voldgade 4A, 1350 København, Denmark",
+    "formatted_phone_number": "33 15 32 86",
+    "price_level": null,
+    "user_ratings_total": 21846,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJuT-bLnVTUkYRhsDbOa81Gj0",
+    "name": "Museum of Copenhagen",
+    "formatted_address": "Stormgade 18, 1555 København, Denmark",
+    "formatted_phone_number": "21 76 43 66",
+    "price_level": null,
+    "user_ratings_total": 1541,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJcwY-NiJTUkYRP1UVnat_8Vw",
+    "name": "Amalienborg Palace",
+    "formatted_address": "Amalienborg Slotsplads, 1257 København K, Denmark",
+    "formatted_phone_number": "33 15 32 86",
+    "price_level": null,
+    "user_ratings_total": 28464,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJMTzE6yFTUkYR90_sHEhzRqc",
+    "name": "Designmuseum Danmark",
+    "formatted_address": "Bredgade 68, 1260 København, Denmark",
+    "formatted_phone_number": "33 18 56 56",
+    "price_level": null,
+    "user_ratings_total": 6856,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJhaniNzxTUkYRb49PigcFdtM",
+    "name": "Danish Architecture Centre",
+    "formatted_address": "Bryghuspladsen 10, 1473 København, Denmark",
+    "formatted_phone_number": "32 57 19 30",
+    "price_level": null,
+    "user_ratings_total": 3762,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJRZnqvxNTUkYRqzD4wYluqq4",
+    "name": "The Victorian Home",
+    "formatted_address": "Frederiksholms Kanal 18, 1220 København, Denmark",
+    "formatted_phone_number": "33 13 44 11",
+    "price_level": null,
+    "user_ratings_total": 99,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJP1Iq_yBTUkYRWZIXkjpa5bE",
+    "name": "Museum of Danish Resistance",
+    "formatted_address": "Esplanaden 13, 1263 København, Denmark",
+    "formatted_phone_number": "41 20 60 80",
+    "price_level": null,
+    "user_ratings_total": 1206,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJh3wvJx1TUkYRsBM5GKdGnxs",
+    "name": "Hirschsprung Collection",
+    "formatted_address": "Stockholmsgade 20, 2100 København, Denmark",
+    "formatted_phone_number": "35 42 03 36",
+    "price_level": null,
+    "user_ratings_total": 657,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJF2rIsxZTUkYRwtHCYRGSY5c",
+    "name": "Thorvaldsens Museum",
+    "formatted_address": "Bertel Thorvaldsens Plads 2, 1213 København K, Denmark",
+    "formatted_phone_number": "21 68 75 68",
+    "price_level": null,
+    "user_ratings_total": 1487,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJfyjMH5dTUkYRb6MBP3wrqC0",
+    "name": "Cisterns in Søndermarken",
+    "formatted_address": "Roskildevej 25A, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "30 73 80 32",
+    "price_level": null,
+    "user_ratings_total": 1783,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJaYrImBxTUkYRTv3YfV7vceY",
+    "name": "Museum of Natural History",
+    "formatted_address": "Øster Voldgade 5, 7, 1350 Indre By, Denmark",
+    "formatted_phone_number": "35 32 22 22",
+    "price_level": null,
+    "user_ratings_total": 3080,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJc6Dg8CFTUkYRMb9YySXljOQ",
+    "name": "Medicinsk Museion",
+    "formatted_address": "Bredgade 62, 1260 København, Denmark",
+    "formatted_phone_number": "35 32 38 00",
+    "price_level": null,
+    "user_ratings_total": 1436,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJZ7XgGRdTUkYRmi-Kary7yRs",
+    "name": "Nikolaj Art Gallery",
+    "formatted_address": "Nikolaj Plads 10, 1067 København, Denmark",
+    "formatted_phone_number": "24 22 71 27",
+    "price_level": null,
+    "user_ratings_total": 1286,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJQ84tnHtTUkYR9ZdEM3_joCU",
+    "name": "DieselHouse",
+    "formatted_address": "Energiporten 8, 2450 København, Denmark",
+    "formatted_phone_number": "40 43 32 54",
+    "price_level": null,
+    "user_ratings_total": 487,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJhYY5HQVTUkYRU7nk0bC9YhU",
+    "name": "Workers Museum",
+    "formatted_address": "Rømersgade 22, 1362 København, Denmark",
+    "formatted_phone_number": "33 93 25 75",
+    "price_level": null,
+    "user_ratings_total": 2306,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ0TCvI-hNUkYRX0SeGQg_QaE",
+    "name": "ARKEN Museum of Contemporary Art",
+    "formatted_address": "Skovvej 100, 2635 Ishøj, Denmark",
+    "formatted_phone_number": "43 54 02 22",
+    "price_level": null,
+    "user_ratings_total": 4487,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ29Bo2ZdTUkYRfFLOXgQMGJc",
+    "name": "Storm P. Museum",
+    "formatted_address": "Frederiksberg Runddel, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "38 86 05 00",
+    "price_level": null,
+    "user_ratings_total": 418,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJS7YcxRVTUkYRQ0ZvaPs-cGo",
+    "name": "Danish Jewish Museum",
+    "formatted_address": "Proviantpassagen 6, 1218 København, Denmark",
+    "formatted_phone_number": "33 11 22 18",
+    "price_level": null,
+    "user_ratings_total": 347,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJFUMgvgBTUkYRGwrGYOWsLP4",
+    "name": "Politimuseet - Danish Police Museum",
+    "formatted_address": "Fælledvej 20, 2200 København, Denmark",
+    "formatted_phone_number": "40 32 58 88",
+    "price_level": null,
+    "user_ratings_total": 852,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJncXEL1pOUkYRN3Oia9AfiDo",
+    "name": "The Open Air Museum",
+    "formatted_address": "Kongevejen 100, 2800 Kongens Lyngby, Denmark",
+    "formatted_phone_number": "41 20 64 55",
+    "price_level": null,
+    "user_ratings_total": 3012,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJgRvPWb9NUkYRZ0H_K9PuqYY",
+    "name": "Ordrupgaard",
+    "formatted_address": "Vilvordevej 110, 2920 Charlottenlund, Denmark",
+    "formatted_phone_number": "39 64 11 83",
+    "price_level": null,
+    "user_ratings_total": 1145,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJHQ4OahpTUkYRvaa_GH-9f9c",
+    "name": "The Danish Film Institute",
+    "formatted_address": "Gothersgade 55, 1123 København, Denmark",
+    "formatted_phone_number": "33 74 34 00",
+    "price_level": null,
+    "user_ratings_total": 116,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJG7BEIxRTUkYRpKmcPLGhqDw",
+    "name": "The War Museum",
+    "formatted_address": "Tøjhusgade 3, 1220 København, Denmark",
+    "formatted_phone_number": "41 20 60 80",
+    "price_level": null,
+    "user_ratings_total": 2185,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJQdVeBJpWUkYRqP9lJ6TkwEY",
+    "name": "Forstadsmuseet",
+    "formatted_address": "Alarmpladsen 3, 2650 Hvidovre, Denmark",
+    "formatted_phone_number": "36 49 00 30",
+    "price_level": null,
+    "user_ratings_total": 29,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJg8_W6D5TUkYRnNBYBwshjrg",
+    "name": "O – Overgaden Institut for Samtidskunst",
+    "formatted_address": "Overgaden Neden Vandet 17, 1414 København, Denmark",
+    "formatted_phone_number": "32 57 72 73",
+    "price_level": null,
+    "user_ratings_total": 40,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJW1_NuatTUkYRRNlOjMKw_k4",
+    "name": "Astrological Museum",
+    "formatted_address": "Teglværksgade 37, 2100 København, Denmark",
+    "formatted_phone_number": "36 45 05 45",
+    "price_level": null,
+    "user_ratings_total": 15,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJQfd58hxTUkYR_mgIYo8ErNA",
+    "name": "SMK – Statens Museum for Kunst",
+    "formatted_address": "Sølvgade 48-50, 1307 Indre By, Denmark",
+    "formatted_phone_number": "33 74 84 94",
+    "price_level": null,
+    "user_ratings_total": 5699,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJMQHyM3xSUkYRLtLVhrEqh0I",
+    "name": "Gentofte BrandMuseum",
+    "formatted_address": "Hellerupvej 5, 2900 Hellerup, Denmark",
+    "formatted_phone_number": "39 62 89 22",
+    "price_level": null,
+    "user_ratings_total": 38,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ7wy3kHZTUkYRoNjRpjOBWRw",
+    "name": "Cafe 33",
+    "formatted_address": "Bellahøjvej 121, 2720 Vanløse, Denmark",
+    "formatted_phone_number": null,
+    "price_level": 1,
+    "user_ratings_total": 183,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJgRvPWb9NUkYRd5iNTgS2bkE",
+    "name": "Finn Juhl House",
+    "formatted_address": "Vilvordevej 110, 2920 Charlottenlund, Denmark",
+    "formatted_phone_number": "39 64 11 83",
+    "price_level": null,
+    "user_ratings_total": 89,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJJWyh5T5TUkYR07smDWUynx8",
+    "name": "Bank- Og Sparekassemuseets Fond",
+    "formatted_address": "Heerings Gård, Overgaden Neden Vandet 11, 1414 København, Denmark",
+    "formatted_phone_number": "60 80 20 22",
+    "price_level": null,
+    "user_ratings_total": 37,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ2a4xkw1TUkYRiwuXfzS-WcQ",
+    "name": "House of Amber",
+    "formatted_address": "Vesterbrogade 1A, 1620 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 16,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJNxwCNXVTUkYR_JalBcrnMEM",
+    "name": "History & Art",
+    "formatted_address": "Stormgade 20, 1555 København, Denmark",
+    "formatted_phone_number": "21 17 15 78",
+    "price_level": null,
+    "user_ratings_total": 4,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJa_nWx3JTUkYRyxNKHmuFzzg",
+    "name": "Nok v/Annine Moltsen",
+    "formatted_address": "Tietgensgade 64, 1704 København, Denmark",
+    "formatted_phone_number": "33 23 46 55",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJT20EZKBTUkYR29VJmcsgBbU",
+    "name": "Børnemuseet",
+    "formatted_address": "Svanholmsvej 3A, 1905 Frederiksberg C, Denmark",
+    "formatted_phone_number": "25 75 41 42",
+    "price_level": null,
+    "user_ratings_total": 161,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJR5619xdTUkYRioG0c49cxvg",
+    "name": "Kunsthal Charlottenborg",
+    "formatted_address": "Nyhavn 2, 1051 København, Denmark",
+    "formatted_phone_number": "33 74 46 39",
+    "price_level": null,
+    "user_ratings_total": 1196,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJtVVCXwNTUkYRHvjdxDGPFAc",
+    "name": "The Danish Natural History Museum",
+    "formatted_address": "Øster Farimagsgade 2C, 1307 København, Denmark",
+    "formatted_phone_number": "35 32 22 22",
+    "price_level": null,
+    "user_ratings_total": 147,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJAQA8VR5TUkYRzIMAKZcyKSI",
+    "name": "Nyboder",
+    "formatted_address": "Sankt Pauls Gade 24, 1313 København K, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 580,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJm3l41DtTUkYRfSncaSvBfOw",
+    "name": "Christiania Art Museum / Stadens Museum / Gallopperiet",
+    "formatted_address": "Sydområdet 4B, 2.tv, 1440 København, Denmark",
+    "formatted_phone_number": "22 24 09 08",
+    "price_level": null,
+    "user_ratings_total": 78,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJMTzE6yFTUkYRb-Mi_aEBELM",
+    "name": "Designmuseets Venner",
+    "formatted_address": "Bredgade 68, 1260 København, Denmark",
+    "formatted_phone_number": "33 18 56 56",
+    "price_level": null,
+    "user_ratings_total": 12,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ29Bo2ZdTUkYRM1Yj0LLspos",
+    "name": "Frederiksbergmuseerne",
+    "formatted_address": "Andebakkesti 5, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "69 13 80 90",
+    "price_level": null,
+    "user_ratings_total": 4,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJQREJlZVTUkYRLf5Z-2C3wNg",
+    "name": "China house Frederiksberg Gardens",
+    "formatted_address": "Søndre Fasanvej 73, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 52,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJd9FXsydTUkYRqv2zLSC42B4",
+    "name": "Sælen submarine",
+    "formatted_address": "Nyholm, Bradbænken 1, 1439 København, Denmark",
+    "formatted_phone_number": "32 57 13 16",
+    "price_level": null,
+    "user_ratings_total": 119,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJW9kBmBBTUkYRZccGWkwJrfA",
+    "name": "Enigma",
+    "formatted_address": "Øster Allé 3, 2100 København Ø, Denmark",
+    "formatted_phone_number": "33 41 09 00",
+    "price_level": null,
+    "user_ratings_total": 456,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJY5oFvSdTUkYR-N3drE5P-gI",
+    "name": "HDMS Sehested",
+    "formatted_address": "Elefanten 2, 1439 København, Denmark",
+    "formatted_phone_number": "32 57 13 16",
+    "price_level": null,
+    "user_ratings_total": 26,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ_xlSlSdTUkYRS8R26oTSBLg",
+    "name": "Kystradiostationen OXA",
+    "formatted_address": "A. H. Vedels Pl., 1439 København K, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 7,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJq6qqqsZTUkYRflD5zEAeY2w",
+    "name": "Fdf Frederiksberg",
+    "formatted_address": "Nyelandsvej 54 1. tv., C/o Kasserer Pia Kirstine Lind, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "38 87 44 91",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJaZJ41odSUkYRiVVC5KTgebE",
+    "name": "Experimentarium",
+    "formatted_address": "Tuborg Havnevej 7, 2900 Hellerup, Denmark",
+    "formatted_phone_number": "39 27 33 33",
+    "price_level": null,
+    "user_ratings_total": 1654,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJDwHMV39RUkYRZQPAIot5pTk",
+    "name": "Future Suburban Contemporary / FSC",
+    "formatted_address": "Havdrupvej 52, 2700 København, Denmark",
+    "formatted_phone_number": "50 32 69 66",
+    "price_level": null,
+    "user_ratings_total": 6,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ_T619xZFUkYRRm277afz4xE",
+    "name": "Chakoten - Dansk Militærhistorisk Selskab",
+    "formatted_address": "Violvej 36, 3500 Værløse, Denmark",
+    "formatted_phone_number": "44 48 43 42",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJr0wzz6FRUkYRh6yruZ92VYI",
+    "name": "Lokalhistorisk Selskab For Brønshøj Husum og Utterslev",
+    "formatted_address": "Dyssevænget 74, 2700 København, Denmark",
+    "formatted_phone_number": "31 50 92 05",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJtfmzuSNRUkYRI2LYxdozBb8",
+    "name": "Batteritogsmagasinet",
+    "formatted_address": "voldgaden for enden af Rødovre Parkvej, 2610 Rødovre, Denmark",
+    "formatted_phone_number": "36 37 98 31",
+    "price_level": null,
+    "user_ratings_total": 37,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJbVGnESRRUkYRu3GKZIIfXmI",
+    "name": "Artillerimagasinet",
+    "formatted_address": "Rødovre Parkvej 623, Parkering, Følg voldgaden, 300 meter syd for Rødovre Parkvej, Rødovre Parkvej 501, 2610 Rødovre, Denmark",
+    "formatted_phone_number": "36 37 98 31",
+    "price_level": null,
+    "user_ratings_total": 57,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJCQXDHFxSUkYR9Dfp7xapSyo",
+    "name": "GeekPhysical",
+    "formatted_address": "Nymarksvej 54, 2650 Hvidovre, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJM26HMwOrU0YR1t7AyXBeGA0",
+    "name": "Museum Amager",
+    "formatted_address": "Nordre Kinkelgade 18A, 2791 Dragør, Denmark",
+    "formatted_phone_number": "32 53 93 07",
+    "price_level": null,
+    "user_ratings_total": 18,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJS6iKkflSUkYRu6lU9148YiI",
+    "name": "Parken",
+    "formatted_address": "Per Henrik Lings Allé 2, 2100 København, Denmark",
+    "formatted_phone_number": "35 43 31 31",
+    "price_level": null,
+    "user_ratings_total": 7899,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ8949-OJNUkYRx3-jcfdj_Lw",
+    "name": "Gentofte Sportspark",
+    "formatted_address": "Ved Stadion 10, 2820 Gentofte, Denmark",
+    "formatted_phone_number": "39 65 41 42",
+    "price_level": null,
+    "user_ratings_total": 643,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJCY-9k9xWUkYRKv1nLncm5Gk",
+    "name": "Brøndbyhallen",
+    "formatted_address": "Brøndby Stadion 10, 2605 Brøndby, Denmark",
+    "formatted_phone_number": "43 45 58 00",
+    "price_level": null,
+    "user_ratings_total": 1126,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJK4p8BVRTUkYRmYBGXJ7MJrA",
+    "name": "Sundby Idrætspark",
+    "formatted_address": "Englandsvej 61, 2300 København, Denmark",
+    "formatted_phone_number": "82 32 55 32",
+    "price_level": null,
+    "user_ratings_total": 516,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJq-jQF0-rU0YRdIucwrtaldw",
+    "name": "Tårnby Stadion",
+    "formatted_address": "Gemmas Alle 41, 2770 Kastrup, Denmark",
+    "formatted_phone_number": "30 76 02 24",
+    "price_level": null,
+    "user_ratings_total": 155,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ-fFn0Y1RUkYRGEqTodiNRRE",
+    "name": "Tingbjerg Idrætspark",
+    "formatted_address": "Ruten 2, 2700 København, Denmark",
+    "formatted_phone_number": "38 26 25 28",
+    "price_level": null,
+    "user_ratings_total": 279,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ7_-lsvFRUkYRxedZ-6hzh6s",
+    "name": "Gladsaxe Stadium",
+    "formatted_address": "Gladsaxevej 200, 2860 Søborg, Denmark",
+    "formatted_phone_number": "39 57 62 06",
+    "price_level": null,
+    "user_ratings_total": 311,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJj9azCmZOUkYRbX-fRtEOUI0",
+    "name": "Lyngby Stadion",
+    "formatted_address": "Lundtoftevej 53, 2800 Kongens Lyngby, Denmark",
+    "formatted_phone_number": "45 87 44 56",
+    "price_level": null,
+    "user_ratings_total": 706,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJZfsjazlQUkYRwHj3fzTvqlI",
+    "name": "Herlev Hallerne",
+    "formatted_address": "Tvedvangen 198, 2730 Herlev, Denmark",
+    "formatted_phone_number": "44 52 58 58",
+    "price_level": null,
+    "user_ratings_total": 571,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJLZ2lp9tWUkYR_f_80kcDryc",
+    "name": "Brøndby IF",
+    "formatted_address": "Brøndby Stadion 30, 2605 Brøndby, Denmark",
+    "formatted_phone_number": "43 63 08 10",
+    "price_level": null,
+    "user_ratings_total": 4316,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJF9R6rfBSUkYROH1LoK9uJBo",
+    "name": "Idrætshuset and Østerbro Stadium",
+    "formatted_address": "Gunnar Nu Hansens Pl. 7, nr. 7, 2100 København, Denmark",
+    "formatted_phone_number": "82 20 50 87",
+    "price_level": null,
+    "user_ratings_total": 432,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJDbUM5jxUUkYRyBP28RGXpmc",
+    "name": "Hvidovre Stadion",
+    "formatted_address": "Sollentuna Alle 1, 2650 Hvidovre, Denmark",
+    "formatted_phone_number": "36 49 18 01",
+    "price_level": null,
+    "user_ratings_total": 337,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJjWcpuYhNUkYRb3OQkxkD1PE",
+    "name": "Cafe Hik",
+    "formatted_address": "Bregnegårdsvej 25, 2900 Hellerup, Denmark",
+    "formatted_phone_number": "60 75 34 33",
+    "price_level": null,
+    "user_ratings_total": 74,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJuzJJ5w5TUkYRczoeeDBvyrU",
+    "name": "Arena Cphx A/S",
+    "formatted_address": "Jarmers Pl. 2, 1551 København, Denmark",
+    "formatted_phone_number": "35 25 41 00",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJxXMAcRBTUkYR28_5VELeNsA",
+    "name": "Copenhagen Creatures Flagfootball Club",
+    "formatted_address": "Krystalgade 3, 1172 København, Denmark",
+    "formatted_phone_number": "51 58 89 35",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ6zemmPlSUkYRo46NMZYXq-U",
+    "name": "Parken",
+    "formatted_address": "Ø,, Øster Allé 52-54, 2100 København, Denmark",
+    "formatted_phone_number": "35 43 74 00",
+    "price_level": null,
+    "user_ratings_total": 264,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJq6qqVplUUkYRiLIsuAsNhuY",
+    "name": "Københavns Kommune Motorbanen",
+    "formatted_address": "København S, 2300 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJmfbgud1TUkYREQMrjPs1BnM",
+    "name": "Frederiksberg Stadion",
+    "formatted_address": "Sønderjyllands Alle 6, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "38 77 60 30",
+    "price_level": null,
+    "user_ratings_total": 143,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJUxKIld1TUkYRRQGnbHp5UMQ",
+    "name": "Frederiksberg IF - Athletics & Exercise",
+    "formatted_address": "Sønderjyllands Alle 6, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "35 35 00 00",
+    "price_level": null,
+    "user_ratings_total": 7,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJP1RswXNUUkYRCET9HxzXG3w",
+    "name": "Valby Stadion",
+    "formatted_address": "Julius Andersens Vej 43, 2450 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 64,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ____qoBSUkYRiPhi7nwW-Y8",
+    "name": "HIK",
+    "formatted_address": "Onsgårdsvej 21, 2900 Hellerup, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJAW1kKwBVUkYRFMRPLWQAQEo",
+    "name": "Ørestad Stadium",
+    "formatted_address": "Metrovej 13, 2300 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 4,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJyxBlzDOrU0YR65aYWG4Zgkg",
+    "name": "Kastrup Idrætsanlæg/Kastrup Park",
+    "formatted_address": "John Tranums Allé 1, 2770 Kastrup, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 8,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ-5V0xK1RUkYR0tuBeGBhjxU",
+    "name": "Rødovre Stadion Kunstbane",
+    "formatted_address": "Horshøjvej 17, 2610 Rødovre, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 22,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ900D_EBRUkYRQe8WUYr2v0U",
+    "name": "Stadium Rødovre",
+    "formatted_address": "Rødovre Centrum 103, 2610 Rødovre, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJU4A-3GZRUkYRwWV74tkUHXo",
+    "name": "Tømrermester Jim Jensens Park",
+    "formatted_address": "Korsdalsvej 112, 2610 Rødovre, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 5,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ25n_wbVRUkYRSVzO1qC4API",
+    "name": "Elverroad",
+    "formatted_address": "2730 Herlev, Denmark",
+    "formatted_phone_number": "44 53 19 73",
+    "price_level": null,
+    "user_ratings_total": 10,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ8949-OJNUkYRsC9VONc-rMA",
+    "name": "Gentofte Stadion",
+    "formatted_address": "Ved Stadion 14, 2820 Gentofte, Denmark",
+    "formatted_phone_number": "39 65 41 42",
+    "price_level": null,
+    "user_ratings_total": 118,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJcRVvUNtWUkYR9nNOGi8xhxg",
+    "name": "Brøndby Stadion - Bane 2",
+    "formatted_address": "Brøndby Stadion 30, 2605 Brøndby, Denmark",
+    "formatted_phone_number": "29 73 83 22",
+    "price_level": null,
+    "user_ratings_total": 54,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJLZ2lp9tWUkYRTduXgsebE4g",
+    "name": "Fanzonen",
+    "formatted_address": "Brøndby Stadion 30, 2605 Brøndby, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 4,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJBUgdawBXUkYRmd-bpJaWOhE",
+    "name": "Brøndby Stadium",
+    "formatted_address": "2605 Brondby, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 8,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJAQAApI5WUkYR1yA8220kPLM",
+    "name": "Tybjergparken",
+    "formatted_address": "Tybjergparken 12, 2660 Brøndby Strand, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJe__4RzlQUkYRwr8xKPWSYXM",
+    "name": "Herlev Stadion",
+    "formatted_address": "Tvedvangen 200, 2730 Herlev, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 74,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJQ_-o1D5QUkYRnCVL828R-ew",
+    "name": "Herlev Idrætscenter",
+    "formatted_address": "Tvedvangen 198, 2730 Herlev, Denmark",
+    "formatted_phone_number": "44 52 58 11",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJH96FztJPUkYRws_Q-E8v3VM",
+    "name": "Bagsværd Stadion",
+    "formatted_address": "Bagsværd Hovedgade 86-90, 2880 Bagsværd, Denmark",
+    "formatted_phone_number": "39 57 62 00",
+    "price_level": null,
+    "user_ratings_total": 119,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJUZN50qxPUkYRDBhX4t3WJhc",
+    "name": "Virum Stadion",
+    "formatted_address": "Kaplevej 46a, 2830 Virum, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 12,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJS8tZlY9OUkYRkF0Y1SpVokM",
+    "name": "Lundtofte Idrætsplads & Idrætshal",
+    "formatted_address": "Ravnholmvej 11, 2800 Kongens Lyngby, Denmark",
+    "formatted_phone_number": "45 88 83 01",
+    "price_level": null,
+    "user_ratings_total": 17,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJEcVo0-RZUkYRDdkw4djSokQ",
+    "name": "Toftekærhallen/Stadion",
+    "formatted_address": "Egelundsvej 6A, 2620 Albertslund, Denmark",
+    "formatted_phone_number": "43 62 35 10",
+    "price_level": null,
+    "user_ratings_total": 12,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJV_neuJRNUkYRWbflSGPdtSU",
+    "name": "Bernstorff castle",
+    "formatted_address": "Jægersborg Alle 93, 2820 Gentofte, Denmark",
+    "formatted_phone_number": "39 63 10 80",
+    "price_level": null,
+    "user_ratings_total": 1028,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ7ymjuBFTUkYRGnfQZO8hyWc",
+    "name": "Caritas fountain by Statius Otto",
+    "formatted_address": "Vestergade, 1457 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 565,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ11kDavtRUkYRaurtOWBmMpQ",
+    "name": "Buddinge Batteri",
+    "formatted_address": "Gladsaxevej, 2860 Søborg, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 5,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJbcIKQSNTUkYRYZYvgz1Q0eU",
+    "name": "The Playhouse",
+    "formatted_address": "Sankt Annæ Pl. 36, 1250 Indre By, Denmark",
+    "formatted_phone_number": "33 69 69 69",
+    "price_level": null,
+    "user_ratings_total": 2493,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJAyFCjeuQTEYRPB41ogyQqN8",
+    "name": "The Little Mermaid",
+    "formatted_address": "Langelinie, 2100 København Ø, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 30407,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJAT81qSVTUkYRJPOOnVNxCr4",
+    "name": "Det Kongelige Teater - Operaen",
+    "formatted_address": "Ekvipagemestervej 10, 1438 København K, Denmark",
+    "formatted_phone_number": "33 69 69 69",
+    "price_level": null,
+    "user_ratings_total": 6975,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJjaXVDhJTUkYRjQHtvfmhuv4",
+    "name": "Hans Christian Andersen Experience",
+    "formatted_address": "Rådhuspladsen 57, 1550 København, Denmark",
+    "formatted_phone_number": "33 32 31 31",
+    "price_level": null,
+    "user_ratings_total": 840,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJecok-N9SUkYRM2v7tTvxyPg",
+    "name": "Kastellet",
+    "formatted_address": "Gl. Hovedvagt, Kastellet 1, 2100 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 2543,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJHVOeQhtTUkYRaKzp1xE05Q0",
+    "name": "The King's Garden",
+    "formatted_address": "Øster Voldgade 4A, 1307 København, Denmark",
+    "formatted_phone_number": "33 95 42 00",
+    "price_level": null,
+    "user_ratings_total": 12573,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJmR7d-w1TUkYREP3tqhywFyc",
+    "name": "City Hall Square",
+    "formatted_address": "1599 Copenhagen, Denmark",
+    "formatted_phone_number": "33 66 33 66",
+    "price_level": null,
+    "user_ratings_total": 21278,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJoZv7gxBTUkYRN6Q-o22fOuc",
+    "name": "The Round Tower",
+    "formatted_address": "Købmagergade 52A, 1150 København, Denmark",
+    "formatted_phone_number": "33 73 03 73",
+    "price_level": null,
+    "user_ratings_total": 25028,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJhwUoPJRTUkYR78kejeKf2zs",
+    "name": "Copenhagen Zoo",
+    "formatted_address": "Roskildevej 32, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "72 20 02 00",
+    "price_level": null,
+    "user_ratings_total": 24614,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJye06RjlTUkYRK7RPt-oBGME",
+    "name": "Church of Our Saviour",
+    "formatted_address": "Sankt Annæ Gade 29, 1416 København, Denmark",
+    "formatted_phone_number": "41 66 63 57",
+    "price_level": null,
+    "user_ratings_total": 8556,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJvYWnuhhTUkYR3m95N7vDrmo",
+    "name": "Frederik's Church",
+    "formatted_address": "Frederiksgade 4, 1265 København, Denmark",
+    "formatted_phone_number": "33 91 27 06",
+    "price_level": null,
+    "user_ratings_total": 8522,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJO9KdFKxTUkYR6_1IrFJ9jgY",
+    "name": "Assistens Cemetery",
+    "formatted_address": "Kapelvej 2, 2200 Nørrebro, Denmark",
+    "formatted_phone_number": "33 66 91 00",
+    "price_level": null,
+    "user_ratings_total": 522,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ36KzuxVTUkYRDDCgC3HCTGw",
+    "name": "Det Kgl. Bibliotek, The Royal Library",
+    "formatted_address": "Søren Kierkegaards Pl. 1, 1221 Indre By, Denmark",
+    "formatted_phone_number": "33 47 47 47",
+    "price_level": null,
+    "user_ratings_total": 1340,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJXYp1kiBTUkYRrjkQMxuLT8o",
+    "name": "Gefion Fountain",
+    "formatted_address": "Churchillparken, 1263 København K, Denmark",
+    "formatted_phone_number": "70 22 24 42",
+    "price_level": null,
+    "user_ratings_total": 2478,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJJ7ITIBhTUkYR4AvPXAdIYgM",
+    "name": "Kongens Nytorv",
+    "formatted_address": "Kongens Nytorv, 1050 Indre By, Denmark",
+    "formatted_phone_number": "70 22 24 42",
+    "price_level": null,
+    "user_ratings_total": 18132,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ7TqF1w9TUkYRJ0He5c0Ay6s",
+    "name": "Saint Petri Church",
+    "formatted_address": "Sankt Peders Stræde 2, 1453 København, Denmark",
+    "formatted_phone_number": "33 13 38 33",
+    "price_level": null,
+    "user_ratings_total": 204,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJp8jZW2pTUkYRQmmHh_lfaPk",
+    "name": "Amager Beachpark",
+    "formatted_address": "Amager Strand Promenaden 1, 2300 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 9972,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJY47XZhZTUkYRVa7TqtZPkss",
+    "name": "Børsen",
+    "formatted_address": "1217 Indre By, Denmark",
+    "formatted_phone_number": "33 74 60 00",
+    "price_level": null,
+    "user_ratings_total": 1667,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ0zpeghdTUkYRc3uAuuHgZ50",
+    "name": "Guinness World Records Museum",
+    "formatted_address": "Østergade 16, 1100 København, Denmark",
+    "formatted_phone_number": "33 32 31 31",
+    "price_level": null,
+    "user_ratings_total": 3673,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJRb36Tz5TUkYRKdh_2I2YIlI",
+    "name": "Christian's Church",
+    "formatted_address": "Strandgade 1, 1401 København, Denmark",
+    "formatted_phone_number": "32 54 15 76",
+    "price_level": null,
+    "user_ratings_total": 303,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJW7zM0hBTUkYR6ZKVuxWzFgw",
+    "name": "Stork Fountain",
+    "formatted_address": "Amagertorv 6, 1160 København, Denmark",
+    "formatted_phone_number": "70 22 24 42",
+    "price_level": null,
+    "user_ratings_total": 2975,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJYwKWn5ZTUkYR_NPLdkpx0Xo",
+    "name": "Frederiksberg Palace",
+    "formatted_address": "Roskildevej 28 A, 2000 Frederiksberg C, Denmark",
+    "formatted_phone_number": "72 81 77 73",
+    "price_level": null,
+    "user_ratings_total": 956,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJVZnk3BBTUkYR5bFt3-L7j2c",
+    "name": "Church of the Holy Spirit",
+    "formatted_address": "Niels Hemmingsens Gade 5, 1151 København, Denmark",
+    "formatted_phone_number": "33 15 41 44",
+    "price_level": null,
+    "user_ratings_total": 771,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJyWLBzRZTUkYRwvMlwjcWmpw",
+    "name": "Stromma Canal Tours Copenhagen",
+    "formatted_address": "Nyhavn 3, 1051 København, Denmark",
+    "formatted_phone_number": "32 96 30 00",
+    "price_level": null,
+    "user_ratings_total": 2969,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJa3JPQRZTUkYR_IXRgbTSM7M",
+    "name": "Church of Holmen",
+    "formatted_address": "Holmens Kanal 21, 1060 Indre By, Denmark",
+    "formatted_phone_number": "33 13 61 78",
+    "price_level": null,
+    "user_ratings_total": 830,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJPwVYDhBTUkYRNkwCykidSnY",
+    "name": "Trinitatis Kirke",
+    "formatted_address": "Landemærket 2, 1150 København, Denmark",
+    "formatted_phone_number": "31 63 39 39",
+    "price_level": null,
+    "user_ratings_total": 907,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJp_7i9CBTUkYRC0PyZvIx2Pg",
+    "name": "St Alban's Church",
+    "formatted_address": "Churchillparken 11, 1263 Indre By, Denmark",
+    "formatted_phone_number": "33 11 85 18",
+    "price_level": null,
+    "user_ratings_total": 845,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJHWOjuSNTUkYR4F-CiktZrfE",
+    "name": "Amaliehaven",
+    "formatted_address": "Toldbodgade, 1253 København, Denmark",
+    "formatted_phone_number": "33 95 42 00",
+    "price_level": null,
+    "user_ratings_total": 967,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ15YwRP5NUkYR43n51gE8GFs",
+    "name": "Vangede Church",
+    "formatted_address": "Vangedevej 50, 2820 Gentofte, Denmark",
+    "formatted_phone_number": "39 96 22 90",
+    "price_level": null,
+    "user_ratings_total": 185,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJIwAhQpRTUkYRVpytopoOMT0",
+    "name": "Zoo Food & Shop",
+    "formatted_address": "Roskildevej 38, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "36 46 60 00",
+    "price_level": null,
+    "user_ratings_total": 30,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJwaeiOJFTUkYR4Qz2dXyl1fE",
+    "name": "Panda House",
+    "formatted_address": "Det Gamle elefanthus, Roskildevej 32, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "72 20 02 00",
+    "price_level": null,
+    "user_ratings_total": 14,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ8RvFSKVXUkYR_a5hYcZRCWQ",
+    "name": "Danhostel",
+    "formatted_address": "Ishøj Strandvej 13, 2635 Ishøj, Denmark",
+    "formatted_phone_number": "43 53 50 15",
+    "price_level": null,
+    "user_ratings_total": 435,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJIbsHLjBRUkYRjQPr_70JQFM",
+    "name": "DCU Camping Absalon",
+    "formatted_address": "Korsdalsvej 132, 2610 Rødovre, Denmark",
+    "formatted_phone_number": "36 41 06 00",
+    "price_level": null,
+    "user_ratings_total": 1743,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJq6qqavhSUkYRdho_GP77Q0A",
+    "name": "Fælledparken",
+    "formatted_address": "Østerbro, 2100 København, Denmark",
+    "formatted_phone_number": "33 66 33 66",
+    "price_level": null,
+    "user_ratings_total": 5814,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJWwQgFS1SUkYRIXkvR50tyl4",
+    "name": "Bellahøj Camping",
+    "formatted_address": "Hvidkildevej 66, 2400 København, Denmark",
+    "formatted_phone_number": "38 10 11 50",
+    "price_level": null,
+    "user_ratings_total": 1109,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJDVU2v7NXUkYRJrUd7tNkQls",
+    "name": "Tangloppen Camping",
+    "formatted_address": "Tangloppen 2, 2635 Ishøj, Denmark",
+    "formatted_phone_number": "22 90 33 21",
+    "price_level": null,
+    "user_ratings_total": 888,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ____bw9TUkYRh9i7rSNNeqM",
+    "name": "Flindt & Ørsted",
+    "formatted_address": "Nørre Farimagsgade 6, 1364 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": 2,
+    "user_ratings_total": 393,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJH_fxOq2sU0YRe6lNR1QV6xc",
+    "name": "Anlægsgartner Robert Tranto",
+    "formatted_address": "Peder Lykkes Vej 8, 2300 København, Denmark",
+    "formatted_phone_number": "40 60 78 45",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJSTJ0uOZSUkYR7rVuq0Sh9JA",
+    "name": "Classens Have",
+    "formatted_address": "Arendalsgade 2, 2100 København, Denmark",
+    "formatted_phone_number": "35 26 20 19",
+    "price_level": null,
+    "user_ratings_total": 270,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJwSk7nRtTUkYRr3ft74QwTTo",
+    "name": "Rosenhaven",
+    "formatted_address": "Øster Voldgade 4A, 1307 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 79,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJv2c4eaRTUkYRXJJyk4xUqmo",
+    "name": "Landbohøjskolens Have",
+    "formatted_address": "Bülowsvej 17, 1870 Frederiksberg, Denmark",
+    "formatted_phone_number": "35 32 26 26",
+    "price_level": null,
+    "user_ratings_total": 1587,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJBwNJMyirU0YRwjRdC3-Ffkk",
+    "name": "Haveforeningen Sommervirke",
+    "formatted_address": "Viberupstræde 8, 2770 Kastrup, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 48,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJrfrG76RWUkYRZizQjSNylkQ",
+    "name": "H/F Kettehøj",
+    "formatted_address": "Kettevej 26, 2650 Hvidovre, Denmark",
+    "formatted_phone_number": "23 46 33 05",
+    "price_level": null,
+    "user_ratings_total": 13,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJS9NgVURSUkYRPGVVYIW-BQ4",
+    "name": "Haveforeningen 4 Maj af 1921",
+    "formatted_address": "Lersøstien 127, 2100 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 16,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJdcsl71pSUkYRKanVPkuiLzw",
+    "name": "Bolsjefabrikken",
+    "formatted_address": "Ragnhildgade 1, 2100 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 285,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJtW0gaxJOUkYRN76ukzGjh9Y",
+    "name": "www.toprobot.dk",
+    "formatted_address": "Christian X's Alle 17, 2800 Kongens Lyngby, Denmark",
+    "formatted_phone_number": "91 10 00 00",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJh7SKS0FUUkYR6pEUWZSahBU",
+    "name": "Lodsparken",
+    "formatted_address": "Lodsvej 80, 2650 Hvidovre, Denmark",
+    "formatted_phone_number": "33 36 33 36",
+    "price_level": null,
+    "user_ratings_total": 126,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJwc_EmxBRUkYRveKIkQeJrBM",
+    "name": "Haveforeningen Dano",
+    "formatted_address": "Jyllingevej 287, 2610 Rødovre, Denmark",
+    "formatted_phone_number": "23 24 34 38",
+    "price_level": null,
+    "user_ratings_total": 31,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJTdmbXA1OUkYRXO0r8GkVDB4",
+    "name": "JENSEN Services",
+    "formatted_address": "Jægersborgvej 20, 2800 Kongens Lyngby, Denmark",
+    "formatted_phone_number": "29 25 99 07",
+    "price_level": null,
+    "user_ratings_total": 1,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJb80LwG1RUkYRYv2d1skmzyw",
+    "name": "Anlægsgartnerfirmaet Havetjeneren V/ Peter Skrydstrup",
+    "formatted_address": "Jyllingevej 137, 2610 Rødovre, Denmark",
+    "formatted_phone_number": "42 24 42 24",
+    "price_level": null,
+    "user_ratings_total": 3,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJYcVu1Q9UUkYRWwrFAmMNfvg",
+    "name": "Havemands Assistance",
+    "formatted_address": "Bjeverskov Alle 62, 2650 Hvidovre, Denmark",
+    "formatted_phone_number": "21 43 30 66",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJbZCVcaysU0YRtqTrU_xnkZY",
+    "name": "HF ved Pilegården",
+    "formatted_address": "Pilegård Alle 16, 2770 Kastrup, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 18,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ64Sh2olUUkYRB5i5IqTiVNc",
+    "name": "Sydhavnstippen",
+    "formatted_address": "Fragtvej 7, 2450 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 1191,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ1Z5_TDBSUkYRyEP6Ku54K-A",
+    "name": "Sparholt Byg Og Anlæg",
+    "formatted_address": "Møntmestervej 10, 2400 København, Denmark",
+    "formatted_phone_number": "26 91 78 26",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJzbcFmSlSUkYRIE7wqpdO61A",
+    "name": "Hcm Arkitekter ApS Par",
+    "formatted_address": "Vikkevangen 14, 2700 København, Denmark",
+    "formatted_phone_number": "33 15 58 70",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ3dX2bnVTUkYRYkFwnuaSDMA",
+    "name": "Saxopark",
+    "formatted_address": "Saxogade 17, 1662 København, Denmark",
+    "formatted_phone_number": "33 66 33 66",
+    "price_level": null,
+    "user_ratings_total": 54,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJvTX20cxTUkYRFJiALBKT2zY",
+    "name": "Nedergaards Haveservice",
+    "formatted_address": "Genforeningspladsen 37, 2400 København, Denmark",
+    "formatted_phone_number": "24 27 00 66",
+    "price_level": null,
+    "user_ratings_total": 2,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJh2JQt7pUUkYRDy2ik1O8me0",
+    "name": "Metrohaverne",
+    "formatted_address": "Ørestads Blvd. 55B, 2300 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 6,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJFU2pgQ5TUkYRgEJ2RG3dhng",
+    "name": "Byhaven - Pumpehuset",
+    "formatted_address": "Studiestræde 52, 1554 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": 2,
+    "user_ratings_total": 268,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJdyGUghJTUkYRntkZu2eTw84",
+    "name": "Tivolis Springvand",
+    "formatted_address": "Vesterbrogade 3, 1620 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 29,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJM7xLCw9TUkYRnaZMXsLL6v8",
+    "name": "Ørstedsparken",
+    "formatted_address": "Nørre Voldgade 1, 1358 København, Denmark",
+    "formatted_phone_number": "33 66 33 66",
+    "price_level": null,
+    "user_ratings_total": 4969,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJeW5RtwtTUkYREjgjV9tukIA",
+    "name": "Sankt Jørgens Sø",
+    "formatted_address": "Sankt Jørgens Sø, København, Дания, 1601 København, Denmark",
+    "formatted_phone_number": "33 66 33 66",
+    "price_level": null,
+    "user_ratings_total": 174,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJNz-k0hVTUkYRUqI-FugMXT0",
+    "name": "Garden of the Royal Library",
+    "formatted_address": "Proviantpassagen 1, 1218 København, Denmark",
+    "formatted_phone_number": "33 95 42 00",
+    "price_level": null,
+    "user_ratings_total": 2548,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJBQlXIghTUkYRb_V-_VXi59o",
+    "name": "Foreningen Byens Vandrefugle",
+    "formatted_address": "Kleinsgade 6, 1633 København, Denmark",
+    "formatted_phone_number": "35 36 19 93",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ7ZDuxyJTUkYRHew6hPbjcuk",
+    "name": "RECREATIVO",
+    "formatted_address": "Lille Strandstræde 14C, 1254 København, Denmark",
+    "formatted_phone_number": "51 90 78 75",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJhXjidDdTUkYRVt18qc7sh6Y",
+    "name": "Vennelyst Allotment Gardens",
+    "formatted_address": "H/F Vennelyst, 2300 København S, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 25,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJK5Em90pTUkYR-NncStlwUww",
+    "name": "Haveforeningen Vennelyst",
+    "formatted_address": "Kløvermarksvej 39, 2300 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 14,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJj6ehyZdTUkYRr9trwgFlA10",
+    "name": "Haveselskabets Have",
+    "formatted_address": "Pile Allé 6, 2000 Frederiksberg, Denmark",
+    "formatted_phone_number": "45 93 60 00",
+    "price_level": null,
+    "user_ratings_total": 439,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJA-o6fkVTUkYRSKcqt_Cv-PQ",
+    "name": "City Garden in Sundholm",
+    "formatted_address": "Sundholmsvej 44, 2300 København, Denmark",
+    "formatted_phone_number": "33 17 66 14",
+    "price_level": null,
+    "user_ratings_total": 43,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJwWMVZ99SUkYRX7tKubaBAMQ",
+    "name": "Langelinieparken",
+    "formatted_address": "Langelinie 25, Langelinieparken, 2100 København, Denmark",
+    "formatted_phone_number": "33 66 33 66",
+    "price_level": null,
+    "user_ratings_total": 219,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJBc_kai9TUkYRv6ItKHOfY38",
+    "name": "Schifters Bådlaug Holmen",
+    "formatted_address": "Eik Skaløes Pl., 1437 København, Denmark",
+    "formatted_phone_number": "44 47 45 47",
+    "price_level": null,
+    "user_ratings_total": 8,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJfYAo_TZTUkYRgf-FfTguAFU",
+    "name": "Hf Rosen",
+    "formatted_address": "Kløvermarksvej 601-699, 2300 København, Denmark",
+    "formatted_phone_number": "28 35 44 64",
+    "price_level": null,
+    "user_ratings_total": 9,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJj6-0h2FTUkYRjaBC-XSAoTE",
+    "name": "H/F Prøvestenen",
+    "formatted_address": "Kardinalgangen 3, 2300 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 13,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ926xQFJSUkYR05o_zN6uPCs",
+    "name": "Bananna Park",
+    "formatted_address": "Nannasgade 6, 2200 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 389,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJQYbCzo9TUkYRJvWZenJQrrA",
+    "name": "Vesterbro/Vasby skolehave",
+    "formatted_address": "Vigerslev Allé 10, 2500 København, Denmark",
+    "formatted_phone_number": "20 23 49 59",
+    "price_level": null,
+    "user_ratings_total": 10,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJzRCsrE1SUkYRxGJPTwVjwO0",
+    "name": "Superkilen Park",
+    "formatted_address": "Nørrebrogade 210, 2200 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 3788,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJO4Xl3ddSUkYRx_Yhf7I6H9E",
+    "name": "Energihøjskolen Risø-Park",
+    "formatted_address": "Refshalevej 147, 1432 København, Denmark",
+    "formatted_phone_number": "52 65 16 06",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJwRRdKVdSUkYR45kEsmWxtcY",
+    "name": "Sifs Plads",
+    "formatted_address": "Rådmandsgade 71, 2100 København, Denmark",
+    "formatted_phone_number": "33 66 33 66",
+    "price_level": null,
+    "user_ratings_total": 46,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJo3uDscqsU0YRmoD2J87LmMw",
+    "name": "Blyme Brolægning & Entreprise",
+    "formatted_address": "Holmbladsgade 102, 2300 København, Denmark",
+    "formatted_phone_number": "28 25 90 19",
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJYQ0FMUxSUkYR9BBMNE3ymOk",
+    "name": "The Black Square",
+    "formatted_address": "2200 Copenhagen, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": 436,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJx7-FzN1SUkYRedoDcaGxLVc",
+    "name": "Langelinie",
+    "formatted_address": "Langeliniekaj 2, 2100 København, Denmark",
+    "formatted_phone_number": "33 66 33 66",
+    "price_level": null,
+    "user_ratings_total": 24073,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJQ1wUoCtTUkYRivQIXIVAfcg",
+    "name": "CopenHill",
+    "formatted_address": "Vindmøllevej 6, 2300 København, Denmark",
+    "formatted_phone_number": "71 96 71 97",
+    "price_level": null,
+    "user_ratings_total": 1992,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJcRvLTZxUUkYRpxRVQcbu13U",
+    "name": "H/F Sønderbro",
+    "formatted_address": "Hf. Sønderbro, 2300 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": 1,
+    "user_ratings_total": 72,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJIz2AXDxTUkYRuGeU5t1-3QQ",
+    "name": "Copenhagen",
+    "formatted_address": "Copenhagen, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJrY3M2Q1TUkYRV_es13Xuvgc",
+    "name": "The Square",
+    "formatted_address": "Rådhuspladsen 14, 1550 Indre By, Denmark",
+    "formatted_phone_number": "33 38 12 00",
+    "price_level": null,
+    "user_ratings_total": 2219,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ_R390wxTUkYRzV3v0MZ2MQY",
+    "name": "Good Morning City Copenhagen Star",
+    "formatted_address": "Colbjørnsensgade 13, 1652 København, Denmark",
+    "formatted_phone_number": "33 22 11 00",
+    "price_level": null,
+    "user_ratings_total": 1669,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ0fiN1WxTUkYR1kQtTB_psbc",
+    "name": "Cabinn City",
+    "formatted_address": "Mitchellsgade 14, 1568 København, Denmark",
+    "formatted_phone_number": "33 46 16 16",
+    "price_level": null,
+    "user_ratings_total": 3868,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJHWaluxRTUkYRujo4DJeFAD4",
+    "name": "Danhostel Copenhagen City",
+    "formatted_address": "H. C. Andersens Blvd. 50, 1553 København, Denmark",
+    "formatted_phone_number": "33 11 85 85",
+    "price_level": null,
+    "user_ratings_total": 3803,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ8cm0n2xTUkYRuHQv4XKdSdw",
+    "name": "Copenhagen Marriott Hotel",
+    "formatted_address": "Kalvebod Brygge 5, 1560 København, Denmark",
+    "formatted_phone_number": "88 33 99 00",
+    "price_level": null,
+    "user_ratings_total": 3181,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJZ-WWv1lSUkYRDaV_tjWEybs",
+    "name": "Cabinn",
+    "formatted_address": "Vodroffsvej 55, 1900 Frederiksberg, Denmark",
+    "formatted_phone_number": "35 36 11 11",
+    "price_level": null,
+    "user_ratings_total": 1842,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJUYRACmpTUkYR0WGMLq_sLEk",
+    "name": "Hotel Copenhagen",
+    "formatted_address": "Egilsgade 33, 2300 København, Denmark",
+    "formatted_phone_number": "32 96 27 27",
+    "price_level": null,
+    "user_ratings_total": 432,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJRS1_BQxTUkYRQjRvhqEIIOI",
+    "name": "Mercur Hotel",
+    "formatted_address": "Vester Farimagsgade 17, 1606 København V, Denmark",
+    "formatted_phone_number": "33 12 57 11",
+    "price_level": null,
+    "user_ratings_total": 986,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ_RZHnwVTUkYR5YkknOblWI4",
+    "name": "Hotel Jørgensen",
+    "formatted_address": "Rømersgade 11, 1362 København, Denmark",
+    "formatted_phone_number": "33 13 81 86",
+    "price_level": null,
+    "user_ratings_total": 456,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJTVkWzwVTUkYRyZ9mfpng30w",
+    "name": "Ibsens Hotel",
+    "formatted_address": "Vendersgade 23, 1363 København, Denmark",
+    "formatted_phone_number": "33 45 77 40",
+    "price_level": null,
+    "user_ratings_total": 910,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ11cTfhhTUkYRZdrbH2bbvwM",
+    "name": "Phoenix Copenhagen",
+    "formatted_address": "Bredgade 37, 1260 København, Denmark",
+    "formatted_phone_number": "33 95 95 00",
+    "price_level": null,
+    "user_ratings_total": 1488,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJD7mWaxBOUkYRxbsB1zBfdLw",
+    "name": "Wakeup Copenhagen, Carsten Niebuhrs Gade",
+    "formatted_address": "Carsten Niebuhrs Gade 11, 1577 København V, Denmark",
+    "formatted_phone_number": "44 80 00 00",
+    "price_level": null,
+    "user_ratings_total": 3688,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJTyDoRDNTUkYRbxuEF9SVdRc",
+    "name": "Indre By",
+    "formatted_address": "Indre By, Copenhagen, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJ13K41xNTUkYR82m2zsHJoWc",
+    "name": "Copenhagen Downtown Hostel",
+    "formatted_address": "Vandkunsten 5, 1467 København, Denmark",
+    "formatted_phone_number": "70 23 21 10",
+    "price_level": null,
+    "user_ratings_total": 3396,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJ9zNuDwxTUkYRCujGL5wjpAQ",
+    "name": "Hotel Richmond",
+    "formatted_address": "Vester Farimagsgade 33, 1606 København V, Denmark",
+    "formatted_phone_number": "33 12 33 66",
+    "price_level": null,
+    "user_ratings_total": 1286,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJxT5ixXJTUkYRlXXdJBB7Idk",
+    "name": "Hotel Ansgar",
+    "formatted_address": "Colbjørnsensgade 29, 1652 Vesterbro, Denmark",
+    "formatted_phone_number": "32 52 00 30",
+    "price_level": null,
+    "user_ratings_total": 1114,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJGeO3UQxTUkYR0ooe96dTIQo",
+    "name": "Radisson Collection Royal Hotel, Copenhagen",
+    "formatted_address": "Hammerichsgade 1, 1611 København, Denmark",
+    "formatted_phone_number": "33 42 60 00",
+    "price_level": null,
+    "user_ratings_total": 1871,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJr8-p1AxTUkYRIe-CIQUiEns",
+    "name": "Saga Hotel",
+    "formatted_address": "Colbjørnsensgade 18, 1652 København, Denmark",
+    "formatted_phone_number": "32 52 00 30",
+    "price_level": null,
+    "user_ratings_total": 1305,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJX2aYuQxTUkYRkIYMkicKvvE",
+    "name": "Best Western Hotel Hebron",
+    "formatted_address": "Helgolandsgade 4, 1653 København, Denmark",
+    "formatted_phone_number": "33 31 69 06",
+    "price_level": null,
+    "user_ratings_total": 1196,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJyy9qkwxTUkYREcu7cldQ5ZU",
+    "name": "Scandic Webers",
+    "formatted_address": "Vesterbrogade 11B, 1620 København, Denmark",
+    "formatted_phone_number": "33 31 14 32",
+    "price_level": null,
+    "user_ratings_total": 1119,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ1YznygxTUkYRR1dNqFcriUA",
+    "name": "Andersen Hotel",
+    "formatted_address": "Helgolandsgade 12, 1653 Vesterbro, Denmark",
+    "formatted_phone_number": "33 31 46 10",
+    "price_level": null,
+    "user_ratings_total": 791,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJqX8RM3NTUkYRdBwmzzaW0fQ",
+    "name": "Absalon Hotel",
+    "formatted_address": "Helgolandsgade 15, 1653 København V, Denmark",
+    "formatted_phone_number": "33 31 43 44",
+    "price_level": 1,
+    "user_ratings_total": 2255,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJmxX_bAxTUkYR7wQEHXYXrpw",
+    "name": "Imperial Hotel",
+    "formatted_address": "Vester Farimagsgade 9, 1606 København, Denmark",
+    "formatted_phone_number": "33 12 80 00",
+    "price_level": null,
+    "user_ratings_total": 2443,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJhWPHuAxTUkYR1QpDySLBdwI",
+    "name": "Hotel Mayfair",
+    "formatted_address": "Helgolandsgade 3, 1653 København, Denmark",
+    "formatted_phone_number": "70 12 17 00",
+    "price_level": null,
+    "user_ratings_total": 1992,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJSToneQ5TUkYRL6F1-qJg6FE",
+    "name": "Hotel Alexandra",
+    "formatted_address": "H. C. Andersens Blvd. 8, 1553 København V, Denmark",
+    "formatted_phone_number": "33 74 44 44",
+    "price_level": null,
+    "user_ratings_total": 447,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJDekmEBBTUkYRlSqpoxmoNsw",
+    "name": "Københavns Universitets Studenterfond",
+    "formatted_address": "Fiolstræde 22, 1171 København, Denmark",
+    "formatted_phone_number": null,
+    "price_level": null,
+    "user_ratings_total": null,
+    "wheelchair_accessible_entrance": null
+  },
+  {
+    "place_id": "ChIJvfTg2QxTUkYRc78vd1cISUI",
+    "name": "Nebo",
+    "formatted_address": "Istedgade 6, 1650 København, Denmark",
+    "formatted_phone_number": "33 21 12 17",
+    "price_level": null,
+    "user_ratings_total": 1234,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJ68Q813JTUkYRWiU66xHHxg4",
+    "name": "Hotel Tiffany",
+    "formatted_address": "Colbjørnsensgade 28, 1652 København, Denmark",
+    "formatted_phone_number": "33 21 80 50",
+    "price_level": null,
+    "user_ratings_total": 394,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJJWVZBAVTUkYRjGT4TPSdcrs",
+    "name": "Hotel Windsor",
+    "formatted_address": "Frederiksborggade 30, 1360 København, Denmark",
+    "formatted_phone_number": "33 11 08 30",
+    "price_level": null,
+    "user_ratings_total": 175,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJu5LayzxTUkYRCuFiXzqqlFk",
+    "name": "71 Nyhavn Hotel",
+    "formatted_address": "Nyhavn 71, 1051 København, Denmark",
+    "formatted_phone_number": "33 43 62 00",
+    "price_level": null,
+    "user_ratings_total": 948,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJCYQZeAZTUkYRmXRjJDsELWE",
+    "name": "Hotel Kong Arthur",
+    "formatted_address": "Nørre Søgade 11, 1370 København, Denmark",
+    "formatted_phone_number": "33 11 12 12",
+    "price_level": null,
+    "user_ratings_total": 1805,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJvdgcFUBTUkYR6i7DuAehCz0",
+    "name": "Radisson Blu Scandinavia Hotel Copenhagen",
+    "formatted_address": "Amager Boul. 70, 2300 København, Denmark",
+    "formatted_phone_number": "33 96 50 00",
+    "price_level": null,
+    "user_ratings_total": 4381,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJhVSL2KhTUkYRl2lSLbd4nlI",
+    "name": "Sleep in Heaven",
+    "formatted_address": "Struenseegade 7, 2200 København, Denmark",
+    "formatted_phone_number": "41 44 42 36",
+    "price_level": null,
+    "user_ratings_total": 1322,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJrzXYqT1TUkYRUQS8CudkRZU",
+    "name": "Copenhagen Strand",
+    "formatted_address": "Havnegade 37, 1058 København, Denmark",
+    "formatted_phone_number": "33 48 99 00",
+    "price_level": null,
+    "user_ratings_total": 1225,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ_12Ut21TUkYRuCBz3jjsOtY",
+    "name": "Tivoli Hotel",
+    "formatted_address": "Arni Magnussons Gade 2, 1577 København, Denmark",
+    "formatted_phone_number": "32 68 40 00",
+    "price_level": null,
+    "user_ratings_total": 8027,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJR9oqip9TUkYRnVT4UNKkG48",
+    "name": "Hotel Sct. Thomas",
+    "formatted_address": "Frederiksberg Allé 7, 1621 København, Denmark",
+    "formatted_phone_number": "33 21 64 64",
+    "price_level": null,
+    "user_ratings_total": 559,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJZXoACj1TUkYR11gRlv_yQiQ",
+    "name": "The Huxley Copenhagen, BW Premier Collection",
+    "formatted_address": "Peder Skrams Gade 24, 1054 København, Denmark",
+    "formatted_phone_number": "33 13 06 66",
+    "price_level": null,
+    "user_ratings_total": 721,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJjdtQ4OFSUkYRRaKg0Tc4MYo",
+    "name": "Hotel Østerport",
+    "formatted_address": "Oslo Pl. 5, 2100 København, Denmark",
+    "formatted_phone_number": "70 12 46 46",
+    "price_level": null,
+    "user_ratings_total": 1598,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJ6a8NKm5TUkYRlyJ_Xt6fcNg",
+    "name": "Copenhagen Island",
+    "formatted_address": "Kalvebod Brygge 53, 1560 København, Denmark",
+    "formatted_phone_number": "33 38 96 00",
+    "price_level": null,
+    "user_ratings_total": 2788,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJIVCXCT1TUkYRZz6PZwB_0vQ",
+    "name": "Hotel Maritime",
+    "formatted_address": "Peder Skrams Gade 19, 1054 København, Denmark",
+    "formatted_phone_number": "33 13 48 82",
+    "price_level": null,
+    "user_ratings_total": 527,
+    "wheelchair_accessible_entrance": false
+  },
+  {
+    "place_id": "ChIJs0-gtApTUkYRzhMLdBEcWkw",
+    "name": "66 Guldsmeden",
+    "formatted_address": "Vesterbrogade 66, 1620 København, Denmark",
+    "formatted_phone_number": "33 22 15 00",
+    "price_level": null,
+    "user_ratings_total": 723,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJrQH5MwtTUkYRsSfHhQ_k1Ck",
+    "name": "Savoy Hotel & Bar",
+    "formatted_address": "Vesterbrogade 34, 1620 København, Denmark",
+    "formatted_phone_number": "53 72 96 47",
+    "price_level": null,
+    "user_ratings_total": 719,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJFexpOgdTUkYRjyWvw4EfZ_U",
+    "name": "Hotel Nora Copenhagen",
+    "formatted_address": "Nørrebrogade 18B, 2200 København, Denmark",
+    "formatted_phone_number": "35 37 20 21",
+    "price_level": null,
+    "user_ratings_total": 486,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJrVv_hRBTUkYRv3Uv0r7Mhno",
+    "name": "Sort/Hvid",
+    "formatted_address": "Staldgade 26-30, 1699 København, Denmark",
+    "formatted_phone_number": "70 70 74 94",
+    "price_level": null,
+    "user_ratings_total": 103,
+    "wheelchair_accessible_entrance": true
+  },
+  {
+    "place_id": "ChIJ1z_SKPxSUkYRwJtupwdcWTQ",
+    "name": "Niels Bohr Institute",
+    "formatted_address": "Blegdamsvej 17, 2100 København, Denmark",
+    "formatted_phone_number": "35 32 52 09",
+    "price_level": null,
+    "user_ratings_total": 59,
+    "wheelchair_accessible_entrance": false
+  }
+]
