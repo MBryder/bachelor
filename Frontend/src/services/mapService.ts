@@ -57,7 +57,7 @@ export default Map;
 const getOSMRoadsPath = async (coordinates: google.maps.LatLngLiteral[]) => {
     if (coordinates.length < 2) return coordinates;
 
-    const apiUrl = `https://router.project-osrm.org/route/v1/walking/${coordinates
+    const apiUrl = `https://router.project-osrm.org/route/v1/walk/${coordinates
         .map(coord => `${coord.lng},${coord.lat}`)
         .join(";")}?geometries=geojson`;
 
