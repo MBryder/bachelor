@@ -14,8 +14,8 @@ namespace MyBackend.Data
         public DbSet<Place> Places { get; set; }
         public DbSet<Photo> Photos { get; set; }
         public DbSet<PlaceType> PlaceTypes { get; set; }
-
         public DbSet<Image> Images { get; set; }
+        public DbSet<Details> Details { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -42,6 +42,13 @@ namespace MyBackend.Data
                 .WithMany(p => p.Images)
                 .HasForeignKey(i => i.PlaceId)
                 .HasPrincipalKey(p => p.PlaceId);
+
+            // 👇 Optional but recommended to define the one-to-one relationship explicitly:
+            modelBuilder.Entity<Place>()
+                .HasOne(p => p.Details)
+                .WithOne(d => d.Place)
+                .HasForeignKey<Details>(d => d.PlaceId)
+                .HasPrincipalKey<Place>(p => p.PlaceId);
         }
     }
 }

@@ -30,5 +30,42 @@ namespace MyBackend.Controllers
 
             return Ok(places);
         }
+
+        // GET /places/test
+        [HttpGet("test")]
+        public async Task<IActionResult> GetTestPlacesWithDetails()
+        {
+            var places = await _context.Places
+                .Include(p => p.Images)
+                .Include(p => p.Details)
+                .Take(5)
+                .ToListAsync();
+
+            var result = places.Select(p => new
+            {
+                p.PlaceId,
+                p.Name,
+                p.Rating,
+                p.Latitude,
+                p.Longitude,
+                imageUrls = p.Images.Select(i => i.ImageUrl).ToList(),
+                details = p.Details != null ? new
+                {
+                    p.Details.FormattedAddress,
+                    p.Details.FormattedPhoneNumber,
+                    p.Details.PriceLevel,
+                    p.Details.UserRatingsTotal,
+                    p.Details.WheelchairAccessibleEntrance
+                } : null
+            });
+
+            return Ok(new
+            {
+                message = "Fetched first 5 places with images and details",
+                count = result.Count(),
+                places = result
+            });
+        }
+
     }
 }
