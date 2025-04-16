@@ -139,13 +139,9 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                 })),
             };
         
-            const uniqueTourism = Array.from(
-                new Set(geoJson.features.map((f: any) => f.properties.types?.join(", ")))
-            );
-        
-            console.log("Unique tourism", uniqueTourism);
             setGeoJsonData(geoJson);
             setVisiblePlaces(geoJson.features);
+            console.log(geoJson.features);
         
             const routeGeoJSON = {
                 type: "FeatureCollection",

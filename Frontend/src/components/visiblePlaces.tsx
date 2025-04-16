@@ -23,8 +23,8 @@ function Sidebar({ visiblePlaces, fetchPlaces, showSidebar, setShowSidebar }: {
               <li key={place.id} className="pb-2 my-2 border-b border-primary-brown flex items-center">
                 <div className="mr-2">{getTourismIcon(place.properties.tourism)}</div>
                 <div>
-                  <h2 className="text-primary-brown text-heading-4">{place.properties.name}</h2>
-                  <p>{place.properties.address}</p>
+                  <h2 className="text-primary-brown text-heading-3">{place.properties.name}</h2>
+                  <p>{place.properties.vicinity}</p>
                 </div>
               </li>
             ))}
