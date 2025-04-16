@@ -19,6 +19,7 @@ public class RustController : ControllerBase
         int result = RustInterop.multiply_numbers(a, b);
         return Ok(new { product = result });
     }
+    
 
     [HttpGet("test")]
     public IActionResult Test()

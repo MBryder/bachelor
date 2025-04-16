@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "puppeteer": "^24.6.1",
     "searchbar": "^0.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0"
   }
 }

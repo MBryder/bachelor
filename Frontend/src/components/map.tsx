@@ -1,12 +1,12 @@
 import { Map, Marker, Source, Layer } from "@vis.gl/react-maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useState, useEffect, useRef } from "react";
-import { Toaster, toast } from "react-hot-toast";
-import PlacesList from "./placesList";
+import { toast } from "react-hot-toast";
 import { handleSubmit } from "../services/mapService";
 import PopupMarker from "./popUpMarker";
-import * as React from 'react';
-
+import Sidebar from "./visiblePlaces";
+import Selectedbar from "./selectedPlaces";
+import React from 'react';
 
 function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [selectedPlacesList, setSelectedPlacesList] = useState<any[]>([]);
@@ -18,8 +18,9 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [routeCoordinates, setRouteCoordinates] = useState<google.maps.LatLngLiteral[]>([]);
     const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
     const [checked, setChecked] = React.useState(false);
+    const [showSidebar, setShowSidebar] = useState(true);
 
-    const handleChange = () => {
+    const handleChange = (checked : boolean) => {
         const newChecked = !checked;
         setChecked(newChecked);
     
@@ -96,6 +97,15 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
             map.off("moveend", handleMapMove);
         };
     }, [mapRef.current]);
+    
+    const callSubmit = async ()=> {
+        await handleSubmit(
+            selectedPlacesList,
+            setRoute,
+            setMinCost,
+            setRouteCoordinates
+        )
+    }
 
     const fetchPlaces = async () => {
         if (!mapRef.current) {
@@ -105,42 +115,34 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
 
         const bounds = mapRef.current.getBounds();
         const { _sw, _ne } = bounds;
-
-        const query = `
-            [out:json];
-            (
-                node["tourism"](${_sw.lat},${_sw.lng},${_ne.lat},${_ne.lng});
-            );
-            out;
-        `;
-
-        const url = `https://overpass-api.de/api/interpreter?data=${encodeURIComponent(query)}`;
-
+        
+        const backendUrl = `http://localhost:5001/places/by-bounds?swLat=${_sw.lat}&swLng=${_sw.lng}&neLat=${_ne.lat}&neLng=${_ne.lng}`;
+        
         try {
-            const response = await fetch(url);
-            const data = await response.json();
-
+            const response = await fetch(backendUrl);
+            const places = await response.json();
+        
             const geoJson = {
                 type: "FeatureCollection",
-                features: data.elements
-                    .filter((place: any) => place.tags?.name)
-                    .map((place: any) => ({
-                        type: "Feature",
-                        geometry: {
-                            type: "Point",
-                            coordinates: [place.lon, place.lat],
-                        },
-                        properties: {
-                            id: place.id,
-                            name: place.tags.name,
-                            ...place.tags,
-                        },
-                    })),
+                features: places.map((place: any) => ({
+                    type: "Feature",
+                    geometry: {
+                        type: "Point",
+                        coordinates: [place.longitude, place.latitude],
+                    },
+                    properties: {
+                        id: place.id,
+                        name: place.name,
+                        rating: place.rating,
+                        ...place
+                    },
+                })),
             };
-
+        
             setGeoJsonData(geoJson);
             setVisiblePlaces(geoJson.features);
-
+            console.log(geoJson.features);
+        
             const routeGeoJSON = {
                 type: "FeatureCollection",
                 features: [
@@ -154,20 +156,18 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     },
                 ],
             };
-
+        
             setRouteGeoJson(routeGeoJSON);
             toast.success(`Found ${geoJson.features.length} places!`);
         } catch (error) {
-            console.error("Error fetching places:", error);
-            toast.error("Failed to fetch places.");
+            console.error("Error querying places:", error);
+            toast.error("Failed to fetch places from backend.");
         }
     };
 
     return (
         <div className="flex w-full h-full relative">
-            <Toaster />
-
-            <div className="w-3/4 h-full rounded-xl overflow-hidden relative">
+            <div className="w-full h-full rounded-xl overflow-hidden relative">
                 <Map
                     ref={mapRef}
                     initialViewState={{
@@ -177,6 +177,24 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     }}
                     mapStyle="https://tiles.openfreemap.org/styles/bright"
                 >
+                    <div className="flex flex-row bg-amber-900 h-full w-full justify-end items-start">
+                        
+                        <Sidebar 
+                            visiblePlaces={visiblePlaces} 
+                            fetchPlaces={fetchPlaces}
+                            showSidebar={showSidebar}
+                            setShowSidebar={setShowSidebar}
+                        />
+                        <Selectedbar 
+                            selectedPlaces={selectedPlacesList} 
+                            Submit={callSubmit}
+                            handleChange={handleChange}
+                        />
+                        
+                    </div>
+                    
+
+
                     {/* User GPS marker */}
                     {userLocation && (
                         <Marker longitude={userLocation.lng} latitude={userLocation.lat}>
@@ -191,8 +209,8 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             longitude={place.geometry.coordinates[0]}
                             latitude={place.geometry.coordinates[1]}
                             title={place.properties.name}
-                            image="https://source.unsplash.com/200x150/?landscape"
-                            description="This is the initial position"
+                            image={place.properties.images?.[0]?.imageUrl || "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"}
+                            description="Description of this awesome place."
                             setSelectedPlacesList={setSelectedPlacesList}
                             place={place}
                         />
@@ -205,28 +223,12 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             longitude={place.geometry.coordinates[0]}
                             latitude={place.geometry.coordinates[1]}
                             title={place.properties.name}
-                            image="https://source.unsplash.com/200x150/?landscape"
-                            description="This is the initial position"
+                            image={place.properties.images?.[0]?.imageUrl || "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"}
+                            description="Description of this awesome place."
                             setSelectedPlacesList={setSelectedPlacesList}
                             place={place}
                         />
                     ))}
-
-                    {/* Circle layer */}
-                    {geoJsonData && (
-                        <Source id="places" type="geojson" data={geoJsonData}>
-                            <Layer
-                                id="places-layer"
-                                type="circle"
-                                paint={{
-                                    "circle-radius": 6,
-                                    "circle-color": "#FF5733",
-                                    "circle-stroke-width": 2,
-                                    "circle-stroke-color": "#fff",
-                                }}
-                            />
-                        </Source>
-                    )}
 
                     {/* Snapped route path */}
                     {routeCoordinates.length > 1 && (
@@ -253,48 +255,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             />
                         </Source>
                     )}
-                </Map>
-            </div>
-
-            <PlacesList selectedPlacesList={selectedPlacesList} setSelectedPlacesList={setSelectedPlacesList} />
-
-            <div className="absolute top-4 right-4 flex-col">
-                {/* Buttons */}
-                <div className="flex space-x-4">
-                    <div className="flex flex-col items-center">
-                        <label>
-                            <input
-                            type="checkbox"
-                            checked={checked}
-                            onChange={handleChange}
-                            />
-                            Use current locations as starting point
-                        </label>
-                        <button
-                            onClick={async () =>
-                                await handleSubmit(
-                                    selectedPlacesList,
-                                    setRoute,
-                                    setMinCost,
-                                    setRouteCoordinates
-                                )
-                            }
-                            className="px-5 py-2 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg shadow-lg transition"
-                        >
-                            Submit
-                        </button>
-                        {minCost === null && (
-                            <p className="mt-2 text-sm text-gray-500">Click the button to solve TSP.</p>
-                        )}
-                    </div>
-
-                    <button
-                        onClick={fetchPlaces}
-                        className="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg shadow-lg transition"
-                    >
-                        Fetch Places
-                    </button>
-                </div>
+                    <div className="absolute top-4 right-4 flex-col">
 
                 {/* Min Cost and Route Info */}
                 {minCost !== null && (
@@ -304,6 +265,13 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     </div>
                 )}
             </div>
+
+                </Map>
+            </div>
+
+            
+
+            
         </div>
     );
 }

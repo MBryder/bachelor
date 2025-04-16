@@ -1,0 +1,5244 @@
+[
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6780774,
+        "lng": 12.5723344
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6795529302915,
+          "lng": 12.5735474802915
+        },
+        "southwest": {
+          "lat": 55.6768549697085,
+          "lng": 12.5708495197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "Caritas fountain by Statius Otto",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2349,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103073689132891175826\">Tamas S</a>"
+        ],
+        "photo_reference": "AeeoHcKRing16h8FfYQWICL8W64lkOtCUP2cxgjIL4g3-BPZd7bt-c1hwNjEwF5aI8voYlSVmR1bs5FyjAHZ6v6Ivwge-hfm_r02e_AQPR_y-C7zQrJLLSTvNYY5rs3CCHpBk5pPr5nW2IQbXR-pfZgvtIaem87GGf8wKCBEWFNcaa8acC8Z9AheYqF8Lo247AHopQnCQwV7nMpFXB-bF3vUfxhRzwYCw8pq_3hzgwgm5sOuPxy_o-yEBG4MblExvrrHLcR8u4wAJMUnSqPYBiroidV3n98y-bFz4F179Bd_vhVkSzlS7Ol1eZ00v3hTIZtzqRY6g1jETT62P2L1PFE7tZbpYMhu1FrkJRefSZ3kRc0NWbVRS7hGbAbSjU6s4dlmX5U7Vd6DzrkV0sYxdlIisyaxXXn8hrcgtMH0KeYdSpTHfOch51VzKHgyDjEXcm8EKFgUQW8pG7oRrm80XRaOi_Flz1SZsYO__O01uoGOGk440KP2UpLjyYs1Kssx5ja1pWpXzeH7fB1nNX8-6uX0XcIQ37cTDpvl-aFQCrTcPS9ndnpWafgUMKacUW6mQqn4dCst7BbkI_736XCy9lrt7m_0VaYC0WXhIMi-HRGl37XV6Qhd_m00tJ5BiSSGx77s",
+        "width": 2155
+      }
+    ],
+    "place_id": "ChIJ7ymjuBFTUkYRGnfQZO8hyWc",
+    "plus_code": {
+      "compound_code": "MHHC+6W Copenhagen, Denmark",
+      "global_code": "9F7JMHHC+6W"
+    },
+    "rating": 4.3,
+    "reference": "ChIJ7ymjuBFTUkYRGnfQZO8hyWc",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 565,
+    "vicinity": "Vestergade, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67298,
+        "lng": 12.572543
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6738905302915,
+          "lng": 12.57372975
+        },
+        "southwest": {
+          "lat": 55.6711925697085,
+          "lng": 12.57004435
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Ny Carlsberg Glyptotek",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 645,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111332840568112820591\">Luigi Nevola</a>"
+        ],
+        "photo_reference": "AeeoHcI3TcsJPl-Gw3P9-hvgpYb_Uxzfp38BP18tJLKr4kj1Ac6Lt2ZULVxZ7fxSFXUpCP-HvCB_VU7P-re3gRQfIWks6RLOnNLSL9H7KXehB_35pQAx_lPuZcLIk8kRI_0y6st5hVf46ejQb3oZvYXKxyhYbia02HciksDaddoyEVaL6PsNmBkaji-VWJ74MGiEDRqbXoD6I086ruSOJMD-bLpA6nUyoKhoNfkB8CzlJW5LDdaGEQTaeRpMiidrVJ7ifo-dZK5r3OUHvWtNneedv4d5W0bXFIGgZRTTSoau5Q1YthH3jNEv4wf_ce72iIWSrb6zX7scIfTx3biCKXZK3j_9L8Yzq4LcRIbwEVCjKJfkxxTFK3igRFoVmaA_X8JrFT3xzKCAdshmXoQvpumyeYLdIrD3MR2FJoyL9lpBH0-1QMlRiV2JjDeBVgCDtI5tsRk0SAP6oOrVpAQxJpS1MjtIk18tKd9XFFZx7-mF6gIk8OZWfV_rCEUoaW72YGKKEfu0MoWZEsLZxGNpMO_6_Wk4bEpvsyWdGf_gEAygC9LtvHEnr13Q2zIhTh2a80hSgf8620nrH7JpKp5cJJZRHSWdXVZy44XjZSCZxkQgJyHvQ-tuQBiFBtoenSLgzyH_fWD_qg",
+        "width": 982
+      }
+    ],
+    "place_id": "ChIJfXQRBBNTUkYRoec4408un1k",
+    "plus_code": {
+      "compound_code": "MHFF+52 Copenhagen, Denmark",
+      "global_code": "9F7JMHFF+52"
+    },
+    "rating": 4.6,
+    "reference": "ChIJfXQRBBNTUkYRoec4408un1k",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 13045,
+    "vicinity": "Dantes Plads 7, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6744995,
+        "lng": 12.5746442
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6757178302915,
+          "lng": 12.5761966302915
+        },
+        "southwest": {
+          "lat": 55.6730198697085,
+          "lng": 12.5734986697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "National Museum of Denmark",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112001203321273908293\">Engin Dikmen</a>"
+        ],
+        "photo_reference": "AeeoHcLzBzh9B9_UF7rkdorOSa-9Ea2MmCnjwm283BSdlP3y_7EapB9amJQ80EGqf5WszitCnROTmDVJmot8yncYwwCySN8Csb7E9itsfegYPrcNIWpr5CDOm_2gJmzI6EAAzfr5LZk6NgQIFu0WLb_Tg4RTqBZbSD1ih1SVZXqoyXgAcf5pb5lMjbMyIKt_FFOsB6GY0qtfaYQhWbphZsRhB0b1skKb6u944V-8KSo4v52mXrQWav0RGk1k9t_8xGMrK9421fLWtuwz1LQ9VW3xGqrFeXappgCSp7n5FlfJEb86ms_8fxgJ_9kVx5OruXIIPrc39aKHXu_cloHO8xAepl8OqNQhK5zbZzn1sD5Ycqc4_CJIEd1a8vc2zW_TQXzp_aScgPEy97SnG2a_CogmtQ41JsZt4ybVnvQnZJt3Lyf4xQWOwoIdnKiI0y_iII_AFHqUzejul8G99IN0CT5bkEmPJ2bte2E9n5E6L0vvy3VRIgpJ8EYjKnFGcmQZrnD0tDoU6DS4USWnR1qKKaTcr32klDfbJ92waS-_gSwfcacMxrYRqca8QnSd0H7qQU4YphC4qJbDk84d_zUQkqq4wqXZTdeJE9QR6Lz09Rxt_DNeIbKaaBdfUEuW9qjWxUtuhALygv5G",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJRZnqvxNTUkYRr1KKLRhldd4",
+    "plus_code": {
+      "compound_code": "MHFF+QV Copenhagen, Denmark",
+      "global_code": "9F7JMHFF+QV"
+    },
+    "rating": 4.5,
+    "reference": "ChIJRZnqvxNTUkYRr1KKLRhldd4",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 12330,
+    "vicinity": "Ny Vestergade 10, København K"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6736841,
+        "lng": 12.5681471
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67570585000001,
+          "lng": 12.57527035
+        },
+        "southwest": {
+          "lat": 55.67231685,
+          "lng": 12.56204895
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Tivoli Gardens",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108321463838048606334\">Jens C. F. Nielsen</a>"
+        ],
+        "photo_reference": "AeeoHcKfEe6VysbVQeLVzRPR-M4-awX3Bcrfi7ZkRpGtlHLzFr9TWQbzAGch-cLn7chJ0Lt0tu9w9DiFaCJCryZdF-MKUijnHNnh92Z56MiaC2W257Om7C_R1QAavwsRyPHbdCIvX9vmknWI0GrXjOZoxYhq0DZd-_C6gQbDGvsjPtBlrsmsj8MvV3V24o5AcuuvJABD4kcqRFyANeqWUR9PQIicjAGAIpRfVAczHWrjeIqbQEOpYtPqDyv9OYWvziWnrMNybxsQHDIXk_szeIx4m1eHUOLVj7tiZGE4qZShDtIcUdUpPutQyMWSZ1maLMkqMrBqYoAqQYQLbxLDV9Aj92i8FwRrctVa6_l8bkRaWoPNo85Gqwh8EgDfmiRWo0diifM_oaNyZZb827pjZ1kVbutYMSK45imQ5sNznQak5hGwcxLxpavRB7v74fJvjBFumpH40eg3AQi-IWH00Rqb6YRhiZMULzeIe-I9tfdpHnZHeUBELmHV-pPvASfWyTFAPDYZ4QrTglIulMcSxus2jH182KXxcP7o0L_SFLfuR7JIGKfE1XGbvQoYbqjUmfn7YpzcdtlgPX8LalolHPgD54JfFUDHgcna6N-GOhx_X5jMg-4kgzhblDFP539I2A912zPkiA",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ8-r2gBJTUkYRsCcLtQ0Ltdk",
+    "plus_code": {
+      "compound_code": "MHF9+F7 Copenhagen, Denmark",
+      "global_code": "9F7JMHF9+F7"
+    },
+    "rating": 4.5,
+    "reference": "ChIJ8-r2gBJTUkYRsCcLtQ0Ltdk",
+    "scope": "GOOGLE",
+    "types": [
+      "amusement_park",
+      "tourist_attraction",
+      "park",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 83222,
+    "vicinity": "Vesterbrogade 3, København V"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.680055,
+        "lng": 12.5946762
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6814411802915,
+          "lng": 12.5961861302915
+        },
+        "southwest": {
+          "lat": 55.6787432197085,
+          "lng": 12.5934881697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "The Playhouse",
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118226229902618327240\">Rui Gomes</a>"
+        ],
+        "photo_reference": "AeeoHcJCBn0PoucZuuKbLp8tnoALjwO0owNA3wUgVRYI_zOpMBUsEW-Y35Apcf0wpPAoKmTJvoN3531PLX8j83wfzIG-28T-9AaaQNW6efvDJT4Sv2-mp32k405IDM7UC3bidM2o8l2C-gdU1o268o1_W0zhyNzdjDldF4K7dXo-Z-WW0kLIKwHEtOqNit-trZcrqH6uS8_j3PFs5TFxp-xv3GDbZOjaARKAo5Z2aYTjSSYAMWUF2CAZcovM9HEkUGOZ8bC1Ee9eLg9anQfZ1plUXjNyTmmSqOQ5V9BbpU9otOAi6osfhqgOvqqtmJiekmC0elIhRJlizq4ZcjASk_kQ83a2PSfRjaOB8rHC_6XpStpDMwTORPnpZ_DErvZL2Y4HfCYYPAv8L37xlxy47sDGGMNWYR-WBNJSA3Gz_NhLcnKyhTh5BgaDshEKsUlZZ-fPoYfYE7SCBb0qDKLRBcUMfP6noCh4jkPnWdU_KAOdlLONmLkKO9iIoyix1SLB_MOlKAoSh_jpzfYkpn3rHVCBdmHRu0Iv8bXqXC41XX7d17x61ah0jzwZUyz7iKsGiBmW4sU4-FvG5C9qwEXUIA_YaFv09f3sXrSoY8rCiNxvYkZr_7FFYgpRuAYvpwXrmuj1RZmWdQ",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJbcIKQSNTUkYRYZYvgz1Q0eU",
+    "plus_code": {
+      "compound_code": "MHJV+2V Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHJV+2V"
+    },
+    "rating": 4.5,
+    "reference": "ChIJbcIKQSNTUkYRYZYvgz1Q0eU",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2493,
+    "vicinity": "Sankt Annæ Plads 36, Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.69286,
+        "lng": 12.5992828
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6942352302915,
+          "lng": 12.6003635802915
+        },
+        "southwest": {
+          "lat": 55.6915372697085,
+          "lng": 12.5976656197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "The Little Mermaid",
+    "photos": [
+      {
+        "height": 8995,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113686961824946879782\">Cale O&#39;Day</a>"
+        ],
+        "photo_reference": "AeeoHcLQ-pNabzgxH1od3UDpVL1jdfHG5TQeAWz1HotGvnpR-6wik52xm3cQViVBITe_Gyc_Q_pxwklHj05jh6mWbeb0Ej2jsu4Z-aV6anXjFGgYjMSalr_1FwtdPiQ1tlD0Y2ikpMx_IeOvds5wMdumvvtswnt668QRjeFTFZJTfV2XfoGzTBMGHzykjB3tP5qShtLhYEZo4KvfCD6NuIFLOt5Msd_jdFtZJFV1sZWaQnfbfEZd3567Q-EVYdjTMav35rPz5294KrO_XYqUFoaZYNrcSDKOkXg6hQpNcndXGdGCx4pXTikUwvSdYXCc5gM_NOR0dARMu1wiQTk_1TPmu8vb0SblYLqVW2ulD4jGj_VnynQ6PihJI-VqZSe4jokz1wA1dDvSMe9-qROg8ZNdMHpLQ2K8wskUdbPCwnHz75DyEEEbC65YILvaY_gpn0ao8-ExEZTs1LV79XNp48Q858HJ-B-U3KXDJTX4lCu49Xzk5w66E3Arc2sawMopkLxiHkJDEBjSuQK9uuTSxa74F1RusSeychuF7Yej_nn-S99jTOv79JKtVIRrxUN6YFXknqdCJFReajJHwbhrHMCvZQbwJE1aBUVssLdLcRTxE-VyUW_QDIbYJuoJE5kqhS9aJOJa2hPa",
+        "width": 6279
+      }
+    ],
+    "place_id": "ChIJAyFCjeuQTEYRPB41ogyQqN8",
+    "plus_code": {
+      "compound_code": "MHVX+4P Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHVX+4P"
+    },
+    "rating": 4.1,
+    "reference": "ChIJAyFCjeuQTEYRPB41ogyQqN8",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 30397,
+    "vicinity": "Langelinie, København Ø"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6858274,
+        "lng": 12.5772687
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6874533302915,
+          "lng": 12.5781442302915
+        },
+        "southwest": {
+          "lat": 55.6847553697085,
+          "lng": 12.5754462697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Rosenborg Castle",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 2877,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103193536983257533418\">Lynn S</a>"
+        ],
+        "photo_reference": "AeeoHcLhd2inLIdloFviGstr4Gz_ZRWn97njyB2HVv5bNbtr5e10z8HEeA5qdxd4-LRKZaKNLLXP240U_rc5Bd99LMK97oiJ76teI9DPvvGAOfHmKYJebXVeKybcOMKRcZpWncvjJ28V6wx7_oI09h_mcSlFDjZWRfy_Kyabr84QaVCliRhc53b8SEHi0ZUxfcB-JMCvf_HCGqdeKCYYjj0qaOiPW_qV5hm6xdLmzkEVC7jgsISaUj3Yhmh4m2-IVd4_pkf-4w2Rqmh2fDoU1dZ5GQWRigUo2mvNNbrOzZBqiIEixZx_Iwx8IX381EZjIcpqFuLys7BqeOFNpeN1a_itXDiKz7JkSngnioQLPaV_yP1S68LLTniuqmdCMPUqJz_XS2zhhW20Y-6OftLOOVJn4D-9DEMFNhlBinP-K5OVPnGfCQqvLB03EO2OLT7qmXV8y6A3xGU5VlGsp6IZOAQI4-xu-wAa_DjZKHdB-UTRJdK2TJHAWAh79cg5Z2oo141rVk3e9I5kG4QM4NMEY6UdnWz1bc_Wa4ihAZbe5ONA07rH-CatgQLsPXwmdAD0OPMY3CAaLz7YQ5DAF2ukGDn--FWhs6JGFXUfjroJlRTuuK4_ezDPjyEyb5clRzL9QLBZdMwZog",
+        "width": 3968
+      }
+    ],
+    "place_id": "ChIJHVOeQhtTUkYRPBsoRTOcNVI",
+    "plus_code": {
+      "compound_code": "MHPG+8W Copenhagen, Denmark",
+      "global_code": "9F7JMHPG+8W"
+    },
+    "rating": 4.6,
+    "reference": "ChIJHVOeQhtTUkYRPBsoRTOcNVI",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 21841,
+    "vicinity": "Øster Voldgade 4A, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.68217579999999,
+        "lng": 12.6000932
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6833369802915,
+          "lng": 12.6030909
+        },
+        "southwest": {
+          "lat": 55.6806390197085,
+          "lng": 12.5984293
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Det Kongelige Teater - Operaen",
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109506558911576689720\">Dieter Nolting</a>"
+        ],
+        "photo_reference": "AeeoHcJjuOl_RQp8WYxshgwks8J3jkMPLbj1r4ppp0GiWcOYZtMl2q53-5W6_qZR3iW8nZlZJ3PKnO5WuakLo-A0kO2hXvbVDqxcRArI2d_oSAWJgE5bTVLiCNLJy-GjLAz_7jHm39XckQh07u0JI3vXT_8ocPp0olgdb_URWEvbf9pYc2UkfAmC8yEDZuIBxR88o2wl12SJpe4UwTFcMGbTEZM3BBNe8-V9YcAVC_YlH8acCRewJa3b6Wi1_LV_irnwnYzAeq2nJIugkzBhDY1b6w_3NAqhn9q03GXxMwJK0o7ABRLm5xz-MxoFOsVS_lcoesL9hoEjejKQ3q4Rum5mafm5af2ohyRzdUPym6_eHynXG7dKsv94ZS0LDJXuStiUEVxbvVDYeiZV4lZsBxG9iZa84F8QT7hfCx0UBgN3iNYiBnyLavooRv1f2zf_Z9qNwq1Y7Bvv_Xyj0kT-O_4QRdP9dNYBsbgOCwLZFiBtQvlrso1Iw2ALmmRUD8r37Q02Vixrnl5hxsZ97vWJPjMyTF26EnTFZFpeSYsomLDYRV_j7b_fV5WOg-O7Kt-I8YTqza0e820NmYQhnvdP28OxtNogkq4qdQgK0pqryZqEMN6SiT4I8DyvYfdsHbPq0c2gAu1JbmKT",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJAT81qSVTUkYRJPOOnVNxCr4",
+    "plus_code": {
+      "compound_code": "MJJ2+V2 Copenhagen, Denmark",
+      "global_code": "9F7JMJJ2+V2"
+    },
+    "rating": 4.6,
+    "reference": "ChIJAT81qSVTUkYRJPOOnVNxCr4",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 6973,
+    "vicinity": "Ekvipagemestervej 10, København K"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6743505,
+        "lng": 12.5724863
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67563828029151,
+          "lng": 12.5740155302915
+        },
+        "southwest": {
+          "lat": 55.67294031970851,
+          "lng": 12.5713175697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Museum of Copenhagen",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113946866885058476925\">Jose Luis del Val</a>"
+        ],
+        "photo_reference": "AeeoHcINssFQBTKNK5lNEm_548FfdAqKfmB7XL5Ifkx8wD7N3n0JpZcR5ZXOqdB2-0SJBQO2ybzKsGn-wr-twbjHL9-ZS3kqM5y1WDV9byaUuSSrMX0_kewarhpg4NtZd9NziLEXesIH399p44XYp4L4ZCiOevOrnUDUQ0WM5-hibhBbQAPGrSojjDaj0YsRDrKpVKKhhktKJqoKg3pvsqWwVcBAaHltJI3Eca1VLJgUmtPqm7k_Hp-F3zOZ_wE7sehO5NS1IvHxs1cB4yzTG-Ao7Nwoa8bys5dxI0b4REp2cmLTGS_qjJakPZk8b-zQOv6KkksBwK_xogBr53a3Plr6FdO6_mH7Wn0HlKxCst_kttb9eWsXMR3OZD3I0xv0hXK_WFVuJCjd0DvlMCPyY6ATurx5Ie8nSO1WzHps61lo2efUzd-hLEcUogqXOgGZtzTDkHhxBbQbEk1iRnhYfiHjtrnIs9eoCM329wgmX4rphR7IfK4hORfbVZ3lewafS9DoDcfRiHHI1_1qsy0H_KWmP-hvL8eGLvbw9kI_GALj9ePDfGVfJWn_C8NI5hOcRT5JFwGUp4NKZsHF0DHyQ-LFw5UiqLlCjSvGXeP0dhjzKZJhQb_HFos3ovCvIQUj4GSAq6ogH4Yh",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJuT-bLnVTUkYRhsDbOa81Gj0",
+    "plus_code": {
+      "compound_code": "MHFC+PX Copenhagen, Denmark",
+      "global_code": "9F7JMHFC+PX"
+    },
+    "rating": 4.3,
+    "reference": "ChIJuT-bLnVTUkYRhsDbOa81Gj0",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1540,
+    "vicinity": "Stormgade 18, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6763138,
+        "lng": 12.5699918
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67758493029149,
+          "lng": 12.57227125
+        },
+        "southwest": {
+          "lat": 55.6748869697085,
+          "lng": 12.56694585
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Hans Christian Andersen Experience",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 720,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114213069502718397884\">Hans Christian Andersen Experience</a>"
+        ],
+        "photo_reference": "AeeoHcLNevgFNZXtDr1zyhxpOHANBECF7iOchiCw3jvNiod360Kk1OpoU1pf1gs-c1WN5LunmHHcuDLvEhoTEo3Ecf1IHjKPMF41Ar8TDsHw1PLF19DchJaA5lp_qT7tPiW-5JpteLQulO-O_NVnmGnxrXgeTWo7zBw1o2IFKunuzNT8Gz4laubY4o_MchTfJiPMZ_hNoNxhoJ8sdStxHFP2C6MXQj50khvoO1ymq7sSuT8pmXNTrMhSJgAY5p9YYWPi20WfWRkQFf7WrBeZtfW8HNRBfJk0g968cmUPYr-9XJkMj5zSFXVzoIUj7mHN3lo_jypPVS7jQok",
+        "width": 720
+      }
+    ],
+    "place_id": "ChIJjaXVDhJTUkYRjQHtvfmhuv4",
+    "plus_code": {
+      "compound_code": "MHG9+GX Copenhagen, Denmark",
+      "global_code": "9F7JMHG9+GX"
+    },
+    "rating": 3.8,
+    "reference": "ChIJjaXVDhJTUkYRjQHtvfmhuv4",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 838,
+    "vicinity": "Rådhuspladsen 57, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.69137600000001,
+        "lng": 12.594301
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6925594302915,
+          "lng": 12.5959938302915
+        },
+        "southwest": {
+          "lat": 55.6898614697085,
+          "lng": 12.5932958697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Kastellet",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3792,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100151444714051373443\">Richard Heidemann</a>"
+        ],
+        "photo_reference": "AeeoHcIa9AWgMfFYO89ga85k668WUpUfCHKE_3gONUf1Y8ddQz-R2FFChcfzU3Gg1rhNzfeG8OneG8T0e3B-n0brq4uOSTa9tzBBIez2KxSQcaNUp5YEbwopx1Q83hB3WRLz3dungDqnx2s_fow6ROYzKRqXne7aeGcaGMj9s-ruPB2rOX_yZ84qVCrkW0OzqnBaneYKK4GuPv4Yg2fTvFKTPDNrjsrGKCBFv_ocL2zeSGlKfedf68b750kpbGwXHNJ-slvgQsfVQQRaLvnDncbC6bJqtwXARtsR6-Ns4qgS_ibM4lgV7yght-vissB6B2IU8go2KUc71FK6Ia05-KBq3DBcfoLowmUIowDN7SpN8ExUTsLK79OHAFSdsErJX7itLl_lVAjBWkx95GiUGfbocwcToBE9vVhVV0wSztD83WA4FdvQ1eJxVcFc0-xareqyDe7-ISAp_PkIMbnOhn7i4Dj0GGzhl8ad8sdhyCA8sUzBsUiUvy47vzJ5lcuCwP12a5-z4NkV4mlM-OeCFbvEewqy-50VJlzO7N_s3W7jqXBG1LhK77icSqt2_8PO7pSxOUPd2IieSOVnhlkoixFzGQvLbKxLQNiE6MEp3WhU9DVlpI-9Gk56bAAO1zEmWyZMHBmtyA",
+        "width": 5699
+      }
+    ],
+    "place_id": "ChIJecok-N9SUkYRM2v7tTvxyPg",
+    "plus_code": {
+      "compound_code": "MHRV+HP Copenhagen, Denmark",
+      "global_code": "9F7JMHRV+HP"
+    },
+    "rating": 4.6,
+    "reference": "ChIJecok-N9SUkYRM2v7tTvxyPg",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2543,
+    "vicinity": "Gl. Hovedvagt, Kastellet 1, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6840588,
+        "lng": 12.5930201
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68543349999999,
+          "lng": 12.5961361
+        },
+        "southwest": {
+          "lat": 55.6823939,
+          "lng": 12.5902225
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Amalienborg Palace",
+    "photos": [
+      {
+        "height": 3998,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111646295450585136542\">Laurent</a>"
+        ],
+        "photo_reference": "AeeoHcIMr1qWzRrm3soZvdhMCXCFBg_c-_EjKREBuXRVVw0z7Z2kfonIgf7BosaCmX0_4eF98yB8gJEzNHUWZi9jjfIi5HK6eOQce2BHJKAa7aVGh92H_vMpDsBSIvKGdA_zEEjbV8_eMyhgq0JrGDVKFCXQDd558eZkzCaRdS_KsXMZngmeaZwoCBd1sFfv3HMRkx9jhxwcatbjeGsJ8PjPkWdyUlWy-4syUdy87H6euz_Yzkx3ThHI5cR_aRuGpWFe3mskcfemNaEfeWUsnCaEf8Mcvfb5QVW52cU1vYWjod7VpUcU2vSVzc26W1g5eL9TZbltyANk3xpk-2o8Mw9e6dck61-iZB1CWLrXzZjHi4JTrzyx6NjhPX3neQvsN1Se5kFyUTCDzoVjNoT-vJ-aPVQhHa7ezwo51yZKkn5AXvVNVIfPZiO4y09iAke1w-N6KuSf3P4_95T7eIiRdkWTlzQDKrF3rlUfpn_07uwNqv5eQimttUqqqFQ9vqL8n_V0A92s8Ibr4VP-35ybZrZKrTJuoBzKVAqZYQbkDAbQyaub6wbBXkayOaW8WQXI-6QH6JDbl1qVpeyD7Hry6g_Fh38WDyHwWmmkYlQfMCqzwd0O_EXQECMlRP7rQ6dBj0NCmYhGcA",
+        "width": 5998
+      }
+    ],
+    "place_id": "ChIJcwY-NiJTUkYRP1UVnat_8Vw",
+    "plus_code": {
+      "compound_code": "MHMV+J6 Copenhagen, Denmark",
+      "global_code": "9F7JMHMV+J6"
+    },
+    "rating": 4.5,
+    "reference": "ChIJcwY-NiJTUkYRP1UVnat_8Vw",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 28455,
+    "vicinity": "Amalienborg Slotsplads, København K"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6852905,
+        "lng": 12.5798452
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68948910000001,
+          "lng": 12.5838917
+        },
+        "southwest": {
+          "lat": 55.68078829999999,
+          "lng": 12.5763525
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "The King's Garden",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3454,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111646295450585136542\">Laurent</a>"
+        ],
+        "photo_reference": "AeeoHcLBF-_0Zg-jY5c0LtI_Y1r-mUTKo8PGaq7FB58vWNxcgvsCMMqUY9ZAdfknmHvSdhPYVESdaPup-nAT47HNeC9ObPca8KLr2jmaEA_RgL7yl0_yGxdMElZf7v8N4NGFTK8JlsBZzORhj-jDMvOMZwXmQbYJ_dTdwaTPRI-wgbUPLbxQOWBle6Jasdd3tHq5CNEPamhXWStAg4DP37Lc0aHFa7Ckar7rgqogxJ3S_NQL5Xczq-bGcg30dnQ_I-flaQuNkofFfW1wwe9CWsHODmkuF0hl0a3rvyfUldjNXDSgrcNuXvZBhDSR9uwdXj1y8JdAPIvEhC4H9LHxvfubg0KOGpzeL_DHwcRHX-StgSEYd45Z5O8DSTFN3HqwQjPI2yEFp8KP3AO9asQP2MK6PVmFozH_3AYW0x2kfBSCqACcX7Uy8-Th_5Kxf7IA99snPuRSc85K3xN3IANqlVka0uEOk-y-4CbRyD0buawQBiEKLUDCvPESoM2Xb2rlzBuW6T_W4D-KpyEEeuaapjPoGO_8z39yO3QmMIVce1mXRGJO72zr_kCwPSv1EZgMoenzdzNOvab2Vd5_q794X1xHKxg5j9nERDNd8N-rWUObyS4EDoIcdymXYLFbv04mBExlDe5Z6K7c",
+        "width": 5181
+      }
+    ],
+    "place_id": "ChIJHVOeQhtTUkYRaKzp1xE05Q0",
+    "plus_code": {
+      "compound_code": "MHPH+4W Copenhagen, Denmark",
+      "global_code": "9F7JMHPH+4W"
+    },
+    "rating": 4.6,
+    "reference": "ChIJHVOeQhtTUkYRaKzp1xE05Q0",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 12573,
+    "vicinity": "Øster Voldgade 4A, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67591419999999,
+        "lng": 12.5691284
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6772370802915,
+          "lng": 12.5700645802915
+        },
+        "southwest": {
+          "lat": 55.67453911970851,
+          "lng": 12.5673666197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "City Hall Square",
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111537723562046600723\">Albert Donaire i Malagelada (albertdmcat)</a>"
+        ],
+        "photo_reference": "AeeoHcK1WGBAb4Q4WUXrlTAhLdDQacQ6yRG3Hs8c6ofsXR_4GCuxzm-ZJ1VK6xSyF-pjssc2HcYXXve3wjFVsltERBg1FSjZ_SfgdmV2xH3MeNkut7SmJJeYUsAEWMH-ZW8S4b-m-NyT-DMyaFqyY2PQ7FrP6QdgIwR9BpmsxjpfqfTk-R4VyXMKvYi1sAwfgd9gKVPAQRGSPPCSK721KoCbFIjovJf4jZq0JqlMdW95rYQjTbQQullHSiQx6WLsMKYnY0iHq5xpUho1yVpo_y1jbFMJ7AzTa7Dn8FpP0ojPPR9OQch-dFTT4plzWLSaRox-ZRjw4j-4_Ehf7Xx_CWlrroEi612FCaXjR_NLM7k_7kJU-LK93U4NtQ8KXcFBMUZYHyHgaX1PqcSqcsD5rK2qPngNXKdrqnOT3KV90zgnCJYDBspKZFHllzUFpOaTLXba1qWJ_Afi6BHTeLOrbqmTXpk-eVblip2HFB9epBzghOEm_xPo6-KrJGW2QilJPkALgL1zKoaf1txR0p06QE3pYEC-GqjBEKOiRvfQkr7uSLoDTaR48-Iof83SaT2wX1RITnwF_PnXxig9CjpmtatgfulKmVHB4kNHqp-L5KFR_kKRIEBiWdqUfRyM0DiPbYa-NjoyXg",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJmR7d-w1TUkYREP3tqhywFyc",
+    "plus_code": {
+      "compound_code": "MHG9+9M Copenhagen, Denmark",
+      "global_code": "9F7JMHG9+9M"
+    },
+    "rating": 4.4,
+    "reference": "ChIJmR7d-w1TUkYREP3tqhywFyc",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 21276,
+    "vicinity": "Copenhagen"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.681347,
+        "lng": 12.57573
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6827285802915,
+          "lng": 12.5768803802915
+        },
+        "southwest": {
+          "lat": 55.6800306197085,
+          "lng": 12.5741824197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "The Round Tower",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1333,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104950648278564543259\">Hauke</a>"
+        ],
+        "photo_reference": "AeeoHcKaDdzLD1rwtPeWASvIXSvMl6YD0bU3nWDH3H-a_drU9SnMc-WXwmFukVk57BsooynMS4ymiEvCszM5h9yu81JS1xY-URu4_GZhSZktFnnOo69Fvb_sUK86kvG7SAHo6RdgYnIXTvSqe764sBfnt0I3HRT3vG_uw8eZ9RvA5T2gRsc9MmZz6zPuR2pbqN7tfOJ55Toar5le7a1YXpV4BUPvxKQQPv8Q6J9Bai_9GFEVUrX4Ep1H8PgWWvzG1JU3my6pxBvhVeM_x3eM9QqMhhAGyK80fl1pukXs19nY4UgEg7NUXyzAOgoulBb7pF86AqNU-EvfhfgWZ1i8PobB5TV_oh5KFsDkgYTkS5G40Oxo-OdOTnMtJHD2VN5alCtUkUjYVFZvsDhA88I5uhvHZaQelLjNPZI2fgYGtTxamk-sCSAY40MCr15orNulKYS28hXFkQu6-4_Snr4e42diZ-qbsVn8Yp_bXnhd0Bd-CQgKr8ou_5RcYNHQOKubisJGn1z9ydRnZhLf7ATK_1uhzoARmgWBr_RQA17V5a7ls5Ur6WKMw37hhmok4h0VuhjubfIwR3Wl7fKF5P0kZIs1pnW7R_vLWJPoGpzPDyzPXkpRrPH3Ils96Mw8BZfyFFhLLWRX08_l",
+        "width": 2000
+      }
+    ],
+    "place_id": "ChIJoZv7gxBTUkYRN6Q-o22fOuc",
+    "plus_code": {
+      "compound_code": "MHJG+G7 Copenhagen, Denmark",
+      "global_code": "9F7JMHJG+G7"
+    },
+    "rating": 4.5,
+    "reference": "ChIJoZv7gxBTUkYRN6Q-o22fOuc",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 25018,
+    "vicinity": "Købmagergade 52A, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6865563,
+        "lng": 12.5928422
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6880123302915,
+          "lng": 12.5941724302915
+        },
+        "southwest": {
+          "lat": 55.6853143697085,
+          "lng": 12.5914744697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Designmuseum Danmark",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2246,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116647701492246965139\">MortenCopenhagen</a>"
+        ],
+        "photo_reference": "AeeoHcK_8oydRy3GL9r3MtmKVbzSGHIeH7p_Rmj7NyiFj6eeFpk3W-GS7asA0oxXWm8Uf6dHKyACY0Zse4S4hrFFsISeYLI09L5m-MncDCz3DV0nklEb1fTIU1mGVmpkSwCxicJHgd20cXeri2uG1CePdZpYnO1dKZDDDBMIbi_q2MtVBwtUf-jumPaYOWVbB6uO-HN22ft_QlV_Meg5UFAzxKNozSViy2pKGm_yyf4LdUTXvZjHCrIgDUcHUiiGwHwKXoa49CS4VhWyQ0IZZNt1pwwzbeYa8dkEXOvNG7ccMKKLNFLem9WxKTY244Ah3Q07c6JqUyH_GV0Te3uOiF1FMl9i2WdexcVUpEIyArtW32MnEQ3XdRhiv8RKb97iWqiBrfxO3-lGFAIC6_Rm0WwHunJeTZ16YxuToLrzhBdYDjs0z8CXHNCtIYp6nPfITR9R5H_rC4jVcGVb9UoQ0W0j6wTBDGyPTiVNTFWJOa-3ASuDSEnhwGI_KFqiNeenXFrA1Wj0gOcAOGpKxoD8vsFwnXF1S1xNUkjgzA2KfIpm0dEvxEJTj-Y1qWKmKp-jqUmJWVDTfky998cNIIyL-2BIJGzKV-5tmoVwuOAv8yMwoddjCtq1FDMKOMB4xhGFZq6vqrOobQ",
+        "width": 3648
+      }
+    ],
+    "place_id": "ChIJMTzE6yFTUkYR90_sHEhzRqc",
+    "plus_code": {
+      "compound_code": "MHPV+J4 Copenhagen, Denmark",
+      "global_code": "9F7JMHPV+J4"
+    },
+    "rating": 4.3,
+    "reference": "ChIJMTzE6yFTUkYR90_sHEhzRqc",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 6855,
+    "vicinity": "Bredgade 68, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.671691,
+        "lng": 12.523429
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6729950302915,
+          "lng": 12.5250351
+        },
+        "southwest": {
+          "lat": 55.6702970697085,
+          "lng": 12.5189619
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Copenhagen Zoo",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 4080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100838919763033327810\">Pooja Mann</a>"
+        ],
+        "photo_reference": "AeeoHcJzlySD_A0UoaN_Yeu_PvB62DNSQPyXXaVxkjKGMcRyEYzvasbctJFhLBgx0uvSN5FXh2SYhVABGhWVZn9hmvZUalCpClgJ2Atk0BAvsM50fl-v4I0X2uYjTt7GXsk3Puk2zitjDdk95eFyMdLzyDxNuiy8JtlaQ2tFDuQokJVXNhG8bp2sDueEEZIwhTvQ87yp3wu_23_LofiPQbIuXXOoQCfbnZmxz7f8yjL_qwslrWhtd0HWA-NtstCRADwaN_tLzv9MDribkbD7iYzZbIPyjyTzW0lOyd1-TMt-T_Ute2tSqeFCvk-BNUBPKRsRMw1vU1CdRmlZo1eC8cKIn2AGcWomAonDIc5YlTs53bD5KSXL3xoKnYwpeSVxeX1OWchliqug0M_7-1opYILa2TcLZvJhqNq_2N_AIMI_c9FwfJl0EWHsdruoyT12GZn1_L4v-iFbGKe_v8N4NbgUokHVYL7Z0No-BISH-dEZxBCqmtewqpBD6z2EOluxivAo4gwvby_0In57uBwxmQ3PX4f_YSKjyxGWufu5NzRK051k2X4QGpKI6ctXwwliP2pmohPk7g3E-rSqWGM2B_ork_4l-QB8Y8JAo_zmvd8GQSNd74KH8_Wby2vFkF9HtvFG",
+        "width": 3060
+      }
+    ],
+    "place_id": "ChIJhwUoPJRTUkYR78kejeKf2zs",
+    "plus_code": {
+      "compound_code": "MGCF+M9 Frederiksberg, Denmark",
+      "global_code": "9F7JMGCF+M9"
+    },
+    "rating": 4.4,
+    "reference": "ChIJhwUoPJRTUkYR78kejeKf2zs",
+    "scope": "GOOGLE",
+    "types": [
+      "zoo",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 24611,
+    "vicinity": "Roskildevej 32, Frederiksberg"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67465079999999,
+        "lng": 12.5580804
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67589838029151,
+          "lng": 12.5595466802915
+        },
+        "southwest": {
+          "lat": 55.67320041970851,
+          "lng": 12.5568487197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/school_pinlet",
+    "name": "Planetarium",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1125,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105546974940307047850\">Planetarium</a>"
+        ],
+        "photo_reference": "AeeoHcKKaRbs3J1nhK7xiNV2UcEe8YOVWdvL7gTQ1vlk-2FEdjwPUD42MzGEvmH243ZXX6zYmBKcC87zSFupBXO_cXX0EDv7u9pdnHCc9y3owc1LdVySFVTFyKjNY-_CEQmQ5w_CFun-O4lo45HDouHiZFeON06v1gtWlOzbSQVixGC9lHBh9ZktGsu1StsmqRLmI4KxjKkDPqu1UypRJ9mZXcTTqB38SRWrI7OkzCblLA0g7YtHwynYSIpBEl1ucWRXUf_mWK-rveEU_v27mq1NBtdCvB5_i_i5To7UGvnK2qoC2rbEkTmeLFCigpTMM1yktcc8a_tvpHs",
+        "width": 2000
+      }
+    ],
+    "place_id": "ChIJ0VKKcwtTUkYRYskOpknXs7A",
+    "plus_code": {
+      "compound_code": "MHF5+V6 Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHF5+V6"
+    },
+    "rating": 3.8,
+    "reference": "ChIJ0VKKcwtTUkYRYskOpknXs7A",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "movie_theater",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 985,
+    "vicinity": "Gammel Kongevej 10, Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6729387,
+        "lng": 12.5942102
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6741487802915,
+          "lng": 12.5951416802915
+        },
+        "southwest": {
+          "lat": 55.6714508197085,
+          "lng": 12.5924437197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "Church of Our Saviour",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 16320,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106515327571179717048\">Jakub Dufek</a>"
+        ],
+        "photo_reference": "AeeoHcJ_Wrs92I25nbcmGIVBzlDLEDLg3-sEsVHuNbo_MdItCpncVlyzCWWDnMRpUFgVyRtr9dh1wE0sWU5L8GYFYRbUNyC3kArYq6vS4nc1-7RZDBu4UnFZ1S7b8rjlpMILIh8ZNAmZCQ7M7bAxPmmw7ij6w86ahtRFRmBsfPcUtK2DC40muztWN4zPUXWqsyczuUAVUoYR3cx4UxNXwsN6lTYmzIwhWl-TXDasnaMo7O5N0H0pwFMWMPgHhjGTX1peo3kYei6SzMC9J_6k4M-WfkeEfBzuf2vn-4MoqnwjqHAd00UQXof9F7PJBZMuSlzT_FZJRE8NBatRJVBB-Qv6LCtkkRVRNG91L1VRzDtL9PzMQacA2oAqlCsgARt43UObKSodGfcq_dl3OtCwRRn6KXEL3fYoQRmEey_i30wU1eUZiiq8-wp26IECi_aa31kpS2TH6PfmPCAo8Br8dRi5gSNe1ft6AgXsz08bAm8P6ebwv8DxloTCscP2LvPlUPPdITFzJSEyteeFKLtxz7HL46uiKOSJsTCHtXQ4oHLzgxRspqEszCFkgZkWnExl1cE1Ein8SIzNyeus_b7YTntH9MM0c1QYlzmQUBhivOL7Bh2zsAxAT1ufYkQyVjAX6h5R",
+        "width": 7532
+      }
+    ],
+    "place_id": "ChIJye06RjlTUkYRK7RPt-oBGME",
+    "plus_code": {
+      "compound_code": "MHFV+5M Copenhagen, Denmark",
+      "global_code": "9F7JMHFV+5M"
+    },
+    "rating": 4.6,
+    "reference": "ChIJye06RjlTUkYRK7RPt-oBGME",
+    "scope": "GOOGLE",
+    "types": [
+      "church",
+      "tourist_attraction",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 8553,
+    "vicinity": "Sankt Annæ Gade 29, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6848926,
+        "lng": 12.589986
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6862223802915,
+          "lng": 12.5914001802915
+        },
+        "southwest": {
+          "lat": 55.6835244197085,
+          "lng": 12.5887022197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "Frederik's Church",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3548,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111679119907463921442\">Johnny Højer Johansen</a>"
+        ],
+        "photo_reference": "AeeoHcIP0AgiXcLs5UHcSE6NwFrikqGxuZidEfUH67K8QYYwDtta6H1bf1pio0zItqwBbo_uXFNXUdwkoSVus43lY5-NTS5b1Er7Ro_TpThKhJV4TLCwY5iH6ybeX31BEFXD7VSPBWIVk-EBRSfwd62uiVfFhqkS6wnFKVrVfGGNY262QWZQmm1EMz_dLSUoxSEpCysu8srFVmX2pjPXbttAQD3AmKxz-VrJ0vAjiLN7Qm9oYjM9snJ3P7jbo46NaqfuqfHAENTqRgW_Ixnoa66tgIUvH_2YwSz0LSNSsth1sL0HOlRkY47BLw5q1g6LT2_tlvWLqtIwXFZ0e2l6xLCZPyFaXTDFE7SbCIoo99fDfOaburk9j9_IhV4f0oR4t9Hf64id8DMULshfTjptBDadE2pk4vrq2dpGaK6MbpfyNCtmOMv7hqKehhS43qhRy6nxOi15pyJUg8z0i5sdyGgdOXBVMN0AY6MOrxy9MYKhu1nsS7RJOGdq8Nk0EWQcADEICfTu_QDqYVjRm2I95Ecos2f6Vn4Z212hz6PGZekeHDI6Km_Aea1i4VIEofdKsMk8lK9n7M1pg0sBW0SCtCbAKiWOMEOIk9Paj2usYw4C7ok052_EJQefpGiewJ4wVMMIfwUYug",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJvYWnuhhTUkYR3m95N7vDrmo",
+    "plus_code": {
+      "compound_code": "MHMQ+XX Copenhagen, Denmark",
+      "global_code": "9F7JMHMQ+XX"
+    },
+    "rating": 4.6,
+    "reference": "ChIJvYWnuhhTUkYR3m95N7vDrmo",
+    "scope": "GOOGLE",
+    "types": [
+      "church",
+      "tourist_attraction",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 8519,
+    "vicinity": "Frederiksgade 4, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6910102,
+        "lng": 12.5501533
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.69582795000002,
+          "lng": 12.5568309
+        },
+        "southwest": {
+          "lat": 55.68649814999999,
+          "lng": 12.5422717
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cemetery_grave-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cemetery_pinlet",
+    "name": "Assistens Cemetery",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117611326796490043025\">Marta Bellés</a>"
+        ],
+        "photo_reference": "AeeoHcK1_5Y9XIeLmIZqcEswm9Syju5-XAgmUtniRbpttenOlyyq22VKhipqg4P_HJrhQ2Ic3SboBvEWEaJMdT43P5pRWeA0zHnf26QET-18-2d-hGHiIDsMgtoW74luIxmN2sdU6pfklZPtTxtGFxCLulhpNyDqCeNMqUGg5d4jE9kK_jyYeCpUSXDYru2mCIyeSwyssUO3Foizfwd1_NaPw9yTxMZqArsK51pbwesftzqJe8-J3kojvjMwIfoJHFGPms87i7GHDE4Vgo4iQeluLclP8TISK3TLlEvcv5KySIuYTTvnRzDdld8HT_4ir5Uc_tv7MVCCpseAGlL8Emug0EWqGvR0ncCsInFCoCaZvArkvaMdDtSEaGKpMQWCyJZrwDKUqR38TjqL9-vrTganXn-i8dfUeOZLrR6Nop20ugT2FuqhOYsHwPh8YlJH_8V2NB48W3Rt5ThKsYn00OnJjLmckBsHZ0KO7QYx1fmkMQB7dzYBC3mQziowChE592-b1IsdWPgsMrusJEi780q0HxNHM46GpHMZmJRrhVG0za9gvLv4l8grts4mARSJV0cZjhHhUPuwoR0i12UmeGnhEHEL0rhjBXwMiB_4IIz7xAsHW0t1P65kkuOrA_aoQaqeJBc_Rg",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJO9KdFKxTUkYR6_1IrFJ9jgY",
+    "plus_code": {
+      "compound_code": "MHR2+C3 Nørrebro, Copenhagen, Denmark",
+      "global_code": "9F7JMHR2+C3"
+    },
+    "rating": 4.7,
+    "reference": "ChIJO9KdFKxTUkYR6_1IrFJ9jgY",
+    "scope": "GOOGLE",
+    "types": [
+      "cemetery",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 522,
+    "vicinity": "Kapelvej 2, Nørrebro"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6733994,
+        "lng": 12.5826588
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6748989302915,
+          "lng": 12.5842487302915
+        },
+        "southwest": {
+          "lat": 55.6722009697085,
+          "lng": 12.5815507697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/civic-bldg_pinlet",
+    "name": "Det Kgl. Bibliotek, The Royal Library",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115611016636294220774\">Claus Brokær Rasmussen</a>"
+        ],
+        "photo_reference": "AeeoHcI29obxHm5ACLwgev69Ecz3k3PmpFd-645pcmkS2UHRpp-NGcejOTQ1NVFiBd_Z_C1JEab97JDtF6Nm1Be1T2I_KcFd2it8NPOQnfZQ9zkOU_zlFLIV9w6gwnlWvBfTDM4Om8DUfY_oXXRSjUlcuRa1CfjM278b-yVmDc-YfDczuwRNK5i9FSZN5669fQMvploCxNtGO1bVpHICLFUQqNG_20PIljxAS6Kn3oGLW_rNQ0lfINCPFRQaBuv1j7vvlPlUr0YV2A0QOGBvVHs_8e6v1NG5KyjBthxZT1rT1vw01IH2WIu_msDsfZOqc4ZSD0DSFWV3TFxqTxOgI0G7YaD56Fllf0AiopxPfpp7bqvU4jCIHqYUgGVQwHOwpWMfs44zll8bq3ckYqm-f0P-eOgRRZkaxVD2O6CkmVE0DhTwYSJR5htxXlL4jJgfWCq6NuvAjpv4CCOatTvFFPDuD2JymirUZHoEN1VaNnJs_G1r2tFUl6eScGc5ewOj9wX7rK8HVhh6V9rIHf_0VKLFC3NFOA0ZfBpQgo5-5JcWlxouS_pTxZJoQeGB-Dxj71aq4uyklnOtj5dfzWWBP7pd-wuF0rrer3b6p2GM8rkb_kAK2SgNI-YgyuOl_-A3r3xHoqJBww",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ36KzuxVTUkYRDDCgC3HCTGw",
+    "plus_code": {
+      "compound_code": "MHFM+93 Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHFM+93"
+    },
+    "rating": 4.7,
+    "reference": "ChIJ36KzuxVTUkYRDDCgC3HCTGw",
+    "scope": "GOOGLE",
+    "types": [
+      "library",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1340,
+    "vicinity": "Søren Kierkegaards Plads 1, Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67438319999999,
+        "lng": 12.5768164
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6757564802915,
+          "lng": 12.5782262302915
+        },
+        "southwest": {
+          "lat": 55.6730585197085,
+          "lng": 12.5755282697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "The Victorian Home",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113557450020876373127\">Cece</a>"
+        ],
+        "photo_reference": "AeeoHcK9ThVb9RVMZjuOg0F3qDEF8zXwmMtgjeHIOBvqY6run77WWOdg-9QfQf0Tohf3YAE_KuYvFdGpMFzkm0lSKkWyv4UgD6MdUZASeN1HGnytasaXMIFPlcB6NQl0qTO0HgyX1gOsGGUfg7tjcRhE0mVcPCtzxffoy9c4KXov9L8ALAjEHPBsdb2WmkiDtSslijr9bVO_H7-88au8-ASzzL5Blp1m0v0_ErGN4r0_SdoNe5VvRZrschCp5DrSJxlj-T-tMulaFBw3a7aoLKN7FylgWtAf2-vTy-Or-gSpAOJ0eIYHTsf-D8HkAvhJyPLls4eJsa26wvRjIgXwe4MnKGc-yHTQ_UEtPLb0tb3atOmfU-0sYaBnnAk8GcvKOzr5Ux_T9jw5ey0NUCxQNR7cB5NlOxC31TeD2CTp0pLptOr8XwUVez3UqySWLhGBLwTRbiQ-aMcf_cGZJ5p56hA3MESnZkFdAaJ_0y10kZ0Uo2IlTXod3z1h3MMvLFD0UsHNMHuwwjtf37hWrEoJ7yBnFT1FucOLR2AJRKcW9WJKHbRw9MecdoA3kr97BldSazFPQ-Xoqo4Ja9o90HaZO1sU_AeI32OKRaqNWx7BUU_4tTxwkSAebieA9aiRKte5ofF1OcSPkA",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJRZnqvxNTUkYRqzD4wYluqq4",
+    "plus_code": {
+      "compound_code": "MHFG+QP Copenhagen, Denmark",
+      "global_code": "9F7JMHFG+QP"
+    },
+    "rating": 4.4,
+    "reference": "ChIJRZnqvxNTUkYRqzD4wYluqq4",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 99,
+    "vicinity": "Frederiksholms Kanal 18, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6881676,
+        "lng": 12.5959675
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6894275802915,
+          "lng": 12.5973538802915
+        },
+        "southwest": {
+          "lat": 55.6867296197085,
+          "lng": 12.5946559197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Museum of Danish Resistance",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2667,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102449197797431864226\">Frihedsmuseet</a>"
+        ],
+        "photo_reference": "AeeoHcJpArhvxD2C9T6VtU8OFQOqi8SOQIopalqDEsmCNeoI3F7PRZYbmk9F-azDyfm7TxNWrqgEvjMYcf4JddH0hFvmo387WG8G3tdj9A2A7srq8ibcqx8q36kPYl5O78LwL9trGzt5F8fV7NR9zj9jtPMdnm6RCkD1muu_UgQgf9RbILrWtGZ9atnrKNQakBbdmxnFNhEUYChP6pKUqYuVpm3BsJ2Bkvd8sEsYi5BHedz51-sfswTIPX9ztSuV-_GUnmpgdlWd-dWQ0CnBERrft4eCEi7RH3Kfsn_piy-lipONEauI7iaMzUHsi3dO7Jz-hL7NnBpQVt4",
+        "width": 5669
+      }
+    ],
+    "place_id": "ChIJP1Iq_yBTUkYRWZIXkjpa5bE",
+    "plus_code": {
+      "compound_code": "MHQW+79 Copenhagen, Denmark",
+      "global_code": "9F7JMHQW+79"
+    },
+    "rating": 4.3,
+    "reference": "ChIJP1Iq_yBTUkYRWZIXkjpa5bE",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1206,
+    "vicinity": "Esplanaden 13, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.68999299999999,
+        "lng": 12.5773931
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6914437302915,
+          "lng": 12.5786297302915
+        },
+        "southwest": {
+          "lat": 55.6887457697085,
+          "lng": 12.5759317697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Hirschsprung Collection",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2232,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100441450755233310895\">Den Hirschsprungske Samling</a>"
+        ],
+        "photo_reference": "AeeoHcJqbDcpmCpP0sylVsSAYdk2IvSSx0M0JtwIXWpwGm--JasMaUJrjoGbfwVPmm0ody97w7_hg8wldd8Upz8sUyNm_HUSeTH3cO8ylpqlQnHy7LVrJWcFRbXDhkeR2_stH8-94ylPhgHH08R6f98EJxTKnRBdI_6ajaVHUM-mGjtVRi8gzDg1ELA4HjlMkQ4gUU1gLhw0MmCuzD3j7cIDkHoPseYE2loChGoEIBc0JWC9_xf5cKcENQrK4X5iYuff4MvIpiQCPOKUHRUWzyFbJrH6qxJ7bMEJHcU-_mxSYNOnJ39i9yngJVZ9xfJPniwkMeNXYYCOQOc",
+        "width": 4355
+      }
+    ],
+    "place_id": "ChIJh3wvJx1TUkYRsBM5GKdGnxs",
+    "plus_code": {
+      "compound_code": "MHQG+XX Copenhagen, Denmark",
+      "global_code": "9F7JMHQG+XX"
+    },
+    "rating": 4.6,
+    "reference": "ChIJh3wvJx1TUkYRsBM5GKdGnxs",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 657,
+    "vicinity": "Stockholmsgade 20, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6765485,
+        "lng": 12.5782685
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67811723029149,
+          "lng": 12.5795636302915
+        },
+        "southwest": {
+          "lat": 55.67541926970849,
+          "lng": 12.5768656697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Thorvaldsens Museum",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3717,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110495368331273237257\">Thorvaldsens Museum</a>"
+        ],
+        "photo_reference": "AeeoHcJbw4YPp1lA46q-hIx-A2xl_uL5ibdGmwByXZKdn1U59LqHN2OA0Su5hNNBTNn63lHFScyJ3-xyPyAQdL7XicYLJ8_S2lceJbOTjaO8SPWGCTCZmZUrZetU77Q4BlYVQVphd8iZYxtz3UCNtDWQ_Z_fc3GT89oIzZok-nTR6gKMzyMFPd28JyUdbFNVa-m2xoE-e00ZKR09dELy4UffxVjm2AaTbMJiXdvLkdPPcPnb5XkAvBsAfHFv_AuB0eVdCVOUabHczbGqA-qPjrNhxgOA23Z7Twp7OgzW7m9HPm0FBYKpfFEP7PV6Av6kUZhE0SGO9NCNUtI",
+        "width": 5576
+      }
+    ],
+    "place_id": "ChIJF2rIsxZTUkYRwtHCYRGSY5c",
+    "plus_code": {
+      "compound_code": "MHGH+J8 Copenhagen, Denmark",
+      "global_code": "9F7JMHGH+J8"
+    },
+    "rating": 4.5,
+    "reference": "ChIJF2rIsxZTUkYRwtHCYRGSY5c",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1487,
+    "vicinity": "Bertel Thorvaldsens Plads 2, København K"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6695374,
+        "lng": 12.5242031
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67201179999999,
+          "lng": 12.5252200802915
+        },
+        "southwest": {
+          "lat": 55.66871259999999,
+          "lng": 12.5225221197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Cisterns in Søndermarken",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102239110408948400086\">Peter Poot</a>"
+        ],
+        "photo_reference": "AeeoHcJS7ceF2RqoHlCDk1bw2jsKmllWt2KxrnLvCPO1D10mNUEfV78rsKvBS7SA0oaTEC6MShQEkV_CPk9JXYx-QHW24YXQLdj2JoWeha9z_lJ0FA6doo6lToOU-MDHwWpLpHs4Jv2-XRmAwfWgxpIyXlIwzLloY6DexZedRm8VWPNGHFpl5bXIPdLQmDt321QC7OkHqZq5MpApKPxKT8Fu3hE0EiWMgQ1EZos5ziRW1T2vqprPwQrsa6eEUiVfuV3aUWJapG5qyiJugqj6_VnWxwRSpxTCjSFYle9N9jH8xqcvqIAVkBupBleWaxPNgcNcWZ03_RdemHyyOnXvQfTQqvDnMv2JPrMnbeP4RhSgKpTnJbd_bopIVPeyorTb5ynvUiNyugBaTD8Aom5BGrQH7shZ2PZ7itW7WNzAmz7hyhpV_Ln1Z8OscByzywOIsHK5YsQjC9mekSeFX0rjQyU2MVeqnjRAr9uGiy8SclnvOmUonvQwUtDOhPvFqSm3qnZWRh7_gemIGMBLffwu-MZ291sEjAGWYTUVKWyHEO4RG-Dcn3SsEXsKrEOKEPxT434KvJihHkrCYJIm5wAjnZY7bWlQtaMtOUAHTu6ccEuf9QwzCeI9-LFLIyw64DnOf3_ocJ7obz4p",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJfyjMH5dTUkYRb6MBP3wrqC0",
+    "plus_code": {
+      "compound_code": "MG9F+RM Frederiksberg, Denmark",
+      "global_code": "9F7JMG9F+RM"
+    },
+    "rating": 4.2,
+    "reference": "ChIJfyjMH5dTUkYRb6MBP3wrqC0",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1784,
+    "vicinity": "Roskildevej 25A, Frederiksberg"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6874652,
+        "lng": 12.5767806
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68880713029151,
+          "lng": 12.5781578802915
+        },
+        "southwest": {
+          "lat": 55.68610916970851,
+          "lng": 12.5754599197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Museum of Natural History",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 5124,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102534781214393994321\">Statens Naturhistoriske Museum</a>"
+        ],
+        "photo_reference": "AeeoHcIQDrGoOv65VYRc7wAZEJukvoK9y_U6PI7QPOUaaFBdsGNmyzEO0mxkLHpWKm_fIL9p4oLlOOspeewotjrHRPErEp0A-P1XwnKlCAfJt0LA-0b5URDRRNdMlmxYRj-t0JaZ30OCNf5Gofn-hK30b6zSsYQ99kAK15umtg9YEWfj4UvchFwW80hzQTcPxd3j5FrCieYtgPj4CMgvXGDTZFZJZyMgMzAvV0Hu9-X2G8KpVGLgsZcnywWs9IzW-UOA2tk-u4E5zMMPmmRUKj3OWiW3846cTP9yjGOP4ZCvBS1HRMxeAbVRxMs7etoQ5KfQWo1038t_Q2c",
+        "width": 7778
+      }
+    ],
+    "place_id": "ChIJaYrImBxTUkYRTv3YfV7vceY",
+    "plus_code": {
+      "compound_code": "MHPG+XP Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHPG+XP"
+    },
+    "rating": 4.1,
+    "reference": "ChIJaYrImBxTUkYRTv3YfV7vceY",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 3079,
+    "vicinity": "Øster Voldgade 5, 7, Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6893283,
+        "lng": 12.5976365
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6905393302915,
+          "lng": 12.5989961802915
+        },
+        "southwest": {
+          "lat": 55.6878413697085,
+          "lng": 12.5962982197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "Gefion Fountain",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3326,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111340386174417487889\">J • B •</a>"
+        ],
+        "photo_reference": "AeeoHcL18szaWLUF4liN3h5Tndvz3IGaeo8MVK1oE6Aml6R5BZvS-TN3yujKUmFTLdomob6HSvbhOhmcS6whGkTQ6wGjCoqDkkx-kWm3ygCZgS8swYBDs2PNkmIn4FksosIcWIzxqoEdEvURH7opVkbByjrxjpM9FCInoO4T353bB6eipyyfpzbDkYMLq2z8UjCa9VnYtvuiymoPRz2WBK5iG5IZilE5ZJLnxTLj0QNTYmyKICXB6RpjV-wnknm35iucQV6_jPev42rTWZek30bKjLuUKYrFxuRQyKxnuX5eihwmOOCDHUBjuRfJRO7jI2Qs6UM79h8UqXE6YZyBmFjp3Za3o-81WvyziSFTc3o5Cm17qteNkgqyJfGxA5UYoLcPz9yKnme1T35r5Xw2iMPCOBCetA1qbrH1h6fldQ-A_V6xos8gK3MZLtPVav-gmw7hw4sJMczp62IBK3KVZ2bAJTQu-JqTZXlMt-Rr_hPb72XbLkvJBFwAa-hiIlpNj_QplJ6yTZahFWfPSP2RzDiUu4eD4xuFjEyF6dKSQcqdMF4sARaq4c46z9VD9p6pzy6fa-iYVBxfHca-8m1WN0J3Kcm7ryNeSTxGMWpURwpJDlFm69jCpdrHjBU3TXmyzmRRufCBFqFr",
+        "width": 4989
+      }
+    ],
+    "place_id": "ChIJXYp1kiBTUkYRrjkQMxuLT8o",
+    "plus_code": {
+      "compound_code": "MHQX+P3 Copenhagen, Denmark",
+      "global_code": "9F7JMHQX+P3"
+    },
+    "rating": 4.6,
+    "reference": "ChIJXYp1kiBTUkYRrjkQMxuLT8o",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2477,
+    "vicinity": "Churchillparken, København K"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.680522,
+        "lng": 12.585957
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6821943,
+          "lng": 12.5882348
+        },
+        "southwest": {
+          "lat": 55.6789191,
+          "lng": 12.58413
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Kongens Nytorv",
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109340598330169621385\">Morten Bjerregaard</a>"
+        ],
+        "photo_reference": "AeeoHcJ0imLp0RHI_7AbaF-Q1CRCIc6mI2yoUd01Uv7nxWwBMDe2pcxdh_2ED2qCeTy9yjYDtHSD4g6R7unJ_UavOy9fXmMF8Ml6E1tU9fUPionFe6jhF2xFDSJIrsYPyEY2sqydPjZ-Hf0KO1StiAyXcARSwi26EL39_vSsgPmKCVblzaWJtGcXwdkP7oy43mcw3DEw955n0r7YIFyFyeac3k_534xRovspto1RZfMIjeYtwmRsurnJmFGkZLa83rLhBFLpMZ63w12NfWbfYjEUUqiyAcDZgtjutsqlJjH11D-KolTyTUHe9CA-EsJ_H1FL1oELMIwExDjX_sA4KcjyCKyjj7D8Z-PXvEf0ZSuqIS82pXAE7zUBwK5CQyFsIEYTXNHe2PHcGC9GwW4-1TrR_F2Dw3yUEJoywNN6xfQOLQd2labSQZ4W-u-kDtv3O4fA_jWNsAKEUj8j5qfaaNjLyzKi7EUKM5JCR_gbKvE-CNHLtO-UDGZScUO6qJjFpu6FNKYprIhdLbFrBJY0m6tK89op7WP-FYi7Vqt2LrBY0BEY5YW34lg2CJaNSFpUfQRpChmSYzZxKbtmVmE38xqXz5UCkIfBXSnns63UOgq3BdCwI4wknAlMVV_4WEX501Ay2vhd3Q",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJJ7ITIBhTUkYR4AvPXAdIYgM",
+    "plus_code": {
+      "compound_code": "MHJP+69 Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHJP+69"
+    },
+    "rating": 4.5,
+    "reference": "ChIJJ7ITIBhTUkYR4AvPXAdIYgM",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 18127,
+    "vicinity": "Kongens Nytorv, Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6800569,
+        "lng": 12.5707868
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68125658029149,
+          "lng": 12.5722652302915
+        },
+        "southwest": {
+          "lat": 55.67855861970849,
+          "lng": 12.5695672697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "Saint Petri Church",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 3072,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106726277983187998018\">Chris Stewart</a>"
+        ],
+        "photo_reference": "AeeoHcI2ADybVQrd1gFIsRg66xJdqlk4AQy2Un3wsMkKJv7OA5kyO13m8nvL9bggop35hsxiPI0zFGBU-_xzIJStOiyVwu-e1hLS7zPt6mT2bvel64P4aomK8gOd2_g8RPiDdGhdVRThigG9hAAULmpQTuMEcD-jTFEA8agsYhV5-z1CHQ3VfWwRV7W30XeylOiW1Qz8CgZLOkSYvLUOIwQD8ERp29Tpzb81kpQ2HgWVPA9U-Oej-Ez-dQJBqP1TaPryZtQU-7B0U-SmbdnCI8E9wBoPflTspPD7COjU74H9EQgZmbTMIlt2OUvxtpsvwSts53LZecbxk9s9a_PE_2Kt7TEyr3r0hbTQjXcH5fJMUbS1fBDkjkO68GuHcDAIoO2LU8GS7IqINeTOwxibVH5cjrsyhNfcFGLh4Xepzi54HK7eXIAE_IBgTrRYILmpwgR_dM5HlRxp6YpbUeppmbvep6heA_8ceIQ0xxAo8tvCTvCMUXirs3421meAVPJb4_ujR8P3Ru2EeHnPrR7k2X0wMNtYk91yw4SLBLBom1sTIoIG4YI9gc1H4oO9gpv59gnz9aVTuVWKBW4gadLYzU_iqTE0MZ_P3J7nqZqESh24mystu6mEc2_mGZzKaeZyh1SANO3omg",
+        "width": 4080
+      }
+    ],
+    "place_id": "ChIJ7TqF1w9TUkYRJ0He5c0Ay6s",
+    "plus_code": {
+      "compound_code": "MHJC+28 Copenhagen, Denmark",
+      "global_code": "9F7JMHJC+28"
+    },
+    "rating": 4.4,
+    "reference": "ChIJ7TqF1w9TUkYRJ0He5c0Ay6s",
+    "scope": "GOOGLE",
+    "types": [
+      "church",
+      "tourist_attraction",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 204,
+    "vicinity": "Sankt Peders Stræde 2, København"
+  },
+  {
+    "business_status": "CLOSED_TEMPORARILY",
+    "geometry": {
+      "location": {
+        "lat": 55.67550130000001,
+        "lng": 12.5840127
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6766775802915,
+          "lng": 12.5858402802915
+        },
+        "southwest": {
+          "lat": 55.6739796197085,
+          "lng": 12.5831423197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Børsen",
+    "permanently_closed": true,
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102407911207631727118\">Sam Srinivasan</a>"
+        ],
+        "photo_reference": "AeeoHcKxC5SPZ3q-rsU0TykFDEoE2gqebxxXlCKauAHNBVjPJpB_FUkOQW5e_E8PBHdU2dCYe7N3OjYH62edUB6YU3xaNu7lGsJqGxtHrp0Pzz0i5YJdQWX2ninvaIKGds2iDrMr7NASG0gVBelOaolZo2YRladisZ5RMHC8qrU8rKslrsHpOi5rAoXrEnou7K7X_-WiquH3xQu0bqkJ12RLHoQMHima4QLEJw1vzs-ftM4Ll7Sa0n99juljmaH-q_CmgzzZDeSBosZKlg6FrHi_pY7jNrutvf335Tyzy4gEih0qiCBt0o7H5qEP7CLgw4xGd6CpqAvxzObQ7PXRuZKx_BBt0rHlmk-6lSI_fvQCq9CG9LU5ll_haqlrkmRYEwinOtnb_EOH3c7EIws-hiatdVVtaJ45sJVswfQXHEKrvABTRe8EnriIsQ2ABiv5Ey_efOMWw2I5R5OdGJRzgNzmVbVmMfzPHpUK4t3H5FiUviz-gTcYjB6iJm46KUmHAT5ldj0axfgMyYUyqezleVB6Hmf2gBij7v3hewD8dxqn0ZzXfyX7AdVJ4m_6bCVcYAmd-mQ2LqX3fVXY2urRv_SbDmCV-gDAQU--PLsGJNsTUVtJEhpjPdkV_7XJE4Cd9bbQMTgFEw",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJY47XZhZTUkYRVa7TqtZPkss",
+    "plus_code": {
+      "compound_code": "MHGM+6J Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHGM+6J"
+    },
+    "rating": 4.5,
+    "reference": "ChIJY47XZhZTUkYRVa7TqtZPkss",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1667,
+    "vicinity": "Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6802207,
+        "lng": 12.5838497
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68137738029149,
+          "lng": 12.58640585
+        },
+        "southwest": {
+          "lat": 55.6786794197085,
+          "lng": 12.58113765
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Guinness World Records Museum",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 720,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113448747782506904479\">Guinness World Records Museum</a>"
+        ],
+        "photo_reference": "AeeoHcLg_Tq39AwteglccofQI8nWAxA6mx0M3D9RIiwCAW2AzV8c1Pc4Xf7G7crePhN4cc39wEt8enwVZCuG55DPE8EQ5dC0k77pLS5eCsAazBnkYA9EOVg_PqdDjqmJoaDo-hUJorSvOGmcoOKXCbfr2UAfz4fyMwvDC7rCR5f65HVNafUbFRMSKieB-6ztxhR9gqcJJLR1MaeCIoTBjx2SfAlgB-HYNj38r7EXiJHvfeoNN-7rdOFdy_5Mt8uary8r0_cU_69CPK0IB91pkejwwZwe8A7vscMpbj6qsjxTRvhSz2iiPv5wDe7DQLS1sh1DOZg2SFAaO8w",
+        "width": 720
+      }
+    ],
+    "place_id": "ChIJ0zpeghdTUkYRc3uAuuHgZ50",
+    "plus_code": {
+      "compound_code": "MHJM+3G Copenhagen, Denmark",
+      "global_code": "9F7JMHJM+3G"
+    },
+    "rating": 3.5,
+    "reference": "ChIJ0zpeghdTUkYRc3uAuuHgZ50",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 3671,
+    "vicinity": "Østergade 16, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67237540000001,
+        "lng": 12.5872175
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6739038302915,
+          "lng": 12.58876228029151
+        },
+        "southwest": {
+          "lat": 55.6712058697085,
+          "lng": 12.5860643197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "Christian's Church",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 2304,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113011754788578977493\">Guillaume Btd</a>"
+        ],
+        "photo_reference": "AeeoHcKFDARXxpWLBpcze5uPwQvowv13OCFzx9OtB5xZCNdkZuVLIA1FsGeVfI5zTpOIHTEXcNs0MAjBtwuE-4x52W5RzmJEq_Yr9zD8U_V-8TZLu2nnm2ivJKBB1L3oNJREiGr_yUjmj_E8QnQ3Cl_0tk_xYA92kvSYtGRM80Qj_rgvy0PjyxCHVItNgyYcxd51V93nlvD4DyxT4yIKuKNgKOrmy-Rn462bXBeQnT1pKkPSX8Rn0MrzeWTMn55ygf7J6B3CKcxm5nIxA7IWSkdAyeA4LwfhchimWfdghLhuVXPnZCu9OFxeI5FJN00XMZgn5BMTjZQvOqO2AsBY-dwZ1qibmBFHbJAM1Yv_i_l-DyjSYpJctk8NzdBwKxeVMRLLqoBuHz_IJjsBeXqEwlrSC5Y7KWgSuEcVLZM0E4ui7h3zxBvMpcblpspp6iDuvZnvfK-Gnzg0otC3w3tM0fJKgfPbb3ab-S0p-kVGRLmC-YRfycxVLUnfmyDSyBUZ113ugWAiPOMIs-oN1edpK20-zca80sWn2adOZXKGOWdKv2iawuBGrgLJmudGUUTt7H9HJARrqPgC0DSJzJ0xT5C21Nove6cn8dPES9klEhtf65w2sLQJTEnIHz0TM7vDawPV",
+        "width": 4080
+      }
+    ],
+    "place_id": "ChIJRb36Tz5TUkYRKdh_2I2YIlI",
+    "plus_code": {
+      "compound_code": "MHCP+XV Copenhagen, Denmark",
+      "global_code": "9F7JMHCP+XV"
+    },
+    "rating": 4.5,
+    "reference": "ChIJRb36Tz5TUkYRKdh_2I2YIlI",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "church",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 303,
+    "vicinity": "Strandgade 1, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67883560000001,
+        "lng": 12.579573
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68017458029151,
+          "lng": 12.5810725802915
+        },
+        "southwest": {
+          "lat": 55.67747661970851,
+          "lng": 12.5783746197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "Stork Fountain",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 5712,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104255323862580986593\">Kaan Alkan</a>"
+        ],
+        "photo_reference": "AeeoHcJbLFXqGbEshJrYcPdd4btc1MZwEw40N7eM_zaeIl5FMvVT-00fn5VEmKSG4CAsP_-CY5vK8gBkQFNqTXx-LZ-yvNlOrF3_-LdCLTKk67K_IeGr0ghJ6rifj4MvX7jCMQbga0eefKTryiS6LKPbSXx8ejg5QO5IajPmhTyecYy130y0lELKQrT2y3QzVqAREcKwJ999yCTTsMRvVSApIdjgalbkZ59kBJeZwqcjYr3KOnQqfR_x5KJ7d0MTU4s3D2wmZNj-Ugt28x5rGKboGDSlQaivl08iU_vd6GAg2oJ38kHWxH1FHnokVocrLY5fQXo0CCK010RFVmudBTc92J0qbXLzW4woIrbeWKFES_vSzT5qsNonOVRz5Iiv4Dg4hPXFPFc7KDVWmhLGCrD23KzZw4--p5tSwLuaYZS382tvxsKGXjETGFyq3pEURntfSyLIRTELJ6f-gTZsPY5gPBiJE0nZHzRE7ytlGLteKwxJXz8rfFmVuh3OwDNGyXaWXw1FtK2c9b3Wwv_d8h7foZT1OwSQHW9LA8X7C3IzPl-aV0GE_werAqEQOl5gW52gLTH-qaiFGNuqtOziZuskAua4SXrTtN-X6IJaALphLnXE8e8zCmzmOqlPDu_x-BcGsv5pEm8C",
+        "width": 4284
+      }
+    ],
+    "place_id": "ChIJW7zM0hBTUkYR6ZKVuxWzFgw",
+    "plus_code": {
+      "compound_code": "MHHH+GR Copenhagen, Denmark",
+      "global_code": "9F7JMHHH+GR"
+    },
+    "rating": 4.4,
+    "reference": "ChIJW7zM0hBTUkYR6ZKVuxWzFgw",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2975,
+    "vicinity": "Amagertorv 6, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67210970000001,
+        "lng": 12.5253483
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6731566802915,
+          "lng": 12.5266137302915
+        },
+        "southwest": {
+          "lat": 55.6704587197085,
+          "lng": 12.5239157697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Frederiksberg Palace",
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102114949796406417392\">Michael Thorne</a>"
+        ],
+        "photo_reference": "AeeoHcK2Z2DfzEOsnT5cASc7J18Omj7n5o6vPLo7Z81OleJDhDRrrqyYmr3fGSYW7IaFkxZpoVCvz5ubAi_15qjcEjWsZ1ibTVp4X7zEppO31KqfufeWiTYhEpu296-Rp089aOpRvnt3VHdy3ZGlHvYd78oAXZ7HHDls-uPtQz2kWdqIrHZj8KDJ9bo2y-acrLt-AFZYqTJEgRaXXJ-NRLLQBV2RFVrWDqrk54_W_fbwNGgY0ypinq_FLVTsMx5TMJbUdm0OvFaius_GBLxSiOpDBvLgTQEF5XlqNbtTkvIr41qjjRpmSgNdxAsLPwjNfyoMkEOVPiVEChk7sHpaKgO9MZgunVo-vcAaYed2FJdDajMNyVLGIzAFwArRWBxUDrDtEIWkgSi67pMXkVUCO8YhKDGzlQcpIzcQBs9i5Qz6-DgmtodgXeVVJG7acGAQeJIht99uec4Hb9STAA4lKecKUKXEdO3d0C23gr76iM37Xn2BqWkn5sDgndDPwbuFOvCDhC5ornHWlNhpElU8V8o0YIOSFMJRsN-DVz-Vqjexpw9yt3_HdXe-qsRxwj8kE4Zn5_5EB6qV49o8tO5oFsDjSJt-M59eKVIrfNRo-JbyCNsmAjXGRY_4fx0mC2wBS6x8hr9EvZ0a",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJYwKWn5ZTUkYR_NPLdkpx0Xo",
+    "plus_code": {
+      "compound_code": "MGCG+R4 Frederiksberg C, Frederiksberg, Denmark",
+      "global_code": "9F7JMGCG+R4"
+    },
+    "rating": 4.5,
+    "reference": "ChIJYwKWn5ZTUkYR_NPLdkpx0Xo",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 956,
+    "vicinity": "Roskildevej 28 A, Frederiksberg C"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6789754,
+        "lng": 12.5766239
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68047678029149,
+          "lng": 12.57846585
+        },
+        "southwest": {
+          "lat": 55.67777881970849,
+          "lng": 12.57551125
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "Church of the Holy Spirit",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 2736,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117087301009195491311\">Tore S</a>"
+        ],
+        "photo_reference": "AeeoHcLJHje01sNiQfLre4eW9aAHyawRpxPCJRmwMnh2uteH4EKBWSIzfqg8M7ijpVxIhodupjqsjkGyEbEvo8YUpTI2ZYEZy_0tussFNfjjbaD4L4WTaB-Dam_yazyeEg6sX69qVxVbliJLi2PhudJquf0UNWpXnH1BHEHwJL69P603n6i6kNqbuGgG5izi399BEWiHOPaPNhUBHH7YWJn5gWgrhAKu86gjrATBDkAlnaAPlJOX0fNE47FvhXckrkoBrtnbq20dSOL4EfY6ChwsIJe9LW97cQfPynt933ndHs72wMvlhLWhgvmaucWdiNzqDfvDskMaiR1F2cYxAicFhjntHnZeFxk697bGPR6I-I1TGgQlJSeTL2UZkLahtwaGAEkN9YTZfhMLQD2tthGUSm-_oSKYUFPNmBE9K3SQvrgRySxeO2HQP7N57UxGOfjF82-7MXBFrAtrvBt5HTkEQCF2U6N1eRMxF2ek47GcG8AL90dGuLJtzqU6MsQBa1_Woo49vQe2arnHfQNDylFlQL3NCYHdcOc8SaqTL_xr9D26H3ChK1d7W0crEkXLD5ggdBQWuHgxkRUXjHMIpTG0t-XTI-2etx9REmsB6_wsoMirCrdEhW8VpPCqUSDOs8NRhIzKzg",
+        "width": 3648
+      }
+    ],
+    "place_id": "ChIJVZnk3BBTUkYR5bFt3-L7j2c",
+    "plus_code": {
+      "compound_code": "MHHG+HJ Copenhagen, Denmark",
+      "global_code": "9F7JMHHG+HJ"
+    },
+    "rating": 4.4,
+    "reference": "ChIJVZnk3BBTUkYR5bFt3-L7j2c",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "church",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 771,
+    "vicinity": "Niels Hemmingsens Gade 5, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.68598489999999,
+        "lng": 12.5917864
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6873415302915,
+          "lng": 12.5930693802915
+        },
+        "southwest": {
+          "lat": 55.68464356970851,
+          "lng": 12.5903714197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Medicinsk Museion",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 878,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100484204927837166017\">Medicinsk Museion</a>"
+        ],
+        "photo_reference": "AeeoHcLQgGbqLQeImF-rkveVk9NeBX2T-u4qvCm_CgQEGnYdk1i-FTUDd0-PmKauUPSwLVeb33Mc-3KHIokpTtP1L1JNkaKDTCCJeFHC5PiRDEHfpMM-xuAQXY7aqqqMYt6VrFRSe_t3cFca6CrRXUlXlRwJmAdqbBx1b-BYD-WOaUeIDXqT41fgXUFkE4xuSJtE7ehO-g0KDaC5xrmNrftW0vTIcQDainvF2xnNuAgy28tzlQtIcVeHnef4IAAEsotbuiv7tX-MlPmFL92ob4gJ1tmxc8pql3fdm1arqTitWEV9rALIhBkJe3NHeWc3Z8i_6n45U3HD4k0",
+        "width": 1559
+      }
+    ],
+    "place_id": "ChIJc6Dg8CFTUkYRMb9YySXljOQ",
+    "plus_code": {
+      "compound_code": "MHPR+9P Copenhagen, Denmark",
+      "global_code": "9F7JMHPR+9P"
+    },
+    "rating": 4.4,
+    "reference": "ChIJc6Dg8CFTUkYRMb9YySXljOQ",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1436,
+    "vicinity": "Bredgade 62, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.678644,
+        "lng": 12.5815874
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67995863029149,
+          "lng": 12.58267543029151
+        },
+        "southwest": {
+          "lat": 55.6772606697085,
+          "lng": 12.5799774697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Nikolaj Art Gallery",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2048,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107081258892947790454\">Nikolaj Kunsthal</a>"
+        ],
+        "photo_reference": "AeeoHcJBrtdBVtBnRisbHxSmvc9obwGatITV6W0IW5ik-UbO5MzbZlY9M3AdgDPttp0Sb_xeLYfoWjDbtILDNNkeKJBAN8no9VxdOQdpr1bhGkcGcAqoVlz4ZhHsbVPnIsjxzw1sEqAVcwveZrtAbVOhQBteMwgJt3KGFkwQS2MlpndonjvxHKgJpYqElTToLkwzI16YCWFYm3bz9eapAukoh81029V234ASjOpF2iCtrpmqFbG3HJ51JLbpakmv_FLm7dv_n-tWvpuBkOKcYj-hYZ-Rwg23nArCLwKFYNDqQIJUXhE-S7OJ1mWqxsSy-l1mYkBcntEyuhc",
+        "width": 3070
+      }
+    ],
+    "place_id": "ChIJZ7XgGRdTUkYRmi-Kary7yRs",
+    "plus_code": {
+      "compound_code": "MHHJ+FJ Copenhagen, Denmark",
+      "global_code": "9F7JMHHJ+FJ"
+    },
+    "rating": 4.1,
+    "reference": "ChIJZ7XgGRdTUkYRmi-Kary7yRs",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1286,
+    "vicinity": "Nikolaj Plads 10, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6805274,
+        "lng": 12.587945
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6820266802915,
+          "lng": 12.5891439802915
+        },
+        "southwest": {
+          "lat": 55.6793287197085,
+          "lng": 12.5864460197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Stromma Canal Tours Copenhagen",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116207387464183843036\">pınar Yorulmaz</a>"
+        ],
+        "photo_reference": "AeeoHcK_R7CTRUluXKa-uChBBEXdA1pSk1fiSWn5vCIBfNUJX0uDDQO_iuQYAFu32Jip0ujkVQ2M5JHylxF2kRGE4PK_eZ5Q2qnPzJZriCJZYtJVvsAItpDWhhzSCksy3cBc-gh0xnddagFwaIk4XV_WzMQNX3u3P8Y3Em9TsIsneuKsEtLuIfsJ2hPuDZ8Ta00S4M7EN1QR1bW0FdToQ6vrQnDX5FBrtGf0J3AnNQ6dzNsABmSvLlZbWE0wVA6HZVjr7mn0BAED-gWiWfnwkvrwHKKtfrGlRDLOo88KbhN8nu2mkTB6z1PWWZ89r8HznPdj-f3S8VoEIol1vTKQBcdksEG-fFkbjh3XE2nIdZ9WJ_CcsG3IWBoi1-_D6HCGSYEtaDSVmdD-V1jZA7Kaxk5cwHdtsH3UYAIVPw_isGGsLd1vShiqG8euKSLJ3pBHDok25kYEagC3vZynwhNVLSkCkuI6kbPkFio-iVlGQjca-yo4WViwVptrPj_Y9lObOzrT1DV8523N-Fomi8LnNnylAe3HWCQJiGr9HxngRITwp8P_W_ObKH4bjN_M8w4pr4UQCYG4GO7f1kFVpfigPQIbPsqmdeRyt95Sp7CmoutewazL-MeHTqEFNlg_pc3m9TvjMfbPaA",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJyWLBzRZTUkYRwvMlwjcWmpw",
+    "plus_code": {
+      "compound_code": "MHJQ+65 Copenhagen, Denmark",
+      "global_code": "9F7JMHJQ+65"
+    },
+    "rating": 4.5,
+    "reference": "ChIJyWLBzRZTUkYRwvMlwjcWmpw",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "travel_agency",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2969,
+    "vicinity": "Nyhavn 3, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6849417,
+        "lng": 12.5701915
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6862638302915,
+          "lng": 12.5714288802915
+        },
+        "southwest": {
+          "lat": 55.6835658697085,
+          "lng": 12.5687309197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Workers Museum",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2828,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112385167113131891563\">Arbejdermuseet</a>"
+        ],
+        "photo_reference": "AeeoHcL-278spx57NhE1gR6RotPpwuSHo1RxhKjxG_94ch25yT_RrG9VddM9xt9DHKNWO93dhH6TjXQu6ZNXtbWa-etZ7OpY522-9wWFWQkqzG42O1YCCl7sfwPgZQWges98JKedMqiEBSz5mNsn0fV-SZAB_tWEvmF7rkgJFc1-q7w02kVgXhfOqN8a7s7seZH93J3jeLaRt8ti0KzMqRvj-7nXnxFyAyUrWlCVRusDpTttwzjDwVoCj5whZZoSeefvj3CNAdsnEJ5JyYP9ZZBBzYwlznzUqkGjLc8h-WFV9elWgh9c8vbDWOzQOa7AiUcO_O4sLA90",
+        "width": 4242
+      }
+    ],
+    "place_id": "ChIJhYY5HQVTUkYRU7nk0bC9YhU",
+    "plus_code": {
+      "compound_code": "MHMC+X3 Copenhagen, Denmark",
+      "global_code": "9F7JMHMC+X3"
+    },
+    "rating": 4.4,
+    "reference": "ChIJhYY5HQVTUkYRU7nk0bC9YhU",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2305,
+    "vicinity": "Rømersgade 22, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67451390000001,
+        "lng": 12.5320843
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67586388029149,
+          "lng": 12.5334335802915
+        },
+        "southwest": {
+          "lat": 55.6731659197085,
+          "lng": 12.5307356197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Storm P. Museum",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 592,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116695807078788406040\">Storm</a>"
+        ],
+        "photo_reference": "AeeoHcIDV7EVA54l3bBpAhcPjs54u-F8HaLnuMdt5wKGRovgYX-bJDMDwyaxkC6MMy30dehZDMIxXEb8lR8MW2APdJEIQo4wnAaUCQxA8YnGcrmlUDGE4kQuKkqmPgR93uV7o0XT5PrZvoupy0bAkCkx2GCWvGykD9YKLoHgv6D-XW9xaaD21xAYhoheXl-4LnitqWg1HpMPHJiw5g72gVMfv-KJ2xb1u-I7gtdtrp5ZXkdNfRTC5CAjE8S8ymLvUoDx0PYzuzmfygq1dtnMukfRcSWVBjMStPs4719nxQYvw_O64usGZTJGqtNJ-f4jFs8ynagJL5klIPU",
+        "width": 1024
+      }
+    ],
+    "place_id": "ChIJ29Bo2ZdTUkYRfFLOXgQMGJc",
+    "plus_code": {
+      "compound_code": "MGFJ+RR Frederiksberg, Denmark",
+      "global_code": "9F7JMGFJ+RR"
+    },
+    "rating": 4.3,
+    "reference": "ChIJ29Bo2ZdTUkYRfFLOXgQMGJc",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 418,
+    "vicinity": "Frederiksberg Runddel, Frederiksberg"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67427199999999,
+        "lng": 12.582269
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6752251302915,
+          "lng": 12.5838341
+        },
+        "southwest": {
+          "lat": 55.6725271697085,
+          "lng": 12.5809809
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Danish Jewish Museum",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1650,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109782334002335420426\">Dansk Jødisk Museum</a>"
+        ],
+        "photo_reference": "AeeoHcL3GY5SgFMsdAs8ous2XTIHSrm1XmMfQgtqKn0oQk_YxJjBYJpgpe19TWwcxVdZbjGU-acdlvff56QFjtbJ7QWjdBNjM0ItcdPlyyOmmT0RKONr-i8mToPhUDTg4TQh0efk30F4L4KupDr8MRX68F0y2hWvmWAt8d-bj9NYPQzrt6cEvDrntzNxE-CtLsW2GX2Qw1rPRFFunllqF8KGyYgbFmyGXAZ1910nyr4nrpT0v6eUoPojgL3MAKUACh8GPB77clOPGxTMfx_y6-x95RWvVJZSQN3Gv8VK8uDVr2PoKjPGh2gBZthWeBLRPftZIZ5k4n6uMtY",
+        "width": 2474
+      }
+    ],
+    "place_id": "ChIJS7YcxRVTUkYRQ0ZvaPs-cGo",
+    "plus_code": {
+      "compound_code": "MHFJ+PW Copenhagen, Denmark",
+      "global_code": "9F7JMHFJ+PW"
+    },
+    "rating": 4.1,
+    "reference": "ChIJS7YcxRVTUkYRQ0ZvaPs-cGo",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 346,
+    "vicinity": "Proviantpassagen 6, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6901224,
+        "lng": 12.5608252
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.69138908029149,
+          "lng": 12.5621636802915
+        },
+        "southwest": {
+          "lat": 55.68869111970849,
+          "lng": 12.5594657197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Politimuseet - Danish Police Museum",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 960,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111366329078809822290\">Politimuseet - Danish Police Museum</a>"
+        ],
+        "photo_reference": "AeeoHcLG6G3-rHV4Etjmm8gvjEYOKek4Gdw0tR6FetEcPIZ0s3cRPxNH6DGxuEwKU2QCxMl7Za8Nw8b--KuSva6Jm_lVhI635PGRhDrAaYSahsgzEXVk7uAMMNZv6Q5ln_bJqbwvnCwxJ2KLwlqu9s0mneXynU5OarfsDW8YEbecSfsEFDvoJMWIGtFNcm11qHjtCus4fkhasfCSGHfbqaVRtjrHFD0HdDXbk2qEdXAQIdvVypQHNbaOHdhOV_Gy-ORKZQk1FYvRZ13GXUOCCmSjpWEq4ZxpHtooac2zBQZS9TBhe0uAr2gpeg5sxhpcqG4kHYinuZ8wRf8",
+        "width": 956
+      }
+    ],
+    "place_id": "ChIJFUMgvgBTUkYRGwrGYOWsLP4",
+    "plus_code": {
+      "compound_code": "MHR6+28 Copenhagen, Denmark",
+      "global_code": "9F7JMHR6+28"
+    },
+    "rating": 4.4,
+    "reference": "ChIJFUMgvgBTUkYRGwrGYOWsLP4",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 851,
+    "vicinity": "Fælledvej 20, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6766342,
+        "lng": 12.5836016
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6780917302915,
+          "lng": 12.5851361802915
+        },
+        "southwest": {
+          "lat": 55.6753937697085,
+          "lng": 12.5824382197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "Church of Holmen",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 9000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111419947442712649111\">Fran Howard</a>"
+        ],
+        "photo_reference": "AeeoHcKeByWub4NaDO6jJKqpnCwgc5KbDFfVW3D7g2SVbWDttrzGcAe18o2L20DIHz52-9Rod2wocHHalO44G0Mh54KsySxYxDEZawdbAqp7NE-lpU3khJ9Ko5-67SO31DzILmgfct4BV4s7SxQ6IX58qWoplD-grby79gb5rtOgokjcttW3uBpPj5Vl4RuV77jPufWUsTUqOclqvzyRSvhIAfGA09dhnkFRahMxGdfIi133770c3Fj-sYts1oBY9BmtYr-z39dVT89D3Kjm2R5XChhWWHMN81O1ae40-tFNb2x1pIwYHRcbqja-fC8v7BmTPYZsv0Hq2vULnoLLvOY6t4QsMRfHkpmlDXLifRd97e6WE0xhcPJFY0qrLYXrkTuqq4rbZiykRUdFuq1LGBW59_odmd7Jr-_Wg3vHdLiKXnaXkoqCuqY-KOewSVBWR6b7PvZDkosDIS8Ry8PTyZ1Ov8TXr2wajMoydMXcIjYpRrlUAtMIovgTBhxmHTAc-kAQA0yveCjGjAI-EShjGeevxInys8qE3FWwnBZPt_cpLNAByfOK4CQUUby6Tn9yoci_HM0Gwo0qbux_zocvZdX-NCQguCCCRoktzUj7m5sNU7EGXhgFQLMClzegMFmsP3G8x_T9-A",
+        "width": 12000
+      }
+    ],
+    "place_id": "ChIJa3JPQRZTUkYR_IXRgbTSM7M",
+    "plus_code": {
+      "compound_code": "MHGM+MC Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHGM+MC"
+    },
+    "rating": 4.6,
+    "reference": "ChIJa3JPQRZTUkYR_IXRgbTSM7M",
+    "scope": "GOOGLE",
+    "types": [
+      "church",
+      "tourist_attraction",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 830,
+    "vicinity": "Holmens Kanal 21, Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6776793,
+        "lng": 12.5966259
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6788629802915,
+          "lng": 12.5980454302915
+        },
+        "southwest": {
+          "lat": 55.67616501970851,
+          "lng": 12.5953474697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "North Atlantic House",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3840,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106578354021345382553\">Nordatlantens Brygge</a>"
+        ],
+        "photo_reference": "AeeoHcIAFpwKpn6nS_G58WT7_5UrPG0IeRiPMfnfAjdjXyia3YEJ2rkaGqq3CNZMz4GPO8hy5SWPivrcg6JshQVIO9HdTB3IPaC62VgZmtkHliHbrzhRXoWh20OiRyIX7eMiDCGVY0FEc1Ow8W-GzcS5V5q3Bc1K6wd3KyeUsy8BQGdIFLKhuVKnEt6ec3ofyIgvehC5x1YGwTpnsiNlOExZPnppR-Foob6jWYtw_gwqRP53qWTwD2N1vxi0_4ADSRUf0abTOXhv3xPfqJGiTNWuIcM1f9lD0jP8GW_Gn_jqJoXy3MTuNZ13gzAd9Z4JP_YjZT2ax00tmcLWKKjfxNj_usgxm3nmW2VqWoNb7GqjXwZtijfcyVPyfF5TmAG0J_Vuj-oqcL_jKmCZpH1ONbrgSfzq00h32Hw1n3UpAsKnIXwSZQoASSnAP44G_OJgXEe5_YGRvTgz1ydNd2IerHcKbjI-TcLj5h1TkyB2TKo6lFNu3076lMPGxw66MzqF32zj2KasrRMjoF9GS8HvidV6aEiGU0ppznNU6aypysdjhva3Z_JZ23kZElsYx8b4Q-cqqa8nNB8RlN1K3LlZS2ax5Ek5DgkBZF2hpeZeBC6eRNh3ByMXUNxcvlVmiOXg16Q0cYpWjw",
+        "width": 5760
+      }
+    ],
+    "place_id": "ChIJw_XJaDtTUkYRfVOCvQxdfIY",
+    "plus_code": {
+      "compound_code": "MHHW+3M Copenhagen, Denmark",
+      "global_code": "9F7JMHHW+3M"
+    },
+    "rating": 4.3,
+    "reference": "ChIJw_XJaDtTUkYRfVOCvQxdfIY",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "art_gallery",
+      "museum",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 572,
+    "vicinity": "Strandgade 91, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6815933,
+        "lng": 12.5761475
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6830392802915,
+          "lng": 12.5776601802915
+        },
+        "southwest": {
+          "lat": 55.6803413197085,
+          "lng": 12.5749622197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "Trinitatis Kirke",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 5472,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104062728706273713534\">Trinitatis Kirke</a>"
+        ],
+        "photo_reference": "AeeoHcI1A8ppArQjFd_bDj3ViKKxlZq2nlLoPUsY6fXKFqLwtFwOjmno0YJS8hwUaNjKHBT_AsMo3ZeugZ3TSnwNhDl1RYYS-1vFOX6XCFNizmQ_fREEXr5G8PZktuP3qK7yV5ifkGLS9JLiI7l7osUoC2efmAPbBCHRWH4Ed4doRnfphbYcCOUDhmiMfTEw80SpJGjvY564lZzQK4hTFpgscjrl1sQkWe5PWl4SyAV5iiLJZ-LvPaYN7sXOqlC1rugmTle_V3bi6bAdXaBLKFipH_RVM1tKx1dP89GOOwB-JdJqHD2LUPO7qRbDtwIl6GksE-z2vGOYHH8",
+        "width": 3648
+      }
+    ],
+    "place_id": "ChIJPwVYDhBTUkYRNkwCykidSnY",
+    "plus_code": {
+      "compound_code": "MHJG+JF Copenhagen, Denmark",
+      "global_code": "9F7JMHJG+JF"
+    },
+    "rating": 4.5,
+    "reference": "ChIJPwVYDhBTUkYRNkwCykidSnY",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "church",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 907,
+    "vicinity": "Landemærket 2, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6891773,
+        "lng": 12.5970079
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6904013802915,
+          "lng": 12.5985381802915
+        },
+        "southwest": {
+          "lat": 55.6877034197085,
+          "lng": 12.5958402197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "St Alban's Church",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 4030,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102165537549696353001\">bogdana banu</a>"
+        ],
+        "photo_reference": "AeeoHcLDiwrRMJ-JyT6yxOiuzQR-FywZY5EjWUiE7bxizgOoEl1cZCgm4AiuQy5EcOt03xerM3ihLyAkhq_DMOVmOuLFL_ZLSSBjvc7VwTY6Fz3IDSU06qzTCQhm8AjzFkPXO5ytfJi8_BYVbbYmLDOPDMqmg9tBjQBTMLnejziAFpZqn_xrnXvjvPZTmXeSkwbG9oy8xsZLq-WYggoDYOM-KShB-kiAhnoDd_3Xpx88vI-V_6KQuSM0-3-zEwy9PPWfPG3KvQ8DRUQRxOcutT6atEKmMmdVf3t7lzakMU9i3WZV0EzetJqRHeudzOD8rgUMzdiNMVcFryL4WptHTFlYLtP1TpaKMMzxMMyjNpz5d3FbIbUg7A35aXTuyG09SwikZA_WoQcjoyMtkDtCxpNEYJLR0hc1WHAA_38VfU2byAESYcYIIaWuUiHgTKWhrx1UvG_1RvfvrgbJNbh7eTypQwsMouvjTNVcOgCMwwqSrNe_4X7nhs4afO9BeIKCXu4q8BHvN83enTHgq4z0vRKQSW-DEWm69Q9cX8WMKcjG9QjMbl5JjUwfQaZpOFdI3roVHaYZUFExjsIe7KPXMNmbz0vGvx9YrdR7gWiJayPA8CTH1oocVlZA28JMyfr_CpqU3Tot2GNb",
+        "width": 3023
+      }
+    ],
+    "place_id": "ChIJp_7i9CBTUkYRC0PyZvIx2Pg",
+    "plus_code": {
+      "compound_code": "MHQW+MR Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHQW+MR"
+    },
+    "rating": 4.6,
+    "reference": "ChIJp_7i9CBTUkYRC0PyZvIx2Pg",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "church",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 845,
+    "vicinity": "Churchillparken 11, Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67415099999999,
+        "lng": 12.5803648
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6758996302915,
+          "lng": 12.5814359302915
+        },
+        "southwest": {
+          "lat": 55.6732016697085,
+          "lng": 12.5787379697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "The War Museum",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 8192,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113725207452016493673\">Krigsmuseet</a>"
+        ],
+        "photo_reference": "AeeoHcIt7uva5IQc6xHzbm5sji7-4oBNhsxel4vxY7_EabvJN6c8hWiALjx4fgTc4Vp3dJuucTks3A1mBIwzwQtezOkpyXVDgOCIBZUPOHzvCKwEh9mxUxFDS6ZnrlAnh2T4KKFNx3YCwIBXx4iHNrOEFbPOv0Ps2PcEjmH0s27bQwmatUDgv_QeweALxPa5U1Ghz6Bemrum6_XSMBx3wrn1aqOl_pvX8hZPzsoWvzByktFdbxUPK50VBJmbPSEZPpwmfe3NKfnrm7dFyMsCSi8IQzeiZdXtzqg314DGbYEo7cAFWMd-ZMI18g5vr_jT1Tc8AJsrzKCnB8A",
+        "width": 5464
+      }
+    ],
+    "place_id": "ChIJG7BEIxRTUkYRpKmcPLGhqDw",
+    "plus_code": {
+      "compound_code": "MHFJ+M4 Copenhagen, Denmark",
+      "global_code": "9F7JMHFJ+M4"
+    },
+    "rating": 4.5,
+    "reference": "ChIJG7BEIxRTUkYRpKmcPLGhqDw",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2185,
+    "vicinity": "Tøjhusgade 3, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6835645,
+        "lng": 12.595153
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6849482302915,
+          "lng": 12.5962687802915
+        },
+        "southwest": {
+          "lat": 55.6822502697085,
+          "lng": 12.5935708197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "Amaliehaven",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106377599066560355676\">Andrzej Trzmiel</a>"
+        ],
+        "photo_reference": "AeeoHcLLszgW3-EzB2sT1ly2Ky6E4AuDdvpJBKmufxjjVfUt-40bmbjcn9FcJdEm9vDPEQvXSXP4AraHxzazaP_PZUZVqQkjv5BUXmRUvLGW5zSOT6_75eSD2V81AtO0INs7ynlJXRaB-hpiEvMrSzd4yFngGyGShG6K4HHQytKGsO9skw-xfhB5SxbhbkLyG251spaV9JB_bbyKNUCTuELXznpvSFS6lBNhtB0jRMHf1WaSwdbQiphdGgDdQ0yDeBqGuWTVgFBZn4QhJFRfmuOsXtyBhaiAehtTCRJI_3J1yEadVi8tRNRxE-vZXEZApLaKNKya54LSJEzxNAhrweQBfjtEkaajrfb1WYCpu8wdx5wUp4qkYpR-V263bbCI_o5cT0r3zv-Ksb4QAY9T5DuYzkyxYvhCsNZLpR7fMhdH7M50kYLacEkEuANA4UY-L1BrluzGne9PumxkkP69H_kmWZPCPDW9idCnBJySbWDKcmR0jjKyn-HySK4s8lCtp89AvIdo5OLaBdWSxH-922aOnFOZYC0s-6j75o5_5QxcxW7sMxGniaivU-nY3Vz0dsi9M73i9Cs2nh21sQ3edfPJdwfNQX5LzLGRwmRkdws13mpTIHOQVPBEeZNkj6AQiigEhRwb5LjD",
+        "width": 6016
+      }
+    ],
+    "place_id": "ChIJHWOjuSNTUkYR4F-CiktZrfE",
+    "plus_code": {
+      "compound_code": "MHMW+C3 Copenhagen, Denmark",
+      "global_code": "9F7JMHMW+C3"
+    },
+    "rating": 4.5,
+    "reference": "ChIJHWOjuSNTUkYR4F-CiktZrfE",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 967,
+    "vicinity": "Toldbodgade, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6888127,
+        "lng": 12.5783303
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6896099302915,
+          "lng": 12.5799332302915
+        },
+        "southwest": {
+          "lat": 55.6869119697085,
+          "lng": 12.5772352697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "SMK – Statens Museum for Kunst",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117232920463882677143\">Jón Arnar</a>"
+        ],
+        "photo_reference": "AeeoHcLErMl_T7VNo4Eu3zjr_OxHXDu5cC1KAO9YlMNNACJukQxx9ETZp_Z6koflOz8gEYMmpIYbeS7M7s7sjAl08_gQoGs3xxiOZ3pwsc9-FH8GWcZH3LmUMSRS7WP_VUhTXqC2euLVkb3lfmZKmv8S-jxZV1am_vJkyhPTTwC0nRlIjx_TnKHAmLQYqFyUN_nYiBBinjUXGMnyH-qX3zlm0QYJNq6EgOCMxQsSbCLXCgShEUYWEQ1ytKoaEt0ubw2rduOcubF5O45FBU4Msqe2NooPYDnkFTPK_NC1G2Uhxmgg5xxxcL9yQvD2W8P7yvhtOku345_k1GO6KwScQKwSkShZqYUSEmnT1Y9QAe594gxP_nMXmc45LYR3fjH8aBk1KR3MJ8kLZ6tHohG5Kz1-XyvMB2Fe-zdEiQ3u3oQzmC8amLcM3VvHBuwkWKCnr4KehWlb3XkAVCtJwb-yDQnGEtomH2f-oL7q2yilmzv9iKpnZtasDquEH45z60xb6V8coE7dwrEHt41dvdnN0GY5fxlETGY8vndk9yNV-wFhgOCaRaYK7L6E2rD-hicY9ZRtZIJowmtuAhaXZ6QKZPYaj4TlgpwB_MbBP2gqNC2WrUIHkCTP8abZBhkJ32mWIOqxNrjU8w",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJQfd58hxTUkYR_mgIYo8ErNA",
+    "plus_code": {
+      "compound_code": "MHQH+G8 Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHQH+G8"
+    },
+    "rating": 4.5,
+    "reference": "ChIJQfd58hxTUkYR_mgIYo8ErNA",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 5693,
+    "vicinity": "Sølvgade 48-50, Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6978069,
+        "lng": 12.5889896
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6989921802915,
+          "lng": 12.5904874802915
+        },
+        "southwest": {
+          "lat": 55.69629421970851,
+          "lng": 12.5877895197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "Classens Have",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116270016421717595569\">Anders Bagnegaard Kristensen</a>"
+        ],
+        "photo_reference": "AeeoHcKEbD7aDCfClpgjlj0No8JZLEZzW_l0x7K2Wr5etj-pj1_7uA7wqKPiAXrUCwtwQD748vc_rXIKubkWbUfQRYrKlzfYo6idbDq02MY690EQUE5A1DO4x4GmPlF9E7JXCw3b2pA26dT9vqCB0DhXIZCxZK12rrbfNb5h7zynMxNYkKlHh4nfjwpatlxjwiIi5E9nlQr4DPj42usefsNg3jJI77Yeh_8OyNyG3rZip18xKNJUpuwu_dXOBMRwqubd_N1ZCq4mp05_pG5HVx5YFKBfNfH8Ai43CVPmr201tbrSPAnlOOlOeWGFdZj7KQOKBbpFf93kYcPKzAk5kJrYwWLJn4N8IMOuqFIwtY59xBpUw3JJfZ2qF_hy_qRBfqgyppYBZ7utWaiKg2VrnRRC9NP51V3-G4Br5f65KGnpNcAT-DbqL9XJqjborR-wzlnJzGc-g7x6qsbnYzVUo-KrLmzrEFvIFU311-8optXvUmlVf6U-gyjt3rFQOjpSWB7CK5ykOdiVwZOLBd_U5pCcVSgAmPwtCHMmT_Le60S8bSIIPbWKN_6BMpdMa5elk9Ao717I7FepRSqIRf1iRLEJclVJhKlXJ6tfM6_RadAaMekwXGprQMb9yY_rdnAEl0W_f82ghA",
+        "width": 3000
+      }
+    ],
+    "place_id": "ChIJSTJ0uOZSUkYR7rVuq0Sh9JA",
+    "plus_code": {
+      "compound_code": "MHXQ+4H Copenhagen, Denmark",
+      "global_code": "9F7JMHXQ+4H"
+    },
+    "rating": 4.3,
+    "reference": "ChIJSTJ0uOZSUkYR7rVuq0Sh9JA",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 270,
+    "vicinity": "Arendalsgade 2, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6807852,
+        "lng": 12.5421746
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6819860302915,
+          "lng": 12.5440836802915
+        },
+        "southwest": {
+          "lat": 55.67928806970851,
+          "lng": 12.5413857197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "Landbohøjskolens Have",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100757957623987843448\">Roberta Cattaneo</a>"
+        ],
+        "photo_reference": "AeeoHcIRQXeetWf8v2HePg0Uo9DRghJOeybqhfX_IGpOapdSGe6PoCVD9cZhXDjxchJ4C5QSuH6fGdl1GxEu_QKJ5fVsXX25UXmiPgpWgp3lZ0eg6XpBOmAFQboDuofvn5aFYb3bMq1FgyAGwZf47p-BQXksz9y6YuTN-e-mPzyVo3MXef4KQzqDETbf3_BITuMP2bVKX3ShB2UwQu-WrsYDCqE3kNOB8z5JEVcsxpvgo-WG2VC-BTYWn6fFM_s4XXFiQ3KJrfzJnGW9Pc2t575DEh5W7dnYZcB9wAL6gI4KO23nMe9ThIH7u6fL-vZTxWdmHQD9qyTyoPfUK9KB4uuiuRl7weoha2oqFpM3LPBCFDEmBs0q4d8vWypCRcWlZnIm1ixisAvLDuS3Db1VIkNw8XvfIHaD46jNPU7jCXSveCJI6N2hfTr_nQmx9QQ4hOX8AsTPEfx1k6pM_kIr6CnJq1foQS5OwlaLS5pxqlrqQ5z7WeuzCoKRS8E4kMcZl8-w8uDLUvClUPvfSb0oucsM62RTatjcw5s_zM1lq6vTpgiyaunTWBJVUYRXmk0gO3LrFuzXLeLD7FRmTFl6UdiblRb0ytb3mQoIoBWOmZ4GqICq9UdS8XimS1eGEUGphZ9e8wT6Ww",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJv2c4eaRTUkYRXJJyk4xUqmo",
+    "plus_code": {
+      "compound_code": "MGJR+8V Frederiksberg Municipality, Denmark",
+      "global_code": "9F7JMGJR+8V"
+    },
+    "rating": 4.7,
+    "reference": "ChIJv2c4eaRTUkYRXJJyk4xUqmo",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1587,
+    "vicinity": "Bülowsvej 17, Frederiksberg C"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6881454,
+        "lng": 12.6059415
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6894233802915,
+          "lng": 12.6073204302915
+        },
+        "southwest": {
+          "lat": 55.6867254197085,
+          "lng": 12.6046224697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Mastekranen",
+    "photos": [
+      {
+        "height": 3080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105852946606392750036\">Thomas Pirker</a>"
+        ],
+        "photo_reference": "AeeoHcLk1AQkEcGtrX7HES87UZ6EFgHX07gmkK87qLqXGQsIFK6mVRFVY5oTyuJQgjPAsUURwr6bsGnP2oDV9DZGJT-QqLbs4kt_G7yw6Tb36kA_RL7x9eG00hfpXvKWdAZyNK8fS_ZCBMlQNTRyW8HUYlIOIXQMX-QoDrLNIb04WiwPck4m9ONp0hah7Pj__cSq9fRs3NWGZ0DvMKj1m08T9Y1Ej3dWmPSAC3o_Fm6shvnKkNwzXKoWPRWNPJyFI3F-XDes9E0wwGseen6VjEIgLr7M6pP8f5amzHLR4TqCBkJlW3EPzyxzYVwl5e1xWJMfjxYKrClpDYYvRJMpLFkDIXkYDkUJvWHilkwDAyiUz6qqUgMgCyX9Ya5jBtBdS6XZ1i7iXlVNWL3kA2vy7bxfAmuB62iBSvhud1doJeC1b2L2lsJzgvi10Vp4QsILBRVs8duxLQBUzu76OkozyXttEIuuvLkhE3YO0Ch7FEqms1-l4hcq693187xQNRA7zSoJIdaNDHs30JgMaKfqai9eL2PT0qp5US4Bzpn79Clw-9A4APbOshbvSs1Iied6cMJsCri59k9ubcnIkalAmhukvD1HiaO4LOb2p-G27w03tE_lYsFcg7E9fi_HB0WwDzTrGs7c9OSD",
+        "width": 5472
+      }
+    ],
+    "place_id": "ChIJ5xjEvSdTUkYRRH8hwbwI11k",
+    "plus_code": {
+      "compound_code": "MJQ4+79 Copenhagen, Denmark",
+      "global_code": "9F7JMJQ4+79"
+    },
+    "rating": 4.5,
+    "reference": "ChIJ5xjEvSdTUkYRRH8hwbwI11k",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 86,
+    "vicinity": "A. H. Vedels Plads, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6753177,
+        "lng": 12.5691355
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6766756802915,
+          "lng": 12.5703747802915
+        },
+        "southwest": {
+          "lat": 55.6739777197085,
+          "lng": 12.5676768197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Statue of Andersen",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106034034414040765127\">Krzysztof Kaliński</a>"
+        ],
+        "photo_reference": "AeeoHcJIKZ4CgTFych_YCRVgRrr_lCKw95xKwZxeZCkqNmPoO2Wg3iLmLEnNBi3XxF8hyu0qkh6YPiTNDkmMiknBAZZPvVyDYpSyOCMPSRqGCd-VuxxcOl1qvuA-KAFtV7e7Z8MY-8KEbfucMSLusq3nk8br89Zl9-In1mcNkClsQWR9jp2C0FzWJE122iM4rmI_b6rUPz6TOPhZgeQ2mcliiKzqbygT_a4wYnuH5_G05nHXIEPZ_VfbNayrnMnn2KDVlhOdWxcUSqU-DehYlqLyQlpGoWH7ItgPOA-Rdiy1MLmy7yxZ3waZ5qPpFdP3JbGEWyzPV6x3Nx9f_T9CH-R2l1qiS1uAWflY5-T7xurTgKlEEDslyXGNeNzGo_sjA6cZIiY7OUrt__1mNJJaEHB75big96fltGAMcjAClg2OqNHXHXRsJIKtwRtcjWlROjgFCFufdrWUsBEYhBbLIhkYEd3LWSvQ5BAEfk1vX7zrIJ-zyVIdzZs4tqv61Q4jFh5nLxOlyrGsL1C7yPy7Ay10mko-70PJREUV5aCraEySJFkBO0KrlKSo1srg7VaPUTTSc82fUW5CDgnhO4NMcCSWMF3YxNAme_8dd16cpC5g2S2JDK85IcAadikqozdA42HU2FSLZ5cG",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJs1y3-xpTUkYRRiKLffQ2CBA",
+    "plus_code": {
+      "compound_code": "MHG9+4M Copenhagen, Denmark",
+      "global_code": "9F7JMHG9+4M"
+    },
+    "rating": 4.6,
+    "reference": "ChIJs1y3-xpTUkYRRiKLffQ2CBA",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 500,
+    "vicinity": "Rådhuspladsen, København V"
+  },
+  {
+    "business_status": "CLOSED_TEMPORARILY",
+    "geometry": {
+      "location": {
+        "lat": 55.6733542,
+        "lng": 12.5678572
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67466888029151,
+          "lng": 12.56890805
+        },
+        "southwest": {
+          "lat": 55.67197091970851,
+          "lng": 12.56522025
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "Tivolis Springvand",
+    "permanently_closed": true,
+    "photos": [
+      {
+        "height": 3648,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103960205184588940974\">Kees van den Brink</a>"
+        ],
+        "photo_reference": "AeeoHcJPjFFon1iG5HBzr_-CMAmwrNV3jmp2UTubORwwkO8ucguU1k2KhekytSJy2kLYOiFdizd-9XtGQqtDVIphsaZKacyjoJSq3RLQY1cjzwxFyEOKKwzt__ybSVNYHMxv3Q29asxLaDwuN1HL4wZYVpmPbd0x68uvW-6eENEBgw5YTqLPs2a9Uv52Rxkj2sbPM5RLSyD3_GcMuZP1ZAfVJcMxmp7YV6F_ougr8Tx1QOl9N5pZyiXAV5z6F_iLgMw0ohcA6gENFPyM4-E8vim3BKAs9HVLAE84FzDXkp_J7GVrgWeXUDHcIdm7xuh9Kx0IIME7Dh2iJvmfRwOGNBX2vmBXhfA8sGqQQgIi5wWFtnh82fCVI45Lrwr4PAR3LU9ju4ZU52t6WdEMzC2lgNmpCvTdwt0UsPdBh3gV6v4AAcsROH7extM9kK_uXxhhvzTDCDRopLMwUhDZi9leHdOdAbu3EeBRZoWef8ZuZMGW0BrxmdANjxvh9w3Y6jC4xmOAl750OTE92QRdXqgGBu3g8TiqjaLT1cTVnS68fr7dlUxsOJC_tkynDIkk9sszzdah-Cl_aXMGXS0QNm_F5zql6o0xRvYUoOWFpDPbEqDnoXljECdZVTWRwa0rD9LdDQEzZWEjy1qB",
+        "width": 5472
+      }
+    ],
+    "place_id": "ChIJdyGUghJTUkYRntkZu2eTw84",
+    "plus_code": {
+      "compound_code": "MHF9+84 Copenhagen, Denmark",
+      "global_code": "9F7JMHF9+84"
+    },
+    "rating": 4.6,
+    "reference": "ChIJdyGUghJTUkYRntkZu2eTw84",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 29,
+    "vicinity": "Vesterbrogade 3, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6732425,
+        "lng": 12.5668446
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6745245302915,
+          "lng": 12.5679975302915
+        },
+        "southwest": {
+          "lat": 55.6718265697085,
+          "lng": 12.5652995697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Rutschebanen",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117075389918723709415\">Harry Rawding</a>"
+        ],
+        "photo_reference": "AeeoHcIVNmUrQl5ZKO7aDDHVirQVmyZXpOh-6DnMzL8HkloQiWeFW868lniP9AjQP4bDYJNs27VOdnDcwm6cUQGEc7zNTjOorvJbGQ_uf6oxzrpdVvklnFB50d9VCPshPBzWYmmXUYTdGo8aGee47NuXST3DMsMbBtuVdHgzxxW8NzERRx8Uv9UExLMX6kf8kTpKY7fioTaJNxicQDRLxPv2wqJUhc-rEIFGsfS626wHfvXEGQh22Re8-9lnuXSatM5i4EWJYtzIlBaHxAKGyUB3hkR7Nu367BMk0gFW9OmYguZF7TK3FNS7aR4JpQDGriu8KIv0Nf4fyHmtS71IGAYM29OywcBvmOvnDhh4l-djkWQCHII9T7ZcQPEVhp4C8j-EMNDGKWFbf2pLmao4msvCxReiHxGF_xIRoFto52muWGiAjp-qEODXEIFvuPQGMJhDvIRXI36fB052ULx_N8HMK3gYtG-5Zas7w9ED4KYIzOhB2qvWAMBs53T7AqrxnIwuuruQyf2dkxTjFMAETbxs4h0QVWTK5aSNLfgqdB7nZ0W8KvF7U53Lfj8SLM9_r7HlaUVWUJOn3Zh5DN6ZTo34vmlksZzmSKx0CJVs04Wn0BiZsC8ln3gWGCUOpFXaEuqpPuExFg",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJfexQZQ1TUkYRLbOfFll_dLk",
+    "plus_code": {
+      "compound_code": "MHF8+7P Copenhagen, Denmark",
+      "global_code": "9F7JMHF8+7P"
+    },
+    "rating": 4.7,
+    "reference": "ChIJfexQZQ1TUkYRLbOfFll_dLk",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 266,
+    "vicinity": "Bernstorffsgade 7, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67401,
+        "lng": 12.572323
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6753227302915,
+          "lng": 12.5737787802915
+        },
+        "southwest": {
+          "lat": 55.6726247697085,
+          "lng": 12.5710808197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "History & Art",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1224,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107467437321412808790\">Historie &amp; Kunst</a>"
+        ],
+        "photo_reference": "AeeoHcJjCT7fgFSo4fRUXfr8MGiQW1aXpNOtIrUsgQQXPPrvYx3Bzj8FllAtC9np_zBq5htF0EWfMNvfhspa5WCRP1rV9CyU9UHPfAaZKBSZBEhhgVl8D7bA_dAoY9jUTv3dXeAuslWSx9cbmTOkYDP1PzvDBLjzkUjuHYt9sIZqwfuTh-LDCoLIUf9VkNncj-Irc2o7tbY3XUt3OYeUaJjUKegLkgdu2CAs7F2HNwUxnkUxv4Fn97vli9_n45YCx6-IK0YWrIUNkH2Xs_tfdzwglUeVOW19tHiS4Yfc4t6_OSLie43WsXNGd7iECEfdhdbbaxkmZT3qm8w",
+        "width": 1632
+      }
+    ],
+    "place_id": "ChIJNxwCNXVTUkYR_JalBcrnMEM",
+    "plus_code": {
+      "compound_code": "MHFC+JW Copenhagen, Denmark",
+      "global_code": "9F7JMHFC+JW"
+    },
+    "rating": 4,
+    "reference": "ChIJNxwCNXVTUkYR_JalBcrnMEM",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 4,
+    "vicinity": "Stormgade 20, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6727183,
+        "lng": 12.5678977
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6739369302915,
+          "lng": 12.56882173029151
+        },
+        "southwest": {
+          "lat": 55.6712389697085,
+          "lng": 12.5661237697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Himmelskibet",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1600,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102936173925277264864\">Ashton Pfaffengren</a>"
+        ],
+        "photo_reference": "AeeoHcJQaSi25G9app4-SAE2nZlCXzT0HCWnfQnHNTTNRgAsQDS4lfpUXE55gT86E-yY6ppgzN8azMDhNHRd0gpECei4-DNN-j_lhzwzJU5ZocAx6G05rK9NQeJpqnUisuE_-2ciIv34tR54Ck0tuuNvY7-I3zR4hLmE1Qjmr_V_y62iGTpNY_cVVeJPkbMlZimZEymiqoHLDNDmTvNhbgpkdbNJIwuzmJ_blsfz0RkvmhUelmFo6FJysG0qaSUIQK5WDd1un58hyPBEcBqrK6L1r5DQ2C6370EvW3iFdlEs5ndGbwvK6QB1eu608XFlBoKBosgMKPEPH7vMIA-VfQBdBYFocPm3AfOTo-oYgCjXIa794ArbysXs2j1AJTZwXfMCvKpVvCXgQ6acmdaKjZpsdDWTmi8BKJcxcy2lWuiHT4jnenTdjbmqynLwGZQpwcsESf_jf7Brw-AoaolRhOsTTdE3O9_CLPTUbRLhB5lIXSRhKCZhNizKYlAooqmDN0NJKkKzzQ2KtHNtp3SWQsv7M73ceJPoYss_ikrwTtpL-C4rMA6g_RnAJ8JdvmlVk5_Szo_HjfMjmZuZaryVxCVhdmhiMDOQjA-eEw-JfTWtQoyzbnCucM6IAT5zO52_ToJG8XB20bjO",
+        "width": 2400
+      }
+    ],
+    "place_id": "ChIJ_3r1nhJTUkYRd-GLE-NU52E",
+    "plus_code": {
+      "compound_code": "MHF9+35 Copenhagen, Denmark",
+      "global_code": "9F7JMHF9+35"
+    },
+    "rating": 4.5,
+    "reference": "ChIJ_3r1nhJTUkYRd-GLE-NU52E",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 238,
+    "vicinity": "Bernstorffsgade 7, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.672751,
+        "lng": 12.5697216
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6739712302915,
+          "lng": 12.5711289302915
+        },
+        "southwest": {
+          "lat": 55.6712732697085,
+          "lng": 12.5684309697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "The Demon",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2252,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106323546685198413448\">Andre</a>"
+        ],
+        "photo_reference": "AeeoHcLa5PnSG0vzkWpG02cIYEb67lOHnbPbHU1jRepYGzK19seRuanQ1rRifpWLT19Cv2m8mM_YVL7AzZjrPK0ONQ3ZI2Y7cRU736xLaTyE4k38NiJB7QYoKXkWb5LP60mOZXnkxqm4bC5Nd_Gz523lAKS5M6bg2JLkAv8848-8EuLlLGOTvHSdacKzVr13jXAXfM11_kbk4gLZ5oapA1eaD3EZnRZFwuSLsXIpYGDdIefj5fyGq3R1SUdijvcVFUzS_2Yxuor0f3c_jAF7UR8-3xU8fkrnXuqKhSE8vdyWUkDgpfrQeIrrEnSS2vtjSKHyAkRAwg0IeaX6XSJspNl3P7XcQoqv-mrWqj5NUNzh_Tj0b3L0XOpF9LYb7XD3Tf72cqc2qWJozYQqeBj-RnQSsCp1ipf4Tm5lUHCafRZwiPgFj4PLpw_YjPgD-P9RGAcQXiS2aezHhx-vul4l-JDjd3QWl9fsmMk3xKbkxtSr7gYVBgtjnFQKf2l3oZwpbjyG3Kr7cfsu_fbsQHc1ON8h8tfO1YJJrZJTNOKWhlhw-KwX8zqPe-h_xmx9TGboyHulHkiUz_LHMg59Gi6DW9aUZgS75kbZdr1hcgT2ZStYJWI8qlvbMd6yDVVxkRbnFJdcTTiVkw",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJGe8u7BJTUkYRiy2XTaVooXU",
+    "plus_code": {
+      "compound_code": "MHF9+4V Copenhagen, Denmark",
+      "global_code": "9F7JMHF9+4V"
+    },
+    "rating": 4.5,
+    "reference": "ChIJGe8u7BJTUkYRiy2XTaVooXU",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 358,
+    "vicinity": "Tietgensgade 12, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6763127,
+        "lng": 12.5702264
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67761523029149,
+          "lng": 12.5711482802915
+        },
+        "southwest": {
+          "lat": 55.6749172697085,
+          "lng": 12.5684503197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Scandic Palace Hotel",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1243,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116541235174530424806\">Scandic Palace Hotel</a>"
+        ],
+        "photo_reference": "AeeoHcIhzMCWSl2r0fGEYL2v1ZRrVfTx3eoTEWCJu9Lp69yGqqHD8z6Ei8nkhxMdjHt6RDFAZpMHlKOmTlxu4eJmzJfAAqQesuU1CpoY65VuPrwRtoOLWjFGSWbg6I_0nHkcVRc5ET2HxwpKPFctFFqZ0vEKn3uUDJkVEZN-LHlWBqURTKMSM8oABGOSPNzIfvUeUgCE78w9lGg17pabicp9liiIlINZUG40XaMRQZE1E-NWm6D6yTdNTQPKE5ekOhC8J79CHCB83nrC4089ciXIlzzgFnO7062croA8fmLF5zl7JLYzEp1Iu1TIZnkXYEJ0PSMi2nThMVY",
+        "width": 1600
+      }
+    ],
+    "place_id": "ChIJAwi1AxJTUkYRH7VIhBzPxuY",
+    "plus_code": {
+      "compound_code": "MHGC+G3 Copenhagen, Denmark",
+      "global_code": "9F7JMHGC+G3"
+    },
+    "rating": 4.1,
+    "reference": "ChIJAwi1AxJTUkYRH7VIhBzPxuY",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1735,
+    "vicinity": "Palace Hotel, Rådhuspladsen 57, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6768672,
+        "lng": 12.5652595
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6783092302915,
+          "lng": 12.5665952302915
+        },
+        "southwest": {
+          "lat": 55.6756112697085,
+          "lng": 12.5638972697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Ascot Hotel",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1281,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111603859066089114922\">Ascot Hotel</a>"
+        ],
+        "photo_reference": "AeeoHcIklZIF1UdrT1Pwl5U-HNZ5Pknal3DTflDZ-Bdm6k01C9gtVdMsDwlR011rU1Nu-MTwAJHoLEUG1PcrCd78wEG74OGw-qhUCMZ7mFAE5vZXK2gtosZW4RYMUUB-xy6zD2Fk0ToBQma0AeX8Zv9cHt4GbvpqJ4XEJhPnPFZcG8RlFEfwcrvV33C29D8VEXXTPsZwEQerndqGXuqUN_O5HZ3g1_yg1PlebnlD1BdUpIU8loBjPVBSMSdJw1o2XOjBF8S6KBcjscjYXTP10Y_FSPYnpfeVDp5MfrR287E_XwV9Xhd4-GDdJfFFL2NE6FolB-J-C3zSktA",
+        "width": 1920
+      }
+    ],
+    "place_id": "ChIJvejpKgxTUkYRdw9K80kbCUs",
+    "plus_code": {
+      "compound_code": "MHG8+P4 Copenhagen, Denmark",
+      "global_code": "9F7JMHG8+P4"
+    },
+    "rating": 4,
+    "reference": "ChIJvejpKgxTUkYRdw9K80kbCUs",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "health",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1575,
+    "vicinity": "Studiestræde 61, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67494479999999,
+        "lng": 12.5596266
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67646783029149,
+          "lng": 12.5606007802915
+        },
+        "southwest": {
+          "lat": 55.67376986970849,
+          "lng": 12.5579028197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Scandic Copenhagen",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1363,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112586217891680143484\">Scandic Copenhagen</a>"
+        ],
+        "photo_reference": "AeeoHcIxAe9EZcyqXxT-Dfv8GHiRvBuTPVc85SxZd9_8Pm66F0DrUWR2wXgzdIxaBuwrTQtKrWzhzgiiZLpLjKuLuGShO23D_mPfNA_JdsfkRCMuJy2rug90w5zZwWAUmJU-MLqJNbuZjJVVQNKQckZQHvbg4k6nyrygbDd_2DGLh_HBEsTqRA3BowE--hRqn-Pg24_O6hwLBtm_nx-RfZ_nvoo6PRjxmNOQrARkIf-19JJDDrDOs-voMRwk1ORCM57kLMdlUTc2pgjQHuOEvBdkWBZjKn11NQ5jHSMd-jiM-4HbNGhNm8Ae_wnYeE3uDnW9vFhezB7N258",
+        "width": 2048
+      }
+    ],
+    "place_id": "ChIJFTasnAtTUkYRw8_1UeZ-Nls",
+    "plus_code": {
+      "compound_code": "MHF5+XV Copenhagen, Denmark",
+      "global_code": "9F7JMHF5+XV"
+    },
+    "rating": 4,
+    "reference": "ChIJFTasnAtTUkYRw8_1UeZ-Nls",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 4040,
+    "vicinity": "Vester Søgade 6, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.68060519999999,
+        "lng": 12.5846997
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68194028029149,
+          "lng": 12.5861861802915
+        },
+        "southwest": {
+          "lat": 55.67924231970849,
+          "lng": 12.5834882197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Hotel D'Angleterre",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 4480,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112672360194478853496\">Hotel d’Angleterre</a>"
+        ],
+        "photo_reference": "AeeoHcLirJEbd-QujrvXom5ufFim2sn6-egDheBLHU8jglrACyojxLLGIb18Q25desprEIfnlcTA-ydugYC9-5lFZPxci2YomRAUox4rvYg03eNIASPOC78dWLLFgqDysGkY4JjMQ5C_PnQDYopJsaWR9W1V0P8w5KYbiIpjr23fmD7NFcGYgTTT1rIz1GZZUq7nnaV9v7iqmL7pZAinAJjNknD3sjKpITW6q9ZJ8H09y4hzpHjdqRMpHhYNJ7OrPwEgqcEjVU1hCKxRqxBh7CaDddXBmtWXdOCMj5sPuvAT_Kd5r4hQBQ18GVR-Ok9ZEP9PNwS5MxOfW04",
+        "width": 6720
+      }
+    ],
+    "place_id": "ChIJtRm9KRhTUkYRdv7vSCAmeVM",
+    "plus_code": {
+      "compound_code": "MHJM+6V Copenhagen, Denmark",
+      "global_code": "9F7JMHJM+6V"
+    },
+    "price_level": 3,
+    "rating": 4.7,
+    "reference": "ChIJtRm9KRhTUkYRdv7vSCAmeVM",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "spa",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1568,
+    "vicinity": "Kongens Nytorv 34, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.68174379999999,
+        "lng": 12.5938583
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6832346302915,
+          "lng": 12.5949334802915
+        },
+        "southwest": {
+          "lat": 55.6805366697085,
+          "lng": 12.5922355197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Copenhagen Admiral Hotel",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 768,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100914072844059593804\">Admiral Hotel Copenhagen</a>"
+        ],
+        "photo_reference": "AeeoHcIRzVkfojpDotVrZhxzneffAP5Mzlajc2Js7YQ64TbRvtRfXJt1uEfKzJeBIrax6EZjeMEzrM0rkTrF2FqP-vZ3MNJsq92KSZ_A28DjYcMLVeH3Q5cC1pejAKXbqSZw92bDM3_XB-DxwCxnBTVN7xcdyBfPtFiU0A45XCtI7cCbSTFTwb22XhchVzoR9RYpkwva1FuFLNjdpqMa7PDKLuDxwX7xnHCB-YUsVDzFpa1ZaMTcsbPjxu10bK-Gumxu772oVk4RAGDEErAFt2qIgb8hbl1mqqrgu287Pf51WFHbVfMqozooFSwIF4ExnqYEzur1AjOhwes",
+        "width": 1536
+      }
+    ],
+    "place_id": "ChIJuUjwBCNTUkYRI2UHKcbTNMQ",
+    "plus_code": {
+      "compound_code": "MHJV+MG Copenhagen, Denmark",
+      "global_code": "9F7JMHJV+MG"
+    },
+    "rating": 4.4,
+    "reference": "ChIJuUjwBCNTUkYRI2UHKcbTNMQ",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 3329,
+    "vicinity": "Toldbodgade 24, 28, København K"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67290939999999,
+        "lng": 12.5593586
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6742785302915,
+          "lng": 12.5604855802915
+        },
+        "southwest": {
+          "lat": 55.6715805697085,
+          "lng": 12.5577876197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Comfort Hotel Vesterbro",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3840,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111902771014913253726\">Comfort Hotel Vesterbro</a>"
+        ],
+        "photo_reference": "AeeoHcIpiJcWdKx3P9X3nVzIGBZu4bCfNDGy5m2IBhbzDQK35aZ9fJObk901OQrBatIYkScNfm2YOk1nAbGQJk67CqnYELLBm8WH--Gaj01ZUe5tDYtAR3hJ1ztEhNajMsTv6SS5yD5dRA2gQy8-4Ha22NsNJyuYNnMtLitN7M6Mfw1AYhcuY4rQp-t73Dv1mQbDGzUifjn1LtFJr4bCNNdrUTAr7JH4Ay49GNZRsG2QVFe3yvIenwbkiWm6zdMP_QH0pAYS-an1aSdH9HX9AsLlIg4BLAYapiWgN7ebJewi1gClIYRsLS0DHMRWE4kBqlQg4viBECQwNJs",
+        "width": 5760
+      }
+    ],
+    "place_id": "ChIJ9XKqWQtTUkYRgG3s1F5didw",
+    "plus_code": {
+      "compound_code": "MHF5+5P Copenhagen, Denmark",
+      "global_code": "9F7JMHF5+5P"
+    },
+    "rating": 4,
+    "reference": "ChIJ9XKqWQtTUkYRgG3s1F5didw",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 3719,
+    "vicinity": "Vesterbrogade 23/29, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6813386,
+        "lng": 12.5932285
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68263383029149,
+          "lng": 12.5945669802915
+        },
+        "southwest": {
+          "lat": 55.67993586970849,
+          "lng": 12.5918690197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Scandic Front",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1473,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118391994052319657435\">Scandic Front</a>"
+        ],
+        "photo_reference": "AeeoHcKTzYunEAzXtL3qns3FoPH4R2PxmMKXSDbgsn2c38aCjf-KA1wkxB9JCprpnDoEtAP3aYsAZPMzmkJQrePpdHSPmYVx1W7tsLmQVCYE1_Gy_2eipLETbHO6AhUdKrr3rw19N71wIQUOnACwA7b6PGp4FjqIEoGp1seo9QJbs9CN_GS42qCGiHTKYhkdZ_oTJKLom1a_ReX_pC8BMUNXzglvHuKkMQII4QAuec0QcGpdYG_AfgAVzqQ2wOFIu0H0IxYBog5HCKb6eMjm6yH_HcXw9k6X--rcYFLnlwFh8jzkbxlGqQrLqg7F_142TGqQQPBXBJr-ozs",
+        "width": 2048
+      }
+    ],
+    "place_id": "ChIJMUfaHiNTUkYRv8SMa22_cXs",
+    "plus_code": {
+      "compound_code": "MHJV+G7 Copenhagen, Denmark",
+      "global_code": "9F7JMHJV+G7"
+    },
+    "price_level": 2,
+    "rating": 4,
+    "reference": "ChIJMUfaHiNTUkYRv8SMa22_cXs",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1064,
+    "vicinity": "Sankt Annæ Plads 21, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6831332,
+        "lng": 12.5827597
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6844508802915,
+          "lng": 12.5841756302915
+        },
+        "southwest": {
+          "lat": 55.6817529197085,
+          "lng": 12.5814776697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Generator Copenhagen",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 720,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109398511629615538436\">Generator Copenhagen</a>"
+        ],
+        "photo_reference": "AeeoHcJ2eDWzwfHAHd43hIc8JFO-0FhiwF1ZhHZVIEwvGZGxEOQP0v2sm-L9zk2G7qRKf4038dYzFxgtDMrWqTY4Yl7Bjgn4vzOCTN0XJE_jNJxnk96sEJpKVR8PfxFscUChe6RN8ZqmUIXPZ4WYTsc2NCeYTSPjGu04-LR_5pGrFo1TPu4MxEqdxZv03eRO8v3AkYhHoe-nMdbgQH0CaVdaEjeJbKwUziUF1xHMTkdJ00md5_01-79xBavUI7X6wR7j7DyLOViliVd3TZY0rwkEV6XsLfdU3Of57Qzo9xHyEaMw8ub-DFfRHr1rRU_AhcTkZhQ3wJM0zdc",
+        "width": 1280
+      }
+    ],
+    "place_id": "ChIJF5P3mRlTUkYRHFiOVIREJDw",
+    "plus_code": {
+      "compound_code": "MHMM+74 Copenhagen, Denmark",
+      "global_code": "9F7JMHMM+74"
+    },
+    "rating": 4.1,
+    "reference": "ChIJF5P3mRlTUkYRHFiOVIREJDw",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 4426,
+    "vicinity": "Adelgade 5, 7, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6737712,
+        "lng": 12.5647803
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6751491302915,
+          "lng": 12.5662763302915
+        },
+        "southwest": {
+          "lat": 55.6724511697085,
+          "lng": 12.5635783697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "ProfilHotels Copenhagen Plaza",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2318,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106915196900174182327\">Copenhagen Plaza | ProfilHotels</a>"
+        ],
+        "photo_reference": "AeeoHcIzu1L48J-aIWFJhAQtCHUSgOMDsLQDUJxzLXGsa3GORKFt15kJZLVHwK0ElR0LEUylfIZWjasf1cVvKP4zwQlmtzRPndWZ25uCVNS7GKs7F1gMFLC3NzMG84hBV2FHql5KfzvNgd_H4sdVAXIssMZsrMHJun0BMZ4QEXVXVPRhzQL8wwpc9eKyXvaqIXoO7yayicm4KKonYmLuRZgTgvSSUSu6HebZ-AOwlwfqf16Wpm3d1dEyFMZIYhfDHa0tQqxiIveRkLBNSOQefGX1G87mBeEOxMLaqExKA7FG6SwVkmh0KRhWPyRP0nwQdQ8nWijAP1Uk3Ks",
+        "width": 3000
+      }
+    ],
+    "place_id": "ChIJoev5BQ1TUkYRL1h0hFGNQ6w",
+    "plus_code": {
+      "compound_code": "MHF7+GW Copenhagen, Denmark",
+      "global_code": "9F7JMHF7+GW"
+    },
+    "rating": 4,
+    "reference": "ChIJoev5BQ1TUkYRL1h0hFGNQ6w",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1153,
+    "vicinity": "Bernstorffsgade 4, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6812469,
+        "lng": 12.5917406
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6826430302915,
+          "lng": 12.5931381302915
+        },
+        "southwest": {
+          "lat": 55.6799450697085,
+          "lng": 12.5904401697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Hotel SKT. Annæ ApS",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 650,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116474678834767892701\">Hotel SKT. Annæ ApS</a>"
+        ],
+        "photo_reference": "AeeoHcIX_4yH_UR7JWHkHwVuCqq-6QAeMOJfh13Uv6ICrac3txT9YDdD51ab13L5YZgvLriArj5fOkY3z9jSs3cy1cucaqUDGhuvYtE62peaifwLpEr7MPPFAgXZwxopFEwCjau39QShB6ym_eiLXs7VEvfJKisjO0YB52MNiHeEoL9QZF3nLfitnBAaXkdnzfxW11ALZA9hZqgODpzF-1VTUra1ki3DfsmcgW_GLIDW4ZSK89k6_-fWLn_p1JnyZiN8VRdmbFHIatfRllh6XvYg-vZGmU_zmptB_oLj_7BIiUqadhHLyyJ2Q3X_Hg2DksSBe_pjiCpgsOI",
+        "width": 1051
+      }
+    ],
+    "place_id": "ChIJOQgu3SJTUkYRyXwx2SzKwpI",
+    "plus_code": {
+      "compound_code": "MHJR+FM Copenhagen, Denmark",
+      "global_code": "9F7JMHJR+FM"
+    },
+    "rating": 4.3,
+    "reference": "ChIJOQgu3SJTUkYRyXwx2SzKwpI",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1054,
+    "vicinity": "Sankt Annæ Plads 18, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6845583,
+        "lng": 12.5834111
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6859388802915,
+          "lng": 12.5848120802915
+        },
+        "southwest": {
+          "lat": 55.6832409197085,
+          "lng": 12.5821141197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Christian IV",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 567,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106600346720005885389\">Hotel Christian IV</a>"
+        ],
+        "photo_reference": "AeeoHcLSWr714V6WSh_2MK-SPI_HSZqs3YOzVVn0_6mSs3FoQd95z5cz6tZboeDGgnnwwveXvJ4q1b__L0HZzwwwmTcdZHPfxe0VPXhy0o6kk_-WJbudgTwPnyLratDMVpRzLauyawV4iF0G1Kz9r299lCvd6A4w84jpCMdI-dNevgw7Ypa1Wzj_ykapG00biQ9VlElCSDVfbNbOLRKNIzXjZtbKyuLiXRTexecOnvrwDdb9a9XZEwcQa90bgRrlu72d8v10SBHKSQ_N5jHYon2LGmjGMc5to6gXl2mUg4hY7kZZl1xOU3se4kYieokFrWsj3pWGZaYlId0",
+        "width": 850
+      }
+    ],
+    "place_id": "ChIJddtqbBlTUkYR_mVaE2d2P54",
+    "plus_code": {
+      "compound_code": "MHMM+R9 Copenhagen, Denmark",
+      "global_code": "9F7JMHMM+R9"
+    },
+    "rating": 3.9,
+    "reference": "ChIJddtqbBlTUkYR_mVaE2d2P54",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 426,
+    "vicinity": "Dronningens Tværgade 45, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.672146,
+        "lng": 12.5619202
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67351318029149,
+          "lng": 12.5633697802915
+        },
+        "southwest": {
+          "lat": 55.67081521970849,
+          "lng": 12.5606718197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Axel Guldsmeden Hotels",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1417,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114398373447128930846\">Axel Guldsmeden Hotels</a>"
+        ],
+        "photo_reference": "AeeoHcKgcHFj5Fu_71766dKWXyYSVC17y3F8ZoRbAAYm-R_tqrH8cuE9eOhebMflciEOTHf6Pq7ERjixe0bPhYgPYGCWFPC69ZKLZRLZbS729m5HaOxELJHRfqCDgiUampBSYvLrUfYg50s74ki2vxaLRP48w1Cm6G8K8G6sH-5OB_Y2BoszgV6n2TvwNlMJUt_vVnQM3jDAHu7KJ-cJHcq2cLpDJfrtH99wBwmGobm_gRVgjIxWuaKlxE_Qhl6NY-PNExnrShQzVwheFfi4KhQmXvWRBUe2IvMigamjQeuEzqF5AXCncuLKA7lw1shxmTUUKZN1Ypaxv08",
+        "width": 1770
+      }
+    ],
+    "place_id": "ChIJIQgAuAxTUkYREwhuAu591mY",
+    "plus_code": {
+      "compound_code": "MHC6+VQ Copenhagen, Denmark",
+      "global_code": "9F7JMHC6+VQ"
+    },
+    "rating": 4.3,
+    "reference": "ChIJIQgAuAxTUkYREwhuAu591mY",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2039,
+    "vicinity": "Colbjørnsensgade 14, København V"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6544734,
+        "lng": 12.5415691
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6555787802915,
+          "lng": 12.5423348302915
+        },
+        "southwest": {
+          "lat": 55.6528808197085,
+          "lng": 12.5396368697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Scandic Sydhavnen",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108720219371919606359\">Scandic Sydhavnen</a>"
+        ],
+        "photo_reference": "AeeoHcLIDEUt2-SCLSc1EudY-sOYXDOcL1no65TioBlCWv7e0tmhH0qLC1d_XRafd8J1zYfJ0aBLBTXwNI0NBp67rYFYFhDLQvbgT2-FfKpUrAFunecUI_YpFaoCj9QIm8T-e7clogLM6ZfTXoYCsb1ZlBOANX4kssAv0XJMfyzwb72BzK_0By0SEy2opQjijJgfgjPoLhakAXKzOsg8rlchBknPAxr3SROnEjtAFinsB3gdXIYKxq6Z9akgNLzzxUyai0vYp2TXpPZPm92Z-E2HtVC0NUO7UyKBOiXnX6ZcZWJUgZPDSAwgWjdgfqPpibxZsVIK4b63VGQ",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJE8Lo1YFTUkYRkFA6O1UGRHs",
+    "plus_code": {
+      "compound_code": "MG3R+QJ Copenhagen, Denmark",
+      "global_code": "9F7JMG3R+QJ"
+    },
+    "rating": 3.9,
+    "reference": "ChIJE8Lo1YFTUkYRkFA6O1UGRHs",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2872,
+    "vicinity": "Sydhavns Plads 15, København"
+  },
+  {
+    "business_status": "CLOSED_TEMPORARILY",
+    "geometry": {
+      "location": {
+        "lat": 55.6726439,
+        "lng": 12.5616554
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6740092302915,
+          "lng": 12.5630950302915
+        },
+        "southwest": {
+          "lat": 55.6713112697085,
+          "lng": 12.5603970697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "First Hotel Excelsior",
+    "permanently_closed": true,
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100058078904436916000\">Vladimir Fronton</a>"
+        ],
+        "photo_reference": "AeeoHcK8iiIipyhZA-yN4BhB4FnoGZ6DNquI-kLJXHIECtUqwQUTG0NsddEuyNcT5RAEAfmNxeGRre-HzsD6XyiZw_Zopl741RGx5eKLFUNzzHId3FrBYcQQZLX1eS8ZBkzVd7KE2-g0v5jgff-zpb6wxHK-xGrrxC17ZjDdlOWs1sAWW6ZveQbfhUjDVUuUBA1c_qzH8vaa61sF7Qrvyvw2iWPf4tGu4UlLcoGrLuBqRkguu4P-C3PX4ZJymu6UeZnE30A8FRVOpjdGDjVhofuS81QIUWYMjWey0TV-0CRchXXDvG7yHI_83a1jjE1iU2dtEL7sQ0UidT4PC2E0Jmdtj-zNXgHrCKC5CvllrTotiNWyliVEDOLrvHfmse9ODuIZSjzLtCaSE8gvneng6hJF0rsEcjedxPHfDjk6KCtBO4ESeiI0joB1DN7R8GuFRWETjM6NiUIUFAVxwIGntZHlGXs_OP9llxUFZsyN4_FaTWT-1RsfGj0_6qwS8C8j-_09_OirxReIdUmKlNaSwuMXy1bvUNyBW3V-yXT2UiBSe5KsMz6FoNv7MET9re_Dk43ScZqbKnLpyaYkTRpR0LpWN8s5qwV0QSPdzIdNERZLK1_ofr9JkwQeLdhi15-znLQDnRCTpg",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJV1QgxwxTUkYR2ACsZK3Fecw",
+    "plus_code": {
+      "compound_code": "MHF6+3M Copenhagen, Denmark",
+      "global_code": "9F7JMHF6+3M"
+    },
+    "rating": 3.6,
+    "reference": "ChIJV1QgxwxTUkYR2ACsZK3Fecw",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 17,
+    "vicinity": "Colbjørnsensgade 6, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6874917,
+        "lng": 12.593117
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6889238802915,
+          "lng": 12.5943864302915
+        },
+        "southwest": {
+          "lat": 55.6862259197085,
+          "lng": 12.5916884697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Babette Guldsmeden",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3801,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100258020759996535169\">Babette - Guldsmeden Hotels</a>"
+        ],
+        "photo_reference": "AeeoHcL0oElUQ37curcRLJJWKTRWUNZ63e6aEFe4zLG9u6TqV_xDo28k-GNNB7V228vO1e59HSeRph3z16CTz4QnQj6Z69pov3bjHqeMIsFQOxet9VsuH3LY-Q5BmRQUWP0se84xafHwv6cOxQ6YPdJArAdSsQM_381cwwazOc0Itmpz3W8PfQrDUWaUt64nvMM2Ixw9k0D2YFv19kaM4ITTdje75ViBRgwEjNwmY3FGuloAOTJgVqHFxuSWEqN_soFxB5Pa-tuTkubuMSp0K-GE4dDnHCLNdWFKi2_2bzqc7OadwPvmPyegz-jL0P_bmhr-0fFXOmT59RA",
+        "width": 5701
+      }
+    ],
+    "place_id": "ChIJ1QgCxiFTUkYRRXXtQZgSvig",
+    "plus_code": {
+      "compound_code": "MHPV+X6 Copenhagen, Denmark",
+      "global_code": "9F7JMHPV+X6"
+    },
+    "rating": 4.4,
+    "reference": "ChIJ1QgCxiFTUkYRRXXtQZgSvig",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1090,
+    "vicinity": "Bredgade 78, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6736111,
+        "lng": 12.5661111
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6748848302915,
+          "lng": 12.5673387302915
+        },
+        "southwest": {
+          "lat": 55.67218686970851,
+          "lng": 12.5646407697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Nimb Hotel, an SLH Hotel",
+    "photos": [
+      {
+        "height": 1653,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106887567556811987030\">Nimb</a>"
+        ],
+        "photo_reference": "AeeoHcKTCURC9UWfcEAC1QGE4uDUc8etQgPphEDf1rNBReBHNeoBqmJLRIbFLdDYNrXum00R9JdVpqFIiBmLx82nDskbIeFiEW1K4FLmROcuuPLlUasZbUt0qvGdL9bUbLK4zv1y-xzOdZiaKJgoVlxKTcIWoYn-dXeAxAezk-qpOabjBULW6JFSX8Jb8m8r3OW4bKDtapMGS5em4sxJre9jXi7YNI0gAvL1h_ddCHAceg3NDS4KO-HywjfcHcjc4Z7aB1Uf2_giTEnJn1lYhtnNG4zBNoU5f73ZuT85qz_gQ6u3nfBcQ_XjxfqQYW0Tsr-LqWqXYUTDz5Y",
+        "width": 2480
+      }
+    ],
+    "place_id": "ChIJm43fcg1TUkYRWyWZGBr4kiA",
+    "plus_code": {
+      "compound_code": "MHF8+CC Copenhagen, Denmark",
+      "global_code": "9F7JMHF8+CC"
+    },
+    "rating": 4.7,
+    "reference": "ChIJm43fcg1TUkYRWyWZGBr4kiA",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1372,
+    "vicinity": "Bernstorffsgade 5, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67339930000001,
+        "lng": 12.5630986
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67476798029151,
+          "lng": 12.5645845302915
+        },
+        "southwest": {
+          "lat": 55.67207001970851,
+          "lng": 12.5618865697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Hotel Astoria, BW Signature Collection",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 4361,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103849037541115376101\">Hotel Astoria, BW Signature Collection</a>"
+        ],
+        "photo_reference": "AeeoHcKbOAftEbDbg_X0kSzO-keHe2v0SeQyPrSttJUyMCCFSBR3njHfIvFRBZQk1hzcnM7_QVVxRw99F9Avk-GQpURH9wsZdSHIts7olqHPIb0svlYYfZguwBCfnS9K-fXedY04TbCqeW637qBCm1LEeTSulhPpaz-cz6rulR7UqM4Fj5ipsVQVs8y1VwoGeYRw3kxQzJxQ1Q4J2NWyvWYqr2HmxRRa-AJpfKfAYKrLPLFlMDtfVuNVXX6TuTSgKf-HzxQtKrTDsZ7GTMwtYpYKguKE0Vuclotk1zMXKWm0x4RDsB5VfhUV81ZP2X2FZrHjXXB0J71JbHE",
+        "width": 6542
+      }
+    ],
+    "place_id": "ChIJNVulD0yrU0YRsIhUBB0N7ME",
+    "plus_code": {
+      "compound_code": "MHF7+96 Copenhagen, Denmark",
+      "global_code": "9F7JMHF7+96"
+    },
+    "rating": 3.8,
+    "reference": "ChIJNVulD0yrU0YRsIhUBB0N7ME",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1152,
+    "vicinity": "Banegårdspladsen 4, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.674828,
+        "lng": 12.5727279
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6760581802915,
+          "lng": 12.5741005802915
+        },
+        "southwest": {
+          "lat": 55.6733602197085,
+          "lng": 12.5714026197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Hotel Danmark - By Brøchner Hotels",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 5464,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112971245070845183077\">Hotel Danmark - By Brøchner Hotels</a>"
+        ],
+        "photo_reference": "AeeoHcJOuK0Pc2wolX_xeAwczHx2fafCeuXk87zFYUJF2mXWapRjHyW3fEgsiiKgjmXUYAkqn4fduWxxNYX8G3UyF5haZdSgyeV7xLoFXmouNpsuQ-eJg8waQmwLymJ3ypCefiQfMaqCWy1UMTswbtDMfj4h-VUlpvWFZYt2Xj_pnEwM8T6Tfn7ivL9GWfT0Rxu3lo4GadAx3ki4MD_Qj7x95_jLHhbQvgzuTFOWzoeE7uLIUpvmgwaUWIDJwvsofkNW0Ma9jqsM1Ks0UbGTcXpdFKMNKjlTUD648DuIipYIuBG_EhkNB0wDHeodGyS3zLLO4c2LvhJ8BSs",
+        "width": 8192
+      }
+    ],
+    "place_id": "ChIJeVFZNRJTUkYRmo0TNDNliS8",
+    "plus_code": {
+      "compound_code": "MHFF+W3 Copenhagen, Denmark",
+      "global_code": "9F7JMHFF+W3"
+    },
+    "rating": 4.1,
+    "reference": "ChIJeVFZNRJTUkYRmo0TNDNliS8",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1003,
+    "vicinity": "Vester Voldgade 89, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6847036,
+        "lng": 12.5667449
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6860124302915,
+          "lng": 12.5679895302915
+        },
+        "southwest": {
+          "lat": 55.6833144697085,
+          "lng": 12.5652915697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Kalaset",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3371,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113360593909144018592\">Kalaset</a>"
+        ],
+        "photo_reference": "AeeoHcIRqeXxb161T1Ohx5jYvGgghDkk7OMKOeszlGS3YeEk7HXw9MKi6pcQyw6fy2gHIkw0kbxUt0v-1HLrpqvdb-bTZTIUCUsgEZa1PS4p-jO0ySGlG9GAPqdMegCCkEQBUAoyJGDjFbSVPdJX-K4oueA2huSNv3XmMDzBFaCxphDrhSQyIRoZ-jElyoUr5B7vLhyaFkz6wPZnUAO1bzV28ABnn8QHyzjWAM8ICNRrFL0cK2qB0afRzYDAO6NpF18QktKPi_c-TgAohvuUytR5-WjZkliHZwplJieygYUjDl25unIlbTq3CG9r22iB_LWLGsh791ZVM4I",
+        "width": 5057
+      }
+    ],
+    "place_id": "ChIJwdrCyAVTUkYRLM0WFavcxfY",
+    "plus_code": {
+      "compound_code": "MHM8+VM Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHM8+VM"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJwdrCyAVTUkYRLM0WFavcxfY",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1603,
+    "vicinity": "Vendersgade 16, Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67181429999999,
+        "lng": 12.5584284
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6731033302915,
+          "lng": 12.5598477802915
+        },
+        "southwest": {
+          "lat": 55.6704053697085,
+          "lng": 12.5571498197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Cofoco",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116142263484072010758\">4u megu</a>"
+        ],
+        "photo_reference": "AeeoHcIxW4CQoiGGhqToIDQhtz1xTWMN3C1SWmvaQ74vgpT79Mr_dRfBaafanKYqiSjG8D74zL2YXReOr7HLudMJ93OMSGtMjh9NVgj0u7Weiy2t6Aiq3BeN8aXplZBxwuFr5NCsoCTeDqJxn6r4CMIyGMg0BacgTlfq7J5BE7q3WW8vHm9NuKFXfdLTiCfSK81xpVUYQoxBg-qdB1qtAfKcoB-fmWBYtCiBEcTO34zZQun5o-6c2Xktfhq7VH3tQPOqP18v8mnOaESFmr1YOBQA3B032Khz3kksxFmu-2LI83Bp3HNzuBlX9p9fyY2ijUxrN0gZsV3PFwxH1_gIBh-mmkSKFm2T6QorEb_Fm8lgVjTuOtsEMSjLUSbEZNMRWBdl5FHB1YOUaAcX2yWg8jbYh0A8t46iGpepsLaIS24Ta8FqCSG4ZqyV2We_nuAhZXUmgfavDISU0A2N38Leac4Ev4iNsaTbkr6Z_3en5WrAiBvTPgsRnEWqW34BaLBBNOVlTltp1PdMgd-anzZU-MwV41gptqOIaYGtaFpYXBTu3iLAzZUIpiVY7jr6m-XoTryVUHyFUmmSz6BcTyBrpusLKDZaRVU_8PyOfyA3Ochxf2kBeoqqVVkepH9HhOca98_YQYRgxgFH",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJLR6-q3RTUkYRLpNnm3EZBDU",
+    "plus_code": {
+      "compound_code": "MHC5+P9 Vesterbro/Kongens Enghave, Copenhagen, Denmark",
+      "global_code": "9F7JMHC5+P9"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJLR6-q3RTUkYRLpNnm3EZBDU",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1479,
+    "vicinity": "Abel Cathrines Gade 7, Vesterbro"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6766618,
+        "lng": 12.5690495
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67798573029149,
+          "lng": 12.5704342802915
+        },
+        "southwest": {
+          "lat": 55.6752877697085,
+          "lng": 12.5677363197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Hard Rock Cafe Copenhagen",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104482657900449345441\">Hard Rock Cafe Copenhagen</a>"
+        ],
+        "photo_reference": "AeeoHcJP1vsk3YhDzyDBXImOWj42Cdd8uo7cm-nKWuN7ab_6AaEnm-HUuRxZVXjEPgt9zo9PvrUQcuiwZGUE6p5JoVQSFuYZD8dFH5U2WRxgpAedsnwFXgWFkVD7enYburnaaWNEN7o0Dy5OFETFirUeey7hVHH2cJjF8RpZYDGi0nH1xidqQsJtp288EaPSnZHS9NA7TIGej5pbB28QUB83m526PnEruRfE547dHP4lNid9qyfKB8QNcPRN8g29KLC0MI6Fbw5OiljCPkZFUf0T3urs5BCse8-eIDkotbJKi_qz4pByV_L8WJO0Fckc9sLCUfZe3w4-",
+        "width": 3000
+      }
+    ],
+    "place_id": "ChIJGWMBpQ1TUkYRzYR5oWDqDhM",
+    "plus_code": {
+      "compound_code": "MHG9+MJ Copenhagen, Denmark",
+      "global_code": "9F7JMHG9+MJ"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJGWMBpQ1TUkYRzYR5oWDqDhM",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 7629,
+    "vicinity": "Rådhuspladsen 45, 47, Copenhagen V"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67913769999999,
+        "lng": 12.5251636
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68045853029149,
+          "lng": 12.5263711802915
+        },
+        "southwest": {
+          "lat": 55.6777605697085,
+          "lng": 12.5236732197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Restaurant Frederiks Have",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 5813,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107692539025362091470\">Restaurant Frederiks Have</a>"
+        ],
+        "photo_reference": "AeeoHcLZl_op_U4MN7-Q4F6griSV4acE2xxC9hiMGTj-BuraDhJYG1sOroqwO15yo-i0Mw-4XEPuxjuw1NYFIZYz16IQivR_3-HIumrQDbXGH6uCgAYY-DG4HBefyNr6noKYP-2N7MSQJXkNRMAGTv_Ys_sluc10DlPSbhkZiYWoDbThy6quX8HutVdAwgC9_lY3W03MNHmbV19_TKtTSLbG_AfRQYm5fEmW6OL248GsNIP3lDvh95nwE53EL10oFmgxzCE0By8z0ieg3khL_qq-GvbxaM3eYX1JCZ1LIUnzPwQr0fpXWF0Ux4t6izxllfiiK3_URM1RfJs",
+        "width": 8720
+      }
+    ],
+    "place_id": "ChIJhSky5L5TUkYRzS0oqy6YiEc",
+    "plus_code": {
+      "compound_code": "MGHG+M3 Frederiksberg, Denmark",
+      "global_code": "9F7JMGHG+M3"
+    },
+    "price_level": 3,
+    "rating": 4.6,
+    "reference": "ChIJhSky5L5TUkYRzS0oqy6YiEc",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 533,
+    "vicinity": "Virginiavej 1, Frederiksberg"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6840732,
+        "lng": 12.587681
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6854683802915,
+          "lng": 12.5889573302915
+        },
+        "southwest": {
+          "lat": 55.6827704197085,
+          "lng": 12.5862593697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Madklubben Copenhagen",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1086,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107969064019057321197\">Madklubben København</a>"
+        ],
+        "photo_reference": "AeeoHcLrXeulK70ab2ZfJNYqkmkb7w3DKr8Cmwxn6rH9ZEgvBdmCYrAgAp1ODx2xU6XBKvooa0S1qDzd5oQt4ih-uIDMWTGrOi5lBSU5Z22kMqGbTa8thp-X0LrGebfRvD9schIihhfppkA0qpvoDfs6zETG6Sv6PHCfKC93cts6VI7wa_uS6XiPWNEl09VvWvsVmm5T4cRUouxw1K-SyU9ylXeK5vk7kfcnb89zYqu0zZaKnKl3RaMzhUXiE9QWeXVFQNG325jaGWQqQQn3UEGajFitfcsN828twS6fniF2mRMvr6m27iJhuRF6M1kLuQp5BFv3YVZv3zM",
+        "width": 1614
+      }
+    ],
+    "place_id": "ChIJEyVf6xhTUkYRaLSaikIOdVQ",
+    "plus_code": {
+      "compound_code": "MHMQ+J3 Copenhagen, Denmark",
+      "global_code": "9F7JMHMQ+J3"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJEyVf6xhTUkYRaLSaikIOdVQ",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "meal_takeaway",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1032,
+    "vicinity": "Store Kongensgade 66, København K"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6828273,
+        "lng": 12.6104808
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6841779302915,
+          "lng": 12.6118900802915
+        },
+        "southwest": {
+          "lat": 55.6814799697085,
+          "lng": 12.6091921197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Noma",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 2758,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111719219215411994893\">Indoorfish</a>"
+        ],
+        "photo_reference": "AeeoHcJc6lxt3qb6f-JkQzwf9lFv3P5TMmdPM6MghFoNiTGkoBy8I5icxtCTpO8JYz6XsQezRtyAf6LUtpqcxe7LBnP3b8cUPUBc1uEUB7TsncVtadPerlECSnIpGxqinLivevzb0-LGeVjLTC1FBqu93bZ9YOkD66z8LQG5tr7nLjphx9a0sXC0txE2nE1A-lxp1cYETAPwm7mLpz7gfYLxNwi-kYAIk0n_2QmENIaiIR0esKWP0rLSR7lTLGGqurt3DUpZHiXH5LOhIDYjhh_0RKXdxKv-Gbc4-r3p2D9kyK_grs4LRAgWip6pIIQYpOB2jOuyd_hnhTNdn_o9eYGWCQr2QhTgq0MjCsyM5QIZc58x4f4AWkOGwFls4sxd4Tez2pLDk01M26_YkXyWyPmLUUQ14y8sLClR54GMYu0znyn5cXETg-tt47HcFHkoFR5HjXufUBx8ve9QYjyYr6BNti-1KaT_TQ1rpn7FJ7ylbMTTMilXf1DSYjb-rX6NCjeh4xv7OvcU2GVuSq6SBnmRhPOL6MMHerqgnkDTgRFaN61GWYd8m9YhIpzimJcbuxLC4YzbjCq84prrWe105QI0-a2pg7XkaJqnesgrL1HCxWffDTNk1jt1sUyYTfn_nZoA-KDrZ2-9",
+        "width": 4087
+      }
+    ],
+    "place_id": "ChIJpYCQZztTUkYRFOE368Xs6kI",
+    "plus_code": {
+      "compound_code": "MJM6+45 Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMJM6+45"
+    },
+    "price_level": 4,
+    "rating": 4.6,
+    "reference": "ChIJpYCQZztTUkYRFOE368Xs6kI",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2189,
+    "vicinity": "Refshalevej 96, Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67874,
+        "lng": 12.5667718
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68005608029149,
+          "lng": 12.5681407802915
+        },
+        "southwest": {
+          "lat": 55.6773581197085,
+          "lng": 12.5654428197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Hotel SP34 - By Brøchner Hotels",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 4501,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107801489552544252830\">Hotel SP34 - By Brøchner Hotels</a>"
+        ],
+        "photo_reference": "AeeoHcKAmR3RUcIFmJwAuWvlVAAg4wWrpN9YPMXTqcd-QtprUP-4ObKczB8he5pRby-Wr4p82vAvxc2MlGztyWs6Lo0lxwqegIHGYV7Pe0Y1U-w7srqI7fDcTElEuMSQswhXk1yxGsEhzI4pQSdjTYH28uAV1KuLW5aOHkic2GakYWAy6xKzDmXOUivbLiZuj6F4xn8F1-_I7oknmd6ZU7NtjN0PvFSKpBvxLvMW8PjyM3fsvfsO_7AKBVPRP7D0uYaaqzNUiU99b4bswLulwo9D6ijN58A5XEHYNm-5YJinzWwbPWEtd-HtkZKlEBQqihB1g1Wf4XBjoN4",
+        "width": 3000
+      }
+    ],
+    "place_id": "ChIJvY9hWg5TUkYR1jm4WtjFTkc",
+    "plus_code": {
+      "compound_code": "MHH8+FP Copenhagen, Denmark",
+      "global_code": "9F7JMHH8+FP"
+    },
+    "rating": 4.2,
+    "reference": "ChIJvY9hWg5TUkYR1jm4WtjFTkc",
+    "scope": "GOOGLE",
+    "types": [
+      "lodging",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1075,
+    "vicinity": "Sankt Peders Stræde 34, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6801198,
+        "lng": 12.5741778
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6814682802915,
+          "lng": 12.5754727302915
+        },
+        "southwest": {
+          "lat": 55.6787703197085,
+          "lng": 12.5727747697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "RizRaz",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110252853552225668328\">Mark Ruvald</a>"
+        ],
+        "photo_reference": "AeeoHcIWmS83gbGIaisQ-w86BceH5fXImuXFnns89083hrdFDVXsGSsTbBPa3bRPkiapxp8hM1lZsXZI_ab4kKTkAQt4APj4W6m8ZhcaqYnwk50E1i5p-MhRBlbtlxigFK1CXmkjhDSnd3PmM-I5sVwZYcBN78-TJ6QyxcCndWIWc5ddpeGzOkNchZ1X3YEgdGmtyjlz5TioqA7fzwnDaRhkXmcsXRF1oqC7AJfhTdYEUN2bwFRhlN46NshAKzm9PNYcwnQbGRn88BFDAnjopYXGaKGrS5TcV1Ei0E5t_IIxKxoKMV547m0sQg1pJXVjveBWfiy2AaYH7Alf7eJbyoVo5eiZ9ZrwmpofzYWXP7l8KRGqjkLHI0JfP8eZ3YD5LKN9_qt-X2uBmhwpA2J4vVdbDsNDNqfqCTvS4S4FntvoFMaAdYOKNcCvgSjLLKoVchdokQR8dLoObtZpbkh1TdAkLsmwhtvefTWlZkrygVQLQaJJQx6hlN1u-E89ecUcUo8rOgmoBqj8TTA9WnjhYvT138vHvhiKnSCJ-YxtnBuOqEdTds4_SbbJW-WGQK6yZ6QvBtNLay3YsspLGSoSWxT3VgOcDscrIOLWemKC0IWAzAFOYJXEELQAjf74fDHJ6ybSr0ZZpw",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJST0zbBFTUkYRMeqA-2NlteQ",
+    "plus_code": {
+      "compound_code": "MHJF+2M Copenhagen, Denmark",
+      "global_code": "9F7JMHJF+2M"
+    },
+    "price_level": 1,
+    "rating": 4.2,
+    "reference": "ChIJST0zbBFTUkYRMeqA-2NlteQ",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2989,
+    "vicinity": "Store Kannikestræde 19, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6821719,
+        "lng": 12.5869509
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6834712802915,
+          "lng": 12.5881952802915
+        },
+        "southwest": {
+          "lat": 55.6807733197085,
+          "lng": 12.5854973197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Café Sommersko",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 439,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101701535108832812926\">Café Sommersko</a>"
+        ],
+        "photo_reference": "AeeoHcLBex7k4f_EaJZd6q7vDlD0W30ZGMe2L7eVwjyUZAJ2jbG7kEkk1xx5Yy6Thv7_C1WCtvRoSCOR0XSuvkkWE7-43kZRg1yFHpr3ISAJqrLSEclc4VeX55m5NtpwBBgqi0EjbTLscwSKRpNnXsv898_1ZNwGHiblpKusjy5cGyanVjOFn-BSEvxCnf3aE_QBbuStLocz1oD9RLpVYht6LdRSp1I2rC94hbkuFvl0x8DB2d81Sz494qKDS6GIUVYS-YUpCXsSiVQ9VsCpVbmDtJFxZUQht6mePZZ4T7wOEFaTlL-TWVmuqz5rLvF5-V2OGyisx3z-RNw",
+        "width": 815
+      }
+    ],
+    "place_id": "ChIJNRCSrhBTUkYRRMmcCSRdsZk",
+    "plus_code": {
+      "compound_code": "MHJP+VQ Copenhagen, Denmark",
+      "global_code": "9F7JMHJP+VQ"
+    },
+    "rating": 2.9,
+    "reference": "ChIJNRCSrhBTUkYRRMmcCSRdsZk",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 229,
+    "vicinity": "Palægade 6, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.7053542,
+        "lng": 12.5884468
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.7067266802915,
+          "lng": 12.5899144302915
+        },
+        "southwest": {
+          "lat": 55.7040287197085,
+          "lng": 12.5872164697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+    "icon_background_color": "#909CE1",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+    "name": "Charlottehaven",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102412166102791734712\">Charlottehaven</a>"
+        ],
+        "photo_reference": "AeeoHcJEyLR8ia8yd-6KKEwisBsQs5BZwU93N5suFzx_DK2TiBvHdVENo9wery6ZmWYj_dsgWGPHHDwbuZV0xDMmk27h86lEEBC95Myq2IKjTXq4hT3LljJiEQecm-7GzxPfQnWMuEPBmaaC7pjCnnXs0Oc3p_-eQwbyiK7ZeZ17xeni9Vl3NdT0sXrYB-fHiS8RyQHvnSnbeI_vL7BiczuhFEJsl81afMuM11XpwyBHI4h4QLJA0ETanIL4yzlMek2AlpY6OHvUryoJ_XoVP6RGpaTogFu_KTCFbrZiD7Cmwp66zUaKK76urqiMqeyuaT9Ylp_ueVtg8gY",
+        "width": 1920
+      }
+    ],
+    "place_id": "ChIJwbOs_u5SUkYRRsve7jzEvIw",
+    "plus_code": {
+      "compound_code": "PH4Q+49 Copenhagen, Denmark",
+      "global_code": "9F7JPH4Q+49"
+    },
+    "rating": 4.3,
+    "reference": "ChIJwbOs_u5SUkYRRsve7jzEvIw",
+    "scope": "GOOGLE",
+    "types": [
+      "gym",
+      "lodging",
+      "health",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 163,
+    "vicinity": "Hjørringgade 12C, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67486390000001,
+        "lng": 12.5661581
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67631373029151,
+          "lng": 12.5673888302915
+        },
+        "southwest": {
+          "lat": 55.67361576970851,
+          "lng": 12.5646908697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "A Hereford Beefstouw",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3282,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111744571181910394189\">A Hereford Beefstouw</a>"
+        ],
+        "photo_reference": "AeeoHcK5HCTc1orYxZtMZtxxzOze8PGdBsMsJsPmg_hhsoMD8H1v07aAufFri-W5JxEBgtJSRv49gtExYx74nqzW02M4HGinxteWUc8fhsdaH1VLKZ4kdTPvN3_42WMvYz52zR0sHhZaaYuDsWaEviGj3Bn7JOaabb6Eot-rYi7VdzoFKzELuyHoL2hNmPiVq3hCdsQ0Ff7o1bNoX75j1zlIYrQRqlDXUSgGxg9zPHtI93CmbQIHE7rYjqMdOOxvH8AP3QH0eBgwcjmJWOp6Cz98rNaqFxvV5yFvsbsjP3V3DnSh0eEFNnTGCZd8GuFn-XMJxfCe7P-UiV0",
+        "width": 5184
+      }
+    ],
+    "place_id": "ChIJL6f4pA1TUkYRIop6ml11sYM",
+    "plus_code": {
+      "compound_code": "MHF8+WF Copenhagen, Denmark",
+      "global_code": "9F7JMHF8+WF"
+    },
+    "price_level": 3,
+    "rating": 3.8,
+    "reference": "ChIJL6f4pA1TUkYRIop6ml11sYM",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1964,
+    "vicinity": "Vesterbrogade 3, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6777267,
+        "lng": 12.5747322
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67905408029151,
+          "lng": 12.5760427302915
+        },
+        "southwest": {
+          "lat": 55.67635611970851,
+          "lng": 12.5733447697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Cafe Sorgenfri",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101516771753860138399\">Alex</a>"
+        ],
+        "photo_reference": "AeeoHcKQap78g1RD2uKPRr2QKEqQsc4l60N8qiyc3-G6Bnotb8kg7T6fIfY1UuJWfHSHpgxt2Jdus_2gxrcw2FQFveGEMXmu8YNRKbWcoTSW5VDx1yqoXZ6471UxBIRL1-x4hQAb35WkQ0M74Sgd0wgybXG2xbPwGb9vFwUEzk57hIETpUIQLtpofirrZ6BUjd0xXze44yDrVsG9eRYRXbuGW47UgHug6qWkttySpCf2v75yZDQd2BxaNKNBqfYVWP28xSStbXoX2wG-UPTjCmF93uUT-f-5ioln8_wf6kt--g-7y74yunrrRj9wOB8l5HoSb-d-92Ov601_8J_x4fAejuHNbJCYChVW_zsje6sNhT8WrT4eBHdq4gQFyMK3DWj0nCeBAZkXnT7rEVBWcSkAP0PpjGlb5eCdXuFZOA0ky1nb_Efs16LLQTw_6qfouIbjfkcbsrpTwjMv4KVkuxRsprb-QBXCJJBswDDliOfcbqDzB2XgcTJxyp2FjiWNsJ2THSCmiU5LNpQMf1HBGn5QCskDnNIhmBbmggx7Lf8f7kfpizTrf1oGRow_QPBwqUtW5L9aCJeQ1meyqRda2u1vFP9ppYiHCfteyrzUOZ31pnVhHY1sHFvX7XgALgsEmGZq7Lrt2Q",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJT5uqDhFTUkYRP5nAjFQOMw8",
+    "plus_code": {
+      "compound_code": "MHHF+3V Copenhagen, Denmark",
+      "global_code": "9F7JMHHF+3V"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJT5uqDhFTUkYRP5nAjFQOMw8",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 752,
+    "vicinity": "Brolæggerstræde 8, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6846973,
+        "lng": 12.5661557
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6860821802915,
+          "lng": 12.5676652802915
+        },
+        "southwest": {
+          "lat": 55.6833842197085,
+          "lng": 12.5649673197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "La Rocca",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 675,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113026327242370111392\">La Rocca</a>"
+        ],
+        "photo_reference": "AeeoHcJNz4KyWpKbDtrTpWPlV1bNoEhEfxv3ZivWs9PJrfIBikspqbeIyNd4JZasuhvxeSfmC2tkZF_2y3SR13ljoqT4MR2Z0RG8GhSiYVA-gbzL5yK6vwm-nd1kwxnbYTT1w6ZgmgbxpcIGcojwkD57jGrZLsBMyYOn61N8VZBfm1amLN47CQy_cyjNIPRg6Smwt9QT4UrnUuqJC8gQNOP7dkHG8ZyeKwFrErFNe4xS1jCCeATebHlF6oQ9wfJr_TI5nj_QD4Eo-qJJ4BrtzKjg-OfWUFwfjakOlZW3PcNIv0B3E_pAaotTZ8LuoMj6ftulr_621I2sefk",
+        "width": 1200
+      }
+    ],
+    "place_id": "ChIJTVkWzwVTUkYR6lYftsfrNZ4",
+    "plus_code": {
+      "compound_code": "MHM8+VF Copenhagen, Denmark",
+      "global_code": "9F7JMHM8+VF"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJTVkWzwVTUkYR6lYftsfrNZ4",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1321,
+    "vicinity": "Vendersgade 23, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6804058,
+        "lng": 12.5894617
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6815493302915,
+          "lng": 12.5906789802915
+        },
+        "southwest": {
+          "lat": 55.6788513697085,
+          "lng": 12.5879810197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Cap Horn",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1366,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106010286821172649576\">Cap Horn</a>"
+        ],
+        "photo_reference": "AeeoHcI1e0k3iDDG6Gd-0j0NA-XETFX9fHtmo1NjqaXIZOVdjqi0oYtBhWdvZXRyakJ7GXYW-_UQBNygr4DheF-IXWawccKZIdd2w8Xgs2sbM-3ctvtNQ70CIqOpSfGVvsn-QSzcp0FZy7kcEXtOIVvjSXG120YVsdiLSQBiUQv9mbnHQwj8lQOVb15iC5yrRMDfbL6OSIJ4rnvL6869xnW9ZbrE-dte3NexO9dY_MPIXp8iSiqw6mmSa7rJMZPfSxuwr5rqLlBsmTkkVPltaCDhHuwZFFm4vP8gvYS5cat_H2WifUxOjnG44JE0ePWiCNycI6QT7PsGJIc",
+        "width": 2048
+      }
+    ],
+    "place_id": "ChIJBdrmsyJTUkYRCQd95ThecFk",
+    "plus_code": {
+      "compound_code": "MHJQ+5Q Copenhagen, Denmark",
+      "global_code": "9F7JMHJQ+5Q"
+    },
+    "price_level": 3,
+    "rating": 4.1,
+    "reference": "ChIJBdrmsyJTUkYRCQd95ThecFk",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1136,
+    "vicinity": "Nyhavn 21, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6755729,
+        "lng": 12.5931545
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6769357302915,
+          "lng": 12.5945426302915
+        },
+        "southwest": {
+          "lat": 55.6742377697085,
+          "lng": 12.5918446697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Restaurant Kanalen",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1576,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108306257165096327013\">Alessandra</a>"
+        ],
+        "photo_reference": "AeeoHcKoyF_rmd888IOwwLK3bmAhHJd64d4EkrHrc704Fmpz5oJe7dU15wALekp0jLuFzt1PWUikMUO4UJ2KYfjsk05jZoE5T4yVNlFugLoeak_hhOcmNWXWd7pokC941uWVyYt5LmiiNFIFziBIDeGpOXcCf0LByjJB4awYINP_AlXvMG5bow75mC7u06s8KI6B_JfA9HkaaqQSCa_sTC-WuiMdcLVs1n27aWZXuwH-RHJ39WYKUEunCQ4pEd1tnUeznfzgEhNaScohjg_PW7dUrnmXkwxqR5nbaq9kK91fUCGJzX1DjswhVtSKHzTrFlaERbVgpA4awRJYHPhSNRXl7QmLJJsHVPwn8RHsd771R5_pdzxurq4CBTAuCppNYnFjR5VFZzT7Bn5JDduEHdya2cxBG8eHTSDuHCOsuSM2ppMsv6-0a5gJRcQSIr3sPw8hsla92EjBHTuDiT0KrB5Qxxw_ip-Ie_yug9thdMjM0tn8kJl7qEVR1l3RVuxIXZhHPTM2uMLgQIyHVtNHxjO0q1OSaCph9JfwwsvPCFEyV9FOPa8XuBGjkNgFlVZWiDag8fXIGo-oWbyLmy6XPk7H4vmjhGukM6EmDWzdU8E2Jz7liw85ZYnRmkzBkXN_jSLBLEISkA",
+        "width": 2808
+      }
+    ],
+    "place_id": "ChIJL8NdbTxTUkYR-bra61KbZcc",
+    "plus_code": {
+      "compound_code": "MHGV+67 Copenhagen, Denmark",
+      "global_code": "9F7JMHGV+67"
+    },
+    "price_level": 3,
+    "rating": 4.5,
+    "reference": "ChIJL8NdbTxTUkYR-bra61KbZcc",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 940,
+    "vicinity": "Wilders Plads 2, København K"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.67299180000001,
+        "lng": 12.554768
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67433653029151,
+          "lng": 12.5560579302915
+        },
+        "southwest": {
+          "lat": 55.67163856970851,
+          "lng": 12.5533599697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Lundgren V.I.P.",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 430,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116607424416050361725\">Lundgren V.I.P.</a>"
+        ],
+        "photo_reference": "AeeoHcLVpxv65ONLtIhArad8798D4PQ9aPCXqom6WDNpImP8Ddzmhy426XfXH86d7IjQ9KZ-sIe2OLBFR8strr5GrWv8UIxqZHCb1AJaqTvZR5qYOqJ0ly6QHwAxLGRd05IWz0DRuBzFRXx-0CMZandnWW7ScxNxYQXBKesn661df7y10UvhspvgyvoNpZW1z-npue6yIxTbBFdeZSb8GXZO3hcg4I74pzW8ZRD5b5_jl2O5efzA9N_Mxa65IxnxR6aL1tiYzY6md5fGXLKOLWc7D3hXEy9S-kwJbWDK8kz0jlo0qIUvdjO9TmsfwCD3a-pAz3XPLiClQW4",
+        "width": 786
+      }
+    ],
+    "place_id": "ChIJeYMQ1wpTUkYRl7dnTD-Tl00",
+    "plus_code": {
+      "compound_code": "MHF3+5W Copenhagen, Denmark",
+      "global_code": "9F7JMHF3+5W"
+    },
+    "price_level": 2,
+    "rating": 4.3,
+    "reference": "ChIJeYMQ1wpTUkYRl7dnTD-Tl00",
+    "scope": "GOOGLE",
+    "types": [
+      "liquor_store",
+      "bar",
+      "store",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 554,
+    "vicinity": "Bagerstræde 6, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6681772,
+        "lng": 12.5494579
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.66947243029149,
+          "lng": 12.5508910302915
+        },
+        "southwest": {
+          "lat": 55.6667744697085,
+          "lng": 12.5481930697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Bang & Jensen",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101079672912110662462\">Jürg Stuker</a>"
+        ],
+        "photo_reference": "AeeoHcK06oZXVgU32EainMtqJSvHHNWtUw36T8H9u6kpu5M1pNCf6O7ZFnmzse9hwcLQtCgatrCu4L5lTNdr7Wps64OvBmpYXJeYV4NCYAgDQkQRD2GNj7-MDUPZA9RF7BkYxLBbRNRT3cdiXOhJcvqYE1DwQuQgdcxpZ6Va-nDnV1EJK_2DLfF9Yig_uNkF7tcm-JLAb46iv_SnaDGASNCZ16AovoVuPeNiwDDuIZJRngCKgotexKgsszXvM4Ce5K95qWUNrpd1VoJD75o-AVFkmGJGORkroaaktMZQVHkTdEBY-HC6Vq1U-YJv9nXmKMJ1EyDl2bvOtoygEF_bnrrLYfXjduFvH6AVzgEe-LFZGKCfqnePh6D0p5GVOtGWcdJOaV7BnLgbWTJvTBj3mPHw_8r8wbLAEGDNkZC1LB4c8196VdkspDhtbf02DY7C0GLrHcwCu8c_J0nJmU__7kkisbn0CL8-88n18T1phc2lB64hE4oCKkybgVoIaIY4T8mrAwgUED4YxJKpjX-td4cVMJhwhkvkbrAyFyhIUbzjRmQcBH1pysYv7f75XOZbMlwCDurFkZCrUzPydMfSlzxgLZl8VJ14gAUd2yTOi8aYKtXBhbhNZ0zoOBQp5KxaS2J51DxtUatB",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ89YV8HVTUkYRmkt4UoHTLz8",
+    "plus_code": {
+      "compound_code": "MG9X+7Q Copenhagen, Denmark",
+      "global_code": "9F7JMG9X+7Q"
+    },
+    "price_level": 2,
+    "rating": 4.1,
+    "reference": "ChIJ89YV8HVTUkYRmkt4UoHTLz8",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 845,
+    "vicinity": "Istedgade 130, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6733389,
+        "lng": 12.5598556
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6746095802915,
+          "lng": 12.5611172802915
+        },
+        "southwest": {
+          "lat": 55.6719116197085,
+          "lng": 12.5584193197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Floras Café & Steakhouse",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3456,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104276952661295144976\">Michael Jensen</a>"
+        ],
+        "photo_reference": "AeeoHcKnX5qFIsgIW5TOGWtqwaQB66hA0fHJVixLwADfXp1ErnpuqutixAfzbKfbPqBS1PaoEIf3mMkTvIrW0ME8Ttvlge1qesefwQuedDcsUzw7ZoVH2NLJpk3CiZKsXUuc6vGmIJqdJb8k7T6J7p-LgsrMxYo8RC-reyBqoNFTA-wTmoYYJsd5s9MqogSEHe_3JiUS3Pr5yvV7IciDdEdl7RfE6VzXCe8CzWDCaGWFltWMCm6l5RNB53PIWKguyOxm3wungX5u3-BCWbQssRBkWi9wAjlkjm0LVmL49SGKlCdk7Yzk-VuQG9ZrDZEhV191_Sl-R6kdKBOMeh2ajMZGNjcDZ6_-G5saR_CBAGZVfIuwOmqWAZYfWLuBwDa5DiMAWrXViNRcpBYIcff9vS3IXfppFqOYlOaEsDfopmiBnEXHbH_zykvNdiFxSwQ3PamVP9p-PBJ-wa35WriOXIIzHhAexO9xygw2vYbJTjVMioitpvF7RziztmyAKcoHkEHXZBKYet1ux6uK-72Qr_pBZp7PUmIL66syhPqMLx46evNWzaxysHdo88OaNig8iDzvVvXEexWrcin1kbqo2EzNHxFbZp52Zbc1SfnTqm_3M0HRbiT6OIrxeKCk7nCbX2OyTg8FWg",
+        "width": 4608
+      }
+    ],
+    "place_id": "ChIJL3FhnwxTUkYRQ92-i54Uvmw",
+    "plus_code": {
+      "compound_code": "MHF5+8W Copenhagen, Denmark",
+      "global_code": "9F7JMHF5+8W"
+    },
+    "price_level": 2,
+    "rating": 4,
+    "reference": "ChIJL3FhnwxTUkYRQ92-i54Uvmw",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1606,
+    "vicinity": "Vesterbrogade 16, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6785562,
+        "lng": 12.5691704
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6799134802915,
+          "lng": 12.5705650802915
+        },
+        "southwest": {
+          "lat": 55.6772155197085,
+          "lng": 12.5678671197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "The Living Room",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 673,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106794504015636398672\">The Living Room</a>"
+        ],
+        "photo_reference": "AeeoHcLYVw4yk0_3ZQZ11a9h_79_iLiRhMIyrmR-pV6ZFDGToqGW6rdlyk3X_bZSXOM4NFGJNQ2Q86iNyM6pCrzVdppUZhAMT34YkII_m4DQBZDuN1ZwWf_oB6wl-N_lniMvNqRKSj0c8kMl1PIImHiKZFqwJI_aE7mwTfmp4aYaWLYx8lmx4maNyLnxuFy3D36CNeYnfkT19wtleg7V4BpUw99EbWPi7S124ZBK29eJ2nyJzodA9M0eicH5_c_8EtY6R5wju6IA3i17x8hij6RF_g1xCl0c_NwkTMXh22H4GcZK9tF5O7Ijge_CQ3Z6E2fqiU81Xe6ul_c",
+        "width": 1200
+      }
+    ],
+    "place_id": "ChIJxYb1Og5TUkYRWKm9JRjAiN8",
+    "plus_code": {
+      "compound_code": "MHH9+CM Copenhagen, Denmark",
+      "global_code": "9F7JMHH9+CM"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJxYb1Og5TUkYRWKm9JRjAiN8",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1768,
+    "vicinity": "Larsbjørnsstræde 17, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6792857,
+        "lng": 12.5739673
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.6806959802915,
+          "lng": 12.5753682802915
+        },
+        "southwest": {
+          "lat": 55.6779980197085,
+          "lng": 12.5726703197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Ristorante Italiano",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1365,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115720520262777792019\">Ristorante Italiano</a>"
+        ],
+        "photo_reference": "AeeoHcI6syq1jQHuUODESVLEcbXV9PwqTWMwU2S6SaKzaUPK20QOx1-qw73MnrtEg1aOhuCCFqUjkFx5l1DSIYLEbuYh8botgIPT4QSQlwxOpLr_7jEnZlyLuV3yrK5Z3907UOJt2spWDI4WIIE8_0NhBkA08EPXsOZkMnJxWT-_qRphqU8RR-rkTUDmPevpV4Nx1vUQlJDK0CXC0rfPxdlN48cx0AxFNIrN2JzczOBWs5Km7uR1F-wDwpILf77dG0xckRnb39mU-7igrYHW8Xm1h8pZY0oTfAwaB_Aex0DKlBRBGr1Bg063P0mkq-WaI-6pYBIbbhUP92g",
+        "width": 2048
+      }
+    ],
+    "place_id": "ChIJDUpGThBTUkYRb0OrMCHPXCg",
+    "plus_code": {
+      "compound_code": "MHHF+PH Indre By, Copenhagen, Denmark",
+      "global_code": "9F7JMHHF+PH"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJDUpGThBTUkYRb0OrMCHPXCg",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 4725,
+    "vicinity": "Fiolstræde 2, Indre By"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6803523,
+        "lng": 12.5745676
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.68166893029149,
+          "lng": 12.5758293302915
+        },
+        "southwest": {
+          "lat": 55.6789709697085,
+          "lng": 12.5731313697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Det Lille Apotek",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3391,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111528034787327292630\">Det Lille Apotek</a>"
+        ],
+        "photo_reference": "AeeoHcImSJJUgjT0WKz2AeI-IrwEUsJyiEjoFHihoiGBCySiKKTtnsahWiBH4u_thvVN6Fffmx5DbFwRPNgontiqFPo8ECIfVhUoksd8tBU_q9RnK36qFIWCGZrv_Lw9sgooVas9yy_z4PBFeRfMh88_uGYmcgK7V7WG3JIFr79TST_o17ICeEwE6Iz1snD-GCj5kZAxjS6EAYP9mekmjR4UStWCSWJ_d8fTbbVsF2CDFbZrMh6lHmNgtM0PL6NtafiTgaOsSauz6ckCra5DeJanF06T2HdaryLCFI-VBQzSfwZM75eJLhQvSfs4ClaKKFtZ-792JcpWjtY",
+        "width": 5999
+      }
+    ],
+    "place_id": "ChIJB57HZxBTUkYRognketO_9qs",
+    "plus_code": {
+      "compound_code": "MHJF+4R Copenhagen, Denmark",
+      "global_code": "9F7JMHJF+4R"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJB57HZxBTUkYRognketO_9qs",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2448,
+    "vicinity": "Store Kannikestræde 15, København"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 55.6733906,
+        "lng": 12.549585
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 55.67475573029151,
+          "lng": 12.5511197802915
+        },
+        "southwest": {
+          "lat": 55.67205776970851,
+          "lng": 12.5484218197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Granola",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3648,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110230931235302220182\">Granola</a>"
+        ],
+        "photo_reference": "AeeoHcLPXE8_N-JejT6ieunvX9lbgo1Qc4WTPHhNk-FiKc9PIKxGGx9mKNESDy6b395CUDlBf7nYDUL4StsII7-mWQLq8iv3_f76_JL-4F28WeXoBpLFMAFz1oVF6Myw6s9e09OEX1xlR7OUOgwyoNRG9ebIdA-j9plA_t8nQM2QnjXLun7I044_b2Y7xNjskkjqEyXoxuStA39XAiRk1Uu7wyCquWu0ALCd0M8tBFRVx_SmtM1Sg2bIzw8cXtvdNjP7j6oiW67jBKdLWz_wTDG75RSuEtRvWLnwx8LL9JSFzePBNT5NlFH18mdgBHZt8iKcBJl0uaZyDfk",
+        "width": 5472
+      }
+    ],
+    "place_id": "ChIJD8FxG6BTUkYRMtZaGD-1CBU",
+    "plus_code": {
+      "compound_code": "MGFX+9R Copenhagen Municipality, Denmark",
+      "global_code": "9F7JMGFX+9R"
+    },
+    "price_level": 3,
+    "rating": 3.9,
+    "reference": "ChIJD8FxG6BTUkYRMtZaGD-1CBU",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 951,
+    "vicinity": "Værnedamsvej 5, Frederiksberg C"
+  }
+]

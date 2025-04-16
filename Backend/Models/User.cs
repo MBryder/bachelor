@@ -1,24 +1,13 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-public class User
+namespace MyBackend.Models
 {
-    [Key]
-    public int UserID { get; set; }
-
-    [Required]
-    public string Username { get; set; }
-
-    [Required]
-    public string PasswordHash { get; set; }
-
-    [Required]
-    public string Email { get; set; }
-
-    public DateTime CreatedAt { get; set; }
-
-    // Relationships
-    public ICollection<Route> Routes { get; set; }
-    public ICollection<SearchQuery> SearchQueries { get; set; }
+    public class User
+    {
+        public int Id { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+    }
 }
 
