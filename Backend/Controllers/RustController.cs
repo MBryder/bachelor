@@ -65,4 +65,10 @@ public IActionResult SolveTSP([FromBody] TSPRequest request)
         route = route
     });
 }
+
+    public class TSPRequest
+    {
+        public int N { get; set; }
+        public double[] Distances { get; set; }
+    }
 }
