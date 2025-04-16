@@ -54,27 +54,46 @@ export const getDistanceMatrix = async (coordinates: { lat: number; lng: number;
 
 export default Map;
 
-const getOSMRoadsPath = async (coordinates: google.maps.LatLngLiteral[]) => {
+const getORSRoadsPath = async (
+    coordinates: google.maps.LatLngLiteral[],
+    apiKey: string
+  ): Promise<google.maps.LatLngLiteral[]> => {
     if (coordinates.length < 2) return coordinates;
-
-    const apiUrl = `https://router.project-osrm.org/route/v1/walk/${coordinates
-        .map(coord => `${coord.lng},${coord.lat}`)
-        .join(";")}?geometries=geojson`;
-
+  
+    const url = 'https://api.openrouteservice.org/v2/directions/foot-walking/geojson';
+  
+    const body = {
+      coordinates: coordinates.map(coord => [coord.lng, coord.lat]),
+    };
+  
     try {
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-        if (data.routes && data.routes.length > 0) {
-            return data.routes[0].geometry.coordinates.map(([lng, lat]: [number, number]) => ({
-                lat,
-                lng
-            }));
-        }
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Authorization': apiKey,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(body),
+      });
+  
+      const data = await response.json();
+  
+      if (
+        data &&
+        data.features &&
+        data.features.length > 0 &&
+        data.features[0].geometry.coordinates
+      ) {
+        return data.features[0].geometry.coordinates.map(
+          ([lng, lat]: [number, number]) => ({ lat, lng })
+        );
+      }
     } catch (error) {
-        console.error("Error fetching route from OSM:", error);
+      console.error('Error fetching route from OpenRouteService:', error);
     }
+  
     return coordinates;
-};
+  };
 
 export const handleSubmit = async (
     selectedPlacesList: any[],
@@ -100,7 +119,7 @@ export const handleSubmit = async (
         setMinCost(result.minCost);
 
         const orderedCoordinates = result.route.map((idx: number) => arrayOfGeo[idx]);
-        const snappedCoordinates = await getOSMRoadsPath(orderedCoordinates);
+        const snappedCoordinates = await getORSRoadsPath(orderedCoordinates,API_OPEN_ROUTE_SERVICE_KEY);
         setRouteCoordinates(snappedCoordinates);
     } catch (error) {
         console.error("Error fetching shortest path:", error);
