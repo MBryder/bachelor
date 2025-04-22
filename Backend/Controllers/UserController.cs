@@ -2,6 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyBackend.Data;
 using MyBackend.Models;
+using MyBackend.Helpers;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Configuration;
 
 namespace MyBackend.Controllers
 {
@@ -10,10 +13,12 @@ namespace MyBackend.Controllers
     public class UserController : ControllerBase
     {
         private readonly MyDbContext _context;
+        private readonly IConfiguration _config;
 
-        public UserController(MyDbContext context)
+        public UserController(MyDbContext context, IConfiguration config)
         {
             _context = context;
+            _config = config;
         }
 
         // GET /user
@@ -51,11 +56,14 @@ namespace MyBackend.Controllers
             if (user == null)
                 return Unauthorized("Invalid username or password.");
 
-            return Ok(new { message = "Login successful!" });
+            // Generate the JWT using JwtHelper
+            var token = JwtHelper.GenerateToken(user, _config);
+            return Ok(new { token });
         }
 
         // GET /user/test-places
         [HttpGet("test-places")]
+        [Authorize] // Require valid JWT token to access this endpoint
         public async Task<IActionResult> TestPlacesQuery()
         {
             var places = await _context.Places
@@ -73,6 +81,7 @@ namespace MyBackend.Controllers
 
         // GET /user/test-place-images
         [HttpGet("test-place-images")]
+        [Authorize] // Example of protecting endpoints with JWT
         public async Task<IActionResult> TestPlaceImagesQuery()
         {
             var places = await _context.Places
@@ -110,6 +119,5 @@ namespace MyBackend.Controllers
                 places = result
             });
         }
-
     }
 }

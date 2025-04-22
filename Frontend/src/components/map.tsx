@@ -7,6 +7,7 @@ import PopupMarker from "./popUpMarker";
 import Sidebar from "./visiblePlaces";
 import Selectedbar from "./selectedPlaces";
 import React from 'react';
+import { lineString, length, along } from "@turf/turf";
 
 function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [selectedPlacesList, setSelectedPlacesList] = useState<any[]>([]);
@@ -19,44 +20,65 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
     const [checked, setChecked] = React.useState(false);
     const [showSidebar, setShowSidebar] = useState(true);
+    const [animatedPoint, setAnimatedPoint] = useState<[number, number] | null>(null);
 
-    const handleChange = (checked : boolean) => {
+    const handleChange = (checked: boolean) => {
         const newChecked = !checked;
         setChecked(newChecked);
-    
+
         if (!userLocation) {
             toast.error("User location not available yet.");
             return;
         }
-    
+
         const userLocationFeature = {
             geometry: {
-                coordinates: [userLocation.lng, userLocation.lat], // [lng, lat]
+                coordinates: [userLocation.lng, userLocation.lat],
             },
             properties: {
                 id: "user-location",
                 name: "Your Location",
             },
         };
-    
+
         if (newChecked) {
-            // Add current location if not already in the list
             const alreadyAdded = selectedPlacesList.some(
                 (place) => place?.properties?.id === "user-location"
             );
-    
             if (!alreadyAdded) {
                 setSelectedPlacesList([userLocationFeature, ...selectedPlacesList]);
             }
         } else {
-            // Remove user location
             const updatedList = selectedPlacesList.filter(
                 (place) => place?.properties?.id !== "user-location"
             );
             setSelectedPlacesList(updatedList);
         }
-    };    
-    
+    };
+
+    // Animate dot along route
+    useEffect(() => {
+        if (routeCoordinates.length < 2) return;
+
+        const line = lineString(routeCoordinates.map(coord => [coord.lng, coord.lat]));
+        const totalDistance = length(line); // in km
+        console.log("Total distance:", totalDistance, "km");
+        const steps = totalDistance * 10; // Number of steps for animation
+        let counter = 0;
+
+        const interval = setInterval(() => {
+            if (counter > steps) {
+                clearInterval(interval);
+                return;
+            }
+
+            const segment = along(line, (counter / steps) * totalDistance);
+            setAnimatedPoint(segment.geometry.coordinates as [number, number]);
+            counter++;
+        }, 50);
+
+        return () => clearInterval(interval);
+    }, [routeCoordinates]);
 
     // Get current GPS location
     useEffect(() => {
@@ -84,28 +106,24 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
 
     useEffect(() => {
         if (!mapRef.current) return;
-
         const map = mapRef.current;
-
         const handleMapMove = () => {
             fetchPlaces();
         };
-
         map.on("moveend", handleMapMove);
-
         return () => {
             map.off("moveend", handleMapMove);
         };
     }, [mapRef.current]);
-    
-    const callSubmit = async ()=> {
+
+    const callSubmit = async () => {
         await handleSubmit(
             selectedPlacesList,
             setRoute,
             setMinCost,
             setRouteCoordinates
-        )
-    }
+        );
+    };
 
     const fetchPlaces = async () => {
         if (!mapRef.current) {
@@ -115,13 +133,13 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
 
         const bounds = mapRef.current.getBounds();
         const { _sw, _ne } = bounds;
-        
+
         const backendUrl = `http://localhost:5001/places/by-bounds?swLat=${_sw.lat}&swLng=${_sw.lng}&neLat=${_ne.lat}&neLng=${_ne.lng}`;
-        
+
         try {
             const response = await fetch(backendUrl);
             const places = await response.json();
-        
+
             const geoJson = {
                 type: "FeatureCollection",
                 features: places.map((place: any) => ({
@@ -138,11 +156,11 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     },
                 })),
             };
-        
+
             setGeoJsonData(geoJson);
             setVisiblePlaces(geoJson.features);
             console.log(geoJson.features);
-        
+
             const routeGeoJSON = {
                 type: "FeatureCollection",
                 features: [
@@ -156,7 +174,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     },
                 ],
             };
-        
+
             setRouteGeoJson(routeGeoJSON);
             toast.success(`Found ${geoJson.features.length} places!`);
         } catch (error) {
@@ -178,31 +196,20 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     mapStyle="https://tiles.openfreemap.org/styles/bright"
                 >
                     <div className="flex flex-row bg-amber-900 h-full w-full justify-end items-start">
-                        
-                        <Sidebar 
-                            visiblePlaces={visiblePlaces} 
+                        <Sidebar
+                            visiblePlaces={visiblePlaces}
                             fetchPlaces={fetchPlaces}
                             showSidebar={showSidebar}
                             setShowSidebar={setShowSidebar}
                         />
-                        <Selectedbar 
-                            selectedPlaces={selectedPlacesList} 
+                        <Selectedbar
+                            selectedPlaces={selectedPlacesList}
+                            setSelectedPlacesList={setSelectedPlacesList}
                             Submit={callSubmit}
                             handleChange={handleChange}
                         />
-                        
                     </div>
-                    
 
-
-                    {/* User GPS marker */}
-                    {userLocation && (
-                        <Marker longitude={userLocation.lng} latitude={userLocation.lat}>
-                            <div className="bg-blue-600 rounded-full w-4 h-4 border-2 border-white shadow-md" title="You are here" />
-                        </Marker>
-                    )}
-
-                    {/* Markers for selected places */}
                     {selectedPlacesList.map((place) => (
                         <PopupMarker
                             key={place.properties.id}
@@ -213,10 +220,10 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             description="Description of this awesome place."
                             setSelectedPlacesList={setSelectedPlacesList}
                             place={place}
+                            color="blue"
                         />
                     ))}
 
-                    {/* Markers for visible places */}
                     {visiblePlaces?.map((place: any) => (
                         <PopupMarker
                             key={place.properties.id}
@@ -227,51 +234,82 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             description="Description of this awesome place."
                             setSelectedPlacesList={setSelectedPlacesList}
                             place={place}
+                            color="red"
                         />
                     ))}
 
-                    {/* Snapped route path */}
-                    {routeCoordinates.length > 1 && (
-                        <Source
-                            id="snapped-route"
-                            type="geojson"
-                            data={{
-                                type: "Feature",
-                                geometry: {
-                                    type: "LineString",
-                                    coordinates: routeCoordinates.map(coord => [coord.lng, coord.lat]),
-                                },
-                                properties: {},
-                            }}
-                        >
-                            <Layer
-                                id="snapped-route-layer"
-                                type="line"
-                                paint={{
-                                    "line-color": "#4CAF50",
-                                    "line-width": 5,
-                                    "line-opacity": 0.9,
-                                }}
-                            />
-                        </Source>
+                    {userLocation && (
+                        <Marker longitude={userLocation.lng} latitude={userLocation.lat}>
+                            <div className="bg-blue-600 rounded-full w-4 h-4 border-2 border-white shadow-md" title="You are here" />
+                        </Marker>
                     )}
+
+                    {/* Static route line */}
+                    {routeCoordinates.length > 1 && (
+                    <Source
+                        id="snapped-route"
+                        type="geojson"
+                        data={{
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: routeCoordinates.map(coord => [coord.lng, coord.lat]),
+                        },
+                        properties: {},
+                        }}
+                    >
+                        <Layer
+                        id="snapped-route-line"
+                        type="line"
+                        paint={{
+                            "line-width": 4,
+                            "line-color": "purple",
+                            "line-dasharray": [1, 3],
+                            "line-opacity": 0.9,
+                        }}
+                        layout={{
+                            "line-cap": "round",
+                            "line-join": "round",
+                          }}
+                        />
+                    </Source>
+                    )}
+
+                    {/* Animated route point */}
+                    {animatedPoint && (
+                    <Source
+                        id="route-point"
+                        type="geojson"
+                        data={{
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: animatedPoint,
+                        },
+                        properties: {},
+                        }}
+                    >
+                        <Layer
+                        id="route-point-layer"
+                        type="circle"
+                        paint={{
+                            "circle-radius": 8,
+                            "circle-color": "#FF0000",
+                        }}
+                        />
+                    </Source>
+                    )}
+
                     <div className="absolute top-4 right-4 flex-col">
-
-                {/* Min Cost and Route Info */}
-                {minCost !== null && (
-                    <div className="bg-white p-4 mt-4 rounded-lg shadow-lg">
-                        <p className="font-semibold text-gray-700">Minimum Cost: {minCost}</p>
-                        <p className="text-gray-600">Route: {route.join(" → ")}</p>
+                        {minCost !== null && (
+                            <div className="bg-white p-4 mt-4 rounded-lg shadow-lg">
+                                <p className="font-semibold text-gray-700">Minimum Cost: {minCost}</p>
+                                <p className="text-gray-600">Route: {route.join(" → ")}</p>
+                            </div>
+                        )}
                     </div>
-                )}
-            </div>
-
                 </Map>
             </div>
-
-            
-
-            
         </div>
     );
 }

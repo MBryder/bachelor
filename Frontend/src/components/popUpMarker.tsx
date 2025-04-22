@@ -11,6 +11,7 @@ const PopupMarker = ({
   description,
   setSelectedPlacesList,
   place,
+  color,
 }: any) => {
   const [showPopup, setShowPopup] = useState(false);
   const { current: map } = useMap();
@@ -31,7 +32,7 @@ const PopupMarker = ({
     <>
       <Marker longitude={longitude} latitude={latitude}>
         <div
-          className="w-4 h-4 rounded-full bg-red-500 cursor-pointer"
+          className={`w-4 h-4 rounded-full bg-${color}-500 cursor-pointer`}
           onClick={handleClick}
         />
       </Marker>

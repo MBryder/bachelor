@@ -10,4 +10,3 @@ namespace MyBackend.Models
         public string? Password { get; set; }
     }
 }
-
