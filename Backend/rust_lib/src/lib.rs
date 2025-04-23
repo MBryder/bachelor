@@ -150,10 +150,10 @@ mod tests {
         let mut route = vec![0; 5]; // 5 slots for 0 → ... → 0
         let result = held_karp_tsp_full(4, dist_matrix.as_ptr(), route.as_mut_ptr());
 
-        // Expected cost for optimal TSP on this graph is 80
+        
         assert_eq!(result, 80);
 
-        // Optional: assert expected path if deterministic (may vary in tie cases)
+        
         assert_eq!(route[..5], [0, 2, 3, 1, 0]);
     }
 }
