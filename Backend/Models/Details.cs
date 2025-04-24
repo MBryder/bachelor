@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace MyBackend.Models
 {
@@ -12,6 +13,8 @@ namespace MyBackend.Models
         [Required]
         public string PlaceId { get; set; }
         [ForeignKey("PlaceId")]
+
+        [JsonIgnore]
         public Place Place { get; set; }
 
         public string? FormattedAddress { get; set; }

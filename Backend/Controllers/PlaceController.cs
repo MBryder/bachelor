@@ -25,7 +25,8 @@ namespace MyBackend.Controllers
             var places = await _context.Places
                 .Where(p => p.Latitude >= swLat && p.Latitude <= neLat &&
                             p.Longitude >= swLng && p.Longitude <= neLng)
-                .Include(p => p.Images) // Include images if needed
+                .Include(p => p.Images) // Include images 
+                .Include(p => p.Details) // Include details
                 .ToListAsync();
 
             return Ok(places);
