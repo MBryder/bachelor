@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { getTourismIcon } from "../utils/icons";
 
 function Selectedbar({
@@ -18,6 +18,10 @@ function Selectedbar({
     setChecked(!checked);
     handleChange(checked);
   };
+
+  useEffect(() => {
+    Submit(); // Reset checkbox when selectedPlaces changes
+  }, [selectedPlaces]);
 
   const handleRemove = (indexToRemove: number) => {
     const updatedList = selectedPlaces.filter((_, index) => index !== indexToRemove);
@@ -45,10 +49,10 @@ function Selectedbar({
                   </div>
                 </div>
                 <button
-                  className="ml-2 text-sm text-red-600 hover:underline"
+                  className="ml-2 mr-2 text-sm hover:text-red-600 text-primary-brown"
                   onClick={() => handleRemove(index)}
                 >
-                  Remove
+                  X
                 </button>
               </li>
             ))}

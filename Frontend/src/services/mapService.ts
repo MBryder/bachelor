@@ -1,4 +1,3 @@
-
 import axios from "axios";
 
 const API_BASE_URL = "http://localhost:5001/api/Rust";
@@ -19,6 +18,25 @@ export const getShortestPath = async (distances: number[], n: number) => {
         throw error;
     }
 };
+
+export const fetchSearchResults = async (query: string) => {
+  
+  const url = 'http://localhost:5001/places/name?Name=' + query;
+
+  try {
+      const response = await axios.get(url, {
+          headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8'
+          }
+      });
+      console.log("API Response:", response.data); // Debugging log
+      return response.data;
+  }
+  catch (error) {
+      console.error("Error fetching search results:", error);
+  }
+}
 
 export const getDistanceMatrix = async (coordinates: { lat: number; lng: number; }[]) => {
     try {
@@ -50,9 +68,6 @@ export const getDistanceMatrix = async (coordinates: { lat: number; lng: number;
         throw error;
     }
 };
-
-
-export default Map;
 
 const getORSRoadsPath = async (
     coordinates: google.maps.LatLngLiteral[],
@@ -125,3 +140,5 @@ export const handleSubmit = async (
         console.error("Error fetching shortest path:", error);
     }
 };
+
+export default Map;

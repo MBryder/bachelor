@@ -11,10 +11,12 @@ namespace MyBackend.Controllers
     public class PlaceController : ControllerBase
     {
         private readonly MyDbContext _context;
+        private readonly ILogger<PlaceController> _logger;
 
-        public PlaceController(MyDbContext context)
+        public PlaceController(MyDbContext context, ILogger<PlaceController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET /places/by-bounds?swLat=...&swLng=...&neLat=...&neLng=...
@@ -27,6 +29,23 @@ namespace MyBackend.Controllers
                             p.Longitude >= swLng && p.Longitude <= neLng)
                 .Include(p => p.Images) // Include images if needed
                 .ToListAsync();
+
+            return Ok(places);
+        }
+
+        // GET /places/search?name=...
+        [HttpGet("name")]
+        public async Task<IActionResult> GetPlacesInBounds([FromQuery] string Name)
+        {
+            _logger.LogInformation($"Endpoint hit: Searching for places with name containing '{Name}'");
+
+            var places = await _context.Places
+                .Where(p => p.Name.ToLower().Contains(Name.ToLower()))
+                .Select(p => new
+                {
+                    p.Name
+                })
+                .ToListAsync(); // Execute the query
 
             return Ok(places);
         }

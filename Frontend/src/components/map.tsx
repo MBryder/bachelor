@@ -221,6 +221,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             setSelectedPlacesList={setSelectedPlacesList}
                             place={place}
                             color="blue"
+                            zindex={10}
                         />
                     ))}
 
@@ -294,20 +295,11 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                         type="circle"
                         paint={{
                             "circle-radius": 8,
-                            "circle-color": "#FF0000",
+                            "circle-color": "green",
                         }}
                         />
                     </Source>
                     )}
-
-                    <div className="absolute top-4 right-4 flex-col">
-                        {minCost !== null && (
-                            <div className="bg-white p-4 mt-4 rounded-lg shadow-lg">
-                                <p className="font-semibold text-gray-700">Minimum Cost: {minCost}</p>
-                                <p className="text-gray-600">Route: {route.join(" → ")}</p>
-                            </div>
-                        )}
-                    </div>
                 </Map>
             </div>
         </div>
