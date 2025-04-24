@@ -36,6 +36,7 @@ namespace MyBackend.Controllers
         public async Task<IActionResult> GetTestPlacesWithDetails()
         {
             var places = await _context.Places
+                .AsNoTracking()
                 .Include(p => p.Images)
                 .Include(p => p.Details)
                 .Take(5)
@@ -48,15 +49,30 @@ namespace MyBackend.Controllers
                 p.Rating,
                 p.Latitude,
                 p.Longitude,
-                imageUrls = p.Images.Select(i => i.ImageUrl).ToList(),
-                details = p.Details != null ? new
+                ImageUrls = p.Images.Select(i => i.ImageUrl).ToList(),
+
+                Details = p.Details == null ? null : new
                 {
-                    p.Details.FormattedAddress,
-                    p.Details.FormattedPhoneNumber,
-                    p.Details.PriceLevel,
-                    p.Details.UserRatingsTotal,
-                    p.Details.WheelchairAccessibleEntrance
-                } : null
+                    Address = p.Details.FormattedAddress,
+                    PhoneNumber = p.Details.FormattedPhoneNumber,
+                    Url = p.Details.Url,
+                    Website = p.Details.Website,
+                    OpenNow = p.Details.OpenNow,
+                    PriceLevel = p.Details.PriceLevel,
+                    Rating = p.Details.Rating,
+                    UserRatingsTotal = p.Details.UserRatingsTotal,
+                    WheelchairAccessible = p.Details.WheelchairAccessibleEntrance,
+                    Reservable = p.Details.Reservable,
+
+                    EditorialSummary = new
+                    {
+                        Language = p.Details.EditorialLanguage,
+                        Overview = p.Details.EditorialOverview
+                    },
+
+                    WeekdayText = p.Details.WeekdayText,  // List<string>
+                    Types = p.Details.Types         // List<string>
+                }
             });
 
             return Ok(new
