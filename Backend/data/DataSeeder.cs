@@ -87,33 +87,43 @@ public class DataSeeder
     }
 
     public async Task SeedDetailsAsync(string jsonFilePath)
-{
-    if (_context.Details.Any()) return; // Avoid reseeding
-
-    var json = await File.ReadAllTextAsync(jsonFilePath);
-    var rawDetails = JsonSerializer.Deserialize<List<DetailsDTO>>(json);
-
-    foreach (var dto in rawDetails)
     {
-        // Optional: skip if PlaceId not found in Places
-        var placeExists = _context.Places.Any(p => p.PlaceId == dto.PlaceId);
-        if (!placeExists) continue;
+        if (_context.Details.Any()) return; // Avoid reseeding
 
-        var details = new Details
+        var json = await File.ReadAllTextAsync(jsonFilePath);
+        var rawDetails = JsonSerializer.Deserialize<List<DetailsDTO>>(json);
+
+        foreach (var dto in rawDetails)
         {
-            PlaceId = dto.PlaceId,
-            Name = dto.Name,
-            FormattedAddress = dto.FormattedAddress,
-            FormattedPhoneNumber = dto.FormattedPhoneNumber,
-            PriceLevel = dto.PriceLevel,
-            UserRatingsTotal = dto.UserRatingsTotal,
-            WheelchairAccessibleEntrance = dto.WheelchairAccessibleEntrance
-        };
+            // Skip if Place doesn't exist (enforce FK constraint)
+            if (!_context.Places.Any(p => p.PlaceId == dto.PlaceId))
+                continue;
 
-        _context.Details.Add(details);
+            var details = new Details
+            {
+                PlaceId = dto.PlaceId,
+                FormattedAddress = dto.FormattedAddress,
+                FormattedPhoneNumber = dto.FormattedPhoneNumber,
+                Url = dto.Url,
+                Website = dto.Website,
+                OpenNow = dto.OpenNow,
+                PriceLevel = dto.PriceLevel,
+                Rating = dto.Rating,
+                UserRatingsTotal = dto.UserRatingsTotal,
+                WheelchairAccessibleEntrance = dto.WheelchairAccessibleEntrance,
+                Reservable = dto.Reservable,
+                EditorialLanguage = dto.EditorialSummary?.Language,
+                EditorialOverview = dto.EditorialSummary?.Overview,
+
+                // now you can assign the lists directly:
+                WeekdayText = dto.WeekdayText,
+                Types = dto.Types
+            };
+
+            _context.Details.Add(details);
+        }
+
+        await _context.SaveChangesAsync();
     }
-
-    await _context.SaveChangesAsync();
-}
 
 }

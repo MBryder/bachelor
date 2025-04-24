@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyBackend.Models;
+using System.Collections.Generic;
+using System.Text.Json;
 
 namespace MyBackend.Data
 {
@@ -17,38 +20,55 @@ namespace MyBackend.Data
         public DbSet<Image> Images { get; set; }
         public DbSet<Details> Details { get; set; }
 
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
+            // Seed users (optional, for testing)
             modelBuilder.Entity<User>().HasData(
                 new User { Id = 1, Username = "admin", Password = "admin123" },
                 new User { Id = 2, Username = "test", Password = "password" }
             );
 
+            // Place-Photo: one-to-many
             modelBuilder.Entity<Place>()
                 .HasMany(p => p.Photos)
                 .WithOne(photo => photo.Place)
                 .HasForeignKey(photo => photo.PlaceId);
 
+            // Place-Types: one-to-many
             modelBuilder.Entity<Place>()
                 .HasMany(p => p.Types)
                 .WithOne(type => type.Place)
                 .HasForeignKey(type => type.PlaceId);
 
+            // Place-Images: one-to-many
             modelBuilder.Entity<Image>()
                 .HasOne(i => i.Place)
                 .WithMany(p => p.Images)
                 .HasForeignKey(i => i.PlaceId)
                 .HasPrincipalKey(p => p.PlaceId);
 
-            // 👇 Optional but recommended to define the one-to-one relationship explicitly:
+            // Place-Details: one-to-one (based on PlaceId)
             modelBuilder.Entity<Place>()
                 .HasOne(p => p.Details)
                 .WithOne(d => d.Place)
                 .HasForeignKey<Details>(d => d.PlaceId)
                 .HasPrincipalKey<Place>(p => p.PlaceId);
+
+            // JSON serialization for WeekdayText and Types (stored as strings in SQLite)
+            var stringListConverter = new ValueConverter<List<string>, string>(
+                v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null),
+                v => JsonSerializer.Deserialize<List<string>>(v, (JsonSerializerOptions)null)
+            );
+
+            modelBuilder.Entity<Details>()
+                .Property(d => d.WeekdayText)
+                .HasConversion(stringListConverter);
+
+            modelBuilder.Entity<Details>()
+                .Property(d => d.Types)
+                .HasConversion(stringListConverter);
         }
     }
 }
