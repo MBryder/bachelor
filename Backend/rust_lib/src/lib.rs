@@ -124,3 +124,5 @@ fn return_to_start_and_backtrack(
     path.reverse();
     (min_total_cost, path)
 }
+#[cfg(test)]
+mod tests;
