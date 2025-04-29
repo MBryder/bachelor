@@ -32,7 +32,7 @@ const PopupMarker = ({
     <>
       <Marker longitude={longitude} latitude={latitude}>
         <div
-          className={`w-4 h-4 rounded-full bg-${color}-500 cursor-pointer`}
+          className={`w-4 h-4 rounded-full bg-red-500 cursor-pointer`} // TAILWIND KAN IKKE KLARE DYNAMISK BESTEMMELSE AF FARVE! MARCUS!
           onClick={handleClick}
         />
       </Marker>

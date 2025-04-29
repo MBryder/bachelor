@@ -21,6 +21,15 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const [checked, setChecked] = React.useState(false);
     const [showSidebar, setShowSidebar] = useState(true);
     const [animatedPoint, setAnimatedPoint] = useState<[number, number] | null>(null);
+    const [filterType, setFilterType] = useState<string | null>(null);
+    const [showFilterDropdown, setShowFilterDropdown] = useState(false);
+
+    const filteredVisiblePlaces = filterType
+        ? visiblePlaces.filter((place: any) =>
+            place.properties?.details?.types?.includes(filterType)
+        )
+        : visiblePlaces;
+
 
     const handleChange = (checked: boolean) => {
         const newChecked = !checked;
@@ -195,6 +204,117 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                     }}
                     mapStyle="https://tiles.openfreemap.org/styles/bright"
                 >
+                    {/* Static Marker for Testing */}
+                    <PopupMarker
+                        key="static-test-marker"
+                        longitude={12.5939} // Replace with desired longitude
+                        latitude={55.6632} // Replace with desired latitude
+                        title="Static Test Marker"
+                        image="https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"
+                        description="This is a static test marker."
+                        setSelectedPlacesList={setSelectedPlacesList}
+                        place={{
+                            properties: { id: "static-test", name: "Static Test Marker" },
+                            geometry: { coordinates: [12.5939, 55.6632] },
+                        }}
+                        color="green" // ILLEGAL! Tailwind kan ikke håndtere dynamisk valg af farve!
+                    />
+                    {/* Filter button and dropdown */}
+                    <div className="absolute top-4 right-4 z-50 flex flex-col items-end">
+                        <button
+                            onClick={() => setShowFilterDropdown(prev => !prev)}
+                            className="px-4 py-2 bg-primary-brown text-white rounded-lg shadow-md"
+                        >
+                            Filter
+                        </button>
+
+                        {showFilterDropdown && (
+                            <div className="mt-2 w-40 bg-white border border-gray-300 rounded-lg shadow-md">
+                                <button
+                                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                                    onClick={() => {
+                                        setFilterType(null);
+                                        setShowFilterDropdown(false);
+                                    }}
+                                >
+                                    Show All
+                                </button>
+                                <button
+                                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                                    onClick={() => {
+                                        setFilterType("bar");
+                                        setShowFilterDropdown(false);
+                                    }}
+                                >
+                                    Bars
+                                </button>
+                                <button
+                                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                                    onClick={() => {
+                                        setFilterType("restaurant");
+                                        setShowFilterDropdown(false);
+                                    }}
+                                >
+                                    Restaurants
+                                </button>
+                                <button
+                                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                                    onClick={() => {
+                                        setFilterType("lodging");
+                                        setShowFilterDropdown(false);
+                                    }}
+                                >
+                                    Lodgings
+                                </button>
+                                <button
+                                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                                    onClick={() => {
+                                        setFilterType("food");
+                                        setShowFilterDropdown(false);
+                                    }}
+                                >
+                                    Serves food
+                                </button>
+                                <button
+                                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                                    onClick={() => {
+                                        setFilterType("point_of_interest");
+                                        setShowFilterDropdown(false);
+                                    }}
+                                >
+                                    Point of interest
+                                </button>
+                                <button
+                                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                                    onClick={() => {
+                                        setFilterType("establishment");
+                                        setShowFilterDropdown(false);
+                                    }}
+                                >
+                                    Establishments
+                                </button>
+                                <button
+                                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                                    onClick={() => {
+                                        setFilterType("health");
+                                        setShowFilterDropdown(false);
+                                    }}
+                                >
+                                    Health
+                                </button>
+                                <button
+                                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                                    onClick={() => {
+                                        setFilterType("cafe");
+                                        setShowFilterDropdown(false);
+                                    }}
+                                >
+                                    Cafe's
+                                </button>
+                                {/* Add more buttons here if you want more filter types */}
+                            </div>
+                        )}
+                    </div>
                     <div className="flex flex-row bg-amber-900 h-full w-full justify-end items-start">
                         <Sidebar
                             visiblePlaces={visiblePlaces}
@@ -212,30 +332,30 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
 
                     {selectedPlacesList.map((place) => (
                         <PopupMarker
-                            key={place.properties.id}
+                            key={place.properties.placeId}
                             longitude={place.geometry.coordinates[0]}
                             latitude={place.geometry.coordinates[1]}
                             title={place.properties.name}
                             image={place.properties.images?.[0]?.imageUrl || "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"}
-                            description="Description of this awesome place."
+                            description={place.properties.details?.editorialOverview || "No description available."}
                             setSelectedPlacesList={setSelectedPlacesList}
                             place={place}
-                            color="blue"
+                            color="blue" // ILLEGAL! Tailwind kan ikke håndtere dynamisk valg af farve!
                             zindex={10}
                         />
                     ))}
 
-                    {visiblePlaces?.map((place: any) => (
+                    {filteredVisiblePlaces?.map((place: any) => (
                         <PopupMarker
-                            key={place.properties.id}
+                            key={place.properties.placeId}
                             longitude={place.geometry.coordinates[0]}
                             latitude={place.geometry.coordinates[1]}
                             title={place.properties.name}
                             image={place.properties.images?.[0]?.imageUrl || "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"}
-                            description="Description of this awesome place."
+                            description={place.properties.details?.editorialOverview || "No description available."}
                             setSelectedPlacesList={setSelectedPlacesList}
                             place={place}
-                            color="red"
+                            color="red" // ILLEGAL! Tailwind kan ikke håndtere dynamisk valg af farve!
                         />
                     ))}
 
@@ -247,58 +367,58 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
 
                     {/* Static route line */}
                     {routeCoordinates.length > 1 && (
-                    <Source
-                        id="snapped-route"
-                        type="geojson"
-                        data={{
-                        type: "Feature",
-                        geometry: {
-                            type: "LineString",
-                            coordinates: routeCoordinates.map(coord => [coord.lng, coord.lat]),
-                        },
-                        properties: {},
-                        }}
-                    >
-                        <Layer
-                        id="snapped-route-line"
-                        type="line"
-                        paint={{
-                            "line-width": 4,
-                            "line-color": "purple",
-                            "line-dasharray": [1, 3],
-                            "line-opacity": 0.9,
-                        }}
-                        layout={{
-                            "line-cap": "round",
-                            "line-join": "round",
-                          }}
-                        />
-                    </Source>
+                        <Source
+                            id="snapped-route"
+                            type="geojson"
+                            data={{
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: routeCoordinates.map(coord => [coord.lng, coord.lat]),
+                                },
+                                properties: {},
+                            }}
+                        >
+                            <Layer
+                                id="snapped-route-line"
+                                type="line"
+                                paint={{
+                                    "line-width": 4,
+                                    "line-color": "purple",
+                                    "line-dasharray": [1, 3],
+                                    "line-opacity": 0.9,
+                                }}
+                                layout={{
+                                    "line-cap": "round",
+                                    "line-join": "round",
+                                }}
+                            />
+                        </Source>
                     )}
 
                     {/* Animated route point */}
                     {animatedPoint && (
-                    <Source
-                        id="route-point"
-                        type="geojson"
-                        data={{
-                        type: "Feature",
-                        geometry: {
-                            type: "Point",
-                            coordinates: animatedPoint,
-                        },
-                        properties: {},
-                        }}
-                    >
-                        <Layer
-                        id="route-point-layer"
-                        type="circle"
-                        paint={{
-                            "circle-radius": 8,
-                            "circle-color": "green",
-                        }}
-                        />
-                    </Source>
+                        <Source
+                            id="route-point"
+                            type="geojson"
+                            data={{
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: animatedPoint,
+                                },
+                                properties: {},
+                            }}
+                        >
+                            <Layer
+                                id="route-point-layer"
+                                type="circle"
+                                paint={{
+                                    "circle-radius": 8,
+                                    "circle-color": "green",
+                                }}
+                            />
+                        </Source>
                     )}
                 </Map>
             </div>

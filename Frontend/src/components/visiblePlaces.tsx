@@ -6,6 +6,7 @@ function Sidebar({ visiblePlaces, fetchPlaces, showSidebar, setShowSidebar }: {
   showSidebar: boolean;
   setShowSidebar: (value: boolean) => void;
 }) {
+
   return (
     <div className="h-full w-full flex items-center py-2">
       <div
@@ -19,7 +20,7 @@ function Sidebar({ visiblePlaces, fetchPlaces, showSidebar, setShowSidebar }: {
           </h1>
           <ul className="px-2 overflow-y-auto flex-[14] scrollbar">
             {visiblePlaces.map((place: any) => (
-              <li key={place.id} className="pb-2 my-2 border-b border-primary-brown flex items-center">
+              <li key={place.properties.placeId} className="pb-2 my-2 border-b border-primary-brown flex items-center">
                 <div className="mr-2">{getTourismIcon(place.properties.tourism)}</div>
                 <div>
                   <h2 className="text-primary-brown text-heading-3">{place.properties.name}</h2>
