@@ -4,6 +4,12 @@ const API_BASE_URL = "http://localhost:5001/api/Rust";
 const API_OPEN_ROUTE_SERVICE = "https://api.openrouteservice.org/v2/matrix/foot-walking";
 const API_OPEN_ROUTE_SERVICE_KEY = "5b3ce3597851110001cf6248f9076d1fd33646bc9639a339df6bfc14";
 
+type Place = {
+  id: number;
+  name: string;
+};
+
+
 export const getShortestPath = async (distances: number[], n: number) => {
     try {
         const response = await axios.post(`${API_BASE_URL}/tsp`, {
@@ -19,9 +25,8 @@ export const getShortestPath = async (distances: number[], n: number) => {
     }
 };
 
-export const fetchSearchResults = async (query: string) => {
-  
-  const url = 'http://localhost:5001/places/name?Name=' + query;
+export const fetchSearchResults = async (query: string): Promise<Place[]> => { 
+  const url = 'http://localhost:5001/places/name?Name=' + encodeURIComponent(query);
 
   try {
       const response = await axios.get(url, {
@@ -30,13 +35,27 @@ export const fetchSearchResults = async (query: string) => {
               'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8'
           }
       });
+      
       console.log("API Response:", response.data); // Debugging log
-      return response.data;
+      
+      const data = response.data;
+
+      if (Array.isArray(data)) {
+          return data;
+      } else if (Array.isArray(data.places)) {
+          // maybe your API wraps places like { places: [...] }
+          return data.places;
+      } else {
+          console.error("Unexpected API structure:", data);
+          return [];
+      }
   }
   catch (error) {
       console.error("Error fetching search results:", error);
+      return []; // Always return empty array on error
   }
-}
+};
+
 
 export const getDistanceMatrix = async (coordinates: { lat: number; lng: number; }[]) => {
     try {
