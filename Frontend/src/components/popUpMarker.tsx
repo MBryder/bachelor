@@ -2,6 +2,7 @@ import { Marker } from "@vis.gl/react-maplibre";
 import { useState } from "react";
 import { useMap } from "@vis.gl/react-maplibre";
 import CustomPopup from "./CustomPopup";
+import { flyToLocation } from "../utils/flyTo"; // adjust path as needed
 
 const PopupMarker = ({
   longitude,
@@ -17,22 +18,16 @@ const PopupMarker = ({
   const { current: map } = useMap();
 
   const handleClick = () => {
-    if (map) {
-      map.flyTo({
-        center: [longitude, latitude],
-        duration: 1000,
-        easing: (t) => t * (2 - t),
-        essential: true,
-      });
-    }
     setShowPopup(true);
+    flyToLocation(map, longitude, latitude);
   };
 
   return (
     <>
       <Marker longitude={longitude} latitude={latitude}>
         <div
-          className={`w-4 h-4 rounded-full bg-red-500 cursor-pointer`} // TAILWIND KAN IKKE KLARE DYNAMISK BESTEMMELSE AF FARVE! MARCUS!
+          className="w-4 h-4 rounded-full cursor-pointer"
+          style={{ backgroundColor: color || "red" }}
           onClick={handleClick}
         />
       </Marker>
