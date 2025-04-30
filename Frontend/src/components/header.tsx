@@ -1,69 +1,124 @@
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect, useRef } from 'react';
+
 import { fetchSearchResults } from '../services/mapService';
 
+type Place = {
+    id: number;
+    name: string;
+  };
+  
 
 function Head() {
-    
+    const navigate = useNavigate();
+    const [search, setSearch] = useState('');
+    const debounceTimeout = useRef<number | null>(null);
+    const [results, setResults] = useState<Place[]>([]);
+    const [showDropdown, setShowDropdown] = useState(false);
 
     const handleLogout = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('username');
         navigate('/login');
-    }
-
-    const navigate = useNavigate();  
-    const [Search, setSearch] = useState('');
-    const debounceTimeout = useRef<NodeJS.Timeout | null>(null);
+    };
 
     useEffect(() => {
-        if (Search === '') return;
-
         if (debounceTimeout.current) {
             clearTimeout(debounceTimeout.current);
         }
-
-        debounceTimeout.current = setTimeout(async () => {
-            const results = await fetchSearchResults(Search);
-            console.log(results);
-        }, 400); // adjust delay as needed (400ms is typical)
-
+    
+        if (search.trim() === '') {
+            setResults([]);
+            setShowDropdown(false);
+            return;
+        }
+    
+        debounceTimeout.current = window.setTimeout(async () => {
+            try {
+                const fetchedResults = await fetchSearchResults(search);
+                setResults(Array.isArray(fetchedResults) ? fetchedResults : []);
+                setShowDropdown(true);
+            } catch (error) {
+                console.error('Error fetching search results:', error);
+                setResults([]);
+                setShowDropdown(false);
+            }
+        }, 400);
+    
         return () => {
             if (debounceTimeout.current) {
                 clearTimeout(debounceTimeout.current);
             }
         };
-    }, [Search]);
-    
+    }, [search]);
 
+    const handleAdd = (item: any)=>{
+        
+
+    };
+
+    const handleSelect = (item: any) => {
+        setSearch(item.name);
+        setShowDropdown(false);
+      
+        // Optionally: navigate(/places/${item.id}) if you want
+      };
 
     return (
-        <div className="h-[60px] border-b border-primary-brown flex items-center justify-between px-8">
+        <div className="h-[60px] border-b border-primary-brown flex items-center justify-between px-8 relative">
+            {/* Left side - Logo */}
             <div>
                 <h1 className="text-display-1 font-display text-primary-brown">NextStop</h1>
             </div>
-            <div className='flex border-1 border-primary-brown rounded-4xl bg-background-beige1 shadow-lg items-center'>
+
+            {/* Center - Buttons + Search */}
+            <div className="flex border-1 border-primary-brown rounded-4xl bg-background-beige1 shadow-lg items-center relative">
                 <button
-                    onClick={handleLogout}
-                    className="hover:underline hover:cursor-pointer border-r-1 py-2 px-4 border-primary-brown "
+                    onClick={() => navigate('/my-routes')}
+                    className="hover:underline hover:cursor-pointer border-r-1 py-2 px-4 border-primary-brown"
                 >
-                    <p className="text-primary-brown text-heading-3">My routes</p>
+                    <p className="text-primary-brown text-heading-3">My Routes</p>
                 </button>
                 <button
-                    onClick={handleLogout}
+                    onClick={() => navigate('/favorites')}
                     className="hover:underline hover:cursor-pointer border-x-1 py-2 px-4 border-primary-brown"
                 >
-                    <p className="text-primary-brown text-heading-3">My routes</p>
+                    <p className="text-primary-brown text-heading-3">Favorites</p>
                 </button>
-                <input
-                    type="text"
-                    value={Search}
-                    onChange={e => setSearch(e.target.value)}
-                    placeholder="Search"
-                    className="hover:cursor-pointer border-l-1 py-2 px-4 border-primary-brown text-primary-brown text-heading-3"
-                >
-                </input>
+
+                {/* Search Input */}
+                <div className="relative w-64">
+                    <input
+                        type="text"
+                        value={search}
+                        onChange={e => setSearch(e.target.value)}
+                        placeholder="Search"
+                        className="w-full hover:cursor-pointer border-l-1 py-2 px-4 border-primary-brown text-primary-brown text-heading-3"
+                        onFocus={() => { if (results.length > 0) setShowDropdown(true); }}
+                        onBlur={() => setTimeout(() => setShowDropdown(false), 150)}
+                    />
+                    {showDropdown && Array.isArray(results) && results.length > 0 && (
+                        <ul className="absolute top-full left-0 right-0 bg-white border border-primary-brown rounded shadow-md max-h-60 overflow-y-auto z-20">
+                        {results.map((item, index) => (
+                            <li
+                                key={index}
+                                className="flex justify-between items-center p-2 hover:bg-primary-brown hover:text-white cursor-pointer"
+                            >
+                                <span onMouseDown={() => handleSelect(item)}>{item.name}</span>
+                                <button
+                                    className="ml-2 px-2 py-1 text-sm bg-primary-brown text-white rounded hover:bg-opacity-80"
+                                    onMouseDown={() => handleAdd(item)}
+                                >
+                                    Add
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+                    )}
+                </div>
             </div>
+
+            {/* Right side - Logout */}
             <div>
                 <button
                     onClick={handleLogout}
@@ -71,7 +126,7 @@ function Head() {
                 >
                     <p className="text-primary-brown text-heading-3">Sign Out</p>
                 </button>
-            </div>            
+            </div>
         </div>
     );
 }
