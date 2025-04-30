@@ -104,26 +104,27 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
         >
           <div className="flex flex-row h-full w-full justify-between items-start">
             <div className="flex flex-row h-full w-full justify-start items-start">
-              <Sidebar
-                visiblePlaces={visiblePlaces}
-                fetchPlaces={() => {
-                  const bounds = mapRef.current?.getBounds();
-                  if (bounds) {
-                    fetchPlacesByBounds(bounds, setGeoJsonData, setVisiblePlaces, setRouteGeoJson);
-                  }
-                }}
-                showSidebar={showSidebar}
-                setShowSidebar={setShowSidebar}
-                setSelectedPlacesList={setSelectedPlacesList}
-              />
-              <Filter filterTypes={filterTypes} setFilterTypes={setFilterTypes} />
+                <Sidebar
+                    visiblePlaces={visiblePlaces}
+                    fetchPlaces={() => {
+                    const bounds = mapRef.current?.getBounds();
+                    if (bounds) {
+                        fetchPlacesByBounds(bounds, setGeoJsonData, setVisiblePlaces, setRouteGeoJson);
+                    }
+                    }}
+                    showSidebar={showSidebar}
+                    setShowSidebar={setShowSidebar}
+                    setSelectedPlacesList={setSelectedPlacesList}
+                />
+                <Filter filterTypes={filterTypes} setFilterTypes={setFilterTypes} />
             </div>
 
             <Selectedbar
-              selectedPlaces={selectedPlacesList}
-              setSelectedPlacesList={setSelectedPlacesList}
-              Submit={callSubmit}
-              handleChange={handleChange}
+                selectedPlaces={selectedPlacesList}
+                setSelectedPlacesList={setSelectedPlacesList}
+                Submit={callSubmit}
+                handleChange={handleChange} 
+                visiblePlaces={visiblePlaces}                        
             />
           </div>
 

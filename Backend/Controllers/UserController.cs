@@ -119,5 +119,49 @@ namespace MyBackend.Controllers
                 places = result
             });
         }
+
+        // POST /user/{username}/routes
+        [HttpPost("{username}/routes")]
+        public async Task<IActionResult> AddRouteForUser(string username, [FromBody] RouteDto routeDto)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
+            if (user == null)
+                return NotFound("User not found.");
+
+            var route = new MyBackend.Models.Route
+            {
+                Username = username,
+                CustomName = routeDto.CustomName,
+                DateOfCreation = DateTime.UtcNow,
+                Waypoints = routeDto.Waypoints
+            };
+
+            _context.Routes.Add(route);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Route added successfully", routeId = route.Id });
+        }
+
+        // GET /user/{username}/routes
+        [HttpGet("{username}/routes")]
+        public async Task<IActionResult> GetRoutesForUser(string username)
+        {
+            var user = await _context.Users
+                .Include(u => u.Routes)
+                .FirstOrDefaultAsync(u => u.Username == username);
+
+            if (user == null)
+                return NotFound("User not found.");
+
+            var routes = user.Routes?.Select(r => new
+            {
+                r.Id,
+                r.CustomName,
+                r.DateOfCreation,
+                r.Waypoints
+            }).ToList();
+
+            return Ok(routes);
+        }
     }
 }
