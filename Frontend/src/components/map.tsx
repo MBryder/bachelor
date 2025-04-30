@@ -326,8 +326,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
                             selectedPlaces={selectedPlacesList}
                             setSelectedPlacesList={setSelectedPlacesList}
                             Submit={callSubmit}
-                            handleChange={handleChange}
-                        />
+                            handleChange={handleChange} visiblePlaces={visiblePlaces}                        />
                     </div>
 
                     {selectedPlacesList.map((place) => (

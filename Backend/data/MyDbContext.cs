@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyBackend.Models;
 using System.Collections.Generic;
 using System.Text.Json;
+using RouteModel = MyBackend.Models.Route;
 
 namespace MyBackend.Data
 {
@@ -19,10 +20,15 @@ namespace MyBackend.Data
         public DbSet<PlaceType> PlaceTypes { get; set; }
         public DbSet<Image> Images { get; set; }
         public DbSet<Details> Details { get; set; }
+        public DbSet<RouteModel> Routes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            // Declare Username as a key so it can be used as a foreign key
+            modelBuilder.Entity<User>()
+                .HasAlternateKey(u => u.Username);
 
             // Seed users (optional, for testing)
             modelBuilder.Entity<User>().HasData(
@@ -68,6 +74,17 @@ namespace MyBackend.Data
 
             modelBuilder.Entity<Details>()
                 .Property(d => d.Types)
+                .HasConversion(stringListConverter);
+
+            modelBuilder.Entity<RouteModel>()
+                .HasOne(r => r.User)
+                .WithMany(u => u.Routes)
+                .HasForeignKey(r => r.Username)
+                .HasPrincipalKey(u => u.Username)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<RouteModel>()
+                .Property(r => r.Waypoints)
                 .HasConversion(stringListConverter);
         }
     }
