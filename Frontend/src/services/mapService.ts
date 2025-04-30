@@ -93,12 +93,7 @@ const getORSRoadsPath = async (
   
       const data = await response.json();
   
-      if (
-        data &&
-        data.features &&
-        data.features.length > 0 &&
-        data.features[0].geometry.coordinates
-      ) {
+      if (data) {
         return data.features[0].geometry.coordinates.map(
           ([lng, lat]: [number, number]) => ({ lat, lng })
         );
@@ -122,9 +117,9 @@ export const handleSubmit = async (
     if (selectedPlacesList.length < 2) return;
 
     const arrayOfGeo = selectedPlacesList.map(place => ({
-        lat: place.geometry?.coordinates[1] || 0,
-        lng: place.geometry?.coordinates[0] || 0
-    }));    
+        lat: place.geometry?.coordinates[1],
+        lng: place.geometry?.coordinates[0]
+    }));
 
     try {
         const distances1 = await getDistanceMatrix(arrayOfGeo);

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useMap } from "@vis.gl/react-maplibre";
-import { getTourismIcon } from "../utils/icons";
 import { flyToLocation } from "../utils/flyTo";
 import PopupMarker from "./popUpMarker";
 
