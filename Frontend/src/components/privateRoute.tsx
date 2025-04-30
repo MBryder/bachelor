@@ -13,5 +13,6 @@ const PrivateRoute = ({ children }: { children: JSX.Element }) => {
 
   return token ? children : <Navigate to="/login" replace />;
 };
-
+// make sure to check the cookies signature
+// add profile page here also
 export default PrivateRoute;
