@@ -1,14 +1,15 @@
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { fetchSearchResults } from '../services/mapService';
+import { fetchSearchResults } from '../services/placesService';
 
 type Place = {
     id: number;
     name: string;
-  };
-  
+    longitude: number;
+    latitude: number;
+};
 
-function Head() {
+function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
     const navigate = useNavigate();
     const [search, setSearch] = useState('');
     const debounceTimeout = useRef<number | null>(null);
@@ -25,13 +26,13 @@ function Head() {
         if (debounceTimeout.current) {
             clearTimeout(debounceTimeout.current);
         }
-    
+
         if (search.trim() === '') {
             setResults([]);
             setShowDropdown(false);
             return;
         }
-    
+
         debounceTimeout.current = window.setTimeout(async () => {
             try {
                 const fetchedResults = await fetchSearchResults(search);
@@ -43,25 +44,13 @@ function Head() {
                 setShowDropdown(false);
             }
         }, 400);
-    
+
         return () => {
             if (debounceTimeout.current) {
                 clearTimeout(debounceTimeout.current);
             }
         };
     }, [search]);
-
-    const handleAdd = (item: any)=>{
-        
-
-    };
-
-    const handleSelect = (item: any) => {
-        setSearch(item.name);
-        setShowDropdown(false);
-      
-        // Optionally: navigate(/places/${item.id}) if you want
-      };
 
     return (
         <div className="h-[60px] border-b border-primary-brown flex items-center justify-between px-8 relative">
@@ -96,23 +85,23 @@ function Head() {
                         onFocus={() => { if (results.length > 0) setShowDropdown(true); }}
                         onBlur={() => setTimeout(() => setShowDropdown(false), 150)}
                     />
-                    {showDropdown && Array.isArray(results) && results.length > 0 && (
+                    {showDropdown && results.length > 0 && (
                         <ul className="absolute top-full left-0 right-0 bg-white border border-primary-brown rounded shadow-md max-h-60 overflow-y-auto z-20">
-                        {results.map((item, index) => (
-                            <li
-                                key={index}
-                                className="flex justify-between items-center p-2 hover:bg-primary-brown hover:text-white cursor-pointer"
-                            >
-                                <span onMouseDown={() => handleSelect(item)}>{item.name}</span>
-                                <button
-                                    className="ml-2 px-2 py-1 text-sm bg-primary-brown text-white rounded hover:bg-opacity-80"
-                                    onMouseDown={() => handleAdd(item)}
+                            {results.map((place, index) => (
+                                <li
+                                    key={index}
+                                    className="flex justify-between items-center p-2 hover:bg-primary-brown hover:text-white cursor-pointer"
                                 >
-                                    Add
-                                </button>
-                            </li>
-                        ))}
-                    </ul>
+                                    <span>{place.name}</span>
+                                    <button
+                                        className="ml-2 px-2 py-1 text-sm bg-primary-brown text-white rounded hover:bg-opacity-80"
+                                        onMouseDown={() => handleAddPlace(place)}
+                                    >
+                                        Add
+                                    </button>
+                                </li>
+                            ))}
+                        </ul>
                     )}
                 </div>
             </div>

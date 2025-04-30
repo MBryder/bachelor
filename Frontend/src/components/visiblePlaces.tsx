@@ -3,17 +3,17 @@ import { useMap } from "@vis.gl/react-maplibre";
 import { flyToLocation } from "../utils/flyTo";
 import PopupMarker from "./popUpMarker";
 
-function Sidebar({
+function VisiblePlaces({
   visiblePlaces,
   fetchPlaces,
-  showSidebar,
-  setShowSidebar,
+  showvisiblePlaces,
+  setShowvisiblePlaces,
   setSelectedPlacesList,
 }: {
   visiblePlaces: any[];
   fetchPlaces: () => void;
-  showSidebar: boolean;
-  setShowSidebar: (value: boolean) => void;
+  showvisiblePlaces: boolean;
+  setShowvisiblePlaces: (value: boolean) => void;
   setSelectedPlacesList: (fn: (prev: any[]) => any[]) => void;
 }) {
   const { current: map } = useMap();
@@ -23,7 +23,7 @@ function Sidebar({
     <div className="h-full flex items-center py-2">
       <div
         className={`transition-all duration-500 ease-in-out ${
-          showSidebar ? "translate-x-0" : "-translate-x-full"
+          showvisiblePlaces ? "translate-x-0" : "-translate-x-full"
         } h-full w-[300px] border-1 bg-background-beige1 shadow-lg rounded-4xl m-2 ml-4 flex`}
       >
         <div className="h-full w-full flex flex-col">
@@ -88,14 +88,14 @@ function Sidebar({
 
       <button
         className={`fixed left-0 top-1/2 transform -translate-y-1/2 transition-all duration-500 ease-in-out ${
-          showSidebar ? "translate-x-[300px]" : "translate-x-0"
+          showvisiblePlaces ? "translate-x-[300px]" : "translate-x-0"
         } bg-primary text-primary-brown text-heading-4 ml-8 px-4 py-2 rounded-lg shadow-lg border border-primary-brown bg-background-beige2`}
-        onClick={() => setShowSidebar(!showSidebar)}
+        onClick={() => setShowvisiblePlaces(!showvisiblePlaces)}
       >
-        {showSidebar ? "Close" : "Open"}
+        {showvisiblePlaces ? "Close" : "Open"}
       </button>
     </div>
   );
 }
 
-export default Sidebar;
+export default VisiblePlaces;

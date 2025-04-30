@@ -34,9 +34,9 @@ namespace MyBackend.Controllers
             return Ok(places);
         }
 
-        // GET /places/search?name=...
+        // GET /places/name?Name=...
         [HttpGet("name")]
-        public async Task<IActionResult> GetPlacesInBounds([FromQuery] string Name)
+        public async Task<IActionResult> GetPlacesWithName([FromQuery] string Name)
         {
             _logger.LogInformation($"Endpoint hit: Searching for places with name containing '{Name}'");
 
@@ -44,12 +44,28 @@ namespace MyBackend.Controllers
                 .Where(p => p.Name.ToLower().Contains(Name.ToLower()))
                 .Select(p => new
                 {
-                    p.Name
+                    p.Name,
+                    p.PlaceId,
                 })
                 .ToListAsync(); // Execute the query
 
             return Ok(places);
         }
+
+
+        // GET /places/id=...
+        [HttpGet("id")]
+        public async Task<IActionResult> GetPlacesInBounds([FromQuery] string id)
+        {
+            var places = await _context.Places
+                .Where(p => p.PlaceId == id)
+                .Include(p => p.Images) // Include images 
+                .Include(p => p.Details) // Include details
+                .ToListAsync();
+
+            return Ok(places);
+        }
+        
 
         // GET /places/test
         [HttpGet("test")]

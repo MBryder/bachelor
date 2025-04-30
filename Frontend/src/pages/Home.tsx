@@ -1,26 +1,15 @@
-import {useState } from "react";
+import { useState } from "react";
 import Head from "../components/header";
 import Map from "../components/map";
+import { fetchPlaceById } from "../services/placesService";
 
 function Home() {
     const [visiblePlaces, setVisiblePlaces] = useState<any[]>([]);
     const [selectedPlacesList, setSelectedPlacesList] = useState<any[]>([]);
 
-    const handleAddPlace = (place: any) => {
-        const exists = selectedPlacesList.some(p => p.properties?.id === place.id);
-        if (!exists) {
-            const newPlaceFeature = {
-                type: "Feature",
-                geometry: {
-                    type: "Point",
-                    coordinates: [place.longitude, place.latitude],
-                },
-                properties: {
-                    ...place,
-                },
-            };
-            setSelectedPlacesList(prev => [...prev, newPlaceFeature]);
-        }
+    const handleAddPlace = async (place: any) => {
+        const resultPlace = await fetchPlaceById(place.placeId);
+        setSelectedPlacesList(prev => [...prev, resultPlace]);
     };
 
     return (

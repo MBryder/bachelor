@@ -4,25 +4,22 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { useState, useEffect, useRef } from "react";
 import { toast } from "react-hot-toast";
 import { handleSubmit } from "../services/mapService";
-import { fetchPlacesByBounds } from "../services/placesService";
+import { fetchPlacesByBounds} from "../services/placesService";
 import PopupMarker from "./popUpMarker";
-import Sidebar from "./visiblePlaces";
+import VisiblePlaces from "./visiblePlaces";
 import Selectedbar from "./selectedPlaces";
 import Filter from "./filter";
 import { useUserLocation } from "../hooks/useUserLocation";
 import { useAnimatedRoutePoint } from "../hooks/useAnimatedRoutePoint";
 
-function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
-  const [selectedPlacesList, setSelectedPlacesList] = useState<any[]>([]);
-  const [geoJsonData, setGeoJsonData] = useState<any>(null);
-  const [routeGeoJson, setRouteGeoJson] = useState<any>(null);
+function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, setSelectedPlacesList }: any) {
   const mapRef = useRef<any>(null);
   const [minCost, setMinCost] = useState<number | null>(null);
   const [route, setRoute] = useState<number[]>([]);
   const [routeCoordinates, setRouteCoordinates] = useState<google.maps.LatLngLiteral[]>([]);
   const userLocation = useUserLocation();
   const [checked, setChecked] = useState(false);
-  const [showSidebar, setShowSidebar] = useState(true);
+  const [showvisiblePlaces, setShowvisiblePlaces] = useState(true);
   const [animatedPoint, setAnimatedPoint] = useState<[number, number] | null>(null);
   const [filterTypes, setFilterTypes] = useState<string[]>([]);
 
@@ -73,7 +70,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
     const map = mapRef.current;
     const handleMapMove = () => {
       const bounds = map.getBounds();
-      fetchPlacesByBounds(bounds, setGeoJsonData, setVisiblePlaces, setRouteGeoJson);
+      fetchPlacesByBounds(bounds, setVisiblePlaces);
     };
     map.on("moveend", handleMapMove);
     return () => {
@@ -104,16 +101,18 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
         >
           <div className="flex flex-row h-full w-full justify-between items-start">
             <div className="flex flex-row h-full w-full justify-start items-start">
-                <Sidebar
+                <VisiblePlaces
                     visiblePlaces={visiblePlaces}
+
                     fetchPlaces={() => {
                     const bounds = mapRef.current?.getBounds();
                     if (bounds) {
-                        fetchPlacesByBounds(bounds, setGeoJsonData, setVisiblePlaces, setRouteGeoJson);
+                        fetchPlacesByBounds(bounds, setVisiblePlaces);
                     }
                     }}
-                    showSidebar={showSidebar}
-                    setShowSidebar={setShowSidebar}
+
+                    showvisiblePlaces={showvisiblePlaces}
+                    setShowvisiblePlaces={setShowvisiblePlaces}
                     setSelectedPlacesList={setSelectedPlacesList}
                 />
                 <Filter filterTypes={filterTypes} setFilterTypes={setFilterTypes} />
