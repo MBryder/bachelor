@@ -41,6 +41,7 @@ function Sidebar({
                   key={place.properties.placeId}
                   className="pb-2 py-2 border-b border-primary-brown flex items-center hover:bg-background-beige2 cursor-pointer"
                   onMouseEnter={() => setHoveredPlaceId(place.properties.placeId)}
+                  onMouseLeave={() => setHoveredPlaceId(null)}
                   onClick={() => flyToLocation(map, longitude, latitude)}
                 >
                   <div className="mr-2">

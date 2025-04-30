@@ -115,7 +115,7 @@ function Selectedbar({
   };
 
   return (
-    <div className="h-1/2 flex items-center py-2 px-2">
+    <div className="h-5/8 flex items-center py-2 px-2">
       <div className="translate-x-0 h-full w-[300px] border-1 bg-background-beige1 shadow-lg rounded-4xl m-2 ml-4 flex">
         <div className="h-full w-full flex flex-col">
           <h1 className="flex-1 text-heading-1 font-display border-b-2 rounded-t-4xl border-primary-brown text-primary-brown text-center justify-center flex items-center">
@@ -152,18 +152,12 @@ function Selectedbar({
               />
               Use current locations as starting point
             </label>
-            <button
-              onClick={Submit}
-              className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl w-1/2"
-            >
-              <p className="text-primary-brown text-heading-4">Submit</p>
-            </button>
             <input
               type="text"
               placeholder="Route name"
               value={customName}
               onChange={(e) => setCustomName(e.target.value)}
-              className="border border-primary-brown rounded-xl px-2 py-1 w-1/2 text-primary-brown"
+              className="border border-primary-brown rounded-xl px-2 w-1/2 text-primary-brown"
             />
             <button
               onClick={saveRouteHandler}
