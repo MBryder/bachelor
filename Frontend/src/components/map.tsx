@@ -52,14 +52,14 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
 
     if (newChecked) {
       const alreadyAdded = selectedPlacesList.some(
-        (place) => place?.properties?.id === "user-location"
+        (place: any) => place?.properties?.id === "user-location"
       );
       if (!alreadyAdded) {
         setSelectedPlacesList([userLocationFeature, ...selectedPlacesList]);
       }
     } else {
       const updatedList = selectedPlacesList.filter(
-        (place) => place?.properties?.id !== "user-location"
+        (place: any) => place?.properties?.id !== "user-location"
       );
       setSelectedPlacesList(updatedList);
     }
@@ -127,7 +127,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             />
           </div>
 
-          {selectedPlacesList.map((place) => (
+          {selectedPlacesList.map((place: any) => (
             <PopupMarker
               key={place.properties.placeId}
               longitude={place.geometry.coordinates[0]}
