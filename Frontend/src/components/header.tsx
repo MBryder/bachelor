@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { fetchSearchResults } from '../services/placesService';
 
 type Place = {
-    id: number;
+    id: string;
     name: string;
     longitude: number;
     latitude: number;
