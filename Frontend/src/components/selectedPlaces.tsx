@@ -7,7 +7,6 @@ function Selectedbar({
   Submit,
   handleChange,
   setSelectedPlacesList,
-  visiblePlaces,
 }: {
   selectedPlaces: any[];
   setSelectedPlacesList: (places: any[]) => void;
@@ -19,6 +18,8 @@ function Selectedbar({
   const [customName, setCustomName] = useState("");
   const [routes, setRoutes] = useState<any[]>([]);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [fadeState, setFadeState] = useState(''); // 'fade-in', or 'fade-out'
+  const [inputError, setInputError] = useState(false); // til errors, når saveroute smider en error som fx. når user ikke giver rute et navn. 
 
 
   const handleCheckboxChange = () => {
@@ -37,28 +38,29 @@ function Selectedbar({
 
   const saveRouteHandler = async () => {
     const username = localStorage.getItem("username");
-  
+
     if (!username) {
       alert("No username found in local storage.");
       return;
     }
-  
+
     if (!customName.trim()) {
-      alert("Please enter a route name before saving.");
+      setInputError(true);
+      setTimeout(() => setInputError(false), 2000); // Remove red border after 2s
       return;
     }
-  
+
     // Remove the first waypoint if it's the user's location
     const cleanedPlaces = [...selectedPlaces];
     if (cleanedPlaces[0]?.properties?.placeId === "user-location") {
       cleanedPlaces.shift(); // remove first item
     }
-  
+
     const routeData = {
       customName: customName.trim(),
       waypoints: cleanedPlaces.map(place => place.properties.placeId)
     };
-  
+
     try {
       const response = await fetch(`http://localhost:5001/user/${username}/routes`, {
         method: "POST",
@@ -67,17 +69,21 @@ function Selectedbar({
         },
         body: JSON.stringify(routeData)
       });
-  
+
       if (!response.ok) {
         const error = await response.text();
         console.error("Failed to save route:", error);
         return;
       }
-  
+
       const data = await response.json();
       console.log("Route saved:", data);
-      alert("Route saved successfully!");
-      setCustomName(""); // Clear input after save
+
+      setFadeState('fade-in');
+
+      setTimeout(() => setFadeState('fade-out'), 1500);
+
+      setCustomName(""); // Clear input in text field for custom route name after save
     } catch (err) {
       console.error("Error saving route:", err);
     }
@@ -168,18 +174,28 @@ function Selectedbar({
               placeholder="Route name"
               value={customName}
               onChange={(e) => setCustomName(e.target.value)}
-              className="border border-primary-brown rounded-xl px-2 w-1/2 text-primary-brown"
+              className={`rounded-xl px-2 w-1/2 text-primary-brown transition duration-300 ease-in-out
+              ${inputError ? 'border-red-500 ring-2 ring-red-300 animate-shake' : 'border border-primary-brown'}`}
             />
             <button
               onClick={saveRouteHandler}
-              className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl w-1/2"
+              className={`border border-primary-brown shadow-custom1 rounded-xl w-full mt-2
+              hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02]
+              active:scale-[0.98] active:shadow-inner
+              transition-all duration-500 ease-in-out
+              ${fadeState === 'fade-in' || fadeState === 'hold'
+                  ? 'bg-green-200'
+                  : 'bg-background-beige2'
+                }`}
             >
-              <p className="text-primary-brown text-heading-4">Save Route</p>
+              <p className="text-primary-brown text-heading-4">Save route</p>
             </button>
             <div className="relative w-full scrollbar">
               <button
                 onClick={handleMyRoutesClick}
-                className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl w-full mt-2"
+                className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl w-full mt-2 hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02] 
+             active:scale-[0.98] active:shadow-inner 
+             transition-all duration-150 ease-in-out"
               >
                 <p className="text-primary-brown text-heading-4">My Routes</p>
               </button>
