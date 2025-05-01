@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { getTourismIcon } from "../utils/icons";
+import { fetchPlaceById } from "../services/placesService";
 
 function Selectedbar({
   selectedPlaces,
@@ -95,23 +96,27 @@ function Selectedbar({
     }
   };
 
-  const handleRouteSelect = (route: any) => {
+  const handleRouteSelect = async (route: any) => {
     const waypointIds = route.waypoints;
-  
+
     console.log("Waypoints (placeIds) in selected route:", waypointIds);
-  
-    // Match visible places whose placeId is in the route's waypoints
-    const matchedPlaces = visiblePlaces.filter((place: any) =>
-      waypointIds.includes(place.properties.placeId)
-    );
-  
-    console.log("Matched places from visiblePlaces:", matchedPlaces);
-  
-    // Set new list (clears old list + inserts matched)
-    setSelectedPlacesList(matchedPlaces);
-  
-    // Close dropdown
-    setShowDropdown(false);
+
+    try {
+      // Fetch all places in parallel
+      const placePromises = waypointIds.map((id: string) => fetchPlaceById(id));
+      const fetchedPlaces = await Promise.all(placePromises);
+
+      // Filter out any nulls in case some fetches failed
+      const validPlaces = fetchedPlaces.filter((place) => place !== null);
+
+      console.log("Fetched places from backend:", validPlaces);
+
+      // Update selected places list
+      setSelectedPlacesList(validPlaces);
+      setShowDropdown(false);
+    } catch (err) {
+      console.error("Error loading places for selected route:", err);
+    }
   };
 
   return (
