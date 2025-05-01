@@ -3,8 +3,9 @@ import ProfileHeader from '../components/ProfileHeader';
 
 interface Route {
   id: string;
-  name: string;
+  customName: string;
   createdAt: string;
+  waypoints: string[];
 }
 
 const Profile: React.FC = () => {
@@ -28,7 +29,7 @@ const Profile: React.FC = () => {
           return res.json();
         })
         .then(data => {
-          setSavedRoutes(data.routes || []);
+          setSavedRoutes(data); 
           setLoadingRoutes(false);
         })
         .catch(err => {
@@ -80,8 +81,10 @@ const Profile: React.FC = () => {
                           key={route.id}
                           className="p-4 bg-background-beige2 rounded-lg shadow border hover:bg-background-beige3 transition"
                         >
-                          <p className="font-semibold">{route.name}</p>
-                          <p className="text-xs text-gray-500">Created: {new Date(route.createdAt).toLocaleDateString()}</p>
+                          <p className="font-semibold">{route.customName}</p>
+                          <p className="text-xs text-gray-500">
+                            Created: {new Date(route.createdAt).toLocaleDateString()}
+                          </p>
                         </li>
                       ))}
                     </ul>
@@ -99,4 +102,3 @@ const Profile: React.FC = () => {
 };
 
 export default Profile;
-
