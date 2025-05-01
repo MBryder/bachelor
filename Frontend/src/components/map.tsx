@@ -45,21 +45,21 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
         coordinates: [userLocation.lng, userLocation.lat],
       },
       properties: {
-        id: "user-location",
+        placeId: "user-location",
         name: "Your Location",
       },
     };
 
     if (newChecked) {
       const alreadyAdded = selectedPlacesList.some(
-        (place: any) => place?.properties?.id === "user-location"
+        (place: any) => place?.properties?.placeId === "user-location"
       );
       if (!alreadyAdded) {
         setSelectedPlacesList([userLocationFeature, ...selectedPlacesList]);
       }
     } else {
       const updatedList = selectedPlacesList.filter(
-        (place: any) => place?.properties?.id !== "user-location"
+        (place: any) => place?.properties?.placeId !== "user-location"
       );
       setSelectedPlacesList(updatedList);
     }

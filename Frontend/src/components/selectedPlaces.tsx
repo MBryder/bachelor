@@ -37,22 +37,28 @@ function Selectedbar({
 
   const saveRouteHandler = async () => {
     const username = localStorage.getItem("username");
-
+  
     if (!username) {
       alert("No username found in local storage.");
       return;
     }
-
+  
     if (!customName.trim()) {
       alert("Please enter a route name before saving.");
       return;
     }
-
+  
+    // Remove the first waypoint if it's the user's location
+    const cleanedPlaces = [...selectedPlaces];
+    if (cleanedPlaces[0]?.properties?.placeId === "user-location") {
+      cleanedPlaces.shift(); // remove first item
+    }
+  
     const routeData = {
       customName: customName.trim(),
-      waypoints: selectedPlaces.map(place => place.properties.placeId)
+      waypoints: cleanedPlaces.map(place => place.properties.placeId)
     };
-
+  
     try {
       const response = await fetch(`http://localhost:5001/user/${username}/routes`, {
         method: "POST",
@@ -61,13 +67,13 @@ function Selectedbar({
         },
         body: JSON.stringify(routeData)
       });
-
+  
       if (!response.ok) {
         const error = await response.text();
         console.error("Failed to save route:", error);
         return;
       }
-
+  
       const data = await response.json();
       console.log("Route saved:", data);
       alert("Route saved successfully!");
