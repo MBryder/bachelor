@@ -32,20 +32,6 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
       )
     : visiblePlaces;
 
-    const visiblePlacesGeoJSON: FeatureCollection<Point> = {
-      type: "FeatureCollection",
-      features: filteredVisiblePlaces.map((place: any): Feature<Point> => ({
-        type: "Feature",
-        geometry: {
-          type: "Point",
-          coordinates: place.geometry.coordinates,
-        },
-        properties: {
-          ...place.properties,
-        },
-      })),
-    };
-
   const handleChange = (checked: boolean) => {
     const newChecked = !checked;
     setChecked(newChecked);
