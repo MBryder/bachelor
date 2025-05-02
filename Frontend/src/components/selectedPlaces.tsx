@@ -139,6 +139,17 @@ function Selectedbar({
     setTransportMode(modes[nextIndex]);
   };
 
+  const formatMode = (mode: string) => {
+    const icons: Record<string, string> = {
+      driving: "🚗 Driving",
+      walking: "🚶 Walking",
+      cycling: "🚴 Cycling",
+      "e-cycling": "⚡🚴 E-Cycling",
+      wheelchair: "♿ Wheelchair"
+    };
+    return icons[mode] || mode;
+  };
+
   return (
     <div className="h-5/8 flex items-center py-2 px-2">
       <div className="translate-x-0 h-full w-[300px] border-1 bg-background-beige1 shadow-lg rounded-4xl m-2 ml-4 flex">
@@ -260,7 +271,15 @@ function Selectedbar({
                           onClick={() => handleRouteSelect(route)}
                           className="px-4 py-2 hover:bg-background-beige1 text-primary-brown text-heading-5 cursor-pointer"
                         >
-                          {route.customName || `Route ${route.id}`}
+                          <div className="font-semibold">
+                            {route.customName || `Route ${route.id}`}
+                          </div>
+                          <div className="text-sm text-primary-brown/70">
+                           Created: {new Date(route.dateOfCreation).toLocaleDateString()}
+                          </div>
+                          <div className="text-sm text-primary-brown/70">
+                            Transportation: {formatMode(route.transportationMode)}
+                          </div>
                         </li>
                       ))
                     ) : (
