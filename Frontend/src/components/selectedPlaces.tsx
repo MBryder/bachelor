@@ -39,29 +39,29 @@ function Selectedbar({
 
   const saveRouteHandler = async () => {
     const username = localStorage.getItem("username");
-  
+
     if (!username) {
       alert("No username found in local storage.");
       return;
     }
-  
+
     if (!customName.trim()) {
       setInputError(true);
       setTimeout(() => setInputError(false), 2000);
       return;
     }
-  
+
     const cleanedPlaces = [...selectedPlaces];
     if (cleanedPlaces[0]?.properties?.placeId === "user-location") {
       cleanedPlaces.shift();
     }
-  
+
     const routeData = {
       customName: customName.trim(),
       waypoints: cleanedPlaces.map(place => place.properties.placeId),
       transportationMode: transportMode // ✅ Include mode here
     };
-  
+
     try {
       const response = await fetch(`http://localhost:5001/user/${username}/routes`, {
         method: "POST",
@@ -70,19 +70,19 @@ function Selectedbar({
         },
         body: JSON.stringify(routeData)
       });
-  
+
       if (!response.ok) {
         const error = await response.text();
         console.error("Failed to save route:", error);
         return;
       }
-  
+
       const data = await response.json();
       console.log("Route saved:", data);
-  
+
       setFadeState('fade-in');
       setTimeout(() => setFadeState('fade-out'), 1500);
-  
+
       setCustomName("");
     } catch (err) {
       console.error("Error saving route:", err);
@@ -110,24 +110,24 @@ function Selectedbar({
 
   const handleRouteSelect = async (route: any) => {
     const waypointIds = route.waypoints;
-  
+
     console.log("Waypoints (placeIds) in selected route:", waypointIds);
-  
+
     try {
       // Fetch all places in parallel
       const placePromises = waypointIds.map((id: string) => fetchPlaceById(id));
       const fetchedPlaces = await Promise.all(placePromises);
-  
+
       const validPlaces = fetchedPlaces.filter((place) => place !== null);
-  
+
       console.log("Fetched places from backend:", validPlaces);
-  
+
       // ✅ Set transport mode from saved route
       if (route.transportationMode) {
         setTransportMode(route.transportationMode);
         console.log("Set mode from route:", route.transportationMode);
       }
-  
+
       // Update selected places list
       setSelectedPlacesList(validPlaces);
       setShowDropdown(false);
@@ -173,6 +173,7 @@ function Selectedbar({
             ))}
           </ul>
           <div className="p-2 px-4 flex-1 border-t-2 border-primary-brown flex flex-col gap-2">
+            {/* 1. Checkbox */}
             <label className="flex items-center gap-2">
               <input
                 type="checkbox"
@@ -181,42 +182,50 @@ function Selectedbar({
               />
               Use current locations as starting point
             </label>
-            <input
-              type="text"
-              placeholder="Route name"
-              value={customName}
-              onChange={(e) => setCustomName(e.target.value)}
-              className={`rounded-xl px-2 w-1/2 text-primary-brown transition duration-300 ease-in-out
-              ${inputError ? 'border-red-500 ring-2 ring-red-300 animate-shake' : 'border border-primary-brown'}`}
-            />
+
+            {/* 2. Route name input */}
+            <div className="flex flex-row gap-2 w-full items-center">
+              <input
+                type="text"
+                placeholder="Route name"
+                value={customName}
+                onChange={(e) => setCustomName(e.target.value)}
+                className={`rounded-xl px-2 py-1 w-1/2 text-primary-brown transition duration-300 ease-in-out
+    ${inputError ? 'border-red-500 ring-2 ring-red-300 animate-shake' : 'border border-primary-brown'}`}
+              />
+              <button
+                onClick={toggleTransportMode}
+                className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl px-4 py-1 flex-1 min-w-fit text-center hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02] 
+      active:scale-[0.98] active:shadow-inner transition-all duration-150 ease-in-out"
+              >
+                <p className="text-primary-brown text-heading-4 whitespace-nowrap">
+                  {transportMode}
+                </p>
+              </button>
+            </div>
+
+            {/* 4. Save Route */}
             <button
               onClick={saveRouteHandler}
-              className={`border border-primary-brown shadow-custom1 rounded-xl w-full mt-2
-              hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02]
-              active:scale-[0.98] active:shadow-inner
-              transition-all duration-500 ease-in-out
-              ${fadeState === 'fade-in' || fadeState === 'hold'
+              className={`border border-primary-brown shadow-custom1 rounded-xl w-full py-1
+    hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02]
+    active:scale-[0.98] active:shadow-inner
+    transition-all duration-500 ease-in-out
+    ${fadeState === 'fade-in' || fadeState === 'hold'
                   ? 'bg-green-200'
                   : 'bg-background-beige2'
                 }`}
             >
               <p className="text-primary-brown text-heading-4">Save route</p>
             </button>
-            <button
-              onClick={toggleTransportMode}
-              className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl w-full px-2 py-1 mb-2 hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02] 
-  active:scale-[0.98] active:shadow-inner transition-all duration-150 ease-in-out"
-            >
-              <p className="text-primary-brown text-heading-4">
-                {transportMode}
-              </p>
-            </button>
+
+            {/* 5. My Routes dropdown */}
             <div className="relative w-full scrollbar">
               <button
                 onClick={handleMyRoutesClick}
-                className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl w-full mt-2 hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02] 
-             active:scale-[0.98] active:shadow-inner 
-             transition-all duration-150 ease-in-out"
+                className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl w-full gap-2 py-1 hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02] 
+      active:scale-[0.98] active:shadow-inner 
+      transition-all duration-150 ease-in-out"
               >
                 <p className="text-primary-brown text-heading-4">My Routes</p>
               </button>
