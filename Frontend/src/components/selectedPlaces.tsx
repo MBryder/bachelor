@@ -161,12 +161,23 @@ function Selectedbar({
             {selectedPlaces.map((place: any, index: number) => (
               <li
                 key={index}
-                className="pb-2 my-2 border-b border-primary-brown flex items-center justify-between"
+                className={`pb-2 my-2 border-b flex items-center justify-between
+      ${index === 0
+                    ? "bg-yellow-100 border-2 border-primary-brown rounded-xl"
+                    : "border-primary-brown"
+                  }`}
               >
                 <div className="flex items-center">
                   <div className="mr-2">{getTourismIcon(place.properties.tourism)}</div>
                   <div>
-                    <h2 className="text-primary-brown text-heading-4">{place.properties.name}</h2>
+                    <h2 className="text-primary-brown text-heading-4">
+                      {place.properties.name}
+                      {index === 0 && (
+                        <span className="text-xs text-primary-brown/60 ml-1 italic">
+                          (starting place)
+                        </span>
+                      )}
+                    </h2>
                     <p>{place.properties.address}</p>
                   </div>
                 </div>
@@ -275,7 +286,7 @@ function Selectedbar({
                             {route.customName || `Route ${route.id}`}
                           </div>
                           <div className="text-sm text-primary-brown/70">
-                           Created: {new Date(route.dateOfCreation).toLocaleDateString()}
+                            Created: {new Date(route.dateOfCreation).toLocaleDateString()}
                           </div>
                           <div className="text-sm text-primary-brown/70">
                             Transportation: {formatMode(route.transportationMode)}
