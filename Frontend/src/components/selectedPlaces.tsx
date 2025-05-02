@@ -21,6 +21,7 @@ function Selectedbar({
   const [fadeState, setFadeState] = useState(''); // 'fade-in', or 'fade-out'
   const [inputError, setInputError] = useState(false); // til errors, når saveroute smider en error som fx. når user ikke giver rute et navn. 
   const [transportMode, setTransportMode] = useState("walking"); // Mode of transportation toggle, hvor default er foot-walking. 
+  const [dropdownOpen, setDropdownOpen] = useState(false); // til dropdown menu til "mode of transportation". 
 
 
   const handleCheckboxChange = () => {
@@ -183,7 +184,7 @@ function Selectedbar({
               Use current locations as starting point
             </label>
 
-            {/* 2. Route name input */}
+            {/* 2. Route name input and mode of transportation!*/}
             <div className="flex flex-row gap-2 w-full items-center">
               <input
                 type="text"
@@ -193,15 +194,31 @@ function Selectedbar({
                 className={`rounded-xl px-2 py-1 w-1/2 text-primary-brown transition duration-300 ease-in-out
     ${inputError ? 'border-red-500 ring-2 ring-red-300 animate-shake' : 'border border-primary-brown'}`}
               />
-              <button
-                onClick={toggleTransportMode}
-                className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl px-4 py-1 flex-1 min-w-fit text-center hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02] 
-      active:scale-[0.98] active:shadow-inner transition-all duration-150 ease-in-out"
-              >
-                <p className="text-primary-brown text-heading-4 whitespace-nowrap">
+              <div className="relative">
+                <button
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl px-4 py-1 min-w-[130px] text-primary-brown text-heading-4 hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02] 
+    active:scale-[0.98] active:shadow-inner transition-all duration-150 ease-in-out"
+                >
                   {transportMode}
-                </p>
-              </button>
+                </button>
+                {dropdownOpen && (
+                  <ul className="absolute mt-1 w-full rounded-xl border border-primary-brown bg-white shadow-lg z-50">
+                    {["driving", "walking", "cycling", "e-cycling", "wheelchair"].map((mode) => (
+                      <li
+                        key={mode}
+                        onClick={() => {
+                          setTransportMode(mode);
+                          setDropdownOpen(false);
+                        }}
+                        className="px-4 py-2 hover:bg-background-beige1 cursor-pointer text-primary-brown"
+                      >
+                        {mode}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </div>
 
             {/* 4. Save Route */}
