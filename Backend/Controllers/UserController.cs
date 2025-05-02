@@ -134,7 +134,7 @@ namespace MyBackend.Controllers
                 CustomName = routeDto.CustomName,
                 DateOfCreation = DateTime.UtcNow,
                 Waypoints = routeDto.Waypoints,
-                TransportationMode = routeDto.TransportationMode 
+                TransportationMode = routeDto.TransportationMode
             };
 
             _context.Routes.Add(route);
@@ -143,7 +143,6 @@ namespace MyBackend.Controllers
             return Ok(new { message = "Route added successfully", routeId = route.Id });
         }
 
-        // GET /user/{username}/routes
         [HttpGet("{username}/routes")]
         public async Task<IActionResult> GetRoutesForUser(string username)
         {
@@ -154,14 +153,17 @@ namespace MyBackend.Controllers
             if (user == null)
                 return NotFound("User not found.");
 
-            var routes = user.Routes?.Select(r => new
-            {
-                r.Id,
-                r.CustomName,
-                r.DateOfCreation,
-                r.Waypoints,
-                r.TransportationMode
-            }).ToList();
+            var routes = user.Routes?
+                .OrderByDescending(r => r.DateOfCreation)
+                .Select(r => new
+                {
+                    r.Id,
+                    r.CustomName,
+                    r.DateOfCreation,
+                    r.Waypoints,
+                    r.TransportationMode
+                })
+                .ToList();
 
             return Ok(routes);
         }
