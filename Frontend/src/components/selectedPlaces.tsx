@@ -23,6 +23,7 @@ function Selectedbar({
   const [transportMode, setTransportMode] = useState("walking"); // Mode of transportation toggle, hvor default er foot-walking. 
   const [dropdownOpen, setDropdownOpen] = useState(false); // til dropdown menu til "mode of transportation". 
   const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved">("idle"); // til at improve "Save route" button. 
+  const [selectedRouteName, setSelectedRouteName] = useState<string | null>(null); // til at vise navn på valgt route fra DB fra users konto. 
 
 
   const handleCheckboxChange = () => {
@@ -84,6 +85,7 @@ function Selectedbar({
 
       await response.json();
 
+      setSelectedRouteName(customName.trim());
       setCustomName("");
       setSaveStatus("saved");
 
@@ -115,25 +117,14 @@ function Selectedbar({
 
   const handleRouteSelect = async (route: any) => {
     const waypointIds = route.waypoints;
-
-    console.log("Waypoints (placeIds) in selected route:", waypointIds);
+    setSelectedRouteName(route.customName || `Route ${route.id}`); // ✅ Add this
 
     try {
-      // Fetch all places in parallel
       const placePromises = waypointIds.map((id: string) => fetchPlaceById(id));
       const fetchedPlaces = await Promise.all(placePromises);
-
       const validPlaces = fetchedPlaces.filter((place) => place !== null);
 
-      console.log("Fetched places from backend:", validPlaces);
-
-      // ✅ Set transport mode from saved route
-      if (route.transportationMode) {
-        setTransportMode(route.transportationMode);
-        console.log("Set mode from route:", route.transportationMode);
-      }
-
-      // Update selected places list
+      setTransportMode(route.transportationMode); // already handled
       setSelectedPlacesList(validPlaces);
       setShowDropdown(false);
     } catch (err) {
@@ -254,7 +245,9 @@ function Selectedbar({
       active:scale-[0.98] active:shadow-inner 
       transition-all duration-150 ease-in-out"
               >
-                <p className="text-primary-brown text-heading-4">My Routes</p>
+                <p className="text-primary-brown text-heading-4">
+                  {selectedRouteName ? `📍 ${selectedRouteName}` : "My Routes"}
+                </p>
               </button>
 
               {showDropdown && (
