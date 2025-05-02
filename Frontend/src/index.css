@@ -22,7 +22,7 @@
   --font-size-display-1: 36px;
   --font-size-heading-1: 24px;
   --font-size-heading-2: 18px;
-  --font-size-heading-3: 14px;
+  --font-size-heading-3: 16px;
   --font-size-heading-4: 12px;
   --font-size-paragraph-1: 14px;
   --font-size-paragraph-2: 12px;
@@ -33,7 +33,7 @@
   /* Font Weights */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --font-weight-semibold: 600;
+  --font-weight-semibold: 550;
 
   /* Line Heights */
   --line-height-tight: 1.2;

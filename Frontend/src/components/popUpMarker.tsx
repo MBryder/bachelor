@@ -1,5 +1,5 @@
 import { Marker } from "@vis.gl/react-maplibre";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useMap } from "@vis.gl/react-maplibre";
 import CustomPopup from "./CustomPopup";
 import { flyToLocation } from "../utils/flyTo"; // adjust path as needed
@@ -13,30 +13,61 @@ const PopupMarker = ({
   setSelectedPlacesList,
   place,
   color,
+  titleON = false,
+  setShowDetails,
+  showDetails,
 }: any) => {
   const [showPopup, setShowPopup] = useState(false);
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const { current: map } = useMap();
 
   const handleClick = () => {
-    setShowPopup(true);
+    setShowDetails(place.properties.placeId);
     flyToLocation(map, longitude, latitude);
   };
 
+  const handleMouseEnter = () => {
+    hoverTimeoutRef.current = setTimeout(() => {
+      setShowPopup(true);
+      console.log("Popup shown for:", title);
+    }, 500); // 1 second delay
+  };
+
+  const handleMouseLeave = () => {
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+    }
+    setShowPopup(false);
+  };
+
   return (
-    <>
-      <Marker longitude={longitude} latitude={latitude}>
-        <div
-          className="w-4 h-4 rounded-full cursor-pointer"
-          style={{ backgroundColor: color || "red" }}
-          onClick={handleClick}
-        />
+    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <Marker
+        longitude={longitude}
+        latitude={latitude}
+        onClick={handleClick}
+        className="cursor-pointer"
+      >
+        <div className="relative flex flex-col items-center">
+          <div className="h-4 mb-1 flex items-center justify-center">
+            {titleON && !showPopup && (
+              <div className="text-xs text-primary-brown bg-white px-1 rounded border-primary-brown border">
+                {title}
+              </div>
+            )}
+          </div>
+          <div
+            className="w-2 h-2 rounded-full"
+            style={{ backgroundColor: color || "red" }}
+          />
+        </div>
       </Marker>
 
-      {showPopup && (
+      {(showPopup || showDetails === place.properties.placeId) && (
         <CustomPopup
           longitude={longitude}
           latitude={latitude}
-          onClose={() => setShowPopup(false)}
+          onClose={() => setShowDetails("")}
         >
           <h3 className="font-bold text-black text-lg">{title}</h3>
           {image && (
@@ -59,7 +90,7 @@ const PopupMarker = ({
           </button>
         </CustomPopup>
       )}
-    </>
+    </div>
   );
 };
 

@@ -10,7 +10,7 @@ export const useAnimatedRoutePoint = (
 
     const line = lineString(routeCoordinates.map(coord => [coord.lng, coord.lat]));
     const totalDistance = length(line);
-    const steps = totalDistance * 10;
+    const steps = totalDistance * 300;
     let counter = 0;
 
     const interval = setInterval(() => {
@@ -22,7 +22,7 @@ export const useAnimatedRoutePoint = (
       const segment = along(line, (counter / steps) * totalDistance);
       setAnimatedPoint(segment.geometry.coordinates as [number, number]);
       counter++;
-    }, 50);
+    }, 1);
 
     return () => clearInterval(interval);
   }, [routeCoordinates]);

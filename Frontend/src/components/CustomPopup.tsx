@@ -50,24 +50,23 @@ const CustomPopup = ({ longitude, latitude, children, onClose }: CustomPopupProp
 
   return (
     <div
-      className="absolute z-50"
+      className="absolute z-50 transform -translate-x-1/2 -translate-y-full"
       style={{
-        left: position.x,
-        top: position.y,
-        transform: "translate(-50%, -100%)",
+      left: position.x,
+      top: position.y,
       }}
     >
       <div
-        ref={popupRef}
-        className="relative bg-background-beige1 border-1 border-primary-brown rounded-lg shadow-lg p-4 max-w-xs"
+      ref={popupRef}
+      className="relative bg-background-beige1 border border-primary-brown rounded-lg shadow-lg p-4 max-w-xs"
       >
-        <button
-          className="absolute top-1 right-1 p-1 text-sm text-primary-brown"
-          onClick={onClose}
-        >
-          ✕
-        </button>
-        {children}
+      <button
+        className="absolute top-1 right-1 p-1 text-sm text-primary-brown"
+        onClick={onClose}
+      >
+        ✕
+      </button>
+      {children}
       </div>
     </div>
   );

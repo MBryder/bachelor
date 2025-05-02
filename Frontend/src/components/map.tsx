@@ -8,6 +8,7 @@ import { fetchPlacesByBounds} from "../services/placesService";
 import PopupMarker from "./popUpMarker";
 import VisiblePlaces from "./visiblePlaces";
 import Selectedbar from "./selectedPlaces";
+import PlaceDetails from "./placeDetails";
 import Filter from "./filter";
 import { useUserLocation } from "../hooks/useUserLocation";
 import { useAnimatedRoutePoint } from "../hooks/useAnimatedRoutePoint";
@@ -19,9 +20,9 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
   const [routeCoordinates, setRouteCoordinates] = useState<google.maps.LatLngLiteral[]>([]);
   const userLocation = useUserLocation();
   const [checked, setChecked] = useState(false);
-  const [showvisiblePlaces, setShowvisiblePlaces] = useState(true);
   const [animatedPoint, setAnimatedPoint] = useState<[number, number] | null>(null);
   const [filterTypes, setFilterTypes] = useState<string[]>([]);
+  const [showDetails, setShowDetails] = useState("");
 
   useAnimatedRoutePoint(routeCoordinates, setAnimatedPoint);
 
@@ -101,20 +102,24 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
         >
           <div className="flex flex-row h-full w-full justify-between items-start">
             <div className="flex flex-row h-full w-full justify-start items-start">
-                <VisiblePlaces
-                    visiblePlaces={visiblePlaces}
+            {showDetails !== "" ? (
+              <PlaceDetails
+                setShowDetails={setShowDetails}
+                showDetails={showDetails}
+              />
+            ) : (
+              <VisiblePlaces
+                visiblePlaces={visiblePlaces}
+                fetchPlaces={() => {
+                  const bounds = mapRef.current?.getBounds();
+                  if (bounds) {
+                    fetchPlacesByBounds(bounds, setVisiblePlaces);
+                  }
+                }}
+                setSelectedPlacesList={setSelectedPlacesList}
+              />
+            )}
 
-                    fetchPlaces={() => {
-                    const bounds = mapRef.current?.getBounds();
-                    if (bounds) {
-                        fetchPlacesByBounds(bounds, setVisiblePlaces);
-                    }
-                    }}
-
-                    showvisiblePlaces={showvisiblePlaces}
-                    setShowvisiblePlaces={setShowvisiblePlaces}
-                    setSelectedPlacesList={setSelectedPlacesList}
-                />
                 <Filter filterTypes={filterTypes} setFilterTypes={setFilterTypes} />
             </div>
 
@@ -138,7 +143,6 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
               setSelectedPlacesList={setSelectedPlacesList}
               place={place}
               color="blue"
-              zindex={10}
             />
           ))}
 
@@ -153,12 +157,14 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
               setSelectedPlacesList={setSelectedPlacesList}
               place={place}
               color="red"
+              setShowDetails={setShowDetails}
+              showDetails={showDetails}
             />
           ))}
 
           {userLocation && (
             <Marker longitude={userLocation.lng} latitude={userLocation.lat}>
-              <div className="bg-blue-600 rounded-full w-4 h-4 border-2 border-white shadow-md" title="You are here" />
+              <div className="bg-blue-600 rounded-full w-2 h-2" title="You are here" />
             </Marker>
           )}
 
