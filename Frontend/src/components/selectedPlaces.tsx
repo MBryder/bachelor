@@ -22,6 +22,7 @@ function Selectedbar({
   const [inputError, setInputError] = useState(false); // til errors, når saveroute smider en error som fx. når user ikke giver rute et navn. 
   const [transportMode, setTransportMode] = useState("walking"); // Mode of transportation toggle, hvor default er foot-walking. 
   const [dropdownOpen, setDropdownOpen] = useState(false); // til dropdown menu til "mode of transportation". 
+  const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved">("idle"); // til at improve "Save route" button. 
 
 
   const handleCheckboxChange = () => {
@@ -60,10 +61,12 @@ function Selectedbar({
     const routeData = {
       customName: customName.trim(),
       waypoints: cleanedPlaces.map(place => place.properties.placeId),
-      transportationMode: transportMode // ✅ Include mode here
+      transportationMode: transportMode
     };
 
     try {
+      setSaveStatus("saving");
+
       const response = await fetch(`http://localhost:5001/user/${username}/routes`, {
         method: "POST",
         headers: {
@@ -75,18 +78,19 @@ function Selectedbar({
       if (!response.ok) {
         const error = await response.text();
         console.error("Failed to save route:", error);
+        setSaveStatus("idle");
         return;
       }
 
-      const data = await response.json();
-      console.log("Route saved:", data);
-
-      setFadeState('fade-in');
-      setTimeout(() => setFadeState('fade-out'), 1500);
+      await response.json();
 
       setCustomName("");
+      setSaveStatus("saved");
+
+      setTimeout(() => setSaveStatus("idle"), 1500);
     } catch (err) {
       console.error("Error saving route:", err);
+      setSaveStatus("idle");
     }
   };
 
@@ -224,16 +228,22 @@ function Selectedbar({
             {/* 4. Save Route */}
             <button
               onClick={saveRouteHandler}
-              className={`border border-primary-brown shadow-custom1 rounded-xl w-full py-1
-    hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02]
+              disabled={saveStatus === "saving"}
+              className={`border border-primary-brown rounded-xl w-full py-1
+    flex items-center justify-center gap-2
+    shadow-custom1 hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02]
     active:scale-[0.98] active:shadow-inner
-    transition-all duration-500 ease-in-out
-    ${fadeState === 'fade-in' || fadeState === 'hold'
-                  ? 'bg-green-200'
-                  : 'bg-background-beige2'
-                }`}
+    transition-all duration-300 ease-in-out
+    ${saveStatus === "saved" ? "bg-green-200" : "bg-background-beige2"}
+    ${saveStatus === "saving" ? "opacity-50 cursor-wait" : ""}
+  `}
             >
-              <p className="text-primary-brown text-heading-4">Save route</p>
+              {saveStatus === "saving" && (
+                <span className="animate-spin h-4 w-4 border-2 border-primary-brown border-t-transparent rounded-full" />
+              )}
+              <p className="text-primary-brown text-heading-4">
+                {saveStatus === "saved" ? "✔ Saved!" : "Save route"}
+              </p>
             </button>
 
             {/* 5. My Routes dropdown */}
