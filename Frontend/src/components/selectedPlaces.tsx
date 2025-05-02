@@ -39,29 +39,29 @@ function Selectedbar({
 
   const saveRouteHandler = async () => {
     const username = localStorage.getItem("username");
-
+  
     if (!username) {
       alert("No username found in local storage.");
       return;
     }
-
+  
     if (!customName.trim()) {
       setInputError(true);
-      setTimeout(() => setInputError(false), 2000); // Remove red border after 2s
+      setTimeout(() => setInputError(false), 2000);
       return;
     }
-
-    // Remove the first waypoint if it's the user's location
+  
     const cleanedPlaces = [...selectedPlaces];
     if (cleanedPlaces[0]?.properties?.placeId === "user-location") {
-      cleanedPlaces.shift(); // remove first item
+      cleanedPlaces.shift();
     }
-
+  
     const routeData = {
       customName: customName.trim(),
-      waypoints: cleanedPlaces.map(place => place.properties.placeId)
+      waypoints: cleanedPlaces.map(place => place.properties.placeId),
+      transportationMode: transportMode // ✅ Include mode here
     };
-
+  
     try {
       const response = await fetch(`http://localhost:5001/user/${username}/routes`, {
         method: "POST",
@@ -70,21 +70,20 @@ function Selectedbar({
         },
         body: JSON.stringify(routeData)
       });
-
+  
       if (!response.ok) {
         const error = await response.text();
         console.error("Failed to save route:", error);
         return;
       }
-
+  
       const data = await response.json();
       console.log("Route saved:", data);
-
+  
       setFadeState('fade-in');
-
       setTimeout(() => setFadeState('fade-out'), 1500);
-
-      setCustomName(""); // Clear input in text field for custom route name after save
+  
+      setCustomName("");
     } catch (err) {
       console.error("Error saving route:", err);
     }
@@ -111,19 +110,24 @@ function Selectedbar({
 
   const handleRouteSelect = async (route: any) => {
     const waypointIds = route.waypoints;
-
+  
     console.log("Waypoints (placeIds) in selected route:", waypointIds);
-
+  
     try {
       // Fetch all places in parallel
       const placePromises = waypointIds.map((id: string) => fetchPlaceById(id));
       const fetchedPlaces = await Promise.all(placePromises);
-
-      // Filter out any nulls in case some fetches failed
+  
       const validPlaces = fetchedPlaces.filter((place) => place !== null);
-
+  
       console.log("Fetched places from backend:", validPlaces);
-
+  
+      // ✅ Set transport mode from saved route
+      if (route.transportationMode) {
+        setTransportMode(route.transportationMode);
+        console.log("Set mode from route:", route.transportationMode);
+      }
+  
       // Update selected places list
       setSelectedPlacesList(validPlaces);
       setShowDropdown(false);

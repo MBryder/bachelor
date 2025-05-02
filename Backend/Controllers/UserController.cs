@@ -133,7 +133,8 @@ namespace MyBackend.Controllers
                 Username = username,
                 CustomName = routeDto.CustomName,
                 DateOfCreation = DateTime.UtcNow,
-                Waypoints = routeDto.Waypoints
+                Waypoints = routeDto.Waypoints,
+                TransportationMode = routeDto.TransportationMode 
             };
 
             _context.Routes.Add(route);
@@ -158,7 +159,8 @@ namespace MyBackend.Controllers
                 r.Id,
                 r.CustomName,
                 r.DateOfCreation,
-                r.Waypoints
+                r.Waypoints,
+                r.TransportationMode
             }).ToList();
 
             return Ok(routes);
