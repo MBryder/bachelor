@@ -18,6 +18,7 @@ namespace MyBackend.Models
         public string? CustomName { get; set; }
 
         public DateTime DateOfCreation { get; set; }
+        public string TransportationMode { get; set; } = "walking"; // Default value (optional)
 
         public List<string>? Waypoints { get; set; }
     }

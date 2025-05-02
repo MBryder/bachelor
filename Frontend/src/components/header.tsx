@@ -22,6 +22,10 @@ function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
         navigate('/login');
     };
 
+    const handleSwitchToProfile = () => {
+        navigate('/home')
+    };
+
     useEffect(() => {
         if (debounceTimeout.current) {
             clearTimeout(debounceTimeout.current);
@@ -107,14 +111,21 @@ function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
             </div>
 
             {/* Right side - Logout */}
-            <div>
-                <button
-                    onClick={handleLogout}
-                    className="hover:underline hover:cursor-pointer"
-                >
-                    <p className="text-primary-brown text-heading-3">Sign Out</p>
-                </button>
+            <div className="flex flex-col space-y-2">
+            <button
+                onClick={handleSwitchToProfile}
+                className="hover:underline hover:cursor-pointer"
+            >
+                <p className="text-primary-brown text-heading-3">My profile</p>
+            </button>
+            <button
+                onClick={handleLogout}
+                className="hover:underline hover:cursor-pointer"
+            >
+                <p className="text-primary-brown text-heading-3">Sign Out</p>
+            </button>
             </div>
+
         </div>
     );
 }

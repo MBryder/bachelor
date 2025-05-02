@@ -1,16 +1,17 @@
-// components/MapComponent.tsx
 import { Map, Marker, Source, Layer } from "@vis.gl/react-maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useState, useEffect, useRef } from "react";
 import { toast } from "react-hot-toast";
 import { handleSubmit } from "../services/mapService";
-import { fetchPlacesByBounds} from "../services/placesService";
+import { fetchPlacesByBounds } from "../services/placesService";
 import PopupMarker from "./popUpMarker";
 import VisiblePlaces from "./visiblePlaces";
 import Selectedbar from "./selectedPlaces";
 import Filter from "./filter";
 import { useUserLocation } from "../hooks/useUserLocation";
 import { useAnimatedRoutePoint } from "../hooks/useAnimatedRoutePoint";
+import type { FeatureCollection, Feature, Point } from "geojson";
+
 
 function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, setSelectedPlacesList }: any) {
   const mapRef = useRef<any>(null);
@@ -31,6 +32,20 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
       )
     : visiblePlaces;
 
+    const visiblePlacesGeoJSON: FeatureCollection<Point> = {
+      type: "FeatureCollection",
+      features: filteredVisiblePlaces.map((place: any): Feature<Point> => ({
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: place.geometry.coordinates,
+        },
+        properties: {
+          ...place.properties,
+        },
+      })),
+    };
+
   const handleChange = (checked: boolean) => {
     const newChecked = !checked;
     setChecked(newChecked);
@@ -45,21 +60,21 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
         coordinates: [userLocation.lng, userLocation.lat],
       },
       properties: {
-        id: "user-location",
+        placeId: "user-location",
         name: "Your Location",
       },
     };
 
     if (newChecked) {
       const alreadyAdded = selectedPlacesList.some(
-        (place: any) => place?.properties?.id === "user-location"
+        (place: any) => place?.properties?.placeId === "user-location"
       );
       if (!alreadyAdded) {
         setSelectedPlacesList([userLocationFeature, ...selectedPlacesList]);
       }
     } else {
       const updatedList = selectedPlacesList.filter(
-        (place: any) => place?.properties?.id !== "user-location"
+        (place: any) => place?.properties?.placeId !== "user-location"
       );
       setSelectedPlacesList(updatedList);
     }
@@ -68,22 +83,26 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
   useEffect(() => {
     if (!mapRef.current) return;
     const map = mapRef.current;
+
     const handleMapMove = () => {
       const bounds = map.getBounds();
       fetchPlacesByBounds(bounds, setVisiblePlaces);
     };
+
     map.on("moveend", handleMapMove);
+
     return () => {
       map.off("moveend", handleMapMove);
     };
   }, [mapRef.current]);
 
-  const callSubmit = async () => {
+  const callSubmit = async (transportMode: string) => {
     await handleSubmit(
       selectedPlacesList,
       setRoute,
       setMinCost,
-      setRouteCoordinates
+      setRouteCoordinates,
+      transportMode
     );
   };
 
@@ -97,8 +116,8 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             latitude: 55.6632,
             zoom: 10,
           }}
-          mapStyle="https://tiles.openfreemap.org/styles/bright"
-        >
+          mapStyle="https://api.maptiler.com/maps/bright/style.json?key=L0M8KVYaAAuKx695rSCS"
+          >
           <div className="flex flex-row h-full w-full justify-between items-start">
             <div className="flex flex-row h-full w-full justify-start items-start">
             
@@ -119,14 +138,15 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             </div>
 
             <Selectedbar
-                selectedPlaces={selectedPlacesList}
-                setSelectedPlacesList={setSelectedPlacesList}
-                Submit={callSubmit}
-                handleChange={handleChange} 
-                visiblePlaces={visiblePlaces}                        
+              selectedPlaces={selectedPlacesList}
+              setSelectedPlacesList={setSelectedPlacesList}
+              Submit={callSubmit}
+              handleChange={handleChange}
+              visiblePlaces={visiblePlaces}
             />
           </div>
 
+          
           {[...selectedPlacesList, ...filteredVisiblePlaces.filter(
             (vp: any) =>
               !selectedPlacesList.some(
@@ -166,6 +186,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             </Marker>
           )}
 
+          {/* Route Line */}
           {routeCoordinates.length > 1 && (
             <Source
               id="snapped-route"
@@ -196,6 +217,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             </Source>
           )}
 
+          {/* Animated Route Point */}
           {animatedPoint && (
             <Source
               id="route-point"
