@@ -183,7 +183,7 @@ function Selectedbar({
             <div className="flex flex-row gap-2 w-full items-center">
               <input
                 type="text"
-                placeholder="Route name"
+                placeholder="Cool route name"
                 value={customName}
                 onChange={(e) => setCustomName(e.target.value)}
                 className={`rounded-xl px-2 py-1 w-1/2 text-primary-brown transition duration-300 ease-in-out
