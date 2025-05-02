@@ -6,15 +6,15 @@ const API_OPEN_ROUTE_SERVICE_KEY = "5b3ce3597851110001cf6248f9076d1fd33646bc9639
 
 const mapTransportMode = (mode: string) => {
   switch (mode) {
-    case "walking":
+    case "walking 🚶":
       return "foot-walking";
-    case "cycling":
+    case "cycling 🚲":
       return "cycling-regular";
-    case "e-cycling":
+    case "e-cycling 🚲⚡":
       return "cycling-electric";
-    case "wheelchair":
+    case "wheelchair ♿":
       return "wheelchair";
-    case "driving":
+    case "driving 🚗":
     default:
       return "driving-car";
   }

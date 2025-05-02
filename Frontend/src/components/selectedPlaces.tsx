@@ -199,7 +199,7 @@ function Selectedbar({
                 </button>
                 {dropdownOpen && (
                   <ul className="absolute mt-1 w-full rounded-xl border border-primary-brown bg-white shadow-lg z-50">
-                    {["driving", "walking", "cycling", "e-cycling", "wheelchair"].map((mode) => (
+                    {["driving 🚗", "walking 🚶", "cycling 🚲", "e-cycling 🚲⚡", "wheelchair ♿"].map((mode) => (
                       <li
                         key={mode}
                         onClick={() => {
