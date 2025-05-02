@@ -1,10 +1,9 @@
-// components/MapComponent.tsx
 import { Map, Marker, Source, Layer } from "@vis.gl/react-maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useState, useEffect, useRef } from "react";
 import { toast } from "react-hot-toast";
 import { handleSubmit } from "../services/mapService";
-import { fetchPlacesByBounds} from "../services/placesService";
+import { fetchPlacesByBounds } from "../services/placesService";
 import PopupMarker from "./popUpMarker";
 import VisiblePlaces from "./visiblePlaces";
 import Selectedbar from "./selectedPlaces";
@@ -12,6 +11,8 @@ import PlaceDetails from "./placeDetails";
 import Filter from "./filter";
 import { useUserLocation } from "../hooks/useUserLocation";
 import { useAnimatedRoutePoint } from "../hooks/useAnimatedRoutePoint";
+import type { FeatureCollection, Feature, Point } from "geojson";
+
 
 function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, setSelectedPlacesList }: any) {
   const mapRef = useRef<any>(null);
@@ -31,6 +32,20 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
         place.properties?.details?.types?.some((type: string) => filterTypes.includes(type))
       )
     : visiblePlaces;
+
+    const visiblePlacesGeoJSON: FeatureCollection<Point> = {
+      type: "FeatureCollection",
+      features: filteredVisiblePlaces.map((place: any): Feature<Point> => ({
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: place.geometry.coordinates,
+        },
+        properties: {
+          ...place.properties,
+        },
+      })),
+    };
 
   const handleChange = (checked: boolean) => {
     const newChecked = !checked;
@@ -69,13 +84,51 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
   useEffect(() => {
     if (!mapRef.current) return;
     const map = mapRef.current;
+
     const handleMapMove = () => {
       const bounds = map.getBounds();
       fetchPlacesByBounds(bounds, setVisiblePlaces);
     };
+
     map.on("moveend", handleMapMove);
+
     return () => {
       map.off("moveend", handleMapMove);
+    };
+  }, [mapRef.current]);
+
+  useEffect(() => {
+    if (!mapRef.current) return;
+    const map = mapRef.current.getMap();
+
+    map.on("click", "clusters", (e: any) => {
+      const features = map.queryRenderedFeatures(e.point, {
+        layers: ["clusters"],
+      });
+      const clusterId = features[0].properties.cluster_id;
+      (map.getSource("visible-places-cluster") as any).getClusterExpansionZoom(
+        clusterId,
+        (err: any, zoom: number) => {
+          if (err) return;
+          map.easeTo({
+            center: features[0].geometry.coordinates,
+            zoom,
+          });
+        }
+      );
+    });
+
+    map.on("mouseenter", "clusters", () => {
+      map.getCanvas().style.cursor = "pointer";
+    });
+    map.on("mouseleave", "clusters", () => {
+      map.getCanvas().style.cursor = "";
+    });
+
+    return () => {
+      map.off("click", "clusters", () => {});
+      map.off("mouseenter", "clusters", () => {});
+      map.off("mouseleave", "clusters", () => {});
     };
   }, [mapRef.current]);
 
@@ -98,40 +151,96 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             latitude: 55.6632,
             zoom: 10,
           }}
-          mapStyle="https://tiles.openfreemap.org/styles/bright"
-        >
+          mapStyle="https://api.maptiler.com/maps/bright/style.json?key=L0M8KVYaAAuKx695rSCS"
+          >
           <div className="flex flex-row h-full w-full justify-between items-start">
             <div className="flex flex-row h-full w-full justify-start items-start">
-            {showDetails !== "" ? (
-              <PlaceDetails
-                setShowDetails={setShowDetails}
-                showDetails={showDetails}
-              />
-            ) : (
-              <VisiblePlaces
-                visiblePlaces={visiblePlaces}
-                fetchPlaces={() => {
-                  const bounds = mapRef.current?.getBounds();
-                  if (bounds) {
-                    fetchPlacesByBounds(bounds, setVisiblePlaces);
-                  }
-                }}
-                setSelectedPlacesList={setSelectedPlacesList}
-              />
-            )}
-
-                <Filter filterTypes={filterTypes} setFilterTypes={setFilterTypes} />
+              {showDetails !== "" ? (
+                <PlaceDetails
+                  setShowDetails={setShowDetails}
+                  showDetails={showDetails}
+                />
+              ) : (
+                <VisiblePlaces
+                  visiblePlaces={visiblePlaces}
+                  fetchPlaces={() => {
+                    const bounds = mapRef.current?.getBounds();
+                    if (bounds) {
+                      fetchPlacesByBounds(bounds, setVisiblePlaces);
+                    }
+                  }}
+                  setSelectedPlacesList={setSelectedPlacesList}
+                />
+              )}
+              <Filter filterTypes={filterTypes} setFilterTypes={setFilterTypes} />
             </div>
 
             <Selectedbar
-                selectedPlaces={selectedPlacesList}
-                setSelectedPlacesList={setSelectedPlacesList}
-                Submit={callSubmit}
-                handleChange={handleChange} 
-                visiblePlaces={visiblePlaces}                        
+              selectedPlaces={selectedPlacesList}
+              setSelectedPlacesList={setSelectedPlacesList}
+              Submit={callSubmit}
+              handleChange={handleChange}
+              visiblePlaces={visiblePlaces}
             />
           </div>
 
+          {/* Clustering source and layers */}
+          <Source
+            id="visible-places-cluster"
+            type="geojson"
+            data={visiblePlacesGeoJSON}
+            cluster={true}
+            clusterMaxZoom={14}
+            clusterRadius={50}
+          >
+            <Layer
+              id="clusters"
+              type="circle"
+              filter={["has", "point_count"]}
+              paint={{
+                "circle-color": [
+                  "step",
+                  ["get", "point_count"],
+                  "#FFE07D",  // < 10
+                  10, "#FFB347",  // >= 10
+                  25, "#FF7F50"   // >= 25
+                ],
+                "circle-radius": [
+                  "step",
+                  ["get", "point_count"],
+                  15,
+                  10, 20,
+                  25, 30
+                ],
+              }}
+            />
+
+          <Layer
+            id="cluster-count"
+            type="symbol"
+            filter={["has", "point_count"]}
+            layout={{
+              "text-field": "{point_count_abbreviated}",
+              "text-size": 12,
+            }}
+            paint={{
+              "text-color": "#000",
+            }}
+          />
+
+
+            <Layer
+              id="unclustered-point"
+              type="circle"
+              filter={["!", ["has", "point_count"]]}
+              paint={{
+                "circle-color": "#FF5733",
+                "circle-radius": 6,
+              }}
+            />
+          </Source>
+
+          {/* Selected Places Markers with Popup */}
           {selectedPlacesList.map((place: any) => (
             <PopupMarker
               key={place.properties.placeId}
@@ -146,28 +255,14 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             />
           ))}
 
-          {filteredVisiblePlaces?.map((place: any) => (
-            <PopupMarker
-              key={place.properties.placeId}
-              longitude={place.geometry.coordinates[0]}
-              latitude={place.geometry.coordinates[1]}
-              title={place.properties.name}
-              image={place.properties.images?.[0]?.imageUrl || "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"}
-              description={place.properties.details?.editorialOverview || "No description available."}
-              setSelectedPlacesList={setSelectedPlacesList}
-              place={place}
-              color="red"
-              setShowDetails={setShowDetails}
-              showDetails={showDetails}
-            />
-          ))}
-
+          {/* User Location Marker */}
           {userLocation && (
             <Marker longitude={userLocation.lng} latitude={userLocation.lat}>
               <div className="bg-blue-600 rounded-full w-2 h-2" title="You are here" />
             </Marker>
           )}
 
+          {/* Route Line */}
           {routeCoordinates.length > 1 && (
             <Source
               id="snapped-route"
@@ -198,6 +293,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             </Source>
           )}
 
+          {/* Animated Route Point */}
           {animatedPoint && (
             <Source
               id="route-point"
