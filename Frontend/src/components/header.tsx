@@ -81,7 +81,7 @@ function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
                         value={search}
                         onChange={e => setSearch(e.target.value)}
                         placeholder="Search"
-                        className="w-full hover:cursor-pointer border-l-1 py-2 px-4 border-primary-brown text-primary-brown text-heading-3"
+                        className="w-full hover:cursor-pointer border-l-1 py-2 px-4 border-primary-brown text-primary-brown text-heading-3 focus:rounded-bl-none focus:outline-none"
                         onFocus={() => { if (results.length > 0) setShowDropdown(true); }}
                         onBlur={() => setTimeout(() => setShowDropdown(false), 150)}
                     />
@@ -90,7 +90,7 @@ function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
                             {results.map((place, index) => (
                                 <li
                                     key={index}
-                                    className="flex justify-between items-center p-2 hover:bg-primary-brown hover:text-white cursor-pointer"
+                                    className="flex justify-between items-center p-2 hover:bg-background-beige2 cursor-pointer"
                                 >
                                     <span>{place.name}</span>
                                     <button

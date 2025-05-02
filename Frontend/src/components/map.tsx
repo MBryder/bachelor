@@ -8,7 +8,6 @@ import { fetchPlacesByBounds} from "../services/placesService";
 import PopupMarker from "./popUpMarker";
 import VisiblePlaces from "./visiblePlaces";
 import Selectedbar from "./selectedPlaces";
-import PlaceDetails from "./placeDetails";
 import Filter from "./filter";
 import { useUserLocation } from "../hooks/useUserLocation";
 import { useAnimatedRoutePoint } from "../hooks/useAnimatedRoutePoint";
@@ -22,7 +21,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
   const [checked, setChecked] = useState(false);
   const [animatedPoint, setAnimatedPoint] = useState<[number, number] | null>(null);
   const [filterTypes, setFilterTypes] = useState<string[]>([]);
-  const [showDetails, setShowDetails] = useState("");
+  const [showMoreDetails, setShowMoreDetails] = useState("");
 
   useAnimatedRoutePoint(routeCoordinates, setAnimatedPoint);
 
@@ -102,23 +101,19 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
         >
           <div className="flex flex-row h-full w-full justify-between items-start">
             <div className="flex flex-row h-full w-full justify-start items-start">
-            {showDetails !== "" ? (
-              <PlaceDetails
-                setShowDetails={setShowDetails}
-                showDetails={showDetails}
-              />
-            ) : (
-              <VisiblePlaces
-                visiblePlaces={visiblePlaces}
-                fetchPlaces={() => {
-                  const bounds = mapRef.current?.getBounds();
-                  if (bounds) {
-                    fetchPlacesByBounds(bounds, setVisiblePlaces);
-                  }
-                }}
-                setSelectedPlacesList={setSelectedPlacesList}
-              />
-            )}
+            
+            <VisiblePlaces
+              visiblePlaces={visiblePlaces}
+              fetchPlaces={() => {
+                const bounds = mapRef.current?.getBounds();
+                if (bounds) {
+                  fetchPlacesByBounds(bounds, setVisiblePlaces);
+                }
+              }}
+              setSelectedPlacesList={setSelectedPlacesList}
+              showMoreDetails={showMoreDetails}
+              setShowMoreDetails={setShowMoreDetails}
+            />
 
                 <Filter filterTypes={filterTypes} setFilterTypes={setFilterTypes} />
             </div>
@@ -132,35 +127,38 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             />
           </div>
 
-          {selectedPlacesList.map((place: any) => (
-            <PopupMarker
-              key={place.properties.placeId}
-              longitude={place.geometry.coordinates[0]}
-              latitude={place.geometry.coordinates[1]}
-              title={place.properties.name}
-              image={place.properties.images?.[0]?.imageUrl || "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"}
-              description={place.properties.details?.editorialOverview || "No description available."}
-              setSelectedPlacesList={setSelectedPlacesList}
-              place={place}
-              color="blue"
-            />
-          ))}
+          {[...selectedPlacesList, ...filteredVisiblePlaces.filter(
+            (vp: any) =>
+              !selectedPlacesList.some(
+                (sp: any) => sp.properties.placeId === vp.properties.placeId
+              )
+          )].map((place: any) => {
+            const placeId = place.properties.placeId;
+            const isSelected = selectedPlacesList.some(
+              (sp: any) => sp.properties.placeId === placeId
+            );
 
-          {filteredVisiblePlaces?.map((place: any) => (
-            <PopupMarker
-              key={place.properties.placeId}
-              longitude={place.geometry.coordinates[0]}
-              latitude={place.geometry.coordinates[1]}
-              title={place.properties.name}
-              image={place.properties.images?.[0]?.imageUrl || "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"}
-              description={place.properties.details?.editorialOverview || "No description available."}
-              setSelectedPlacesList={setSelectedPlacesList}
-              place={place}
-              color="red"
-              setShowDetails={setShowDetails}
-              showDetails={showDetails}
-            />
-          ))}
+            return (
+              <PopupMarker
+                key={placeId}
+                longitude={place.geometry.coordinates[0]}
+                latitude={place.geometry.coordinates[1]}
+                title={place.properties.name}
+                image={
+                  place.properties.images?.[0]?.imageUrl ||
+                  "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"
+                }
+                description={
+                  place.properties.details?.editorialOverview ||
+                  "No description available."
+                }
+                setSelectedPlacesList={setSelectedPlacesList}
+                place={place}
+                color={isSelected ? "blue" : "red"}
+                setShowMoreDetails={setShowMoreDetails}
+              />
+            );
+          })}
 
           {userLocation && (
             <Marker longitude={userLocation.lng} latitude={userLocation.lat}>
