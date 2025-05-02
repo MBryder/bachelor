@@ -78,12 +78,13 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
     };
   }, [mapRef.current]);
 
-  const callSubmit = async () => {
+  const callSubmit = async (transportMode: string) => {
     await handleSubmit(
       selectedPlacesList,
       setRoute,
       setMinCost,
-      setRouteCoordinates
+      setRouteCoordinates,
+      transportMode
     );
   };
 

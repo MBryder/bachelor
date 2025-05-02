@@ -10,7 +10,7 @@ function Selectedbar({
 }: {
   selectedPlaces: any[];
   setSelectedPlacesList: (places: any[]) => void;
-  Submit: () => void;
+  Submit: (transportMode: string) => void;
   handleChange: (value: boolean) => void;
   visiblePlaces: any[];
 }) {
@@ -20,6 +20,7 @@ function Selectedbar({
   const [showDropdown, setShowDropdown] = useState(false);
   const [fadeState, setFadeState] = useState(''); // 'fade-in', or 'fade-out'
   const [inputError, setInputError] = useState(false); // til errors, når saveroute smider en error som fx. når user ikke giver rute et navn. 
+  const [transportMode, setTransportMode] = useState("walking"); // Mode of transportation toggle, hvor default er foot-walking. 
 
 
   const handleCheckboxChange = () => {
@@ -28,8 +29,8 @@ function Selectedbar({
   };
 
   useEffect(() => {
-    Submit(); // Reset checkbox when selectedPlaces changes
-  }, [selectedPlaces]);
+    Submit(transportMode); // Reset checkbox when selectedPlaces changes
+  }, [selectedPlaces, transportMode]);
 
   const handleRemove = (indexToRemove: number) => {
     const updatedList = selectedPlaces.filter((_, index) => index !== indexToRemove);
@@ -131,6 +132,13 @@ function Selectedbar({
     }
   };
 
+  const toggleTransportMode = () => {
+    const modes = ["driving", "walking", "cycling", "e-cycling", "wheelchair"];
+    const currentIndex = modes.indexOf(transportMode);
+    const nextIndex = (currentIndex + 1) % modes.length;
+    setTransportMode(modes[nextIndex]);
+  };
+
   return (
     <div className="h-5/8 flex items-center py-2 px-2">
       <div className="translate-x-0 h-full w-[300px] border-1 bg-background-beige1 shadow-lg rounded-4xl m-2 ml-4 flex">
@@ -189,6 +197,15 @@ function Selectedbar({
                 }`}
             >
               <p className="text-primary-brown text-heading-4">Save route</p>
+            </button>
+            <button
+              onClick={toggleTransportMode}
+              className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-xl w-full px-2 py-1 mb-2 hover:bg-background-beige1 hover:shadow-custom2 hover:scale-[1.02] 
+  active:scale-[0.98] active:shadow-inner transition-all duration-150 ease-in-out"
+            >
+              <p className="text-primary-brown text-heading-4">
+                {transportMode}
+              </p>
             </button>
             <div className="relative w-full scrollbar">
               <button
