@@ -95,3 +95,4 @@ Backend/Migrations/
 
 # dotnet CLI
 artifacts/
+*.db
