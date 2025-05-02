@@ -61,21 +61,21 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
         coordinates: [userLocation.lng, userLocation.lat],
       },
       properties: {
-        id: "user-location",
+        placeId: "user-location",
         name: "Your Location",
       },
     };
 
     if (newChecked) {
       const alreadyAdded = selectedPlacesList.some(
-        (place: any) => place?.properties?.id === "user-location"
+        (place: any) => place?.properties?.placeId === "user-location"
       );
       if (!alreadyAdded) {
         setSelectedPlacesList([userLocationFeature, ...selectedPlacesList]);
       }
     } else {
       const updatedList = selectedPlacesList.filter(
-        (place: any) => place?.properties?.id !== "user-location"
+        (place: any) => place?.properties?.placeId !== "user-location"
       );
       setSelectedPlacesList(updatedList);
     }
@@ -97,47 +97,13 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
     };
   }, [mapRef.current]);
 
-  useEffect(() => {
-    if (!mapRef.current) return;
-    const map = mapRef.current.getMap();
-
-    map.on("click", "clusters", (e: any) => {
-      const features = map.queryRenderedFeatures(e.point, {
-        layers: ["clusters"],
-      });
-      const clusterId = features[0].properties.cluster_id;
-      (map.getSource("visible-places-cluster") as any).getClusterExpansionZoom(
-        clusterId,
-        (err: any, zoom: number) => {
-          if (err) return;
-          map.easeTo({
-            center: features[0].geometry.coordinates,
-            zoom,
-          });
-        }
-      );
-    });
-
-    map.on("mouseenter", "clusters", () => {
-      map.getCanvas().style.cursor = "pointer";
-    });
-    map.on("mouseleave", "clusters", () => {
-      map.getCanvas().style.cursor = "";
-    });
-
-    return () => {
-      map.off("click", "clusters", () => {});
-      map.off("mouseenter", "clusters", () => {});
-      map.off("mouseleave", "clusters", () => {});
-    };
-  }, [mapRef.current]);
-
-  const callSubmit = async () => {
+  const callSubmit = async (transportMode: string) => {
     await handleSubmit(
       selectedPlacesList,
       setRoute,
       setMinCost,
-      setRouteCoordinates
+      setRouteCoordinates,
+      transportMode
     );
   };
 
