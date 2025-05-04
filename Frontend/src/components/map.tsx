@@ -10,7 +10,6 @@ import Selectedbar from "./selectedPlaces";
 import Filter from "./filter";
 import { useUserLocation } from "../hooks/useUserLocation";
 import { useAnimatedRoutePoint } from "../hooks/useAnimatedRoutePoint";
-import type { FeatureCollection, Feature, Point } from "geojson";
 
 
 function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, setSelectedPlacesList }: any) {
