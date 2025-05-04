@@ -23,7 +23,7 @@ function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
     };
 
     const handleSwitchToProfile = () => {
-        navigate('/home')
+        navigate('/profile');
     };
 
     useEffect(() => {
@@ -66,16 +66,16 @@ function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
             {/* Center - Buttons + Search */}
             <div className="flex border-1 border-primary-brown rounded-4xl bg-background-beige1 shadow-lg items-center relative">
                 <button
-                    onClick={() => navigate('/my-routes')}
+                    onClick={() => navigate('/profile')}
                     className="hover:underline hover:cursor-pointer border-r-1 py-2 px-4 border-primary-brown"
                 >
-                    <p className="text-primary-brown text-heading-3">My Routes</p>
+                    <p className="text-primary-brown text-heading-3">My profile</p>
                 </button>
                 <button
-                    onClick={() => navigate('/favorites')}
+                    onClick={() => navigate('about')}
                     className="hover:underline hover:cursor-pointer border-x-1 py-2 px-4 border-primary-brown"
                 >
-                    <p className="text-primary-brown text-heading-3">Favorites</p>
+                    <p className="text-primary-brown text-heading-3">About</p>
                 </button>
 
                 {/* Search Input */}
@@ -110,21 +110,12 @@ function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
                 </div>
             </div>
 
-            {/* Right side - Logout */}
-            <div className="flex flex-col space-y-2">
-            <button
-                onClick={handleSwitchToProfile}
-                className="hover:underline hover:cursor-pointer"
-            >
-                <p className="text-primary-brown text-heading-3">My profile</p>
-            </button>
             <button
                 onClick={handleLogout}
                 className="hover:underline hover:cursor-pointer"
             >
                 <p className="text-primary-brown text-heading-3">Sign Out</p>
             </button>
-            </div>
 
         </div>
     );

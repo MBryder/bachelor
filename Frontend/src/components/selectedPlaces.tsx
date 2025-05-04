@@ -18,9 +18,8 @@ function Selectedbar({
   const [customName, setCustomName] = useState("");
   const [routes, setRoutes] = useState<any[]>([]);
   const [showDropdown, setShowDropdown] = useState(false);
-  const [fadeState, setFadeState] = useState(''); // 'fade-in', or 'fade-out'
   const [inputError, setInputError] = useState(false); // til errors, når saveroute smider en error som fx. når user ikke giver rute et navn. 
-  const [transportMode, setTransportMode] = useState("walking"); // Mode of transportation toggle, hvor default er foot-walking. 
+  const [transportMode, setTransportMode] = useState("walking 🚶"); // Mode of transportation toggle, hvor default er foot-walking. 
   const [dropdownOpen, setDropdownOpen] = useState(false); // til dropdown menu til "mode of transportation". 
   const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved">("idle"); // til at improve "Save route" button. 
   const [selectedRouteName, setSelectedRouteName] = useState<string | null>(null); // til at vise navn på valgt route fra DB fra users konto. 
@@ -132,13 +131,6 @@ function Selectedbar({
     }
   };
 
-  const toggleTransportMode = () => {
-    const modes = ["driving", "walking", "cycling", "e-cycling", "wheelchair"];
-    const currentIndex = modes.indexOf(transportMode);
-    const nextIndex = (currentIndex + 1) % modes.length;
-    setTransportMode(modes[nextIndex]);
-  };
-
   const formatMode = (mode: string) => {
     const icons: Record<string, string> = {
       driving: "🚗 Driving",
@@ -205,7 +197,7 @@ function Selectedbar({
             <div className="flex flex-row gap-2 w-full items-center">
               <input
                 type="text"
-                placeholder="Cool route name"
+                placeholder="Route name"
                 value={customName}
                 onChange={(e) => setCustomName(e.target.value)}
                 className={`rounded-xl px-2 py-1 w-1/2 text-primary-brown transition duration-300 ease-in-out
