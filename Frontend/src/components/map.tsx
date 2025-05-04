@@ -10,7 +10,7 @@ import Selectedbar from "./selectedPlaces";
 import Filter from "./filter";
 import { useUserLocation } from "../hooks/useUserLocation";
 import { useAnimatedRoutePoint } from "../hooks/useAnimatedRoutePoint";
-
+import type { FeatureCollection } from "geojson";
 
 function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, setSelectedPlacesList }: any) {
   const mapRef = useRef<any>(null);
@@ -22,6 +22,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
   const [animatedPoint, setAnimatedPoint] = useState<[number, number] | null>(null);
   const [filterTypes, setFilterTypes] = useState<string[]>([]);
   const [showMoreDetails, setShowMoreDetails] = useState("");
+  const [zoom, setZoom] = useState<number>(10);
 
   useAnimatedRoutePoint(routeCoordinates, setAnimatedPoint);
 
@@ -71,6 +72,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
 
     const handleMapMove = () => {
       const bounds = map.getBounds();
+      setZoom(map.getZoom());
       fetchPlacesByBounds(bounds, setVisiblePlaces);
     };
 
@@ -91,6 +93,20 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
     );
   };
 
+  const clusterGeoJson: FeatureCollection = {
+    type: "FeatureCollection",
+    features: filteredVisiblePlaces.map((place: any) => ({
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: place.geometry.coordinates,
+      },
+      properties: {
+        placeId: place.properties.placeId,
+      },
+    })),
+  };
+
   return (
     <div className="flex w-full h-full relative">
       <div className="w-full h-full rounded-xl overflow-hidden relative">
@@ -102,26 +118,24 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             zoom: 10,
           }}
           mapStyle="https://api.maptiler.com/maps/bright/style.json?key=L0M8KVYaAAuKx695rSCS"
-          >
+        >
+          {/* UI Panels */}
           <div className="flex flex-row h-full w-full justify-between items-start">
             <div className="flex flex-row h-full w-full justify-start items-start">
-            
-            <VisiblePlaces
-              visiblePlaces={visiblePlaces}
-              fetchPlaces={() => {
-                const bounds = mapRef.current?.getBounds();
-                if (bounds) {
-                  fetchPlacesByBounds(bounds, setVisiblePlaces);
-                }
-              }}
-              setSelectedPlacesList={setSelectedPlacesList}
-              showMoreDetails={showMoreDetails}
-              setShowMoreDetails={setShowMoreDetails}
-            />
-
-                <Filter filterTypes={filterTypes} setFilterTypes={setFilterTypes} />
+              <VisiblePlaces
+                visiblePlaces={visiblePlaces}
+                fetchPlaces={() => {
+                  const bounds = mapRef.current?.getBounds();
+                  if (bounds) {
+                    fetchPlacesByBounds(bounds, setVisiblePlaces);
+                  }
+                }}
+                setSelectedPlacesList={setSelectedPlacesList}
+                showMoreDetails={showMoreDetails}
+                setShowMoreDetails={setShowMoreDetails}
+              />
+              <Filter filterTypes={filterTypes} setFilterTypes={setFilterTypes} />
             </div>
-
             <Selectedbar
               selectedPlaces={selectedPlacesList}
               setSelectedPlacesList={setSelectedPlacesList}
@@ -131,8 +145,60 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             />
           </div>
 
-          
-          {[...selectedPlacesList, ...filteredVisiblePlaces.filter(
+          {/* Show clusters only when zoom < 14 */}
+          {zoom < 14 && (
+            <Source
+              id="cluster-source"
+              type="geojson"
+              data={clusterGeoJson}
+              cluster={true}
+              clusterMaxZoom={14}
+              clusterRadius={50}
+              
+            >
+              <Layer
+                id="clusters"
+                type="circle"
+                filter={["has", "point_count"]}
+                paint={{
+                  "circle-color": [
+                    "step",
+                    ["get", "point_count"],
+                    "#51bbd6",
+                    10,
+                    "#f1f075",
+                    30,
+                    "#f28cb1",
+                  ],
+                  "circle-radius": [
+                    "step",
+                    ["get", "point_count"],
+                    15,
+                    10,
+                    20,
+                    30,
+                    25,
+                  ],
+                }}
+              />
+              <Layer
+                id="cluster-count"
+                type="symbol"
+                filter={["has", "point_count"]}
+                layout={{
+                  "text-field": "{point_count_abbreviated}",
+                  "text-font": ["Open Sans Bold"],
+                  "text-size": 12,
+                }}
+                paint={{
+                  "text-color": "#000",
+                }}
+              />
+            </Source>
+          )}
+
+          {/* Show all markers (selected + visible) only at zoom ≥ 14 */}
+          {zoom >= 14 && [...selectedPlacesList, ...filteredVisiblePlaces.filter(
             (vp: any) =>
               !selectedPlacesList.some(
                 (sp: any) => sp.properties.placeId === vp.properties.placeId
@@ -165,6 +231,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             );
           })}
 
+          {/* User location */}
           {userLocation && (
             <Marker longitude={userLocation.lng} latitude={userLocation.lat}>
               <div className="bg-blue-600 rounded-full w-2 h-2" title="You are here" />
@@ -180,7 +247,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
                 type: "Feature",
                 geometry: {
                   type: "LineString",
-                  coordinates: routeCoordinates.map(coord => [coord.lng, coord.lat]),
+                  coordinates: routeCoordinates.map((coord) => [coord.lng, coord.lat]),
                 },
                 properties: {},
               }}
