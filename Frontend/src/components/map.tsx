@@ -145,6 +145,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             />
           </div>
 
+          {/* Show clusters only when zoom < 14 */}
           {zoom < 14 && (
             <Source
               id="cluster-source"
@@ -153,6 +154,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
               cluster={true}
               clusterMaxZoom={14}
               clusterRadius={50}
+              
             >
               <Layer
                 id="clusters"
@@ -195,54 +197,39 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
             </Source>
           )}
 
-          {/* Always show selected markers */}
-          {selectedPlacesList.map((place: any) => (
-            <PopupMarker
-              key={place.properties.placeId}
-              longitude={place.geometry.coordinates[0]}
-              latitude={place.geometry.coordinates[1]}
-              title={place.properties.name}
-              image={
-                place.properties.images?.[0]?.imageUrl ||
-                "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"
-              }
-              description={
-                place.properties.details?.editorialOverview || "No description available."
-              }
-              setSelectedPlacesList={setSelectedPlacesList}
-              place={place}
-              color="blue"
-              setShowMoreDetails={setShowMoreDetails}
-            />
-          ))}
-
-          {zoom >= 14 &&
-            filteredVisiblePlaces
-              .filter(
-                (vp: any) =>
-                  !selectedPlacesList.some(
-                    (sp: any) => sp.properties.placeId === vp.properties.placeId
-                  )
+          {/* Show all markers (selected + visible) only at zoom ≥ 14 */}
+          {zoom >= 14 && [...selectedPlacesList, ...filteredVisiblePlaces.filter(
+            (vp: any) =>
+              !selectedPlacesList.some(
+                (sp: any) => sp.properties.placeId === vp.properties.placeId
               )
-              .map((place: any) => (
-                <PopupMarker
-                  key={place.properties.placeId}
-                  longitude={place.geometry.coordinates[0]}
-                  latitude={place.geometry.coordinates[1]}
-                  title={place.properties.name}
-                  image={
-                    place.properties.images?.[0]?.imageUrl ||
-                    "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"
-                  }
-                  description={
-                    place.properties.details?.editorialOverview || "No description available."
-                  }
-                  setSelectedPlacesList={setSelectedPlacesList}
-                  place={place}
-                  color="red"
-                  setShowMoreDetails={setShowMoreDetails}
-                />
-              ))}
+          )].map((place: any) => {
+            const placeId = place.properties.placeId;
+            const isSelected = selectedPlacesList.some(
+              (sp: any) => sp.properties.placeId === placeId
+            );
+
+            return (
+              <PopupMarker
+                key={placeId}
+                longitude={place.geometry.coordinates[0]}
+                latitude={place.geometry.coordinates[1]}
+                title={place.properties.name}
+                image={
+                  place.properties.images?.[0]?.imageUrl ||
+                  "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"
+                }
+                description={
+                  place.properties.details?.editorialOverview ||
+                  "No description available."
+                }
+                setSelectedPlacesList={setSelectedPlacesList}
+                place={place}
+                color={isSelected ? "blue" : "red"}
+                setShowMoreDetails={setShowMoreDetails}
+              />
+            );
+          })}
 
           {/* User location */}
           {userLocation && (
