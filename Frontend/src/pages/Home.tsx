@@ -11,7 +11,24 @@ function Home() {
 
   const handleAddPlace = async (place: any) => {
     const resultPlace = await fetchPlaceById(place.placeId);
-    setSelectedPlacesList(prev => [...prev, resultPlace]);
+  
+    if (!resultPlace) {
+      console.error("Place could not be fetched.");
+      return;
+    }
+  
+    setSelectedPlacesList(prev => {
+      const alreadyExists = prev.some(
+        (p) => p.properties.placeId === resultPlace.properties.placeId
+      );
+  
+      if (alreadyExists) {
+        alert("This place is already in your route.");
+        return prev;
+      }
+  
+      return [...prev, resultPlace];
+    });
   };
 
   // Load full place details when selectedRoute changes
@@ -37,7 +54,9 @@ function Home() {
 
   return (
     <div className="bg-background-beige1 h-screen text-text-dark flex-row">
-      <Head handleAddPlace={handleAddPlace} />
+      <Head
+        handleAddPlace={handleAddPlace}
+      />
       <div className="flex h-[calc(100%-60px)]">
         <Map
           setVisiblePlaces={setVisiblePlaces}

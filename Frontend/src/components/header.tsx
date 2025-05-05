@@ -9,7 +9,12 @@ type Place = {
     latitude: number;
 };
 
-function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
+function Head({
+    handleAddPlace,
+}: {
+    handleAddPlace: (place: Place) => void;
+    selectedPlacesList: Place[];
+}) {
     const navigate = useNavigate();
     const [search, setSearch] = useState('');
     const debounceTimeout = useRef<number | null>(null);
@@ -68,8 +73,8 @@ function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
                 <button
                     onClick={() => navigate('/home')}
                     className="hover:underline hover:cursor-pointer border-r-1 py-2 px-4 border-primary-brown"
-                    >
-                        <p className="text-primary-brown text-heading-3">Map</p>
+                >
+                    <p className="text-primary-brown text-heading-3">Map</p>
                 </button>
                 <button
                     onClick={() => navigate('/profile')}

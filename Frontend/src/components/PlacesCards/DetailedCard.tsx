@@ -106,7 +106,18 @@ const DetailedCard = ({
 
       <button
         onClick={() =>
-          setSelectedPlacesList((prevList: any[]) => [...prevList, place])
+          setSelectedPlacesList((prevList: any[]) => {
+            const alreadyExists = prevList.some(
+              (p) => p.properties.placeId === place.properties.placeId
+            );
+
+            if (alreadyExists) {
+              alert("This place is already in your route.");
+              return prevList;
+            }
+
+            return [...prevList, place];
+          })
         }
         className="mt-4 w-full py-2 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-xl text-primary-brown"
       >

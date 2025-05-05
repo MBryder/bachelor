@@ -14,16 +14,16 @@ const DefaultedCard = ({
   onClick,
   setSelectedPlacesList,
 }: DefaultedCardProps) => {
-    const formatPlaceName = (name: string) => {
-        const words = name.split(" ");
-        const hasLongWord = words.some((word) => word.length >= 15);
-      
-        if (hasLongWord) {
-          return name.slice(0, 12) + "...";
-        }
-      
-        return name;
-      };
+  const formatPlaceName = (name: string) => {
+    const words = name.split(" ");
+    const hasLongWord = words.some((word) => word.length >= 15);
+
+    if (hasLongWord) {
+      return name.slice(0, 12) + "...";
+    }
+
+    return name;
+  };
 
   return (
     <li
@@ -66,7 +66,18 @@ const DefaultedCard = ({
           className="mt-2 w-20 h-6 border border-primary-brown bg-background-beige2 shadow-custom1 rounded-2xl"
           onClick={(e) => {
             e.stopPropagation(); // prevent triggering parent onClick
-            setSelectedPlacesList((prevList: any[]) => [...prevList, place]);
+            setSelectedPlacesList((prevList: any[]) => {
+              const alreadyExists = prevList.some(
+                (p) => p.properties.placeId === place.properties.placeId
+              );
+
+              if (alreadyExists) {
+                alert("This place is already in your route.");
+                return prevList;
+              }
+
+              return [...prevList, place];
+            });
           }}
         >
           Add

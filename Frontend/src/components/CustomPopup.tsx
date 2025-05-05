@@ -122,7 +122,18 @@ const CustomPopup = ({
               className="mt-2 w-24 h-6 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-2xl text-parafraph-1"
               onClick={(e) => {
                 e.stopPropagation();
-                setSelectedPlacesList((prev: any[]) => [...prev, place]);
+                setSelectedPlacesList((prev: any[]) => {
+                  const alreadyExists = prev.some(
+                    (p) => p.properties.placeId === place.properties.placeId
+                  );
+
+                  if (alreadyExists) {
+                    alert("This place is already in your route.");
+                    return prev;
+                  }
+
+                  return [...prev, place];
+                });
               }}
             >
               + Add
