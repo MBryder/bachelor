@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Profile from "./pages/profile"; // ← Add this import
+import About from './pages/About';
 import './App.css';
 import PrivateRoute from './components/privateRoute';
 import { SelectedRouteProvider } from './context/SelectedRouteContext';
@@ -17,7 +18,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          
+
           <Route
             path="/home"
             element={
@@ -32,6 +33,15 @@ function App() {
             element={
               <PrivateRoute>
                 <Profile />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+            path="/about"
+            element={
+              <PrivateRoute>
+                <About />
               </PrivateRoute>
             }
           />

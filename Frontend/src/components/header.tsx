@@ -72,7 +72,7 @@ function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
                     <p className="text-primary-brown text-heading-3">My profile</p>
                 </button>
                 <button
-                    onClick={() => navigate('about')}
+                    onClick={() => navigate('/about')}
                     className="hover:underline hover:cursor-pointer border-x-1 py-2 px-4 border-primary-brown"
                 >
                     <p className="text-primary-brown text-heading-3">About</p>
