@@ -142,6 +142,16 @@ function Selectedbar({
     return icons[mode] || mode;
   };
 
+  const handleSetAsStart = (index: number) => {
+    if (index <= 0 || index >= selectedPlaces.length) return;
+
+    const updatedList = [...selectedPlaces];
+    const [selectedPlace] = updatedList.splice(index, 1);
+    updatedList.unshift(selectedPlace);
+
+    setSelectedPlacesList(updatedList);
+  };
+
   return (
     <div className="h-5/8 flex items-center py-2 px-2">
       <div className="translate-x-0 h-full w-[300px] border-1 bg-background-beige1 shadow-lg rounded-4xl m-2 ml-4 flex">
@@ -155,30 +165,43 @@ function Selectedbar({
                 key={index}
                 className={`pb-2 my-2 border-b flex items-center justify-between
       ${index === 0
-                    ? "bg-yellow-100 border-2 border-primary-brown rounded-xl"
-                    : "border-primary-brown"
+                    ? "bg-yellow-100 rounded-xl"
+                    : "border-b border-primary-brown"
                   }`}
               >
-                <div className="flex items-center">
-                  <div className="mr-2">{getTourismIcon(place.properties.tourism)}</div>
-                  <div>
-                    <h2 className="text-primary-brown text-heading-4">
-                      {place.properties.name}
-                      {index === 0 && (
-                        <span className="text-xs text-primary-brown/60 ml-1 italic">
-                          (starting place)
-                        </span>
-                      )}
-                    </h2>
-                    <p>{place.properties.address}</p>
+                <div className="flex items-center justify-between w-full -ml-1">
+                  <div className="flex items-center">
+                    <div className="mr-2">{getTourismIcon(place.properties.tourism)}</div>
+                    <div>
+                      <h2 className="text-primary-brown text-heading-4">
+                        {place.properties.name}
+                        {index === 0 && (
+                          <span className="text-xs text-primary-brown/60 ml-1 italic">
+                            (starting place)
+                          </span>
+                        )}
+                      </h2>
+                      <p>{place.properties.address}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    {index !== 0 && (
+                      <button
+                        onClick={() => handleSetAsStart(index)}
+                        className="text-xs text-blue-600 hover:underline"
+                      >
+                        Set as start
+                      </button>
+                    )}
+                    <button
+                      className="text-sm hover:text-red-600 text-primary-brown"
+                      onClick={() => handleRemove(index)}
+                    >
+                      X
+                    </button>
                   </div>
                 </div>
-                <button
-                  className="ml-2 mr-2 text-sm hover:text-red-600 text-primary-brown"
-                  onClick={() => handleRemove(index)}
-                >
-                  X
-                </button>
               </li>
             ))}
           </ul>
