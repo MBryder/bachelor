@@ -1,13 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Head from "../components/header";
 import Map from "../components/map";
 import { fetchPlaceById } from "../services/placesService";
 import { useSelectedRoute } from "../context/SelectedRouteContext";
+import { useSyncedState } from "../hooks/useSyncedState";
 
 function Home() {
   const [visiblePlaces, setVisiblePlaces] = useState<any[]>([]);
-  const [selectedPlacesList, setSelectedPlacesList] = useState<any[]>([]);
   const { selectedRoute, setSelectedRoute } = useSelectedRoute();
+  const [selectedPlacesList, setSelectedPlacesList, selectedPlacesRef] = useSyncedState<any[]>([]);
 
   const handleAddPlace = async (place: any) => {
     const resultPlace = await fetchPlaceById(place.placeId);
@@ -17,18 +18,17 @@ function Home() {
       return;
     }
   
-    setSelectedPlacesList(prev => {
-      const alreadyExists = prev.some(
-        (p) => p.properties.placeId === resultPlace.properties.placeId
-      );
+    const currentList = selectedPlacesRef.current;
+    const alreadyExists = currentList.some(
+      (p) => p?.properties?.placeId === resultPlace?.properties?.placeId
+    );
   
-      if (alreadyExists) {
-        alert("This place is already in your route.");
-        return prev;
-      }
+    if (alreadyExists) {
+      alert("This place is already in your route.");
+      return;
+    }
   
-      return [...prev, resultPlace];
-    });
+    setSelectedPlacesList([...currentList, resultPlace]);
   };
 
   // Load full place details when selectedRoute changes
