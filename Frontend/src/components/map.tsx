@@ -153,7 +153,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
               data={clusterGeoJson}
               cluster={true}
               clusterMaxZoom={14}
-              clusterRadius={50}
+              clusterRadius={90}
               
             >
               <Layer
