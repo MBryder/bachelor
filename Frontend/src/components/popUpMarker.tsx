@@ -9,6 +9,7 @@ const PopupMarker = ({
   latitude,
   title,
   setSelectedPlacesList,
+  selectedPlacesRef,
   place,
   color,
   titleON = false,
@@ -72,6 +73,7 @@ const PopupMarker = ({
           onClose={() => handlePopupClose()}
           place={place}
           setSelectedPlacesList={setSelectedPlacesList}
+          selectedPlacesRef={selectedPlacesRef}
           setShowMoreDetails={setShowMoreDetails}
         />
       )}

@@ -6,7 +6,8 @@ interface CustomPopupProps {
   latitude: number;
   onClose: () => void;
   place: any;
-  setSelectedPlacesList: (fn: (prev: any[]) => any[]) => void;
+  setSelectedPlacesList: (newList: any[]) => void;
+  selectedPlacesRef: React.RefObject<any[]>;
   setShowMoreDetails: (placeId: string) => void;
 }
 
@@ -16,6 +17,7 @@ const CustomPopup = ({
   onClose,
   place,
   setSelectedPlacesList,
+  selectedPlacesRef,
   setShowMoreDetails
 }: CustomPopupProps) => {
   const { current: map } = useMap();
@@ -122,18 +124,17 @@ const CustomPopup = ({
               className="mt-2 w-24 h-6 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-2xl text-parafraph-1"
               onClick={(e) => {
                 e.stopPropagation();
-                setSelectedPlacesList((prev: any[]) => {
-                  const alreadyExists = prev.some(
-                    (p) => p.properties.placeId === place.properties.placeId
-                  );
 
-                  if (alreadyExists) {
-                    alert("This place is already in your route.");
-                    return prev;
-                  }
+                const alreadyExists = selectedPlacesRef.current?.some(
+                  (p) => p?.properties?.placeId === place?.properties?.placeId
+                );
 
-                  return [...prev, place];
-                });
+                if (alreadyExists) {
+                  alert("This place is already in your route.");
+                  return;
+                }
+
+                setSelectedPlacesList(prev => [...prev, place]);
               }}
             >
               + Add

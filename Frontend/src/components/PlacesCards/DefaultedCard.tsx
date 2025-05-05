@@ -1,10 +1,12 @@
-// components/DefaultedCard.tsx
+import React from "react";
+
 type DefaultedCardProps = {
   place: any;
   onHover: (id: string | null) => void;
   onClick: () => void;
   isHovered: boolean;
   setSelectedPlacesList: (fn: (prev: any[]) => any[]) => void;
+  selectedPlacesRef: React.RefObject<any[]>;
   showMoreDetails: string;
 };
 
@@ -13,6 +15,7 @@ const DefaultedCard = ({
   onHover,
   onClick,
   setSelectedPlacesList,
+  selectedPlacesRef,
 }: DefaultedCardProps) => {
   const formatPlaceName = (name: string) => {
     const words = name.split(" ");
@@ -65,19 +68,18 @@ const DefaultedCard = ({
         <button
           className="mt-2 w-20 h-6 border border-primary-brown bg-background-beige2 shadow-custom1 rounded-2xl"
           onClick={(e) => {
-            e.stopPropagation(); // prevent triggering parent onClick
-            setSelectedPlacesList((prevList: any[]) => {
-              const alreadyExists = prevList.some(
-                (p) => p.properties.placeId === place.properties.placeId
-              );
+            e.stopPropagation();
 
-              if (alreadyExists) {
-                alert("This place is already in your route.");
-                return prevList;
-              }
+            const alreadyExists = selectedPlacesRef.current?.some(
+              (p) => p?.properties?.placeId === place?.properties?.placeId
+            );
 
-              return [...prevList, place];
-            });
+            if (alreadyExists) {
+              alert("This place is already in your route.");
+              return;
+            }
+
+            setSelectedPlacesList(prev => [...prev, place]);
           }}
         >
           Add

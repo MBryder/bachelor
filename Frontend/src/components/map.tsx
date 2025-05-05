@@ -12,7 +12,7 @@ import { useUserLocation } from "../hooks/useUserLocation";
 import { useAnimatedRoutePoint } from "../hooks/useAnimatedRoutePoint";
 import type { FeatureCollection } from "geojson";
 
-function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, setSelectedPlacesList }: any) {
+function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, setSelectedPlacesList, selectedPlacesRef }: any) {
   const mapRef = useRef<any>(null);
   const [minCost, setMinCost] = useState<number | null>(null);
   const [route, setRoute] = useState<number[]>([]);
@@ -131,6 +131,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
                   }
                 }}
                 setSelectedPlacesList={setSelectedPlacesList}
+                selectedPlacesRef={selectedPlacesRef}
                 showMoreDetails={showMoreDetails}
                 setShowMoreDetails={setShowMoreDetails}
               />
@@ -224,6 +225,7 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
                   "No description available."
                 }
                 setSelectedPlacesList={setSelectedPlacesList}
+                selectedPlacesRef={selectedPlacesRef}
                 place={place}
                 color={isSelected ? "blue" : "red"}
                 setShowMoreDetails={setShowMoreDetails}

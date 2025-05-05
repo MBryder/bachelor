@@ -9,14 +9,16 @@ function VisiblePlaces({
   visiblePlaces,
   fetchPlaces,
   setSelectedPlacesList,
+  selectedPlacesRef,
   showMoreDetails,
   setShowMoreDetails
 }: {
   visiblePlaces: any[];
   fetchPlaces: () => void;
-  setSelectedPlacesList: (fn: (prev: any[]) => any[]) => void;
   showMoreDetails: string;
   setShowMoreDetails: (placeId: string) => void;
+  setSelectedPlacesList: (fn: (prev: any[]) => any[]) => void;
+  selectedPlacesRef: React.RefObject<any[]>;
 }) {
   const { current: map } = useMap();
   const [hoveredPlaceId, setHoveredPlaceId] = useState<string | null>(null);
@@ -59,9 +61,10 @@ function VisiblePlaces({
                 >
                   {showMoreDetails === placeId ? (
                     <DetailedCard
-                      place={place}
-                      setSelectedPlacesList={setSelectedPlacesList}
-                      setShowMoreDetails={setShowMoreDetails}
+                    place={place}
+                    setSelectedPlacesList={setSelectedPlacesList}
+                    selectedPlacesRef={selectedPlacesRef}
+                    setShowMoreDetails={setShowMoreDetails}
                     />
                   ) : (
                     <DefaultedCard
@@ -70,6 +73,7 @@ function VisiblePlaces({
                       onClick={() => handlePlaceClick(place)}
                       isHovered={isHovered}
                       setSelectedPlacesList={setSelectedPlacesList}
+                      selectedPlacesRef={selectedPlacesRef}
                       showMoreDetails={showMoreDetails}
                     />
                   )}

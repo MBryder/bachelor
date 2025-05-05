@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import Head from "../components/header";
 import Map from "../components/map";
 import { fetchPlaceById } from "../services/placesService";
@@ -63,6 +63,7 @@ function Home() {
           visiblePlaces={visiblePlaces}
           selectedPlacesList={selectedPlacesList}
           setSelectedPlacesList={setSelectedPlacesList}
+          selectedPlacesRef={selectedPlacesRef}
         />
       </div>
     </div>

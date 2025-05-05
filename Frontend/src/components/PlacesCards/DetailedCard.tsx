@@ -1,6 +1,9 @@
+import React from "react";
+
 type DetailedCardProps = {
   place: any;
   setSelectedPlacesList: (fn: (prev: any[]) => any[]) => void;
+  selectedPlacesRef: React.RefObject<any[]>;
   setShowMoreDetails: (id: string) => void;
 };
 
@@ -8,6 +11,7 @@ const DetailedCard = ({
   place,
   setSelectedPlacesList,
   setShowMoreDetails,
+  selectedPlacesRef,
 }: DetailedCardProps) => {
   const { name, rating, userRatingsTotal, images, details } =
     place.properties;
@@ -105,20 +109,20 @@ const DetailedCard = ({
       </div>
 
       <button
-        onClick={() =>
-          setSelectedPlacesList((prevList: any[]) => {
-            const alreadyExists = prevList.some(
-              (p) => p.properties.placeId === place.properties.placeId
-            );
+        onClick={(e) => {
+          e.stopPropagation();
 
-            if (alreadyExists) {
-              alert("This place is already in your route.");
-              return prevList;
-            }
+          const alreadyExists = selectedPlacesRef.current?.some(
+            (p) => p?.properties?.placeId === place?.properties?.placeId
+          );
 
-            return [...prevList, place];
-          })
-        }
+          if (alreadyExists) {
+            alert("This place is already in your route.");
+            return;
+          }
+
+          setSelectedPlacesList(prev => [...prev, place]);
+        }}
         className="mt-4 w-full py-2 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-xl text-primary-brown"
       >
         + Add to list
