@@ -66,6 +66,12 @@ function Head({ handleAddPlace }: { handleAddPlace: (place: Place) => void }) {
             {/* Center - Buttons + Search */}
             <div className="flex border-1 border-primary-brown rounded-4xl bg-background-beige1 shadow-lg items-center relative">
                 <button
+                    onClick={() => navigate('/home')}
+                    className="hover:underline hover:cursor-pointer border-r-1 py-2 px-4 border-primary-brown"
+                    >
+                        <p className="text-primary-brown text-heading-3">Map</p>
+                </button>
+                <button
                     onClick={() => navigate('/profile')}
                     className="hover:underline hover:cursor-pointer border-r-1 py-2 px-4 border-primary-brown"
                 >
