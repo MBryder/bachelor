@@ -58,6 +58,13 @@ function Selectedbar({
       cleanedPlaces.shift();
     }
 
+    // ✅ NEW: Prevent saving empty routes
+    if (cleanedPlaces.length === 0 || cleanedPlaces.length === 1) {
+      alert("You need to add at least two places before saving a route.");
+      setSaveStatus("idle");
+      return;
+    }
+
     const routeData = {
       customName: customName.trim(),
       waypoints: cleanedPlaces.map(place => place.properties.placeId),
@@ -94,7 +101,7 @@ function Selectedbar({
       setSaveStatus("idle");
     }
   };
-
+  
   const handleMyRoutesClick = async () => {
     const username = localStorage.getItem("username");
 

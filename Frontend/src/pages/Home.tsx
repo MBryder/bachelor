@@ -27,6 +27,11 @@ function Home() {
       alert("This place is already in your route.");
       return;
     }
+
+    if ((selectedPlacesRef.current?.length || 0) >= 3) {
+      alert("You can only add up to 20 places in your route.");
+      return;
+    }
   
     setSelectedPlacesList([...currentList, resultPlace]);
   };

@@ -79,6 +79,11 @@ const DefaultedCard = ({
               return;
             }
 
+            if ((selectedPlacesRef.current?.length || 0) >= 20) {
+              alert("You can only add up to 20 places in your route.");
+              return;
+            }
+
             setSelectedPlacesList(prev => [...prev, place]);
           }}
         >
