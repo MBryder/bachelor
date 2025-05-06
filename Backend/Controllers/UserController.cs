@@ -179,5 +179,69 @@ namespace MyBackend.Controllers
             var exists = await _context.Users.AnyAsync(u => u.Username == username);
             return Ok(new { available = !exists });
         }
+
+        // DELETE /user/{username}/routes/{routeId}
+        [HttpDelete("{username}/routes/{routeId}")]
+        public async Task<IActionResult> DeleteRoute(string username, int routeId)
+        {
+            var route = await _context.Routes.FirstOrDefaultAsync(r => r.Id == routeId && r.Username == username);
+
+            if (route == null)
+                return NotFound(new { message = "Route not found." });
+
+            _context.Routes.Remove(route);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Route deleted successfully." });
+        }
+
+        // PUT /user/change-password
+        [HttpPut("change-password")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
+        {
+            if (string.IsNullOrWhiteSpace(dto.Username) ||
+                string.IsNullOrWhiteSpace(dto.CurrentPassword) ||
+                string.IsNullOrWhiteSpace(dto.NewPassword))
+            {
+                return BadRequest("All fields are required.");
+            }
+
+            var user = await _context.Users.FirstOrDefaultAsync(u =>
+                u.Username == dto.Username && u.Password == dto.CurrentPassword);
+
+            if (user == null)
+            {
+                return Unauthorized("Current password is incorrect.");
+            }
+
+            user.Password = dto.NewPassword;
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Password updated successfully." });
+        }
+
+        [HttpDelete("{username}")]
+        public async Task<IActionResult> DeleteUser(string username)
+        {
+            var user = await _context.Users
+                .Include(u => u.Routes) // load related routes
+                .FirstOrDefaultAsync(u => u.Username == username);
+
+            if (user == null)
+                return NotFound("User not found.");
+
+            // Delete related routes (if not handled by cascade delete)
+            if (user.Routes != null && user.Routes.Count > 0)
+            {
+                _context.Routes.RemoveRange(user.Routes);
+            }
+
+            // Delete the user
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "User and all related data deleted successfully." });
+        }
+
     }
 }
