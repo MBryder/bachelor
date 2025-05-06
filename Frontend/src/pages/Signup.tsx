@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Map } from '@vis.gl/react-maplibre';
+import 'maplibre-gl/dist/maplibre-gl.css';
 
 const Signup: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -87,88 +89,111 @@ const Signup: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white p-8 rounded-2xl shadow-md w-full max-w-sm"
-      >
-        <h2 className="text-2xl font-semibold text-center mb-6">Sign Up</h2>
+    <div className="relative w-screen h-screen overflow-hidden">
+      {/* Background Map */}
+      <Map
+        initialViewState={{
+          longitude: 12.5939,
+          latitude: 55.6632,
+          zoom: 10,
+        }}
+        mapStyle="https://tiles.openfreemap.org/styles/bright"
+        interactive={false}
+        attributionControl={false}
+      />
 
-        {error && (
-          <p className="text-red-500 text-sm mb-4 text-center">{error}</p>
-        )}
+      {/* Semi-transparent overlay */}
+      <div className="absolute inset-0 backdrop-blur-xs bg-background-beige1/30 z-10" />
 
-        <div className="mb-4">
-          <label className="block mb-1 text-sm font-medium text-gray-700">
-            Username
-          </label>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter username"
-            required
-          />
-          {username && (
-            <p className="text-sm mt-1">
-              {checkingUsername ? (
-                <span className="text-gray-500">🔍 Checking availability...</span>
-              ) : isUsernameAvailable === false ? (
-                <span className="text-red-600">❌ Username is already taken</span>
-              ) : isUsernameAvailable === true ? (
-                <span className="text-green-600">✅ Username is available</span>
-              ) : null}
-            </p>
-          )}
-        </div>
-
-        <div className="mb-6">
-          <label className="block mb-1 text-sm font-medium text-gray-700">
-            Password
-          </label>
-          <input
-            type="password"
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter password"
-            required
-          />
-        </div>
-
-        <div className="mb-6">
-          <label className="block mb-1 text-sm font-medium text-gray-700">
-            Confirm Password
-          </label>
-          <input
-            type="password"
-            value={confirmPassword}
-            onChange={e => setConfirmPassword(e.target.value)}
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Re-enter password"
-            required
-          />
-          {passwordsMatch === false && (
-            <p className="text-sm text-red-600 mt-1">❌ Passwords do not match</p>
-          )}
-          {passwordsMatch === true && (
-            <p className="text-sm text-green-600 mt-1">✅ Passwords match</p>
-          )}
-        </div>
-
-        <button
-          type="submit"
-          disabled={!isUsernameAvailable || !passwordsMatch}
-          className={`w-full py-2 rounded-lg transition duration-200 text-white 
-    ${isUsernameAvailable && passwordsMatch ? 'bg-green-600 hover:bg-green-700' : 'bg-gray-400 cursor-not-allowed'}
-  `}
+      {/* Signup form */}
+      <div className="absolute inset-0 z-50 flex items-center justify-center">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-background-beige1 border-2 border-primary-brown bg-opacity-90 p-8 rounded-2xl shadow-md w-full max-w-sm"
         >
-          Sign Up
-        </button>
-      </form>
+          <h2 className="text-display-1 font-display text-center text-primary-brown mb-6">
+            Sign Up
+          </h2>
+
+          {error && (
+            <p className="text-red-500 text-sm mb-4 text-center">{error}</p>
+          )}
+
+          <div className="mb-4">
+            <label className="block mb-1 text-sm text-primary-brown">
+              Username
+            </label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              className="w-full px-4 py-2 border-b-2 border-primary-brown focus:outline-none bg-transparent"
+              placeholder="Enter username"
+              required
+            />
+            {username && (
+              <p className="text-sm mt-1">
+                {checkingUsername ? (
+                  <span className="text-gray-500">🔍 Checking availability...</span>
+                ) : isUsernameAvailable === false ? (
+                  <span className="text-red-600">❌ Username is already taken</span>
+                ) : isUsernameAvailable === true ? (
+                  <span className="text-green-600">✅ Username is available</span>
+                ) : null}
+              </p>
+            )}
+          </div>
+
+          <div className="mb-6">
+            <label className="block mb-1 text-sm text-primary-brown">
+              Password
+            </label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full px-4 py-2 border-b-2 border-primary-brown focus:outline-none bg-transparent"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+
+          <div className="mb-6">
+            <label className="block mb-1 text-sm text-primary-brown">
+              Confirm Password
+            </label>
+            <input
+              type="password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              className="w-full px-4 py-2 border-b-2 border-primary-brown focus:outline-none bg-transparent"
+              placeholder="Re-enter password"
+              required
+            />
+            {passwordsMatch === false && (
+              <p className="text-sm text-red-600 mt-1">❌ Passwords do not match</p>
+            )}
+            {passwordsMatch === true && (
+              <p className="text-sm text-green-600 mt-1">✅ Passwords match</p>
+            )}
+          </div>
+
+          <button
+            type="submit"
+            disabled={!isUsernameAvailable || !passwordsMatch}
+            className={`w-full py-2 rounded-lg transition duration-200 text-white 
+              ${isUsernameAvailable && passwordsMatch
+                ? 'bg-green-600 hover:bg-green-700'
+                : 'bg-gray-400 cursor-not-allowed'}
+            `}
+          >
+            Sign Up
+          </button>
+        </form>
+      </div>
     </div>
   );
+
 };
 
 export default Signup;
