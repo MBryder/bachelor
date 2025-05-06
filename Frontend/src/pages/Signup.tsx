@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Signup: React.FC = () => {
@@ -6,9 +6,51 @@ const Signup: React.FC = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [passwordsMatch, setPasswordsMatch] = useState<boolean | null>(null);
+  const [isUsernameAvailable, setIsUsernameAvailable] = useState<boolean | null>(null);
+  const [checkingUsername, setCheckingUsername] = useState(false);
+
+  useEffect(() => {
+    if (!confirmPassword) {
+      setPasswordsMatch(null);
+    } else {
+      setPasswordsMatch(password === confirmPassword);
+    }
+  }, [password, confirmPassword]);
+
+  useEffect(() => {
+    if (!username.trim()) {
+      setIsUsernameAvailable(null);
+      return;
+    }
+
+    const debounce = setTimeout(async () => {
+      setCheckingUsername(true);
+      try {
+        const res = await fetch(
+          `http://localhost:5001/user/check-username?username=${encodeURIComponent(username)}`
+        );
+        const data = await res.json();
+        setIsUsernameAvailable(data.available);
+      } catch (err) {
+        console.error("Failed to check username:", err);
+        setIsUsernameAvailable(null);
+      } finally {
+        setCheckingUsername(false);
+      }
+    }, 500);
+
+    return () => clearTimeout(debounce);
+  }, [username]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (password !== confirmPassword) {
+      setError("Passwords do not match.");
+      return;
+    }
 
     try {
       const response = await fetch('http://localhost:5001/user/register', {
@@ -25,9 +67,12 @@ const Signup: React.FC = () => {
       if (response.ok) {
         const data = await response.json();
         console.log('Register successful:', data);
-        localStorage.setItem('username', username); // session handling
+        localStorage.setItem('username', username);
         setError('');
         navigate('/home');
+      } else if (response.status === 409) {
+        const data = await response.json();
+        setError(data.message || 'Username already taken');
       } else {
         const contentType = response.headers.get('Content-Type');
         const err = contentType && contentType.includes('application/json')
@@ -60,11 +105,22 @@ const Signup: React.FC = () => {
           <input
             type="text"
             value={username}
-            onChange={e => setUsername(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)}
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Enter username"
             required
           />
+          {username && (
+            <p className="text-sm mt-1">
+              {checkingUsername ? (
+                <span className="text-gray-500">🔍 Checking availability...</span>
+              ) : isUsernameAvailable === false ? (
+                <span className="text-red-600">❌ Username is already taken</span>
+              ) : isUsernameAvailable === true ? (
+                <span className="text-green-600">✅ Username is available</span>
+              ) : null}
+            </p>
+          )}
         </div>
 
         <div className="mb-6">
@@ -81,9 +137,32 @@ const Signup: React.FC = () => {
           />
         </div>
 
+        <div className="mb-6">
+          <label className="block mb-1 text-sm font-medium text-gray-700">
+            Confirm Password
+          </label>
+          <input
+            type="password"
+            value={confirmPassword}
+            onChange={e => setConfirmPassword(e.target.value)}
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Re-enter password"
+            required
+          />
+          {passwordsMatch === false && (
+            <p className="text-sm text-red-600 mt-1">❌ Passwords do not match</p>
+          )}
+          {passwordsMatch === true && (
+            <p className="text-sm text-green-600 mt-1">✅ Passwords match</p>
+          )}
+        </div>
+
         <button
           type="submit"
-          className="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition duration-200"
+          disabled={!isUsernameAvailable || !passwordsMatch}
+          className={`w-full py-2 rounded-lg transition duration-200 text-white 
+    ${isUsernameAvailable && passwordsMatch ? 'bg-green-600 hover:bg-green-700' : 'bg-gray-400 cursor-not-allowed'}
+  `}
         >
           Sign Up
         </button>

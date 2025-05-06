@@ -37,14 +37,16 @@ namespace MyBackend.Controllers
                 .FirstOrDefaultAsync(u => u.Username == newUser.Username);
 
             if (existing != null)
-                return BadRequest("Username already exists.");
+            {
+                // Return 409 Conflict and structured JSON message
+                return Conflict(new { message = "Username already taken" });
+            }
 
             _context.Users.Add(newUser);
             await _context.SaveChangesAsync();
 
             return Ok(new { message = "User registered!" });
         }
-
         // POST /user/login
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] User loginRequest)
@@ -166,6 +168,16 @@ namespace MyBackend.Controllers
                 .ToList();
 
             return Ok(routes);
+        }
+
+        [HttpGet("check-username")]
+        public async Task<IActionResult> CheckUsername([FromQuery] string username)
+        {
+            if (string.IsNullOrWhiteSpace(username))
+                return BadRequest(new { available = false, message = "Invalid username" });
+
+            var exists = await _context.Users.AnyAsync(u => u.Username == username);
+            return Ok(new { available = !exists });
         }
     }
 }
