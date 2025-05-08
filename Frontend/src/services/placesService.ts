@@ -21,35 +21,33 @@ export const fetchPlaceById = async (id: string) => {
     }
   };
 
-export const fetchPlacesByBounds = async (
-  bounds: any,
-  setVisiblePlaces: (places: place[]) => void,
-) => {
-  const { _sw, _ne } = bounds;
-
-  const url = `http://localhost:5001/places/by-bounds?swLat=${_sw.lat}&swLng=${_sw.lng}&neLat=${_ne.lat}&neLng=${_ne.lng}`;
-
-  try {
-    const response = await axios.get(url, {
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8',
-      }
-    });
-
-    const places: place[] = Array.isArray(response.data)
-      ? response.data
-      : Array.isArray(response.data.places)
-      ? response.data.places
-      : [];
-
-    setVisiblePlaces(places);
-
-  } catch (error) {
-    console.error("Error fetching places by bounds:", error);
-    toast.error("Failed to fetch places from backend.");
-  }
-};
+  export const fetchPlacesByBounds = async (bounds: any): Promise<place[]> => {
+    console.log("Fetching places by bounds:", bounds);
+    const { _sw, _ne } = bounds;
+  
+    const url = `http://localhost:5001/places/by-bounds?swLat=${_sw.lat}&swLng=${_sw.lng}&neLat=${_ne.lat}&neLng=${_ne.lng}`;
+  
+    try {
+      const response = await axios.get(url, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8",
+        },
+      });
+  
+      const places: place[] = Array.isArray(response.data)
+        ? response.data
+        : Array.isArray(response.data.places)
+        ? response.data.places
+        : [];
+  
+      return places;
+    } catch (error) {
+      console.error("Error fetching places by bounds:", error);
+      toast.error("Failed to fetch places from backend.");
+      return [];
+    }
+  };
 
 export const fetchSearchResults = async (query: string): Promise<place[]> => {
   const url = 'http://localhost:5001/places/name?Name=' + encodeURIComponent(query);

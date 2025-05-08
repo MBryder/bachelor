@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
 import Head from "../components/header";
-import Map from "../components/map";
+import MapWrapper from "../components/map/MapWrapper";
 import { fetchPlaceById } from "../services/placesService";
 import { useSelectedRoute } from "../context/SelectedRouteContext";
 import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 
 function Home() {
-  const {selectedRoute, setSelectedRoute} = useSelectedRoute();
-  const {setSelectedPlacesList,} = useSelectedPlaces();
+  const { selectedRoute, setSelectedRoute } = useSelectedRoute();
+  const { setSelectedPlacesList } = useSelectedPlaces();
 
-  // Load full place details when selectedRoute changes
   useEffect(() => {
     const loadRoutePlaces = async () => {
       if (!selectedRoute) return;
@@ -32,9 +31,9 @@ function Home() {
 
   return (
     <div className="bg-background-beige1 h-screen text-text-dark flex-row">
-      <Head/>
+      <Head />
       <div className="flex h-[calc(100%-60px)]">
-        <Map/>
+        <MapWrapper />
       </div>
     </div>
   );

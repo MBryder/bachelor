@@ -3,6 +3,7 @@ import { getTourismIcon } from "../utils/icons";
 import { fetchPlaceById } from "../services/placesService";
 import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 import { saveRoute, fetchRoutesByUser, shareRoute } from "../services/routeService";
+import { place } from "../utils/types";
 
 function Selectedbar({
   Submit,
@@ -10,7 +11,7 @@ function Selectedbar({
 }: {
   Submit: (transportMode: string) => void;
   handleChange: (value: boolean) => void;
-  visiblePlaces: any[];
+  visiblePlaces: place[];
 }) {
   const [checked, setChecked] = useState(false);
   const [customName, setCustomName] = useState("");

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Head from "../components/header";
-import Map from "../components/map";
+import MapWrapper from "../components/map/MapWrapper";
 import { fetchPlaceById } from "../services/placesService";
 import { fetchRouteById } from "../services/routeService";
 import { useSelectedPlaces } from "../context/SelectedPlacesContext";
@@ -37,7 +37,7 @@ function ShareRoute() {
         {error ? (
           <div className="m-auto text-center text-red-600">{error}</div>
         ) : (
-          <Map/>
+          <MapWrapper />
         )}
       </div>
     </div>
