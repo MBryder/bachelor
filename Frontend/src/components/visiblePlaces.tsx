@@ -8,8 +8,6 @@ import DetailedCard from "./PlacesCards/DetailedCard";
 function VisiblePlaces({
   visiblePlaces,
   fetchPlaces,
-  setSelectedPlacesList,
-  selectedPlacesRef,
   showMoreDetails,
   setShowMoreDetails
 }: {
@@ -18,7 +16,6 @@ function VisiblePlaces({
   showMoreDetails: string;
   setShowMoreDetails: (placeId: string) => void;
   setSelectedPlacesList: (fn: (prev: any[]) => any[]) => void;
-  selectedPlacesRef: React.RefObject<any[]>;
 }) {
   const { current: map } = useMap();
   const [hoveredPlaceId, setHoveredPlaceId] = useState<string | null>(null);
@@ -26,9 +23,10 @@ function VisiblePlaces({
   const refMap = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
   const handlePlaceClick = (place: any) => {
-    const [longitude, latitude] = place.geometry.coordinates;
+    const longitude = place.longitude;
+    const latitude = place.latitude;
     flyToLocation(map, longitude, latitude);
-    setShowMoreDetails(place.properties.placeId);
+    setShowMoreDetails(place.placeId);
   };
 
   useEffect(() => {
@@ -49,8 +47,8 @@ function VisiblePlaces({
           </h1>
           <ul className="px-2 overflow-y-auto flex-[14] scrollbar">
             {visiblePlaces.map((place: any) => {
-              const isHovered = hoveredPlaceId === place.properties.placeId;
-              const placeId = place.properties.placeId;
+              const isHovered = hoveredPlaceId === place.placeId;
+              const placeId = place.placeId;
 
               return (
                 <div
@@ -62,8 +60,6 @@ function VisiblePlaces({
                   {showMoreDetails === placeId ? (
                     <DetailedCard
                     place={place}
-                    setSelectedPlacesList={setSelectedPlacesList}
-                    selectedPlacesRef={selectedPlacesRef}
                     setShowMoreDetails={setShowMoreDetails}
                     />
                   ) : (
@@ -72,27 +68,23 @@ function VisiblePlaces({
                       onHover={setHoveredPlaceId}
                       onClick={() => handlePlaceClick(place)}
                       isHovered={isHovered}
-                      setSelectedPlacesList={setSelectedPlacesList}
-                      selectedPlacesRef={selectedPlacesRef}
-                      showMoreDetails={showMoreDetails}
                     />
                   )}
 
                   {isHovered && (
                     <PopupMarker
                       key={`hover-marker-${placeId}`}
-                      longitude={place.geometry.coordinates[0]}
-                      latitude={place.geometry.coordinates[1]}
-                      title={place.properties.name}
+                      longitude={place.longitude}
+                      latitude={place.latitude}
+                      title={place.name}
                       image={
-                        place.properties.images?.[0]?.imageUrl ||
+                        place.images?.[0]?.imageUrl ||
                         "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"
                       }
                       description={
-                        place.properties.details?.editorialOverview ||
+                        place.details?.editorialOverview ||
                         "No description available."
                       }
-                      setSelectedPlacesList={setSelectedPlacesList}
                       place={place}
                       color="orange"
                       titleON={showMoreDetails !== placeId}

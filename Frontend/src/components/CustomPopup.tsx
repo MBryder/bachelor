@@ -1,13 +1,13 @@
 import { useMap } from "@vis.gl/react-maplibre";
 import { useEffect, useRef, useState } from "react";
+import { place } from "../utils/types";
+import { useAddToList } from "../helper/updateList";
 
 interface CustomPopupProps {
   longitude: number;
   latitude: number;
   onClose: () => void;
-  place: any;
-  setSelectedPlacesList: (newList: any[]) => void;
-  selectedPlacesRef: React.RefObject<any[]>;
+  place: place;
   setShowMoreDetails: (placeId: string) => void;
 }
 
@@ -16,21 +16,20 @@ const CustomPopup = ({
   latitude,
   onClose,
   place,
-  setSelectedPlacesList,
-  selectedPlacesRef,
   setShowMoreDetails
 }: CustomPopupProps) => {
+  const addToList = useAddToList();
   const { current: map } = useMap();
   const [position, setPosition] = useState<{ x: number; y: number } | null>(null);
   const popupRef = useRef<HTMLDivElement>(null);
 
-  const title = place.properties.name;
-  const rating = place.properties.rating;
-  const userRatingsTotal = place.properties.userRatingsTotal;
-  const vicinity = place.properties.vicinity;
+  const title = place.name;
+  const rating = place.rating;
+  const userRatingsTotal = place.userRatingsTotal;
+  const vicinity = place.vicinity;
 
   const image =
-    place.properties.images?.[0]?.imageUrl ||
+    place.images?.[0]?.imageUrl ||
     "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826";
 
   const formatPlaceName = (name: string) => {
@@ -122,31 +121,15 @@ const CustomPopup = ({
           <div className="flex flex-col items-center justify-center m-2 w-[40%]">
             <button
               className="mt-2 w-24 h-6 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-2xl text-parafraph-1"
-              onClick={(e) => {
-                e.stopPropagation();
-
-                const alreadyExists = selectedPlacesRef.current?.some(
-                  (p) => p?.properties?.placeId === place?.properties?.placeId
-                );
-
-                if (alreadyExists) {
-                  alert("This place is already in your route.");
-                  return;
-                }
-
-                if ((selectedPlacesRef.current?.length || 0) >= 20) {
-                  alert("You can only add up to 20 places in your route.");
-                  return;
-                }
-
-                setSelectedPlacesList(prev => [...prev, place]);
+              onClick={() => {
+                addToList(place);
               }}
             >
               + Add
             </button>
             <button
               className="mt-2 w-24 h-6 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-2xl text-parafraph-1"
-              onClick={() => setShowMoreDetails(place.properties.placeId)}
+              onClick={() => setShowMoreDetails(place.placeId)}
             >
               More info
             </button>

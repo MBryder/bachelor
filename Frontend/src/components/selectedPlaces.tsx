@@ -1,15 +1,12 @@
 import { useState, useEffect } from "react";
 import { getTourismIcon } from "../utils/icons";
 import { fetchPlaceById } from "../services/placesService";
+import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 
 function Selectedbar({
-  selectedPlaces,
   Submit,
   handleChange,
-  setSelectedPlacesList,
 }: {
-  selectedPlaces: any[];
-  setSelectedPlacesList: (places: any[]) => void;
   Submit: (transportMode: string) => void;
   handleChange: (value: boolean) => void;
   visiblePlaces: any[];
@@ -23,6 +20,7 @@ function Selectedbar({
   const [dropdownOpen, setDropdownOpen] = useState(false); // til dropdown menu til "mode of transportation". 
   const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved">("idle"); // til at improve "Save route" button. 
   const [selectedRouteName, setSelectedRouteName] = useState<string | null>(null); // til at vise navn på valgt route fra DB fra users konto. 
+  const {selectedPlacesList, setSelectedPlacesList } = useSelectedPlaces(); // til at vise de steder som er valgt i selectedPlaces.
 
 
   const handleCheckboxChange = () => {
@@ -32,10 +30,11 @@ function Selectedbar({
 
   useEffect(() => {
     Submit(transportMode); // Reset checkbox when selectedPlaces changes
-  }, [selectedPlaces, transportMode]);
+    console.log("Selected places list updated:", selectedPlacesList);
+  }, [selectedPlacesList, transportMode]);
 
   const handleRemove = (indexToRemove: number) => {
-    const updatedList = selectedPlaces.filter((_, index) => index !== indexToRemove);
+    const updatedList = selectedPlacesList.filter((_, index) => index !== indexToRemove);
     setSelectedPlacesList([...updatedList]); // Force immutability
   };
 
@@ -53,8 +52,8 @@ function Selectedbar({
       return;
     }
 
-    const cleanedPlaces = [...selectedPlaces];
-    if (cleanedPlaces[0]?.properties?.placeId === "user-location") {
+    const cleanedPlaces = [...selectedPlacesList];
+    if (cleanedPlaces[0]?.placeId === "user-location") {
       cleanedPlaces.shift();
     }
 
@@ -67,7 +66,7 @@ function Selectedbar({
 
     const routeData = {
       customName: customName.trim(),
-      waypoints: cleanedPlaces.map(place => place.properties.placeId),
+      waypoints: cleanedPlaces.map(place => place.placeId),
       transportationMode: transportMode
     };
 
@@ -150,9 +149,9 @@ function Selectedbar({
   };
 
   const handleSetAsStart = (index: number) => {
-    if (index <= 0 || index >= selectedPlaces.length) return;
+    if (index <= 0 || index >= selectedPlacesList.length) return;
 
-    const updatedList = [...selectedPlaces];
+    const updatedList = [...selectedPlacesList];
     const [selectedPlace] = updatedList.splice(index, 1);
     updatedList.unshift(selectedPlace);
 
@@ -167,28 +166,24 @@ function Selectedbar({
             Selected places
           </h1>
           <ul className="px-2 overflow-y-auto h-fit scrollbar flex-[6]">
-            {selectedPlaces.map((place: any, index: number) => (
+            {selectedPlacesList.map((place: any, index: number) => (
               <li
                 key={index}
-                className={`pb-2 my-2 border-b flex items-center justify-between
-      ${index === 0
-                    ? "bg-yellow-100 rounded-xl"
-                    : "border-b border-primary-brown"
-                  }`}
+                className={`pb-2 my-2 border-b flex items-center justify-between border-primary-brown`}
               >
                 <div className="flex items-center justify-between w-full -ml-1">
                   <div className="flex items-center">
-                    <div className="mr-2">{getTourismIcon(place.properties.tourism)}</div>
+                    <div className="mr-2">{getTourismIcon(place.tourism)}</div>
                     <div>
                       <h2 className="text-primary-brown text-heading-4">
-                        {place.properties.name}
+                        {place.name}
                         {index === 0 && (
                           <span className="text-xs text-primary-brown/60 ml-1 italic">
                             (starting place)
                           </span>
                         )}
                       </h2>
-                      <p>{place.properties.address}</p>
+                      <p>{place.address}</p>
                     </div>
                   </div>
 
@@ -202,7 +197,7 @@ function Selectedbar({
                       </button>
                     )}
                     <button
-                      className="text-sm hover:text-red-600 text-primary-brown"
+                      className="text-sm hover:text-red-600 text-primary-brown self-end"
                       onClick={() => handleRemove(index)}
                     >
                       X

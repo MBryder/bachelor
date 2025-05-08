@@ -3,38 +3,12 @@ import Head from "../components/header";
 import Map from "../components/map";
 import { fetchPlaceById } from "../services/placesService";
 import { useSelectedRoute } from "../context/SelectedRouteContext";
-import { useSyncedState } from "../hooks/useSyncedState";
+import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 
 function Home() {
   const [visiblePlaces, setVisiblePlaces] = useState<any[]>([]);
-  const { selectedRoute, setSelectedRoute } = useSelectedRoute();
-  const [selectedPlacesList, setSelectedPlacesList, selectedPlacesRef] = useSyncedState<any[]>([]);
-
-  const handleAddPlace = async (place: any) => {
-    const resultPlace = await fetchPlaceById(place.placeId);
-  
-    if (!resultPlace) {
-      console.error("Place could not be fetched.");
-      return;
-    }
-  
-    const currentList = selectedPlacesRef.current;
-    const alreadyExists = currentList.some(
-      (p) => p?.properties?.placeId === resultPlace?.properties?.placeId
-    );
-  
-    if (alreadyExists) {
-      alert("This place is already in your route.");
-      return;
-    }
-
-    if ((selectedPlacesRef.current?.length || 0) >= 3) {
-      alert("You can only add up to 20 places in your route.");
-      return;
-    }
-  
-    setSelectedPlacesList([...currentList, resultPlace]);
-  };
+  const {selectedRoute, setSelectedRoute} = useSelectedRoute();
+  const {setSelectedPlacesList,} = useSelectedPlaces();
 
   // Load full place details when selectedRoute changes
   useEffect(() => {
@@ -59,16 +33,11 @@ function Home() {
 
   return (
     <div className="bg-background-beige1 h-screen text-text-dark flex-row">
-      <Head
-        handleAddPlace={handleAddPlace}
-      />
+      <Head/>
       <div className="flex h-[calc(100%-60px)]">
         <Map
           setVisiblePlaces={setVisiblePlaces}
           visiblePlaces={visiblePlaces}
-          selectedPlacesList={selectedPlacesList}
-          setSelectedPlacesList={setSelectedPlacesList}
-          selectedPlacesRef={selectedPlacesRef}
         />
       </div>
     </div>

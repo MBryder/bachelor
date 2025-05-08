@@ -13,8 +13,8 @@ namespace MyBackend.Models
         public string? IconBackgroundColor { get; set; }
         public string? IconMaskBaseUri { get; set; }
         public bool? OpenNow { get; set; } // From opening_hours.open_now
-        public double Latitude { get; set; } // geometry.location.lat
-        public double Longitude { get; set; } // geometry.location.lng
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
         public double? ViewportNorthEastLat { get; set; }
         public double? ViewportNorthEastLng { get; set; }
         public double? ViewportSouthWestLat { get; set; }

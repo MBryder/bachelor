@@ -1,20 +1,22 @@
-import React from "react";
+import { useAddToList, useRemoveFromList } from "../../helper/updateList";
+import { place } from "../../utils/types";
+import { useInList } from "../../helper/inList";
 
 type DetailedCardProps = {
-  place: any;
-  setSelectedPlacesList: (fn: (prev: any[]) => any[]) => void;
-  selectedPlacesRef: React.RefObject<any[]>;
+  place: place;
   setShowMoreDetails: (id: string) => void;
 };
 
 const DetailedCard = ({
   place,
-  setSelectedPlacesList,
   setShowMoreDetails,
-  selectedPlacesRef,
 }: DetailedCardProps) => {
+  const addToList = useAddToList();
+  const removeFromList = useRemoveFromList();
+  const inList = useInList();
+
   const { name, rating, userRatingsTotal, images, details } =
-    place.properties;
+    place;
 
   const imageUrl =
     images?.[0]?.imageUrl ||
@@ -108,30 +110,26 @@ const DetailedCard = ({
         )}
       </div>
 
-      <button
-        onClick={(e) => {
+      {inList(place.placeId) ? (
+        <button
+          className="mt-4 w-full py-2 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-xl text-primary-brown"
+          onClick={() => removeFromList(place.placeId)}
+        >
+          - Remove
+        </button>
+        ) : (
+        <button
+          onClick={(e) => {
           e.stopPropagation();
+          addToList(place)
+          }}
+          className="mt-4 w-full py-2 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-xl text-primary-brown"
+        >
+          + Add to list
+        </button>
+      )}
 
-          const alreadyExists = selectedPlacesRef.current?.some(
-            (p) => p?.properties?.placeId === place?.properties?.placeId
-          );
-
-          if (alreadyExists) {
-            alert("This place is already in your route.");
-            return;
-          }
-
-          if ((selectedPlacesRef.current?.length || 0) >= 20) {
-            alert("You can only add up to 20 places in your route.");
-            return;
-          }
-
-          setSelectedPlacesList(prev => [...prev, place]);
-        }}
-        className="mt-4 w-full py-2 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-xl text-primary-brown"
-      >
-        + Add to list
-      </button>
+      
     </li>
   );
 };

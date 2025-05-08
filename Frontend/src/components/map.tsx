@@ -11,8 +11,9 @@ import Filter from "./filter";
 import { useUserLocation } from "../hooks/useUserLocation";
 import { useAnimatedRoutePoint } from "../hooks/useAnimatedRoutePoint";
 import type { FeatureCollection } from "geojson";
+import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 
-function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, setSelectedPlacesList, selectedPlacesRef }: any) {
+function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
   const mapRef = useRef<any>(null);
   const [minCost, setMinCost] = useState<number | null>(null);
   const [route, setRoute] = useState<number[]>([]);
@@ -23,12 +24,13 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
   const [filterTypes, setFilterTypes] = useState<string[]>([]);
   const [showMoreDetails, setShowMoreDetails] = useState("");
   const [zoom, setZoom] = useState<number>(10);
+  const { selectedPlacesList, setSelectedPlacesList,} = useSelectedPlaces();
 
   useAnimatedRoutePoint(routeCoordinates, setAnimatedPoint);
 
   const filteredVisiblePlaces = filterTypes.length > 0
     ? visiblePlaces.filter((place: any) =>
-        place.properties?.details?.types?.some((type: string) => filterTypes.includes(type))
+        place.details?.types?.some((type: string) => filterTypes.includes(type))
       )
     : visiblePlaces;
 
@@ -53,14 +55,14 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
 
     if (newChecked) {
       const alreadyAdded = selectedPlacesList.some(
-        (place: any) => place?.properties?.placeId === "user-location"
+        (place: any) => place?.placeId === "user-location"
       );
       if (!alreadyAdded) {
         setSelectedPlacesList([userLocationFeature, ...selectedPlacesList]);
       }
     } else {
       const updatedList = selectedPlacesList.filter(
-        (place: any) => place?.properties?.placeId !== "user-location"
+        (place: any) => place?.placeId !== "user-location"
       );
       setSelectedPlacesList(updatedList);
     }
@@ -99,10 +101,10 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: place.geometry.coordinates,
+        coordinates: [place.longitude, place.latitude],
       },
       properties: {
-        placeId: place.properties.placeId,
+        placeId: place.placeId,
       },
     })),
   };
@@ -131,15 +133,12 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
                   }
                 }}
                 setSelectedPlacesList={setSelectedPlacesList}
-                selectedPlacesRef={selectedPlacesRef}
                 showMoreDetails={showMoreDetails}
                 setShowMoreDetails={setShowMoreDetails}
               />
               <Filter filterTypes={filterTypes} setFilterTypes={setFilterTypes} />
             </div>
             <Selectedbar
-              selectedPlaces={selectedPlacesList}
-              setSelectedPlacesList={setSelectedPlacesList}
               Submit={callSubmit}
               handleChange={handleChange}
               visiblePlaces={visiblePlaces}
@@ -202,30 +201,29 @@ function MapComponent({ setVisiblePlaces, visiblePlaces, selectedPlacesList, set
           {zoom >= 14 && [...selectedPlacesList, ...filteredVisiblePlaces.filter(
             (vp: any) =>
               !selectedPlacesList.some(
-                (sp: any) => sp.properties.placeId === vp.properties.placeId
+                (sp: any) => sp.placeId === vp.placeId
               )
           )].map((place: any) => {
-            const placeId = place.properties.placeId;
+            const placeId = place.placeId;
             const isSelected = selectedPlacesList.some(
-              (sp: any) => sp.properties.placeId === placeId
+              (sp: any) => sp.placeId === placeId
             );
 
             return (
               <PopupMarker
                 key={placeId}
-                longitude={place.geometry.coordinates[0]}
-                latitude={place.geometry.coordinates[1]}
-                title={place.properties.name}
+                longitude={place.longitude}
+                latitude={place.latitude}
+                title={place.name}
                 image={
-                  place.properties.images?.[0]?.imageUrl ||
+                  place.images?.[0]?.imageUrl ||
                   "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"
                 }
                 description={
-                  place.properties.details?.editorialOverview ||
+                  place.details?.editorialOverview ||
                   "No description available."
                 }
                 setSelectedPlacesList={setSelectedPlacesList}
-                selectedPlacesRef={selectedPlacesRef}
                 place={place}
                 color={isSelected ? "blue" : "red"}
                 setShowMoreDetails={setShowMoreDetails}

@@ -122,8 +122,8 @@ export const handleSubmit = async (
     if (selectedPlacesList.length < 2) return;
 
     const arrayOfGeo = selectedPlacesList.map(place => ({
-        lat: place.geometry?.coordinates[1],
-        lng: place.geometry?.coordinates[0]
+        lat: place.latitude,
+        lng: place.longitude,
     }));
 
     try {
