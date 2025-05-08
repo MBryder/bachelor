@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { fetchSearchResults, fetchPlaceById } from '../services/placesService';
 import { place } from "../utils/types"
@@ -8,6 +8,7 @@ import { useAddToList, useRemoveFromList } from '../helper/updateList';
 
 function Head(){
     const navigate = useNavigate();
+    const location = useLocation(); // Get the current route
     const [search, setSearch] = useState('');
     const debounceTimeout = useRef<number | null>(null);
     const [results, setResults] = useState<place[]>([]);
@@ -76,22 +77,28 @@ function Head(){
             </div>
 
             {/* Center - Buttons + Search */}
-            <div className="flex border-1 border-primary-brown w-1/3 rounded-4xl bg-background-beige1 shadow-lg items-center relative">
+            <div className="flex  w-1/3 rounded-4xl items-center relative">
                 <button
                     onClick={() => navigate('/home')}
-                    className="hover:underline hover:cursor-pointer flex-1/6 border-r-1 py-2 px-4 border-primary-brown"
+                    className={`hover:underline hover:cursor-pointer flex-1/5 py-2 px-4 ${
+                        location.pathname === '/home' ? 'underline' : ''
+                    }`}
                 >
-                    <p className="text-primary-brown text-heading-3">Map</p>
+                    <p className="text-primary-brown text-heading-3">Home</p>
                 </button>
                 <button
                     onClick={() => navigate('/profile')}
-                    className="hover:underline hover:cursor-pointer flex-1/5 border-r-1 py-2 px-4 border-primary-brown"
+                    className={`hover:underline hover:cursor-pointer flex-1/5 py-2 px-4 ${
+                        location.pathname === '/profile' ? 'underline' : ''
+                    }`}
                 >
                     <p className="text-primary-brown text-heading-3">My profile</p>
                 </button>
                 <button
                     onClick={() => navigate('/about')}
-                    className="hover:underline hover:cursor-pointer flex-1/5 border-x-1 py-2 px-4 border-primary-brown"
+                    className={`hover:underline hover:cursor-pointer flex-1/5 py-2 px-4 ${
+                        location.pathname === '/about' ? 'underline' : ''
+                    }`}
                 >
                     <p className="text-primary-brown text-heading-3">About</p>
                 </button>
@@ -103,7 +110,7 @@ function Head(){
                         value={search}
                         onChange={e => setSearch(e.target.value)}
                         placeholder="Search"
-                        className="w-full hover:cursor-pointer border-l-1 py-2 px-4 border-primary-brown text-primary-brown text-heading-3 focus:rounded-bl-none focus:outline-none"
+                        className="w-full hover:cursor-pointer border-b-2 px-2 border-primary-brown text-primary-brown text-heading-3 focus:rounded-bl-none focus:outline-none"
                         onFocus={() => { if (results.length > 0) setShowDropdown(true); }}
                         onBlur={() => setTimeout(() => setShowDropdown(false), 150)}
                     />

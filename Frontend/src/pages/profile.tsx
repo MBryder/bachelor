@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ProfileHeader from '../components/ProfileHeader';
+import ProfileHeader from '../components/header';
 import { useSelectedRoute } from '../context/SelectedRouteContext';
 
 interface Route {

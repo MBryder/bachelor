@@ -6,6 +6,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 const Signup: React.FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -62,6 +63,7 @@ const Signup: React.FC = () => {
         },
         body: JSON.stringify({
           username,
+          email,
           password,
         }),
       });
@@ -120,28 +122,42 @@ const Signup: React.FC = () => {
           )}
 
           <div className="mb-4">
+            <label className="block mb-1 text-sm text-primary-brown">Username</label>
+            <div className="flex items-center border-b-2 border-primary-brown">
+              <input
+                type="text"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                className="flex-grow px-4 bg-transparent focus:outline-none text-primary-brown"
+                placeholder="Enter username"
+                required
+              />
+              {username && (
+                <div className="ml-2 text-sm">
+                  {checkingUsername ? (
+                    <span className="text-gray-500">🔍</span>
+                  ) : isUsernameAvailable === false ? (
+                    <span className="text-red-600 text-xs">❌</span>
+                  ) : isUsernameAvailable === true ? (
+                    <span className="text-green-600 text-xs">✅</span>
+                  ) : null}
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="mb-6">
             <label className="block mb-1 text-sm text-primary-brown">
-              Username
+              Email
             </label>
             <input
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              className="w-full px-4 py-2 border-b-2 border-primary-brown focus:outline-none bg-transparent"
-              placeholder="Enter username"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full px-4 border-b-2 border-primary-brown focus:outline-none bg-transparent"
+              placeholder="Enter email"
               required
             />
-            {username && (
-              <p className="text-sm mt-1">
-                {checkingUsername ? (
-                  <span className="text-gray-500">🔍 Checking availability...</span>
-                ) : isUsernameAvailable === false ? (
-                  <span className="text-red-600">❌ Username is already taken</span>
-                ) : isUsernameAvailable === true ? (
-                  <span className="text-green-600">✅ Username is available</span>
-                ) : null}
-              </p>
-            )}
           </div>
 
           <div className="mb-6">
@@ -152,7 +168,7 @@ const Signup: React.FC = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2 border-b-2 border-primary-brown focus:outline-none bg-transparent"
+              className="w-full px-4 border-b-2 border-primary-brown focus:outline-none bg-transparent"
               placeholder="Enter password"
               required
             />
@@ -166,25 +182,22 @@ const Signup: React.FC = () => {
               type="password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
-              className="w-full px-4 py-2 border-b-2 border-primary-brown focus:outline-none bg-transparent"
+              className="w-full px-4 border-b-2 border-primary-brown focus:outline-none bg-transparent"
               placeholder="Re-enter password"
               required
             />
-            {passwordsMatch === false && (
-              <p className="text-sm text-red-600 mt-1">❌ Passwords do not match</p>
-            )}
-            {passwordsMatch === true && (
-              <p className="text-sm text-green-600 mt-1">✅ Passwords match</p>
-            )}
+            <p className={`text-sm text-primary-brown transition-opacity duration-200 ${passwordsMatch === false ? 'opacity-100' : 'opacity-0'}`}>
+              Passwords do not match
+            </p>
           </div>
 
           <button
             type="submit"
             disabled={!isUsernameAvailable || !passwordsMatch}
-            className={`w-full py-2 rounded-lg transition duration-200 text-white 
+            className={`w-full py-2 rounded-lg transition duration-200 border-1 
               ${isUsernameAvailable && passwordsMatch
-                ? 'bg-green-600 hover:bg-green-700'
-                : 'bg-gray-400 cursor-not-allowed'}
+                ? 'bg-primary-brown hover:bg-opacity-80 text-white'
+                : 'bg-background-beige1 border- hover:bg-opacity-80 text-primary-brown cursor-not-allowed'}
             `}
           >
             Sign Up

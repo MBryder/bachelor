@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileHeader from '../components/ProfileHeader';
+import ProfileHeader from '../components/header';
 
 const About: React.FC = () => {
     return (

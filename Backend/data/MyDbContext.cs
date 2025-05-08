@@ -32,8 +32,22 @@ namespace MyBackend.Data
 
             // Seed users (optional, for testing)
             modelBuilder.Entity<User>().HasData(
-                new User { Id = 1, Username = "admin", Password = "admin123" },
-                new User { Id = 2, Username = "test", Password = "password" }
+                new User
+                {
+                    Id = 1,
+                    Username = "admin",
+                    Email = "admin@mail.com",
+                    Password = "admin123",
+                    DateOfCreation = new DateTime(2024, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                },
+                new User
+                {
+                    Id = 2,
+                    Username = "test",
+                    Email = "test@mail.com",
+                    Password = "password",
+                    DateOfCreation = new DateTime(2024, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                }
             );
 
             // Place-Photo: one-to-many

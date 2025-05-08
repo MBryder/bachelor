@@ -5,14 +5,21 @@ using System.ComponentModel.DataAnnotations;
 namespace MyBackend.Models
 {
     public class User
-    {
-        public int? Id { get; set; }
+{
+    public int Id { get; set; }
 
-        [Required]
-        public string Username { get; set; } = null!;
+    public DateTime DateOfCreation { get; set; } = DateTime.UtcNow;
 
-        public string? Password { get; set; }
+    [Required, EmailAddress]
+    public string Email { get; set; } = null!;
 
-        public List<Route>? Routes { get; set; }
-    }
+    [Required]
+    public string Username { get; set; } = null!;
+
+    [Required]
+    public string Password { get; set; } = null!; // Store hashed passwords only
+
+    public List<Route> Routes { get; set; } = new(); // Default to empty list
+}
+
 }
