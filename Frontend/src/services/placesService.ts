@@ -79,3 +79,10 @@ export const fetchSearchResults = async (query: string): Promise<place[]> => {
     return [];
   }
 };
+
+
+export async function fetchRouteById(routeId: string | number) {
+  const response = await fetch(`http://localhost:5001/routes/${routeId}`);
+  if (!response.ok) throw new Error("Failed to fetch shared route.");
+  return await response.json();
+}

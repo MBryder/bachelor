@@ -12,8 +12,9 @@ import { useUserLocation } from "../hooks/useUserLocation";
 import { useAnimatedRoutePoint } from "../hooks/useAnimatedRoutePoint";
 import type { FeatureCollection } from "geojson";
 import { useSelectedPlaces } from "../context/SelectedPlacesContext";
+import { place } from "../utils/types";
 
-function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
+function MapComponent() {
   const mapRef = useRef<any>(null);
   const [minCost, setMinCost] = useState<number | null>(null);
   const [route, setRoute] = useState<number[]>([]);
@@ -25,6 +26,8 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
   const [showMoreDetails, setShowMoreDetails] = useState("");
   const [zoom, setZoom] = useState<number>(10);
   const { selectedPlacesList, setSelectedPlacesList,} = useSelectedPlaces();
+  const [visiblePlaces, setVisiblePlaces] = useState<any[]>([]);
+  
 
   useAnimatedRoutePoint(routeCoordinates, setAnimatedPoint);
 
@@ -43,22 +46,21 @@ function MapComponent({ setVisiblePlaces, visiblePlaces }: any) {
       return;
     }
 
-    const userLocationFeature = {
-      geometry: {
-        coordinates: [userLocation.lng, userLocation.lat],
-      },
-      properties: {
-        placeId: "user-location",
-        name: "Your Location",
-      },
-    };
+    const userLocationPlace = {
+      id: "user-location",
+      placeId: "user-location",
+      name: "Your Location",
+      details: {},
+      latitude: userLocation.lat,
+      longitude: userLocation.lng,
+    }
 
     if (newChecked) {
       const alreadyAdded = selectedPlacesList.some(
-        (place: any) => place?.placeId === "user-location"
+        (place: place) => place?.placeId === "user-location"
       );
       if (!alreadyAdded) {
-        setSelectedPlacesList([userLocationFeature, ...selectedPlacesList]);
+        setSelectedPlacesList([userLocationPlace, ...selectedPlacesList]);
       }
     } else {
       const updatedList = selectedPlacesList.filter(

@@ -6,7 +6,6 @@ import { useSelectedRoute } from "../context/SelectedRouteContext";
 import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 
 function Home() {
-  const [visiblePlaces, setVisiblePlaces] = useState<any[]>([]);
   const {selectedRoute, setSelectedRoute} = useSelectedRoute();
   const {setSelectedPlacesList,} = useSelectedPlaces();
 
@@ -35,10 +34,7 @@ function Home() {
     <div className="bg-background-beige1 h-screen text-text-dark flex-row">
       <Head/>
       <div className="flex h-[calc(100%-60px)]">
-        <Map
-          setVisiblePlaces={setVisiblePlaces}
-          visiblePlaces={visiblePlaces}
-        />
+        <Map/>
       </div>
     </div>
   );

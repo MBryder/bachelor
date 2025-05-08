@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Profile from "./pages/profile";
 import About from "./pages/About";
+import ShareRoute from "./pages/ShareRoute";
 import "./App.css";
 import PrivateRoute from "./components/privateRoute";
 
@@ -20,7 +21,8 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-
+            <Route path="/shared-route/:routeId" element={<ShareRoute />} />
+            {/* Private Routes */}
             <Route
               path="/home"
               element={

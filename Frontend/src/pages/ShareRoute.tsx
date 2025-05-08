@@ -1,0 +1,46 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import Head from "../components/header";
+import Map from "../components/map";
+import { fetchRouteById, fetchPlaceById } from "../services/placesService"; // assumes you add `fetchRouteById`
+import { place } from "../utils/types";
+
+function ShareRoute() {
+  const { routeId } = useParams();
+  const [places, setPlaces] = useState<place[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const loadRoute = async () => {
+      if (!routeId) return;
+
+      try {
+        const route = await fetchRouteById(routeId); // returns { waypoints: string[] }
+        const placeDetails = await Promise.all(
+          route.waypoints.map((id: string) => fetchPlaceById(id))
+        );
+        setPlaces(placeDetails);
+      } catch (err) {
+        console.error("Error loading shared route:", err);
+        setError("Failed to load route. Please check the link.");
+      }
+    };
+
+    loadRoute();
+  }, [routeId]);
+
+  return (
+    <div className="bg-background-beige1 h-screen text-text-dark flex-row">
+      <Head />
+      <div className="flex h-[calc(100%-60px)]">
+        {error ? (
+          <div className="m-auto text-center text-red-600">{error}</div>
+        ) : (
+          <Map/>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default ShareRoute;

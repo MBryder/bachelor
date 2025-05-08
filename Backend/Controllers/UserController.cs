@@ -5,6 +5,7 @@ using MyBackend.Models;
 using MyBackend.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
+using BCrypt.Net;
 
 namespace MyBackend.Controllers
 {
@@ -31,37 +32,48 @@ namespace MyBackend.Controllers
 
         // POST /user/register
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] User newUser)
+        public async Task<IActionResult> Register([FromBody] SignupRequest newUser)
         {
             var existing = await _context.Users
                 .FirstOrDefaultAsync(u => u.Username == newUser.Username);
 
             if (existing != null)
             {
-                // Return 409 Conflict and structured JSON message
                 return Conflict(new { message = "Username already taken" });
             }
 
-            _context.Users.Add(newUser);
+            // Map SignupRequest to User
+            var user = new User
+            {
+                Username = newUser.Username,
+                Email = newUser.Email,
+                Password = BCrypt.Net.BCrypt.HashPassword(newUser.Password),
+                DateOfCreation = DateTime.UtcNow
+            };
+
+            _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
             return Ok(new { message = "User registered!" });
         }
+
+
         // POST /user/login
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] User loginRequest)
+        public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u =>
-                u.Username == loginRequest.Username &&
-                u.Password == loginRequest.Password);
+            var user = await _context.Users
+                .FirstOrDefaultAsync(u => u.Username == loginRequest.Username);
 
-            if (user == null)
-                return Unauthorized("Invalid username or password.");
+            if (user == null || !BCrypt.Net.BCrypt.Verify(loginRequest.Password, user.Password))
+            {
+                return Unauthorized(new { message = "Invalid username or password." });
+            }
 
-            // Generate the JWT using JwtHelper
             var token = JwtHelper.GenerateToken(user, _config);
             return Ok(new { token });
         }
+
 
         // GET /user/test-places
         [HttpGet("test-places")]

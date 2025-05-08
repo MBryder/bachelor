@@ -4,6 +4,7 @@ using MyBackend.Models;
 using System.Collections.Generic;
 using System.Text.Json;
 using RouteModel = MyBackend.Models.Route;
+using BCrypt.Net;
 
 namespace MyBackend.Data
 {
@@ -21,6 +22,7 @@ namespace MyBackend.Data
         public DbSet<Image> Images { get; set; }
         public DbSet<Details> Details { get; set; }
         public DbSet<RouteModel> Routes { get; set; }
+        public DbSet<SharedRoute> SharedRoutes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -29,26 +31,6 @@ namespace MyBackend.Data
             // Declare Username as a key so it can be used as a foreign key
             modelBuilder.Entity<User>()
                 .HasAlternateKey(u => u.Username);
-
-            // Seed users (optional, for testing)
-            modelBuilder.Entity<User>().HasData(
-                new User
-                {
-                    Id = 1,
-                    Username = "admin",
-                    Email = "admin@mail.com",
-                    Password = "admin123",
-                    DateOfCreation = new DateTime(2024, 01, 01, 0, 0, 0, DateTimeKind.Utc)
-                },
-                new User
-                {
-                    Id = 2,
-                    Username = "test",
-                    Email = "test@mail.com",
-                    Password = "password",
-                    DateOfCreation = new DateTime(2024, 01, 01, 0, 0, 0, DateTimeKind.Utc)
-                }
-            );
 
             // Place-Photo: one-to-many
             modelBuilder.Entity<Place>()
