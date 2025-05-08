@@ -6,7 +6,7 @@ namespace MyBackend.Models
     public class Place
     {
         public int Id { get; set; } // Primary key
-        public string PlaceId { get; set; } // Google place_id
+        public string PlaceId { get; set; }
         public string Name { get; set; }
         public string? BusinessStatus { get; set; }
         public string Icon { get; set; }

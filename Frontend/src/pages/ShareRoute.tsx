@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Head from "../components/header";
 import Map from "../components/map";
-import { fetchRouteById, fetchPlaceById } from "../services/placesService"; // assumes you add `fetchRouteById`
-import { place } from "../utils/types";
+import { fetchPlaceById } from "../services/placesService";
+import { fetchRouteById } from "../services/routeService";
+import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 
 function ShareRoute() {
   const { routeId } = useParams();
-  const [places, setPlaces] = useState<place[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const {setSelectedPlacesList,} = useSelectedPlaces();
 
   useEffect(() => {
     const loadRoute = async () => {
@@ -19,7 +20,7 @@ function ShareRoute() {
         const placeDetails = await Promise.all(
           route.waypoints.map((id: string) => fetchPlaceById(id))
         );
-        setPlaces(placeDetails);
+        setSelectedPlacesList(placeDetails);
       } catch (err) {
         console.error("Error loading shared route:", err);
         setError("Failed to load route. Please check the link.");

@@ -62,3 +62,25 @@ export const saveRoute = async (username: string, routeData: any) => {
       throw err; // re-throw to let the component handle it
     }
   };
+
+
+    export const fetchRouteById = async (routeId: string) => {
+        try {
+        const response = await fetch(`${API_BASE}/routes/${routeId}`, {
+            method: "GET",
+            headers: {
+            "Content-Type": "application/json",
+            }
+        });
+    
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Failed to fetch route: ${errorText}`);
+        }
+    
+        return await response.json();
+        } catch (err) {
+        console.error("fetchRouteById failed:", err);
+        throw err; // re-throw to let the component handle it
+        }
+    };

@@ -59,6 +59,9 @@ function Selectedbar({
     }
   
     const cleanedPlaces = [...selectedPlacesList];
+    if (cleanedPlaces[0]?.placeId === "user-location") {
+      cleanedPlaces.shift();
+    }
   
     if (cleanedPlaces.length <= 1) {
       alert("You need to add at least two places before saving a route.");
