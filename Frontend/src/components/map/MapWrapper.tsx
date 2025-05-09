@@ -10,9 +10,13 @@ import ClusterLayer from "./ClusterLayer";
 import MarkersLayer from "./MarkersLayer";
 import RouteLayer from "./RouteLayer";
 import { handleSubmit } from "../../services/mapService";
-import { fetchPlacesByBounds } from "../../services/placesService";
 
-export default function MapWrapper() {
+
+interface MapWrapperProps {
+  showOverlay: boolean;
+}
+
+export default function MapWrapper({ showOverlay }: MapWrapperProps) {
   const mapRef = useRef<any>(null);
   const [mapLoaded, setMapLoaded] = useState(false);
   const [minCost, setMinCost] = useState<number | null>(null);
@@ -25,6 +29,7 @@ export default function MapWrapper() {
   const [showMoreDetails, setShowMoreDetails] = useState("");
   const [visiblePlaces, setVisiblePlaces] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
+  const [openPopupPlaceId, setOpenPopupPlaceId] = useState<string | null>(null);
 
   const userLocation = useUserLocation();
   const { selectedPlacesList, setSelectedPlacesList } = useSelectedPlaces();
@@ -58,19 +63,20 @@ export default function MapWrapper() {
         mapStyle="https://api.maptiler.com/maps/bright/style.json?key=L0M8KVYaAAuKx695rSCS"
         onLoad={() => setMapLoaded(true)}
       >
-        <UIOverlay
+        {showOverlay && (
+          <UIOverlay
           visiblePlaces={visiblePlaces}
           setSelectedPlacesList={setSelectedPlacesList}
           showMoreDetails={showMoreDetails}
           setShowMoreDetails={setShowMoreDetails}
           filterTypes={filterTypes}
           setFilterTypes={setFilterTypes}
-          callSubmit={callSubmit}
           checked={checked}
           setChecked={setChecked}
           userLocation={userLocation}
           selectedPlacesList={selectedPlacesList}
-        />
+        />)}
+        
         <ClusterLayer
           zoom={zoom}
           filteredVisiblePlaces={filteredVisiblePlaces}
@@ -81,10 +87,13 @@ export default function MapWrapper() {
           selectedPlacesList={selectedPlacesList}
           setSelectedPlacesList={setSelectedPlacesList}
           setShowMoreDetails={setShowMoreDetails}
+          openPopupPlaceId={openPopupPlaceId}
+          setOpenPopupPlaceId={setOpenPopupPlaceId}
         />
         <RouteLayer
           animatedPoint={animatedPoint}
           routeCoordinates={routeCoordinates}
+          callSubmit={callSubmit}
         />
         {userLocation && (
           <Marker longitude={userLocation.lng} latitude={userLocation.lat}>

@@ -255,5 +255,14 @@ namespace MyBackend.Controllers
             return Ok(new { message = "User and all related data deleted successfully." });
         }
 
+        // GET /user/validate-token
+        [HttpGet("validate-token")]
+        [Authorize]
+        public IActionResult ValidateToken()
+        {
+            return Ok(new { message = "Token is valid" });
+        }
+
+
     }
 }

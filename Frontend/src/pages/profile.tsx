@@ -2,13 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProfileHeader from '../components/header';
 import { useSelectedRoute } from '../context/SelectedRouteContext';
-
-interface Route {
-  id: string;
-  customName: string;
-  createdAt: string;
-  waypoints: string[];
-}
+import { Route } from '../utils/types';
 
 const Profile: React.FC = () => {
   const [username, setUsername] = useState<string | null>(null);

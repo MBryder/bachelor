@@ -71,36 +71,19 @@ function VisiblePlaces({
                     />
                   )}
 
-                  {isHovered && (
+                  {(isHovered || showMoreDetails == placeId) && (
                     <PopupMarker
-                      key={`hover-marker-${placeId}`}
-                      longitude={place.longitude}
-                      latitude={place.latitude}
-                      title={place.name}
-                      image={
-                        place.images?.[0]?.imageUrl ||
-                        "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"
-                      }
-                      description={
-                        place.details?.editorialOverview ||
-                        "No description available."
-                      }
                       place={place}
                       color="orange"
-                      titleON={showMoreDetails !== placeId}
+                      titleON={true}
                     />
                   )}
                 </div>
               );
             })}
           </ul>
-          <div className="p-4 flex-1 border-t-2 border-primary-brown flex items-center justify-center">
-            <button
-              onClick={fetchPlaces}
-              className="border border-primary-brown bg-background-beige2 shadow-custom1 rounded-2xl h-full w-full"
-            >
-              <p className="text-primary-brown text-heading-3">Fetch Places</p>
-            </button>
+          <div className="p-4 border-t-2 border-primary-brown flex items-center justify-center">
+            
           </div>
         </div>
       </div>

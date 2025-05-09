@@ -1,28 +1,29 @@
 import { Marker } from "@vis.gl/react-maplibre";
-import { useState, useRef } from "react";
+import { useState, useRef} from "react";
 import { useMap } from "@vis.gl/react-maplibre";
 import CustomPopup from "./CustomPopup";
 import { flyToLocation } from "../utils/flyTo";
 
 const PopupMarker = ({
-  longitude,
-  latitude,
-  title,
-  setSelectedPlacesList,
-  selectedPlacesRef,
   place,
-  color,
   titleON = false,
   setShowMoreDetails,
+  color,
+  openPopupPlaceId,
+  setOpenPopupPlaceId,
 }: any) => {
   const [showPopup, setShowPopup] = useState(false);
-  const [keepOpen, setKeepOpen] = useState(false);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const { current: map } = useMap();
+  const isOpen = openPopupPlaceId === place.placeId;
 
   const handleClick = () => {
-    flyToLocation(map, longitude, latitude);
-    setKeepOpen(!keepOpen);
+    if (!isOpen && map) {
+      flyToLocation(map, place.longitude, place.latitude);
+      setOpenPopupPlaceId(place.placeId);
+    } else {
+      setOpenPopupPlaceId(null); // toggle off
+    }
   };
 
   const handleMouseEnter = () => {
@@ -39,15 +40,14 @@ const PopupMarker = ({
   };
 
   const handlePopupClose = () => {
-    setKeepOpen(false);
-    setShowPopup(false);
-  };
+  setOpenPopupPlaceId(null);
+};
 
   return (
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <Marker
-        longitude={longitude}
-        latitude={latitude}
+        longitude={place.longitude}
+        latitude={place.latitude}
         onClick={handleClick}
         className="cursor-pointer"
       >
@@ -55,7 +55,7 @@ const PopupMarker = ({
           <div className="h-4 mb-1 flex items-center justify-center">
             {titleON && !showPopup && (
               <div className="text-xs text-primary-brown bg-white px-1 rounded border-primary-brown border">
-                {title}
+                {place.name}
               </div>
             )}
           </div>
@@ -66,14 +66,10 @@ const PopupMarker = ({
         </div>
       </Marker>
 
-      {(showPopup || keepOpen) && (
+      {(showPopup || isOpen) && (
         <CustomPopup
-          longitude={longitude}
-          latitude={latitude}
           onClose={() => handlePopupClose()}
           place={place}
-          setSelectedPlacesList={setSelectedPlacesList}
-          selectedPlacesRef={selectedPlacesRef}
           setShowMoreDetails={setShowMoreDetails}
         />
       )}

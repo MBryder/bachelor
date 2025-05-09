@@ -32,12 +32,16 @@ function ShareRoute() {
 
   return (
     <div className="bg-background-beige1 h-screen text-text-dark flex-row">
-      <Head />
+      <Head 
+        showOverlay = {false}
+      />
       <div className="flex h-[calc(100%-60px)]">
         {error ? (
           <div className="m-auto text-center text-red-600">{error}</div>
         ) : (
-          <MapWrapper />
+          <MapWrapper 
+            showOverlay = {false}
+          />
         )}
       </div>
     </div>

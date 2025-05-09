@@ -1,6 +1,18 @@
 import { Source, Layer } from "@vis.gl/react-maplibre";
+import { useEffect } from "react";
+import { useSelectedPlaces } from "../../context/SelectedPlacesContext";
+import { useSelectedRoute } from "../../context/SelectedRouteContext";
 
-export default function RouteLayer({ animatedPoint, routeCoordinates }: any) {
+export default function RouteLayer({ animatedPoint, routeCoordinates, callSubmit }: any) {
+
+  const { selectedPlacesList } = useSelectedPlaces();
+  const {transportMode } = useSelectedRoute();
+
+  useEffect(() => {
+    callSubmit(transportMode);
+  }, [selectedPlacesList, transportMode]);
+
+
   return (
     <>
       {routeCoordinates.length > 1 && (

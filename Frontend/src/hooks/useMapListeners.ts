@@ -21,7 +21,6 @@ export default function useMapListeners(
 
       timeoutRef.current = setTimeout(async () => {
         const bounds = map.getBounds();
-        console.log("Fetching places by bounds:", bounds);
         const zoom = map.getZoom();
         setZoom(zoom);
 
@@ -42,5 +41,5 @@ export default function useMapListeners(
       map.off("move", handleZoomChange);
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
     };
-  }, [mapLoaded, mapRef, setZoom, setVisiblePlaces]);
+  }, [mapLoaded, mapRef, setZoom]);
 }

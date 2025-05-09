@@ -11,7 +11,6 @@ export default function UIOverlay({
   setShowMoreDetails,
   filterTypes,
   setFilterTypes,
-  callSubmit,
   checked,
   setChecked,
   userLocation,
@@ -56,7 +55,7 @@ export default function UIOverlay({
         />
         <Filter filterTypes={filterTypes} setFilterTypes={setFilterTypes} />
       </div>
-      <Selectedbar Submit={callSubmit} handleChange={handleChange} visiblePlaces={visiblePlaces} />
+      <Selectedbar handleChange={handleChange} visiblePlaces={visiblePlaces} />
     </div>
   );
 }

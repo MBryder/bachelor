@@ -22,7 +22,6 @@ export const fetchPlaceById = async (id: string) => {
   };
 
   export const fetchPlacesByBounds = async (bounds: any): Promise<place[]> => {
-    console.log("Fetching places by bounds:", bounds);
     const { _sw, _ne } = bounds;
   
     const url = `http://localhost:5001/places/by-bounds?swLat=${_sw.lat}&swLng=${_sw.lng}&neLat=${_ne.lat}&neLng=${_ne.lng}`;

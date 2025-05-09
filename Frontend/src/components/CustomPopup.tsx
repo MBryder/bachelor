@@ -4,16 +4,12 @@ import { place } from "../utils/types";
 import { useAddToList } from "../helper/updateList";
 
 interface CustomPopupProps {
-  longitude: number;
-  latitude: number;
   onClose: () => void;
   place: place;
   setShowMoreDetails: (placeId: string) => void;
 }
 
 const CustomPopup = ({
-  longitude,
-  latitude,
   onClose,
   place,
   setShowMoreDetails
@@ -22,15 +18,6 @@ const CustomPopup = ({
   const { current: map } = useMap();
   const [position, setPosition] = useState<{ x: number; y: number } | null>(null);
   const popupRef = useRef<HTMLDivElement>(null);
-
-  const title = place.name;
-  const rating = place.rating;
-  const userRatingsTotal = place.userRatingsTotal;
-  const vicinity = place.vicinity;
-
-  const image =
-    place.images?.[0]?.imageUrl ||
-    "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826";
 
   const formatPlaceName = (name: string) => {
     if (!name.includes(" ") && name.length >= 17) {
@@ -43,7 +30,7 @@ const CustomPopup = ({
     if (!map) return;
 
     const updatePosition = () => {
-      const { x, y } = map.project([longitude, latitude]);
+      const { x, y } = map.project([place.longitude, place.latitude]);
       setPosition({ x, y });
     };
 
@@ -55,7 +42,7 @@ const CustomPopup = ({
       map.off("move", updatePosition);
       map.off("zoom", updatePosition);
     };
-  }, [map, longitude, latitude]);
+  }, [map, place.longitude, place.latitude]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -63,7 +50,6 @@ const CustomPopup = ({
         onClose();
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -86,8 +72,8 @@ const CustomPopup = ({
       >
         <div className="w-full aspect-video overflow-hidden ">
           <img
-            src={image}
-            alt={title}
+            src={place.images[0]?.imageUrl || "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"}
+            alt={place.title}
             className="w-full h-full object-cover rounded-t-2xl"
           />
         </div>
@@ -98,23 +84,23 @@ const CustomPopup = ({
           {/* Left: Text content */}
           <div className="flex flex-col flex-3/4 justify-start w-[60%]">
             <h2 className="text-primary-brown text-heading-3 break-words">
-              {formatPlaceName(title)}
+              {formatPlaceName(place.name)}
             </h2>
 
-            {rating != null && (
+            {place.rating != null && (
               <div className="flex items-center gap-1">
-                <p className="text-sm">{rating}</p>
+                <p className="text-sm">{place.rating}</p>
                 <p className="text-sm text-yellow-500">
-                  {"★".repeat(Math.round(rating))}
+                  {"★".repeat(Math.round(place.rating))}
                   <span className="text-gray-400">
-                    {"★".repeat(5 - Math.round(rating))}
+                    {"★".repeat(5 - Math.round(place.rating))}
                   </span>
                 </p>
-                <p className="text-sm">{`(${userRatingsTotal})`}</p>
+                <p className="text-sm">{`(${place.userRatingsTotal})`}</p>
               </div>
             )}
 
-            <p className="text-sm">{vicinity}</p>
+            <p className="text-sm">{place.vicinity}</p>
           </div>
 
           {/* Right: Image and button */}

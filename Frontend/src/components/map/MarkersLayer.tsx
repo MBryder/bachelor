@@ -1,6 +1,6 @@
 import PopupMarker from "../popUpMarker";
 
-export default function MarkersLayer({ zoom, visiblePlaces, selectedPlacesList, setSelectedPlacesList, setShowMoreDetails }: any) {
+export default function MarkersLayer({ zoom, visiblePlaces, selectedPlacesList, setShowMoreDetails, openPopupPlaceId, setOpenPopupPlaceId }: any) {
   if (zoom < 14) return null;
 
   const allMarkers = [...selectedPlacesList, ...visiblePlaces.filter(
@@ -14,15 +14,11 @@ export default function MarkersLayer({ zoom, visiblePlaces, selectedPlacesList, 
         return (
           <PopupMarker
             key={place.placeId}
-            longitude={place.longitude}
-            latitude={place.latitude}
-            title={place.name}
-            image={place.images?.[0]?.imageUrl || "https://img.freepik.com/premium-vector/travel-copenhagen-icon_408115-1792.jpg?w=826"}
-            description={place.details?.editorialOverview || "No description available."}
-            setSelectedPlacesList={setSelectedPlacesList}
             place={place}
             color={isSelected ? "blue" : "red"}
             setShowMoreDetails={setShowMoreDetails}
+            openPopupPlaceId={openPopupPlaceId}
+            setOpenPopupPlaceId={setOpenPopupPlaceId}
           />
         );
       })}

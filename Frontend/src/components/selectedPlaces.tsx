@@ -2,14 +2,13 @@ import { useState, useEffect } from "react";
 import { getTourismIcon } from "../utils/icons";
 import { fetchPlaceById } from "../services/placesService";
 import { useSelectedPlaces } from "../context/SelectedPlacesContext";
+import { useSelectedRoute } from "../context/SelectedRouteContext";
 import { saveRoute, fetchRoutesByUser, shareRoute } from "../services/routeService";
 import { place } from "../utils/types";
 
 function Selectedbar({
-  Submit,
   handleChange,
 }: {
-  Submit: (transportMode: string) => void;
   handleChange: (value: boolean) => void;
   visiblePlaces: place[];
 }) {
@@ -18,14 +17,13 @@ function Selectedbar({
   const [routes, setRoutes] = useState<any[]>([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [inputError, setInputError] = useState(false); // til errors, når saveroute smider en error som fx. når user ikke giver rute et navn. 
-  const [transportMode, setTransportMode] = useState("walking 🚶"); // Mode of transportation toggle, hvor default er foot-walking. 
   const [dropdownOpen, setDropdownOpen] = useState(false); // til dropdown menu til "mode of transportation". 
   const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved">("idle"); // til at improve "Save route" button. 
   const [selectedRouteName, setSelectedRouteName] = useState<string | null>(null); // til at vise navn på valgt route fra DB fra users konto. 
   const {selectedPlacesList, setSelectedPlacesList } = useSelectedPlaces(); // til at vise de steder som er valgt i selectedPlaces.
   const [newRoute, setNewRoute] = useState(false);
-  
-
+  const { transportMode, setTransportMode } = useSelectedRoute();
+  const [ shareableLink , setShareableLink ] = useState<string | null>(null);
 
   const handleCheckboxChange = () => {
     setChecked(!checked);
@@ -33,7 +31,6 @@ function Selectedbar({
   };
 
   useEffect(() => {
-    Submit(transportMode);
     if (!newRoute){
       setSelectedRouteName(null);
     }
@@ -90,10 +87,16 @@ function Selectedbar({
   };
 
   const shareRouteHandler = async () => {
-    if (!customName.trim()) {
+    let name = customName.trim()
+    console.log("Selected route name:", selectedRouteName)
+    if (!name && !selectedRouteName) {
       setInputError(true);
       setTimeout(() => setInputError(false), 2000);
       return;
+    }
+    if(!name && selectedRouteName) {
+      name = selectedRouteName;
+      console.log("Name from selected route:", name); 
     }
   
     const cleanedPlaces = [...selectedPlacesList];
@@ -102,13 +105,13 @@ function Selectedbar({
     }
   
     if (cleanedPlaces.length <= 1) {
-      alert("You need to add at least two places before saving a route.");
+      alert("You need to add at least two places before sharing a route.");
       setSaveStatus("idle");
       return;
     }
   
     const routeData = {
-      customName: customName.trim(),
+      customName: name,
       waypoints: cleanedPlaces.map(place => place.placeId),
       transportationMode: transportMode
     };
@@ -116,7 +119,9 @@ function Selectedbar({
     try {
       const result = await shareRoute(routeData);
       console.log(result.routeId)
+      setShareableLink(`${window.location.origin}/shared-route/${result.routeId}`);
       setTimeout(() => setSaveStatus("idle"), 1500);
+      
     } catch (err) {
       console.error("Error saving route:", err);
       setSaveStatus("idle");
@@ -348,6 +353,17 @@ function Selectedbar({
                 🔗 Share this route
               </button>
             </div>
+
+            {shareableLink && (
+              <div>
+                <p>Shareable link:</p>
+                <div className="w-full bg-background-beige3 mb-2 border border-primary-brown px-2 py-1 flex flew-col overflow-hidden rounded-xl">
+                  <p>{shareableLink}</p>
+                </div>
+              </div>
+              
+              
+            )}
             
           </div>
         </div>
