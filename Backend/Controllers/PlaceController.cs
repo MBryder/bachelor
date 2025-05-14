@@ -65,7 +65,7 @@ namespace MyBackend.Controllers
 
             return Ok(places);
         }
-        
+
 
         // GET /places/test
         [HttpGet("test")]
@@ -117,6 +117,46 @@ namespace MyBackend.Controllers
                 count = result.Count(),
                 places = result
             });
+        }
+
+        [HttpPost("create")]
+        public async Task<IActionResult> CreatePlace([FromBody] PlaceCreateDto dto)
+        {
+            // Check if the place already exists
+            var existing = await _context.Places.FirstOrDefaultAsync(p => p.PlaceId == dto.PlaceId);
+            if (existing != null)
+            {
+                return Conflict(new { message = "A place with this PlaceId already exists." });
+            }
+
+            var place = new Place
+            {
+                PlaceId = dto.PlaceId,
+                Name = "User Location",
+                Latitude = dto.Latitude,
+                Longitude = dto.Longitude,
+                Icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+                Photos = new List<Photo>(),
+                Types = new List<PlaceType>(),
+                Images = new List<Image>(),
+                Details = new Details
+                {
+                    PlaceId = dto.PlaceId,
+                    FormattedAddress = "Current location",
+                    WeekdayText = new List<string>(),
+                    Types = new List<string>()
+                }
+            };
+
+            _context.Places.Add(place);
+            await _context.SaveChangesAsync();
+
+            // Reload with includes
+            var saved = await _context.Places
+                .Include(p => p.Details)
+                .FirstOrDefaultAsync(p => p.PlaceId == dto.PlaceId);
+
+            return Ok(saved);
         }
 
     }
