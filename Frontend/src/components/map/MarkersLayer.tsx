@@ -15,7 +15,7 @@ export default function MarkersLayer({ zoom, visiblePlaces, selectedPlacesList, 
           <PopupMarker
             key={place.placeId}
             place={place}
-            color={isSelected ? "blue" : "red"}
+            color={isSelected ? "#11b30e" : "red"}
             setShowMoreDetails={setShowMoreDetails}
             openPopupPlaceId={openPopupPlaceId}
             setOpenPopupPlaceId={setOpenPopupPlaceId}

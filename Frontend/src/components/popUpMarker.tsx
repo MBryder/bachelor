@@ -55,13 +55,13 @@ const PopupMarker = ({
           <div className="h-4 mb-1 flex items-center justify-center">
             {titleON && !showPopup && (
               <div className="text-xs text-primary-brown bg-white px-1 rounded border-primary-brown border">
-                {place.name}
+          {place.name}
               </div>
             )}
           </div>
           <div
-            className="w-2 h-2 rounded-full"
-            style={{ backgroundColor: color || "red" }}
+            className="w-3 h-3 rounded-full"
+            style={{ backgroundColor: color || "red" } }
           />
         </div>
       </Marker>

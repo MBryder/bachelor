@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Map, Marker } from "@vis.gl/react-maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useUserLocation } from "../../hooks/useUserLocation";
-import { useAnimatedRoutePoint } from "../../hooks/useAnimatedRoutePoint";
+import AnimatedUserLocation from "./AnimatedUserLocation";
 import { useSelectedPlaces } from "../../context/SelectedPlacesContext";
 import useMapListeners from "../../hooks/useMapListeners";
 import UIOverlay from "./UIOverlay";
@@ -24,7 +24,6 @@ export default function MapWrapper({ showOverlay }: MapWrapperProps) {
   const [routeCoordinates, setRouteCoordinates] = useState<any[]>([]);
   const [zoom, setZoom] = useState(10);
   const [checked, setChecked] = useState(false);
-  const [animatedPoint, setAnimatedPoint] = useState<[number, number] | null>(null);
   const [filterTypes, setFilterTypes] = useState<string[]>([]);
   const [showMoreDetails, setShowMoreDetails] = useState("");
   const [visiblePlaces, setVisiblePlaces] = useState<any[]>([]);
@@ -33,8 +32,6 @@ export default function MapWrapper({ showOverlay }: MapWrapperProps) {
 
   const userLocation = useUserLocation();
   const { selectedPlacesList, setSelectedPlacesList } = useSelectedPlaces();
-
-  useAnimatedRoutePoint(routeCoordinates, setAnimatedPoint);
 
   useMapListeners(mapRef, setZoom, setVisiblePlaces, mapLoaded);
 
@@ -65,7 +62,7 @@ export default function MapWrapper({ showOverlay }: MapWrapperProps) {
       >
         {showOverlay && (
           <UIOverlay
-          visiblePlaces={visiblePlaces}
+          visiblePlaces={filteredVisiblePlaces}
           setSelectedPlacesList={setSelectedPlacesList}
           showMoreDetails={showMoreDetails}
           setShowMoreDetails={setShowMoreDetails}
@@ -91,14 +88,11 @@ export default function MapWrapper({ showOverlay }: MapWrapperProps) {
           setOpenPopupPlaceId={setOpenPopupPlaceId}
         />
         <RouteLayer
-          animatedPoint={animatedPoint}
           routeCoordinates={routeCoordinates}
           callSubmit={callSubmit}
         />
         {userLocation && (
-          <Marker longitude={userLocation.lng} latitude={userLocation.lat}>
-            <div className="bg-blue-600 rounded-full w-2 h-2" title="You are here" />
-          </Marker>
+          <AnimatedUserLocation userLocation={userLocation} />
         )}
       </Map>
     </div>

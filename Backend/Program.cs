@@ -11,8 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlite("Data Source=mydatabase.db"));
 
-// Add services to the container.
-builder.Services.AddOpenApi();
+// Add controllers and Swagger
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -23,10 +22,14 @@ builder.Services.AddSwaggerGen(c =>
 // Enable CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowReactApp",
-        builder => builder.WithOrigins("http://localhost:5173") 
-                          .AllowAnyMethod()
-                          .AllowAnyHeader());
+    options.AddPolicy("AllowReactApp", policy =>
+        policy.WithOrigins(
+                "http://localhost:5173",
+                "http://192.168.0.165:5173" // replace with your PC's actual LAN IP
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials());
 });
 
 // Configure JWT Authentication
@@ -56,7 +59,7 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-// Seed data (using your existing seeder)
+// Seed data
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<MyDbContext>();
@@ -66,21 +69,25 @@ using (var scope = app.Services.CreateScope())
     await seeder.SeedDetailsAsync("Data/SeedData/details.json");
 }
 
+// Enable CORS before anything else
 app.UseCors("AllowReactApp");
 
-// When in development enable Swagger and OpenAPI endpoints
+// Enable Swagger in development
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.MapOpenApi();
 }
 
-// Enable authentication and authorization middleware
+// Auth middleware
 app.UseAuthentication();
 app.UseAuthorization();
 
+// Redirect HTTP to HTTPS if enabled
 app.UseHttpsRedirection();
 
+// Map controller routes
 app.MapControllers();
+
+// Start the app
 app.Run();

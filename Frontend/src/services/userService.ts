@@ -1,3 +1,5 @@
+import { API_BASE } from "./api";
+
 export interface LoginRequest {
   Username: string;
   Password: string;
@@ -8,7 +10,7 @@ export interface LoginResponse {
 }
 
 export const loginUser = async (credentials: LoginRequest): Promise<LoginResponse> => {
-  const response = await fetch('http://localhost:5001/user/login', {
+  const response = await fetch(`${API_BASE}/user/login`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -31,7 +33,7 @@ export const validateToken = async (): Promise<boolean> => {
   if (!token) return false;
 
   try {
-    const response = await fetch("http://localhost:5001/user/validate-token", {
+    const response = await fetch(`${API_BASE}/user/validate-token`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -1,9 +1,10 @@
 import { toast } from "react-hot-toast";
 import axios from "axios";
 import { place } from "../utils/types";
+import { API_BASE } from "./api";
 
 export const fetchPlaceById = async (id: string) => {
-    const url = `http://localhost:5001/places/id?id=${encodeURIComponent(id)}`;
+    const url = `${API_BASE}/places/id?id=${encodeURIComponent(id)}`;
   
     try {
       const response = await axios.get(url, {
@@ -24,7 +25,7 @@ export const fetchPlaceById = async (id: string) => {
   export const fetchPlacesByBounds = async (bounds: any): Promise<place[]> => {
     const { _sw, _ne } = bounds;
   
-    const url = `http://localhost:5001/places/by-bounds?swLat=${_sw.lat}&swLng=${_sw.lng}&neLat=${_ne.lat}&neLng=${_ne.lng}`;
+    const url = `${API_BASE}/places/by-bounds?swLat=${_sw.lat}&swLng=${_sw.lng}&neLat=${_ne.lat}&neLng=${_ne.lng}`;
   
     try {
       const response = await axios.get(url, {
@@ -49,7 +50,7 @@ export const fetchPlaceById = async (id: string) => {
   };
 
 export const fetchSearchResults = async (query: string): Promise<place[]> => {
-  const url = 'http://localhost:5001/places/name?Name=' + encodeURIComponent(query);
+  const url = `${API_BASE}/places/name?Name=` + encodeURIComponent(query);
 
   try {
     const response = await axios.get(url, {

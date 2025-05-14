@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Map } from '@vis.gl/react-maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import { API_BASE } from '../services/api';
 
 const Signup: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -32,7 +33,7 @@ const Signup: React.FC = () => {
       setCheckingUsername(true);
       try {
         const res = await fetch(
-          `http://localhost:5001/user/check-username?username=${encodeURIComponent(username)}`
+          `${API_BASE}/user/check-username?username=${encodeURIComponent(username)}`
         );
         const data = await res.json();
         setIsUsernameAvailable(data.available);
@@ -56,7 +57,7 @@ const Signup: React.FC = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5001/user/register', {
+      const response = await fetch(`${API_BASE}/user/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

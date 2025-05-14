@@ -1,5 +1,5 @@
 // services/routeService.ts
-const API_BASE = "http://localhost:5001";
+import { API_BASE } from "./api";
 
 export const saveRoute = async (username: string, routeData: any) => {
     try {

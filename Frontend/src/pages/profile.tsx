@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import ProfileHeader from '../components/header';
 import { useSelectedRoute } from '../context/SelectedRouteContext';
 import { Route } from '../utils/types';
+import { API_BASE } from '../services/api';
+
 
 const Profile: React.FC = () => {
   const [username, setUsername] = useState<string | null>(null);
@@ -24,7 +26,7 @@ const Profile: React.FC = () => {
   useEffect(() => {
     if (username) {
       setLoadingRoutes(true);
-      fetch(`http://localhost:5001/user/${username}/routes`)
+      fetch(`${API_BASE}/user/${username}/routes`)
         .then(res => {
           if (!res.ok) throw new Error('Failed to fetch saved routes');
           return res.json();
@@ -96,7 +98,7 @@ const Profile: React.FC = () => {
                         if (!username) return;
 
                         try {
-                          const res = await fetch(`http://localhost:5001/user/${username}/routes/${route.id}`, {
+                          const res = await fetch(`${API_BASE}/user/${username}/routes/${route.id}`, {
                             method: 'DELETE'
                           });
                           if (!res.ok) throw new Error("Failed to delete route.");
@@ -162,7 +164,7 @@ const Profile: React.FC = () => {
                   }
 
                   try {
-                    const res = await fetch('http://localhost:5001/user/change-password', {
+                    const res = await fetch(`${API_BASE}/user/change-password`, {
                       method: 'PUT',
                       headers: {
                         'Content-Type': 'application/json',
@@ -204,7 +206,7 @@ const Profile: React.FC = () => {
             if (!confirmDelete || !username) return;
 
             try {
-              const res = await fetch(`http://localhost:5001/user/${username}`, {
+              const res = await fetch(`${API_BASE}/user/${username}`, {
                 method: 'DELETE'
               });
 

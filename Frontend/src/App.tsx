@@ -17,8 +17,7 @@ function App() {
     <SelectedRouteProvider>
       <SelectedPlacesProvider>
         <Router>
-          <Routes>
-            <Route path="/" element={<Main />} />
+            <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/shared-route/:routeId" element={<ShareRoute />} />
@@ -26,30 +25,32 @@ function App() {
             <Route
               path="/home"
               element={
-                <PrivateRoute>
-                  <Home />
-                </PrivateRoute>
+              <PrivateRoute>
+                <Home />
+              </PrivateRoute>
               }
             />
 
             <Route
               path="/profile"
               element={
-                <PrivateRoute>
-                  <Profile />
-                </PrivateRoute>
+              <PrivateRoute>
+                <Profile />
+              </PrivateRoute>
               }
             />
 
             <Route
               path="/about"
               element={
-                <PrivateRoute>
-                  <About />
-                </PrivateRoute>
+              <PrivateRoute>
+                <About />
+              </PrivateRoute>
               }
             />
-          </Routes>
+            {/* Redirect all unknown routes to /home */}
+            <Route path="*" element={<Home />} />
+            </Routes>
         </Router>
       </SelectedPlacesProvider>
     </SelectedRouteProvider>
