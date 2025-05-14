@@ -12,6 +12,7 @@ const Login: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError('');
 
     try {
       const data = await loginUser({ Username: username, Password: password });
@@ -21,8 +22,8 @@ const Login: React.FC = () => {
       navigate('/home');
       setError('');
     } catch (err: any) {
-      console.error('Login error:', err);
-      setError(err.message || 'Could not connect to server');
+      console.log(err.message[0]);
+      setError('Invalid username or password');
     }
   };
 
@@ -40,7 +41,7 @@ const Login: React.FC = () => {
           onSubmit={handleSubmit}
           className="bg-background-beige1 border-2 border-primary-brown bg-opacity-90 p-8 rounded-2xl shadow-md w-full max-w-sm"
         >
-          <h2 className="text-display-1 font-display text-center text-primary-brown mb-6">Login</h2>
+          <h2 className="text-display-1 font-dasdisplay text-center text-primary-brown mb-6">Login</h2>
           {error && <p className="text-red-500 text-sm mb-4 text-center">{error}</p>}
 
           <div className="relative mb-6">
@@ -49,7 +50,7 @@ const Login: React.FC = () => {
               type="text"
               value={username}
               onChange={e => setUsername(e.target.value)}
-              className="w-full px-2 border-b-2 focus:outline-none text-paragraph-1"
+              className="w-full px-2 border-b-2 focus:outline-none"
               placeholder="Username"
               required
             />
@@ -62,15 +63,24 @@ const Login: React.FC = () => {
               value={password}
               onChange={e => setPassword(e.target.value)}
               className="w-full px-2 border-b-2 focus:outline-none"
+              placeholder="Password"
               required
             />
           </div>
 
-          <p>I don't have an account</p>
+            <p>
+            I don't have an account?{' '}
+            <span
+              className="text-primary-brown underline cursor-pointer"
+              onClick={() => navigate('/signup')}
+            >
+              Click here
+            </span>
+            </p>
 
           <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition duration-200"
+            className="w-full bg-primary-brown hover:opacity-95 text-white py-2 rounded-lg transition duration-200"
           >
             Login
           </button>
