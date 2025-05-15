@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import { getTourismIcon } from "../utils/icons";
-import { fetchPlaceById, createUserLocationPlace } from "../services/placesService";
+import { fetchPlaceById } from "../services/placesService";
 import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 import { useSelectedRoute } from "../context/SelectedRouteContext";
 import { saveRoute, fetchRoutesByUser, shareRoute } from "../services/routeService";
 import { place } from "../utils/types";
+import { createUserLocationPlace } from "../services/placesService";
+console.log("Is createUserLocationPlace defined?", createUserLocationPlace);
+createUserLocationPlace(`user-location-${Date.now()}`, 1.23, 4.56).then(console.log);
+
 
 function Selectedbar({
   handleChange,
@@ -25,7 +29,7 @@ function Selectedbar({
   const { transportMode, setTransportMode } = useSelectedRoute();
   const [shareableLink, setShareableLink] = useState<string | null>(null);
 
-  const handleCheckboxChange = async () => {
+  const handleCheckboxChange = () => {
     const newChecked = !checked;
     setChecked(newChecked);
     handleChange(newChecked);
@@ -36,29 +40,30 @@ function Selectedbar({
         return;
       }
 
-      navigator.geolocation.getCurrentPosition(async (position) => {
-        const lat = position.coords.latitude;
-        const lng = position.coords.longitude;
-        const generatedId = `user-location-${Date.now()}`;
+      navigator.geolocation.getCurrentPosition(
+        async (position) => {
+          try {
+            const placeId = `user-location-${Date.now()}`;
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
 
-        try {
-          const newPlace = await createUserLocationPlace(generatedId, lat, lng);
+            const response = await createUserLocationPlace(placeId, latitude, longitude);
+            const alreadyExists = selectedPlacesList.some(p => p.placeId === response.placeId);
 
-          const alreadyExists = selectedPlacesList.some(
-            (p) => p.placeId === newPlace.placeId
-          );
-
-          if (!alreadyExists) {
-            setSelectedPlacesList([newPlace, ...selectedPlacesList]);
+            if (!alreadyExists) {
+              setSelectedPlacesList([response, ...selectedPlacesList]);
+            }
+          } catch (err) {
+            console.error("Failed to create and add user location place:", err);
           }
-        } catch (err) {
-          console.error("Failed to create and add user location place:", err);
+        },
+        (error) => {
+          console.error("Geolocation error:", error.message);
+          alert("Could not get your current location.");
         }
-      });
-    } else {
-      const updated = selectedPlacesList.filter(
-        (p) => !p.placeId?.startsWith("user-location")
       );
+    } else {
+      const updated = selectedPlacesList.filter(p => !p.placeId?.startsWith("user-location"));
       setSelectedPlacesList(updated);
     }
   };
