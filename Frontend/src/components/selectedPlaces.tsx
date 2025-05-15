@@ -28,6 +28,8 @@ function Selectedbar({
   const [newRoute, setNewRoute] = useState(false);
   const { transportMode, setTransportMode } = useSelectedRoute();
   const [shareableLink, setShareableLink] = useState<string | null>(null);
+  const [locationAvailable, setLocationAvailable] = useState(true);
+
 
   const handleCheckboxChange = () => {
     const newChecked = !checked;
@@ -220,6 +222,28 @@ function Selectedbar({
     setSelectedPlacesList(updatedList);
   };
 
+  useEffect(() => {
+    if (!navigator.permissions || !navigator.geolocation) {
+      setLocationAvailable(false);
+      return;
+    }
+
+    navigator.permissions
+      .query({ name: "geolocation" as PermissionName })
+      .then((result) => {
+        if (result.state === "denied") {
+          setLocationAvailable(false);
+        }
+
+        result.onchange = () => {
+          setLocationAvailable(result.state !== "denied");
+        };
+      })
+      .catch(() => {
+        setLocationAvailable(false);
+      });
+  }, []);
+
   return (
     <div className="h-5/8 flex items-center py-2 px-2">
       <div className="translate-x-0 h-full w-[300px] border-1 bg-background-beige1 shadow-lg rounded-4xl m-2 ml-4 flex">
@@ -276,8 +300,19 @@ function Selectedbar({
                 type="checkbox"
                 checked={checked}
                 onChange={handleCheckboxChange}
+                disabled={!locationAvailable}
               />
-              Use current locations as starting point
+              Include current location
+              {!locationAvailable && (
+                <button
+                  className="text-sm text-red-500 underline ml-2"
+                  onClick={() => {
+                    alert("To enable location access:\n\n1. Click the marker icon in the browser's address bar.\n2. Then click allow NextStop to know your location.");
+                  }}
+                >
+                  Allow location
+                </button>
+              )}
             </label>
 
             {/* 2. Route name input and mode of transportation!*/}
