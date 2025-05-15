@@ -26,52 +26,51 @@ namespace MyBackend.Controllers
         {
             var places = await _context.Places
                 .Where(p => p.Latitude >= swLat && p.Latitude <= neLat &&
-                            p.Longitude >= swLng && p.Longitude <= neLng)
-                .Include(p => p.Images) // Include images 
-                .Include(p => p.Details) // Include details
+                            p.Longitude >= swLng && p.Longitude <= neLng &&
+                            !p.PlaceId.StartsWith("user-location-"))
+                .Include(p => p.Images)
+                .Include(p => p.Details)
                 .ToListAsync();
 
             return Ok(places);
         }
 
-        // GET /places/name?Name=...
         [HttpGet("name")]
         public async Task<IActionResult> GetPlacesWithName([FromQuery] string Name)
         {
             _logger.LogInformation($"Endpoint hit: Searching for places with name containing '{Name}'");
 
             var places = await _context.Places
-                .Where(p => p.Name.ToLower().Contains(Name.ToLower()))
+                .Where(p => p.Name.ToLower().Contains(Name.ToLower()) &&
+                            !p.PlaceId.StartsWith("user-location-"))
                 .Select(p => new
                 {
                     p.Name,
                     p.PlaceId,
                 })
-                .ToListAsync(); // Execute the query
-
-            return Ok(places);
-        }
-
-
-        // GET /places/id=...
-        [HttpGet("id")]
-        public async Task<IActionResult> GetPlacesInBounds([FromQuery] string id)
-        {
-            var places = await _context.Places
-                .Where(p => p.PlaceId == id)
-                .Include(p => p.Images) // Include images 
-                .Include(p => p.Details) // Include details
                 .ToListAsync();
 
             return Ok(places);
         }
-        
 
-        // GET /places/test
+        [HttpGet("id")]
+        public async Task<IActionResult> GetPlaceById([FromQuery] string id)
+        {
+            // No filter needed here since you're fetching a specific place ID
+            var places = await _context.Places
+                .Where(p => p.PlaceId == id)
+                .Include(p => p.Images)
+                .Include(p => p.Details)
+                .ToListAsync();
+
+            return Ok(places);
+        }
+
         [HttpGet("test")]
         public async Task<IActionResult> GetTestPlacesWithDetails()
         {
             var places = await _context.Places
+                .Where(p => !p.PlaceId.StartsWith("user-location-"))
                 .AsNoTracking()
                 .Include(p => p.Images)
                 .Include(p => p.Details)
@@ -106,8 +105,8 @@ namespace MyBackend.Controllers
                         Overview = p.Details.EditorialOverview
                     },
 
-                    WeekdayText = p.Details.WeekdayText,  // List<string>
-                    Types = p.Details.Types         // List<string>
+                    WeekdayText = p.Details.WeekdayText,
+                    Types = p.Details.Types
                 }
             });
 
@@ -117,6 +116,46 @@ namespace MyBackend.Controllers
                 count = result.Count(),
                 places = result
             });
+        }
+
+        [HttpPost("create")]
+        public async Task<IActionResult> CreatePlace([FromBody] PlaceCreateDto dto)
+        {
+            // Check if the place already exists
+            var existing = await _context.Places.FirstOrDefaultAsync(p => p.PlaceId == dto.PlaceId);
+            if (existing != null)
+            {
+                return Conflict(new { message = "A place with this PlaceId already exists." });
+            }
+
+            var place = new Place
+            {
+                PlaceId = dto.PlaceId,
+                Name = "User Location",
+                Latitude = dto.Latitude,
+                Longitude = dto.Longitude,
+                Icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+                Photos = new List<Photo>(),
+                Types = new List<PlaceType>(),
+                Images = new List<Image>(),
+                Details = new Details
+                {
+                    PlaceId = dto.PlaceId,
+                    FormattedAddress = "Current location",
+                    WeekdayText = new List<string>(),
+                    Types = new List<string>()
+                }
+            };
+
+            _context.Places.Add(place);
+            await _context.SaveChangesAsync();
+
+            // Reload with includes
+            var saved = await _context.Places
+                .Include(p => p.Details)
+                .FirstOrDefaultAsync(p => p.PlaceId == dto.PlaceId);
+
+            return Ok(saved);
         }
 
     }

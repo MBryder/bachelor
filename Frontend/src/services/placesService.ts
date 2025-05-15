@@ -77,3 +77,12 @@ export const fetchSearchResults = async (query: string): Promise<place[]> => {
     return [];
   }
 };
+
+export const createUserLocationPlace = async (placeId: string, latitude: number, longitude: number): Promise<place> => {
+  const response = await axios.post("http://localhost:5001/places/create", {
+    placeId,
+    latitude,
+    longitude,
+  });
+  return response.data;
+};

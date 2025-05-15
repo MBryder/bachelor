@@ -5,6 +5,10 @@ import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 import { useSelectedRoute } from "../context/SelectedRouteContext";
 import { saveRoute, fetchRoutesByUser, shareRoute } from "../services/routeService";
 import { place } from "../utils/types";
+import { createUserLocationPlace } from "../services/placesService";
+console.log("Is createUserLocationPlace defined?", createUserLocationPlace);
+createUserLocationPlace(`user-location-${Date.now()}`, 1.23, 4.56).then(console.log);
+
 
 function Selectedbar({
   handleChange,
@@ -20,18 +24,54 @@ function Selectedbar({
   const [dropdownOpen, setDropdownOpen] = useState(false); // til dropdown menu til "mode of transportation". 
   const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved">("idle"); // til at improve "Save route" button. 
   const [selectedRouteName, setSelectedRouteName] = useState<string | null>(null); // til at vise navn på valgt route fra DB fra users konto. 
-  const {selectedPlacesList, setSelectedPlacesList } = useSelectedPlaces(); // til at vise de steder som er valgt i selectedPlaces.
+  const { selectedPlacesList, setSelectedPlacesList } = useSelectedPlaces(); // til at vise de steder som er valgt i selectedPlaces.
   const [newRoute, setNewRoute] = useState(false);
   const { transportMode, setTransportMode } = useSelectedRoute();
-  const [ shareableLink , setShareableLink ] = useState<string | null>(null);
+  const [shareableLink, setShareableLink] = useState<string | null>(null);
+  const [locationAvailable, setLocationAvailable] = useState(true);
+
 
   const handleCheckboxChange = () => {
-    setChecked(!checked);
-    handleChange(checked);
+    const newChecked = !checked;
+    setChecked(newChecked);
+    handleChange(newChecked);
+
+    if (newChecked) {
+      if (!navigator.geolocation) {
+        alert("Geolocation is not supported by your browser.");
+        return;
+      }
+
+      navigator.geolocation.getCurrentPosition(
+        async (position) => {
+          try {
+            const placeId = `user-location-${Date.now()}`;
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+
+            const response = await createUserLocationPlace(placeId, latitude, longitude);
+            const alreadyExists = selectedPlacesList.some(p => p.placeId === response.placeId);
+
+            if (!alreadyExists) {
+              setSelectedPlacesList([response, ...selectedPlacesList]);
+            }
+          } catch (err) {
+            console.error("Failed to create and add user location place:", err);
+          }
+        },
+        (error) => {
+          console.error("Geolocation error:", error.message);
+          alert("Could not get your current location.");
+        }
+      );
+    } else {
+      const updated = selectedPlacesList.filter(p => !p.placeId?.startsWith("user-location"));
+      setSelectedPlacesList(updated);
+    }
   };
 
   useEffect(() => {
-    if (!newRoute){
+    if (!newRoute) {
       setSelectedRouteName(null);
     }
     setNewRoute(false);
@@ -44,35 +84,32 @@ function Selectedbar({
 
   const saveRouteHandler = async () => {
     const username = localStorage.getItem("username");
-  
+
     if (!username) {
       alert("No username found in local storage.");
       return;
     }
-  
+
     if (!customName.trim()) {
       setInputError(true);
       setTimeout(() => setInputError(false), 2000);
       return;
     }
-  
+
     const cleanedPlaces = [...selectedPlacesList];
-    if (cleanedPlaces[0]?.placeId === "user-location") {
-      cleanedPlaces.shift();
-    }
-  
+
     if (cleanedPlaces.length <= 1) {
       alert("You need to add at least two places before saving a route.");
       setSaveStatus("idle");
       return;
     }
-  
+
     const routeData = {
       customName: customName.trim(),
       waypoints: cleanedPlaces.map(place => place.placeId),
       transportationMode: transportMode
     };
-  
+
     try {
       setSaveStatus("saving");
       await saveRoute(username, routeData);
@@ -94,48 +131,48 @@ function Selectedbar({
       setTimeout(() => setInputError(false), 2000);
       return;
     }
-    if(!name && selectedRouteName) {
+    if (!name && selectedRouteName) {
       name = selectedRouteName;
-      console.log("Name from selected route:", name); 
+      console.log("Name from selected route:", name);
     }
-  
+
     const cleanedPlaces = [...selectedPlacesList];
     if (cleanedPlaces[0]?.placeId === "user-location") {
       cleanedPlaces.shift();
     }
-  
+
     if (cleanedPlaces.length <= 1) {
       alert("You need to add at least two places before sharing a route.");
       setSaveStatus("idle");
       return;
     }
-  
+
     const routeData = {
       customName: name,
       waypoints: cleanedPlaces.map(place => place.placeId),
       transportationMode: transportMode
     };
-  
+
     try {
       const result = await shareRoute(routeData);
       console.log(result.routeId)
       setShareableLink(`${window.location.origin}/shared-route/${result.routeId}`);
       setTimeout(() => setSaveStatus("idle"), 1500);
-      
+
     } catch (err) {
       console.error("Error saving route:", err);
       setSaveStatus("idle");
     }
   };
-  
+
   const handleMyRoutesClick = async () => {
     const username = localStorage.getItem("username");
-  
+
     if (!username) {
       alert("Username not found in local storage.");
       return;
     }
-  
+
     try {
       const data = await fetchRoutesByUser(username);
       setRoutes(data);
@@ -184,6 +221,28 @@ function Selectedbar({
 
     setSelectedPlacesList(updatedList);
   };
+
+  useEffect(() => {
+    if (!navigator.permissions || !navigator.geolocation) {
+      setLocationAvailable(false);
+      return;
+    }
+
+    navigator.permissions
+      .query({ name: "geolocation" as PermissionName })
+      .then((result) => {
+        if (result.state === "denied") {
+          setLocationAvailable(false);
+        }
+
+        result.onchange = () => {
+          setLocationAvailable(result.state !== "denied");
+        };
+      })
+      .catch(() => {
+        setLocationAvailable(false);
+      });
+  }, []);
 
   return (
     <div className="h-5/8 flex items-center py-2 px-2">
@@ -241,8 +300,19 @@ function Selectedbar({
                 type="checkbox"
                 checked={checked}
                 onChange={handleCheckboxChange}
+                disabled={!locationAvailable}
               />
-              Use current locations as starting point
+              Include current location
+              {!locationAvailable && (
+                <button
+                  className="text-sm text-red-500 underline ml-2"
+                  onClick={() => {
+                    alert("To enable location access:\n\n1. Click the marker icon in the browser's address bar.\n2. Then click allow NextStop to know your location.");
+                  }}
+                >
+                  Allow location
+                </button>
+              )}
             </label>
 
             {/* 2. Route name input and mode of transportation!*/}
@@ -361,10 +431,10 @@ function Selectedbar({
                   <p>{shareableLink}</p>
                 </div>
               </div>
-              
-              
+
+
             )}
-            
+
           </div>
         </div>
       </div>
