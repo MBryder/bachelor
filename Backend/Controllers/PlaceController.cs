@@ -26,52 +26,51 @@ namespace MyBackend.Controllers
         {
             var places = await _context.Places
                 .Where(p => p.Latitude >= swLat && p.Latitude <= neLat &&
-                            p.Longitude >= swLng && p.Longitude <= neLng)
-                .Include(p => p.Images) // Include images 
-                .Include(p => p.Details) // Include details
+                            p.Longitude >= swLng && p.Longitude <= neLng &&
+                            !p.PlaceId.StartsWith("user-location-"))
+                .Include(p => p.Images)
+                .Include(p => p.Details)
                 .ToListAsync();
 
             return Ok(places);
         }
 
-        // GET /places/name?Name=...
         [HttpGet("name")]
         public async Task<IActionResult> GetPlacesWithName([FromQuery] string Name)
         {
             _logger.LogInformation($"Endpoint hit: Searching for places with name containing '{Name}'");
 
             var places = await _context.Places
-                .Where(p => p.Name.ToLower().Contains(Name.ToLower()))
+                .Where(p => p.Name.ToLower().Contains(Name.ToLower()) &&
+                            !p.PlaceId.StartsWith("user-location-"))
                 .Select(p => new
                 {
                     p.Name,
                     p.PlaceId,
                 })
-                .ToListAsync(); // Execute the query
-
-            return Ok(places);
-        }
-
-
-        // GET /places/id=...
-        [HttpGet("id")]
-        public async Task<IActionResult> GetPlacesInBounds([FromQuery] string id)
-        {
-            var places = await _context.Places
-                .Where(p => p.PlaceId == id)
-                .Include(p => p.Images) // Include images 
-                .Include(p => p.Details) // Include details
                 .ToListAsync();
 
             return Ok(places);
         }
 
+        [HttpGet("id")]
+        public async Task<IActionResult> GetPlaceById([FromQuery] string id)
+        {
+            // No filter needed here since you're fetching a specific place ID
+            var places = await _context.Places
+                .Where(p => p.PlaceId == id)
+                .Include(p => p.Images)
+                .Include(p => p.Details)
+                .ToListAsync();
 
-        // GET /places/test
+            return Ok(places);
+        }
+
         [HttpGet("test")]
         public async Task<IActionResult> GetTestPlacesWithDetails()
         {
             var places = await _context.Places
+                .Where(p => !p.PlaceId.StartsWith("user-location-"))
                 .AsNoTracking()
                 .Include(p => p.Images)
                 .Include(p => p.Details)
@@ -106,8 +105,8 @@ namespace MyBackend.Controllers
                         Overview = p.Details.EditorialOverview
                     },
 
-                    WeekdayText = p.Details.WeekdayText,  // List<string>
-                    Types = p.Details.Types         // List<string>
+                    WeekdayText = p.Details.WeekdayText,
+                    Types = p.Details.Types
                 }
             });
 
