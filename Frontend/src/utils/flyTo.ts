@@ -11,7 +11,7 @@ export const flyToLocation = (
     map.flyTo({
       center: [longitude, latitude],
       duration: 1000,
-      easing: (t: number) => t * (2 - t),
+      easing: (t: number) => t * (t),
       essential: true,
     });
   }
@@ -31,11 +31,12 @@ export const expandClusterAndFly = async (
 
   try {
     const expansionZoom = await source.getClusterExpansionZoom(clusterId);
+    console.log("Expansion zoom:", expansionZoom);
     const [longitude, latitude] = (clusterFeature.geometry as Point).coordinates as [number, number];
 
     const currentZoom = map.getZoom();
-    const zoomSteps = 3;
-    const stepZoomChange = (expansionZoom - currentZoom) / zoomSteps;
+    const zoomSteps = 2;
+    const stepZoomChange = (expansionZoom - currentZoom);
 
     let step = 1;
 

@@ -1,7 +1,8 @@
 import { useMap } from "@vis.gl/react-maplibre";
 import { useEffect, useRef, useState } from "react";
 import { place } from "../utils/types";
-import { useAddToList } from "../helper/updateList";
+import { useAddToList, useRemoveFromList } from "../helper/updateList";
+import { useInList } from "../helper/inList";
 
 interface CustomPopupProps {
   onClose: () => void;
@@ -14,6 +15,8 @@ const CustomPopup = ({
   place,
   setShowMoreDetails
 }: CustomPopupProps) => {
+  const inList = useInList();
+  const removeFromList = useRemoveFromList();
   const addToList = useAddToList();
   const { current: map } = useMap();
   const [position, setPosition] = useState<{ x: number; y: number } | null>(null);
@@ -105,14 +108,26 @@ const CustomPopup = ({
 
           {/* Right: Image and button */}
           <div className="flex flex-col items-center justify-center m-2 w-[40%]">
-            <button
-              className="mt-2 w-24 h-6 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-2xl text-parafraph-1"
-              onClick={() => {
-                addToList(place);
-              }}
-            >
-              + Add
-            </button>
+            {inList(place.placeId) ? (
+              <button
+                className="mt-2 w-24 h-6 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-2xl text-parafraph-1"
+                onClick={() => {
+                  removeFromList(place.placeId);
+                }}
+              >
+                - Remove
+              </button>
+            ) : (
+              <button
+                className="mt-2 w-24 h-6 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-2xl text-parafraph-1"
+                onClick={() => {
+                  addToList(place);
+                }}
+              >
+                + Add
+              </button>
+            )}
+            
             <button
               className="mt-2 w-24 h-6 border border-primary-brown bg-background-beige1 shadow-custom1 rounded-2xl text-parafraph-1"
               onClick={() => setShowMoreDetails(place.placeId)}

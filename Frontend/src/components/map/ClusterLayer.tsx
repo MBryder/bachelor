@@ -33,6 +33,7 @@ export default function ClusterLayer({ zoom, filteredVisiblePlaces }: Props) {
 
   useEffect(() => {
     if (!map) return;
+    if (zoom >= 14) return;
 
     const handleClick = async (e: maplibregl.MapMouseEvent) => {
       const features = map.queryRenderedFeatures(e.point, {
@@ -53,7 +54,7 @@ export default function ClusterLayer({ zoom, filteredVisiblePlaces }: Props) {
     return () => {
       map.off("click", "clusters", handleClick);
     };
-  }, [map]);
+  }, [map,zoom]);
 
   // Only render the Source and Layer if zoom < 14
   if (zoom >= 14) return null;
