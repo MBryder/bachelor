@@ -112,13 +112,9 @@ export const getORSRoadsPath = async (
 
 export const handleSubmit = async (
     selectedPlacesList: any[],
-    setRoute: (route: number[]) => void,
-    setMinCost: (minCost: number) => void,
     setRouteCoordinates: (coordinates: any[]) => void,
     transportMode: string // support for mode of transportation.
 ) => {
-    console.log("Submit button clicked");
-    console.log(selectedPlacesList);
 
     if (selectedPlacesList.length < 2) return;
 
@@ -131,8 +127,6 @@ export const handleSubmit = async (
         const distances1 = await getDistanceMatrix(arrayOfGeo, transportMode);
         const n = selectedPlacesList.length;
         const result = await getShortestPath(distances1, n);
-        setRoute(result.route);
-        setMinCost(result.minCost);
 
         const orderedCoordinates = result.route.map((idx: number) => arrayOfGeo[idx]);
         const snappedCoordinates = await getORSRoadsPath(orderedCoordinates, API_OPEN_ROUTE_SERVICE_KEY, transportMode);

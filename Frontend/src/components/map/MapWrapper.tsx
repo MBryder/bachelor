@@ -9,7 +9,7 @@ import UIOverlay from "./UIOverlay";
 import ClusterLayer from "./ClusterLayer";
 import MarkersLayer from "./MarkersLayer";
 import RouteLayer from "./RouteLayer";
-import { handleSubmit } from "../../services/mapService";
+
 
 
 interface MapWrapperProps {
@@ -19,9 +19,8 @@ interface MapWrapperProps {
 export default function MapWrapper({ showOverlay }: MapWrapperProps) {
   const mapRef = useRef<any>(null);
   const [mapLoaded, setMapLoaded] = useState(false);
-  const [minCost, setMinCost] = useState<number | null>(null);
-  const [route, setRoute] = useState<number[]>([]);
-  const [routeCoordinates, setRouteCoordinates] = useState<any[]>([]);
+
+
   const [zoom, setZoom] = useState(10);
   const [checked, setChecked] = useState(false);
   const [filterTypes, setFilterTypes] = useState<string[]>([]);
@@ -41,15 +40,7 @@ export default function MapWrapper({ showOverlay }: MapWrapperProps) {
       )
     : visiblePlaces;
 
-  const callSubmit = async (transportMode: string) => {
-    await handleSubmit(
-      selectedPlacesList,
-      setRoute,
-      setMinCost,
-      setRouteCoordinates,
-      transportMode
-    );
-  };
+  
 
   return (
     <div className="flex w-full h-full relative">
@@ -87,10 +78,7 @@ export default function MapWrapper({ showOverlay }: MapWrapperProps) {
           openPopupPlaceId={openPopupPlaceId}
           setOpenPopupPlaceId={setOpenPopupPlaceId}
         />
-        <RouteLayer
-          routeCoordinates={routeCoordinates}
-          callSubmit={callSubmit}
-        />
+        <RouteLayer/>
         {userLocation && (
           <AnimatedUserLocation userLocation={userLocation} />
         )}

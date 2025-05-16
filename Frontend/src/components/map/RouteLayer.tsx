@@ -2,6 +2,7 @@ import { Source, Layer } from "@vis.gl/react-maplibre";
 import { useEffect, useRef, useState } from "react";
 import { useSelectedPlaces } from "../../context/SelectedPlacesContext";
 import { useSelectedRoute } from "../../context/SelectedRouteContext";
+import { handleSubmit } from "../../services/mapService";
 
 // Linear interpolation between two points
 const interpolateCoords = (start: [number, number], end: [number, number], t: number): [number, number] => {
@@ -10,57 +11,71 @@ const interpolateCoords = (start: [number, number], end: [number, number], t: nu
   return [lng, lat];
 };
 
-export default function RouteLayer({ routeCoordinates, callSubmit }: any) {
+export default function RouteLayer() {
   const { selectedPlacesList } = useSelectedPlaces();
   const { transportMode } = useSelectedRoute();
 
   const [animatedCoords, setAnimatedCoords] = useState<[number, number][]>([]);
   const animationRef = useRef<number | null>(null);
+  const [routeCoordinates, setRouteCoordinates] = useState<any[]>([]);
+
+  const callSubmit = async (transportMode: string) => {
+    await handleSubmit(
+      selectedPlacesList,
+      setRouteCoordinates,
+      transportMode
+    );
+  };
 
   useEffect(() => {
     callSubmit(transportMode);
   }, [selectedPlacesList, transportMode]);
 
   useEffect(() => {
-  if (!routeCoordinates || routeCoordinates.length < 2) return;
+    if (!routeCoordinates || routeCoordinates.length < 2) {
+      return;
 
-  const coords: [number, number][] = routeCoordinates.map((c: any) => [c.lng, c.lat]);
-  const totalDuration = 5000;
-  const totalSteps = coords.length - 1;
-  const startTime = performance.now();
+    }
 
-  const animate = (time: number) => {
-    const elapsed = time - startTime;
-    const progress = Math.min(elapsed / totalDuration, 1);
-    const exactIndex = progress * totalSteps;
-    const currentIndex = Math.floor(exactIndex);
-    const t = exactIndex - currentIndex;
+    const coords: [number, number][] = routeCoordinates.map((c: any) => [c.lng, c.lat]);
+    const totalDuration = 5000;
+    const totalSteps = coords.length - 1;
+    const startTime = performance.now();
 
-    const newCoords = coords.slice(0, currentIndex + 1);
+    const animate = (time: number) => {
+      const elapsed = time - startTime;
+      const progress = Math.min(elapsed / totalDuration, 1);
+      const exactIndex = progress * totalSteps;
+      const currentIndex = Math.floor(exactIndex);
+      const t = exactIndex - currentIndex;
 
-    // 🔐 Only interpolate if we are not at the very end
-    if (currentIndex < totalSteps) {
-      const start = coords[currentIndex];
-      const end = coords[currentIndex + 1];
+      const newCoords = coords.slice(0, currentIndex + 1);
 
-      if (start && end) {
-        const interp = interpolateCoords(start, end, t);
-        newCoords.push(interp);
+      // Only interpolate if we are not at the very end
+      if (currentIndex < totalSteps) {
+        const start = coords[currentIndex];
+        const end = coords[currentIndex + 1];
+
+        if (start && end) {
+          const interp = interpolateCoords(start, end, t);
+          newCoords.push(interp);
+        }
       }
-    }
 
-    setAnimatedCoords(newCoords);
+      setAnimatedCoords(newCoords);
 
-    if (progress < 1) {
-      animationRef.current = requestAnimationFrame(animate);
-    }
-  };
+      if (progress < 1) {
+        animationRef.current = requestAnimationFrame(animate);
+      }
+    };
 
-  animationRef.current = requestAnimationFrame(animate);
+    
 
-  return () => {
-    if (animationRef.current) cancelAnimationFrame(animationRef.current);
-  };
+    animationRef.current = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationRef.current) cancelAnimationFrame(animationRef.current);
+    };
 }, [routeCoordinates]);
 
 

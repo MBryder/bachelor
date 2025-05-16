@@ -56,7 +56,7 @@ const Login: React.FC = () => {
             />
           </div>
 
-          <div className="mb-6">
+          <div>
             <label className="block mb-1 text-sm text-primary-brown">Password</label>
             <input
               type="password"
@@ -68,14 +68,14 @@ const Login: React.FC = () => {
             />
           </div>
 
-            <p>
-            I don't have an account?{' '}
-            <span
-              className="text-primary-brown underline cursor-pointer"
-              onClick={() => navigate('/signup')}
-            >
-              Click here
-            </span>
+            <p className="mb-6 text-paragraph-1 text-primary-brown">
+              I don't have an account?{' '}
+              <span
+                className="text-primary-brown underline cursor-pointer"
+                onClick={() => navigate('/signup')}
+              >
+                Click here
+              </span>
             </p>
 
           <button

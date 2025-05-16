@@ -129,7 +129,7 @@ const Signup: React.FC = () => {
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="flex-grow px-4 bg-transparent focus:outline-none text-primary-brown"
+                className="flex-grow px-2 bg-transparent focus:outline-none text-primary-brown"
                 placeholder="Enter username"
                 required
               />
@@ -138,9 +138,9 @@ const Signup: React.FC = () => {
                   {checkingUsername ? (
                     <span className="text-gray-500">🔍</span>
                   ) : isUsernameAvailable === false ? (
-                    <span className="text-red-600 text-xs">❌</span>
+                    <span className="text-red-600">X</span>
                   ) : isUsernameAvailable === true ? (
-                    <span className="text-green-600 text-xs">✅</span>
+                    <span className="text-green-600">✔</span>
                   ) : null}
                 </div>
               )}
@@ -155,7 +155,7 @@ const Signup: React.FC = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 border-b-2 border-primary-brown focus:outline-none bg-transparent"
+              className="w-full px-2 border-b-2 border-primary-brown focus:outline-none bg-transparent"
               placeholder="Enter email"
               required
             />
@@ -169,7 +169,7 @@ const Signup: React.FC = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 border-b-2 border-primary-brown focus:outline-none bg-transparent"
+              className="w-full px-2 border-b-2 border-primary-brown focus:outline-none bg-transparent"
               placeholder="Enter password"
               required
             />
@@ -183,7 +183,7 @@ const Signup: React.FC = () => {
               type="password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
-              className="w-full px-4 border-b-2 border-primary-brown focus:outline-none bg-transparent"
+              className="w-full px-2 border-b-2 border-primary-brown focus:outline-none bg-transparent"
               placeholder="Re-enter password"
               required
             />
