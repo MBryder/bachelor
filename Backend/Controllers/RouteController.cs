@@ -35,23 +35,24 @@ namespace MyBackend.Controllers
             return Ok(route);
         }
 
-        
+        // PSOT /routes/share
         [HttpPost("share")]
+        [Authorize]
         public async Task<IActionResult> SharePublicRoute([FromBody] SharedRouteDto sharedRoute)
         {
             var shared = new SharedRoute
-{
-            Id = Guid.NewGuid().ToString(),
-            CustomName = sharedRoute.CustomName,
-            DateOfCreation = DateTime.UtcNow,
-            Waypoints = sharedRoute.Waypoints,
-            TransportationMode = sharedRoute.TransportationMode
-        };
+            {
+                Id = Guid.NewGuid().ToString(),
+                CustomName = sharedRoute.CustomName,
+                DateOfCreation = DateTime.UtcNow,
+                Waypoints = sharedRoute.Waypoints,
+                TransportationMode = sharedRoute.TransportationMode
+            };
 
-        _context.SharedRoutes.Add(shared);
-        await _context.SaveChangesAsync();
+            _context.SharedRoutes.Add(shared);
+            await _context.SaveChangesAsync();
 
-        return Ok(new { message = "Shared route added successfully", routeId = shared.Id });
+            return Ok(new { message = "Shared route added successfully", routeId = shared.Id });
         }
     }
 }

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using MyBackend.Data;
 using MyBackend.Models;
@@ -22,6 +23,7 @@ namespace MyBackend.Controllers
         // GET /places/by-bounds?swLat=...&swLng=...&neLat=...&neLng=...
         // RETURNS PLACES IN VIEW ON THE MAP!
         [HttpGet("by-bounds")]
+        [Authorize]
         public async Task<IActionResult> GetPlacesInBounds([FromQuery] double swLat, [FromQuery] double swLng, [FromQuery] double neLat, [FromQuery] double neLng)
         {
             var places = await _context.Places
@@ -36,6 +38,7 @@ namespace MyBackend.Controllers
         }
 
         [HttpGet("name")]
+        [Authorize]
         public async Task<IActionResult> GetPlacesWithName([FromQuery] string Name)
         {
             _logger.LogInformation($"Endpoint hit: Searching for places with name containing '{Name}'");
@@ -119,6 +122,7 @@ namespace MyBackend.Controllers
         }
 
         [HttpPost("create")]
+        [Authorize]
         public async Task<IActionResult> CreatePlace([FromBody] PlaceCreateDto dto)
         {
             // Check if the place already exists

@@ -3,6 +3,8 @@ import axios from "axios";
 import { place } from "../utils/types";
 import { API_BASE } from "./api";
 
+const token = localStorage.getItem("token");
+
 export const fetchPlaceById = async (id: string) => {
     const url = `${API_BASE}/places/id?id=${encodeURIComponent(id)}`;
   
@@ -32,6 +34,7 @@ export const fetchPlaceById = async (id: string) => {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8",
+          Authorization: `Bearer ${token}`,
         },
       });
   
@@ -56,7 +59,8 @@ export const fetchSearchResults = async (query: string): Promise<place[]> => {
     const response = await axios.get(url, {
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8'
+        'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8',
+        Authorization: `Bearer ${token}`,
       }
     });
 

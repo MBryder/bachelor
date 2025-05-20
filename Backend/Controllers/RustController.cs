@@ -19,7 +19,7 @@ public class RustController : ControllerBase
         int result = RustInterop.multiply_numbers(a, b);
         return Ok(new { product = result });
     }
-    
+
 
     [HttpGet("test")]
     public IActionResult Test()
@@ -27,44 +27,44 @@ public class RustController : ControllerBase
         return Ok(new { message = "API is working" });
     }
 
-   [HttpPost("tsp")]
-public IActionResult SolveTSP([FromBody] TSPRequest request)
-{
-    if (request == null || request.Distances == null || request.N <= 0)
+    [HttpPost("tsp")]
+    public IActionResult SolveTSP([FromBody] TSPRequest request)
     {
-        return BadRequest(new { error = "Invalid input" });
+        if (request == null || request.Distances == null || request.N <= 0)
+        {
+            return BadRequest(new { error = "Invalid input" });
+        }
+
+        int n = request.N;
+
+        // Convert double[] to int[] (rounding)
+        int[] dist = request.Distances
+        .Select(x => (int)Math.Round((double)x, MidpointRounding.AwayFromZero))
+        .ToArray();
+
+        if (dist.Length != n * n)
+        {
+            return BadRequest(new { error = "Invalid matrix size" });
+        }
+
+        GCHandle distHandle = GCHandle.Alloc(dist, GCHandleType.Pinned);
+        IntPtr distPtr = distHandle.AddrOfPinnedObject();
+
+        int[] route = new int[n + 1];
+        GCHandle routeHandle = GCHandle.Alloc(route, GCHandleType.Pinned);
+        IntPtr routePtr = routeHandle.AddrOfPinnedObject();
+
+        int minCost = RustInterop.HeldKarpTSPFull(n, distPtr, routePtr);
+
+        distHandle.Free();
+        routeHandle.Free();
+
+        return Ok(new
+        {
+            minCost = minCost,
+            route = route
+        });
     }
-
-    int n = request.N;
-
-    // Convert double[] to int[] (rounding)
-    int[] dist = request.Distances
-    .Select(x => (int)Math.Round((double)x, MidpointRounding.AwayFromZero))
-    .ToArray();
-
-    if (dist.Length != n * n)
-    {
-        return BadRequest(new { error = "Invalid matrix size" });
-    }
-
-    GCHandle distHandle = GCHandle.Alloc(dist, GCHandleType.Pinned);
-    IntPtr distPtr = distHandle.AddrOfPinnedObject();
-
-    int[] route = new int[n + 1];
-    GCHandle routeHandle = GCHandle.Alloc(route, GCHandleType.Pinned);
-    IntPtr routePtr = routeHandle.AddrOfPinnedObject();
-
-    int minCost = RustInterop.HeldKarpTSPFull(n, distPtr, routePtr);
-
-    distHandle.Free();
-    routeHandle.Free();
-
-    return Ok(new
-    {
-        minCost = minCost,
-        route = route
-    });
-}
 
     public class TSPRequest
     {

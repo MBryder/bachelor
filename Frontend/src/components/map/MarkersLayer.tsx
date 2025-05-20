@@ -1,7 +1,7 @@
 import PopupMarker from "../popUpMarker";
 
-export default function MarkersLayer({ zoom, visiblePlaces, selectedPlacesList, setShowMoreDetails, openPopupPlaceId, setOpenPopupPlaceId }: any) {
-  if (zoom < 14) return null;
+export default function MarkersLayer({ showOverlay, zoom, visiblePlaces, selectedPlacesList, setShowMoreDetails, openPopupPlaceId, setOpenPopupPlaceId }: any) {
+  if (zoom < 14 && showOverlay) return null;
 
   const allMarkers = [...selectedPlacesList, ...visiblePlaces.filter(
     (vp: any) => !selectedPlacesList.some((sp: any) => sp.placeId === vp.placeId)

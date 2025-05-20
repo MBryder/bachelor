@@ -3,12 +3,13 @@ import { getTourismIcon } from "../utils/icons";
 import { fetchPlaceById } from "../services/placesService";
 import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 import { useSelectedRoute } from "../context/SelectedRouteContext";
-import { saveRoute, fetchRoutesByUser, shareRoute } from "../services/routeService";
+import {
+  saveRoute,
+  fetchRoutesByUser,
+  shareRoute,
+} from "../services/routeService";
 import { place } from "../utils/types";
 import { createUserLocationPlace } from "../services/placesService";
-console.log("Is createUserLocationPlace defined?", createUserLocationPlace);
-createUserLocationPlace(`user-location-${Date.now()}`, 1.23, 4.56).then(console.log);
-
 
 function Selectedbar({
   handleChange,
@@ -20,16 +21,19 @@ function Selectedbar({
   const [customName, setCustomName] = useState("");
   const [routes, setRoutes] = useState<any[]>([]);
   const [showDropdown, setShowDropdown] = useState(false);
-  const [inputError, setInputError] = useState(false); // til errors, når saveroute smider en error som fx. når user ikke giver rute et navn. 
-  const [dropdownOpen, setDropdownOpen] = useState(false); // til dropdown menu til "mode of transportation". 
-  const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved">("idle"); // til at improve "Save route" button. 
-  const [selectedRouteName, setSelectedRouteName] = useState<string | null>(null); // til at vise navn på valgt route fra DB fra users konto. 
+  const [inputError, setInputError] = useState(false); // til errors, når saveroute smider en error som fx. når user ikke giver rute et navn.
+  const [dropdownOpen, setDropdownOpen] = useState(false); // til dropdown menu til "mode of transportation".
+  const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved">(
+    "idle"
+  ); // til at improve "Save route" button.
+  const [selectedRouteName, setSelectedRouteName] = useState<string | null>(
+    null
+  ); // til at vise navn på valgt route fra DB fra users konto.
   const { selectedPlacesList, setSelectedPlacesList } = useSelectedPlaces(); // til at vise de steder som er valgt i selectedPlaces.
   const [newRoute, setNewRoute] = useState(false);
   const { transportMode, setTransportMode } = useSelectedRoute();
   const [shareableLink, setShareableLink] = useState<string | null>(null);
   const [locationAvailable, setLocationAvailable] = useState(true);
-
 
   const handleCheckboxChange = () => {
     const newChecked = !checked;
@@ -49,8 +53,14 @@ function Selectedbar({
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
 
-            const response = await createUserLocationPlace(placeId, latitude, longitude);
-            const alreadyExists = selectedPlacesList.some(p => p.placeId === response.placeId);
+            const response = await createUserLocationPlace(
+              placeId,
+              latitude,
+              longitude
+            );
+            const alreadyExists = selectedPlacesList.some(
+              (p) => p.placeId === response.placeId
+            );
 
             if (!alreadyExists) {
               setSelectedPlacesList([response, ...selectedPlacesList]);
@@ -65,7 +75,9 @@ function Selectedbar({
         }
       );
     } else {
-      const updated = selectedPlacesList.filter(p => !p.placeId?.startsWith("user-location"));
+      const updated = selectedPlacesList.filter(
+        (p) => !p.placeId?.startsWith("user-location")
+      );
       setSelectedPlacesList(updated);
     }
   };
@@ -78,7 +90,9 @@ function Selectedbar({
   }, [selectedPlacesList, transportMode]);
 
   const handleRemove = (indexToRemove: number) => {
-    const updatedList = selectedPlacesList.filter((_, index) => index !== indexToRemove);
+    const updatedList = selectedPlacesList.filter(
+      (_, index) => index !== indexToRemove
+    );
     setSelectedPlacesList([...updatedList]); // Force immutability
   };
 
@@ -106,8 +120,8 @@ function Selectedbar({
 
     const routeData = {
       customName: customName.trim(),
-      waypoints: cleanedPlaces.map(place => place.placeId),
-      transportationMode: transportMode
+      waypoints: cleanedPlaces.map((place) => place.placeId),
+      transportationMode: transportMode,
     };
 
     try {
@@ -124,8 +138,8 @@ function Selectedbar({
   };
 
   const shareRouteHandler = async () => {
-    let name = customName.trim()
-    console.log("Selected route name:", selectedRouteName)
+    let name = customName.trim();
+    console.log("Selected route name:", selectedRouteName);
     if (!name && !selectedRouteName) {
       setInputError(true);
       setTimeout(() => setInputError(false), 2000);
@@ -149,16 +163,17 @@ function Selectedbar({
 
     const routeData = {
       customName: name,
-      waypoints: cleanedPlaces.map(place => place.placeId),
-      transportationMode: transportMode
+      waypoints: cleanedPlaces.map((place) => place.placeId),
+      transportationMode: transportMode,
     };
 
     try {
       const result = await shareRoute(routeData);
-      console.log(result.routeId)
-      setShareableLink(`${window.location.origin}/shared-route/${result.routeId}`);
+      console.log(result.routeId);
+      setShareableLink(
+        `${window.location.origin}/shared-route/${result.routeId}`
+      );
       setTimeout(() => setSaveStatus("idle"), 1500);
-
     } catch (err) {
       console.error("Error saving route:", err);
       setSaveStatus("idle");
@@ -176,7 +191,7 @@ function Selectedbar({
     try {
       const data = await fetchRoutesByUser(username);
       setRoutes(data);
-      setShowDropdown(prev => !prev);
+      setShowDropdown((prev) => !prev);
     } catch (error) {
       console.error("Error fetching routes:", error);
     }
@@ -207,7 +222,7 @@ function Selectedbar({
       walking: "🚶 Walking",
       cycling: "🚴 Cycling",
       "e-cycling": "⚡🚴 E-Cycling",
-      wheelchair: "♿ Wheelchair"
+      wheelchair: "♿ Wheelchair",
     };
     return icons[mode] || mode;
   };
@@ -307,7 +322,9 @@ function Selectedbar({
                 <button
                   className="text-sm text-red-500 underline ml-2"
                   onClick={() => {
-                    alert("To enable location access:\n\n1. Click the marker icon in the browser's address bar.\n2. Then click allow NextStop to know your location.");
+                    alert(
+                      "To enable location access:\n\n1. Click the marker icon in the browser's address bar.\n2. Then click allow NextStop to know your location."
+                    );
                   }}
                 >
                   Allow location
@@ -323,7 +340,7 @@ function Selectedbar({
                 value={customName}
                 onChange={(e) => setCustomName(e.target.value)}
                 className={`rounded-xl px-2 py-1 w-1/2 text-primary-brown transition duration-300 ease-in-out
-    ${inputError ? 'border-red-500 ring-2 ring-red-300 animate-shake' : 'border border-primary-brown'}`}
+    ${inputError ? "border-red-500 ring-2 ring-red-300 animate-shake" : "border border-primary-brown"}`}
               />
               <div className="relative">
                 <button
@@ -335,7 +352,13 @@ function Selectedbar({
                 </button>
                 {dropdownOpen && (
                   <ul className="absolute mt-1 w-full rounded-xl border border-primary-brown bg-white shadow-lg z-50">
-                    {["driving 🚗", "walking 🚶", "cycling 🚲", "e-cycling 🚲⚡", "wheelchair ♿"].map((mode) => (
+                    {[
+                      "driving 🚗",
+                      "walking 🚶",
+                      "cycling 🚲",
+                      "e-cycling 🚲⚡",
+                      "wheelchair ♿",
+                    ].map((mode) => (
                       <li
                         key={mode}
                         onClick={() => {
@@ -383,7 +406,9 @@ function Selectedbar({
                     transition-all duration-150 ease-in-out"
                 >
                   <p className="text-primary-brown text-heading-4">
-                    {selectedRouteName ? `📍 ${selectedRouteName}` : "My Routes"}
+                    {selectedRouteName
+                      ? `📍 ${selectedRouteName}`
+                      : "My Routes"}
                   </p>
                 </button>
 
@@ -401,15 +426,21 @@ function Selectedbar({
                               {route.customName || `Route ${route.id}`}
                             </div>
                             <div className="text-sm text-primary-brown/70">
-                              Created: {new Date(route.dateOfCreation).toLocaleDateString()}
+                              Created:{" "}
+                              {new Date(
+                                route.dateOfCreation
+                              ).toLocaleDateString()}
                             </div>
                             <div className="text-sm text-primary-brown/70">
-                              Transportation: {formatMode(route.transportationMode)}
+                              Transportation:{" "}
+                              {formatMode(route.transportationMode)}
                             </div>
                           </li>
                         ))
                       ) : (
-                        <li className="px-4 py-2 text-gray-500">No routes found</li>
+                        <li className="px-4 py-2 text-gray-500">
+                          No routes found
+                        </li>
                       )}
                     </ul>
                   </div>
@@ -431,10 +462,7 @@ function Selectedbar({
                   <p>{shareableLink}</p>
                 </div>
               </div>
-
-
             )}
-
           </div>
         </div>
       </div>

@@ -136,6 +136,7 @@ namespace MyBackend.Controllers
 
         // POST /user/{username}/routes
         [HttpPost("{username}/routes")]
+        [Authorize]
         public async Task<IActionResult> AddRouteForUser(string username, [FromBody] RouteDto routeDto)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
@@ -158,6 +159,7 @@ namespace MyBackend.Controllers
         }
 
         [HttpGet("{username}/routes")]
+        [Authorize]
         public async Task<IActionResult> GetRoutesForUser(string username)
         {
             var user = await _context.Users
@@ -194,6 +196,7 @@ namespace MyBackend.Controllers
 
         // DELETE /user/{username}/routes/{routeId}
         [HttpDelete("{username}/routes/{routeId}")]
+        [Authorize]
         public async Task<IActionResult> DeleteRoute(string username, int routeId)
         {
             var route = await _context.Routes.FirstOrDefaultAsync(r => r.Id == routeId && r.Username == username);
@@ -209,6 +212,7 @@ namespace MyBackend.Controllers
 
         // PUT /user/change-password
         [HttpPut("change-password")]
+        [Authorize]
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
         {
             if (string.IsNullOrWhiteSpace(dto.Username) ||
@@ -233,6 +237,7 @@ namespace MyBackend.Controllers
         }
 
         [HttpDelete("{username}")]
+        [Authorize]
         public async Task<IActionResult> DeleteUser(string username)
         {
             var user = await _context.Users
