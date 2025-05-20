@@ -52,7 +52,7 @@ export default function MapWrapper({ showOverlay }: MapWrapperProps) {
         onLoad={() => setMapLoaded(true)}
       >
         {showOverlay && (
-          <div>
+          <div className="w-full h-full flex">
             <UIOverlay
               visiblePlaces={filteredVisiblePlaces}
               setSelectedPlacesList={setSelectedPlacesList}

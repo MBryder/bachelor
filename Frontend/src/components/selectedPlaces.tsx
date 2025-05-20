@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { getTourismIcon } from "../utils/icons";
 import { fetchPlaceById } from "../services/placesService";
 import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 import { useSelectedRoute } from "../context/SelectedRouteContext";
@@ -205,12 +204,14 @@ function Selectedbar({
       console.log("Fetching places for route:", waypointIds);
       const placePromises = waypointIds.map((id: string) => fetchPlaceById(id));
       const fetchedPlaces = await Promise.all(placePromises);
+      console.log("Fetched places:", fetchedPlaces);
       const validPlaces = fetchedPlaces.filter((place) => place !== null);
 
       setTransportMode(route.transportationMode); // already handled
       setNewRoute(true);
       setSelectedPlacesList(validPlaces);
       setShowDropdown(false);
+      console.log("Fetched places:", validPlaces);
     } catch (err) {
       console.error("Error loading places for selected route:", err);
     }
@@ -274,7 +275,6 @@ function Selectedbar({
               >
                 <div className="flex items-center justify-between w-full -ml-1">
                   <div className="flex items-center">
-                    <div className="mr-2">{getTourismIcon(place.tourism)}</div>
                     <div>
                       <h2 className="text-primary-brown text-heading-4">
                         {place.name}
