@@ -26,7 +26,12 @@ const Profile: React.FC = () => {
   useEffect(() => {
     if (username) {
       setLoadingRoutes(true);
-      fetch(`${API_BASE}/user/${username}/routes`)
+      fetch(`${API_BASE}/user/${username}/routes`, {
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${localStorage.getItem('token')}`,
+        },
+      })
         .then(res => {
           if (!res.ok) throw new Error('Failed to fetch saved routes');
           return res.json();

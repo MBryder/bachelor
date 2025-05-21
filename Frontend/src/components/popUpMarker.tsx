@@ -1,8 +1,7 @@
 import { Marker } from "@vis.gl/react-maplibre";
-import { useState, useRef} from "react";
-import { useMap } from "@vis.gl/react-maplibre";
+import { useState, useRef } from "react";
 import CustomPopup from "./CustomPopup";
-import { flyToLocation } from "../utils/flyTo";
+import { useFlyToLocation } from "../utils/flyTo";
 
 const PopupMarker = ({
   place,
@@ -14,15 +13,15 @@ const PopupMarker = ({
 }: any) => {
   const [showPopup, setShowPopup] = useState(false);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const { current: map } = useMap();
   const isOpen = openPopupPlaceId === place.placeId;
+  const flyToLocation = useFlyToLocation(); // Use the hook!
 
   const handleClick = () => {
-    if (!isOpen && map) {
-      flyToLocation(map, place.longitude, place.latitude);
+    if (!isOpen) {
+      flyToLocation(place.longitude, place.latitude); // No need for map arg!
       setOpenPopupPlaceId(place.placeId);
     } else {
-      setOpenPopupPlaceId(null); // toggle off
+      setOpenPopupPlaceId(null);
     }
   };
 
@@ -40,8 +39,8 @@ const PopupMarker = ({
   };
 
   const handlePopupClose = () => {
-  setOpenPopupPlaceId(null);
-};
+    setOpenPopupPlaceId(null);
+  };
 
   return (
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -55,13 +54,13 @@ const PopupMarker = ({
           <div className="h-4 mb-1 flex items-center justify-center">
             {titleON && !showPopup && (
               <div className="text-xs text-primary-brown bg-white px-1 rounded border-primary-brown border">
-          {place.name}
+                {place.name}
               </div>
             )}
           </div>
           <div
             className="w-3 h-3 rounded-full"
-            style={{ backgroundColor: color || "red" } }
+            style={{ backgroundColor: color || "red" }}
           />
         </div>
       </Marker>

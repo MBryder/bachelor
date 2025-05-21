@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Main from "./pages/Main";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -10,48 +9,51 @@ import "./App.css";
 import PrivateRoute from "./components/privateRoute";
 
 import { SelectedRouteProvider } from "./context/SelectedRouteContext";
-import { SelectedPlacesProvider } from "./context/SelectedPlacesContext"
+import { SelectedPlacesProvider } from "./context/SelectedPlacesContext";
+import { UserLocationProvider } from "./context/UserLocationContext";
 
 function App() {
   return (
     <SelectedRouteProvider>
       <SelectedPlacesProvider>
-        <Router>
+        <UserLocationProvider>
+          <Router>
             <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/shared-route/:routeId" element={<ShareRoute />} />
-            {/* Private Routes */}
-            <Route
-              path="/home"
-              element={
-              <PrivateRoute>
-                <Home />
-              </PrivateRoute>
-              }
-            />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/shared-route/:routeId" element={<ShareRoute />} />
+              {/* Private Routes */}
+              <Route
+                path="/home"
+                element={
+                  <PrivateRoute>
+                    <Home />
+                  </PrivateRoute>
+                }
+              />
 
-            <Route
-              path="/profile"
-              element={
-              <PrivateRoute>
-                <Profile />
-              </PrivateRoute>
-              }
-            />
+              <Route
+                path="/profile"
+                element={
+                  <PrivateRoute>
+                    <Profile />
+                  </PrivateRoute>
+                }
+              />
 
-            <Route
-              path="/about"
-              element={
-              <PrivateRoute>
-                <About />
-              </PrivateRoute>
-              }
-            />
-            {/* Redirect all unknown routes to /home */}
-            <Route path="*" element={<Home />} />
+              <Route
+                path="/about"
+                element={
+                  <PrivateRoute>
+                    <About />
+                  </PrivateRoute>
+                }
+              />
+              {/* Redirect all unknown routes to /Login*/}
+              <Route path="*" element={<Login />} />
             </Routes>
-        </Router>
+          </Router>
+        </UserLocationProvider>
       </SelectedPlacesProvider>
     </SelectedRouteProvider>
   );
