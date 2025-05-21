@@ -6,6 +6,13 @@ using System.Runtime.InteropServices;
 [ApiController]
 public class RustController : ControllerBase
 {
+    private readonly ITspSolver _tspSolver;
+
+    public RustController(ITspSolver tspSolver)
+    {
+        _tspSolver = tspSolver;
+    }
+
     [HttpGet("add")]
     public IActionResult AddNumbers([FromQuery] int a, [FromQuery] int b)
     {
@@ -37,10 +44,9 @@ public IActionResult SolveTSP([FromBody] TSPRequest request)
 
     int n = request.N;
 
-    // Convert double[] to int[] (rounding)
     int[] dist = request.Distances
-    .Select(x => (int)Math.Round((double)x, MidpointRounding.AwayFromZero))
-    .ToArray();
+        .Select(x => (int)Math.Round((double)x, MidpointRounding.AwayFromZero))
+        .ToArray();
 
     if (dist.Length != n * n)
     {
@@ -54,7 +60,7 @@ public IActionResult SolveTSP([FromBody] TSPRequest request)
     GCHandle routeHandle = GCHandle.Alloc(route, GCHandleType.Pinned);
     IntPtr routePtr = routeHandle.AddrOfPinnedObject();
 
-    int minCost = RustInterop.HeldKarpTSPFull(n, distPtr, routePtr);
+    int minCost = _tspSolver.Solve(n, distPtr, routePtr);
 
     distHandle.Free();
     routeHandle.Free();
@@ -65,6 +71,7 @@ public IActionResult SolveTSP([FromBody] TSPRequest request)
         route = route
     });
 }
+
 
     public class TSPRequest
     {
