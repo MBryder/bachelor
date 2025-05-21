@@ -2,7 +2,6 @@ import axios from "axios";
 import { API_BASE } from "./api";
 
 const API_BASE_URL = `${API_BASE}/api/Rust`;
-const API_OPEN_ROUTE_SERVICE = "https://api.openrouteservice.org/v2/matrix/foot-walking";
 const API_OPEN_ROUTE_SERVICE_KEY = "5b3ce3597851110001cf6248f9076d1fd33646bc9639a339df6bfc14";
 
 const mapTransportMode = (mode: string) => {

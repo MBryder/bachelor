@@ -1,8 +1,7 @@
 import { Marker } from "@vis.gl/react-maplibre";
 import { useState, useRef } from "react";
-import { useMap } from "@vis.gl/react-maplibre";
 import CustomPopup from "./CustomPopup";
-import { flyToLocation } from "../utils/flyTo";
+import { useFlyToLocation } from "../utils/flyTo";
 
 const PopupMarker = ({
   place,
@@ -14,15 +13,15 @@ const PopupMarker = ({
 }: any) => {
   const [showPopup, setShowPopup] = useState(false);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const { current: map } = useMap();
   const isOpen = openPopupPlaceId === place.placeId;
+  const flyToLocation = useFlyToLocation(); // Use the hook!
 
   const handleClick = () => {
-    if (!isOpen && map) {
-      flyToLocation(map, place.longitude, place.latitude);
+    if (!isOpen) {
+      flyToLocation(place.longitude, place.latitude); // No need for map arg!
       setOpenPopupPlaceId(place.placeId);
     } else {
-      setOpenPopupPlaceId(null); // toggle off
+      setOpenPopupPlaceId(null);
     }
   };
 

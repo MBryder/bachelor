@@ -2,6 +2,7 @@ import { toast } from "react-hot-toast";
 import axios from "axios";
 import { place } from "../utils/types";
 import { API_BASE } from "./api";
+import { v4 as uuidv4 } from "uuid";
 
 const token = localStorage.getItem("token");
 
@@ -85,14 +86,13 @@ export const fetchSearchResults = async (query: string): Promise<place[]> => {
 };
 
 export const createUserLocationPlace = async (
-  placeId: string,
   latitude: number,
   longitude: number
 ): Promise<place> => {
   const response = await axios.post(
     "http://localhost:5001/places/create",
     {
-      placeId,
+      placeId: `user-location-${uuidv4()}`,
       latitude,
       longitude,
     },

@@ -1,7 +1,7 @@
 import { Source, Layer, useMap } from "@vis.gl/react-maplibre";
 import { useEffect, useMemo } from "react";
 import type { FeatureCollection, Feature, Point } from "geojson";
-import { expandClusterAndFly } from "../../utils/flyTo";
+import { useExpandClusterAndFly } from "../../utils/flyTo"; // Use the hook!
 import maplibregl from "maplibre-gl";
 
 interface Place {
@@ -17,6 +17,7 @@ interface Props {
 
 export default function ClusterLayer({ zoom, filteredVisiblePlaces }: Props) {
   const { current: map } = useMap();
+  const expandClusterAndFly = useExpandClusterAndFly(); // Use the hook!
 
   // React hooks must always be called, even if you return early later
   const clusterGeoJson: FeatureCollection = useMemo(() => ({
@@ -46,15 +47,15 @@ export default function ClusterLayer({ zoom, filteredVisiblePlaces }: Props) {
       const clusterId = cluster.properties?.cluster_id;
       if (typeof clusterId !== "number") return;
 
-      // 👇 Use your helper function
-      await expandClusterAndFly(map, clusterId, cluster);
+      // 👇 Use the hook callback, no map needed!
+      await expandClusterAndFly(clusterId, cluster);
     };
 
     map.on("click", "clusters", handleClick);
     return () => {
       map.off("click", "clusters", handleClick);
     };
-  }, [map,zoom]);
+  }, [map, zoom, expandClusterAndFly]); // add expandClusterAndFly to deps
 
   // Only render the Source and Layer if zoom < 14
   if (zoom >= 14) return null;

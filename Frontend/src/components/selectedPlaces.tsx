@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
-import { fetchPlaceById } from "../services/placesService";
+import {
+  fetchPlaceById,
+  createUserLocationPlace,
+} from "../services/placesService";
 import { useSelectedPlaces } from "../context/SelectedPlacesContext";
 import { useSelectedRoute } from "../context/SelectedRouteContext";
 import {
@@ -7,15 +10,10 @@ import {
   fetchRoutesByUser,
   shareRoute,
 } from "../services/routeService";
-import { place } from "../utils/types";
-import { createUserLocationPlace } from "../services/placesService";
+import { useUserLocationContext } from "../context/UserLocationContext";
 
-function Selectedbar({
-  handleChange,
-}: {
-  handleChange: (value: boolean) => void;
-  visiblePlaces: place[];
-}) {
+
+function Selectedbar() {
   const [checked, setChecked] = useState(false);
   const [customName, setCustomName] = useState("");
   const [routes, setRoutes] = useState<any[]>([]);
@@ -33,51 +31,36 @@ function Selectedbar({
   const { transportMode, setTransportMode } = useSelectedRoute();
   const [shareableLink, setShareableLink] = useState<string | null>(null);
   const [locationAvailable, setLocationAvailable] = useState(true);
+  const userLocation = useUserLocationContext();
 
-  const handleCheckboxChange = () => {
+  const handleCheckboxChange = async () => {
     const newChecked = !checked;
     setChecked(newChecked);
-    handleChange(newChecked);
 
     if (newChecked) {
-      if (!navigator.geolocation) {
-        alert("Geolocation is not supported by your browser.");
-        return;
-      }
+      if (!userLocation) return;
 
-      navigator.geolocation.getCurrentPosition(
-        async (position) => {
-          try {
-            const placeId = `user-location-${Date.now()}`;
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
+      const { lat, lng } = userLocation;
 
-            const response = await createUserLocationPlace(
-              placeId,
-              latitude,
-              longitude
-            );
-            const alreadyExists = selectedPlacesList.some(
-              (p) => p.placeId === response.placeId
-            );
+      try {
+        const response = await createUserLocationPlace(lat, lng);
+        console.log("User location place created:", response);
 
-            if (!alreadyExists) {
-              setSelectedPlacesList([response, ...selectedPlacesList]);
-            }
-          } catch (err) {
-            console.error("Failed to create and add user location place:", err);
-          }
-        },
-        (error) => {
-          console.error("Geolocation error:", error.message);
-          alert("Could not get your current location.");
+        const alreadyExists = selectedPlacesList.some(
+          (p) => p?.placeId === response.placeId
+        );
+
+        if (!alreadyExists) {
+          setSelectedPlacesList([response, ...selectedPlacesList]);
         }
-      );
+      } catch (err) {
+        console.error("Failed to add user location place:", err);
+      }
     } else {
-      const updated = selectedPlacesList.filter(
-        (p) => !p.placeId?.startsWith("user-location")
+      const updatedList = selectedPlacesList.filter(
+        (p) => !p?.placeId?.startsWith("user-location")
       );
-      setSelectedPlacesList(updated);
+      setSelectedPlacesList(updatedList);
     }
   };
 

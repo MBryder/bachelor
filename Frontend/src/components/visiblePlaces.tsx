@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useMap } from "@vis.gl/react-maplibre";
-import { flyToLocation } from "../utils/flyTo";
+import { useFlyToLocation } from "../utils/flyTo";
 import PopupMarker from "./popUpMarker";
 import DefaultedCard from "./PlacesCards/DefaultedCard";
 import DetailedCard from "./PlacesCards/DetailedCard";
@@ -9,7 +8,8 @@ function VisiblePlaces({
   visiblePlaces,
   fetchPlaces,
   showMoreDetails,
-  setShowMoreDetails
+  setShowMoreDetails,
+  setSelectedPlacesList,
 }: {
   visiblePlaces: any[];
   fetchPlaces: () => void;
@@ -17,16 +17,13 @@ function VisiblePlaces({
   setShowMoreDetails: (placeId: string) => void;
   setSelectedPlacesList: (fn: (prev: any[]) => any[]) => void;
 }) {
-  const { current: map } = useMap();
   const [hoveredPlaceId, setHoveredPlaceId] = useState<string | null>(null);
-
+  const flyToLocation = useFlyToLocation(); // Use the hook!
   const refMap = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
   const handlePlaceClick = (place: any) => {
-    const longitude = place.longitude;
-    const latitude = place.latitude;
-    flyToLocation(map, longitude, latitude);
-    setShowMoreDetails(place.placeId);
+    flyToLocation(place.longitude, place.latitude);
+    setShowMoreDetails(place.placeId); 
   };
 
   useEffect(() => {
@@ -59,8 +56,8 @@ function VisiblePlaces({
                 >
                   {showMoreDetails === placeId ? (
                     <DetailedCard
-                    place={place}
-                    setShowMoreDetails={setShowMoreDetails}
+                      place={place}
+                      setShowMoreDetails={setShowMoreDetails}
                     />
                   ) : (
                     <DefaultedCard
