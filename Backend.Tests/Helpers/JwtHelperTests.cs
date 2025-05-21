@@ -14,7 +14,7 @@ namespace MyBackend.Tests.Helpers
     {
         private IConfiguration GetFakeConfig()
         {
-            var inMemorySettings = new Dictionary<string, string> {
+            var inMemorySettings = new Dictionary<string, string?> {
                 { "Jwt:Key", "SuperSecretTestKey1234567890123456" },
                 { "Jwt:Issuer", "TestIssuer" },
                 { "Jwt:Audience", "TestAudience" },

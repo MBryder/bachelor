@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Runtime.InteropServices;
@@ -6,13 +7,6 @@ using System.Runtime.InteropServices;
 [ApiController]
 public class RustController : ControllerBase
 {
-    private readonly ITspSolver _tspSolver;
-
-    public RustController(ITspSolver tspSolver)
-    {
-        _tspSolver = tspSolver;
-    }
-
     [HttpGet("add")]
     public IActionResult AddNumbers([FromQuery] int a, [FromQuery] int b)
     {
@@ -44,7 +38,8 @@ public class RustController : ControllerBase
 
         int n = request.N;
 
-    int[] dist = request.Distances
+        // Convert double[] to int[] (rounding)
+        int[] dist = request.Distances
         .Select(x => (int)Math.Round((double)x, MidpointRounding.AwayFromZero))
         .ToArray();
 
@@ -60,18 +55,17 @@ public class RustController : ControllerBase
         GCHandle routeHandle = GCHandle.Alloc(route, GCHandleType.Pinned);
         IntPtr routePtr = routeHandle.AddrOfPinnedObject();
 
-    int minCost = _tspSolver.Solve(n, distPtr, routePtr);
+        int minCost = RustInterop.HeldKarpTSPFull(n, distPtr, routePtr);
 
         distHandle.Free();
         routeHandle.Free();
 
-    return Ok(new
-    {
-        minCost = minCost,
-        route = route
-    });
-}
-
+        return Ok(new
+        {
+            minCost = minCost,
+            route = route
+        });
+    }
 
     public class TSPRequest
     {

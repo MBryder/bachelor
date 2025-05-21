@@ -171,3 +171,4 @@
 /Users/kasper/Documents/GitHub/bachelor/Backend.Tests/obj/Debug/net9.0/Backend.Tests.genruntimeconfig.cache
 /Users/kasper/Documents/GitHub/bachelor/Backend.Tests/obj/Debug/net9.0/ref/Backend.Tests.dll
 /Users/kasper/Documents/GitHub/bachelor/Backend.Tests/bin/Debug/net9.0/FluentAssertions.dll
+/Users/kasper/Documents/GitHub/bachelor/Backend.Tests/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.InMemory.dll
