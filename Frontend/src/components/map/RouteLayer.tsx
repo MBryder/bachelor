@@ -24,7 +24,7 @@ function TotalRouteTooltip({ routeCoordinates }: { routeCoordinates: ORSRouteRes
     0
   );
   const totalDistanceM = routeCoordinates.segments.reduce(
-    (total: number, seg: { duration: number }) => total + seg.duration,
+    (total: number, seg: { distance: number }) => total + seg.distance,
     0
   );
 
