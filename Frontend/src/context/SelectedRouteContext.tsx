@@ -18,7 +18,7 @@ const SelectedRouteContext = createContext<SelectedRouteContextType | undefined>
 
 export const SelectedRouteProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [selectedRoute, setSelectedRoute] = useState<Route | null>(null);
-  const [transportMode, setTransportMode] = useState<string>("walking 🚶");
+  const [transportMode, setTransportMode] = useState<string>("walking");
   const [placesOrder, setPlacesOrder] = useState<number[]>([]);
   const [routeCoordinates, setRouteCoordinates] = useState<ORSRouteResult | null>(null);
 
