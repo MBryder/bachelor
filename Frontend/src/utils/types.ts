@@ -13,5 +13,5 @@ export type Route ={
   createdAt: string;
   waypoints: string[];
   transportationMode: string;
-  DateOfCreation: string;
+  dateOfCreation: string;
 }

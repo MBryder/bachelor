@@ -1,55 +1,89 @@
-import { Source, Layer } from "@vis.gl/react-maplibre";
+import { Source, Layer, Marker } from "@vis.gl/react-maplibre";
 import { useEffect, useRef, useState } from "react";
 import { useSelectedPlaces } from "../../context/SelectedPlacesContext";
 import { useSelectedRoute } from "../../context/SelectedRouteContext";
-import { handleSubmit } from "../../services/mapService";
+import { handleSubmit,ORSRouteResult } from "../../services/mapService";
 
-// Linear interpolation between two points
-const interpolateCoords = (start: [number, number], end: [number, number], t: number): [number, number] => {
+// Helper: interpolate between two coordinates
+const interpolateCoords = (
+  start: [number, number],
+  end: [number, number],
+  t: number
+): [number, number] => {
   const lng = start[0] + (end[0] - start[0]) * t;
   const lat = start[1] + (end[1] - start[1]) * t;
   return [lng, lat];
 };
 
-function getRouteMidpoint(coords: [number, number][]): [number, number] | null {
-  if (!coords || coords.length === 0) return null;
-  // Find midpoint index, or use linear interpolation between the two middle coords for even-length arrays
-  const mid = (coords.length - 1) / 2;
-  const lower = Math.floor(mid);
-  const upper = Math.ceil(mid);
-  if (lower === upper) {
-    return coords[lower];
-  } else {
-    return interpolateCoords(coords[lower], coords[upper], 0.5);
-  }
+// Tooltip for total route
+function TotalRouteTooltip({ routeCoordinates }: { routeCoordinates: ORSRouteResult | null }) {
+  if (!routeCoordinates?.segments?.length) return null;
+
+  const totalDurationSec = routeCoordinates.segments.reduce(
+    (total: number, seg: { duration: number }) => total + seg.duration,
+    0
+  );
+  const totalDistanceM = routeCoordinates.segments.reduce(
+    (total: number, seg: { duration: number }) => total + seg.duration,
+    0
+  );
+
+  const totalMinutes = Math.round(totalDurationSec / 60);
+  const durationString =
+    totalMinutes >= 60
+      ? `${Math.floor(totalMinutes / 60)}h${totalMinutes % 60 > 0 ? ` ${totalMinutes % 60}min` : ""}`
+      : `${totalMinutes} min`;
+  const distanceString = `${(totalDistanceM / 1000).toFixed(1)} km`;
+
+  return (
+    <div className="bg-white border border-gray-400 rounded shadow px-2 py-1 flex items-center gap-2 text-[15px]">
+      <span className="font-semibold">{durationString}</span>
+      <span className="text-gray-500" style={{ fontSize: "13px" }}>
+        {distanceString}
+      </span>
+    </div>
+  );
 }
 
 export default function RouteLayer() {
   const { selectedPlacesList } = useSelectedPlaces();
-  const { transportMode } = useSelectedRoute();
+  const {
+    transportMode,
+    setPlacesOrder,
+    setRouteCoordinates,
+    routeCoordinates,
+  } = useSelectedRoute();
 
   const [animatedCoords, setAnimatedCoords] = useState<[number, number][]>([]);
   const animationRef = useRef<number | null>(null);
-  const [routeCoordinates, setRouteCoordinates] = useState<any[]>([]);
+  const [tooltipCoord, setTooltipCoord] = useState<[number, number] | null>(null);
 
+  // Submit to backend for route whenever places/mode changes
   const callSubmit = async (transportMode: string) => {
     await handleSubmit(
       selectedPlacesList,
       setRouteCoordinates,
-      transportMode
+      transportMode,
+      setPlacesOrder
     );
   };
 
   useEffect(() => {
     callSubmit(transportMode);
+    // eslint-disable-next-line
   }, [selectedPlacesList, transportMode]);
 
+  // Animate the route line and set tooltip position
   useEffect(() => {
-    if (!routeCoordinates || routeCoordinates.length < 2) {
+    if (!routeCoordinates || routeCoordinates.coordinates.length < 2) {
+      setAnimatedCoords([]);
+      setTooltipCoord(null);
       return;
     }
 
-    const coords: [number, number][] = routeCoordinates.map((c: any) => [c.lng, c.lat]);
+    const coords: [number, number][] = routeCoordinates.coordinates.map(
+      (c: any) => [c.lng, c.lat]
+    );
     const totalDuration = 5000;
     const totalSteps = coords.length - 1;
     const startTime = performance.now();
@@ -63,7 +97,7 @@ export default function RouteLayer() {
 
       const newCoords = coords.slice(0, currentIndex + 1);
 
-      // Only interpolate if we are not at the very end
+      // Only interpolate if not at the very end
       if (currentIndex < totalSteps) {
         const start = coords[currentIndex];
         const end = coords[currentIndex + 1];
@@ -83,16 +117,18 @@ export default function RouteLayer() {
 
     animationRef.current = requestAnimationFrame(animate);
 
+    // Tooltip at midpoint
+    if (coords.length > 1) {
+      const mid = Math.floor(coords.length / 2);
+      setTooltipCoord([coords[mid][0], coords[mid][1]]);
+    } else {
+      setTooltipCoord(null);
+    }
+
     return () => {
       if (animationRef.current) cancelAnimationFrame(animationRef.current);
     };
   }, [routeCoordinates]);
-
-  // Pick a point on the route for the tooltip (here: midpoint)
-  const tooltipCoords = getRouteMidpoint(animatedCoords);
-
-  // Set your tooltip label here. You could make this dynamic (distance, time, etc.)
-  const tooltipText = "11 min";
 
   return (
     <>
@@ -126,45 +162,14 @@ export default function RouteLayer() {
         </Source>
       )}
 
-      {tooltipCoords && (
-        <Source
-          id="route-tooltip-label"
-          type="geojson"
-          data={{
-            type: "FeatureCollection",
-            features: [
-              {
-                type: "Feature",
-                geometry: {
-                  type: "Point",
-                  coordinates: tooltipCoords,
-                },
-                properties: {
-                  label: tooltipText,
-                },
-              },
-            ],
-          }}
+      {tooltipCoord && (
+        <Marker
+          longitude={tooltipCoord[0]}
+          latitude={tooltipCoord[1]}
+          anchor="bottom"
         >
-          <Layer
-            id="route-tooltip-label-layer"
-            type="symbol"
-            layout={{
-              "text-field": ["get", "label"],
-              "text-size": 18,
-              "text-font": ["Open Sans Bold"],
-              "text-offset": [0, -1.2],
-              "text-anchor": "bottom",
-              "text-allow-overlap": true,
-            }}
-            paint={{
-              "text-color": "#0717f2",
-              "text-halo-color": "#fff",
-              "text-halo-width": 2,
-              "text-halo-blur": 0.5,
-            }}
-          />
-        </Source>
+          <TotalRouteTooltip routeCoordinates={routeCoordinates} />
+        </Marker>
       )}
     </>
   );

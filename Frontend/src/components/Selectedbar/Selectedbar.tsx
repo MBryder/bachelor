@@ -29,7 +29,7 @@ const Selectedbar = () => {
   const [selectedRouteName, setSelectedRouteName] = useState<string | null>(null);
   const { selectedPlacesList, setSelectedPlacesList } = useSelectedPlaces();
   const [newRoute, setNewRoute] = useState(false);
-  const { transportMode, setTransportMode } = useSelectedRoute();
+  const { transportMode, setTransportMode, placesOrder, routeCoordinates } = useSelectedRoute();
   const [shareableLink, setShareableLink] = useState<string | null>(null);
   const [locationAvailable, setLocationAvailable] = useState(true);
   const userLocation = useUserLocationContext();
@@ -227,17 +227,51 @@ const Selectedbar = () => {
   }, []);
 
   return (
-    <div className="h-5/8 flex items-center py-2 px-2">
-      <div className="translate-x-0 h-full w-[300px] border-1 bg-background-beige1 shadow-lg rounded-4xl m-2 ml-4 flex">
+    <div className="h-7/9 flex items-center py-2 px-2">
+      <div className="translate-x-0 h-full w-[350px] border bg-background-beige1 shadow-lg rounded-4xl m-2 ml-4 flex">
         <div className="h-full w-full flex flex-col">
-          <h1 className="flex-1 text-heading-1 font-display border-b-2 rounded-t-4xl border-primary-brown text-primary-brown text-center justify-center flex items-center">
+          <h1 className=" h-[50px] text-heading-1 font-display border-b-2 rounded-t-4xl border-primary-brown text-primary-brown text-center justify-center flex items-center">
             Selected places
           </h1>
           <SelectedPlaceList
             selectedPlacesList={selectedPlacesList}
             handleSetAsStart={handleSetAsStart}
             handleRemove={handleRemove}
+            placesOrder={placesOrder}
+            routeCoordinates={routeCoordinates}
           />
+          <div className="border-t-1 border-primary-brown flex items-center justify-between">
+            <p className="text-primary-brown text-heading-4 px-4">
+              total time:{" "}
+              {routeCoordinates?.segments?.length
+              ? (() => {
+                const totalMinutes = Math.round(
+                  routeCoordinates.segments.reduce(
+                  (total: number, segment: { duration: number }) => total + segment.duration,
+                  0
+                  ) / 60
+                );
+                if (totalMinutes >= 60) {
+                  const hours = Math.floor(totalMinutes / 60);
+                  const minutes = totalMinutes % 60;
+                  return `${hours}h${minutes > 0 ? ` ${minutes}min` : ""}`;
+                }
+                return `${totalMinutes} min`;
+                })()
+              : "N/A"}
+            </p>
+            <p className="text-primary-brown text-heading-4 px-4">
+              total distance:{" "}
+              {routeCoordinates?.segments?.length
+              ? `${(
+                routeCoordinates.segments.reduce(
+                  (total: number, segment: { distance: number }) => total + segment.distance,
+                  0
+                ) / 1000
+                ).toFixed(1)} km`
+              : "N/A"}
+            </p>
+          </div>
           <div className="p-2 px-4 flex-1 border-t-2 border-primary-brown flex flex-col gap-2">
             {/* Checkbox for current location */}
             <label className="flex items-center gap-2">
