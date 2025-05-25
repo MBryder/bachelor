@@ -21,7 +21,6 @@ export default function useMapListeners(
 
     const handleMapMoveEnd = () => {
       if (skipNextFetchRef.current) {
-        console.log("[useMapListeners] SKIPPING FETCH (programmatic move).");
         skipNextFetchRef.current = false;
         return;
       }
@@ -29,7 +28,6 @@ export default function useMapListeners(
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
 
       timeoutRef.current = setTimeout(async () => {
-        console.log("[useMapListeners] FETCHING PLACES (user move).");
         const bounds = map.getBounds();
         const places = await fetchPlacesByBounds(bounds);
         setVisiblePlaces(places);

@@ -28,25 +28,33 @@ export default function MapWrapper({ showOverlay }: MapWrapperProps) {
 
   const userLocation = useUserLocationContext();
   const { selectedPlacesList, setSelectedPlacesList } = useSelectedPlaces();
-  
+
   if (showOverlay) {
     useMapListeners(mapRef, setZoom, setVisiblePlaces, mapLoaded);
   } else {
     useShareLoader(mapRef, setZoom, mapLoaded);
   }
 
-  const filteredVisiblePlaces = filterTypes.length > 0
-    ? visiblePlaces.filter((place: any) =>
-        place.details?.types?.some((type: string) => filterTypes.includes(type))
-      )
-    : visiblePlaces;
+  // Only recompute filteredVisiblePlaces when either input changes (not every render)
+  const filteredVisiblePlaces =
+    filterTypes.length > 0
+      ? visiblePlaces.filter((place: any) =>
+          place.details?.types?.some((type: string) =>
+            filterTypes.includes(type)
+          )
+        )
+      : visiblePlaces;
 
   return (
     <MapRefContext.Provider value={mapRef}>
       <div className="flex w-full h-full relative">
         <Map
           ref={mapRef}
-          initialViewState={{ longitude: 12.5939, latitude: 55.6632, zoom: zoom }}
+          initialViewState={{
+            longitude: 12.5939,
+            latitude: 55.6632,
+            zoom: zoom,
+          }}
           mapStyle="https://api.maptiler.com/maps/bright/style.json?key=L0M8KVYaAAuKx695rSCS"
           onLoad={() => setMapLoaded(true)}
         >
@@ -81,9 +89,7 @@ export default function MapWrapper({ showOverlay }: MapWrapperProps) {
             setOpenPopupPlaceId={setOpenPopupPlaceId}
           />
           <RouteLayer />
-          {userLocation && (
-            <AnimatedUserLocation userLocation={userLocation} />
-          )}
+          {userLocation && <AnimatedUserLocation userLocation={userLocation} />}
         </Map>
       </div>
     </MapRefContext.Provider>

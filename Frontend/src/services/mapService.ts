@@ -6,15 +6,15 @@ const API_OPEN_ROUTE_SERVICE_KEY = "5b3ce3597851110001cf6248f9076d1fd33646bc9639
 
 const mapTransportMode = (mode: string) => {
   switch (mode) {
-    case "walking 🚶":
+    case "walking":
       return "foot-walking";
-    case "cycling 🚲":
+    case "cycling":
       return "cycling-regular";
-    case "e-cycling 🚲⚡":
+    case "e-cycling":
       return "cycling-electric";
-    case "wheelchair ♿":
+    case "wheelchair":
       return "wheelchair";
-    case "driving 🚗":
+    case "driving":
     default:
       return "driving-car";
   }
@@ -27,8 +27,6 @@ export const getShortestPath = async (distances: number[], n: number) => {
             N: n,
             Distances: distances
         });
-
-        console.log("API Response:", response.data); // Debugging log
         return response.data;
     } catch (error) {
         console.error("Error fetching shortest path:", error);
@@ -74,7 +72,7 @@ export const getDistanceMatrix = async (
 export const getORSRoadsPath = async (
   coordinates: google.maps.LatLngLiteral[],
   apiKey: string,
-  transportMode: string // <-- new argument
+  transportMode: string
 ): Promise<google.maps.LatLngLiteral[]> => {
   if (coordinates.length < 2) return coordinates;
 
@@ -96,6 +94,7 @@ export const getORSRoadsPath = async (
     });
 
     const data = await response.json();
+    console.log(data)
 
     if (data) {
       return data.features[0].geometry.coordinates.map(
@@ -126,9 +125,12 @@ export const handleSubmit = async (
         const distances1 = await getDistanceMatrix(arrayOfGeo, transportMode);
         const n = selectedPlacesList.length;
         const result = await getShortestPath(distances1, n);
+        console.log(result)
 
         const orderedCoordinates = result.route.map((idx: number) => arrayOfGeo[idx]);
+        console.log(orderedCoordinates)
         const snappedCoordinates = await getORSRoadsPath(orderedCoordinates, API_OPEN_ROUTE_SERVICE_KEY, transportMode);
+        console.log(snappedCoordinates)
         setRouteCoordinates(snappedCoordinates);
     } catch (error) {
         console.error("Error fetching shortest path:", error);

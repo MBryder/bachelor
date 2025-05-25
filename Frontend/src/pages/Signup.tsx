@@ -35,7 +35,9 @@ const Signup: React.FC = () => {
         const res = await fetch(
           `${API_BASE}/user/check-username?username=${encodeURIComponent(username)}`
         );
+        console.log(res)
         const data = await res.json();
+        console.log(data)
         setIsUsernameAvailable(data.available);
       } catch (err) {
         console.error("Failed to check username:", err);

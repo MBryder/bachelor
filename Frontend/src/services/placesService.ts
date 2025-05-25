@@ -4,11 +4,8 @@ import { place } from "../utils/types";
 import { API_BASE } from "./api";
 import { v4 as uuidv4 } from "uuid";
 
-const token = localStorage.getItem("token");
-
 export const fetchPlaceById = async (id: string) => {
   const url = `${API_BASE}/places/id?id=${encodeURIComponent(id)}`;
-
   try {
     const response = await axios.get(url, {
       headers: {
@@ -17,7 +14,6 @@ export const fetchPlaceById = async (id: string) => {
           "application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8",
       },
     });
-
     return response.data[0];
   } catch (error) {
     console.error("Error fetching place by id:", error);
@@ -26,11 +22,11 @@ export const fetchPlaceById = async (id: string) => {
 };
 
 export const fetchPlacesByBounds = async (bounds: any): Promise<place[]> => {
+  const token = localStorage.getItem("token");
   const { _sw, _ne } = bounds;
-
   const url = `${API_BASE}/places/by-bounds?swLat=${_sw.lat}&swLng=${_sw.lng}&neLat=${_ne.lat}&neLng=${_ne.lng}`;
-
   try {
+    console.log(token, "Token used for authorization");
     const response = await axios.get(url, {
       headers: {
         "Content-Type": "application/json",
@@ -39,13 +35,11 @@ export const fetchPlacesByBounds = async (bounds: any): Promise<place[]> => {
         Authorization: `Bearer ${token}`,
       },
     });
-
     const places: place[] = Array.isArray(response.data)
       ? response.data
       : Array.isArray(response.data.places)
         ? response.data.places
         : [];
-
     return places;
   } catch (error) {
     console.error("Error fetching places by bounds:", error);
@@ -55,8 +49,8 @@ export const fetchPlacesByBounds = async (bounds: any): Promise<place[]> => {
 };
 
 export const fetchSearchResults = async (query: string): Promise<place[]> => {
+  const token = localStorage.getItem("token");
   const url = `${API_BASE}/places/name?Name=` + encodeURIComponent(query);
-
   try {
     const response = await axios.get(url, {
       headers: {
@@ -66,11 +60,8 @@ export const fetchSearchResults = async (query: string): Promise<place[]> => {
         Authorization: `Bearer ${token}`,
       },
     });
-
     console.log("API Response:", response.data);
-
     const data = response.data;
-
     if (Array.isArray(data)) {
       return data;
     } else if (Array.isArray(data.places)) {
@@ -89,6 +80,7 @@ export const createUserLocationPlace = async (
   latitude: number,
   longitude: number
 ): Promise<place> => {
+  const token = localStorage.getItem("token");
   const response = await axios.post(
     "http://localhost:5001/places/create",
     {
@@ -105,6 +97,5 @@ export const createUserLocationPlace = async (
       },
     }
   );
-
   return response.data;
 };
