@@ -39,7 +39,7 @@ function VisiblePlaces({
     <div className="h-full flex items-center py-2 z-10">
       <div className="h-full w-[300px] border-1 bg-background-beige1 shadow-lg rounded-4xl m-2 ml-4 flex">
         <div className="h-full w-full flex flex-col">
-          <h1 className="text-heading-1 flex-1 py-2 font-display border-b-2 rounded-t-4xl border-primary-brown text-primary-brown text-center justify-center flex items-center">
+          <h1 className="text-heading-1 h-[60px] py-2 font-display border-b-2 rounded-t-4xl border-primary-brown text-primary-brown text-center justify-center flex items-center">
             Visible places
           </h1>
           <ul className="px-2 overflow-y-auto flex-[14] scrollbar">

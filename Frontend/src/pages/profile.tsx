@@ -81,21 +81,9 @@ const Profile: React.FC = () => {
                 {savedRoutes.map((route) => (
                   <li
                     key={route.id}
-                    className="flex-shrink-0 p-4 bg-background-beige2 rounded-lg shadow border hover:bg-background-beige3 transition flex flex-col justify-between items-start min-w-[200px] max-w-[300px]"
+                    className="relative flex flex-col justify-between items-start p-4 bg-background-beige2 rounded-lg shadow border hover:bg-background-beige3 transition min-w-[200px] max-w-[300px]"
                   >
-                    <div
-                      className="w-full cursor-pointer"
-                      onClick={() => {
-                        setSelectedRoute(route);
-                        navigate("/home");
-                      }}
-                    >
-                      <p className="font-semibold">{route.customName}</p>
-                      <p className="text-xs text-gray-500">
-                        Created:{" "}
-                        {new Date(route.dateOfCreation).toLocaleDateString()}
-                      </p>
-                    </div>
+                    {/* X button top right */}
                     <button
                       onClick={async (e) => {
                         e.stopPropagation();
@@ -110,11 +98,25 @@ const Profile: React.FC = () => {
                           console.error(err);
                         }
                       }}
-                      className="mt-2 text-red-500 hover:text-red-700 text-lg font-bold"
+                      className="absolute top-0 right-2 text-red-500 hover:text-red-700 text-xl font-bold z-10"
                       title="Delete route"
+                      aria-label="Delete route"
                     >
                       ×
                     </button>
+                    <div
+                      className="w-full cursor-pointer"
+                      onClick={() => {
+                        setSelectedRoute(route);
+                        navigate("/home");
+                      }}
+                    >
+                      <p className="font-semibold">{route.customName}</p>
+                      <p className="text-xs text-gray-500">
+                        Created:{" "}
+                        {new Date(route.dateOfCreation).toLocaleDateString()}
+                      </p>
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -170,7 +172,11 @@ const Profile: React.FC = () => {
                   }
 
                   try {
-                    await changePassword(username, currentPassword, newPassword);
+                    await changePassword(
+                      username,
+                      currentPassword,
+                      newPassword
+                    );
                     setPasswordChangeMessage(
                       "✅ Password changed successfully!"
                     );
